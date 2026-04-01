@@ -77,6 +77,7 @@
       target.classList.add('active');
     } else {
       document.getElementById('page-home').classList.add('active');
+      pageId = 'home';
     }
 
     // Update active nav
@@ -87,8 +88,18 @@
       }
     });
 
+    // Toggle header style for hero pages vs inner pages
+    if (pageId === 'home') {
+      header.classList.remove('inner-page');
+    } else {
+      header.classList.add('inner-page');
+    }
+
     // Scroll to top
     window.scrollTo(0, 0);
+
+    // Re-trigger header scroll state
+    header.classList.remove('scrolled');
 
     // Re-trigger reveal animations
     setTimeout(initReveal, 100);
