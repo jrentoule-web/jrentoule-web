@@ -25,10 +25,9 @@
   <meta name="geo.placename" content="Canberra">
 
   <!-- Fonts -->
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,600,700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./base.css">
@@ -112,14 +111,6 @@
           "@type": "Answer",
           "text": "You can request a free consultation through our website or call us directly on 0434 435 966. During the consultation, we'll discuss your vision, budget, and timeline to provide tailored advice."
         }
-      },
-      {
-        "@type": "Question",
-        "name": "How long does a typical renovation take?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Project timelines vary based on scope and complexity. A full home renovation typically takes 3-6 months, while smaller projects may be completed in 6-12 weeks. We provide a detailed timeline during the planning stage."
-        }
       }
     ]
   }
@@ -129,129 +120,122 @@
 
   <a href="#main-content" class="skip-link">Skip to content</a>
 
-  <!-- ====== HEADER ====== -->
-  <header class="site-header" role="banner">
-    <div class="header-inner">
-      <a href="#home" class="logo" aria-label="Rentoule Projects - Home">
-        <svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5"/>
-          <text x="50%" y="53%" text-anchor="middle" dominant-baseline="central" font-family="'Instrument Serif', Georgia, serif" font-size="15" font-style="italic" fill="currentColor">RP</text>
-        </svg>
-        <span class="logo-text">Rentoule Projects</span>
-      </a>
-
-      <nav class="main-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#case-studies">Case Studies</a>
-        <a href="#blog">Blog</a>
-        <a href="#careers">Careers</a>
-        <a href="#contact">Contact</a>
-        <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        </button>
-      </nav>
-
-      <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo" aria-label="Rentoule Projects — Home">Rentoule <span>Projects</span></a>
+      <div class="nav__links">
+        <a href="#about" class="nav__link" data-nav="about">About</a>
+        <a href="#services" class="nav__link" data-nav="services">Services</a>
+        <a href="#case-studies" class="nav__link" data-nav="case-studies">Case Studies</a>
+        <a href="#blog" class="nav__link" data-nav="blog">Blog</a>
+        <a href="#careers" class="nav__link" data-nav="careers">Careers</a>
+        <a href="#contact" class="nav__link" data-nav="contact">Contact</a>
+      </div>
+      <a href="#contact" class="btn btn--primary nav__cta desktop-only">Request a Consult</a>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
-  </header>
-
-  <nav class="mobile-nav" aria-label="Mobile navigation">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#case-studies">Case Studies</a>
-    <a href="#blog">Blog</a>
-    <a href="#careers">Careers</a>
-    <a href="#contact">Contact</a>
+    <div class="nav__mobile" aria-hidden="true">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#about" data-nav="about">About</a>
+      <a href="#services" data-nav="services">Services</a>
+      <a href="#case-studies" data-nav="case-studies">Case Studies</a>
+      <a href="#blog" data-nav="blog">Blog</a>
+      <a href="#careers" data-nav="careers">Careers</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+      <a href="#contact" class="btn btn--primary">Request a Consult</a>
+    </div>
   </nav>
 
+  <!-- ====== MAIN CONTENT ====== -->
   <main id="main-content">
 
-    <!-- ====== HOME PAGE ====== -->
-    <div class="page active" id="page-home">
+    <!-- ======================== HOME PAGE ======================== -->
+    <div class="page" id="page-home" data-page="home">
 
       <!-- Hero -->
-      <section class="hero" aria-label="Hero">
-        <div class="hero-bg">
-          <img src="./assets/hero-home.png" alt="Beautifully renovated open-plan living area with timber beams, marble kitchen island, and floor-to-ceiling windows in a Canberra home" width="1792" height="1024" loading="eager">
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <h1>Crafting <em>visions</em> into reality</h1>
-          <p class="hero-subtitle">Premium home renovations, extensions and new builds across Canberra</p>
-          <div style="display:flex;gap:var(--space-3);justify-content:center;flex-wrap:wrap;">
-            <a href="#contact" class="btn btn-primary">Request a Consult</a>
-            <a href="#services" class="btn btn-outline">Our Services</a>
+      <section class="hero" aria-label="Home hero">
+        <div class="hero__bg" style="background-image: url('./assets/hero-home.png')"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <span class="hero__eyebrow">Premium Builder &mdash; Canberra, ACT</span>
+          <h1 class="hero__title">Crafting <em>visions</em> into reality</h1>
+          <p class="hero__subtitle">We bring exceptional craftsmanship and quality materials to every project, creating homes that stand the test of time.</p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Request a Consult</a>
+            <a href="#services" class="btn btn--outline">Our Services</a>
           </div>
         </div>
       </section>
 
-      <!-- Welcome / About Preview -->
-      <section class="section" aria-labelledby="welcome-heading">
-        <div class="two-col section-inner reveal">
-          <div>
-            <span class="section-label">About Us</span>
-            <h2 id="welcome-heading" class="section-title">Your project, <em>our priority</em></h2>
-            <p class="section-subtitle">We bring exceptional craftsmanship and quality materials to the table, ensuring your project stands the test of time. From design to completion, we manage every aspect with utmost care, offering a seamless service experience.</p>
-            <p class="section-subtitle" style="margin-top:var(--space-4);">With our unique approach, we guide you step-by-step, providing clarity at every stage of your building journey.</p>
-            <div class="mission-stat">
-              <div class="mission-stat-item">
-                <div class="mission-stat-number">5+</div>
-                <div class="mission-stat-label">Years Experience</div>
-              </div>
-              <div class="mission-stat-item">
-                <div class="mission-stat-number">50+</div>
-                <div class="mission-stat-label">Projects Completed</div>
-              </div>
-              <div class="mission-stat-item">
-                <div class="mission-stat-number">100%</div>
-                <div class="mission-stat-label">Client Satisfaction</div>
+      <!-- Welcome -->
+      <section class="section section--white" aria-label="Welcome">
+        <div class="container">
+          <div class="welcome reveal">
+            <div class="welcome__content">
+              <span class="eyebrow">Welcome</span>
+              <h2 class="section-heading">Your project, <em>our priority</em></h2>
+              <p class="welcome__text">We bring exceptional craftsmanship and quality materials to the table, ensuring your project stands the test of time. From design to completion, we manage every aspect with utmost convenience, offering a seamless service experience. Lost in the complexity of your building project? We're here to clear the fog. With our unique approach, we guide you step-by-step, providing clarity and confidence at every stage.</p>
+              <div class="welcome__stats">
+                <div class="stat">
+                  <div class="stat__number">5+</div>
+                  <div class="stat__label">Years Experience</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">50+</div>
+                  <div class="stat__label">Projects Completed</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">100%</div>
+                  <div class="stat__label">Client Satisfaction</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="two-col-img">
-            <img src="./assets/about-team.png" alt="Builder reviewing architectural plans with homeowner at a kitchen island" width="1024" height="768" loading="lazy">
+            <div class="welcome__image">
+              <img src="./assets/about-team.png" alt="Jeff Rentoule reviewing renovation plans with a homeowner" loading="lazy">
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Services -->
-      <section class="section section-alt" id="home-services" aria-labelledby="services-heading-home">
-        <div class="section-inner">
-          <div class="reveal" style="text-align:center;margin-bottom:var(--space-10);">
-            <span class="section-label">What We Do</span>
-            <h2 id="services-heading-home" class="section-title">Our <em>Services</em></h2>
-            <p class="section-subtitle" style="margin:0 auto;">From bespoke new homes to thoughtful renovations, we deliver quality craftsmanship tailored to your lifestyle.</p>
+      <!-- Services Preview -->
+      <section class="section section--warm" aria-label="Our services">
+        <div class="container">
+          <div style="text-align:center; margin-bottom:var(--space-3xl);" class="reveal">
+            <span class="eyebrow">What We Do</span>
+            <h2 class="section-heading">Our <em>services</em></h2>
           </div>
-          <div class="services-grid reveal">
-            <a href="#services" class="service-card" onclick="showServiceDetail('new-builds')">
-              <img src="./assets/service-new-builds.png" alt="Modern custom-built home with white rendered walls and dark timber cladding in Canberra" width="1024" height="768" loading="lazy">
-              <div class="service-card-overlay"></div>
-              <div class="service-card-content">
-                <h3>New Builds</h3>
-                <p>Bespoke homes that reflect your lifestyle and vision for the future.</p>
-                <span class="service-card-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          <div class="services-grid">
+            <a href="#services" class="service-card reveal" data-service-link="new-builds">
+              <div class="service-card__image">
+                <img src="./assets/service-new-builds.png" alt="Modern custom home build exterior" loading="lazy">
+              </div>
+              <div class="service-card__body">
+                <h3 class="service-card__title">New Builds</h3>
+                <p class="service-card__text">Starting fresh opens up a world of possibilities, and we're here to help you bring it to life. We build bespoke homes that reflect your lifestyle, your values and your vision for the future.</p>
+                <span class="service-card__link">Learn More</span>
               </div>
             </a>
-            <a href="#services" class="service-card" onclick="showServiceDetail('extensions')">
-              <img src="./assets/service-extensions.png" alt="Seamless indoor-outdoor extension with bi-fold doors opening to landscaped garden" width="1024" height="768" loading="lazy">
-              <div class="service-card-overlay"></div>
-              <div class="service-card-content">
-                <h3>Extensions</h3>
-                <p>Purposeful spaces that blend effortlessly with your existing home.</p>
-                <span class="service-card-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            <a href="#services" class="service-card reveal" data-service-link="extensions">
+              <div class="service-card__image">
+                <img src="./assets/service-extensions.png" alt="Modern home extension interior" loading="lazy">
+              </div>
+              <div class="service-card__body">
+                <h3 class="service-card__title">Extensions</h3>
+                <p class="service-card__text">Extensions are about more than just adding square metres. They're about creating space that feels purposeful and seamless, blending effortlessly with your existing home.</p>
+                <span class="service-card__link">Learn More</span>
               </div>
             </a>
-            <a href="#services" class="service-card" onclick="showServiceDetail('renovations')">
-              <img src="./assets/service-renovations.png" alt="Luxury bathroom renovation with freestanding bathtub and brass fixtures" width="1024" height="768" loading="lazy">
-              <div class="service-card-overlay"></div>
-              <div class="service-card-content">
-                <h3>Renovations</h3>
-                <p>Unlock the potential in your existing home with thoughtful, high-quality work.</p>
-                <span class="service-card-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            <a href="#services" class="service-card reveal" data-service-link="renovations">
+              <div class="service-card__image">
+                <img src="./assets/service-renovations.png" alt="Beautifully renovated kitchen interior" loading="lazy">
+              </div>
+              <div class="service-card__body">
+                <h3 class="service-card__title">Renovations</h3>
+                <p class="service-card__text">From simple cosmetic updates to full-scale overhauls, we help homeowners unlock the potential in their existing homes with thoughtful, high-quality work.</p>
+                <span class="service-card__link">Learn More</span>
               </div>
             </a>
           </div>
@@ -259,157 +243,98 @@
       </section>
 
       <!-- Core Values -->
-      <section class="section" aria-labelledby="values-heading">
-        <div class="section-inner">
-          <div class="reveal" style="text-align:center;margin-bottom:var(--space-10);">
-            <span class="section-label">Why Choose Us</span>
-            <h2 id="values-heading" class="section-title">Our Core <em>Values</em></h2>
+      <section class="section section--white" aria-label="Core values">
+        <div class="container">
+          <div style="text-align:center; margin-bottom:var(--space-3xl);" class="reveal">
+            <span class="eyebrow">What Drives Us</span>
+            <h2 class="section-heading">Our core <em>values</em></h2>
           </div>
-          <div class="values-grid reveal">
-            <div class="value-item">
-              <div class="value-number">01</div>
-              <h3>Quality</h3>
-              <p>We take pride in our workmanship, delivering projects that showcase the highest standards of quality. Every detail matters — from the intricate tiling and joinery to the final coat of paint.</p>
+          <div class="values-grid">
+            <div class="value-card reveal">
+              <div class="value-card__icon">&mdash;</div>
+              <h3 class="value-card__title">Quality</h3>
+              <p class="value-card__text">We take pride in our workmanship, delivering projects that showcase the highest standards of quality. Every detail matters, from materials selection to the final finish.</p>
             </div>
-            <div class="value-item">
-              <div class="value-number">02</div>
-              <h3>Transparency</h3>
-              <p>We believe transparency builds trust and fosters successful partnerships. You'll always know where your project stands, what it costs, and what comes next.</p>
+            <div class="value-card reveal">
+              <div class="value-card__icon">&mdash;</div>
+              <h3 class="value-card__title">Transparency</h3>
+              <p class="value-card__text">At Rentoule Projects, we believe transparency builds trust and fosters successful partnerships, enabling our clients to feel confident at every stage of their project.</p>
             </div>
-            <div class="value-item">
-              <div class="value-number">03</div>
-              <h3>Customer Centricity</h3>
-              <p>Our customers are at the heart of our business. We strive to exceed expectations, providing a personalised experience that makes the building journey enjoyable.</p>
+            <div class="value-card reveal">
+              <div class="value-card__icon">&mdash;</div>
+              <h3 class="value-card__title">Customer Centricity</h3>
+              <p class="value-card__text">Our customers are at the heart of our business. We strive to exceed their expectations, providing a personalised experience that puts their needs first.</p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Testimonials -->
-      <section class="section section-alt" aria-labelledby="testimonials-heading">
-        <div class="section-inner">
-          <div class="reveal" style="text-align:center;margin-bottom:var(--space-10);">
-            <span class="section-label">Testimonials</span>
-            <h2 id="testimonials-heading" class="section-title">What Our <em>Clients</em> Say</h2>
-            <p class="section-subtitle" style="margin:0 auto;">Building or renovating a home is a big investment. Don't just take our word for it — hear from our clients who trusted us to bring their dream homes to life.</p>
+      <section class="section section--warm" aria-label="Client testimonials">
+        <div class="container">
+          <div style="text-align:center; margin-bottom:var(--space-3xl);" class="reveal">
+            <span class="eyebrow">Testimonials</span>
+            <h2 class="section-heading">What our <em>clients</em> say</h2>
+            <p class="section-subtitle" style="margin: 0 auto;">Building or renovating a home is a big investment, and choosing the right builder makes all the difference. Hear from our happy clients who have trusted us to bring their dream homes to life.</p>
           </div>
-          <div class="testimonials-grid reveal">
-            <div class="testimonial-card">
-              <div class="testimonial-quote">Right from the outset, it was clear that Jeff's expertise and commitment were unparalleled. Our 1970s home required a comprehensive interior overhaul. The final result was a beautifully renovated home that far exceeded our expectations.</div>
-              <div>
-                <div class="testimonial-author">Chris</div>
-                <div class="testimonial-location">Weetangera, ACT</div>
+          <div class="testimonials-slider reveal" aria-label="Testimonial carousel">
+            <div class="testimonials-track">
+              <div class="testimonial-slide">
+                <blockquote class="testimonial__quote">Right from the outset, it was clear that Jeff's expertise and commitment were unparalleled as he took charge of managing the extensive renovation project. Our home, with its origins in the 1970s, required a comprehensive interior overhaul to bring it up to date. His diligence and commitment to excellence were evident in every aspect of the project. The final result was a beautifully renovated home that far exceeded our expectations.</blockquote>
+                <p class="testimonial__author">Chris &mdash; Weetangera</p>
+              </div>
+              <div class="testimonial-slide">
+                <blockquote class="testimonial__quote">We had Rentoule Projects expand our outdoor area. They were very patient with listening to what we wanted and informative with explaining alternative ways to achieve what we wanted. Their professionalism, communication and attention to detail were truly a breath of fresh air. I never once felt pressured.</blockquote>
+                <p class="testimonial__author">Cindy &mdash; Kambah</p>
+              </div>
+              <div class="testimonial-slide">
+                <blockquote class="testimonial__quote">Rentoule Projects completed a building project for me in early 2021. They did an excellent job and I was very happy with the result. They spent a fair amount of time listening to me and explaining the pros and cons of different approaches. They are highly skilled and efficient carpenters and they made building a quality deck look easy.</blockquote>
+                <p class="testimonial__author">John Duffy</p>
               </div>
             </div>
-            <div class="testimonial-card">
-              <div class="testimonial-quote">They were very patient with listening to what we wanted and informative with explaining alternatives. Their professionalism, communication and attention to detail were truly a breath of fresh air.</div>
-              <div>
-                <div class="testimonial-author">Cindy</div>
-                <div class="testimonial-location">Kambah, ACT</div>
-              </div>
+            <div class="testimonials-dots" role="tablist" aria-label="Testimonial navigation">
+              <button class="testimonials-dot active" data-slide="0" role="tab" aria-label="Testimonial 1"></button>
+              <button class="testimonials-dot" data-slide="1" role="tab" aria-label="Testimonial 2"></button>
+              <button class="testimonials-dot" data-slide="2" role="tab" aria-label="Testimonial 3"></button>
             </div>
-            <div class="testimonial-card">
-              <div class="testimonial-quote">They did an excellent job and I was very happy with the result. They are highly skilled and efficient carpenters and they made building a quality deck look easy. I highly recommend them.</div>
-              <div>
-                <div class="testimonial-author">John Duffy</div>
-                <div class="testimonial-location">Canberra, ACT</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Case Studies Preview -->
-      <section class="section" aria-labelledby="case-heading-home">
-        <div class="section-inner">
-          <div class="reveal" style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:var(--space-8);flex-wrap:wrap;gap:var(--space-4);">
-            <div>
-              <span class="section-label">Our Work</span>
-              <h2 id="case-heading-home" class="section-title">Recent <em>Projects</em></h2>
-            </div>
-            <a href="#case-studies" class="btn btn-outline-dark">View All Projects</a>
-          </div>
-          <div class="case-studies-grid reveal">
-            <a href="#case-studies" class="case-study-card">
-              <img src="./assets/case-study-kitchen.png" alt="Before and after kitchen renovation showing transformation from dated to modern" width="1792" height="1024" loading="lazy">
-              <div class="case-study-card-overlay"></div>
-              <div class="case-study-card-content">
-                <h3>Chris — Weetangera</h3>
-                <p>Comprehensive 1970s interior overhaul</p>
-              </div>
-            </a>
-            <a href="#case-studies" class="case-study-card">
-              <img src="./assets/service-renovations.png" alt="Luxury bathroom with freestanding tub and premium fixtures" width="1024" height="768" loading="lazy">
-              <div class="case-study-card-overlay"></div>
-              <div class="case-study-card-content">
-                <h3>50-Year Home Transformation</h3>
-                <p>Modernising a family home</p>
-              </div>
-            </a>
-            <a href="#case-studies" class="case-study-card">
-              <img src="./assets/hero-home.png" alt="Modern open-plan living with timber features and natural light" width="1792" height="1024" loading="lazy">
-              <div class="case-study-card-overlay"></div>
-              <div class="case-study-card-content">
-                <h3>Mark Page — Griffith</h3>
-                <p>Full renovation, on time and on budget</p>
-              </div>
-            </a>
           </div>
         </div>
       </section>
 
       <!-- FAQ -->
-      <section class="section section-alt" aria-labelledby="faq-heading">
-        <div class="section-inner">
-          <div class="reveal" style="text-align:center;margin-bottom:var(--space-10);">
-            <span class="section-label">FAQ</span>
-            <h2 id="faq-heading" class="section-title">Got <em>Questions?</em></h2>
-            <p class="section-subtitle" style="margin:0 auto;">We understand that building or renovating a home comes with plenty of questions. Here are some of the most common ones.</p>
+      <section class="section section--white" aria-label="Frequently asked questions">
+        <div class="container">
+          <div style="text-align:center; margin-bottom:var(--space-3xl);" class="reveal">
+            <span class="eyebrow">FAQ</span>
+            <h2 class="section-heading">Got <em>questions?</em></h2>
+            <p class="section-subtitle" style="margin: 0 auto;">We understand that building or renovating a home comes with plenty of questions, and we're here to help.</p>
           </div>
           <div class="faq-list reveal">
             <div class="faq-item">
               <button class="faq-question" aria-expanded="false">
-                What types of projects do you handle?
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                <span class="faq-question__text">What types of projects does Rentoule Projects handle?</span>
+                <span class="faq-question__icon">+</span>
               </button>
               <div class="faq-answer" role="region">
-                <p>We specialise in high-end, bespoke home renovations and builds. We typically work on full-home renovations, home extensions, and custom new builds across Canberra's inner suburbs including Yarralumla, Turner, Griffith, Campbell and Ainslie.</p>
+                <p class="faq-answer__text">We specialise in high-end, bespoke home renovations and builds. We typically work on full-home renovations, home extensions, and custom new builds across Canberra's inner suburbs including Yarralumla, Turner, Griffith, Campbell and Ainslie.</p>
               </div>
             </div>
             <div class="faq-item">
               <button class="faq-question" aria-expanded="false">
-                What areas do you service?
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                <span class="faq-question__text">What areas does Rentoule Projects service?</span>
+                <span class="faq-question__icon">+</span>
               </button>
               <div class="faq-answer" role="region">
-                <p>We service the ACT, with a focus on Canberra's inner suburbs including Yarralumla, Turner, Griffith, Campbell and Ainslie.</p>
+                <p class="faq-answer__text">We service the ACT, with a focus on Canberra's inner suburbs including Yarralumla, Turner, Griffith, Campbell and Ainslie. We're happy to discuss projects across the broader Canberra region.</p>
               </div>
             </div>
             <div class="faq-item">
               <button class="faq-question" aria-expanded="false">
-                How do I get a quote or consultation?
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                <span class="faq-question__text">How do I get a quote or consultation?</span>
+                <span class="faq-question__icon">+</span>
               </button>
               <div class="faq-answer" role="region">
-                <p>You can request a free consultation through our website by navigating to our Contact page, or call us directly on 0434 435 966. During the initial consultation, we'll discuss your vision, budget and timeline to provide tailored advice on the best approach for your project.</p>
-              </div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-question" aria-expanded="false">
-                How long does a typical renovation take?
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
-              </button>
-              <div class="faq-answer" role="region">
-                <p>Project timelines vary based on scope and complexity. A full home renovation typically takes 3 to 6 months, while smaller projects may be completed in 6 to 12 weeks. We provide a detailed timeline during the planning stage and keep you informed of progress throughout.</p>
-              </div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-question" aria-expanded="false">
-                Do you help with design and planning?
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
-              </button>
-              <div class="faq-answer" role="region">
-                <p>Yes. Whether you're working with an architect or starting from a blank slate, we offer clear advice from the outset and can guide you through every step of the process. We also collaborate closely with trusted local architects and designers to ensure the best outcome for your home.</p>
+                <p class="faq-answer__text">You can request a free consultation through our website or call us directly on 0434 435 966. During the consultation, we'll discuss your vision, budget, and timeline to provide tailored advice.</p>
               </div>
             </div>
           </div>
@@ -417,500 +342,705 @@
       </section>
 
       <!-- CTA Band -->
-      <section class="cta-band" aria-labelledby="cta-heading">
-        <h2 id="cta-heading">Ready to make your <em>vision</em> a reality?</h2>
-        <p>We are passionate about creating something for you and your family that will be cherished for years to come. Get started with a free initial consultation.</p>
-        <a href="#contact" class="btn">Request a Consult</a>
+      <section class="cta-band" aria-label="Call to action">
+        <div class="container reveal">
+          <span class="eyebrow" style="color:var(--black);">Get Started</span>
+          <h2 class="section-heading">Ready to make your <em>visions</em> a reality?</h2>
+          <p class="section-subtitle">We are passionate about creating something for you and your family that will be cherished for years to come. Get started with an initial consultation.</p>
+          <a href="#contact" class="btn btn--dark">Request a Consult</a>
+        </div>
       </section>
 
     </div><!-- /page-home -->
 
+    <!-- ======================== ABOUT PAGE ======================== -->
+    <div class="page" id="page-about" data-page="about">
 
-    <!-- ====== ABOUT PAGE ====== -->
-    <div class="page" id="page-about">
-      <div class="page-hero">
-        <div class="page-hero-inner">
-          <span class="section-label">About Us</span>
-          <h1>Crafting <em>visions</em> into reality</h1>
-          <p>Rentoule Projects is a premium residential building company based in Canberra, directed by Jeff Rentoule. We specialise in high-end, bespoke home renovations, extensions and new builds.</p>
-        </div>
-      </div>
-
-      <section class="section" aria-labelledby="about-mission">
-        <div class="two-col section-inner reveal">
-          <div>
-            <span class="section-label">Our Mission</span>
-            <h2 id="about-mission" class="section-title">Deliver a seamless, personalised <em>experience</em></h2>
-            <p class="section-subtitle">We aim to deliver a seamless, personalised, and transparent experience, always aiming for top-quality solutions. Your project, our priority — we bring exceptional craftsmanship and quality materials to the table, ensuring your project stands the test of time.</p>
-            <p class="section-subtitle" style="margin-top:var(--space-4);">From design to completion, we manage every aspect with utmost convenience, offering a seamless service experience. Lost in the complexity of your building project? We're here to clear the fog.</p>
-          </div>
-          <div class="two-col-img">
-            <img src="./assets/about-team.png" alt="Builder and homeowner reviewing plans together" width="1024" height="768" loading="lazy">
-          </div>
+      <!-- Hero -->
+      <section class="hero hero--page" aria-label="About hero">
+        <div class="hero__bg" style="background-image: url('./assets/hero-home.png')"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <span class="hero__eyebrow">About Us</span>
+          <h1 class="hero__title">Built on <em>trust,</em> delivered with pride</h1>
+          <p class="hero__subtitle">Rentoule Projects is a premium residential builder specialising in high-end renovations, extensions and custom new builds in Canberra.</p>
         </div>
       </section>
 
-      <section class="section section-alt" aria-labelledby="about-values">
-        <div class="section-inner">
-          <div class="reveal" style="text-align:center;margin-bottom:var(--space-10);">
-            <span class="section-label">Our Values</span>
-            <h2 id="about-values" class="section-title">What <em>drives</em> us</h2>
-          </div>
-          <div class="values-grid reveal">
-            <div class="value-item">
-              <div class="value-number">01</div>
-              <h3>Quality</h3>
-              <p>We take pride in our workmanship, delivering projects that showcase the highest standards of quality. Every detail matters — from intricate tiling and joinery to the final coat of paint.</p>
+      <!-- Jeff's Story -->
+      <section class="section section--white" aria-label="Our story">
+        <div class="container">
+          <div class="about-story reveal">
+            <div class="about-story__text">
+              <span class="eyebrow">Our Story</span>
+              <h2 class="section-heading">Meet <em>Jeff Rentoule</em></h2>
+              <p>Your project, our priority. We bring exceptional craftsmanship and quality materials to the table, ensuring your project stands the test of time. From design to completion, we manage every aspect with utmost convenience, offering a seamless service experience.</p>
+              <p>Lost in the complexity of your building project? We're here to clear the fog. With our unique approach, we guide you step-by-step, providing clarity and confidence at every stage.</p>
+              <p>Our mission is to deliver a seamless, personalised, and transparent experience, always aiming for top-quality solutions that exceed expectations.</p>
             </div>
-            <div class="value-item">
-              <div class="value-number">02</div>
-              <h3>Transparency</h3>
-              <p>We believe transparency builds trust and fosters successful partnerships. You'll always know where your project stands, what it costs, and what comes next.</p>
-            </div>
-            <div class="value-item">
-              <div class="value-number">03</div>
-              <h3>Customer Centricity</h3>
-              <p>Our customers are at the heart of our business. We strive to exceed expectations, providing a personalised experience that makes the building journey enjoyable.</p>
+            <div class="welcome__image">
+              <img src="./assets/about-team.png" alt="Jeff Rentoule discussing renovation plans with a client" loading="lazy">
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Testimonials on About -->
-      <section class="section" aria-labelledby="about-testimonials">
-        <div class="section-inner">
-          <div class="reveal" style="text-align:center;margin-bottom:var(--space-10);">
-            <span class="section-label">Client Stories</span>
-            <h2 id="about-testimonials" class="section-title">What our <em>clients</em> say</h2>
+      <!-- Core Values -->
+      <section class="section section--warm" aria-label="Core values">
+        <div class="container">
+          <div style="text-align:center; margin-bottom:var(--space-3xl);" class="reveal">
+            <span class="eyebrow">What Drives Us</span>
+            <h2 class="section-heading">Our core <em>values</em></h2>
           </div>
-          <div class="testimonials-grid reveal">
-            <div class="testimonial-card">
-              <div class="testimonial-quote">Jeff and his team have been exceptional, turning our 50-year-old house into a modern, functional home. Before taking down a wall marked with our kids' growth — a detail I had overlooked — he thoughtfully pointed it out, giving us the chance to preserve that memory.</div>
-              <div>
-                <div class="testimonial-author">Happy Homeowner</div>
-                <div class="testimonial-location">Canberra, ACT</div>
-              </div>
+          <div class="values-grid">
+            <div class="value-card reveal">
+              <div class="value-card__icon">&mdash;</div>
+              <h3 class="value-card__title">Quality</h3>
+              <p class="value-card__text">We take pride in our workmanship, delivering projects that showcase the highest standards of quality. Every detail matters, from materials selection to the final finish.</p>
             </div>
-            <div class="testimonial-card">
-              <div class="testimonial-quote">Jeff and his team did an amazing job with our building renovation, including new bathrooms and laundry, and other updates inside and out. They finished on time and within budget. We highly recommend Jeff for any renovation project.</div>
-              <div>
-                <div class="testimonial-author">Mark Page</div>
-                <div class="testimonial-location">Griffith, ACT</div>
-              </div>
+            <div class="value-card reveal">
+              <div class="value-card__icon">&mdash;</div>
+              <h3 class="value-card__title">Transparency</h3>
+              <p class="value-card__text">At Rentoule Projects, we believe transparency builds trust and fosters successful partnerships, enabling our clients to feel confident at every stage of their project.</p>
             </div>
-            <div class="testimonial-card">
-              <div class="testimonial-quote">Their dedication to quality, attention to detail, and ability to overcome challenges with professionalism are admirable. We are thrilled with the outcome and owe a significant debt of gratitude to Jeff.</div>
-              <div>
-                <div class="testimonial-author">Chris</div>
-                <div class="testimonial-location">Weetangera, ACT</div>
-              </div>
+            <div class="value-card reveal">
+              <div class="value-card__icon">&mdash;</div>
+              <h3 class="value-card__title">Customer Centricity</h3>
+              <p class="value-card__text">Our customers are at the heart of our business. We strive to exceed their expectations, providing a personalised experience that puts their needs first.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="cta-band">
-        <h2>Ready to start your <em>project?</em></h2>
-        <p>Let's discuss how we can bring your vision to life. Get in touch for a free consultation.</p>
-        <a href="#contact" class="btn">Get in Touch</a>
+      <!-- Video -->
+      <section class="section section--white" aria-label="Video">
+        <div class="container" style="max-width:900px;">
+          <div style="text-align:center; margin-bottom:var(--space-2xl);" class="reveal">
+            <span class="eyebrow">See Our Work</span>
+            <h2 class="section-heading">A glimpse into <em>our world</em></h2>
+          </div>
+          <div class="about-video reveal">
+            <iframe src="https://player.vimeo.com/video/1065695637?h=8b78f942f6&title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Rentoule Projects brand video"></iframe>
+          </div>
+        </div>
       </section>
+
+      <!-- CTA Band -->
+      <section class="cta-band" aria-label="Call to action">
+        <div class="container reveal">
+          <span class="eyebrow" style="color:var(--black);">Get Started</span>
+          <h2 class="section-heading">Ready to make your <em>visions</em> a reality?</h2>
+          <p class="section-subtitle">We are passionate about creating something for you and your family that will be cherished for years to come.</p>
+          <a href="#contact" class="btn btn--dark">Request a Consult</a>
+        </div>
+      </section>
+
     </div><!-- /page-about -->
 
+    <!-- ======================== SERVICES PAGE ======================== -->
+    <div class="page" id="page-services" data-page="services">
 
-    <!-- ====== SERVICES PAGE ====== -->
-    <div class="page" id="page-services">
-      <div class="page-hero">
-        <div class="page-hero-inner">
-          <span class="section-label">Our Services</span>
-          <h1>What <em>we do</em></h1>
-          <p>From bespoke new homes to thoughtful renovations, we deliver quality craftsmanship tailored to your lifestyle and Canberra's unique character.</p>
+      <!-- Hero -->
+      <section class="hero hero--page" aria-label="Services hero">
+        <div class="hero__bg" style="background-image: url('./assets/service-new-builds.png')"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <span class="hero__eyebrow">Our Services</span>
+          <h1 class="hero__title">Comprehensive <em>building</em> solutions</h1>
+          <p class="hero__subtitle">From custom new builds to full-scale renovations and extensions, we deliver premium craftsmanship across every project.</p>
         </div>
-      </div>
+      </section>
 
       <!-- New Builds -->
-      <section class="section" id="service-new-builds" aria-labelledby="new-builds-heading">
-        <div class="two-col section-inner reveal">
-          <div class="two-col-img">
-            <img src="./assets/service-new-builds.png" alt="Modern custom-built Canberra home with native landscaping" width="1024" height="768" loading="lazy">
-          </div>
-          <div>
-            <span class="section-label">New Builds</span>
-            <h2 id="new-builds-heading" class="section-title">Custom <em>Home Builds</em></h2>
-            <p class="section-subtitle">Starting fresh opens up a world of possibilities, and we're here to help you bring it to life. We build bespoke homes that reflect your lifestyle, your values and your vision for the future.</p>
-            <p class="section-subtitle" style="margin-top:var(--space-3);">Whether you're working with an architect or starting from a blank slate, we offer clear advice from the outset and guide you through every step of the process. With a focus on quality and long-term value, we build homes you'll be proud of for years to come.</p>
-            <a href="#contact" class="btn btn-primary" style="margin-top:var(--space-6);">Discuss Your Build</a>
+      <section class="section section--white" id="service-new-builds" aria-label="New builds service">
+        <div class="container">
+          <div class="service-detail reveal">
+            <div class="service-detail__image">
+              <img src="./assets/service-new-builds.png" alt="Modern custom new home build" loading="lazy">
+            </div>
+            <div class="service-detail__content">
+              <span class="eyebrow">Service</span>
+              <h2 class="section-heading">New <em>Builds</em></h2>
+              <div class="service-detail__tags">
+                <span class="service-detail__tag">Custom Homes</span>
+                <span class="service-detail__tag">Bespoke Design</span>
+                <span class="service-detail__tag">Full Project Management</span>
+              </div>
+              <p class="service-detail__text">Starting fresh opens up a world of possibilities, and we're here to help you bring it to life. We build bespoke homes that reflect your lifestyle, your values and your vision for the future.</p>
+              <p class="service-detail__text">Whether you're working with an architect or starting from a blank slate, we offer clear advice from the outset and guide you through every step of the process.</p>
+              <p class="service-detail__text">With a focus on quality and long-term value, we build homes you'll be proud of for years to come.</p>
+              <div class="service-detail__includes">
+                <span class="service-detail__includes-title">What's Included</span>
+                <ul class="includes-grid">
+                  <li>Site assessment &amp; feasibility</li>
+                  <li>Design consultation</li>
+                  <li>Architect coordination</li>
+                  <li>Council approvals</li>
+                  <li>Full construction</li>
+                  <li>Project management</li>
+                  <li>Quality assurance</li>
+                  <li>Final handover</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Extensions -->
-      <section class="section section-alt" id="service-extensions" aria-labelledby="extensions-heading">
-        <div class="two-col section-inner reveal">
-          <div>
-            <span class="section-label">Extensions</span>
-            <h2 id="extensions-heading" class="section-title">Home <em>Extensions</em></h2>
-            <p class="section-subtitle">Extensions are about more than just adding square metres. They're about creating space that feels purposeful and seamless.</p>
-            <p class="section-subtitle" style="margin-top:var(--space-3);">Whether you're growing your family or just want your home to work harder for you, we specialise in crafting extensions that blend effortlessly with your existing home. We collaborate closely with trusted local architects and can guide you toward the best fit for your home and lifestyle.</p>
-            <a href="#contact" class="btn btn-primary" style="margin-top:var(--space-6);">Plan Your Extension</a>
-          </div>
-          <div class="two-col-img">
-            <img src="./assets/service-extensions.png" alt="Modern home extension with indoor-outdoor living area" width="1024" height="768" loading="lazy">
+      <section class="section section--warm" id="service-extensions" aria-label="Extensions service">
+        <div class="container">
+          <div class="service-detail service-detail--reverse reveal">
+            <div class="service-detail__image">
+              <img src="./assets/service-extensions.png" alt="Modern home extension interior" loading="lazy">
+            </div>
+            <div class="service-detail__content">
+              <span class="eyebrow">Service</span>
+              <h2 class="section-heading">Home <em>Extensions</em></h2>
+              <div class="service-detail__tags">
+                <span class="service-detail__tag">Room Additions</span>
+                <span class="service-detail__tag">Second Storey</span>
+                <span class="service-detail__tag">Outdoor Living</span>
+              </div>
+              <p class="service-detail__text">Extensions are about more than just adding square metres. They're about creating space that feels purposeful and seamless.</p>
+              <p class="service-detail__text">Whether you're growing your family or just want your home to work harder for you, we specialise in crafting extensions that blend effortlessly with your existing home.</p>
+              <p class="service-detail__text">We collaborate closely with trusted local architects and can guide you toward the best fit for your home and lifestyle.</p>
+              <div class="service-detail__includes">
+                <span class="service-detail__includes-title">What's Included</span>
+                <ul class="includes-grid">
+                  <li>Existing home assessment</li>
+                  <li>Architect referral &amp; coordination</li>
+                  <li>Structural engineering</li>
+                  <li>DA &amp; building approvals</li>
+                  <li>Seamless integration</li>
+                  <li>Full project management</li>
+                  <li>Interior fitout</li>
+                  <li>Completion &amp; handover</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Renovations -->
-      <section class="section" id="service-renovations" aria-labelledby="renovations-heading">
-        <div class="two-col section-inner reveal">
-          <div class="two-col-img">
-            <img src="./assets/service-renovations.png" alt="Luxury bathroom renovation with freestanding bathtub" width="1024" height="768" loading="lazy">
-          </div>
-          <div>
-            <span class="section-label">Renovations</span>
-            <h2 id="renovations-heading" class="section-title">Home <em>Renovations</em></h2>
-            <p class="section-subtitle">From simple cosmetic updates to full-scale overhauls, we help homeowners unlock the potential in their existing homes.</p>
-            <p class="section-subtitle" style="margin-top:var(--space-3);">Whether you're modernising a single room or renovating the entire house, we deliver thoughtful, high-quality work with an eye for detail. Our open, transparent process ensures you're kept in the loop from day one.</p>
-            <a href="#contact" class="btn btn-primary" style="margin-top:var(--space-6);">Start Your Renovation</a>
+      <section class="section section--white" id="service-renovations" aria-label="Renovations service">
+        <div class="container">
+          <div class="service-detail reveal">
+            <div class="service-detail__image">
+              <img src="./assets/service-renovations.png" alt="Beautifully renovated kitchen with skylight" loading="lazy">
+            </div>
+            <div class="service-detail__content">
+              <span class="eyebrow">Service</span>
+              <h2 class="section-heading">Home <em>Renovations</em></h2>
+              <div class="service-detail__tags">
+                <span class="service-detail__tag">Full Home</span>
+                <span class="service-detail__tag">Kitchen &amp; Bath</span>
+                <span class="service-detail__tag">Interior Overhaul</span>
+              </div>
+              <p class="service-detail__text">From simple cosmetic updates to full-scale overhauls, we help homeowners unlock the potential in their existing homes.</p>
+              <p class="service-detail__text">Whether you're modernising a single room or renovating the entire house, we deliver thoughtful, high-quality work with an eye for detail.</p>
+              <p class="service-detail__text">Our open, transparent process ensures you're kept in the loop from day one. We take care of the details so you don't have to.</p>
+              <div class="service-detail__includes">
+                <span class="service-detail__includes-title">What's Included</span>
+                <ul class="includes-grid">
+                  <li>Initial consultation</li>
+                  <li>Design &amp; planning</li>
+                  <li>Material selection</li>
+                  <li>Demolition &amp; prep</li>
+                  <li>Structural work</li>
+                  <li>Trades coordination</li>
+                  <li>Quality finishing</li>
+                  <li>Final inspection</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Service areas -->
-      <section class="section section-alt" aria-labelledby="locations-heading">
-        <div class="section-inner reveal" style="text-align:center;">
-          <span class="section-label">Service Areas</span>
-          <h2 id="locations-heading" class="section-title">Where <em>we service</em></h2>
-          <p class="section-subtitle" style="margin:0 auto;">We service Canberra and the wider ACT, with a particular focus on the inner suburbs.</p>
-          <div class="locations-row" style="justify-content:center;">
-            <span class="location-tag">ACT</span>
-            <span class="location-tag">Canberra</span>
-            <span class="location-tag">Yarralumla</span>
-            <span class="location-tag">Turner</span>
-            <span class="location-tag">Griffith</span>
-            <span class="location-tag">Campbell</span>
-            <span class="location-tag">Ainslie</span>
+      <!-- Process -->
+      <section class="section section--dark" aria-label="Our process">
+        <div class="container">
+          <div style="text-align:center; margin-bottom:var(--space-3xl);" class="reveal">
+            <span class="eyebrow">How We Work</span>
+            <h2 class="section-heading">Our <em>process</em></h2>
+          </div>
+          <div class="process-grid reveal">
+            <div class="process-card">
+              <div class="process-card__number">01</div>
+              <h3 class="process-card__title">Discovery</h3>
+              <p class="process-card__text">We listen to your vision, understand your goals and assess your needs.</p>
+            </div>
+            <div class="process-card">
+              <div class="process-card__number">02</div>
+              <h3 class="process-card__title">Site Visit</h3>
+              <p class="process-card__text">We visit your property to understand the space and identify possibilities.</p>
+            </div>
+            <div class="process-card">
+              <div class="process-card__number">03</div>
+              <h3 class="process-card__title">Design &amp; Approvals</h3>
+              <p class="process-card__text">We coordinate design, engineering and council approvals on your behalf.</p>
+            </div>
+            <div class="process-card">
+              <div class="process-card__number">04</div>
+              <h3 class="process-card__title">Fixed-Price Contract</h3>
+              <p class="process-card__text">No surprises. You receive a transparent, fixed-price contract before we begin.</p>
+            </div>
+            <div class="process-card">
+              <div class="process-card__number">05</div>
+              <h3 class="process-card__title">Build &amp; Handover</h3>
+              <p class="process-card__text">We build with care, keep you informed, and hand over a home you love.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="cta-band">
-        <h2>Ready to discuss your <em>project?</em></h2>
-        <p>Every great project starts with a conversation. Let's talk about your vision.</p>
-        <a href="#contact" class="btn">Request a Consult</a>
+      <!-- Why Rentoule -->
+      <section class="section section--warm" aria-label="Why choose us">
+        <div class="container">
+          <div style="text-align:center; margin-bottom:var(--space-3xl);" class="reveal">
+            <span class="eyebrow">The Difference</span>
+            <h2 class="section-heading">Why <em>Rentoule</em> Projects</h2>
+          </div>
+          <div class="why-grid reveal">
+            <div class="why-card">
+              <h3 class="why-card__title">Bespoke Approach</h3>
+              <p class="why-card__text">Every project is unique. We tailor our process to suit your specific needs, timeline and budget.</p>
+            </div>
+            <div class="why-card">
+              <h3 class="why-card__title">Fixed-Price Certainty</h3>
+              <p class="why-card__text">No hidden costs or surprise invoices. Our transparent pricing gives you confidence from day one.</p>
+            </div>
+            <div class="why-card">
+              <h3 class="why-card__title">Local Expertise</h3>
+              <p class="why-card__text">Deep knowledge of Canberra's building regulations, climate considerations and local suppliers.</p>
+            </div>
+            <div class="why-card">
+              <h3 class="why-card__title">Personal Service</h3>
+              <p class="why-card__text">You'll work directly with Jeff and our close-knit team throughout the entire project.</p>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <!-- Service Areas -->
+      <section class="section section--green" aria-label="Service areas">
+        <div class="container">
+          <div class="locations-grid reveal">
+            <div>
+              <span class="eyebrow">Service Areas</span>
+              <h2 class="section-heading">Where we <em>service</em></h2>
+              <p style="color:rgba(245,243,239,0.7); font-size:0.95rem; line-height:1.7;">Proudly serving Canberra's most sought-after suburbs with premium residential building services.</p>
+            </div>
+            <div>
+              <h3 style="font-family:var(--sans); font-size:0.72rem; font-weight:400; letter-spacing:0.25em; text-transform:uppercase; color:var(--gold); margin-bottom:var(--space-lg);">North Canberra</h3>
+              <ul class="locations-list" style="margin-bottom:var(--space-2xl);">
+                <li>Turner</li>
+                <li>Campbell</li>
+                <li>Ainslie</li>
+                <li>Weetangera</li>
+              </ul>
+              <h3 style="font-family:var(--sans); font-size:0.72rem; font-weight:400; letter-spacing:0.25em; text-transform:uppercase; color:var(--gold); margin-bottom:var(--space-lg);">South Canberra</h3>
+              <ul class="locations-list">
+                <li>Yarralumla</li>
+                <li>Griffith</li>
+                <li>Kambah</li>
+                <li>All ACT Suburbs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Band -->
+      <section class="cta-band" aria-label="Call to action">
+        <div class="container reveal">
+          <span class="eyebrow" style="color:var(--black);">Get Started</span>
+          <h2 class="section-heading">Ready to make your <em>visions</em> a reality?</h2>
+          <p class="section-subtitle">We are passionate about creating something for you and your family that will be cherished for years to come.</p>
+          <a href="#contact" class="btn btn--dark">Request a Consult</a>
+        </div>
+      </section>
+
     </div><!-- /page-services -->
 
+    <!-- ======================== CASE STUDIES PAGE ======================== -->
+    <div class="page" id="page-case-studies" data-page="case-studies">
 
-    <!-- ====== CASE STUDIES PAGE ====== -->
-    <div class="page" id="page-case-studies">
-      <div class="page-hero">
-        <div class="page-hero-inner">
-          <span class="section-label">Our Work</span>
-          <h1>Case <em>Studies</em></h1>
-          <p>Take a look at some of our recent projects and hear directly from the clients who trusted us with their homes.</p>
-        </div>
-      </div>
-
-      <!-- Chris Weetangera -->
-      <section class="section" aria-labelledby="case-chris">
-        <div class="two-col section-inner reveal">
-          <div class="two-col-img">
-            <img src="./assets/case-study-kitchen.png" alt="Before and after kitchen renovation showing dramatic transformation" width="1792" height="1024" loading="lazy">
-          </div>
-          <div>
-            <span class="section-label">Case Study</span>
-            <h2 id="case-chris" class="section-title">Chris — <em>Weetangera</em></h2>
-            <p class="section-subtitle">A comprehensive 1970s interior overhaul bringing a dated home into the modern era.</p>
-            <blockquote style="margin-top:var(--space-4);padding-left:var(--space-4);border-left:2px solid var(--color-primary);font-style:italic;color:var(--color-text-muted);line-height:1.7;">
-              "Right from the outset, it was clear that Jeff's expertise and commitment were unparalleled. The final result was a beautifully renovated home that far exceeded our expectations. Their dedication to quality, attention to detail, and ability to overcome challenges with professionalism are admirable."
-            </blockquote>
-            <p style="margin-top:var(--space-3);font-weight:600;font-size:var(--text-sm);">— Chris, Weetangera</p>
-          </div>
+      <!-- Hero -->
+      <section class="hero hero--page" aria-label="Case studies hero">
+        <div class="hero__bg" style="background-image: url('./assets/case-study-kitchen.png')"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <span class="hero__eyebrow">Case Studies</span>
+          <h1 class="hero__title">Stories of <em>transformation</em></h1>
+          <p class="hero__subtitle">See how we've helped Canberra homeowners bring their visions to life with exceptional craftsmanship and attention to detail.</p>
         </div>
       </section>
 
-      <!-- 50 Year House -->
-      <section class="section section-alt" aria-labelledby="case-50year">
-        <div class="two-col section-inner reveal">
-          <div>
-            <span class="section-label">Case Study</span>
-            <h2 id="case-50year" class="section-title">Turning a 50-Year House into a <em>Functional</em> Modern Home</h2>
-            <p class="section-subtitle">A major renovation transforming a half-century-old house into a home tailored for modern family living.</p>
-            <blockquote style="margin-top:var(--space-4);padding-left:var(--space-4);border-left:2px solid var(--color-primary);font-style:italic;color:var(--color-text-muted);line-height:1.7;">
-              "Jeff and his team have been exceptional. Before taking down a wall marked with our kids' growth over the years — a detail I had overlooked — he thoughtfully pointed it out, giving us the chance to preserve that memory. The final product is not just visually stunning; it's tailored to our family's needs and lifestyle."
-            </blockquote>
-            <p style="margin-top:var(--space-3);font-weight:600;font-size:var(--text-sm);">— Happy Homeowner, Canberra</p>
-          </div>
-          <div class="two-col-img">
-            <img src="./assets/service-renovations.png" alt="Beautifully renovated bathroom showing premium craftsmanship" width="1024" height="768" loading="lazy">
-          </div>
-        </div>
-      </section>
+      <!-- Case Studies List -->
+      <section class="section section--white" aria-label="Case studies">
+        <div class="container">
+          <div class="case-studies-list">
 
-      <!-- Mark Page -->
-      <section class="section" aria-labelledby="case-mark">
-        <div class="two-col section-inner reveal">
-          <div class="two-col-img">
-            <img src="./assets/hero-home.png" alt="Renovated open-plan living space with warm timber and natural light" width="1792" height="1024" loading="lazy">
-          </div>
-          <div>
-            <span class="section-label">Case Study</span>
-            <h2 id="case-mark" class="section-title">Mark Page — <em>Griffith</em></h2>
-            <p class="section-subtitle">A comprehensive renovation including new bathrooms, laundry, and updates inside and out — completed on time and within budget.</p>
-            <blockquote style="margin-top:var(--space-4);padding-left:var(--space-4);border-left:2px solid var(--color-primary);font-style:italic;color:var(--color-text-muted);line-height:1.7;">
-              "Jeff and his team did an amazing job with our building renovation. They were responsive and solution focussed throughout the process. They finished on time and within budget. We highly recommend Jeff for any renovation project."
-            </blockquote>
-            <p style="margin-top:var(--space-3);font-weight:600;font-size:var(--text-sm);">— Mark Page, Griffith</p>
+            <!-- Case Study 1 -->
+            <div class="case-study reveal">
+              <div class="case-study__image">
+                <img src="./assets/case-study-kitchen.png" alt="Renovated home interior in Weetangera" loading="lazy">
+              </div>
+              <div class="case-study__content">
+                <span class="eyebrow">Renovation</span>
+                <h2 class="case-study__title">Chris &mdash; Weetangera</h2>
+                <p class="case-study__quote">Right from the outset, it was clear that Jeff's expertise and commitment were unparalleled as he took charge of managing the extensive renovation project. Our home, with its origins in the 1970s, required a comprehensive interior overhaul to bring it up to date. His diligence and commitment to excellence were evident in every aspect of the project, from the intricate tiling, plastering, and joinery work to the installation of new timber flooring and carpet. The final result was a beautifully renovated home that far exceeded our expectations. Their dedication to quality, attention to detail, and ability to overcome challenges with professionalism are admirable. We are thrilled with the outcome of our renovation and owe a significant debt of gratitude to Jeff for his integral role in making our vision a reality.</p>
+                <p class="case-study__author">Chris &mdash; Weetangera</p>
+              </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="case-study reveal">
+              <div class="case-study__image">
+                <img src="./assets/service-renovations.png" alt="Modern functional home renovation" loading="lazy">
+              </div>
+              <div class="case-study__content">
+                <span class="eyebrow">Full Home Renovation</span>
+                <h2 class="case-study__title">Turning a 50 Year House into a Functional Modern Home</h2>
+                <p class="case-study__quote">When we embarked on our renovation journey, we placed a significant amount of trust in Rentoule Projects, and I'm pleased to say it was well-founded. Jeff and his team have been exceptional, turning our 50-year-old house into a modern, functional home. Before taking down a wall marked with our kids' growth over the years &mdash; a detail I had overlooked &mdash; he thoughtfully pointed it out, giving us the chance to preserve that memory. This attention to personal detail was emblematic of his work throughout the entire project. I wholeheartedly recommend Rentoule Projects. Their work ethic, the trust they foster, and their thorough understanding of what makes a house a home, sets them apart.</p>
+                <p class="case-study__author">Satisfied Client</p>
+              </div>
+            </div>
+
+            <!-- Case Study 3 -->
+            <div class="case-study reveal">
+              <div class="case-study__image">
+                <img src="./assets/service-extensions.png" alt="Renovated bathroom and laundry in Griffith" loading="lazy">
+              </div>
+              <div class="case-study__content">
+                <span class="eyebrow">Bathroom &amp; Laundry</span>
+                <h2 class="case-study__title">Mark Page &mdash; Griffith</h2>
+                <p class="case-study__quote">Jeff and his team did an amazing job with our building renovation, including new bathrooms and laundry, and other updates inside and out. They were responsive and solution focussed throughout the process. They finished on time and within budget. We highly recommend Jeff for any renovation project.</p>
+                <p class="case-study__author">Mark Page &mdash; Griffith</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
 
-      <section class="cta-band">
-        <h2>Want results <em>like these?</em></h2>
-        <p>Let's discuss how we can transform your home. Get started with a free consultation.</p>
-        <a href="#contact" class="btn">Request a Consult</a>
+      <!-- CTA Band -->
+      <section class="cta-band" aria-label="Call to action">
+        <div class="container reveal">
+          <span class="eyebrow" style="color:var(--black);">Your Home Next?</span>
+          <h2 class="section-heading">Ready to make your <em>visions</em> a reality?</h2>
+          <p class="section-subtitle">We are passionate about creating something for you and your family that will be cherished for years to come.</p>
+          <a href="#contact" class="btn btn--dark">Request a Consult</a>
+        </div>
       </section>
+
     </div><!-- /page-case-studies -->
 
+    <!-- ======================== BLOG PAGE ======================== -->
+    <div class="page" id="page-blog" data-page="blog">
 
-    <!-- ====== BLOG PAGE ====== -->
-    <div class="page" id="page-blog">
-      <div class="page-hero">
-        <div class="page-hero-inner">
-          <span class="section-label">Insights</span>
-          <h1>Our <em>Blog</em></h1>
-          <p>Practical advice and insights to help you navigate your building or renovation journey.</p>
+      <!-- Hero -->
+      <section class="hero hero--page" aria-label="Blog hero">
+        <div class="hero__bg" style="background-image: url('./assets/hero-home.png')"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <span class="hero__eyebrow">Our Blog</span>
+          <h1 class="hero__title">Insights &amp; <em>inspiration</em></h1>
+          <p class="hero__subtitle">Tips, advice and stories from the world of premium home building and renovation in Canberra.</p>
         </div>
-      </div>
+      </section>
 
-      <section class="section" aria-labelledby="blog-listing">
-        <div class="section-inner">
-          <h2 id="blog-listing" class="sr-only">Blog Posts</h2>
-          <div class="blog-grid reveal">
-            <article class="blog-card">
-              <span class="blog-card-meta">Planning</span>
-              <h3>How to Plan Your Ideal Renovation: The Ultimate Blueprint for Success</h3>
-              <p>Building or renovating your home is a significant milestone. It's more than just a project — it's a deeply personal adventure. We offer a streamlined approach to planning your ideal renovation or extension.</p>
+      <!-- Blog Grid -->
+      <section class="section section--white" aria-label="Blog articles">
+        <div class="container">
+          <div class="blog-grid">
+
+            <article class="blog-card reveal">
+              <span class="blog-card__meta">Featured Article</span>
+              <h2 class="blog-card__title">How to Plan Your Ideal Renovation/Extension: The Ultimate Blueprint for Success</h2>
+              <p class="blog-card__excerpt">Building or renovating your home is a significant milestone and it's more than just a project. It's a deeply personal adventure often accompanied by a mix of excitement and uncertainty. We understand that behind every decision, there lies a story, a dream, or a memory waiting to be cherished. The journey has its highs but if not managed correctly, can also have its lows.</p>
+              <span class="blog-card__link">Read Article</span>
             </article>
-            <article class="blog-card">
-              <span class="blog-card-meta">Budget</span>
-              <h3>Keeping Your Project on Budget: Strategies to Avoid Hidden Costs</h3>
-              <p>Creating a home that mirrors your vision while staying within budget requires careful planning. Learn strategies to anticipate and avoid common cost blow-outs during your build.</p>
+
+            <article class="blog-card reveal">
+              <span class="blog-card__meta">Budgeting</span>
+              <h2 class="blog-card__title">Keeping Your Project on Budget: Strategies to Avoid Hidden Costs</h2>
+              <p class="blog-card__excerpt">Creating a home that mirrors your vision doesn't have to break the bank. Learn our strategies for keeping your renovation project on budget without compromising on quality.</p>
+              <span class="blog-card__link">Read Article</span>
             </article>
-            <article class="blog-card">
-              <span class="blog-card-meta">Timeline</span>
-              <h3>Keeping Your Renovation on Schedule: Tips for Avoiding Delays</h3>
-              <p>Understanding the impact of time on your renovation project is crucial. Discover practical tips to keep your build running smoothly and on schedule.</p>
+
+            <article class="blog-card reveal">
+              <span class="blog-card__meta">Planning</span>
+              <h2 class="blog-card__title">Keeping Your Renovation on Schedule: Tips for Avoiding Delays</h2>
+              <p class="blog-card__excerpt">Understanding the impact of time on your renovation project is crucial. Discover practical tips for keeping your build on track and avoiding common scheduling pitfalls.</p>
+              <span class="blog-card__link">Read Article</span>
             </article>
-            <article class="blog-card">
-              <span class="blog-card-meta">Communication</span>
-              <h3>How to Communicate Effectively with Your Builder for a Successful Project</h3>
-              <p>There's no doubt that communication is the cornerstone of a successful building project. Learn how to establish clear, productive dialogue with your builder from day one.</p>
+
+            <article class="blog-card reveal">
+              <span class="blog-card__meta">Communication</span>
+              <h2 class="blog-card__title">How to Communicate Effectively with Your Builder</h2>
+              <p class="blog-card__excerpt">There's no doubt that communication is the cornerstone of a successful building project. Learn how to establish clear, effective communication with your builder.</p>
+              <span class="blog-card__link">Read Article</span>
             </article>
-            <article class="blog-card">
-              <span class="blog-card-meta">Design</span>
-              <h3>Designing Functional Spaces: How to Create a Home That Grows with Your Lifestyle</h3>
-              <p>When building or renovating, thinking about how your needs will evolve is key. Explore how to design spaces that adapt and grow alongside your family.</p>
+
+            <article class="blog-card reveal">
+              <span class="blog-card__meta">Design</span>
+              <h2 class="blog-card__title">Designing Functional Spaces: How to Create a Home That Grows With Your Lifestyle</h2>
+              <p class="blog-card__excerpt">When building or renovating, it's essential to think beyond the present. Learn how to design spaces that adapt and grow with your family's changing needs.</p>
+              <span class="blog-card__link">Read Article</span>
             </article>
+
           </div>
         </div>
       </section>
+
+      <!-- CTA Band -->
+      <section class="cta-band" aria-label="Call to action">
+        <div class="container reveal">
+          <span class="eyebrow" style="color:var(--black);">Get Started</span>
+          <h2 class="section-heading">Have a project <em>in mind?</em></h2>
+          <p class="section-subtitle">Get in touch and let's discuss how we can bring your vision to life.</p>
+          <a href="#contact" class="btn btn--dark">Request a Consult</a>
+        </div>
+      </section>
+
     </div><!-- /page-blog -->
 
+    <!-- ======================== CAREERS PAGE ======================== -->
+    <div class="page" id="page-careers" data-page="careers">
 
-    <!-- ====== CAREERS PAGE ====== -->
-    <div class="page" id="page-careers">
-      <div class="page-hero">
-        <div class="page-hero-inner">
-          <span class="section-label">Join Our Team</span>
-          <h1>Work <em>With Us</em></h1>
-          <p>We're always looking for skilled, passionate people to join the Rentoule Projects team in Canberra.</p>
+      <!-- Hero -->
+      <section class="hero hero--page" aria-label="Careers hero">
+        <div class="hero__bg" style="background-image: url('./assets/about-team.png')"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <span class="hero__eyebrow">Careers</span>
+          <h1 class="hero__title">Would you like to <em>work</em> with us?</h1>
+          <p class="hero__subtitle">Join a team that values craftsmanship, integrity and taking pride in the work we do every day.</p>
         </div>
-      </div>
+      </section>
 
-      <section class="section" aria-labelledby="careers-listing">
-        <div class="section-narrow">
-          <h2 id="careers-listing" class="sr-only">Open Positions</h2>
-          <div class="reveal">
-            <div class="career-card">
-              <h3>Carpenter</h3>
-              <p>Are you a skilled carpenter who takes pride in creating beautiful, lasting spaces for families? We're seeking a carpenter to join our renovation team in Canberra. You'll work on high-end home renovations, delivering exceptional quality while maintaining our reputation for craftsmanship.</p>
-              <a href="#contact" class="btn btn-outline-dark">Apply Now</a>
+      <!-- Careers Grid -->
+      <section class="section section--white" aria-label="Open positions">
+        <div class="container">
+          <div style="text-align:center; margin-bottom:var(--space-3xl);" class="reveal">
+            <span class="eyebrow">Open Positions</span>
+            <h2 class="section-heading">Current <em>opportunities</em></h2>
+          </div>
+          <div class="careers-grid">
+
+            <div class="career-card reveal">
+              <div>
+                <h3 class="career-card__title">Carpenter</h3>
+                <p class="career-card__text">Are you a skilled carpenter who takes pride in creating beautiful, lasting spaces for families? Rentoule Projects is seeking a carpenter to join our renovation team in Canberra. You'll work on high-end home renovations, delivering exceptional quality while maintaining our reputation for craftsmanship.</p>
+              </div>
+              <a href="mailto:info@rentouleprojects.com?subject=Application: Carpenter" class="btn btn--primary">Apply</a>
             </div>
-            <div class="career-card">
-              <h3>Apprentice Carpenter</h3>
-              <p>Want to learn from experienced craftsmen while working on quality home renovations? We're looking for an apprentice carpenter to join our team and develop their skills on premium residential projects across Canberra.</p>
-              <a href="#contact" class="btn btn-outline-dark">Apply Now</a>
+
+            <div class="career-card reveal">
+              <div>
+                <h3 class="career-card__title">Apprentice Carpenter</h3>
+                <p class="career-card__text">Want to learn from experienced craftsmen while working on quality home renovations? Rentoule Projects is looking for an apprentice carpenter to join our team. You'll gain hands-on experience on premium residential projects across Canberra's inner suburbs.</p>
+              </div>
+              <a href="mailto:info@rentouleprojects.com?subject=Application: Apprentice Carpenter" class="btn btn--primary">Apply</a>
             </div>
-            <div class="career-card">
-              <h3>Project Coordinator</h3>
-              <p>Are you an organised professional who enjoys coordinating successful building projects? We need a detail-oriented Project Coordinator to help manage timelines, budgets and client communication across our residential projects.</p>
-              <a href="#contact" class="btn btn-outline-dark">Apply Now</a>
+
+            <div class="career-card reveal">
+              <div>
+                <h3 class="career-card__title">Project Coordinator</h3>
+                <p class="career-card__text">Are you an organised professional who enjoys coordinating successful building projects? Rentoule Projects needs a detail-oriented Project Coordinator to help manage our premium renovation and building projects in Canberra.</p>
+              </div>
+              <a href="mailto:info@rentouleprojects.com?subject=Application: Project Coordinator" class="btn btn--primary">Apply</a>
             </div>
+
           </div>
         </div>
       </section>
+
+      <!-- CTA Band -->
+      <section class="cta-band" aria-label="Call to action">
+        <div class="container reveal">
+          <span class="eyebrow" style="color:var(--black);">Join the Team</span>
+          <h2 class="section-heading">Don't see the right <em>role?</em></h2>
+          <p class="section-subtitle">We're always looking for talented people. Send us your details and we'll keep you in mind for future opportunities.</p>
+          <a href="mailto:info@rentouleprojects.com?subject=General Career Enquiry" class="btn btn--dark">Get in Touch</a>
+        </div>
+      </section>
+
     </div><!-- /page-careers -->
 
+    <!-- ======================== CONTACT PAGE ======================== -->
+    <div class="page" id="page-contact" data-page="contact">
 
-    <!-- ====== CONTACT PAGE ====== -->
-    <div class="page" id="page-contact">
-      <div class="page-hero">
-        <div class="page-hero-inner">
-          <span class="section-label">Get in Touch</span>
-          <h1>Let's <em>talk</em></h1>
-          <p>Whether you're ready to start your project or just exploring ideas, we'd love to hear from you.</p>
+      <!-- Hero -->
+      <section class="hero hero--page" aria-label="Contact hero">
+        <div class="hero__bg" style="background-image: url('./assets/hero-home.png')"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <span class="hero__eyebrow">Contact Us</span>
+          <h1 class="hero__title">Let's start <em>your</em> project</h1>
+          <p class="hero__subtitle">We're always happy to answer your questions and discuss how we can help bring your vision to life.</p>
         </div>
-      </div>
+      </section>
 
-      <section class="section" aria-labelledby="contact-form-heading">
-        <div class="two-col section-inner reveal">
-          <div>
-            <h2 id="contact-form-heading" class="section-title">Request a <em>Consultation</em></h2>
-            <p class="section-subtitle" style="margin-bottom:var(--space-6);">Fill out the form and we'll be in touch within 24 hours to discuss your project.</p>
-            <form class="contact-form" onsubmit="handleFormSubmit(event)">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required placeholder="Your full name">
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="Your phone number">
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="you@example.com">
-              </div>
-              <div class="form-group">
-                <label for="service">Service</label>
-                <select id="service" name="service">
-                  <option value="">Select a service</option>
-                  <option value="new-build">New Build</option>
-                  <option value="extension">Extension</option>
-                  <option value="renovation">Renovation</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div class="form-group full-width">
-                <label for="message">How can we help?</label>
-                <textarea id="message" name="message" placeholder="Tell us about your project..."></textarea>
-              </div>
-              <div class="form-actions">
-                <button type="submit" class="btn btn-primary">Send Message</button>
-              </div>
-            </form>
-          </div>
-          <div>
-            <div class="contact-info" style="margin-bottom:var(--space-8);">
-              <h3 style="font-size:var(--text-lg);font-weight:600;margin-bottom:var(--space-4);">Contact Details</h3>
-              <div class="contact-info-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                <div>
-                  <strong>Phone</strong>
-                  <a href="tel:0434435966">0434 435 966</a>
+      <!-- Contact Form & Info -->
+      <section class="section section--white" aria-label="Contact form">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="reveal">
+              <span class="eyebrow">Send a Message</span>
+              <h2 class="section-heading" style="margin-bottom:var(--space-2xl);">Request a <em>consultation</em></h2>
+
+              <form id="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="contact-name">Name</label>
+                  <input type="text" id="contact-name" name="name" required placeholder="Your full name">
+                  <span class="error-msg">Please enter your name</span>
                 </div>
-              </div>
-              <div class="contact-info-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                <div>
-                  <strong>Email</strong>
-                  <a href="mailto:info@rentouleprojects.com">info@rentouleprojects.com</a>
+                <div class="form-group">
+                  <label for="contact-phone">Phone</label>
+                  <input type="tel" id="contact-phone" name="phone" placeholder="Your phone number">
+                  <span class="error-msg">Please enter a valid phone number</span>
                 </div>
-              </div>
-              <div class="contact-info-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <div>
-                  <strong>Location</strong>
-                  <span>Canberra, ACT, Australia</span>
+                <div class="form-group">
+                  <label for="contact-email">Email</label>
+                  <input type="email" id="contact-email" name="email" required placeholder="Your email address">
+                  <span class="error-msg">Please enter a valid email address</span>
                 </div>
-              </div>
-              <div class="contact-info-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                <div>
-                  <strong>Director</strong>
-                  <span>Jeff Rentoule</span>
+                <div class="form-group">
+                  <label for="contact-service">Service</label>
+                  <select id="contact-service" name="service" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="new-build">New Build</option>
+                    <option value="extension">Extension</option>
+                    <option value="renovation">Renovation</option>
+                    <option value="other">Other / Not Sure</option>
+                  </select>
+                  <span class="error-msg">Please select a service</span>
                 </div>
+                <div class="form-group">
+                  <label for="contact-message">How can we help you?</label>
+                  <textarea id="contact-message" name="message" required placeholder="Tell us about your project..."></textarea>
+                  <span class="error-msg">Please enter a message</span>
+                </div>
+                <button type="submit" class="btn btn--primary">Submit Enquiry</button>
+              </form>
+
+              <div class="form-success" id="form-success">
+                <h3 class="form-success__title">Thank you!</h3>
+                <p class="form-success__text">Your message has been received. We'll be in touch within 24 hours to discuss your project.</p>
               </div>
             </div>
 
-            <div class="consult-benefits">
-              <div class="consult-benefit">
-                <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Tailored Advice</h3>
-                <p>Get expert guidance specific to your property and goals.</p>
+            <div class="contact-info reveal">
+              <h3 class="contact-info__title">We are always happy to <em>answer your questions</em></h3>
+
+              <div class="contact-info__item">
+                <svg class="contact-info__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <div>
+                  <div class="contact-info__label">Phone</div>
+                  <div class="contact-info__value"><a href="tel:0434435966">0434 435 966</a></div>
+                </div>
               </div>
-              <div class="consult-benefit">
-                <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Clear Blueprint</h3>
-                <p>Walk away with a clear plan for your project's next steps.</p>
+
+              <div class="contact-info__item">
+                <svg class="contact-info__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <div>
+                  <div class="contact-info__label">Email</div>
+                  <div class="contact-info__value"><a href="mailto:info@rentouleprojects.com">info@rentouleprojects.com</a></div>
+                </div>
               </div>
-              <div class="consult-benefit">
-                <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Avoid Costly Mistakes</h3>
-                <p>Save up to 3x by investing in design at the outset.</p>
+
+              <div class="contact-info__item">
+                <svg class="contact-info__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div>
+                  <div class="contact-info__label">Location</div>
+                  <div class="contact-info__value">Canberra, ACT, Australia</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- CTA Band -->
+      <section class="cta-band" aria-label="Call to action">
+        <div class="container reveal">
+          <span class="eyebrow" style="color:var(--black);">Prefer to Talk?</span>
+          <h2 class="section-heading">Call us on <em>0434 435 966</em></h2>
+          <p class="section-subtitle">We're available to chat about your project and answer any questions you might have.</p>
+          <a href="tel:0434435966" class="btn btn--dark">Call Now</a>
+        </div>
+      </section>
+
     </div><!-- /page-contact -->
 
   </main>
 
   <!-- ====== FOOTER ====== -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="#home" class="logo" aria-label="Rentoule Projects - Home">
-          <svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-            <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5"/>
-            <text x="50%" y="53%" text-anchor="middle" dominant-baseline="central" font-family="'Instrument Serif', Georgia, serif" font-size="15" font-style="italic" fill="currentColor">RP</text>
-          </svg>
-          <span class="logo-text">Rentoule Projects</span>
-        </a>
-        <p>Premium home renovations, extensions and new builds across Canberra's inner suburbs.</p>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/rentoule_projects/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="https://www.facebook.com/p/Rentoule-Projects-100093837338330/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- About Column -->
+        <div>
+          <h4 class="footer__heading">Rentoule Projects</h4>
+          <p class="footer__about-text">Premium residential builder specialising in high-end home renovations, extensions and custom new builds across Canberra's inner suburbs. Director &mdash; Jeff Rentoule.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/rentoule_projects/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/p/Rentoule-Projects-100093837338330/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
         </div>
+
+        <!-- Services Column -->
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <div class="footer__links">
+            <a href="#services">New Builds</a>
+            <a href="#services">Extensions</a>
+            <a href="#services">Renovations</a>
+          </div>
+        </div>
+
+        <!-- Case Studies Column -->
+        <div>
+          <h4 class="footer__heading">Case Studies</h4>
+          <div class="footer__links">
+            <a href="#case-studies">Chris &mdash; Weetangera</a>
+            <a href="#case-studies">50 Year Home Renovation</a>
+            <a href="#case-studies">Mark Page &mdash; Griffith</a>
+          </div>
+        </div>
+
+        <!-- Navigation Column -->
+        <div>
+          <h4 class="footer__heading">Navigation</h4>
+          <div class="footer__links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#blog">Blog</a>
+            <a href="#careers">Careers</a>
+          </div>
+        </div>
+
       </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#services" onclick="showServiceDetail('new-builds')">New Builds</a></li>
-          <li><a href="#services" onclick="showServiceDetail('extensions')">Extensions</a></li>
-          <li><a href="#services" onclick="showServiceDetail('renovations')">Renovations</a></li>
-        </ul>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Rentoule Projects. All rights reserved.</p>
+        <p>Canberra, ACT, Australia</p>
       </div>
-      <div class="footer-col">
-        <h4>Case Studies</h4>
-        <ul>
-          <li><a href="#case-studies">Chris — Weetangera</a></li>
-          <li><a href="#case-studies">50-Year Transformation</a></li>
-          <li><a href="#case-studies">Mark Page — Griffith</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#careers">Careers</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Rentoule Projects. All rights reserved.</p>
-      <p>Director — Jeff Rentoule &bull; Canberra, ACT</p>
     </div>
   </footer>
 
-  <script src="./app.js" defer></script>
+  <script src="./app.js"></script>
 </body>
 </html>

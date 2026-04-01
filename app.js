@@ -1,199 +1,245 @@
-/* ============================================
-   RENTOULE PROJECTS — App JS
-   ============================================ */
+/* ========================================
+   Rentoule Projects — App Logic
+   ======================================== */
 
 (function () {
   'use strict';
 
-  // --- Theme Toggle ---
-  const toggle = document.querySelector('[data-theme-toggle]');
-  const root = document.documentElement;
-  let currentTheme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  root.setAttribute('data-theme', currentTheme);
-  updateToggleIcon();
+  // ============ ROUTER ============
+  const pages = document.querySelectorAll('.page');
+  const navLinks = document.querySelectorAll('[data-nav]');
+  const mobileNav = document.querySelector('.nav__mobile');
+  const hamburger = document.querySelector('.nav__hamburger');
 
-  if (toggle) {
-    toggle.addEventListener('click', function () {
-      currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', currentTheme);
-      toggle.setAttribute('aria-label', 'Switch to ' + (currentTheme === 'dark' ? 'light' : 'dark') + ' mode');
-      updateToggleIcon();
-    });
+  function getHash() {
+    const hash = window.location.hash.replace('#', '') || 'home';
+    return hash;
   }
 
-  function updateToggleIcon() {
-    if (!toggle) return;
-    toggle.innerHTML = currentTheme === 'dark'
-      ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
-      : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
-  }
+  function navigateTo(pageId) {
+    // Hide all pages
+    pages.forEach(p => p.classList.remove('active'));
 
-  // --- Header Scroll ---
-  const header = document.querySelector('.site-header');
-  let lastScroll = 0;
-  window.addEventListener('scroll', function () {
-    const scrollY = window.scrollY;
-    if (scrollY > 60) {
-      header.classList.add('scrolled');
+    // Show target page
+    const target = document.getElementById('page-' + pageId);
+    if (target) {
+      target.classList.add('active');
     } else {
-      header.classList.remove('scrolled');
+      // Fallback to home
+      document.getElementById('page-home').classList.add('active');
+      pageId = 'home';
     }
-    lastScroll = scrollY;
-  }, { passive: true });
 
-  // --- Mobile Nav ---
-  const mobileToggle = document.querySelector('.mobile-toggle');
-  const mobileNav = document.querySelector('.mobile-nav');
+    // Update nav active state
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('data-nav') === pageId);
+    });
 
-  if (mobileToggle) {
-    mobileToggle.addEventListener('click', function () {
-      const isOpen = mobileNav.classList.contains('open');
-      mobileNav.classList.toggle('open');
-      mobileToggle.classList.toggle('active');
-      mobileToggle.setAttribute('aria-expanded', !isOpen);
-      document.body.style.overflow = isOpen ? '' : 'hidden';
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'instant' });
+
+    // Close mobile nav if open
+    closeMobileNav();
+
+    // Re-trigger scroll reveals for new page
+    setTimeout(checkReveal, 100);
+  }
+
+  // Listen for hash changes
+  window.addEventListener('hashchange', () => {
+    navigateTo(getHash());
+  });
+
+  // Initial load
+  document.addEventListener('DOMContentLoaded', () => {
+    navigateTo(getHash());
+    initTestimonialSlider();
+    initFAQ();
+    initContactForm();
+    initScrollReveal();
+  });
+
+  // ============ MOBILE NAV ============
+  function closeMobileNav() {
+    if (mobileNav) mobileNav.classList.remove('open');
+    if (hamburger) {
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+    if (mobileNav) mobileNav.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburger.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      mobileNav.setAttribute('aria-hidden', !isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
     });
   }
 
   // Close mobile nav on link click
   if (mobileNav) {
-    mobileNav.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        mobileNav.classList.remove('open');
-        mobileToggle.classList.remove('active');
-        mobileToggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeMobileNav);
+    });
+  }
+
+  // ============ TESTIMONIAL SLIDER ============
+  function initTestimonialSlider() {
+    const slider = document.querySelector('.testimonials-slider');
+    if (!slider) return;
+
+    const track = slider.querySelector('.testimonials-track');
+    const slides = slider.querySelectorAll('.testimonial-slide');
+    const dots = slider.querySelectorAll('.testimonials-dot');
+    let currentSlide = 0;
+    let autoPlayTimer;
+
+    function goToSlide(index) {
+      if (index < 0) index = slides.length - 1;
+      if (index >= slides.length) index = 0;
+      currentSlide = index;
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === currentSlide));
+    }
+
+    // Dot clicks
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        goToSlide(parseInt(dot.getAttribute('data-slide')));
+        resetAutoPlay();
       });
     });
-  }
 
-  // --- Hash-based Page Routing ---
-  function showPage(pageId) {
-    document.querySelectorAll('.page').forEach(function (p) {
-      p.classList.remove('active');
-    });
-    var target = document.getElementById('page-' + pageId);
-    if (target) {
-      target.classList.add('active');
-    } else {
-      document.getElementById('page-home').classList.add('active');
-      pageId = 'home';
+    // Auto-play
+    function startAutoPlay() {
+      autoPlayTimer = setInterval(() => goToSlide(currentSlide + 1), 6000);
     }
 
-    // Update active nav
-    document.querySelectorAll('.main-nav a:not(.theme-toggle)').forEach(function (a) {
-      a.classList.remove('active');
-      if (a.getAttribute('href') === '#' + pageId) {
-        a.classList.add('active');
+    function resetAutoPlay() {
+      clearInterval(autoPlayTimer);
+      startAutoPlay();
+    }
+
+    startAutoPlay();
+
+    // Touch support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    track.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    track.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+          goToSlide(currentSlide + 1);
+        } else {
+          goToSlide(currentSlide - 1);
+        }
+        resetAutoPlay();
       }
-    });
-
-    // Toggle header style for hero pages vs inner pages
-    if (pageId === 'home') {
-      header.classList.remove('inner-page');
-    } else {
-      header.classList.add('inner-page');
-    }
-
-    // Scroll to top
-    window.scrollTo(0, 0);
-
-    // Re-trigger header scroll state
-    header.classList.remove('scrolled');
-
-    // Re-trigger reveal animations
-    setTimeout(initReveal, 100);
-
-    // Update document title for SEO
-    updateTitle(pageId);
+    }, { passive: true });
   }
 
-  function updateTitle(pageId) {
-    var titles = {
-      'home': 'Rentoule Projects | Premium Home Renovations, Extensions & New Builds in Canberra',
-      'about': 'About Us | Rentoule Projects — Canberra Builder',
-      'services': 'Our Services | Home Renovations, Extensions & New Builds | Rentoule Projects',
-      'case-studies': 'Case Studies | Our Work | Rentoule Projects Canberra',
-      'blog': 'Blog | Building & Renovation Insights | Rentoule Projects',
-      'careers': 'Careers | Join Our Team | Rentoule Projects Canberra',
-      'contact': 'Contact Us | Request a Consultation | Rentoule Projects'
-    };
-    document.title = titles[pageId] || titles['home'];
-  }
+  // ============ FAQ ACCORDION ============
+  function initFAQ() {
+    const faqItems = document.querySelectorAll('.faq-item');
 
-  function handleHash() {
-    var hash = window.location.hash.replace('#', '') || 'home';
-    showPage(hash);
-  }
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
 
-  window.addEventListener('hashchange', handleHash);
-  // Run on load
-  handleHash();
+        // Close all
+        faqItems.forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
 
-  // --- Scroll Reveal ---
-  function initReveal() {
-    var reveals = document.querySelectorAll('.reveal:not(.visible)');
-    if (!reveals.length) return;
-
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
+        // Open clicked (if wasn't open)
+        if (!isOpen) {
+          item.classList.add('open');
+          question.setAttribute('aria-expanded', 'true');
         }
       });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-    reveals.forEach(function (el) { observer.observe(el); });
-  }
-  initReveal();
-
-  // --- FAQ Accordion ---
-  document.querySelectorAll('.faq-question').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var item = btn.closest('.faq-item');
-      var isOpen = item.classList.contains('open');
-
-      // Close all other items
-      document.querySelectorAll('.faq-item.open').forEach(function (openItem) {
-        if (openItem !== item) openItem.classList.remove('open');
-      });
-
-      item.classList.toggle('open');
-      btn.setAttribute('aria-expanded', !isOpen);
     });
-  });
+  }
 
-  // --- Form Submit Handler ---
-  window.handleFormSubmit = function (e) {
-    e.preventDefault();
-    var form = e.target;
-    var btn = form.querySelector('button[type="submit"]');
-    var originalText = btn.textContent;
-    btn.textContent = 'Sending...';
-    btn.disabled = true;
+  // ============ CONTACT FORM VALIDATION ============
+  function initContactForm() {
+    const form = document.getElementById('contact-form');
+    if (!form) return;
 
-    // Simulate send (in production, this would POST to a server)
-    setTimeout(function () {
-      btn.textContent = 'Message Sent!';
-      btn.style.background = '#3d7a2b';
-      form.reset();
-      setTimeout(function () {
-        btn.textContent = originalText;
-        btn.style.background = '';
-        btn.disabled = false;
-      }, 3000);
-    }, 1000);
-  };
+    const successEl = document.getElementById('form-success');
 
-  // --- Service Detail Navigation ---
-  window.showServiceDetail = function (service) {
-    setTimeout(function () {
-      var el = document.getElementById('service-' + service);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      let isValid = true;
+
+      // Reset errors
+      form.querySelectorAll('.form-group').forEach(g => g.classList.remove('error'));
+
+      // Name
+      const name = form.querySelector('#contact-name');
+      if (!name.value.trim()) {
+        name.closest('.form-group').classList.add('error');
+        isValid = false;
       }
-    }, 200);
-  };
+
+      // Email
+      const email = form.querySelector('#contact-email');
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email.value.trim())) {
+        email.closest('.form-group').classList.add('error');
+        isValid = false;
+      }
+
+      // Service
+      const service = form.querySelector('#contact-service');
+      if (!service.value) {
+        service.closest('.form-group').classList.add('error');
+        isValid = false;
+      }
+
+      // Message
+      const message = form.querySelector('#contact-message');
+      if (!message.value.trim()) {
+        message.closest('.form-group').classList.add('error');
+        isValid = false;
+      }
+
+      if (isValid) {
+        form.style.display = 'none';
+        successEl.classList.add('show');
+      }
+    });
+  }
+
+  // ============ SCROLL REVEAL ============
+  function initScrollReveal() {
+    checkReveal();
+    window.addEventListener('scroll', checkReveal, { passive: true });
+  }
+
+  function checkReveal() {
+    const reveals = document.querySelectorAll('.reveal');
+    const windowHeight = window.innerHeight;
+
+    reveals.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      const threshold = windowHeight * 0.88;
+      if (top < threshold) {
+        el.classList.add('visible');
+      }
+    });
+  }
 
 })();
