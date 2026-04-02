@@ -43,6 +43,11 @@
 
     // Re-trigger scroll reveals for new page
     setTimeout(checkReveal, 100);
+
+    // Re-initialise BA sliders when navigating to projects page
+    if (pageId === 'projects') {
+      setTimeout(resetBASliders, 150);
+    }
   }
 
   // Listen for hash changes
@@ -57,6 +62,7 @@
     initFAQ();
     initContactForm();
     initScrollReveal();
+    initBASliders();
   });
 
   // ============ MOBILE NAV ============
@@ -220,6 +226,64 @@
         form.style.display = 'none';
         successEl.classList.add('show');
       }
+    });
+  }
+
+  // ============ BEFORE/AFTER SLIDER ============
+  function resetBASliders() {
+    document.querySelectorAll('.ba-slider').forEach(slider => {
+      const handle = slider.querySelector('.ba-slider__handle');
+      const before = slider.querySelector('.ba-slider__before');
+      const rect = slider.getBoundingClientRect();
+      if (rect.width === 0) return;
+      handle.style.left = '50%';
+      before.style.clipPath = 'inset(0 50% 0 0)';
+    });
+  }
+
+  function initBASliders() {
+    document.querySelectorAll('.ba-slider').forEach(slider => {
+      const handle = slider.querySelector('.ba-slider__handle');
+      const before = slider.querySelector('.ba-slider__before');
+      let isDragging = false;
+
+      function setPosition(x) {
+        const rect = slider.getBoundingClientRect();
+        let pos = (x - rect.left) / rect.width;
+        pos = Math.max(0.05, Math.min(0.95, pos));
+        handle.style.left = (pos * 100) + '%';
+        before.style.clipPath = 'inset(0 ' + ((1 - pos) * 100) + '% 0 0)';
+      }
+
+      // Set initial position to 50%
+      function initPosition() {
+        const rect = slider.getBoundingClientRect();
+        setPosition(rect.left + rect.width / 2);
+      }
+
+      // Initialise on load and on page show (rect may be zero when hidden)
+      setTimeout(initPosition, 50);
+
+      // Mouse events
+      slider.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        setPosition(e.clientX);
+        e.preventDefault();
+      });
+      window.addEventListener('mousemove', (e) => {
+        if (isDragging) setPosition(e.clientX);
+      });
+      window.addEventListener('mouseup', () => { isDragging = false; });
+
+      // Touch events
+      slider.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        setPosition(e.touches[0].clientX);
+      }, { passive: true });
+      window.addEventListener('touchmove', (e) => {
+        if (isDragging) setPosition(e.touches[0].clientX);
+      }, { passive: true });
+      window.addEventListener('touchend', () => { isDragging = false; });
     });
   }
 
