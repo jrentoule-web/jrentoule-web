@@ -123,15 +123,18 @@
 }
 
 .nav__logo {
-  font-family: var(--serif);
-  font-size: 1.35rem;
-  font-weight: 300;
-  color: var(--white);
-  letter-spacing: 0.02em;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
-.nav__logo span {
-  color: var(--gold);
+.nav__logo-img {
+  height: 32px;
+  width: auto;
+  display: block;
+  transition: opacity 0.2s;
+}
+.nav__logo:hover .nav__logo-img {
+  opacity: 0.85;
 }
 
 .nav__links {
@@ -660,6 +663,12 @@
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
   gap: var(--space-3xl);
   margin-bottom: var(--space-4xl);
+}
+.footer__logo-img {
+  height: 38px;
+  width: auto;
+  display: block;
+  margin-bottom: var(--space-md);
 }
 .footer__heading {
   font-family: var(--sans);
