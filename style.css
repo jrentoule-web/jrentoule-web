@@ -31,8 +31,14 @@
   margin-bottom: var(--space-lg);
 }
 .section-heading em {
-  font-style: italic;
+  font-family: 'Amsterdam', var(--serif);
+  font-style: normal;
+  font-weight: 400;
   color: var(--gold-light);
+  letter-spacing: 0.01em;
+  font-size: 1.4em;
+  line-height: 0.9;
+  vertical-align: -0.05em;
 }
 
 .section-subtitle {
@@ -278,30 +284,40 @@
 }
 .hero__eyebrow {
   font-family: var(--sans);
-  font-size: 0.72rem;
-  font-weight: 400;
-  letter-spacing: 0.25em;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  display: block;
 }
 .hero__title {
   font-family: var(--serif);
   font-weight: 300;
-  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-size: clamp(3.2rem, 7vw, 6rem);
   color: var(--white);
-  line-height: 1.1;
-  margin-bottom: var(--space-lg);
+  line-height: 1.05;
+  margin-bottom: var(--space-xl);
+  letter-spacing: -0.01em;
 }
 .hero__title em {
-  font-style: italic;
+  font-family: 'Amsterdam', var(--serif);
+  font-style: normal;
+  font-weight: 400;
   color: var(--gold-light);
+  letter-spacing: 0.01em;
+  font-size: 1.45em;
+  line-height: 0.9;
+  vertical-align: -0.08em;
+  display: inline-block;
+  padding: 0 0.05em;
 }
 .hero__subtitle {
   font-family: var(--sans);
   font-weight: 300;
-  font-size: 1.05rem;
-  color: rgba(245,243,239,0.7);
+  font-size: 0.95rem;
+  color: rgba(245,243,239,0.65);
   line-height: 1.7;
   margin-bottom: var(--space-2xl);
   max-width: 580px;
@@ -1390,7 +1406,7 @@
 
   .container { padding: 0 var(--space-md); }
 
-  .hero__title { font-size: clamp(2rem, 8vw, 2.8rem); }
+  .hero__title { font-size: clamp(2.4rem, 9vw, 3.4rem); }
   .hero__actions { flex-direction: column; align-items: center; }
 
   .welcome__stats { flex-direction: column; gap: var(--space-lg); }
