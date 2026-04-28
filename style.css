@@ -289,7 +289,7 @@
   letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-md);
   display: block;
 }
 .hero__title {
