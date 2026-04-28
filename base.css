@@ -1,5 +1,5 @@
 /* ========================================
-   Rentoule Projects — Base Reset & Tokens
+   Rentoule Projects - Base Reset & Tokens
    ======================================== */
 
 *, *::before, *::after {
@@ -132,7 +132,7 @@ h1 em, h2 em, h3 em, h4 em {
   --noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
 }
 
-/* Green texture — applied to dark green and dark sections */
+/* Green texture - applied to dark green and dark sections */
 .cta-band,
 .breadcrumb,
 .section--green,
@@ -164,7 +164,7 @@ h1 em, h2 em, h3 em, h4 em {
   mix-blend-mode: soft-light;
 }
 
-/* Breadcrumb is a narrow strip — subtler texture */
+/* Breadcrumb is a narrow strip - subtler texture */
 .breadcrumb::after {
   opacity: 0.2;
 }

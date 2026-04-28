@@ -1,5 +1,5 @@
 /* ========================================
-   Rentoule Projects — App Logic
+   Rentoule Projects - App Logic
    ======================================== */
 
 (function () {
