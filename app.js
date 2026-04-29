@@ -165,6 +165,8 @@
 
     faqItems.forEach(item => {
       const question = item.querySelector('.faq-question');
+      // Skip items that don't follow the accordion pattern (e.g. simple h3+p FAQ blocks on landing pages)
+      if (!question) return;
       question.addEventListener('click', () => {
         const isOpen = item.classList.contains('open');
 
