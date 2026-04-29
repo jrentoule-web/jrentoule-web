@@ -1928,3 +1928,49 @@
   margin: 0 auto;
   padding: 0 var(--space-lg);
 }
+
+/* ---------- CASE STUDY GALLERY ---------- */
+.case-study-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-3xl);
+}
+.case-study-gallery figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+  background: var(--warm);
+}
+.case-study-gallery figure img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+.case-study-gallery figure:hover img {
+  transform: scale(1.04);
+}
+.case-study-gallery figcaption {
+  position: absolute;
+  bottom: var(--space-sm);
+  left: var(--space-sm);
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: rgba(14,14,12,0.8);
+  padding: 6px 12px;
+  border-radius: 2px;
+}
+@media (max-width: 720px) {
+  .case-study-gallery {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+}
