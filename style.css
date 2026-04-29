@@ -1932,7 +1932,7 @@
 /* ---------- CASE STUDY GALLERY ---------- */
 .case-study-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: var(--space-md);
   margin-top: var(--space-2xl);
   margin-bottom: var(--space-3xl);
