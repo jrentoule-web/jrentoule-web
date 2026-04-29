@@ -2037,3 +2037,27 @@
   border-left-color: var(--gold);
   transition: background 1.5s ease, border-color 1.5s ease;
 }
+
+/* ============================================
+   Welcome heading - staggered layout
+   "Your project," left, "our priority" right (next line)
+   ============================================ */
+.welcome__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+  text-align: left;
+  margin-bottom: var(--space-xl);
+}
+.welcome__heading-line1 {
+  align-self: flex-start;
+}
+.welcome__heading-line2 {
+  align-self: flex-end;
+  padding-right: 0.5em;
+}
+@media (max-width: 768px) {
+  .welcome__heading-line2 {
+    padding-right: 0.25em;
+  }
+}
