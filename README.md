@@ -17,3 +17,4 @@ Open `index.html` in a browser. No build step.
 
 Push to main and Netlify auto-deploys within 60 seconds.
 
+
