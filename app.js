@@ -17,6 +17,9 @@
   }
 
   function navigateTo(pageId) {
+    // Skip routing on standalone pages (no .page elements present)
+    if (!pages.length) return;
+
     // Hide all pages
     pages.forEach(p => p.classList.remove('active'));
 
@@ -26,7 +29,8 @@
       target.classList.add('active');
     } else {
       // Fallback to home
-      document.getElementById('page-home').classList.add('active');
+      const home = document.getElementById('page-home');
+      if (home) home.classList.add('active');
       pageId = 'home';
     }
 
