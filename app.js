@@ -61,6 +61,7 @@
     initTestimonialSlider();
     initFAQ();
     initContactForm();
+    initCareerForm();
     initScrollReveal();
     initBASliders();
   });
@@ -223,8 +224,90 @@
       }
 
       if (isValid) {
+        submitNetlifyForm(form, successEl);
+      }
+    });
+  }
+
+  // ============ NETLIFY FORM SUBMISSION ============
+  function submitNetlifyForm(form, successEl) {
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalLabel = submitBtn ? submitBtn.textContent : '';
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting...';
+    }
+
+    const formData = new FormData(form);
+
+    fetch('/', {
+      method: 'POST',
+      body: formData
+    })
+      .then((response) => {
+        if (!response.ok) throw new Error('Submission failed');
         form.style.display = 'none';
-        successEl.classList.add('show');
+        if (successEl) successEl.classList.add('show');
+        form.reset();
+      })
+      .catch(() => {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalLabel;
+        }
+        alert('Sorry, your submission could not be sent. Please email info@rentouleprojects.com directly.');
+      });
+  }
+
+  // ============ CAREER APPLICATION FORM ============
+  function initCareerForm() {
+    const form = document.getElementById('career-form');
+    if (!form) return;
+
+    const successEl = document.getElementById('career-success');
+
+    // Pre-select role when an Apply button is clicked
+    document.querySelectorAll('[data-apply-role]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const role = btn.getAttribute('data-apply-role');
+        const select = form.querySelector('#career-role');
+        if (select && role) {
+          for (const opt of select.options) {
+            if (opt.value === role) {
+              select.value = role;
+              break;
+            }
+          }
+        }
+      });
+    });
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let isValid = true;
+      form.querySelectorAll('.form-group').forEach((g) => g.classList.remove('error'));
+
+      const required = ['#career-role', '#career-name', '#career-email', '#career-phone', '#career-experience', '#career-message', '#career-resume'];
+      required.forEach((sel) => {
+        const el = form.querySelector(sel);
+        if (!el) return;
+        const val = el.type === 'file' ? el.files.length : el.value.trim();
+        if (!val) {
+          el.closest('.form-group').classList.add('error');
+          isValid = false;
+        }
+      });
+
+      // Email format
+      const email = form.querySelector('#career-email');
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (email.value.trim() && !emailRegex.test(email.value.trim())) {
+        email.closest('.form-group').classList.add('error');
+        isValid = false;
+      }
+
+      if (isValid) {
+        submitNetlifyForm(form, successEl);
       }
     });
   }
