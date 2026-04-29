@@ -1,0 +1,252 @@
+# Netlify build & deploy configuration for Rentoule Projects
+# Static site, no build step - publish repo root as-is
+
+[build]
+  publish = "."
+
+# Old WordPress URLs → new site structure
+# These ensure SEO/inbound links don't 404 after the cutover
+
+# --- BLOG POSTS (was root-level, now under /blog/) ---
+[[redirects]]
+  from = "/bathroom-renovation-costs-canberra/"
+  to = "/blog/bathroom-renovation-costs-canberra/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/best-suburbs-renovation-roi-canberra/"
+  to = "/blog/best-suburbs-renovation-roi-canberra/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/choosing-right-builder-canberra/"
+  to = "/blog/choosing-right-builder-canberra/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/do-you-need-da-approval-renovations-act/"
+  to = "/blog/da-approval-act-renovations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/extension-vs-renovation-canberra/"
+  to = "/blog/extension-vs-renovation-canberra/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/home-extension-costs-canberra/"
+  to = "/blog/home-extension-costs-canberra/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/home-renovation-costs-canberra/"
+  to = "/blog/home-renovation-costs-canberra/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-plan-renovation-canberra/"
+  to = "/blog/how-to-plan-renovation-canberra/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kitchen-renovation-costs-canberra/"
+  to = "/blog/kitchen-renovation-costs-canberra/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/renovation-hidden-costs-canberra/"
+  to = "/blog/renovation-hidden-costs-canberra/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/middle-east-conflict-construction-costs-australia/"
+  to = "/blog/middle-east-conflict-construction-costs-australia/"
+  status = 301
+  force = true
+
+# --- OLD SUSTAINABILITY ARTICLES (no equivalent, send to blog index) ---
+[[redirects]]
+  from = "/building-a-sustainable-future-in-australia/"
+  to = "/#blog"
+  status = 301
+
+[[redirects]]
+  from = "/how-we-create-sustainable-homes-in-australia/"
+  to = "/#blog"
+  status = 301
+
+[[redirects]]
+  from = "/the-art-of-sustainable-design-in-australia/"
+  to = "/#blog"
+  status = 301
+
+[[redirects]]
+  from = "/the-future-of-sustainable-architecture-in-australia/"
+  to = "/#blog"
+  status = 301
+
+[[redirects]]
+  from = "/why-sustainability-matters-in-australian-construction/"
+  to = "/#blog"
+  status = 301
+
+# --- CASE STUDIES ---
+[[redirects]]
+  from = "/chris-weetangera/"
+  to = "/#case-studies"
+  status = 301
+
+[[redirects]]
+  from = "/project-1/"
+  to = "/#case-studies"
+  status = 301
+
+[[redirects]]
+  from = "/project-2/"
+  to = "/#case-studies"
+  status = 301
+
+# --- SERVICES: KEEP HIGH-SEO LANDING PAGES ---
+[[redirects]]
+  from = "/knockdown-rebuild-canberra/"
+  to = "/services/knockdown-rebuild-canberra/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/custom-home-builder-canberra/"
+  to = "/"
+  status = 301
+  force = true
+
+# --- OTHER SERVICE PAGES ---
+[[redirects]]
+  from = "/home-extension-canberra/"
+  to = "/#services"
+  status = 301
+
+[[redirects]]
+  from = "/second-storey-addition-canberra/"
+  to = "/#services"
+  status = 301
+
+[[redirects]]
+  from = "/renovation-builder-canberra/"
+  to = "/#services"
+  status = 301
+
+[[redirects]]
+  from = "/fixed-price-builder-canberra/"
+  to = "/#services"
+  status = 301
+
+[[redirects]]
+  from = "/building-services-canberra/"
+  to = "/#services"
+  status = 301
+
+[[redirects]]
+  from = "/services/"
+  to = "/#services"
+  status = 301
+
+[[redirects]]
+  from = "/services/bathroom-renovations/"
+  to = "/#services"
+  status = 301
+
+[[redirects]]
+  from = "/services/custom-homes/"
+  to = "/#services"
+  status = 301
+
+[[redirects]]
+  from = "/services/extensions/"
+  to = "/#services"
+  status = 301
+
+[[redirects]]
+  from = "/services/kitchen-renovations/"
+  to = "/#services"
+  status = 301
+
+[[redirects]]
+  from = "/services/renovations/"
+  to = "/#services"
+  status = 301
+
+[[redirects]]
+  from = "/services/single-storey-additions/"
+  to = "/#services"
+  status = 301
+
+# --- LOCATIONS ---
+[[redirects]]
+  from = "/locations/*"
+  to = "/"
+  status = 301
+
+# --- STANDARD PAGES ---
+[[redirects]]
+  from = "/about/"
+  to = "/#about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/"
+  to = "/#blog"
+  status = 301
+
+[[redirects]]
+  from = "/case-studies/"
+  to = "/#case-studies"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact/"
+  to = "/#contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/request-a-consult/"
+  to = "/#contact"
+  status = 301
+
+[[redirects]]
+  from = "/thank-you/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/home-2/"
+  to = "/"
+  status = 301
+
+# --- CAREERS ---
+[[redirects]]
+  from = "/careers-available/"
+  to = "/#careers"
+  status = 301
+
+[[redirects]]
+  from = "/careers/"
+  to = "/#careers"
+  status = 301
+
+[[redirects]]
+  from = "/careers/*"
+  to = "/#careers"
+  status = 301
