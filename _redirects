@@ -1,0 +1,74 @@
+# ============================================
+# Rentoule Projects - Netlify Redirects
+# Maps old WordPress URLs to new site structure
+# Format: /old-path  /new-path  301
+# ============================================
+
+# --- BLOG POSTS (was root-level, now under /blog/) ---
+/bathroom-renovation-costs-canberra/             /blog/bathroom-renovation-costs-canberra/             301
+/best-suburbs-renovation-roi-canberra/           /blog/best-suburbs-renovation-roi-canberra/           301
+/choosing-right-builder-canberra/                /blog/choosing-right-builder-canberra/                301
+/do-you-need-da-approval-renovations-act/        /blog/da-approval-act-renovations/                    301
+/extension-vs-renovation-canberra/               /blog/extension-vs-renovation-canberra/               301
+/home-extension-costs-canberra/                  /blog/home-extension-costs-canberra/                  301
+/home-renovation-costs-canberra/                 /blog/home-renovation-costs-canberra/                 301
+/how-to-plan-renovation-canberra/                /blog/how-to-plan-renovation-canberra/                301
+/kitchen-renovation-costs-canberra/              /blog/kitchen-renovation-costs-canberra/              301
+/renovation-hidden-costs-canberra/               /blog/renovation-hidden-costs-canberra/               301
+/middle-east-conflict-construction-costs-australia/  /blog/middle-east-conflict-construction-costs-australia/  301
+
+# --- OLD SUSTAINABILITY ARTICLES (no equivalent, send to blog index) ---
+/building-a-sustainable-future-in-australia/         /#blog  301
+/how-we-create-sustainable-homes-in-australia/       /#blog  301
+/the-art-of-sustainable-design-in-australia/         /#blog  301
+/the-future-of-sustainable-architecture-in-australia/  /#blog  301
+/why-sustainability-matters-in-australian-construction/  /#blog  301
+
+# --- CASE STUDIES (old WP slugs to new section anchor) ---
+/chris-weetangera/    /#case-studies  301
+/project-1/           /#case-studies  301
+/project-2/           /#case-studies  301
+
+# --- SERVICES: KEEP HIGH-SEO LANDING PAGES ---
+/knockdown-rebuild-canberra/    /services/knockdown-rebuild-canberra/    301
+/custom-home-builder-canberra/  /                                        301
+
+# --- OTHER SERVICE PAGES (no equivalent, send to services section) ---
+/home-extension-canberra/           /#services  301
+/second-storey-addition-canberra/   /#services  301
+/renovation-builder-canberra/       /#services  301
+/fixed-price-builder-canberra/      /#services  301
+/building-services-canberra/        /#services  301
+/services/                          /#services  301
+/services/bathroom-renovations/     /#services  301
+/services/custom-homes/             /#services  301
+/services/extensions/               /#services  301
+/services/kitchen-renovations/      /#services  301
+/services/renovations/              /#services  301
+/services/single-storey-additions/  /#services  301
+
+# --- LOCATIONS (no longer have these pages) ---
+/locations/            /  301
+/locations/act/        /  301
+/locations/ainslie/    /  301
+/locations/campbell/   /  301
+/locations/canberra/   /  301
+/locations/griffith/   /  301
+/locations/turner/     /  301
+/locations/yarralumla/ /  301
+
+# --- STANDARD PAGES ---
+/about/             /#about     301
+/blog/              /#blog      301
+/case-studies/      /#case-studies  301
+/contact/           /#contact   301
+/request-a-consult/ /#contact   301
+/thank-you/         /           301
+/home-2/            /           301
+
+# --- CAREERS ---
+/careers-available/             /#careers  301
+/careers/                       /#careers  301
+/careers/general-manager-role/    /#careers  301
+/careers/general-manager-role-2/  /#careers  301
+/careers/general-manager-role-3/  /#careers  301
