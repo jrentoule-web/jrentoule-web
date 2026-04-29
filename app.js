@@ -266,9 +266,10 @@
 
     const successEl = document.getElementById('career-success');
 
-    // Pre-select role when an Apply button is clicked
+    // Apply button: scroll to form within careers page and pre-select role
     document.querySelectorAll('[data-apply-role]').forEach((btn) => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
         const role = btn.getAttribute('data-apply-role');
         const select = form.querySelector('#career-role');
         if (select && role) {
@@ -278,6 +279,11 @@
               break;
             }
           }
+        }
+        // Smooth scroll to the form
+        const target = document.getElementById('careers-apply');
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       });
     });
