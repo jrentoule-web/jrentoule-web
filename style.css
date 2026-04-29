@@ -27,7 +27,7 @@
   font-family: var(--serif);
   font-weight: 300;
   font-size: clamp(2rem, 4vw, 3.2rem);
-  line-height: 1.15;
+  line-height: 1.4;
   margin-bottom: var(--space-lg);
 }
 .section-heading em {
@@ -37,8 +37,10 @@
   color: var(--gold-light);
   letter-spacing: 0.01em;
   font-size: 1.4em;
-  line-height: 0.9;
+  line-height: 1;
   vertical-align: -0.05em;
+  display: inline-block;
+  padding-bottom: 0.15em;
 }
 
 .section-subtitle {
@@ -311,10 +313,10 @@
   color: var(--gold-light);
   letter-spacing: 0.01em;
   font-size: 1.45em;
-  line-height: 0.9;
+  line-height: 1;
   vertical-align: -0.08em;
   display: inline-block;
-  padding: 0 0.05em;
+  padding: 0 0.05em 0.15em;
 }
 .hero__subtitle {
   font-family: var(--sans);
