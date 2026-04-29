@@ -16,3 +16,4 @@ Open `index.html` in a browser. No build step.
 - Styles: edit `style.css` and `base.css`
 
 Push to main and Netlify auto-deploys within 60 seconds.
+
