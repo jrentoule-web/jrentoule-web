@@ -217,6 +217,8 @@
   left: 0;
   right: 0;
   bottom: 0;
+  height: calc(100vh - var(--nav-height));
+  height: calc(100dvh - var(--nav-height));
   background: #0e0e0c;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
