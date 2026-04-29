@@ -1974,3 +1974,64 @@
     gap: var(--space-sm);
   }
 }
+
+/* ============================================
+   Price Guide Disclaimer
+   Used on all cost-related blog & service pages
+   ============================================ */
+.article-body .price-guide-note {
+  background: rgba(44, 61, 46, 0.06);
+  border: 1px solid rgba(44, 61, 46, 0.18);
+  border-left: 3px solid var(--green);
+  padding: var(--space-lg) var(--space-xl);
+  margin: var(--space-lg) 0 var(--space-xl);
+  border-radius: 2px;
+  scroll-margin-top: 100px;
+}
+.article-body .price-guide-note__label {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: var(--space-xs);
+}
+.article-body .price-guide-note p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+.article-body .price-guide-note p a {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+}
+.article-body .price-guide-note p a:hover {
+  color: var(--gold);
+}
+.article-body .price-guide-asterisk {
+  display: inline-block;
+  font-size: 0.75em;
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 700;
+  vertical-align: super;
+  line-height: 1;
+  margin-left: 1px;
+  padding: 0 2px;
+  border-radius: 2px;
+  transition: color 0.2s ease;
+}
+.article-body .price-guide-asterisk:hover {
+  color: var(--green);
+  background: rgba(184, 150, 110, 0.1);
+}
+.article-body .price-guide-note:target {
+  background: rgba(184, 150, 110, 0.1);
+  border-left-color: var(--gold);
+  transition: background 1.5s ease, border-color 1.5s ease;
+}
