@@ -217,7 +217,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(14,14,12,0.98);
+  background: #0e0e0c;
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   z-index: 99;
   padding: var(--space-3xl) var(--space-xl);
