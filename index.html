@@ -1348,52 +1348,18 @@
               <span class="eyebrow">Send a Message</span>
               <h2 class="section-heading" style="margin-bottom:var(--space-2xl);">Request a <em>consultation</em></h2>
 
-              <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" novalidate>
-                <input type="hidden" name="form-name" value="contact">
-                <p class="hidden-honeypot"><label>Don't fill this out: <input name="bot-field"></label></p>
-                <div class="form-group">
-                  <label for="contact-name">Name</label>
-                  <input type="text" id="contact-name" name="name" required placeholder="Your full name">
-                  <span class="error-msg">Please enter your name</span>
-                </div>
-                <div class="form-group">
-                  <label for="contact-phone">Phone</label>
-                  <input type="tel" id="contact-phone" name="phone" placeholder="Your phone number">
-                  <span class="error-msg">Please enter a valid phone number</span>
-                </div>
-                <div class="form-group">
-                  <label for="contact-email">Email</label>
-                  <input type="email" id="contact-email" name="email" required placeholder="Your email address">
-                  <span class="error-msg">Please enter a valid email address</span>
-                </div>
-                <div class="form-group">
-                  <label for="contact-service">Service</label>
-                  <select id="contact-service" name="service" required>
-                    <option value="" disabled selected>Select a service</option>
-                    <option value="new-build">New Build</option>
-                    <option value="extension">Extension</option>
-                    <option value="renovation">Renovation</option>
-                    <option value="other">Other / Not Sure</option>
-                  </select>
-                  <span class="error-msg">Please select a service</span>
-                </div>
-                <div class="form-group">
-                  <label for="contact-message">How can we help you?</label>
-                  <textarea id="contact-message" name="message" required placeholder="Tell us about your project..."></textarea>
-                  <span class="error-msg">Please enter a message</span>
-                </div>
-                <div class="form-group form-group--file">
-                  <label for="contact-plans">Plans or reference images (optional)</label>
-                  <input type="file" id="contact-plans" name="plans" accept=".pdf,.jpg,.jpeg,.png,.heic,.dwg,.doc,.docx" multiple>
-                  <span class="form-hint">PDF, image, or document files. Up to 8MB total.</span>
-                </div>
-                <button type="submit" class="btn btn--primary">Submit Enquiry</button>
-              </form>
+              <!-- HubSpot Contact Form (replaces former Netlify form) -->
+              <div class="hubspot-form-wrapper" id="hubspot-contact-form"></div>
+              <script charset="utf-8" type="text/javascript" src="//js-ap1.hsforms.net/forms/embed/v2.js"></script>
+              <script>
+                hbspt.forms.create({
+                  portalId: "40214516",
+                  formId: "fca73eb8-fb89-4b56-89c3-f0db34bf63bc",
+                  region: "ap1",
+                  target: "#hubspot-contact-form"
+                });
+              </script>
 
-              <div class="form-success" id="form-success">
-                <h3 class="form-success__title">Thank you!</h3>
-                <p class="form-success__text">Your message has been received. We'll be in touch within 24 hours to discuss your project.</p>
-              </div>
             </div>
 
             <div class="contact-info reveal">

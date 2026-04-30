@@ -2061,3 +2061,105 @@
     padding-right: 0.25em;
   }
 }
+
+/* ============================================
+   HubSpot Contact Form Styling
+   Override HubSpot defaults to match Rentoule design
+   ============================================ */
+.hubspot-form-wrapper {
+  font-family: var(--sans);
+}
+.hubspot-form-wrapper form {
+  font-family: var(--sans);
+}
+.hubspot-form-wrapper .hs-form-field {
+  margin-bottom: var(--space-md);
+}
+.hubspot-form-wrapper label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: var(--space-xs);
+}
+.hubspot-form-wrapper label .hs-form-required {
+  color: var(--gold);
+  margin-left: 4px;
+}
+.hubspot-form-wrapper input[type="text"],
+.hubspot-form-wrapper input[type="email"],
+.hubspot-form-wrapper input[type="tel"],
+.hubspot-form-wrapper input[type="number"],
+.hubspot-form-wrapper select,
+.hubspot-form-wrapper textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(26, 26, 24, 0.2);
+  border-radius: 2px;
+  background: var(--offwhite);
+  font-family: var(--sans);
+  font-size: 1rem;
+  color: var(--text);
+  transition: border-color 0.2s ease, background 0.2s ease;
+  box-sizing: border-box;
+}
+.hubspot-form-wrapper textarea {
+  min-height: 120px;
+  resize: vertical;
+  font-family: var(--sans);
+}
+.hubspot-form-wrapper input:focus,
+.hubspot-form-wrapper select:focus,
+.hubspot-form-wrapper textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  background: #ffffff;
+}
+.hubspot-form-wrapper .hs-error-msgs {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0;
+}
+.hubspot-form-wrapper .hs-error-msgs li {
+  color: #b03030;
+  font-size: 0.85rem;
+}
+.hubspot-form-wrapper .hs-button,
+.hubspot-form-wrapper input[type="submit"] {
+  display: inline-block;
+  padding: 14px 32px;
+  background: var(--gold);
+  color: var(--offwhite);
+  border: none;
+  border-radius: 2px;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+.hubspot-form-wrapper .hs-button:hover {
+  background: var(--gold-light);
+}
+.hubspot-form-wrapper .hs-button:active {
+  transform: translateY(1px);
+}
+.hubspot-form-wrapper .submitted-message {
+  padding: var(--space-xl);
+  background: rgba(44, 61, 46, 0.06);
+  border-left: 3px solid var(--green);
+  border-radius: 2px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+.hubspot-form-wrapper .submitted-message p {
+  margin: 0 0 var(--space-sm);
+}
+.hubspot-form-wrapper .submitted-message p:last-child {
+  margin-bottom: 0;
+}
