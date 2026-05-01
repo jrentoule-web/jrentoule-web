@@ -2228,3 +2228,60 @@
 .hubspot-form-wrapper .submitted-message p:last-child {
   margin-bottom: 0;
 }
+
+/* ============================================
+   Pull Quotes - Review Extracts on Service Pages
+   ============================================ */
+.pull-quote {
+  margin: var(--space-2xl) auto;
+  padding: var(--space-xl) var(--space-lg);
+  max-width: 720px;
+  text-align: center;
+  position: relative;
+}
+.pull-quote::before {
+  content: """;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--serif);
+  font-size: 6rem;
+  line-height: 1;
+  color: var(--gold);
+  opacity: 0.25;
+  font-weight: 400;
+}
+.pull-quote__text {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+  line-height: 1.4;
+  color: var(--text);
+  margin: 0 0 var(--space-md);
+  font-style: italic;
+}
+.pull-quote__attribution {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+.pull-quote__attribution::before {
+  content: "— ";
+  color: var(--gold);
+}
+/* Optional: alternate inline style for use mid-paragraph */
+.pull-quote--inline {
+  border-left: 3px solid var(--gold);
+  text-align: left;
+  padding-left: var(--space-xl);
+  margin: var(--space-xl) 0;
+  max-width: 100%;
+}
+.pull-quote--inline::before {
+  display: none;
+}
