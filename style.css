@@ -2377,3 +2377,18 @@
   color: var(--green);
   transform: translateX(4px);
 }
+
+/* Script-style eyebrow variant (Amsterdam Four) */
+.hero__eyebrow--script {
+  font-family: 'Amsterdam', var(--serif);
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  letter-spacing: 0.01em;
+  text-transform: none;
+  color: var(--gold-light);
+  line-height: 1;
+  display: inline-block;
+  padding-bottom: 0.15em;
+  margin-bottom: var(--space-xs);
+}
