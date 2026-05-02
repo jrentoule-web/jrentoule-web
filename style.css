@@ -3155,3 +3155,46 @@ body.internal-page .hero--internal {
   min-height: auto;
   padding: var(--space-2xl) 0 var(--space-xl);
 }
+
+/* Mantra block - "Remember" reminder above the run sheet */
+.sop-mantra {
+  max-width: 900px;
+  margin: 0 auto var(--space-lg);
+  padding: var(--space-lg) var(--space-xl);
+  background: linear-gradient(135deg, rgba(184, 150, 110, 0.12) 0%, rgba(184, 150, 110, 0.04) 100%);
+  border: 1px solid rgba(184, 150, 110, 0.3);
+  border-left: 4px solid var(--gold);
+  border-radius: 4px;
+  text-align: center;
+}
+.sop-mantra__eyebrow {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--space-xs);
+}
+.sop-mantra__text {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.4;
+  color: var(--text);
+  margin: 0;
+  font-style: italic;
+}
+.sop-mantra__accent {
+  font-weight: 600;
+  color: var(--gold);
+  font-style: normal;
+  font-family: var(--sans);
+  letter-spacing: 0.01em;
+}
+@media (max-width: 600px) {
+  .sop-mantra {
+    padding: var(--space-md) var(--space-lg);
+  }
+}
