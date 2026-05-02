@@ -52,216 +52,153 @@
 
   <main id="main-content" class="article-page">
 
-    <!-- Hero -->
-    <section class="hero hero--page hero--internal" aria-label="SOP hero">
-      <div class="hero__overlay"></div>
-      <div class="hero__content">
+    <!-- Hero (compact) -->
+    <section class="sop-hero" aria-label="SOP hero">
+      <div class="container">
         <nav class="sop-crumbs" aria-label="Breadcrumb">
           <a href="/internal/">Internal</a>
           <span class="sop-crumbs__sep">/</span>
           <span>SOP 01</span>
-          <span class="sop-crumbs__sep">/</span>
-          <span>Site Manager Daily Rhythm</span>
         </nav>
-        <span class="hero__eyebrow">Standard Operating Procedure 01</span>
-        <h1 class="hero__title hero__title--article">Site Manager Daily Rhythm</h1>
-        <p class="hero__subtitle">Get across every active job, keep Buildern updated, and keep Alex ahead of the next move. The quick guide below is the bit to follow every day. The detail sections further down are there when you need a reminder.</p>
+        <h1 class="sop-hero__title">Site Manager Daily Rhythm</h1>
+        <p class="sop-hero__subtitle">Get across every active job, keep Buildern updated, and keep Alex ahead of the next move.</p>
       </div>
     </section>
 
-    <!-- Quick guide -->
-    <section class="section section--white" aria-labelledby="quick-guide-heading">
+    <!-- Single feature: Daily Run Sheet with expandable details -->
+    <section class="sop-feature-section" aria-labelledby="runsheet-heading">
       <div class="container">
-        <div class="reveal" style="text-align:center; max-width:720px; margin:0 auto var(--space-3xl);">
-          <span class="eyebrow">Quick Guide</span>
-          <h2 id="quick-guide-heading" class="section-heading">Every day, in this order</h2>
-          <p class="section-subtitle">Don't overthink it. Six steps. Run through them daily and the rest of the system holds itself together.</p>
-        </div>
-
-        <div class="sop-runsheet">
+        <div class="sop-runsheet sop-runsheet--feature">
           <div class="sop-runsheet__header">
             <div>
-              <span class="eyebrow" style="color:var(--gold-light); margin-bottom:var(--space-xs); display:block;">Daily Run Sheet</span>
-              <h3 class="sop-runsheet__title">Use this every day</h3>
+              <span class="sop-runsheet__eyebrow">Daily Run Sheet</span>
+              <h2 id="runsheet-heading" class="sop-runsheet__title">Every day, in this order</h2>
             </div>
-            <p class="sop-runsheet__note">Print it, screenshot it, whatever works.</p>
+            <p class="sop-runsheet__note">Tap any step for detail.</p>
           </div>
+
           <ol class="sop-runsheet__list">
+
             <li>
-              <strong>Plan the day</strong>
-              <small>Before starting, or the afternoon before. Decide where the time needs to go.</small>
+              <details class="sop-step">
+                <summary class="sop-step__summary">
+                  <span class="sop-step__num">01</span>
+                  <span class="sop-step__main">
+                    <strong>Plan the day</strong>
+                    <small>Before starting, or the afternoon before. Decide where the time needs to go.</small>
+                  </span>
+                  <span class="sop-step__chevron" aria-hidden="true">+</span>
+                </summary>
+                <div class="sop-step__body">
+                  <p>Take a few minutes first thing, or the afternoon before, and decide how much time each active job needs.</p>
+                  <ul>
+                    <li>List the active jobs.</li>
+                    <li>Work out the order you will visit them.</li>
+                    <li>Give more time to jobs with more trades, risk, inspections, decisions, or activity.</li>
+                    <li>Give less time to jobs that only need a quick walkthrough.</li>
+                    <li>Keep time at the end for Buildern notes and the message to Alex.</li>
+                  </ul>
+                  <p>Example: Monash might need one hour. Chapman might need six hours. That is fine. The key is that both get checked.</p>
+                </div>
+              </details>
             </li>
+
             <li>
-              <strong>Visit every active job</strong>
-              <small>Even if one site only needs a quick check. Every job gets eyes on it.</small>
+              <details class="sop-step">
+                <summary class="sop-step__summary">
+                  <span class="sop-step__num">02</span>
+                  <span class="sop-step__main">
+                    <strong>Visit every active job</strong>
+                    <small>Even if one site only needs a quick check. Every job gets eyes on it.</small>
+                  </span>
+                  <span class="sop-step__chevron" aria-hidden="true">+</span>
+                </summary>
+                <div class="sop-step__body">
+                  <p>Time does not need to be split evenly. Some jobs need an hour, some need most of the day. But every active job gets visited and assessed.</p>
+                  <p>Use judgement, not guesswork. Before the day starts, look at trades, inspections, deliveries, risk, and activity. Then decide where the time needs to go.</p>
+                </div>
+              </details>
             </li>
+
             <li>
-              <strong>Walk the whole site</strong>
-              <small>Progress, current work, quality, compliance, safety, incomplete work, materials.</small>
+              <details class="sop-step">
+                <summary class="sop-step__summary">
+                  <span class="sop-step__num">03</span>
+                  <span class="sop-step__main">
+                    <strong>Walk the whole site</strong>
+                    <small>Progress, current work, quality, compliance, safety, incomplete work, materials.</small>
+                  </span>
+                  <span class="sop-step__chevron" aria-hidden="true">+</span>
+                </summary>
+                <div class="sop-step__body">
+                  <p>Do a full site walk before getting pulled into too many conversations.</p>
+                  <p><strong>What to check:</strong></p>
+                  <ul>
+                    <li>Progress completed since the last visit.</li>
+                    <li>Work happening now.</li>
+                    <li>Quality of workmanship and finish.</li>
+                    <li>Compliance with drawings, engineering, selections, and standards.</li>
+                    <li>Safety risks and housekeeping.</li>
+                    <li>Incomplete work or delays.</li>
+                    <li>Materials needed to keep progress moving.</li>
+                  </ul>
+                  <p><strong>Quality watch list:</strong></p>
+                  <ul>
+                    <li>Workmanship.</li>
+                    <li>Straightness, levels, falls, set-outs, and spacing.</li>
+                    <li>Finish quality.</li>
+                    <li>Damage to completed work.</li>
+                    <li>Poor trade handovers.</li>
+                    <li>Anything rough, rushed, or likely to cause rework.</li>
+                  </ul>
+                  <p>If something does not look right, document it. Better to pick it up early than pay for it later.</p>
+                  <p><strong>Photos to take:</strong> progress, work before it gets covered, defects, safety risks, materials running low, areas ready for the next trade, and anything that may need proof later.</p>
+                </div>
+              </details>
             </li>
+
             <li>
-              <strong>Update Buildern</strong>
-              <small>No visit is complete until the site diary is done for that project.</small>
+              <details class="sop-step">
+                <summary class="sop-step__summary">
+                  <span class="sop-step__num">04</span>
+                  <span class="sop-step__main">
+                    <strong>Update Buildern</strong>
+                    <small>No visit is complete until the site diary is done for that project.</small>
+                  </span>
+                  <span class="sop-step__chevron" aria-hidden="true">+</span>
+                </summary>
+                <div class="sop-step__body">
+                  <p>Texts and memory are not enough. Buildern is the record.</p>
+                  <ul>
+                    <li>Progress completed.</li>
+                    <li>Work currently happening.</li>
+                    <li>Trades on site.</li>
+                    <li>Quality issues.</li>
+                    <li>Compliance issues.</li>
+                    <li>Safety risks.</li>
+                    <li>Incomplete work.</li>
+                    <li>Materials needed.</li>
+                    <li>Photos of progress or issues.</li>
+                    <li>Instructions given on site.</li>
+                    <li>Anything Alex, Jeff, or a trade needs to follow up.</li>
+                  </ul>
+                </div>
+              </details>
             </li>
+
             <li>
-              <strong>Send Alex one clean summary</strong>
-              <small>One message at the end of the day. Include the material list.</small>
-            </li>
-            <li>
-              <strong>Escalate the big stuff</strong>
-              <small>Cost, program, client expectations, safety, compliance, quality, or reputation.</small>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!-- Non-negotiables -->
-    <section class="section section--warm" aria-labelledby="standard-heading">
-      <div class="container">
-        <div class="reveal" style="text-align:center; max-width:720px; margin:0 auto var(--space-3xl);">
-          <span class="eyebrow">The Non-Negotiables</span>
-          <h2 id="standard-heading" class="section-heading">The simple standard</h2>
-          <p class="section-subtitle">Three things hold this together. Everything else is detail.</p>
-        </div>
-
-        <div class="sop-standards">
-          <article class="sop-standard">
-            <span class="sop-standard__num">01</span>
-            <h3 class="sop-standard__title">Every job gets eyes on it</h3>
-            <p>Time does not need to be split evenly. Some jobs need an hour, some need most of the day. But every active job gets visited and assessed.</p>
-          </article>
-          <article class="sop-standard">
-            <span class="sop-standard__num">02</span>
-            <h3 class="sop-standard__title">Use judgement, not guesswork</h3>
-            <p>Before the day starts, look at trades, inspections, deliveries, risk, and activity. Then decide where the time needs to go.</p>
-          </article>
-          <article class="sop-standard">
-            <span class="sop-standard__num">03</span>
-            <h3 class="sop-standard__title">Buildern is the record</h3>
-            <p>Texts and memory are not enough. The Buildern site diary needs progress, issues, materials, photos, and follow-ups for every project.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Detail accordion -->
-    <section class="section section--white article-section" aria-labelledby="detail-heading">
-      <div class="article-container">
-        <div style="text-align:center; max-width:720px; margin:0 auto var(--space-2xl);">
-          <span class="eyebrow">Need More Detail?</span>
-          <h2 id="detail-heading" class="section-heading">Tap a section to open it</h2>
-          <p class="section-subtitle">The quick guide above covers most of it. The sections below are here for when something is unclear or new.</p>
-        </div>
-
-        <div class="sop-accordion">
-
-          <details class="sop-accordion__item" open>
-            <summary class="sop-accordion__summary">
-              <span><span class="sop-accordion__letter">A</span>How to plan the day</span>
-              <span class="sop-accordion__chevron" aria-hidden="true">+</span>
-            </summary>
-            <div class="sop-accordion__body">
-              <p>Take a few minutes first thing, or the afternoon before, and decide how much time each active job needs.</p>
-              <ul>
-                <li>List the active jobs.</li>
-                <li>Work out the order you will visit them.</li>
-                <li>Give more time to jobs with more trades, risk, inspections, decisions, or activity.</li>
-                <li>Give less time to jobs that only need a quick walkthrough.</li>
-                <li>Keep time at the end for Buildern notes and the message to Alex.</li>
-              </ul>
-              <p>Example: Monash might need one hour. Chapman might need six hours. That is fine. The key is that both get checked.</p>
-            </div>
-          </details>
-
-          <details class="sop-accordion__item">
-            <summary class="sop-accordion__summary">
-              <span><span class="sop-accordion__letter">B</span>What to check at each site</span>
-              <span class="sop-accordion__chevron" aria-hidden="true">+</span>
-            </summary>
-            <div class="sop-accordion__body">
-              <p>Do a full site walk before getting pulled into too many conversations.</p>
-              <ul>
-                <li>Progress completed since the last visit.</li>
-                <li>Work happening now.</li>
-                <li>Quality of workmanship and finish.</li>
-                <li>Compliance with drawings, engineering, selections, and standards.</li>
-                <li>Safety risks and housekeeping.</li>
-                <li>Incomplete work or delays.</li>
-                <li>Materials needed to keep progress moving.</li>
-              </ul>
-            </div>
-          </details>
-
-          <details class="sop-accordion__item">
-            <summary class="sop-accordion__summary">
-              <span><span class="sop-accordion__letter">C</span>Quality check</span>
-              <span class="sop-accordion__chevron" aria-hidden="true">+</span>
-            </summary>
-            <div class="sop-accordion__body">
-              <p>This is not just about whether the work is done. It needs to be done properly and to Rentoule Projects standard.</p>
-              <ul>
-                <li>Workmanship.</li>
-                <li>Straightness, levels, falls, set-outs, and spacing.</li>
-                <li>Finish quality.</li>
-                <li>Damage to completed work.</li>
-                <li>Poor trade handovers.</li>
-                <li>Anything rough, rushed, or likely to cause rework.</li>
-              </ul>
-              <p>If something does not look right, document it. Better to pick it up early than pay for it later.</p>
-            </div>
-          </details>
-
-          <details class="sop-accordion__item">
-            <summary class="sop-accordion__summary">
-              <span><span class="sop-accordion__letter">D</span>Buildern site diary</span>
-              <span class="sop-accordion__chevron" aria-hidden="true">+</span>
-            </summary>
-            <div class="sop-accordion__body">
-              <p>No site visit is complete until Buildern has been updated for that project.</p>
-              <ul>
-                <li>Progress completed.</li>
-                <li>Work currently happening.</li>
-                <li>Trades on site.</li>
-                <li>Quality issues.</li>
-                <li>Compliance issues.</li>
-                <li>Safety risks.</li>
-                <li>Incomplete work.</li>
-                <li>Materials needed.</li>
-                <li>Photos of progress or issues.</li>
-                <li>Instructions given on site.</li>
-                <li>Anything Alex, Jeff, or a trade needs to follow up.</li>
-              </ul>
-            </div>
-          </details>
-
-          <details class="sop-accordion__item">
-            <summary class="sop-accordion__summary">
-              <span><span class="sop-accordion__letter">E</span>Photos to take</span>
-              <span class="sop-accordion__chevron" aria-hidden="true">+</span>
-            </summary>
-            <div class="sop-accordion__body">
-              <p>Take photos that help tell the story. A few clear photos are better than none.</p>
-              <ul>
-                <li>Progress made.</li>
-                <li>Work before it gets covered.</li>
-                <li>Defects or quality issues.</li>
-                <li>Safety risks.</li>
-                <li>Materials running low.</li>
-                <li>Areas ready for the next trade.</li>
-                <li>Anything that may need proof later.</li>
-              </ul>
-            </div>
-          </details>
-
-          <details class="sop-accordion__item">
-            <summary class="sop-accordion__summary">
-              <span><span class="sop-accordion__letter">F</span>End-of-day message to Alex</span>
-              <span class="sop-accordion__chevron" aria-hidden="true">+</span>
-            </summary>
-            <div class="sop-accordion__body">
-              <p>After all sites have been checked, send Alex one clear update. Don't flood him with scattered messages unless something is urgent.</p>
-              <pre class="sop-template"><code>Hi Alex, daily site summary below.
+              <details class="sop-step">
+                <summary class="sop-step__summary">
+                  <span class="sop-step__num">05</span>
+                  <span class="sop-step__main">
+                    <strong>Send Alex one clean summary</strong>
+                    <small>One message at the end of the day. Include the material list.</small>
+                  </span>
+                  <span class="sop-step__chevron" aria-hidden="true">+</span>
+                </summary>
+                <div class="sop-step__body">
+                  <p>After all sites have been checked, send Alex one clear update. Don't flood him with scattered messages unless something is urgent.</p>
+                  <pre class="sop-template"><code>Hi Alex, daily site summary below.
 
 [Project name]
 Progress completed:
@@ -280,60 +217,57 @@ Main priorities for tomorrow
 1.
 2.
 3.</code></pre>
-            </div>
-          </details>
+                  <p><strong>Message Alex immediately if:</strong></p>
+                  <ul>
+                    <li>Work will stop today without a material.</li>
+                    <li>A trade cannot continue.</li>
+                    <li>There is a serious safety issue.</li>
+                    <li>There is a serious compliance issue.</li>
+                    <li>A delivery has failed or is wrong.</li>
+                    <li>A decision is needed before work can continue.</li>
+                  </ul>
+                  <pre class="sop-template"><code>Urgent one for [Project]. [Trade] cannot continue without [material]. Needed by [time/date]. I'll add it to the full material list later, but this one needs action now.</code></pre>
+                </div>
+              </details>
+            </li>
 
-          <details class="sop-accordion__item">
-            <summary class="sop-accordion__summary">
-              <span><span class="sop-accordion__letter">G</span>When to message Alex straight away</span>
-              <span class="sop-accordion__chevron" aria-hidden="true">+</span>
-            </summary>
-            <div class="sop-accordion__body">
-              <p>Most things can wait for the end-of-day summary. Message Alex immediately only if:</p>
-              <ul>
-                <li>Work will stop today without a material.</li>
-                <li>A trade cannot continue.</li>
-                <li>There is a serious safety issue.</li>
-                <li>There is a serious compliance issue.</li>
-                <li>A delivery has failed or is wrong.</li>
-                <li>A decision is needed before work can continue.</li>
-              </ul>
-              <pre class="sop-template"><code>Urgent one for [Project]. [Trade] cannot continue without [material]. Needed by [time/date]. I'll add it to the full material list later, but this one needs action now.</code></pre>
-            </div>
-          </details>
+            <li>
+              <details class="sop-step">
+                <summary class="sop-step__summary">
+                  <span class="sop-step__num">06</span>
+                  <span class="sop-step__main">
+                    <strong>Escalate the big stuff</strong>
+                    <small>Cost, program, client expectations, safety, compliance, quality, or reputation.</small>
+                  </span>
+                  <span class="sop-step__chevron" aria-hidden="true">+</span>
+                </summary>
+                <div class="sop-step__body">
+                  <p>Most issues go through Alex first. Escalate to Jeff when it affects:</p>
+                  <ul>
+                    <li>Cost.</li>
+                    <li>Program.</li>
+                    <li>Client expectations.</li>
+                    <li>Safety.</li>
+                    <li>Compliance.</li>
+                    <li>Quality standards.</li>
+                    <li>Trade performance.</li>
+                    <li>Rentoule Projects' reputation.</li>
+                  </ul>
+                  <p>If you are unsure, flag it. Better early than late.</p>
+                </div>
+              </details>
+            </li>
 
-          <details class="sop-accordion__item">
-            <summary class="sop-accordion__summary">
-              <span><span class="sop-accordion__letter">H</span>When to escalate to Jeff</span>
-              <span class="sop-accordion__chevron" aria-hidden="true">+</span>
-            </summary>
-            <div class="sop-accordion__body">
-              <p>Most issues go through Alex first. Escalate to Jeff when it affects:</p>
-              <ul>
-                <li>Cost.</li>
-                <li>Program.</li>
-                <li>Client expectations.</li>
-                <li>Safety.</li>
-                <li>Compliance.</li>
-                <li>Quality standards.</li>
-                <li>Trade performance.</li>
-                <li>Rentoule Projects' reputation.</li>
-              </ul>
-              <p>If you are unsure, flag it. Better early than late.</p>
-            </div>
-          </details>
-
+          </ol>
         </div>
       </div>
     </section>
 
-    <!-- Sign-off -->
-    <section class="section section--warm" aria-label="Sign-off">
-      <div class="container" style="text-align:center; max-width:720px;">
-        <span class="eyebrow">Final Reminder</span>
-        <h2 class="section-heading">The aim is consistency, not perfection</h2>
-        <p style="font-size:1.05rem; line-height:1.65; color:var(--muted); margin-top:var(--space-md); margin-bottom:var(--space-xl);">Do this every day and the jobs will feel more controlled, the team will have better information, and problems will get picked up before they turn into dramas.</p>
-        <a href="/internal/" class="btn btn--primary">&larr; Back to Internal Directory</a>
+    <!-- Sign-off (compact) -->
+    <section class="sop-signoff">
+      <div class="container">
+        <p class="sop-signoff__line">The aim is consistency, not perfection. Do this every day and the rest holds itself together.</p>
+        <a href="/internal/" class="sop-back-link">&larr; Back to Internal Directory</a>
       </div>
     </section>
 
