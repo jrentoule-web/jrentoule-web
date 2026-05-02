@@ -2619,16 +2619,16 @@
   padding: 0;
   margin: 0;
 }
-.sop-runsheet__list li {
+.sop-runsheet__list > li {
   position: relative;
   counter-increment: runsheet;
   padding: var(--space-md) 0 var(--space-md) 50px;
   border-bottom: 1px solid rgba(26, 26, 24, 0.08);
 }
-.sop-runsheet__list li:last-child {
+.sop-runsheet__list > li:last-child {
   border-bottom: none;
 }
-.sop-runsheet__list li::before {
+.sop-runsheet__list > li::before {
   content: counter(runsheet, decimal-leading-zero);
   position: absolute;
   left: 0;
@@ -3086,10 +3086,20 @@ details[open] > .sop-step__summary .sop-step__chevron {
 .sop-step__body ul {
   margin: 0 0 var(--space-md);
   padding-left: 1.4em;
+  list-style: disc;
+  counter-reset: none;
 }
 .sop-step__body ul li {
   margin-bottom: 4px;
   color: rgba(245, 243, 239, 0.85);
+  counter-increment: none;
+  padding-left: 0;
+}
+.sop-step__body ul li::before {
+  content: none;
+}
+.sop-step__body ul li::marker {
+  color: rgba(184, 150, 110, 0.7);
 }
 .sop-step__body .sop-template {
   background: rgba(245, 243, 239, 0.06);
