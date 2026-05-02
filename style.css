@@ -2392,3 +2392,455 @@
   padding-bottom: 0.15em;
   margin-bottom: var(--space-xs);
 }
+
+/* ============================================
+   INTERNAL PAGES (SOPs, team docs)
+   ============================================ */
+
+/* Internal nav - distinguish from public nav */
+.nav--internal {
+  background: var(--black);
+  border-bottom: 1px solid rgba(184, 150, 110, 0.2);
+}
+.nav--internal .nav__link.active {
+  color: var(--gold);
+}
+.nav__internal-label {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-left: var(--space-sm);
+  padding-left: var(--space-sm);
+  border-left: 1px solid rgba(184, 150, 110, 0.4);
+  align-self: center;
+  white-space: nowrap;
+}
+.nav__internal-pill {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid rgba(184, 150, 110, 0.4);
+  padding: 6px 14px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+/* Internal hero - solid dark, no photo, brand-coloured */
+.hero--internal {
+  background: linear-gradient(135deg, var(--black) 0%, #1a1a18 100%);
+  position: relative;
+  min-height: 360px;
+}
+.hero--internal::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(184, 150, 110, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(44, 61, 46, 0.12) 0%, transparent 50%);
+  pointer-events: none;
+}
+.hero--internal .hero__overlay {
+  background: transparent;
+}
+.hero--internal .hero__content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Breadcrumbs for SOP pages */
+.sop-crumbs {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(245, 243, 239, 0.6);
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+.sop-crumbs a {
+  color: var(--gold-light);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.sop-crumbs a:hover {
+  color: var(--gold);
+}
+.sop-crumbs__sep {
+  color: rgba(245, 243, 239, 0.3);
+}
+
+/* SOP directory grid */
+.sop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+.sop-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-lg) var(--space-lg) var(--space-md);
+  background: var(--offwhite);
+  border: 1px solid rgba(26, 26, 24, 0.1);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--text);
+  min-height: 240px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.sop-card--live {
+  cursor: pointer;
+}
+.sop-card--live:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+.sop-card--draft {
+  opacity: 0.6;
+  background: transparent;
+  cursor: default;
+}
+.sop-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+}
+.sop-card__num {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.sop-card__status {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+.sop-card__status--live {
+  background: var(--gold);
+  color: var(--offwhite);
+}
+.sop-card__status--draft {
+  background: rgba(107, 103, 96, 0.15);
+  color: var(--muted);
+}
+.sop-card__title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.45rem;
+  line-height: 1.2;
+  margin: 0 0 var(--space-sm);
+  color: var(--text);
+}
+.sop-card__summary {
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0;
+  flex-grow: 1;
+}
+.sop-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-md);
+  margin-top: var(--space-md);
+  border-top: 1px solid rgba(26, 26, 24, 0.08);
+}
+.sop-card__cta {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.sop-card--draft .sop-card__cta {
+  color: var(--muted);
+}
+.sop-card__arrow {
+  font-size: 1.1rem;
+  color: var(--gold);
+  transition: transform 0.2s ease;
+}
+.sop-card--live:hover .sop-card__arrow {
+  transform: translateX(4px);
+}
+
+/* Run sheet block - feature card on SOP detail page */
+.sop-runsheet {
+  background: var(--black);
+  color: var(--offwhite);
+  padding: var(--space-xl);
+  border-radius: 4px;
+  border-left: 4px solid var(--gold);
+  max-width: 760px;
+  margin: 0 auto;
+}
+.sop-runsheet__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  padding-bottom: var(--space-lg);
+  margin-bottom: var(--space-lg);
+  border-bottom: 1px solid rgba(245, 243, 239, 0.15);
+}
+.sop-runsheet__title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: var(--offwhite);
+  margin: 0;
+}
+.sop-runsheet__note {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  color: rgba(245, 243, 239, 0.55);
+  margin: 0;
+  align-self: center;
+}
+.sop-runsheet__list {
+  list-style: none;
+  counter-reset: runsheet;
+  padding: 0;
+  margin: 0;
+}
+.sop-runsheet__list li {
+  position: relative;
+  counter-increment: runsheet;
+  padding: var(--space-md) 0 var(--space-md) 60px;
+  border-bottom: 1px solid rgba(245, 243, 239, 0.08);
+}
+.sop-runsheet__list li:last-child {
+  border-bottom: none;
+}
+.sop-runsheet__list li::before {
+  content: counter(runsheet, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: var(--space-md);
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--gold);
+  font-style: italic;
+}
+.sop-runsheet__list strong {
+  display: block;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--offwhite);
+  margin-bottom: 4px;
+}
+.sop-runsheet__list small {
+  display: block;
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: rgba(245, 243, 239, 0.7);
+}
+
+/* Standards (3 non-negotiables) */
+.sop-standards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+@media (max-width: 768px) {
+  .sop-standards {
+    grid-template-columns: 1fr;
+  }
+}
+.sop-standard {
+  background: var(--offwhite);
+  padding: var(--space-lg);
+  border-radius: 4px;
+  border-top: 3px solid var(--gold);
+  position: relative;
+}
+.sop-standard__num {
+  display: inline-block;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 2rem;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: var(--space-sm);
+}
+.sop-standard__title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  margin: 0 0 var(--space-sm);
+  color: var(--text);
+}
+.sop-standard p {
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Accordion (FAQ-style detail sections) */
+.sop-accordion {
+  margin: var(--space-xl) 0;
+}
+.sop-accordion__item {
+  border-bottom: 1px solid rgba(26, 26, 24, 0.1);
+  padding: 0;
+}
+.sop-accordion__item:first-child {
+  border-top: 1px solid rgba(26, 26, 24, 0.1);
+}
+.sop-accordion__summary {
+  list-style: none;
+  cursor: pointer;
+  padding: var(--space-md) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+.sop-accordion__summary::-webkit-details-marker {
+  display: none;
+}
+.sop-accordion__summary:hover {
+  color: var(--gold);
+}
+.sop-accordion__summary > span:first-child {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+.sop-accordion__letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+.sop-accordion__chevron {
+  font-family: var(--sans);
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--gold);
+  transition: transform 0.2s ease;
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+details[open] .sop-accordion__chevron {
+  transform: rotate(45deg);
+}
+.sop-accordion__body {
+  padding: 0 0 var(--space-lg) 56px;
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: var(--text);
+}
+.sop-accordion__body p {
+  margin: 0 0 var(--space-md);
+}
+.sop-accordion__body ul {
+  margin: 0 0 var(--space-md);
+  padding-left: 1.5em;
+}
+.sop-accordion__body ul li {
+  margin-bottom: 6px;
+  color: var(--text);
+}
+@media (max-width: 600px) {
+  .sop-accordion__body {
+    padding-left: 0;
+  }
+}
+
+/* Code block templates */
+.sop-template {
+  background: var(--black);
+  color: var(--offwhite);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: 4px;
+  border-left: 3px solid var(--gold);
+  margin: var(--space-md) 0;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+.sop-template code {
+  font-family: inherit;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/* Internal footer */
+.footer--internal {
+  background: var(--black);
+  color: rgba(245, 243, 239, 0.7);
+  padding: var(--space-lg) 0;
+}
+.footer__internal-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+}
+.footer__internal-row a {
+  color: var(--gold-light);
+  text-decoration: none;
+}
+.footer__internal-row a:hover {
+  color: var(--gold);
+}
