@@ -250,3 +250,79 @@
   from = "/careers/*"
   to = "/#careers"
   status = 301
+
+# --- SHORT LINKS (clean URLs for Instagram, social, print, email) ---
+# These 301 to the homepage with UTMs attached, so attribution still works.
+# Use these short paths on Instagram bio, business cards, signage, etc.
+
+[[redirects]]
+  from = "/insta"
+  to = "/?utm_source=instagram&utm_medium=organic_social&utm_campaign=bio_link"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/instagram"
+  to = "/?utm_source=instagram&utm_medium=organic_social&utm_campaign=bio_link"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fb"
+  to = "/?utm_source=facebook&utm_medium=organic_social&utm_campaign=bio_link"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/facebook"
+  to = "/?utm_source=facebook&utm_medium=organic_social&utm_campaign=bio_link"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/li"
+  to = "/?utm_source=linkedin&utm_medium=organic_social&utm_campaign=bio_link"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/linkedin"
+  to = "/?utm_source=linkedin&utm_medium=organic_social&utm_campaign=bio_link"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/yt"
+  to = "/?utm_source=youtube&utm_medium=organic_social&utm_campaign=bio_link"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/youtube"
+  to = "/?utm_source=youtube&utm_medium=organic_social&utm_campaign=bio_link"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/qr"
+  to = "/?utm_source=print&utm_medium=offline&utm_campaign=trifold_2026"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/card"
+  to = "/?utm_source=print&utm_medium=offline&utm_campaign=business_card"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sign"
+  to = "/?utm_source=print&utm_medium=offline&utm_campaign=site_signage"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/email"
+  to = "/?utm_source=email&utm_medium=signature&utm_campaign=email_signature"
+  status = 301
+  force = true
