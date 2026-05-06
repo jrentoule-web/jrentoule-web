@@ -50,9 +50,89 @@
 
   <!-- Page-specific styles -->
   <style>
+    /* Hero - book on table */
+    .guide-hero {
+      position: relative;
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: var(--black);
+    }
+    .guide-hero__bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('../assets/guide-hero-book.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .guide-hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(14,14,12,0.25) 0%, rgba(14,14,12,0.45) 50%, rgba(14,14,12,0.75) 100%);
+    }
+    .guide-hero__content {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      width: 100%;
+      padding: var(--space-3xl) var(--space-xl);
+      text-align: right;
+      color: var(--offwhite);
+      margin-left: auto;
+    }
+    .guide-hero__eyebrow {
+      display: inline-block;
+      font-family: var(--font-sans);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      color: var(--gold-light);
+      margin-bottom: var(--space-lg);
+      font-weight: 500;
+      padding-bottom: var(--space-sm);
+      border-bottom: 1px solid var(--green-light);
+    }
+    .guide-hero__title {
+      font-family: var(--font-serif);
+      font-weight: 300;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 1.05;
+      margin: 0 0 var(--space-lg);
+      color: var(--offwhite);
+    }
+    .guide-hero__title em {
+      font-family: 'Amsterdam', cursive;
+      font-style: italic;
+      font-weight: 400;
+      color: var(--gold-light);
+    }
+    .guide-hero__meta {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      color: var(--offwhite);
+      opacity: 0.85;
+    }
+    .guide-hero__meta-sep {
+      color: var(--green-light);
+      margin: 0 var(--space-sm);
+    }
+    @media (max-width: 768px) {
+      .guide-hero__content {
+        text-align: left;
+        padding: var(--space-2xl) var(--space-lg);
+      }
+      .guide-hero__overlay {
+        background: linear-gradient(180deg, rgba(14,14,12,0.3) 0%, rgba(14,14,12,0.85) 100%);
+      }
+    }
+
+    /* TOC */
     .guide-toc {
       background: var(--warm);
-      border-left: 3px solid var(--gold);
+      border-left: 4px solid var(--green);
       padding: var(--space-xl) var(--space-2xl);
       margin: var(--space-2xl) 0;
       border-radius: 4px;
@@ -73,11 +153,18 @@
       color: var(--text);
       text-decoration: none;
       border-bottom: 1px solid transparent;
-      transition: border-color 0.2s;
+      transition: border-color 0.2s, color 0.2s;
     }
     .guide-toc a:hover {
-      border-color: var(--gold);
+      border-color: var(--green);
+      color: var(--green);
     }
+    .guide-toc ol li::marker {
+      color: var(--green);
+      font-weight: 600;
+    }
+
+    /* Section images */
     .guide-section-image {
       width: 100%;
       height: auto;
@@ -85,6 +172,27 @@
       border-radius: 4px;
       box-shadow: 0 8px 32px rgba(0,0,0,0.08);
     }
+
+    /* Headings - green accent */
+    .article-body h2 {
+      position: relative;
+      padding-left: var(--space-lg);
+    }
+    .article-body h2::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.35em;
+      bottom: 0.35em;
+      width: 3px;
+      background: var(--green);
+      border-radius: 2px;
+    }
+    .article-body h3 {
+      color: var(--green-deep);
+    }
+
+    /* Inline CTA - now with green accent on the black CTA */
     .guide-cta-inline {
       background: var(--black);
       color: var(--offwhite);
@@ -92,6 +200,8 @@
       margin: var(--space-3xl) 0;
       border-radius: 4px;
       text-align: center;
+      position: relative;
+      border-top: 3px solid var(--green);
     }
     .guide-cta-inline h3 {
       font-family: var(--font-serif);
@@ -110,6 +220,8 @@
       opacity: 0.9;
       margin-bottom: var(--space-xl);
     }
+
+    /* Cost tables */
     .guide-cost-table {
       width: 100%;
       border-collapse: collapse;
@@ -123,12 +235,30 @@
       border-bottom: 1px solid var(--warm);
     }
     .guide-cost-table th {
-      background: var(--warm);
+      background: var(--green);
+      color: var(--offwhite);
       font-weight: 600;
       font-family: var(--font-serif);
+      border-bottom: none;
     }
     .guide-cost-table tr:hover td {
-      background: rgba(184, 150, 110, 0.05);
+      background: rgba(74, 107, 77, 0.05);
+    }
+
+    /* Inline links inside article body: green underline */
+    .article-body p a,
+    .article-body li a {
+      color: var(--green-deep);
+      text-decoration: underline;
+      text-decoration-color: var(--green);
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      transition: color 0.2s;
+    }
+    .article-body p a:hover,
+    .article-body li a:hover {
+      color: var(--gold);
+      text-decoration-color: var(--gold);
     }
   </style>
 
@@ -225,18 +355,18 @@
   <!-- ====== MAIN ====== -->
   <main id="main-content" class="article-page">
 
-    <!-- Hero -->
-    <section class="hero hero--page hero--article" aria-label="Guide hero">
-      <div class="hero__bg" style="background-image: url('../assets/guide-hero.jpg')"></div>
-      <div class="hero__overlay"></div>
-      <div class="hero__content">
-        <span class="hero__eyebrow">The Free Guide</span>
-        <h1 class="hero__title hero__title--article">The Canberra Renovation <em>Guide</em></h1>
-        <div class="article-meta">
+    <!-- Hero - book on surface -->
+    <section class="guide-hero" aria-label="Guide hero">
+      <div class="guide-hero__bg"></div>
+      <div class="guide-hero__overlay"></div>
+      <div class="guide-hero__content">
+        <span class="guide-hero__eyebrow">The Free Guide</span>
+        <h1 class="guide-hero__title">The Canberra Renovation <em>Guide</em></h1>
+        <div class="guide-hero__meta">
           <span>By Jeff Rentoule</span>
-          <span class="article-meta__sep">·</span>
+          <span class="guide-hero__meta-sep">·</span>
           <span>Updated May 2026</span>
-          <span class="article-meta__sep">·</span>
+          <span class="guide-hero__meta-sep">·</span>
           <span>20 min read</span>
         </div>
       </div>
@@ -267,7 +397,8 @@
     <li><a href="#timeline">Setting realistic timelines</a></li>
     <li><a href="#builder">Choosing the right builder</a></li>
     <li><a href="#design">Designing for the next 20 years</a></li>
-    <li><a href="#approvals">DA approvals and ACT regulations</a></li>
+    <li><a href="#approvals">Planning approvals and ACT regulations</a></li>
+    <li><a href="#queanbeyan">Queanbeyan, the region and beyond</a></li>
     <li><a href="#mistakes">The five mistakes I see most often</a></li>
     <li><a href="#next-steps">Where to go from here</a></li>
   </ol>
@@ -411,7 +542,9 @@
 
 <h3>Connections and services</h3>
 
-<p>New gas connections, electrical upgrades from single to three-phase, water meter upgrades, NBN rerouting, stormwater detention. Most homeowners assume the existing services are fine. Often they aren't. Allow $5,000 to $20,000 for service upgrades on bigger projects.</p>
+<p>Electrical upgrades from single to three-phase, water meter upgrades, NBN rerouting, stormwater detention. Most homeowners assume the existing services are fine. Often they aren't. Allow $5,000 to $20,000 for service upgrades on bigger projects.</p>
+
+<p>Worth flagging on gas specifically: the ACT is phasing gas out of the residential network, so new gas connections aren't happening and gas appliance replacements are increasingly restricted. If your existing home has gas and you're relocating services during a renovation, plan for the cost of either relocating the existing line or switching to all-electric. Going all-electric from the outset is usually the cleaner call, and the induction cooktop/heat-pump hot water/reverse-cycle stack is now genuinely excellent.</p>
 
 <h3>Moving out costs</h3>
 
@@ -440,38 +573,38 @@
   <tbody>
     <tr>
       <td>Bathroom renovation</td>
-      <td>3-5 weeks</td>
-      <td>2-4 months</td>
-    </tr>
-    <tr>
-      <td>Kitchen renovation</td>
-      <td>4-8 weeks</td>
+      <td>4-7 weeks</td>
       <td>3-5 months</td>
     </tr>
     <tr>
-      <td>Whole-house cosmetic refresh</td>
-      <td>8-14 weeks</td>
+      <td>Kitchen renovation</td>
+      <td>6-10 weeks</td>
       <td>4-7 months</td>
     </tr>
     <tr>
-      <td>Major structural renovation</td>
-      <td>4-8 months</td>
-      <td>9-18 months</td>
-    </tr>
-    <tr>
-      <td>Single-storey extension</td>
-      <td>4-6 months</td>
-      <td>9-15 months</td>
-    </tr>
-    <tr>
-      <td>Second storey addition</td>
+      <td>Whole-house cosmetic refresh</td>
+      <td>10-16 weeks</td>
       <td>5-9 months</td>
+    </tr>
+    <tr>
+      <td>Major structural renovation</td>
+      <td>6-10 months</td>
       <td>12-20 months</td>
     </tr>
     <tr>
+      <td>Single-storey extension</td>
+      <td>5-8 months</td>
+      <td>11-17 months</td>
+    </tr>
+    <tr>
+      <td>Second storey addition</td>
+      <td>7-11 months</td>
+      <td>14-24 months</td>
+    </tr>
+    <tr>
       <td>Knockdown rebuild</td>
-      <td>10-14 months</td>
-      <td>18-28 months</td>
+      <td>12-16 months</td>
+      <td>20-30 months</td>
     </tr>
   </tbody>
 </table>
@@ -480,7 +613,7 @@
 
 <p>Most homeowners hear "the build will take six months" and start planning their lives around that number. But before the build starts there's a designer phase (1-3 months), a documentation phase (1-2 months), a DA approval window (8-16 weeks for anything that needs one), a tendering and contract phase (3-6 weeks), and a builder lead time (1-3 months for a quality builder with a backlog). All of that happens before the first sledgehammer swings.</p>
 
-<p>If you're starting conversations with a builder today, a major renovation realistically isn't completed inside 12 months. Plan accordingly.</p>
+<p>If you're starting conversations with a builder today, a major renovation realistically isn't completed inside 14 months. Plan accordingly. Builders who promise dramatically shorter timelines are usually about to disappoint you.</p>
 
 <h3>Things that compress timelines</h3>
 
@@ -563,34 +696,46 @@
 
 <p>Canberra has a beautiful climate for outdoor living three seasons a year. Bifold or stacker doors that open the living space to a covered alfresco, properly sized for a dining table, oriented to catch afternoon sun, with shelter from the wind. This single design move adds more lifestyle value per dollar than almost anything else we build.</p>
 
-<h2 id="approvals">7. DA approvals and ACT regulations</h2>
+<h2 id="approvals">7. Planning approvals and ACT regulations</h2>
 
 <p>The ACT's planning system is its own creature. Here's the broad shape, but my <a href="/blog/da-approval-act-renovations/">DA approval article</a> has the full detail.</p>
 
-<h3>Three categories of approval</h3>
+<h3>Three categories of planning approval</h3>
 
 <ul>
   <li><strong>Exempt development:</strong> Most cosmetic work, internal renovations not affecting structure, small repairs. No approval required, but compliance with building codes still applies.</li>
-  <li><strong>Code-track DA:</strong> Smaller projects that meet specific criteria can be assessed against a checklist. Faster process, usually 4-8 weeks.</li>
-  <li><strong>Merit-track DA:</strong> Larger projects, structural changes, second storeys, anything that doesn't fit the code-track criteria. Goes to the planning authority for full assessment, takes 8-16 weeks or longer.</li>
+  <li><strong>Single Dwelling Housing Development Code (SDHDC) track:</strong> For most single-dwelling houses, extensions, alterations and additions, if your project meets the rules in this code you can proceed without a full Development Application. This is the pathway we try to use wherever possible. It's quicker, cheaper and has far less uncertainty than the merit-track DA. Most of our extension and alteration work is SDHDC-compliant by design.</li>
+  <li><strong>Merit-track DA:</strong> Larger projects, anything that can't meet the SDHDC rules, heritage-affected sites, or projects that vary from the default setbacks, site coverage, or plot ratio. Goes to the planning authority for full assessment, takes 8-16 weeks or longer.</li>
 </ul>
 
-<h3>Things that almost always trigger a DA</h3>
+<h3>Things that almost always trigger a merit-track DA</h3>
 
 <ul>
-  <li>Extensions or additions changing building footprint</li>
-  <li>Second storey additions</li>
-  <li>Knockdown rebuilds</li>
+  <li>Knockdown rebuilds that can't meet SDHDC exemption criteria</li>
+  <li>Second storey additions exceeding the code's height or setback rules</li>
   <li>Demolition of more than 50% of the existing structure</li>
-  <li>Changes to the front facade in suburbs with character overlay (Reid, Forrest, parts of Yarralumla and Griffith)</li>
+  <li>Changes to the front facade in suburbs with heritage or character overlay (Reid, Forrest, parts of Yarralumla and Griffith)</li>
   <li>Anything reducing on-site car parking below required levels</li>
+  <li>Variations to boundary setbacks, plot ratio or site coverage</li>
 </ul>
+
+<h3>Building Approval (BA) is separate</h3>
+
+<p>Worth knowing: whichever planning track you take, you still need a separate Building Approval (BA) before any construction starts. The BA is issued by a private building certifier and confirms that your plans comply with the National Construction Code, structural requirements, energy efficiency rules and all the technical building standards. Even a fully exempt development typically still needs a BA if there's actual building work involved. The BA process usually runs 2-4 weeks for straightforward projects and sits alongside or after your planning pathway. As your builder, we manage the BA process and certifier relationship on your behalf.</p>
 
 <h3>NCC 2025</h3>
 
 <p>The National Construction Code 2025 is now in force in the ACT (mandatory from 1 November 2026). It introduces stricter requirements on energy efficiency, accessibility (the Livable Housing standard), and condensation management. For new builds and major renovations, NCC 2025 will add somewhere between $14,000 and $55,000 to project cost depending on scope. <a href="/blog/ncc-2025-canberra-renovations/">I've written a detailed guide here.</a></p>
 
-<h2 id="mistakes">8. The five mistakes I see most often</h2>
+<h2 id="queanbeyan">8. Queanbeyan, the surrounding region and beyond</h2>
+
+<p>Canberra is our primary market but worth knowing: I hold a NSW builder's licence in addition to my ACT licence, so we regularly build in Queanbeyan, Jerrabomberra, Googong, Bungendore and the surrounding region.</p>
+
+<p>A lot of our Canberra-raised clients end up moving just across the border for more land, lower prices or a specific lifestyle preference, and then want a builder who can deliver the same Canberra-level quality. We're happy to bridge that. Build standards, contracts, communication, fixed-price approach - all identical either side of the ACT/NSW line.</p>
+
+<p>For the right client and the right project, we'll also consider work further afield on the south coast. It has to be a project worth travelling for and we're selective about taking it on, but if your vision is a considered south coast build and you want a Canberra-quality builder who'll stand behind the work, have the conversation with us anyway.</p>
+
+<h2 id="mistakes">9. The five mistakes I see most often</h2>
 
 <p>After 19 years in this trade I see the same patterns over and over. Here are the five that hurt the most.</p>
 
@@ -614,7 +759,7 @@
 
 <p>The tile you fall in love with at concept stage is often discontinued by build time. Finalise selections in the 4-8 weeks before the relevant trade is on site. Check stock and lead times before you commit. Have a backup option for anything imported or custom-made.</p>
 
-<h2 id="next-steps">9. Where to go from here</h2>
+<h2 id="next-steps">10. Where to go from here</h2>
 
 <p>If you've read this far, you're more prepared than 90% of homeowners I meet. The next steps depend on where you are in the journey.</p>
 
