@@ -50,31 +50,36 @@
 
   <!-- Page-specific styles -->
   <style>
-    /* Hero - book on table, two-column layout */
+    /* Hero - full-bleed image with overlay text */
     .guide-hero {
       position: relative;
-      background: var(--black);
-      padding: var(--space-3xl) 0;
-      overflow: hidden;
-    }
-    .guide-hero__inner {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 var(--space-xl);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-3xl);
-      align-items: center;
       min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: var(--black);
     }
-    .guide-hero__image {
-      width: 100%;
-      height: auto;
-      max-height: 80vh;
-      object-fit: contain;
-      filter: drop-shadow(0 24px 48px rgba(0,0,0,0.6));
+    .guide-hero__bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('../assets/guide-hero.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .guide-hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(14,14,12,0.35) 0%, rgba(14,14,12,0.7) 100%);
     }
     .guide-hero__content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      width: 100%;
+      padding: var(--space-3xl) var(--space-xl);
+      text-align: center;
       color: var(--offwhite);
     }
     .guide-hero__eyebrow {
@@ -92,7 +97,7 @@
     .guide-hero__title {
       font-family: var(--font-serif);
       font-weight: 300;
-      font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+      font-size: clamp(2.5rem, 6vw, 4.8rem);
       line-height: 1.05;
       margin: 0 0 var(--space-lg);
       color: var(--offwhite);
@@ -107,31 +112,11 @@
       font-family: var(--font-sans);
       font-size: 0.95rem;
       color: var(--offwhite);
-      opacity: 0.85;
+      opacity: 0.9;
     }
     .guide-hero__meta-sep {
       color: var(--gold);
       margin: 0 var(--space-sm);
-    }
-    @media (max-width: 900px) {
-      .guide-hero__inner {
-        grid-template-columns: 1fr;
-        gap: var(--space-2xl);
-        text-align: center;
-        min-height: auto;
-      }
-      .guide-hero__content {
-        order: 2;
-      }
-      .guide-hero__image {
-        order: 1;
-        max-height: 50vh;
-        margin: 0 auto;
-      }
-      .guide-hero__eyebrow {
-        margin: 0 auto var(--space-lg);
-        display: inline-block;
-      }
     }
 
     /* TOC */
@@ -360,20 +345,19 @@
   <!-- ====== MAIN ====== -->
   <main id="main-content" class="article-page">
 
-    <!-- Hero - book image left, headline right -->
+    <!-- Hero - Canberra home image with overlay title -->
     <section class="guide-hero" aria-label="Guide hero">
-      <div class="guide-hero__inner">
-        <img src="../assets/guide-book-cover.jpg" alt="The Canberra Renovation Guide hardcover book with gold-foil title on a timber surface" class="guide-hero__image">
-        <div class="guide-hero__content">
-          <span class="guide-hero__eyebrow">The Free Guide</span>
-          <h1 class="guide-hero__title">The Canberra Renovation <em>Guide</em></h1>
-          <div class="guide-hero__meta">
-            <span>By Jeff Rentoule</span>
-            <span class="guide-hero__meta-sep">·</span>
-            <span>Updated May 2026</span>
-            <span class="guide-hero__meta-sep">·</span>
-            <span>20 min read</span>
-          </div>
+      <div class="guide-hero__bg"></div>
+      <div class="guide-hero__overlay"></div>
+      <div class="guide-hero__content">
+        <span class="guide-hero__eyebrow">The Free Guide</span>
+        <h1 class="guide-hero__title">The Canberra Renovation <em>Guide</em></h1>
+        <div class="guide-hero__meta">
+          <span>By Jeff Rentoule</span>
+          <span class="guide-hero__meta-sep">·</span>
+          <span>Updated May 2026</span>
+          <span class="guide-hero__meta-sep">·</span>
+          <span>20 min read</span>
         </div>
       </div>
     </section>
