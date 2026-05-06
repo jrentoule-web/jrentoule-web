@@ -25,6 +25,13 @@
   <meta name="geo.region" content="AU-ACT">
   <meta name="geo.placename" content="Canberra">
 
+  <!-- Force refresh to scroll to top (override browser scroll restoration) -->
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+  </script>
+
   <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192">
@@ -97,26 +104,32 @@
       padding-bottom: var(--space-sm);
       border-bottom: 1px solid var(--gold);
     }
-    .guide-hero__title {
+    .guide-hero .guide-hero__title {
       font-family: var(--font-serif);
       font-weight: 400;
       font-size: clamp(2.5rem, 6vw, 4.8rem);
       line-height: 1.05;
       margin: 0 0 var(--space-lg);
-      color: var(--offwhite);
+      color: #f5f3ef !important;
       text-shadow: 0 4px 24px rgba(0,0,0,0.7), 0 1px 4px rgba(0,0,0,0.5);
     }
-    .guide-hero__title em {
+    .guide-hero .guide-hero__title em {
+      color: #d4b48a !important;
+    }
+    .guide-hero .guide-hero__title em {
       font-family: 'Amsterdam', cursive;
       font-style: italic;
       font-weight: 400;
-      color: var(--gold-light);
+      color: #d4b48a !important;
     }
-    .guide-hero__meta {
+    .guide-hero .guide-hero__meta {
       font-family: var(--font-sans);
       font-size: 0.95rem;
-      color: var(--offwhite);
-      opacity: 0.9;
+      color: #f5f3ef !important;
+      opacity: 0.95;
+    }
+    .guide-hero .guide-hero__meta span {
+      color: #f5f3ef !important;
     }
     .guide-hero__meta-sep {
       color: var(--gold);
