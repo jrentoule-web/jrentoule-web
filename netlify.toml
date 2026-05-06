@@ -340,3 +340,12 @@
   to = "/canberra-renovation-guide/?utm_source=shortlink&utm_medium=guide&utm_campaign=renovation_guide"
   status = 301
   force = true
+
+# --- AD-SPECIFIC TRACKING SHORT LINKS ---
+# /guide-ad is for paid ads (Meta, Insta) - tracks separately from /guide
+
+[[redirects]]
+  from = "/guide-ad"
+  to = "/canberra-renovation-guide/?utm_source=meta&utm_medium=paid_social&utm_campaign=renovation_guide_ebook&utm_content=ad_v1"
+  status = 301
+  force = true
