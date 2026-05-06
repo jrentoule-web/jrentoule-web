@@ -50,38 +50,32 @@
 
   <!-- Page-specific styles -->
   <style>
-    /* Hero - book on table */
+    /* Hero - book on table, two-column layout */
     .guide-hero {
       position: relative;
-      min-height: 75vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
       background: var(--black);
+      padding: var(--space-3xl) 0;
+      overflow: hidden;
     }
-    .guide-hero__bg {
-      position: absolute;
-      inset: 0;
-      background-image: url('../assets/guide-hero-book.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+    .guide-hero__inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 var(--space-xl);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-3xl);
+      align-items: center;
+      min-height: 70vh;
     }
-    .guide-hero__overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(90deg, rgba(14,14,12,0.25) 0%, rgba(14,14,12,0.45) 50%, rgba(14,14,12,0.75) 100%);
+    .guide-hero__image {
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+      object-fit: contain;
+      filter: drop-shadow(0 24px 48px rgba(0,0,0,0.6));
     }
     .guide-hero__content {
-      position: relative;
-      z-index: 2;
-      max-width: 1200px;
-      width: 100%;
-      padding: var(--space-3xl) var(--space-xl);
-      text-align: right;
       color: var(--offwhite);
-      margin-left: auto;
     }
     .guide-hero__eyebrow {
       display: inline-block;
@@ -93,12 +87,12 @@
       margin-bottom: var(--space-lg);
       font-weight: 500;
       padding-bottom: var(--space-sm);
-      border-bottom: 1px solid var(--green-light);
+      border-bottom: 1px solid var(--gold);
     }
     .guide-hero__title {
       font-family: var(--font-serif);
       font-weight: 300;
-      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-size: clamp(2.5rem, 5.5vw, 4.5rem);
       line-height: 1.05;
       margin: 0 0 var(--space-lg);
       color: var(--offwhite);
@@ -116,16 +110,27 @@
       opacity: 0.85;
     }
     .guide-hero__meta-sep {
-      color: var(--green-light);
+      color: var(--gold);
       margin: 0 var(--space-sm);
     }
-    @media (max-width: 768px) {
-      .guide-hero__content {
-        text-align: left;
-        padding: var(--space-2xl) var(--space-lg);
+    @media (max-width: 900px) {
+      .guide-hero__inner {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+        text-align: center;
+        min-height: auto;
       }
-      .guide-hero__overlay {
-        background: linear-gradient(180deg, rgba(14,14,12,0.3) 0%, rgba(14,14,12,0.85) 100%);
+      .guide-hero__content {
+        order: 2;
+      }
+      .guide-hero__image {
+        order: 1;
+        max-height: 50vh;
+        margin: 0 auto;
+      }
+      .guide-hero__eyebrow {
+        margin: 0 auto var(--space-lg);
+        display: inline-block;
       }
     }
 
@@ -192,7 +197,7 @@
       color: var(--green-deep);
     }
 
-    /* Inline CTA - now with green accent on the black CTA */
+    /* Inline CTA - black with gold accent (gold reads, green didn't) */
     .guide-cta-inline {
       background: var(--black);
       color: var(--offwhite);
@@ -201,7 +206,7 @@
       border-radius: 4px;
       text-align: center;
       position: relative;
-      border-top: 3px solid var(--green);
+      border-top: 3px solid var(--gold);
     }
     .guide-cta-inline h3 {
       font-family: var(--font-serif);
@@ -355,19 +360,20 @@
   <!-- ====== MAIN ====== -->
   <main id="main-content" class="article-page">
 
-    <!-- Hero - book on surface -->
+    <!-- Hero - book image left, headline right -->
     <section class="guide-hero" aria-label="Guide hero">
-      <div class="guide-hero__bg"></div>
-      <div class="guide-hero__overlay"></div>
-      <div class="guide-hero__content">
-        <span class="guide-hero__eyebrow">The Free Guide</span>
-        <h1 class="guide-hero__title">The Canberra Renovation <em>Guide</em></h1>
-        <div class="guide-hero__meta">
-          <span>By Jeff Rentoule</span>
-          <span class="guide-hero__meta-sep">·</span>
-          <span>Updated May 2026</span>
-          <span class="guide-hero__meta-sep">·</span>
-          <span>20 min read</span>
+      <div class="guide-hero__inner">
+        <img src="../assets/guide-book-cover.jpg" alt="The Canberra Renovation Guide hardcover book with gold-foil title on a timber surface" class="guide-hero__image">
+        <div class="guide-hero__content">
+          <span class="guide-hero__eyebrow">The Free Guide</span>
+          <h1 class="guide-hero__title">The Canberra Renovation <em>Guide</em></h1>
+          <div class="guide-hero__meta">
+            <span>By Jeff Rentoule</span>
+            <span class="guide-hero__meta-sep">·</span>
+            <span>Updated May 2026</span>
+            <span class="guide-hero__meta-sep">·</span>
+            <span>20 min read</span>
+          </div>
         </div>
       </div>
     </section>
