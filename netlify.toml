@@ -326,3 +326,17 @@
   to = "/?utm_source=email&utm_medium=signature&utm_campaign=email_signature"
   status = 301
   force = true
+
+# --- GUIDE SHORT LINKS ---
+
+[[redirects]]
+  from = "/guide"
+  to = "/canberra-renovation-guide/?utm_source=shortlink&utm_medium=guide&utm_campaign=renovation_guide"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/renovation-guide"
+  to = "/canberra-renovation-guide/?utm_source=shortlink&utm_medium=guide&utm_campaign=renovation_guide"
+  status = 301
+  force = true
