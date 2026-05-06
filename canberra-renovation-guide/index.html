@@ -202,7 +202,7 @@
     /* Inline CTA - black with gold accent (gold reads, green didn't) */
     .guide-cta-inline {
       background: var(--black);
-      color: var(--offwhite);
+      color: #f5f3ef !important;
       padding: var(--space-2xl);
       margin: var(--space-3xl) 0;
       border-radius: 4px;
@@ -210,22 +210,46 @@
       position: relative;
       border-top: 3px solid var(--gold);
     }
-    .guide-cta-inline h3 {
+    .article-body .guide-cta-inline h3 {
       font-family: var(--font-serif);
-      color: var(--offwhite);
+      color: #f5f3ef !important;
       font-size: 1.8rem;
       margin: 0 0 var(--space-md);
-      font-weight: 400;
+      font-weight: 500;
     }
-    .guide-cta-inline h3 em {
-      color: var(--gold-light);
+    .article-body .guide-cta-inline h3 em {
+      color: #d4b48a !important;
       font-style: italic;
       font-family: 'Amsterdam', cursive;
     }
-    .guide-cta-inline p {
-      color: var(--offwhite);
-      opacity: 0.9;
+    .article-body .guide-cta-inline p {
+      color: #f5f3ef !important;
+      opacity: 0.92;
       margin-bottom: var(--space-xl);
+    }
+    /* Gold CTA button for black-background CTAs */
+    .article-body .guide-cta-inline .btn--gold,
+    .guide-cta-inline .btn--gold {
+      display: inline-block;
+      padding: 14px 36px;
+      background: var(--gold) !important;
+      color: #0e0e0c !important;
+      border: none;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: background 0.25s ease, transform 0.15s ease;
+      cursor: pointer;
+    }
+    .article-body .guide-cta-inline .btn--gold:hover,
+    .guide-cta-inline .btn--gold:hover {
+      background: var(--gold-light) !important;
+      color: #0e0e0c !important;
+      transform: translateY(-1px);
     }
 
     /* Cost tables */
