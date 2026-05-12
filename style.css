@@ -138,7 +138,7 @@
   border-radius: 2px;
 }
 .nav__logo-img {
-  height: 56px;
+  height: 48px;
   width: auto;
   display: block;
   transition: opacity 0.2s ease, transform 0.3s ease;
@@ -148,7 +148,7 @@
 }
 @media (max-width: 768px) {
   .nav__logo-img {
-    height: 44px;
+    height: 40px;
   }
 }
 /* The signature stroke - a thin gold beam that sweeps across the logo on load */
