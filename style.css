@@ -138,13 +138,18 @@
   border-radius: 2px;
 }
 .nav__logo-img {
-  height: 32px;
+  height: 56px;
   width: auto;
   display: block;
   transition: opacity 0.2s ease, transform 0.3s ease;
   /* Reveal animation: logo starts hidden, fades in after the light sweep passes */
   opacity: 0;
   animation: logoReveal 1.4s cubic-bezier(0.4, 0, 0.2, 1) 0.6s forwards;
+}
+@media (max-width: 768px) {
+  .nav__logo-img {
+    height: 44px;
+  }
 }
 /* The signature stroke - a thin gold beam that sweeps across the logo on load */
 .nav__logo::before {
@@ -382,6 +387,16 @@
   vertical-align: -0.08em;
   display: inline-block;
   padding: 0 0.05em 0.15em;
+}
+.hero__brandline {
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: var(--space-md) 0 var(--space-lg);
+  text-align: center;
 }
 .hero__subtitle {
   font-family: var(--sans);
