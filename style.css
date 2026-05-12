@@ -2110,20 +2110,25 @@
 .welcome__heading {
   display: flex;
   flex-direction: column;
-  gap: 0.1em;
+  gap: 0;
   text-align: left;
   margin-bottom: var(--space-xl);
 }
 .welcome__heading-line1 {
   align-self: flex-start;
+  line-height: 1.05;
 }
 .welcome__heading-line2 {
   align-self: flex-end;
   padding-right: 0.5em;
+  line-height: 0.85;
+  margin-top: -0.15em;
 }
 @media (max-width: 768px) {
   .welcome__heading-line2 {
     padding-right: 0.25em;
+    line-height: 0.75;
+    margin-top: -0.45em;
   }
 }
 
