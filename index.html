@@ -238,13 +238,12 @@
               </div>
             </div>
             <div class="welcome__image welcome__video">
-              <iframe
-                src="https://player.vimeo.com/video/1065695637?h=8b78f942f6&title=0&byline=0&portrait=0&dnt=1"
-                title="Rentoule Projects: Our Story"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-                loading="lazy"
-                frameborder="0"></iframe>
+              <button type="button" class="video-facade" data-video-id="1065695637" data-video-hash="8b78f942f6" aria-label="Play video: Rentoule Projects, our story">
+                <img src="https://vumbnail.com/1065695637.jpg" alt="" loading="lazy" decoding="async" class="video-facade__poster">
+                <span class="video-facade__play" aria-hidden="true">
+                  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><path d="M26 22l16 10-16 10V22z" fill="#1a1a18"/></svg>
+                </span>
+              </button>
             </div>
           </div>
         </div>
@@ -490,7 +489,12 @@
             <h2 class="section-heading">A glimpse into <em>our world</em></h2>
           </div>
           <div class="about-video reveal">
-            <iframe src="https://player.vimeo.com/video/1065695637?h=8b78f942f6&title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Rentoule Projects brand video"></iframe>
+            <button type="button" class="video-facade" data-video-id="1065695637" data-video-hash="8b78f942f6" aria-label="Play video: Rentoule Projects brand video">
+              <img src="https://vumbnail.com/1065695637.jpg" alt="" loading="lazy" decoding="async" class="video-facade__poster">
+              <span class="video-facade__play" aria-hidden="true">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><path d="M26 22l16 10-16 10V22z" fill="#1a1a18"/></svg>
+              </span>
+            </button>
           </div>
         </div>
       </section>
@@ -1437,6 +1441,10 @@
                   target: "#hubspot-contact-form"
                 });
               </script>
+
+              <p class="form-next-step" style="margin-top:var(--space-lg); padding:var(--space-md) var(--space-lg); border-left:2px solid var(--gold); background:#faf7f2; font-family:var(--sans); font-size:0.95rem; line-height:1.6; color:var(--text);">
+                <strong style="font-weight:600; letter-spacing:0.04em;">What happens next.</strong> Once you send this through, I'll read your project details myself and call you back within one business day if it looks like a good fit. No call centres, no chase-ups. Just a straight conversation about whether we're the right builder for the job. <span style="display:block; margin-top:var(--space-xs); font-style:italic;">- Jeff</span>
+              </p>
 
             </div>
 

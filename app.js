@@ -68,7 +68,34 @@
     initCareerForm();
     initScrollReveal();
     initBASliders();
+    initVideoFacades();
   });
+
+  // ============ VIDEO FACADES (Vimeo click-to-load) ============
+  function initVideoFacades() {
+    const facades = document.querySelectorAll('.video-facade');
+    facades.forEach(facade => {
+      facade.addEventListener('click', () => {
+        const id = facade.getAttribute('data-video-id');
+        const hash = facade.getAttribute('data-video-hash');
+        const title = facade.getAttribute('aria-label') || 'Vimeo video';
+        if (!id) return;
+        const iframe = document.createElement('iframe');
+        const hashParam = hash ? `h=${encodeURIComponent(hash)}&` : '';
+        iframe.src = `https://player.vimeo.com/video/${encodeURIComponent(id)}?${hashParam}autoplay=1&title=0&byline=0&portrait=0&dnt=1`;
+        iframe.title = title;
+        iframe.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture');
+        iframe.setAttribute('allowfullscreen', '');
+        iframe.setAttribute('frameborder', '0');
+        iframe.style.position = 'absolute';
+        iframe.style.inset = '0';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.border = '0';
+        facade.replaceWith(iframe);
+      }, { once: true });
+    });
+  }
 
   // ============ MOBILE NAV ============
   function closeMobileNav() {
