@@ -349,3 +349,18 @@
   to = "/canberra-renovation-guide/?utm_source=meta&utm_medium=paid_social&utm_campaign=renovation_guide_ebook&utm_content=ad_v1"
   status = 301
   force = true
+
+# --- MISSING BLOG ARTICLE REDIRECTS (added 2026-05-31 SEO check) ---
+# Old WordPress root-level slugs for newer articles not yet covered above
+
+[[redirects]]
+  from = "/energy-efficiency-eer-canberra/"
+  to = "/blog/energy-efficiency-eer-canberra/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ncc-2025-canberra-renovations/"
+  to = "/blog/ncc-2025-canberra-renovations/"
+  status = 301
+  force = true
