@@ -151,7 +151,7 @@
   <!-- HubSpot tracking code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js-ap1.hs-scripts.com/40214516.js"></script>
   <script src="./tracking.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js?render=6LdbCOIsAAAAAE_lrJDRLsWdkOAhmEh6iEJYvWIZ"></script>
+
 
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
@@ -1454,7 +1454,7 @@
             <input type="hidden" name="form-name" value="career-application">
             <p class="hidden-honeypot"><label>Don't fill this out: <input name="bot-field"></label></p>
             <input type="hidden" name="form-loaded-at" id="career-form-loaded-at">
-            <input type="hidden" name="recaptcha-token" id="career-recaptcha-token">
+
 
             <div class="form-group">
               <label for="career-role">Role you're applying for</label>
@@ -1692,8 +1692,6 @@
       if (!form) return;
 
       var loadedAtField = document.getElementById('career-form-loaded-at');
-      var recaptchaField = document.getElementById('career-recaptcha-token');
-      var RECAPTCHA_SITE_KEY = '6LdbCOIsAAAAAE_lrJDRLsWdkOAhmEh6iEJYvWIZ';
       var MIN_FILL_SECONDS = 3;
 
       // Stamp form-loaded time
@@ -1708,27 +1706,6 @@
           console.warn('Form submitted too quickly - blocked');
           return false;
         }
-
-        // Get reCAPTCHA token before submit
-        if (typeof grecaptcha === 'undefined') {
-          // reCAPTCHA failed to load - let submission through rather than block a real applicant
-          return;
-        }
-
-        e.preventDefault();
-        grecaptcha.ready(function() {
-          grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: 'careers_submit' })
-            .then(function(token) {
-              if (recaptchaField) recaptchaField.value = token;
-              // Re-submit the form now that we have the token
-              HTMLFormElement.prototype.submit.call(form);
-            })
-            .catch(function(err) {
-              console.warn('reCAPTCHA error:', err);
-              // Let through on recaptcha error rather than block real applicant
-              HTMLFormElement.prototype.submit.call(form);
-            });
-        });
       });
     })();
   </script>
