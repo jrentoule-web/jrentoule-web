@@ -1575,7 +1575,30 @@
                   portalId: "40214516",
                   formId: "fca73eb8-fb89-4b56-89c3-f0db34bf63bc",
                   region: "ap1",
-                  target: "#hubspot-contact-form"
+                  target: "#hubspot-contact-form",
+                  onFormSubmit: function($form) {
+                    // Capture form field values, then fire an async POST to our Netlify Function
+                    // which creates a Deal in HubSpot and associates it to the new Contact.
+                    // This does not block the form submission or the user redirect.
+                    try {
+                      var fields = {};
+                      $form.serializeArray().forEach(function(f) { fields[f.name] = f.value; });
+                      fetch('/.netlify/functions/hubspot-deal-create', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                          email: fields.email || '',
+                          firstname: fields.firstname || '',
+                          lastname: fields.lastname || '',
+                          phone: fields.phone || fields.mobilephone || '',
+                          suburb: fields.suburb || fields.location__suburb_ || '',
+                          message: fields.message || fields.project_details || ''
+                        })
+                      }).catch(function(e) { console.warn('Deal auto-create request failed:', e); });
+                    } catch (e) {
+                      console.warn('Could not queue deal auto-create:', e);
+                    }
+                  }
                 });
               </script>
 

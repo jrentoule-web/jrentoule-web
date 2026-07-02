@@ -364,3 +364,8 @@
   to = "/blog/ncc-2025-canberra-renovations/"
   status = 301
   force = true
+
+# Serverless functions (HubSpot form-to-deal automation)
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
