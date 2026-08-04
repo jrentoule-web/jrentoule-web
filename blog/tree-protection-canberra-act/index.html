@@ -118,41 +118,49 @@
   </script>
 </head>
 
-<body>
+<body class="article-body-page">
   <!-- Skip to content -->
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a href="/#main-content" class="skip-link">Skip to content</a>
 
   <!-- Header -->
-  <header class="site-header" role="banner">
-    <nav class="site-nav" aria-label="Primary">
-      <div class="site-nav__inner">
-        <a href="/" class="site-logo" aria-label="Rentoule Projects home">
-          <img src="/assets/logo-main-black.png" alt="Rentoule Projects" class="site-logo__img">
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo" aria-label="Rentoule Projects - Home">
+          <img src="../../assets/logo-nav-gold-script.png" alt="Rentoule Projects" class="nav__logo-img">
         </a>
-        <ul class="site-nav__list" id="primary-menu">
-          <li><a href="/#welcome">Welcome</a></li>
-          <li><a href="/#services">Services</a></li>
-          <li><a href="/#case-studies">Case Studies</a></li>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#blog">Blog</a></li>
-          <li><a href="/#contact">Contact</a></li>
-        </ul>
-        <button class="site-nav__toggle" aria-controls="primary-menu" aria-expanded="false">
-          <span class="sr-only">Toggle menu</span>
-          <span class="site-nav__toggle-icon"></span>
-        </button>
+      <div class="nav__links">
+        <a href="/#about" class="nav__link">About</a>
+        <a href="/#services" class="nav__link">Services</a>
+        <a href="/#case-studies" class="nav__link">Case Studies</a>
+        <a href="/canberra-renovation-guide/" class="nav__link">Guide</a>
+        <a href="/#blog" class="nav__link active">Blog</a>
+        <a href="/#careers" class="nav__link">Careers</a>
+        <a href="/#contact" class="nav__link">Contact</a>
       </div>
-    </nav>
-  </header>
+      <a href="/#contact" class="btn btn--primary nav__cta desktop-only">Request a Consult</a>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" aria-hidden="true">
+      <a href="/">Home</a>
+      <a href="/#about">About</a>
+      <a href="/#services">Services</a>
+      <a href="/#case-studies">Case Studies</a>
+      <a href="/canberra-renovation-guide/">Guide</a>
+      <a href="/#blog">Blog</a>
+      <a href="/#careers">Careers</a>
+      <a href="/#contact">Contact</a>
+      <a href="/#contact" class="btn btn--primary">Request a Consult</a>
+    </div>
+  </nav>
 
-  <main id="main">
+  <main id="main-content" class="article-page">
     <!-- Article hero -->
-    <section class="hero hero--article" aria-label="Article header">
-      <div class="hero__media">
-        <img src="/assets/service-new-builds.jpg" alt="Mature Canberra eucalypt on a residential block" class="hero__image">
+    <section class="hero hero--page hero--article" aria-label="Article header">
+      <div class="hero__bg" style="background-image: url('/assets/service-new-builds.jpg')"></div>
         <div class="hero__overlay"></div>
-      </div>
-      <div class="hero__content hero__content--article">
+      <div class="hero__content">
         <span class="hero__eyebrow">Advice &amp; Tips</span>
         <h1 class="hero__title hero__title--article">Tree Protection in Canberra: What You Can and Cannot Do Around <em>Protected Trees</em> (2026 Guide)</h1>
         <div class="article-meta">
@@ -369,36 +377,68 @@
   </main>
 
   <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="site-footer__inner">
-      <div class="site-footer__brand">
-        <img src="/assets/logo-main-gold.png" alt="Rentoule Projects" class="site-footer__logo">
-        <p class="site-footer__tagline">Making your house, your home.</p>
-        <p class="footer__about-text">Canberra residential builder specialising in home renovations, extensions and custom new builds from mid-range through to luxury. Director - Jeff Rentoule.</p>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- About Column -->
+        <div>
+          <img src="../../assets/logo-nav-gold.png" alt="Rentoule Projects" class="footer__logo-img">
+          <p class="footer__tagline">Making your house your home</p>
+          <p class="footer__about-text">Canberra residential builder specialising in home renovations, extensions and custom new builds from mid-range through to luxury. Director - Jeff Rentoule.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/rentoule_projects/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/p/Rentoule-Projects-100093837338330/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Services Column -->
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <div class="footer__links">
+            <a href="/#services">New Builds</a>
+            <a href="/#services">Extensions</a>
+            <a href="/#services">Renovations</a>
+          </div>
+        </div>
+
+        <!-- Case Studies Column -->
+        <div>
+          <h4 class="footer__heading">Case Studies</h4>
+          <div class="footer__links">
+            <a href="/#case-studies">Chris - Weetangera</a>
+            <a href="/#case-studies">50 Year Home Renovation</a>
+            <a href="/#case-studies">Mark Page - Griffith</a>
+          </div>
+        </div>
+
+        <!-- Navigation Column -->
+        <div>
+          <h4 class="footer__heading">Navigation</h4>
+          <div class="footer__links">
+            <a href="/">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#services">Services</a>
+            <a href="/#projects">Projects</a>
+            <a href="/#contact">Contact</a>
+            <a href="/#blog">Blog</a>
+            <a href="/#careers">Careers</a>
+          </div>
+        </div>
+
       </div>
-      <div class="site-footer__links">
-        <h3 class="site-footer__heading">Quick Links</h3>
-        <ul>
-          <li><a href="/#welcome">Welcome</a></li>
-          <li><a href="/#services">Services</a></li>
-          <li><a href="/#case-studies">Case Studies</a></li>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#blog">Blog</a></li>
-          <li><a href="/#contact">Contact</a></li>
-        </ul>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Rentoule Projects. All rights reserved.</p>
+        <p>Canberra, ACT, Australia</p>
       </div>
-      <div class="site-footer__contact">
-        <h3 class="site-footer__heading">Contact</h3>
-        <p>0434 435 966</p>
-        <p><a href="mailto:info@rentouleprojects.com">info@rentouleprojects.com</a></p>
-        <p>ACT Licence 20211145 | NSW Licence 453726C</p>
-      </div>
-    </div>
-    <div class="site-footer__bottom">
-      <p>&copy; 2026 Rentoule Projects. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="/script.js"></script>
+  <script src="../../app.js"></script>
 </body>
 </html>
