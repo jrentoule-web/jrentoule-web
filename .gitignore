@@ -1,3 +1,6 @@
 .DS_Store
 *.log
 node_modules/
+
+# Internal research notes - kept in workspace, never deployed
+research/
