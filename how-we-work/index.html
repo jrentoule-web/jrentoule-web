@@ -318,6 +318,34 @@
       margin-bottom: 0;
     }
 
+    /* Plain-English callout (used in Stage 5 for the selections translation) */
+    .article-body .hww-plain-english {
+      background: var(--warm);
+      border-left: 4px solid var(--gold);
+      padding: var(--space-lg) var(--space-xl);
+      margin: var(--space-lg) 0;
+      border-radius: 4px;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--text);
+      font-size: 0.98rem;
+    }
+    .article-body .hww-plain-english p {
+      margin: 0;
+      font-style: italic;
+    }
+    .article-body .hww-plain-english__label {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: var(--space-sm);
+      font-style: normal;
+    }
+
     /* Money block */
     .hww-money {
       background: var(--black);
@@ -345,11 +373,30 @@
     }
     .hww-money .hww-money__lead {
       font-family: var(--serif);
-      font-size: 1.3rem;
+      font-size: 1.35rem;
       opacity: 1;
       color: #f5f3ef !important;
-      margin-bottom: var(--space-lg);
+      margin-bottom: var(--space-xl);
       font-style: italic;
+      padding-left: var(--space-lg);
+      border-left: 3px solid var(--gold);
+      line-height: 1.5;
+    }
+    .hww-money .hww-money__lead::before {
+      content: '“';
+      color: var(--gold);
+      margin-right: 0.1em;
+      font-style: normal;
+      font-size: 1.15em;
+      vertical-align: -0.05em;
+    }
+    .hww-money .hww-money__lead::after {
+      content: '”';
+      color: var(--gold);
+      margin-left: 0.1em;
+      font-style: normal;
+      font-size: 1.15em;
+      vertical-align: -0.05em;
     }
     .hww-money .hww-money__final {
       font-family: var(--sans);
@@ -645,7 +692,7 @@
       <div class="hww-hero__content">
         <span class="hww-hero__eyebrow">The Process</span>
         <h1 class="hww-hero__title">How we <em>work</em> with you</h1>
-        <p class="hww-hero__sub">From the first phone call through to the day you get the keys, this is what engaging Rentoule Projects looks like. Have a read before we talk. It saves us both time and helps you turn up to that first conversation with the right questions ready.</p>
+        <p class="hww-hero__sub">From the first phone call through to the day you get the keys, this is what engaging Rentoule Projects looks like. Have a read before we talk. It helps you turn up to that first conversation with the right questions ready.</p>
         <div class="hww-hero__meta">
           <span>By Jeff Rentoule</span>
           <span class="hww-hero__meta-sep">·</span>
@@ -663,9 +710,9 @@
 
 <p><strong>This page is not a sales pitch. It is a plain-language explanation of what happens when you engage Rentoule Projects, so you know exactly what to expect before we speak.</strong></p>
 
-<p>I'm Jeff Rentoule. I run Rentoule Projects, a small residential building business in Canberra. Over 19 years in the industry and 5 years running my own business, I have refined the way I take a client through a project. This is that process, in the order it actually happens, with the mechanics I would explain to you sitting across the table.</p>
+<p>I'm Jeff Rentoule. I own and run Rentoule Projects, a small residential building business in Canberra. Over 19 years in the industry and 5 years running my own business, I have refined the way I take a client through a project. This is that process, in the order it actually happens, with the mechanics I would explain to you sitting across the table.</p>
 
-<p>Use this page however you want. Read it end to end before we meet, jump to the section you need, or come back to it once we are underway.</p>
+<p>Feel free to read this end to end, dive into the sections you are interested in, or refer back to it as we work together.</p>
 
 <nav class="hww-toc" aria-label="Page contents">
   <h2 class="hww-toc__title">On this page</h2>
@@ -680,25 +727,25 @@
 
 <h2 id="questions">Before you reach out, some questions to sit with</h2>
 
-<p>Every good project starts with the client being clear on what they actually want. I ask most of these on the first call anyway, so having them sitting in your head means we can go deeper faster. Do not feel like you need to have every answer locked in. Even a rough answer is useful. If you find yourself stuck on any of them, that is a signal about where we need to spend more time.</p>
+<p>Every good project starts with the client being clear on what they actually want. I really want to work with you to make that clear from the first conversation. You will have questions, and I encourage you to bring them to our first meeting so we can properly map out what your goal is. Many clients find there are areas where they are still unclear, and it is important to communicate those areas with me. It is a signal about where we need to spend our time.</p>
 
 <aside class="hww-questions">
   <ul class="hww-questions__list">
     <li>
       <h4>What is the scope of work you have in mind?</h4>
-      <p>Bathroom only, kitchen only, full house renovation, extension, knockdown rebuild. If you are not sure yet, that is fine. But have a picture of what you are wanting the finished home to do differently to what it does now.</p>
+      <p>Bathroom only, kitchen only, full house renovation, extension, knockdown rebuild. If you are not sure yet, that is fine. But have a sense of how you want the finished home to feel differently to the way it does now.</p>
     </li>
     <li>
       <h4>What are you actually trying to achieve?</h4>
-      <p>Not the renovation itself. The reason for the renovation. More space for a growing family, a house that works for someone ageing in place, a kitchen you can actually cook in, a home that feels like home rather than a starter house you never left. This is the part that shapes everything downstream.</p>
+      <p>Not the renovation itself. The reason for the renovation. For example, more space for a growing family, a house that works for someone ageing in place, a kitchen you can actually cook in, or a home that feels like home rather than a starter house you never left. This is the part that shapes everything downstream.</p>
     </li>
     <li>
-      <h4>Do you have more than one option you are considering, and why one over the other?</h4>
-      <p>Renovate or rebuild. Extend up or extend out. Stay in this house or sell and buy. Renovate the whole house or do the kitchen properly first. If you are weighing options, tell me what pulled you toward one over the other. If I have a strong view either way, I will tell you.</p>
+      <h4>Do you have more than one option you are considering?</h4>
+      <p>Renovate or rebuild. Extend up or extend out. Stay in this house or sell and buy. Renovate the whole house or do the kitchen properly first. If you are weighing options, tell me what pulled you toward one over the other. I am always happy to share my professional recommendation.</p>
     </li>
     <li>
       <h4>What is your realistic budget, and what is your dream budget?</h4>
-      <p>Both matter. The realistic one keeps the project honest. The dream one tells me what you would spend on if the money was there, which helps me flag where the biggest levers are. Do not tell me you have no budget. Everyone has a budget. The question is how firm it is.</p>
+      <p>Everyone has a budget. Both the realistic and the dream number matter. The realistic one keeps the project honest. The dream one tells me what you would spend on if the money was there, which helps me flag where the biggest levers are. The question is how firm each of those numbers is.</p>
     </li>
     <li>
       <h4>Do you have drawings, or is this still an idea?</h4>
@@ -706,11 +753,11 @@
     </li>
     <li>
       <h4>Have you spoken to any other builders?</h4>
-      <p>If yes, what were they like and what did you like or dislike about how they approached it. If no, what has held you back from getting more quotes. Both answers are useful. I am not trying to disqualify anyone, I am trying to understand what you are comparing.</p>
+      <p>If yes, what were they like and what did you like or dislike about how they approached it. If no, what has held you back from getting more quotes. Both answers are useful. It is important to speak to multiple builders so you understand how your investment with them will be valued.</p>
     </li>
     <li>
       <h4>Who else is part of the decision?</h4>
-      <p>Partner, kids, parents, siblings, financial adviser. If we get to the ballpark stage and there is a decision-maker I have not met yet, that slows everything down. Better to know now so I can loop them in early.</p>
+      <p>Partner, kids, parents, siblings, financial adviser. I want every decision-maker at the table from the start, so every voice can be heard and we can make swift decisions to keep your project on track. Best to loop them in early.</p>
     </li>
   </ul>
 </aside>
@@ -719,56 +766,70 @@
 
 <h2 id="stages">The eight stages of working with us</h2>
 
-<p>Every project moves through the same eight stages. The scope changes, the timeline changes, the number of consultants changes, but the sequence does not. Understanding it up front means fewer surprises later. The bit that catches most people out is how much of the real work happens before construction ever starts. That is the point. By the time construction starts, the price is fixed and the decisions are locked in.</p>
+<p>Every project moves through the same eight stages. The scope changes, the timeline changes, the number of consultants changes, but the sequence does not. Understanding it up front means fewer surprises later. The bit that catches most people out is how much of the real work happens before construction ever starts. That is deliberate. All of the pre-construction work you see here exists so that when we do get to construction, the pricing is transparent, clear and locked in. That transparency is the thing I do differently.</p>
 
 <div class="hww-stages">
 
   <div class="hww-stage">
     <h3 class="hww-stage__title">Discovery call</h3>
     <span class="hww-stage__meta">~15 minutes · Free</span>
-    <p>We start with a short phone call. About fifteen minutes. Long enough for me to get a real read on what you are trying to build, short enough that it does not eat your day. I ask about scope, what you are trying to achieve, your rough budget and timeline, and where you are in your thinking. I do not quote at this stage. It is too early and any number I gave you would be dishonest.</p>
+    <p>We start with a short phone call. About fifteen minutes. Long enough for me to get a real read on what you are trying to build, short enough that it does not eat into your day. This is where the questions I asked you to sit with earlier come into play. I will ask about your scope, what you are trying to achieve, your rough budget and timeline, and where you are in your thinking. I do not quote at this stage. It is too early and any number I gave you would be inaccurate.</p>
     <p>You get: a straight answer on whether we are the right builder for your project and whether the next step (a site visit) makes sense. I get: enough context to prepare properly if we do proceed. If it is not the right fit, I will tell you and often suggest a builder who is better matched.</p>
   </div>
 
   <div class="hww-stage">
     <h3 class="hww-stage__title">Site visit</h3>
     <span class="hww-stage__meta">~1 hour on site · Free</span>
-    <p>If we are both keen to keep going, I visit the site. I walk through what you are wanting to build with any drawings, sketches or concepts you have, take measurements where they help, and take the time to understand the site properly. Orientation, access, existing structure, neighbouring conditions. The things that shape what is possible and what is not.</p>
+    <p>Once we have agreed we are a good fit, I visit the site. I walk through what you are wanting to build with any drawings, sketches or concepts you have, take measurements where they help, and take the time to understand the site properly. Orientation, access, existing structure, neighbouring conditions. The things that shape what is possible and what is not.</p>
     <p>Just as important, I want to hear and see in person what you like and do not like about your current home. What is not working. What frustrates you every day. What you love and want to keep. What you hope the changes will actually improve. How the house feels now and how you want it to feel after the work. This is what "making your house your home" actually means in practice. It is the part most builders skip. It is also the part that shapes the best design decisions later.</p>
-    <p>Bring any drawings you have, even rough ones, and be ready to talk through the constraints and non-negotiables of the project. Come open to walking me through what daily life looks like in the house now. This is where I get everything I need to prepare a ballpark that is honest, not aspirational.</p>
+    <p>Bring any drawings you have, even rough ones, and be ready to talk through the constraints and non-negotiables of the project. Be open to walking me through what daily life looks like in the house now. This is where I get everything I need to prepare a ballpark that is honest, not aspirational.</p>
   </div>
 
   <div class="hww-stage">
     <h3 class="hww-stage__title">Ballpark proposal</h3>
     <span class="hww-stage__meta">Within 2 weeks of site visit · Free</span>
     <p>After the site visit, I take up to two weeks to prepare your ballpark proposal. It is an approximate category-level price range designed to give you a clear indication of what your scope will cost. Not a single fixed number. It includes what is in scope, what is not, an indicative timeline, and what the Preliminary Services Agreement covers if you decide to move forward.</p>
-    <p>I send the ballpark through the evening before we meet, so you have time to read it, sit with it, and jot down any questions overnight. We then meet in person to walk through it together. I go through what is included, what is not, where the numbers came from, and what levers you could pull to bring the cost down if it is over where you were hoping to land. We also talk through your options. Different scope splits, or delivering the project in stages instead of all at once, and what each of those would do to your cost and your timeline.</p>
+    <p>I send the ballpark through the evening before we meet, so you have time to read it, sit with it, and jot down any questions overnight. We then meet in person to walk through it together. I go through what is included, what is not, where the numbers came from, and the levers you can pull to adjust the costings so you get the best value for your money. We also talk through your options. Different scope splits, or delivering the project in stages instead of all at once, and what each of those would do to your cost and your timeline.</p>
     <p>We finish that meeting talking about next steps. If the range fits and you want to keep going, I explain what the PSA covers and roughly what happens next. If the range does not fit, we talk about how to scale scope back. Either way, you leave clear on where you stand.</p>
   </div>
 
   <div class="hww-stage">
     <h3 class="hww-stage__title">Preliminary Services Agreement (PSA)</h3>
     <span class="hww-stage__meta">On average 6 to 8 weeks · Fee credited against contract</span>
-    <p>This is where the real pre-construction work happens. The PSA is a short written agreement that formalises the pre-contract work I do to turn your ballpark into a fixed-price contract. It has a fee, tiered based on the pathway your project needs. I will always tell you what your specific fee is before you sign.</p>
-    <p>The PSA fee is credited in full against your building contract on signing. Meaning if you proceed to construction, the PSA effectively costs nothing on top of the build price. It only stands alone if you decide not to proceed.</p>
-    <p>The PSA is also where design gets locked in. If your project needs an architect, this is where we bring one in. I collaborate with them throughout the planning stage. Attending design meetings, providing buildability input, keeping the cost plan honest as drawings develop.</p>
-    <p>For selections (see the next stage for what that actually means), you have three pathways. First, most architects include interior design as part of their service, so if we have an architect on the project this is often the most natural option. Second, engage a standalone interior designer who runs selections with you and attends the trade supplier appointments with us. Third, if you have a clear picture of what you want, I can run selections with you directly. To be straight though, my selections help is limited. I can guide you through the process, keep the cost impact honest, and stop you from making expensive mistakes. But if you do not have a clear vision of what you want, you will get a much better outcome working with a specialist. That is what they do every day.</p>
-    <p>During the PSA I also coordinate all the consultants your project needs. Engineer, energy assessor, surveyor, draftsperson, certifier, whoever else. Their fees are paid direct by you, not through me. My PSA fee covers my time to coordinate them, run the selections process, tender the job to my trades, and prepare the final quote.</p>
-    <p>If your project needs Building Approval or Development Approval, we can lodge for it during the PSA once the required documents are back and you are comfortable with where the budget is sitting. This lets the approval process run in parallel with selections rather than after them, which typically saves weeks off your pre-construction time.</p>
+    <p>This is where the real pre-construction work happens. The PSA is a short written agreement that formalises the pre-contract work I do to turn your ballpark into a fixed-price contract, and it locks in your build slot in my calendar so we can hit the ground running once we get to contract.</p>
+    <p>The PSA has a fee, tiered based on the pathway your project needs. I will always tell you what your specific fee is before you sign. It is credited in full against your building contract on signing, so if you proceed to construction the PSA effectively costs nothing on top of the build price. It only stands alone if you decide not to proceed.</p>
+    <p>During the PSA period, four things run in parallel:</p>
+    <ul>
+      <li><strong>Design lock-in.</strong> If your project needs an architect, this is where we bring one in. I collaborate with them throughout the planning stage, attending design meetings, providing buildability input and keeping the cost plan honest as the drawings develop.</li>
+      <li><strong>Consultant coordination.</strong> Engineer, energy assessor, surveyor, draftsperson, certifier, whoever else your project needs. Their fees are paid direct by you.</li>
+      <li><strong>Selections begin.</strong> See the next stage for what selections actually means and the three pathways for how they run.</li>
+      <li><strong>Approval lodgement.</strong> If your project needs Building Approval or Development Approval, we can lodge during the PSA once the required documents are back and you are comfortable with the budget. This runs the approval process in parallel with selections, saving weeks off your pre-construction time.</li>
+    </ul>
   </div>
 
   <div class="hww-stage">
     <h3 class="hww-stage__title">Selections and verification</h3>
-    <span class="hww-stage__meta">Runs during PSA · In-person at trade suppliers</span>
-    <p>Quick plain-English translation first. "Selections" in the industry is the term for every material, fitting, fixture and finish choice you make about your home. In practice this means paint colours, tapware (taps, mixers, shower heads), lighting fixtures, joinery design (kitchen cabinets, wardrobes, vanities) and their finishes (colours, handles, level of detail), plus flooring, tiling, benchtops, splashbacks, appliances, door and window hardware. "Finishes" is the shorthand for the visible surface and material choices within all of that. If either word ever comes up and it is not clear what I mean, ask. Most first-time renovators have not needed to know these terms before, and there is no reason to pretend otherwise.</p>
-    <p>This is the part most builders leave to the client to do alone. I do not. Every cost-carrying selection is chosen together at the trade supplier, either with me alongside you or with your interior designer running the appointment. Either way, someone is in the room calling out the cost impact live as we go.</p>
-    <p>The reason is simple. Selections drive the price more than almost anything else. If you make them blind, you find out you are over budget when the final quote comes back and it is too late to change without a redesign. Doing them properly means we know what the number is going to look like before we lock anything in.</p>
+    <span class="hww-stage__meta">During PSA period · In-person at trade suppliers</span>
+    <p>This is the part most builders leave to the client to do alone. I do not. Selections drive the price more than almost anything else, so we do them together, in person, at the trade suppliers. Every cost-carrying selection is chosen with someone in the room calling out the cost impact live as we go. That way we know what the number is going to look like before we lock anything in.</p>
+
+    <aside class="hww-plain-english">
+      <span class="hww-plain-english__label">Quick plain-English translation</span>
+      <p>"Selections" in the industry is the term for every material, fitting, fixture and finish choice you make about your home. In practice this means paint colours, tapware (taps, mixers, shower heads), lighting fixtures, joinery design (kitchen cabinets, wardrobes, vanities) and their finishes (colours, handles, level of detail), plus flooring, tiling, benchtops, splashbacks, appliances, door and window hardware. "Finishes" is the shorthand for the visible surface and material choices within all of that. If either word ever comes up and it is not clear what I mean, ask. Most first-time renovators have not needed to know these terms before, and there is no reason to pretend otherwise.</p>
+    </aside>
+
+    <p>You have three pathways for who runs selections with you:</p>
+    <ul>
+      <li><strong>Your architect.</strong> Most architects include interior design as part of their service, so if we have an architect on the project this is often the most natural option.</li>
+      <li><strong>A standalone interior designer.</strong> Engage one directly and they attend the trade supplier appointments with us to drive the interior decisions.</li>
+      <li><strong>Me directly.</strong> If you have a clear picture of what you want, I can run selections with you. To be straight though, my selections help is limited. I can guide you through the process, keep the cost impact honest, and stop you from making expensive mistakes. But if you do not have a clear vision, you will get a much better outcome working with a specialist. That is what they do every day.</li>
+    </ul>
   </div>
 
   <div class="hww-stage">
     <h3 class="hww-stage__title">Final quote and fixed-price contract</h3>
     <span class="hww-stage__meta">10% deposit at contract signing</span>
-    <p>Once selections are locked and trade pricing is verified, I come back to you with the final quote. Every line is firm cost, tied to real product and real trade rates. This is the checkpoint moment. If we are inside budget, we push through to contract. If we are over, we scale back together, either by adjusting scope or going back to suppliers to look at alternatives. If we are under, this is your chance to add scope back in.</p>
+    <p>Once selections are locked and trade pricing is verified, I come back to you with the final quote. Every line is firm cost, tied to real product and real trade rates. You also get a clear construction program showing when each phase happens, and a payment schedule that ties progress claims to construction milestones. Nothing is left to figure out later.</p>
+    <p>This is the checkpoint moment. If we are inside budget, we push through to contract. If we are over, we scale back together, either by adjusting scope or going back to suppliers to look at alternatives. If we are under, this is your chance to add scope back in.</p>
     <p>Once the numbers work, the final quote is signed into a fixed-price building contract, either MBA or HIA depending on the project. A 10 percent deposit is paid at contract signing. This is the number you have from here to handover, adjusted only by written variations you approve.</p>
   </div>
 
@@ -785,7 +846,7 @@
     <span class="hww-stage__meta">Site manager daily · 90-day defect period</span>
     <p>Our site manager is on your site daily. I am across every stage but not on site every day. Our site manager runs the delivery, I run the project. You get regular progress updates, a written variation for anything that changes cost or scope, and site visits at your major milestones.</p>
     <p>We hand over the finished home with certificates, warranties, and a walkthrough of everything that matters. Then we enter a 90-day defect period where I am your first call for anything that needs looking at.</p>
-    <p>After the defect period ends, if something comes up down the track, I am always happy to help. Either directly if it is something I can sort, or by pointing you in the direction of the right person if it is not. Canberra is a small town and reputation is everything, so the door stays open.</p>
+    <p>After the defect period ends, if something comes up down the track, I am always happy to help. Either directly if it is something I can sort, or by pointing you in the direction of the right person if it is not. Canberra is a small town. I want you to feel like you can trust the partnership we build together, and know that you are still valued long after the keys are handed over.</p>
   </div>
 
 </div>
@@ -798,17 +859,17 @@
 <div class="hww-money" id="money">
   <h2 style="color: var(--offwhite);">How the money works</h2>
 
-  <p class="hww-money__lead">The discovery call is free. The site visit is free. The ballpark proposal is free.</p>
+  <p class="hww-money__lead">Transparency around money is something I pride myself on. No cost-plus. No hidden margin. No surprise increases. Fixed price means fixed price.</p>
+
+  <p>The discovery call is free. The site visit is free. The ballpark proposal is free.</p>
 
   <p>The Preliminary Services Agreement has a fee, and that fee is tiered based on your project's pathway. Smaller projects, renovation-only work, and projects requiring Building Approval each sit at different price points. I will always tell you exactly what your specific PSA fee is before you sign, and I quote it in writing on the ballpark.</p>
 
   <p>Whatever the fee, <strong>it is credited in full against your building contract on signing</strong>. Your total spend across PSA and construction is unchanged. The fee only stands alone if you decide not to proceed after the PSA.</p>
 
-  <p>Consultant fees. Engineer, energy assessor, surveyor, draftsperson, certifier, architect if we engage one. All paid direct by you, not through me. Their fees vary too much with project scale to fix at ballpark stage. My PSA fee is my time only.</p>
+  <p>Consultant fees are paid direct by you. Engineer, energy assessor, surveyor, draftsperson, certifier, architect if we engage one. Their fees vary too much with project scale to fix at ballpark stage.</p>
 
   <p>Once the fixed-price contract is signed, the price is locked. Only written variations that you approve change the number.</p>
-
-  <p class="hww-money__final">No cost-plus. No hidden margin. No surprise increases. Fixed price means fixed price.</p>
 </div>
 
 <h2 id="different">What makes this different</h2>
@@ -819,7 +880,7 @@
   <li>Fixed-price contracts only. No cost-plus. No "we will work it out as we go".</li>
   <li>Selections happen in person with me at the trade suppliers. You never guess what a tile choice costs.</li>
   <li>The number firms up progressively across three quotes. Ballpark, revised after selections, final. So you never see a $50,000 jump in a single conversation.</li>
-  <li>Every cost you pay someone else. Consultants, certifiers, council fees. Passed through at cost. My margin is on my work, not on other people's invoices.</li>
+  <li>Every cost you pay someone else. Consultants, certifiers, council fees. Passed through at cost.</li>
   <li>Our site manager is on site every day. I am across every project. The team is small on purpose.</li>
   <li>Every variation is written before it happens. If it is not written, it is not chargeable.</li>
 </ul>
