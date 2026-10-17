@@ -45,6 +45,12 @@
   force = true
 
 [[redirects]]
+  from = "/how-much-does-a-home-extension-cost-in-canberra-per-square-metre/"
+  to = "/blog/home-extension-costs-canberra/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/home-renovation-costs-canberra/"
   to = "/blog/home-renovation-costs-canberra/"
   status = 301
