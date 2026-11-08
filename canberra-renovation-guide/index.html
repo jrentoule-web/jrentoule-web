@@ -291,6 +291,51 @@
       color: var(--gold);
       text-decoration-color: var(--gold);
     }
+    /* Sticky "Get in touch" button (guide page) */
+    .guide-sticky-cta {
+      position: fixed;
+      right: 24px;
+      bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+      z-index: 900;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 26px;
+      background: var(--gold);
+      color: var(--black);
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 2px;
+      box-shadow: 0 10px 28px rgba(14, 14, 12, 0.28);
+      opacity: 0;
+      transform: translateY(16px);
+      pointer-events: none;
+      transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease;
+    }
+    .guide-sticky-cta.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .guide-sticky-cta:hover { background: var(--gold-light); color: var(--black); }
+    .guide-sticky-cta:focus-visible { outline: 2px solid var(--black); outline-offset: 3px; }
+    .guide-sticky-cta svg { flex-shrink: 0; }
+    @media (max-width: 640px) {
+      .guide-sticky-cta {
+        left: 16px;
+        right: 16px;
+        bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+        justify-content: center;
+        padding: 16px 20px;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .guide-sticky-cta { transition: opacity 0.2s ease; transform: none; }
+    }
   </style>
 
   <!-- Structured Data: Article -->
@@ -376,7 +421,7 @@
         <a href="/#careers" class="nav__link">Careers</a>
         <a href="/#contact" class="nav__link">Contact</a>
       </div>
-      <a href="/#contact" class="btn btn--primary nav__cta desktop-only">Request a Consult</a>
+      <a href="/#contact" class="btn btn--primary nav__cta desktop-only">Get in touch</a>
       <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -390,7 +435,7 @@
       <a href="/#blog">Blog</a>
       <a href="/#careers">Careers</a>
       <a href="/#contact">Contact</a>
-      <a href="/#contact" class="btn btn--primary">Request a Consult</a>
+      <a href="/#contact" class="btn btn--primary">Get in touch</a>
     </div>
   </nav>
 
@@ -563,7 +608,7 @@
 <div class="guide-cta-inline">
   <h3>Have a project <em>in mind?</em></h3>
   <p>Coffee's on me. Let's chat about what you're dreaming up and see if we're a good fit.</p>
-  <a href="/#contact" class="btn btn--gold">Request a Consult</a>
+  <a href="/#contact" class="btn btn--gold">Get in touch</a>
 </div>
 
 <h2 id="hidden-costs">3. Avoiding budget blowouts</h2>
@@ -715,7 +760,7 @@
 <div class="guide-cta-inline">
   <h3>Want to chat about your <em>project?</em></h3>
   <p>I'm always up for a no-pressure conversation. Bring your ideas, your floor plan, or just an empty notepad. We'll figure out if we're a fit together.</p>
-  <a href="/#contact" class="btn btn--gold">Request a Consult</a>
+  <a href="/#contact" class="btn btn--gold">Get in touch</a>
 </div>
 
 <h2 id="design">6. Designing for the next 20 years</h2>
@@ -873,7 +918,7 @@
         <span class="eyebrow" style="color:var(--black);">Get Started</span>
         <h2 class="section-heading">Have a project <em>in mind?</em></h2>
         <p class="section-subtitle">Even if it's just a what-if conversation at this stage, I'd love to hear from you. Coffee's on me. Let's chat about what you're dreaming up and see if we're a good fit.</p>
-        <a href="/#contact" class="btn btn--dark">Request a Consult</a>
+        <a href="/#contact" class="btn btn--dark">Get in touch</a>
       </div>
     </section>
 
@@ -930,6 +975,43 @@
       </div>
     </div>
   </footer>
+
+  <!-- Sticky "Get in touch" button -->
+  <a href="/#contact" class="guide-sticky-cta" id="guideStickyCta" aria-label="Get in touch with Jeff">
+    Get in touch
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+  </a>
+  <script>
+    (function () {
+      var btn = document.getElementById('guideStickyCta');
+      if (!btn) return;
+      var hero = document.querySelector('.article-page > section, .article-hero, .guide-hero');
+      var hideZones = [document.querySelector('.cta-band'), document.querySelector('.footer')].filter(Boolean);
+      var zoneInView = false;
+      function update() {
+        var threshold = hero ? hero.offsetTop + hero.offsetHeight - 80 : 500;
+        var show = window.scrollY > threshold && !zoneInView;
+        btn.classList.toggle('is-visible', show);
+        btn.setAttribute('tabindex', show ? '0' : '-1');
+      }
+      if ('IntersectionObserver' in window && hideZones.length) {
+        var visible = new Set();
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) { e.isIntersecting ? visible.add(e.target) : visible.delete(e.target); });
+          zoneInView = visible.size > 0;
+          update();
+        });
+        hideZones.forEach(function (z) { io.observe(z); });
+      }
+      window.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update);
+      update();
+      btn.addEventListener('click', function () {
+        if (window.fbq) fbq('trackCustom', 'GuideGetInTouchClick');
+        if (window.clarity) clarity('event', 'guide_sticky_get_in_touch');
+      });
+    })();
+  </script>
 
   <script src="../app.js"></script>
 </body>
