@@ -4,6 +4,14 @@
 [build]
   publish = "."
 
+# Previews must never be indexed. These commands run ONLY for deploy previews and
+# branch deploys; production has no build command, so it never gets this header.
+[context.deploy-preview]
+  command = "printf '/*\\n  X-Robots-Tag: noindex, nofollow\\n' > _headers && cat _headers"
+
+[context.branch-deploy]
+  command = "printf '/*\\n  X-Robots-Tag: noindex, nofollow\\n' > _headers && cat _headers"
+
 # Old WordPress URLs → new site structure
 # These ensure SEO/inbound links don't 404 after the cutover
 
