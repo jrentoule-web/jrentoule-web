@@ -3,16 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Primary SEO Meta -->
   <title>The Canberra Renovation Guide: Costs, Planning and Practical Detail | Rentoule Projects</title>
   <meta name="description" content="The definitive guide to renovating in Canberra. Real costs, planning steps, builder selection, scheduling and design advice from Jeff Rentoule, a licensed ACT builder with 19 years experience. Free, no signup.">
-  <meta name="keywords" content="Canberra renovation guide, home renovation Canberra, renovation costs Canberra, how to renovate Canberra, Canberra builder advice, ACT renovation planning">
   <meta name="author" content="Jeff Rentoule">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://rentouleprojects.com/canberra-renovation-guide/">
-
-  <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:title" content="The Canberra Renovation Guide: Costs, Planning and Practical Detail">
   <meta property="og:description" content="The definitive guide to renovating in Canberra. Real costs, planning steps, builder selection and design advice from Jeff Rentoule, a licensed ACT builder with 19 years experience.">
@@ -20,325 +15,53 @@
   <meta property="og:site_name" content="Rentoule Projects">
   <meta property="og:locale" content="en_AU">
   <meta property="og:image" content="https://rentouleprojects.com/assets/guide-hero.jpg">
-
-  <!-- Geo Meta -->
   <meta name="geo.region" content="AU-ACT">
   <meta name="geo.placename" content="Canberra">
 
-  <!-- Force refresh to scroll to top (override browser scroll restoration) -->
-  <script>
-    if ('scrollRestoration' in history) {
-      history.scrollRestoration = 'manual';
-    }
-  </script>
-
-  <!-- Favicon -->
+  <!-- rp:head -->
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-  <!-- Fonts -->
+  <meta name="theme-color" content="#1d2a1f">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    @font-face {
-      font-family: 'Amsterdam';
-      src: url('../assets/Amsterdam-Four.woff2') format('woff2');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/rp.css">
+  <script>document.documentElement.classList.add('js');</script>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="../base.css">
-  <link rel="stylesheet" href="../style.css">
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '325684489874879');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt=""
+  src="https://www.facebook.com/tr?id=325684489874879&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 
-  <!-- Page-specific styles -->
-  <style>
-    /* Hero - full-bleed image with overlay text */
-    .guide-hero {
-      position: relative;
-      min-height: 70vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      background: var(--black);
-    }
-    .guide-hero__bg {
-      position: absolute;
-      inset: 0;
-      background-image: url('../assets/guide-hero.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .guide-hero__overlay {
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse at center, rgba(14,14,12,0.55) 0%, rgba(14,14,12,0.75) 70%, rgba(14,14,12,0.85) 100%),
-        linear-gradient(180deg, rgba(14,14,12,0.4) 0%, rgba(14,14,12,0.7) 100%);
-    }
-    .guide-hero__content {
-      position: relative;
-      z-index: 2;
-      max-width: 900px;
-      width: 100%;
-      padding: var(--space-3xl) var(--space-xl);
-      text-align: center;
-      color: var(--offwhite);
-      text-shadow: 0 2px 16px rgba(0,0,0,0.6);
-    }
-    .guide-hero__eyebrow {
-      display: inline-block;
-      font-family: var(--font-sans);
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      font-size: 0.75rem;
-      color: var(--gold-light);
-      margin-bottom: var(--space-lg);
-      font-weight: 500;
-      padding-bottom: var(--space-sm);
-      border-bottom: 1px solid var(--gold);
-    }
-    .guide-hero .guide-hero__title {
-      font-family: var(--font-serif);
-      font-weight: 400;
-      font-size: clamp(2.5rem, 6vw, 4.8rem);
-      line-height: 1.05;
-      margin: 0 0 var(--space-lg);
-      color: #f5f3ef !important;
-      text-shadow: 0 4px 24px rgba(0,0,0,0.7), 0 1px 4px rgba(0,0,0,0.5);
-    }
-    .guide-hero .guide-hero__title em {
-      color: #d4b48a !important;
-    }
-    .guide-hero .guide-hero__title em {
-      font-family: 'Amsterdam', cursive;
-      font-style: italic;
-      font-weight: 400;
-      color: #d4b48a !important;
-    }
-    .guide-hero .guide-hero__meta {
-      font-family: var(--font-sans);
-      font-size: 0.95rem;
-      color: #f5f3ef !important;
-      opacity: 0.95;
-    }
-    .guide-hero .guide-hero__meta span {
-      color: #f5f3ef !important;
-    }
-    .guide-hero__meta-sep {
-      color: var(--gold);
-      margin: 0 var(--space-sm);
-    }
+  <!-- HubSpot tracking code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-ap1.hs-scripts.com/40214516.js"></script>
+  <!-- First/last-touch attribution for HubSpot forms -->
+  <script src="/tracking.js"></script>
 
-    /* TOC */
-    .guide-toc {
-      background: var(--warm);
-      border-left: 4px solid var(--green);
-      padding: var(--space-xl) var(--space-2xl);
-      margin: var(--space-2xl) 0;
-      border-radius: 4px;
-    }
-    .guide-toc__title {
-      font-family: var(--font-serif);
-      font-size: 1.4rem;
-      margin: 0 0 var(--space-md);
-      color: var(--text);
-      font-weight: 500;
-    }
-    .guide-toc ol {
-      margin: 0;
-      padding-left: 1.4rem;
-      line-height: 2;
-    }
-    .guide-toc a {
-      color: var(--text);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s, color 0.2s;
-    }
-    .guide-toc a:hover {
-      border-color: var(--green);
-      color: var(--green);
-    }
-    .guide-toc ol li::marker {
-      color: var(--green);
-      font-weight: 600;
-    }
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "x793xh4bcw");
+  </script>
+  <!-- /rp:head -->
 
-    /* Section images */
-    .guide-section-image {
-      width: 100%;
-      height: auto;
-      margin: var(--space-2xl) 0;
-      border-radius: 4px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
-    }
-
-    /* Headings - green accent */
-    .article-body h2 {
-      position: relative;
-      padding-left: var(--space-lg);
-    }
-    .article-body h2::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0.35em;
-      bottom: 0.35em;
-      width: 3px;
-      background: var(--green);
-      border-radius: 2px;
-    }
-    .article-body h3 {
-      color: var(--green);
-    }
-
-    /* Inline CTA - black with gold accent (gold reads, green didn't) */
-    .guide-cta-inline {
-      background: var(--black);
-      color: #f5f3ef !important;
-      padding: var(--space-2xl);
-      margin: var(--space-3xl) 0;
-      border-radius: 4px;
-      text-align: center;
-      position: relative;
-      border-top: 3px solid var(--gold);
-    }
-    .article-body .guide-cta-inline h3 {
-      font-family: var(--font-serif);
-      color: #f5f3ef !important;
-      font-size: 1.8rem;
-      margin: 0 0 var(--space-md);
-      font-weight: 500;
-    }
-    .article-body .guide-cta-inline h3 em {
-      color: #d4b48a !important;
-      font-style: italic;
-      font-family: 'Amsterdam', cursive;
-    }
-    .article-body .guide-cta-inline p {
-      color: #f5f3ef !important;
-      opacity: 0.92;
-      margin-bottom: var(--space-xl);
-    }
-    /* Gold CTA button for black-background CTAs */
-    .article-body .guide-cta-inline .btn--gold,
-    .guide-cta-inline .btn--gold {
-      display: inline-block;
-      padding: 14px 36px;
-      background: var(--gold) !important;
-      color: #0e0e0c !important;
-      border: none;
-      font-family: var(--font-sans);
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      font-size: 0.85rem;
-      text-decoration: none;
-      border-radius: 2px;
-      transition: background 0.25s ease, transform 0.15s ease;
-      cursor: pointer;
-    }
-    .article-body .guide-cta-inline .btn--gold:hover,
-    .guide-cta-inline .btn--gold:hover {
-      background: var(--gold-light) !important;
-      color: #0e0e0c !important;
-      transform: translateY(-1px);
-    }
-
-    /* Cost tables */
-    .guide-cost-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: var(--space-xl) 0;
-      font-size: 0.95rem;
-    }
-    .guide-cost-table th,
-    .guide-cost-table td {
-      padding: var(--space-md);
-      text-align: left;
-      border-bottom: 1px solid var(--warm);
-    }
-    .guide-cost-table th {
-      background: var(--green);
-      color: var(--offwhite);
-      font-weight: 600;
-      font-family: var(--font-serif);
-      border-bottom: none;
-    }
-    .guide-cost-table tr:hover td {
-      background: rgba(74, 107, 77, 0.05);
-    }
-
-    /* Inline links inside article body: green underline */
-    .article-body p a,
-    .article-body li a {
-      color: var(--green);
-      text-decoration: underline;
-      text-decoration-color: var(--green);
-      text-underline-offset: 3px;
-      text-decoration-thickness: 1px;
-      transition: color 0.2s;
-    }
-    .article-body p a:hover,
-    .article-body li a:hover {
-      color: var(--gold);
-      text-decoration-color: var(--gold);
-    }
-    /* Sticky "Get in touch" button (guide page) */
-    .guide-sticky-cta {
-      position: fixed;
-      right: 24px;
-      bottom: calc(24px + env(safe-area-inset-bottom, 0px));
-      z-index: 900;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 15px 26px;
-      background: var(--gold);
-      color: var(--black);
-      font-family: var(--sans);
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      text-decoration: none;
-      border-radius: 2px;
-      box-shadow: 0 10px 28px rgba(14, 14, 12, 0.28);
-      opacity: 0;
-      transform: translateY(16px);
-      pointer-events: none;
-      transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease;
-    }
-    .guide-sticky-cta.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-      pointer-events: auto;
-    }
-    .guide-sticky-cta:hover { background: var(--gold-light); color: var(--black); }
-    .guide-sticky-cta:focus-visible { outline: 2px solid var(--black); outline-offset: 3px; }
-    .guide-sticky-cta svg { flex-shrink: 0; }
-    @media (max-width: 640px) {
-      .guide-sticky-cta {
-        left: 16px;
-        right: 16px;
-        bottom: calc(16px + env(safe-area-inset-bottom, 0px));
-        justify-content: center;
-        padding: 16px 20px;
-      }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .guide-sticky-cta { transition: opacity 0.2s ease; transform: none; }
-    }
-  </style>
-
-  <!-- Structured Data: Article -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -370,649 +93,408 @@
     "articleSection": "Guides"
   }
   </script>
-
-  <!-- Meta Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '325684489874879');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=325684489874879&ev=PageView&noscript=1"
-  alt=""
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-  <!-- HubSpot tracking code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js-ap1.hs-scripts.com/40214516.js"></script>
-  <script src="../tracking.js"></script>
-
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "x793xh4bcw");
-    </script>
 </head>
-<body class="article-body-page">
-
-  <a href="/#main-content" class="skip-link">Skip to content</a>
-
-  <!-- ====== NAVIGATION ====== -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav__inner">
-      <a href="/" class="nav__logo" aria-label="Rentoule Projects - Home">
-          <img src="../assets/logo-nav-gold-script.png" alt="Rentoule Projects" class="nav__logo-img">
-        </a>
-      <div class="nav__links">
-        <a href="/#about" class="nav__link">About</a>
-        <a href="/#services" class="nav__link">Services</a>
-        <a href="/#case-studies" class="nav__link">Case Studies</a>
-        <a href="/canberra-renovation-guide/" class="nav__link active">Guide</a>
-        <a href="/#blog" class="nav__link">Blog</a>
-        <a href="/#careers" class="nav__link">Careers</a>
-        <a href="/#contact" class="nav__link">Contact</a>
-      </div>
-      <a href="/#contact" class="btn btn--primary nav__cta desktop-only">Get in touch</a>
-      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+<body class="has-dark-hero">
+  <!-- rp:header -->
+  <a href="#main" class="skip">Skip to content</a>
+  <div class="rp-progress" aria-hidden="true"></div>
+  <header class="rp-header" id="rpHeader">
+    <div class="rp-header__inner">
+      <a href="/" class="rp-logo" aria-label="Rentoule Projects home">
+        <img class="on-dark" src="/assets/logo-nav-white.png" alt="" width="600" height="184">
+        <img class="on-light" src="/assets/logo-nav-green.png" alt="" width="600" height="184">
+      </a>
+      <nav class="rp-nav" aria-label="Main">
+        <a href="/services/" data-nav="services">Services</a>
+        <a href="/how-we-work/" data-nav="how-we-work">How we work</a>
+        <a href="/projects/" data-nav="projects">Projects</a>
+        <a href="/canberra-renovation-guide/" data-nav="guide" aria-current="page">Guide</a>
+        <a href="/blog/" data-nav="journal">Journal</a>
+        <a href="/about/" data-nav="about">About</a>
+      </nav>
+      <a href="/contact/" class="btn btn--gold rp-header__cta">Start a conversation</a>
+      <button class="rp-burger" id="rpBurger" aria-label="Open menu" aria-expanded="false" aria-controls="rpMenu"><span></span></button>
     </div>
-    <div class="nav__mobile" aria-hidden="true">
-      <a href="/">Home</a>
-      <a href="/#about">About</a>
-      <a href="/#services">Services</a>
-      <a href="/#case-studies">Case Studies</a>
-      <a href="/canberra-renovation-guide/">Guide</a>
-      <a href="/#blog">Blog</a>
-      <a href="/#careers">Careers</a>
-      <a href="/#contact">Contact</a>
-      <a href="/#contact" class="btn btn--primary">Get in touch</a>
+  </header>
+  <div class="rp-menu" id="rpMenu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <button class="rp-menu__close" id="rpClose" aria-label="Close menu">&times;</button>
+    <nav aria-label="Mobile">
+      <a href="/" data-nav="home">Home</a>
+      <a href="/services/" data-nav="services">Services</a>
+      <a href="/how-we-work/" data-nav="how-we-work">How we work</a>
+      <a href="/projects/" data-nav="projects">Projects</a>
+      <a href="/canberra-renovation-guide/" data-nav="guide" aria-current="page">Renovation guide</a>
+      <a href="/blog/" data-nav="journal">Journal</a>
+      <a href="/about/" data-nav="about">About</a>
+      <a href="/careers/" data-nav="careers">Careers</a>
+    </nav>
+    <div class="rp-menu__foot">
+      <a href="/contact/" class="btn btn--gold">Start a conversation</a>
+      <a href="tel:0434435966">0434 435 966</a>
     </div>
-  </nav>
-
-  <!-- ====== MAIN ====== -->
-  <main id="main-content" class="article-page">
-
-    <!-- Hero - Canberra home image with overlay title -->
-    <section class="guide-hero" aria-label="Guide hero">
-      <div class="guide-hero__bg"></div>
-      <div class="guide-hero__overlay"></div>
-      <div class="guide-hero__content">
-        <span class="guide-hero__eyebrow">The Free Guide</span>
-        <h1 class="guide-hero__title">The Canberra Renovation <em>Guide</em></h1>
-        <div class="guide-hero__meta">
-          <span>By Jeff Rentoule</span>
-          <span class="guide-hero__meta-sep">·</span>
-          <span>Updated October 2026</span>
-          <span class="guide-hero__meta-sep">·</span>
-          <span>20 min read</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Article body -->
-    <section class="section section--white article-section" aria-label="Guide body">
-      <div class="article-container">
-        <article class="article-body">
-
-<p><strong>This is the guide I wish every Canberra homeowner had before they started a renovation. Real costs, real timelines, real decisions, written by a licensed ACT builder with 19 years on the tools and 5 years running my own business.</strong></p>
-
-<p>I'm Jeff Rentoule. I run Rentoule Projects, a small residential building business based in Canberra. Over the past five years I've watched too many homeowners walk into renovations carrying assumptions that cost them money, time, or both. This guide is my attempt to fix that. No corporate fluff, no sales pitch in disguise. Just what I would tell a mate over coffee if they were thinking about renovating.</p>
-
-<p>Use it however you want. Read it end to end, jump to the section you need, or come back when a specific question comes up.</p>
-
-<aside class="price-guide-note">
-  <span class="price-guide-note__label">Price guide only</span>
-  <p>The figures throughout this guide are a guide based on recent Rentoule Projects work and current Canberra market rates as of May 2026. Real numbers depend on your scope, site conditions, finishes and inclusions. <a href="/#contact">Get in touch for a fixed-price ballpark for your project.</a></p>
-</aside>
-
-<nav class="guide-toc" aria-label="Guide contents">
-  <h2 class="guide-toc__title">In this guide</h2>
-  <ol>
-    <li><a href="#real-cost">The real cost of renovating in Canberra</a></li>
-    <li><a href="#planning">How to plan your renovation properly</a></li>
-    <li><a href="#hidden-costs">Avoiding budget blowouts</a></li>
-    <li><a href="#timeline">Setting realistic timelines</a></li>
-    <li><a href="#builder">Choosing the right builder</a></li>
-    <li><a href="#design">Designing for the next 20 years</a></li>
-    <li><a href="#approvals">Planning approvals and ACT regulations</a></li>
-    <li><a href="#queanbeyan">Queanbeyan, the region and beyond</a></li>
-    <li><a href="#mistakes">The five mistakes I see most often</a></li>
-    <li><a href="#next-steps">Where to go from here</a></li>
-  </ol>
-</nav>
-
-<h2 id="real-cost">1. The real cost of renovating in Canberra</h2>
-
-<p>Let's start with the question everyone wants answered first. What does a renovation cost in Canberra in 2026?</p>
-
-<p>The honest answer is "it depends." But that's a cop-out, so here are the ranges I see across our projects, broken out by the most common project types. These are turn-key, fixed-price figures including labour, materials, project management, and trade coordination.</p>
-
-<table class="guide-cost-table">
-  <thead>
-    <tr>
-      <th>Project type</th>
-      <th>Typical Canberra range</th>
-      <th>What you get</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Bathroom renovation</td>
-      <td>$35,000 to $130,000+</td>
-      <td>Ensuites from $35,000, main bathrooms from $45,000. Full strip-out and rebuild, custom to premium fixtures</td>
-    </tr>
-    <tr>
-      <td>Kitchen renovation</td>
-      <td>$35,000 to $160,000+</td>
-      <td>Most family kitchens with a wall removed sit at $90,000 to $120,000. Complete redesign, custom cabinetry, stone benchtops, quality appliances</td>
-    </tr>
-    <tr>
-      <td>Whole-house cosmetic refresh</td>
-      <td>$80,000 to $250,000</td>
-      <td>Paint, flooring, kitchen, bathrooms, light fittings. No structural work (not a Rentoule Projects service)</td>
-    </tr>
-    <tr>
-      <td>Major renovation (structural)</td>
-      <td>$300,000 to $1,000,000+</td>
-      <td>Walls moved, layout changed, new kitchen and bathrooms, possibly second storey</td>
-    </tr>
-    <tr>
-      <td>Single-storey extension</td>
-      <td>$150,000 to $450,000</td>
-      <td>30-60 sqm addition, usually living space or master suite, premium finishes</td>
-    </tr>
-    <tr>
-      <td>Second storey addition</td>
-      <td>$300,000 to $700,000+</td>
-      <td>Full upper floor, structural reinforcement, internal stairs, often 2-3 bedrooms</td>
-    </tr>
-    <tr>
-      <td>Knockdown rebuild</td>
-      <td>$850,000 to $2M+</td>
-      <td>Demolition, new build to your specification, typically 200-350 sqm</td>
-    </tr>
-  </tbody>
-</table>
-
-  <div class="callout info">
-    <strong>A note on these numbers.</strong> They're a guide, not a quote. They're based on current Canberra market prices and what our recent projects have come in at. Your home, your selections and what we find once walls are opened up all move the final figure. The number you can rely on is the fixed-price quote we give you after the Preliminary Services Agreement.
   </div>
-
-
-<p>For deeper detail on each, I've written separate cost guides:</p>
-
-<ul>
-  <li><a href="/blog/home-renovation-costs-canberra/">Home renovation costs in Canberra</a> (the cornerstone cost guide)</li>
-  <li><a href="/blog/full-house-renovation-canberra/">Full house renovation in Canberra</a> (scope, sequencing and stay-vs-move-out)</li>
-  <li><a href="/blog/bathroom-renovation-costs-canberra/">Bathroom renovation costs</a></li>
-  <li><a href="/blog/kitchen-renovation-costs-canberra/">Kitchen renovation costs</a></li>
-  <li><a href="/blog/home-extension-costs-canberra/">Home extension costs</a></li>
-</ul>
-
-<h3>Why Canberra costs more than the eastern seaboard average</h3>
-
-<p>Three reasons. First, the trade pool is smaller. Sydney and Melbourne have an order of magnitude more builders, plumbers, electricians and tilers competing for work. We don't. When demand peaks, prices peak harder here.</p>
-
-<p>Second, ACT regulations are stricter than most states. Energy efficiency requirements (EER), bushfire compliance in many suburbs, asbestos protocols on older homes, and the ACT's particular planning rules all add cost. They also add quality, but they add cost.</p>
-
-<p>Third, our climate is brutal. Canberra winters demand higher-spec insulation, double or triple glazing, sealed building envelopes, and reverse-cycle systems sized for sub-zero overnights. A renovation that ignores climate performance is a renovation you'll regret in July.</p>
-
-<img src="../assets/guide-budget.jpg" alt="A premium contemporary Canberra kitchen with timber cabinetry, stone benchtops and a skylight overlooking native gum trees" class="guide-section-image">
-
-<h2 id="planning">2. How to plan your renovation properly</h2>
-
-<p>The biggest predictor of how a renovation goes is how much thought went in before a single trade arrived on site. Most disasters I've seen started with rushed planning.</p>
-
-<p>Here's the sequence that works.</p>
-
-<h3>Step 1: Define the brief in writing</h3>
-
-<p>Before you talk to anyone, write down what you want. Not "a bigger kitchen" - write down "I want an open-plan kitchen, dining and living area where the kids can do homework while I cook, with a butler's pantry hidden from view, and a north-facing dining nook with morning sun." The more specific you are, the easier every conversation downstream becomes.</p>
-
-<p>If you can't write your brief, you're not ready to start. That's not a failing - it just means the next step is conversations, not contracts.</p>
-
-<h3>Step 2: Set a budget you can defend</h3>
-
-<p>Most people set a budget by guessing what they can afford and then assuming a renovation will fit. That's backwards. Start with the cost ranges in section 1, work out what your project realistically costs, then check whether your finance and savings cover it with a 15% buffer for variations and surprises.</p>
-
-<p>If the numbers don't work, you have three options: reduce scope, find more money, or wait. Pretending the numbers work is the most expensive option, because it leads to either a half-finished project or compromises that ruin the result.</p>
-
-<h3>Step 3: Get the right professionals involved early</h3>
-
-<p>For anything beyond a simple cosmetic refresh, you need three people in the room: a designer or architect, a builder, and a structural engineer if walls are coming out. Get all three involved before drawings are finalised. I've watched homeowners spend $15,000 on architectural plans only to discover the design isn't buildable within their budget.</p>
-
-<p>Some builders, including us, will do early-stage feasibility before you commit to detailed design. It saves money and frustration on both sides.</p>
-
-<h3>Step 4: Understand the approval pathway</h3>
-
-<p>Not every renovation needs a Development Application (DA), but you need to know which category yours falls into before you commit. Cosmetic and minor work often qualifies as exempt development. Structural work, extensions, second storeys and anything that changes building footprint usually needs DA approval. The rules in the ACT are specific. <a href="/blog/da-approval-act-renovations/">I've written a full guide on DA approvals here.</a></p>
-
-<h3>Step 5: Lock the scope before you sign</h3>
-
-<p>Every variation after a contract is signed costs more than it would have during planning. Sometimes a lot more. Spend the time up front to nail down inclusions, finishes, fixtures and fittings to the level of model numbers and brand names. The contract should have a defined scope, a fixed price, a payment schedule, a completion date with liquidated damages, and a written variations process.</p>
-
-<img src="../assets/guide-planning.jpg" alt="Architectural drawings, blueprints and material samples laid out on a timber table during the planning stage of a Canberra renovation" class="guide-section-image">
-
-<p>If you want to go deeper, my <a href="/blog/how-to-plan-renovation-canberra/">step-by-step planning guide</a> walks through the full process.</p>
-
-<div class="guide-cta-inline">
-  <h3>Have a project <em>in mind?</em></h3>
-  <p>Coffee's on me. Let's chat about what you're dreaming up and see if we're a good fit.</p>
-  <a href="/#contact" class="btn btn--gold">Get in touch</a>
-</div>
-
-<h2 id="hidden-costs">3. Avoiding budget blowouts</h2>
-
-<p>The single biggest reason renovations go over budget is that the original budget didn't include things it should have. The work itself usually costs roughly what we quoted. The blowout comes from the line items nobody mentioned.</p>
-
-<p>Here are the costs I see catch homeowners out most often.</p>
-
-<h3>Site costs that aren't site costs</h3>
-
-<p>Skip bins, scaffolding, temporary fencing, hoardings, dust barriers, port-a-loo on site, electrical and water connections during the build. On a major renovation these add up to between $5,000 and $15,000. They should be in the contract. Ask.</p>
-
-<h3>Demolition surprises</h3>
-
-<p>Older Canberra homes, particularly anything pre-1985, can hide asbestos in eaves, cornices, vinyl flooring, fibro sheeting and more. ACT asbestos removal requires a licensed contractor and can add $5,000 to $25,000 if it's discovered during demolition. The Mr Fluffy era is its own beast - if you suspect Mr Fluffy contamination, that's a separate conversation entirely. <a href="/services/mr-fluffy-block-rebuild/">I've written about Mr Fluffy block rebuilds here.</a></p>
-
-<h3>Structural surprises</h3>
-
-<p>Once walls come down, what's behind them sometimes isn't what the plans assumed. Rotted bearers, undersized beams, slumped slabs, poor existing footings. A well-experienced builder will price a contingency for this on older homes, but the surprises still happen. Budget 10-15% contingency on top of your contract price for any structural renovation.</p>
-
-<h3>Council and certifier fees</h3>
-
-<p>DA fees, building certifier inspections, surveyor fees, energy efficiency reports, traffic management plans for some streetscapes. These are usually $3,000 to $10,000 across a full project. Sometimes they're in the builder's contract, sometimes they're owner-supplied. Check.</p>
-
-<h3>Connections and services</h3>
-
-<p>Electrical upgrades from single to three-phase, water meter upgrades, NBN rerouting, stormwater detention. Most homeowners assume the existing services are fine. Often they aren't. Allow $5,000 to $20,000 for service upgrades on bigger projects.</p>
-
-<p>Worth flagging on gas specifically: the ACT is phasing gas out of the residential network, so new gas connections aren't happening and gas appliance replacements are increasingly restricted. If your existing home has gas and you're relocating services during a renovation, plan for the cost of either relocating the existing line or switching to all-electric. Going all-electric from the outset is usually the cleaner call, and the induction cooktop/heat-pump hot water/reverse-cycle stack is now genuinely excellent.</p>
-
-<h3>Moving out costs</h3>
-
-<p>If you can't live in the home during the build, you need to budget for rental accommodation, removalists, double rates and bills. A six month rental in Canberra inner-north is $25,000 to $35,000. Storage of furniture is another $1,500 to $3,500. Often these are bigger than people expect.</p>
-
-<h3>Furniture, blinds, landscaping and finishing</h3>
-
-<p>The contract gets you to handover. It doesn't get you to "the home is ready to live in." Window furnishings, new furniture, landscaping, fencing, driveways, replanting and reinstating front gardens after construction traffic - all of these are extra. On a major renovation, plan another $30,000 to $80,000 for completing the home after handover.</p>
-
-<p>For the full breakdown of what catches people out, my <a href="/blog/renovation-hidden-costs-canberra/">12 hidden renovation costs in Canberra</a> article goes deeper.</p>
-
-<img src="../assets/guide-timeline.jpg" alt="A Canberra home renovation in progress with timber framing, scaffolding and trades tools at golden hour" class="guide-section-image">
-
-<h2 id="timeline">4. Setting realistic timelines</h2>
-
-<p>The other place expectations get crushed is timelines. Renovations take longer than people think, every single time. Here's what I see in practice.</p>
-
-<table class="guide-cost-table">
-  <thead>
-    <tr>
-      <th>Project type</th>
-      <th>Realistic on-site duration</th>
-      <th>Total elapsed time including planning &amp; approvals</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Bathroom renovation</td>
-      <td>4-7 weeks</td>
-      <td>3-5 months</td>
-    </tr>
-    <tr>
-      <td>Kitchen renovation</td>
-      <td>6-10 weeks</td>
-      <td>4-7 months</td>
-    </tr>
-    <tr>
-      <td>Whole-house cosmetic refresh</td>
-      <td>10-16 weeks</td>
-      <td>5-9 months</td>
-    </tr>
-    <tr>
-      <td>Major structural renovation</td>
-      <td>6-10 months</td>
-      <td>12-20 months</td>
-    </tr>
-    <tr>
-      <td>Single-storey extension</td>
-      <td>5-8 months</td>
-      <td>11-17 months</td>
-    </tr>
-    <tr>
-      <td>Second storey addition</td>
-      <td>7-11 months</td>
-      <td>14-24 months</td>
-    </tr>
-    <tr>
-      <td>Knockdown rebuild</td>
-      <td>12-16 months</td>
-      <td>20-30 months</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>Why "elapsed time" matters more than "build time"</h3>
-
-<p>Most homeowners hear "the build will take six months" and start planning their lives around that number. But before the build starts there's a designer phase (1-3 months), a documentation phase (1-2 months), a DA approval window (8-16 weeks for anything that needs one), a tendering and contract phase (3-6 weeks), and a builder lead time (1-3 months for a quality builder with a backlog). All of that happens before the first sledgehammer swings.</p>
-
-<p>If you're starting conversations with a builder today, a major renovation realistically isn't completed inside 14 months. Plan accordingly. Builders who promise dramatically shorter timelines are usually about to disappoint you.</p>
-
-<h3>Things that compress timelines</h3>
-
-<ul>
-  <li>Decisions made early and not changed</li>
-  <li>A clear, locked scope with no open variables</li>
-  <li>Selections (tiles, fixtures, paint colours, hardware) finalised before the build starts</li>
-  <li>Working with a builder who has reliable trade relationships</li>
-  <li>Living off-site so trades can work flat out</li>
-</ul>
-
-<h3>Things that extend timelines</h3>
-
-<ul>
-  <li>Mid-build variations and changes of mind</li>
-  <li>Late selections (this is the single biggest cause of delays I see)</li>
-  <li>Custom-made items with long lead times (joinery, stone benchtops, imported tiles)</li>
-  <li>Living on-site through the build</li>
-  <li>DA conditions that require additional work</li>
-  <li>Weather delays in winter, particularly for slab and roof stages</li>
-</ul>
-
-<h2 id="builder">5. Choosing the right builder</h2>
-
-<p>If you only get one decision right in the whole process, make it this one. The right builder turns a stressful project into a great one. The wrong builder turns a great project into a disaster.</p>
-
-<p>Here's what to look for. I've written a full <a href="/blog/choosing-right-builder-canberra/">10-question guide on builder selection</a>, but the short version is below.</p>
-
-<h3>Licence and insurance</h3>
-
-<p>In the ACT, residential builders need to be licensed by Access Canberra. The licence number should be on every quote and contract. Insurance should include public liability, contract works, and home warranty insurance for jobs over $12,000. If a builder can't show you these documents, walk away.</p>
-
-<h3>Fixed price, not cost-plus</h3>
-
-<p>Cost-plus contracts (where you pay all costs plus the builder's margin) sound flexible. They're not. They transfer all the price risk to you. A reputable builder will quote a fixed price and stand behind it. Variations are negotiated transparently when scope changes, but the base contract is locked.</p>
-
-<p>Every contract I sign at Rentoule Projects is fixed-price. It's harder for me, because I have to estimate accurately and absorb my own mistakes. That's the point. It means you know exactly where you stand.</p>
-
-<h3>References from completed work</h3>
-
-<p>Anyone can show you finished photos. Ask for the contact details of two clients whose projects have been finished for at least 12 months. Ring them. Ask: did the project finish on time, did it finish on budget, did the builder fix things that came up after handover, and would you use them again? Three minutes on the phone tells you more than three days of marketing.</p>
-
-<h3>Site presence</h3>
-
-<p>Ask who will be on site daily. At Rentoule Projects, we have a site manager (Matt) who is on every active build every day. I'm across every project but I'm not standing on site - I'm running the business, talking with new clients, handling design and contract decisions. Some builders never come on site at all. Some operate as foremen running the actual labour. Both can work, but you need to know which model you're hiring.</p>
-
-<h3>Communication standards</h3>
-
-<p>How will you hear about progress? How quickly do they respond to questions? How are decisions documented? A great builder has a system. A poor builder makes you chase them. If you're already chasing them during the quoting stage, that's the relationship you'll have for nine months.</p>
-
-<div class="guide-cta-inline">
-  <h3>Want to chat about your <em>project?</em></h3>
-  <p>I'm always up for a no-pressure conversation. Bring your ideas, your floor plan, or just an empty notepad. We'll figure out if we're a fit together.</p>
-  <a href="/#contact" class="btn btn--gold">Get in touch</a>
-</div>
-
-<h2 id="design">6. Designing for the next 20 years</h2>
-
-<p>The renovations that age well in Canberra share a few traits. The ones that look dated in five years also share a few traits.</p>
-
-<h3>Orientation and natural light</h3>
-
-<p>This is the single biggest design lever in Canberra. North-facing living spaces, properly designed for our seasonal sun angles, are warm in winter without heating and cool in summer with the right eaves. Get this right and your home performs better, costs less to run, and feels better to live in. Get this wrong and you're fighting your house with energy bills for the next two decades.</p>
-
-<p>If your existing home faces the wrong way, a renovation is your chance to redesign around the sun. Sometimes that means moving the kitchen and living areas. It's worth it.</p>
-
-<h3>Energy performance</h3>
-
-<p>The ACT now requires 7-star EER on most new builds and major renovations. The honest truth is that 8-star and 9-star designs aren't much more expensive at construction, and they save thousands per year over the life of the home. Insulate above the minimum, double-glaze (or triple-glaze for north-facing glass), seal the building envelope properly, install efficient reverse-cycle heating and cooling. <a href="/blog/energy-efficiency-eer-canberra/">My EER guide goes deeper on this.</a></p>
-
-<h3>Layout that flexes</h3>
-
-<p>The home you need at 35 with two kids isn't the home you need at 50 with teenagers, or 65 with grown-up children visiting. Good design accommodates change. Spaces that can change function (a study that becomes a guest room, an open plan that can be partitioned, a downstairs bedroom that becomes a bedroom for ageing parents). Avoid hyper-specific spaces that lock the home into one phase of life.</p>
-
-<h3>Materials that age</h3>
-
-<p>The fashionable choice today is the dated choice in five years. The classics rarely date. Timber, stone, brick, plaster, neutral palettes, durable hardware. Save the trend-driven choices for elements you can change cheaply (cushions, art, paint colour). Build the bones from materials that look better with time.</p>
-
-<h3>Indoor-outdoor connection</h3>
-
-<p>Canberra has a beautiful climate for outdoor living three seasons a year. Bifold or stacker doors that open the living space to a covered alfresco, properly sized for a dining table, oriented to catch afternoon sun, with shelter from the wind. This single design move adds more lifestyle value per dollar than almost anything else we build.</p>
-
-<h2 id="approvals">7. Planning approvals and ACT regulations</h2>
-
-<p>The ACT's planning system is its own creature. Here's the broad shape, but my <a href="/blog/da-approval-act-renovations/">DA approval article</a> has the full detail.</p>
-
-<h3>Three categories of planning approval</h3>
-
-<ul>
-  <li><strong>Exempt development:</strong> Most cosmetic work, internal renovations not affecting structure, small repairs. No approval required, but compliance with building codes still applies.</li>
-  <li><strong>Single Dwelling Housing Development Code (SDHDC) track:</strong> For most single-dwelling houses, extensions, alterations and additions, if your project meets the rules in this code you can proceed without a full Development Application. This is the pathway we try to use wherever possible. It's quicker, cheaper and has far less uncertainty than the merit-track DA. Most of our extension and alteration work is SDHDC-compliant by design.</li>
-  <li><strong>Merit-track DA:</strong> Larger projects, anything that can't meet the SDHDC rules, heritage-affected sites, or projects that vary from the default setbacks, site coverage, or plot ratio. Goes to the planning authority for full assessment, takes 8-16 weeks or longer.</li>
-</ul>
-
-<h3>Things that almost always trigger a merit-track DA</h3>
-
-<ul>
-  <li>Knockdown rebuilds that can't meet SDHDC exemption criteria</li>
-  <li>Second storey additions exceeding the code's height or setback rules</li>
-  <li>Demolition of more than 50% of the existing structure</li>
-  <li>Changes to the front facade in suburbs with heritage or character overlay (Reid, Forrest, parts of Yarralumla and Griffith)</li>
-  <li>Anything reducing on-site car parking below required levels</li>
-  <li>Variations to boundary setbacks, plot ratio or site coverage</li>
-</ul>
-
-<h3>Building Approval (BA) is separate</h3>
-
-<p>Worth knowing: whichever planning track you take, you still need a separate Building Approval (BA) before any construction starts. The BA is issued by a private building certifier and confirms that your plans comply with the National Construction Code, structural requirements, energy efficiency rules and all the technical building standards. Even a fully exempt development typically still needs a BA if there's actual building work involved. The BA process usually runs 2-4 weeks for straightforward projects and sits alongside or after your planning pathway. As your builder, we manage the BA process and certifier relationship on your behalf.</p>
-
-<h3>NCC 2025</h3>
-
-<p>The National Construction Code 2025 is now in force in the ACT, and becomes mandatory for building approvals from 1 May 2027. Projects with a DA lodged before 1 November 2026 can stay on NCC 2022. It introduces stricter requirements on energy efficiency, accessibility (the Livable Housing standard), and condensation management. For new builds and major renovations, NCC 2025 will add somewhere between $14,000 and $55,000 to project cost depending on scope. <a href="/blog/ncc-2025-canberra-renovations/">I've written a detailed guide here.</a></p>
-
-<h2 id="queanbeyan">8. Queanbeyan, the surrounding region and beyond</h2>
-
-<p>Canberra is our primary market but worth knowing: I hold a NSW builder's licence in addition to my ACT licence, so we regularly build in Queanbeyan, Jerrabomberra, Googong, Bungendore and the surrounding region.</p>
-
-<p>A lot of our Canberra-raised clients end up moving just across the border for more land, lower prices or a specific lifestyle preference, and then want a builder who can deliver the same Canberra-level quality. We're happy to bridge that. Build standards, contracts, communication, fixed-price approach - all identical either side of the ACT/NSW line.</p>
-
-<p>For the right client and the right project, we'll also consider work further afield on the south coast. It has to be a project worth travelling for and we're selective about taking it on, but if your vision is a considered south coast build and you want a Canberra-quality builder who'll stand behind the work, have the conversation with us anyway.</p>
-
-<h2 id="mistakes">9. The five mistakes I see most often</h2>
-
-<p>After 19 years in this trade I see the same patterns over and over. Here are the five that hurt the most.</p>
-
-<h3>Mistake 1: Choosing the cheapest quote</h3>
-
-<p>The cheapest builder is usually the most expensive when it's done. Either they've under-priced (and either lose money trying to deliver, or chase you for variations), or they're cutting corners you can't see. A quote that's 20% lower than three other quotes for the same scope is a warning sign, not a win.</p>
-
-<h3>Mistake 2: Starting before the design is finished</h3>
-
-<p>"We'll figure that out as we go" costs four times what figuring it out before the build would have cost. Every undecided detail becomes a delay or a variation. Lock the scope, lock the selections, then start the build.</p>
-
-<h3>Mistake 3: Ignoring orientation</h3>
-
-<p>A beautifully designed kitchen on the wrong side of the house is a kitchen you'll heat in winter and shade in summer for the next 20 years. The orientation conversation should happen at concept stage, not after plans are drawn.</p>
-
-<h3>Mistake 4: Underestimating the project length</h3>
-
-<p>Couples sign up to a "six month renovation" and find themselves at month nine, still living in temporary accommodation, paying double rates, and snapping at each other. Plan for the realistic duration in section 4, not the optimistic one. Build a buffer into your living arrangements.</p>
-
-<h3>Mistake 5: Picking finishes too early</h3>
-
-<p>The tile you fall in love with at concept stage is often discontinued by build time. Finalise selections in the 4-8 weeks before the relevant trade is on site. Check stock and lead times before you commit. Have a backup option for anything imported or custom-made.</p>
-
-<h2 id="next-steps">10. Where to go from here</h2>
-
-<p>If you've read this far, you're more prepared than 90% of homeowners I meet. The next steps depend on where you are in the journey.</p>
-
-<h3>If you're 12+ months from starting</h3>
-
-<p>Start collecting what you love. A Pinterest board, a folder of magazine pages, photos from friends' homes, notes about what works and doesn't work in your current home. Walk around suburbs you like (Griffith, Yarralumla, Forrest, Reid, Ainslie, Campbell, Turner, Braddon) and notice what good renovations look like. Read the cost guides linked above so you have realistic expectations.</p>
-
-<h3>If you're 6-12 months out</h3>
-
-<p>Start conversations. With designers, with builders, maybe with a finance broker if you'll need to borrow. Get a feasibility on your specific project. We do early-stage feasibility for most clients and it's usually the most valuable money they spend on the project.</p>
-
-<h3>If you're 3-6 months out</h3>
-
-<p>Lock in your design team and your builder. Begin documentation and approval pathway. Start finalising your major selections (cabinetry style, tile direction, key fixtures). The decisions you make now compound over the next 12 months.</p>
-
-<h3>If you're ready to start</h3>
-
-<p>Get in touch. Even if you're not sure we're the right builder for your project, I'm happy to have a no-pressure conversation about your plans. Sometimes the best thing I can do for someone is point them at a builder who's a better fit. Sometimes the best thing is to say "let's talk."</p>
-
-<p>Either way, coffee's on me.</p>
-
-<aside class="price-guide-note">
-  <span class="price-guide-note__label">A note on this guide</span>
-  <p>This guide is based on my experience running residential building projects in Canberra. Building rules, prices, and best practice change over time. I update this page periodically as things change. If you spot something outdated, or want to suggest an addition, drop me a note at <a href="mailto:jeff@rentouleprojects.com">jeff@rentouleprojects.com</a>.</p>
-</aside>
-
+  <!-- /rp:header -->
+
+  <main id="main" tabindex="-1">
+
+    <!-- COVER -->
+    <section class="gcover" aria-labelledby="guide-h">
+      <img src="/assets/guide-hero.jpg" alt="" width="1536" height="1024" fetchpriority="high">
+      <span class="imgnote">Illustrative image, not a Rentoule Projects home</span>
+      <div class="wrap gcover__inner">
+        <p class="label">The free guide &middot; No signup</p>
+        <h1 id="guide-h">The Canberra Renovation <span class="script">Guide</span></h1>
+        <p class="lead">Real costs, real timelines and real decisions, written by a licensed ACT builder for Canberra homeowners planning a significant renovation or extension.</p>
+        <div class="btn-row">
+          <a href="#real-cost" class="btn btn--gold">Start reading <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="#contents" class="btn btn--line">Contents</a>
+        </div>
+        <dl class="gcover__meta">
+          <div><dt>Written by</dt><dd>Jeff Rentoule</dd></div>
+          <div><dt>Updated</dt><dd>October 2026</dd></div>
+          <div><dt>Reading time</dt><dd>About 20 minutes</dd></div>
+          <div><dt>Chapters</dt><dd>10</dd></div>
+        </dl>
       </div>
     </section>
 
-    <!-- Related Reading -->
-    <section class="section section--warm" aria-label="Related reading">
+    <!-- INTRO -->
+    <section class="gintro" aria-label="Introduction">
+      <div class="gintro__grid">
+        <p class="gintro__by"><img src="/assets/logo-monogram-gold.png" alt="" width="200" height="200"><strong>Jeff Rentoule</strong>Director, Rentoule Projects. Licensed ACT builder, 19 years on the tools and 5 years running the business.</p>
+        <div class="gintro__text">
+          <p>This is the guide I wish every Canberra homeowner had before they started a renovation. Real costs, real timelines, real decisions.</p>
+          <p>I&rsquo;m Jeff Rentoule. I run Rentoule Projects, a small residential building business based in Canberra. Over the past five years I&rsquo;ve watched too many homeowners walk into renovations carrying assumptions that cost them money, time, or both. This guide is my attempt to fix that. No corporate fluff, no sales pitch in disguise. Just what I would tell a mate over coffee if they were thinking about renovating.</p>
+          <p>Use it however you want. Read it end to end, jump to the section you need, or come back when a specific question comes up.</p>
+          <p class="gintro__note"><b>Price guide only</b>The figures throughout this guide are a guide based on recent Rentoule Projects work and current Canberra market rates as of May 2026. Real numbers depend on your scope, site conditions, finishes and inclusions. <a href="/contact/">Get in touch for a fixed-price ballpark for your project.</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOBILE CONTENTS BAR -->
+    <div class="gmobile" id="contents">
+      <button type="button" id="gsheetOpen" aria-expanded="false" aria-controls="gsheet"><span id="gmobileLabel">Contents</span><span>Chapters</span></button>
+      <div class="gmobile__bar"></div>
+    </div>
+    <div class="gscrim" id="gscrim"></div>
+    <div class="gsheet" id="gsheet" role="dialog" aria-modal="true" aria-label="Guide contents">
+      <div class="gsheet__head"><p class="gtoc__title" style="margin:0">In this guide</p><button type="button" id="gsheetClose" aria-label="Close contents">&times;</button></div>
+      <nav class="gtoc" style="display:block;position:static" aria-label="Guide chapters (mobile)"><ol>
+            <li><a href="#real-cost">The real cost of renovating in Canberra</a></li>
+            <li><a href="#planning">How to plan your renovation properly</a></li>
+            <li><a href="#hidden-costs">Avoiding budget blowouts</a></li>
+            <li><a href="#timeline">Setting realistic timelines</a></li>
+            <li><a href="#builder">Choosing the right builder</a></li>
+            <li><a href="#design">Designing for the next 20 years</a></li>
+            <li><a href="#approvals">Planning approvals and ACT regulations</a></li>
+            <li><a href="#queanbeyan">Queanbeyan, the region and beyond</a></li>
+            <li><a href="#mistakes">The five mistakes I see most often</a></li>
+            <li><a href="#next-steps">Where to go from here</a></li>
+      </ol></nav>
+    </div>
+
+    <div class="glayout" style="padding-top:clamp(2rem,4vw,3rem);padding-bottom:clamp(4rem,8vw,7rem)">
+      <aside class="gtoc" aria-label="Guide contents">
+        <p class="gtoc__title">In this guide</p>
+        <nav aria-label="Guide chapters"><ol>
+            <li><a href="#real-cost">The real cost of renovating in Canberra</a></li>
+            <li><a href="#planning">How to plan your renovation properly</a></li>
+            <li><a href="#hidden-costs">Avoiding budget blowouts</a></li>
+            <li><a href="#timeline">Setting realistic timelines</a></li>
+            <li><a href="#builder">Choosing the right builder</a></li>
+            <li><a href="#design">Designing for the next 20 years</a></li>
+            <li><a href="#approvals">Planning approvals and ACT regulations</a></li>
+            <li><a href="#queanbeyan">Queanbeyan, the region and beyond</a></li>
+            <li><a href="#mistakes">The five mistakes I see most often</a></li>
+            <li><a href="#next-steps">Where to go from here</a></li>
+        </ol></nav>
+        <div class="gtoc__meter" aria-hidden="true"><i></i></div>
+        <div class="gtoc__cta"><strong>Planning something significant?</strong>A short call is enough to know whether we&rsquo;re the right builder for it.<br><a href="/contact/">Get in touch</a></div>
+      </aside>
+
+      <article class="gbody">
+
+        <section class="gch" id="real-cost" aria-labelledby="real-cost-h">
+          <div class="gch__open"><span class="gch__num" aria-hidden="true">01</span><h2 id="real-cost-h"><span class="sr">1. </span>The real cost of renovating in Canberra</h2><p class="gch__sum"><b>In this chapter</b>Typical Canberra ranges for seven common project types, and why building here costs more than the eastern seaboard average.</p></div>
+
+          <div class="gprose">
+            <p>Let&rsquo;s start with the question everyone wants answered first. What does a renovation cost in Canberra in 2026?</p>
+            <p>The honest answer is &ldquo;it depends.&rdquo; But that&rsquo;s a cop-out, so here are the ranges I see across our projects, broken out by the most common project types. These are turn-key, fixed-price figures including labour, materials, project management, and trade coordination.</p>
+          </div>
+          <table class="grange grange--cost">
+            <caption>Typical Canberra ranges by project type</caption>
+            <thead><tr><th scope="col">Project type</th><th scope="col">Typical Canberra range</th><th scope="col" class="bar"><span><span>$25k</span><span>$100k</span><span>$500k</span><span>$2.5M</span></span></th><th scope="col" class="what-h">What you get</th></tr></thead>
+            <tbody>
+          <tr><th scope="row">Bathroom renovation</th><td class="amt">$35,000 to $130,000+</td><td class="bar" aria-hidden="true"><div class="gbar"><i class="open" style="--a:7.3%;--b:64.2%"></i></div></td><td class="what">Ensuites from $35,000, main bathrooms from $45,000. Full strip-out and rebuild, custom to premium fixtures</td></tr>
+          <tr><th scope="row">Kitchen renovation</th><td class="amt">$35,000 to $160,000+</td><td class="bar" aria-hidden="true"><div class="gbar"><i class="open" style="--a:7.3%;--b:59.7%"></i></div></td><td class="what">Most family kitchens with a wall removed sit at $90,000 to $120,000. Complete redesign, custom cabinetry, stone benchtops, quality appliances</td></tr>
+          <tr><th scope="row">Whole-house cosmetic refresh</th><td class="amt">$80,000 to $250,000</td><td class="bar" aria-hidden="true"><div class="gbar"><i class="" style="--a:25.3%;--b:50.0%"></i></div></td><td class="what">Paint, flooring, kitchen, bathrooms, light fittings. No structural work (not a Rentoule Projects service)</td></tr>
+          <tr><th scope="row">Major renovation (structural)</th><td class="amt">$300,000 to $1,000,000+</td><td class="bar" aria-hidden="true"><div class="gbar"><i class="open" style="--a:54.0%;--b:19.9%"></i></div></td><td class="what">Walls moved, layout changed, new kitchen and bathrooms, possibly second storey</td></tr>
+          <tr><th scope="row">Single-storey extension</th><td class="amt">$150,000 to $450,000</td><td class="bar" aria-hidden="true"><div class="gbar"><i class="" style="--a:38.9%;--b:37.2%"></i></div></td><td class="what">30-60 sqm addition, usually living space or master suite, premium finishes</td></tr>
+          <tr><th scope="row">Second storey addition</th><td class="amt">$300,000 to $700,000+</td><td class="bar" aria-hidden="true"><div class="gbar"><i class="open" style="--a:54.0%;--b:27.6%"></i></div></td><td class="what">Full upper floor, structural reinforcement, internal stairs, often 2-3 bedrooms</td></tr>
+          <tr><th scope="row">Knockdown rebuild</th><td class="amt">$850,000 to $2M+</td><td class="bar" aria-hidden="true"><div class="gbar"><i class="open" style="--a:76.6%;--b:4.8%"></i></div></td><td class="what">Demolition, new build to your specification, typically 200-350 sqm</td></tr>
+            </tbody>
+          </table>
+          <p class="glegend"><span><i></i>Typical range on a log scale, so small and large projects fit one chart</span><span>Faded end: open-ended (&ldquo;+&rdquo;)</span></p>
+          <div class="gnote"><b>A note on these numbers.</b> They&rsquo;re a guide, not a quote. They&rsquo;re based on current Canberra market prices and what our recent projects have come in at. Your home, your selections and what we find once walls are opened up all move the final figure. The number you can rely on is the fixed-price quote we give you after the <a href="/how-we-work/#psa">Preliminary Services Agreement</a>.</div>
+          <div class="gprose">
+            <p>For deeper detail on each, I&rsquo;ve written separate cost guides:</p>
+            <ul>
+              <li><a href="/blog/home-renovation-costs-canberra/">Home renovation costs in Canberra</a> (the cornerstone cost guide)</li>
+              <li><a href="/blog/full-house-renovation-canberra/">Full house renovation in Canberra</a> (scope, sequencing and stay-vs-move-out)</li>
+              <li><a href="/blog/bathroom-renovation-costs-canberra/">Bathroom renovation costs</a></li>
+              <li><a href="/blog/kitchen-renovation-costs-canberra/">Kitchen renovation costs</a></li>
+              <li><a href="/blog/home-extension-costs-canberra/">Home extension costs</a></li>
+            </ul>
+            <p>Weighing up a full rebuild? See our <a href="/services/knockdown-rebuild-canberra/">knockdown rebuild service</a>.</p>
+            <h3>Why Canberra costs more than the eastern seaboard average</h3>
+          </div>
+          <div class="gcards gcards--3">
+            <div class="gcard"><span class="gcard__tag">01</span><h3>A smaller trade pool</h3><p>Sydney and Melbourne have an order of magnitude more builders, plumbers, electricians and tilers competing for work. We don&rsquo;t. When demand peaks, prices peak harder here.</p></div>
+            <div class="gcard"><span class="gcard__tag">02</span><h3>Stricter ACT regulations</h3><p>Energy efficiency requirements (EER), bushfire compliance in many suburbs, asbestos protocols on older homes, and the ACT&rsquo;s particular planning rules all add cost. They also add quality, but they add cost.</p></div>
+            <div class="gcard"><span class="gcard__tag">03</span><h3>A brutal climate</h3><p>Canberra winters demand higher-spec insulation, double or triple glazing, sealed building envelopes, and reverse-cycle systems sized for sub-zero overnights. A renovation that ignores climate performance is a renovation you&rsquo;ll regret in July.</p></div>
+          </div>
+          <figure class="gfig">
+            <img src="/assets/guide-budget.jpg" alt="Illustration of a premium contemporary Canberra kitchen with timber cabinetry, stone benchtops and a skylight overlooking native gum trees" width="1536" height="1024" loading="lazy">
+            <span class="imgnote">Illustrative image</span>
+          </figure>
+        </section>
+
+        <section class="gch" id="planning" aria-labelledby="planning-h">
+          <div class="gch__open"><span class="gch__num" aria-hidden="true">02</span><h2 id="planning-h"><span class="sr">2. </span>How to plan your renovation properly</h2><p class="gch__sum"><b>In this chapter</b>The five-step sequence that works, from writing the brief to locking the scope before you sign.</p></div>
+
+          <div class="gprose">
+            <p>The biggest predictor of how a renovation goes is how much thought went in before a single trade arrived on site. Most disasters I&rsquo;ve seen started with rushed planning.</p>
+            <p>Here&rsquo;s the sequence that works.</p>
+          </div>
+          <ol class="gsteps gprose">
+            <li class="gstep"><div><h3>Define the brief in writing</h3><p>Before you talk to anyone, write down what you want. Not &ldquo;a bigger kitchen&rdquo; - write down &ldquo;I want an open-plan kitchen, dining and living area where the kids can do homework while I cook, with a butler&rsquo;s pantry hidden from view, and a north-facing dining nook with morning sun.&rdquo; The more specific you are, the easier every conversation downstream becomes.</p><p>If you can&rsquo;t write your brief, you&rsquo;re not ready to start. That&rsquo;s not a failing - it just means the next step is conversations, not contracts.</p></div></li>
+            <li class="gstep"><div><h3>Set a budget you can defend</h3><p>Most people set a budget by guessing what they can afford and then assuming a renovation will fit. That&rsquo;s backwards. Start with the cost ranges in section 1, work out what your project realistically costs, then check whether your finance and savings cover it with a 15% buffer for variations and surprises.</p><p>If the numbers don&rsquo;t work, you have three options: reduce scope, find more money, or wait. Pretending the numbers work is the most expensive option, because it leads to either a half-finished project or compromises that ruin the result.</p></div></li>
+            <li class="gstep"><div><h3>Get the right professionals involved early</h3><p>For anything beyond a simple cosmetic refresh, you need three people in the room: a designer or architect, a builder, and a structural engineer if walls are coming out. Get all three involved before drawings are finalised. I&rsquo;ve watched homeowners spend $15,000 on architectural plans only to discover the design isn&rsquo;t buildable within their budget.</p><p>Some builders, including us, will do early-stage feasibility before you commit to detailed design. It saves money and frustration on both sides.</p></div></li>
+            <li class="gstep"><div><h3>Understand the approval pathway</h3><p>Not every renovation needs a Development Application (DA), but you need to know which category yours falls into before you commit. Cosmetic and minor work often qualifies as exempt development. Structural work, extensions, second storeys and anything that changes building footprint usually needs DA approval. The rules in the ACT are specific. <a href="/blog/da-approval-act-renovations/">I&rsquo;ve written a full guide on DA approvals here.</a></p></div></li>
+            <li class="gstep"><div><h3>Lock the scope before you sign</h3><p>Every variation after a contract is signed costs more than it would have during planning. Sometimes a lot more. Spend the time up front to nail down inclusions, finishes, fixtures and fittings to the level of model numbers and brand names. The contract should have a defined scope, a fixed price, a payment schedule, a completion date with liquidated damages, and a written variations process.</p></div></li>
+          </ol>
+          <figure class="gfig">
+            <img src="/assets/guide-planning.jpg" alt="Illustration of architectural drawings, blueprints and material samples laid out on a timber table" width="1536" height="1024" loading="lazy">
+            <span class="imgnote">Illustrative image</span>
+          </figure>
+          <div class="gprose"><p>If you want to go deeper, my <a href="/blog/how-to-plan-renovation-canberra/">step-by-step planning guide</a> walks through the full process. And if you&rsquo;d like to see how we run planning and pricing on our own projects, <a href="/how-we-work/">here&rsquo;s how we work</a>.</p></div>
+          <div class="minicta"><div><strong>Have a project in mind?</strong><p>Coffee&rsquo;s on me. Let&rsquo;s chat about what you&rsquo;re dreaming up and see if we&rsquo;re a good fit.</p></div><a href="/contact/" class="btn btn--gold">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+        </section>
+
+        <section class="gch" id="hidden-costs" aria-labelledby="hidden-costs-h">
+          <div class="gch__open"><span class="gch__num" aria-hidden="true">03</span><h2 id="hidden-costs-h"><span class="sr">3. </span>Avoiding budget blowouts</h2><p class="gch__sum"><b>In this chapter</b>The line items nobody mentioned: seven cost categories that most often catch Canberra homeowners out.</p></div>
+
+          <div class="gprose">
+            <p>The single biggest reason renovations go over budget is that the original budget didn&rsquo;t include things it should have. The work itself usually costs roughly what we quoted. The blowout comes from the line items nobody mentioned.</p>
+            <p>Here are the costs I see catch homeowners out most often.</p>
+          </div>
+          <div class="gcards">
+            <div class="gcard"><span class="gcard__tag">$5,000 to $15,000</span><h3>Site costs that aren&rsquo;t site costs</h3><p>Skip bins, scaffolding, temporary fencing, hoardings, dust barriers, port-a-loo on site, electrical and water connections during the build. On a major renovation these add up to between $5,000 and $15,000. They should be in the contract. Ask.</p></div>
+            <div class="gcard"><span class="gcard__tag">$5,000 to $25,000</span><h3>Demolition surprises</h3><p>Older Canberra homes, particularly anything pre-1985, can hide asbestos in eaves, cornices, vinyl flooring, fibro sheeting and more. ACT asbestos removal requires a licensed contractor and can add $5,000 to $25,000 if it&rsquo;s discovered during demolition. The Mr Fluffy era is its own beast - if you suspect Mr Fluffy contamination, that&rsquo;s a separate conversation entirely. <a href="/services/mr-fluffy-block-rebuild/">I&rsquo;ve written about Mr Fluffy block rebuilds here.</a></p></div>
+            <div class="gcard"><span class="gcard__tag">10-15% contingency</span><h3>Structural surprises</h3><p>Once walls come down, what&rsquo;s behind them sometimes isn&rsquo;t what the plans assumed. Rotted bearers, undersized beams, slumped slabs, poor existing footings. A well-experienced builder will price a contingency for this on older homes, but the surprises still happen. Budget 10-15% contingency on top of your contract price for any structural renovation.</p></div>
+            <div class="gcard"><span class="gcard__tag">$3,000 to $10,000</span><h3>Council and certifier fees</h3><p>DA fees, building certifier inspections, surveyor fees, energy efficiency reports, traffic management plans for some streetscapes. These are usually $3,000 to $10,000 across a full project. Sometimes they&rsquo;re in the builder&rsquo;s contract, sometimes they&rsquo;re owner-supplied. Check.</p></div>
+            <div class="gcard gcard--wide"><span class="gcard__tag">$5,000 to $20,000</span><h3>Connections and services</h3><p>Electrical upgrades from single to three-phase, water meter upgrades, NBN rerouting, stormwater detention. Most homeowners assume the existing services are fine. Often they aren&rsquo;t. Allow $5,000 to $20,000 for service upgrades on bigger projects.</p><p>Worth flagging on gas specifically: the ACT is phasing gas out of the residential network, so new gas connections aren&rsquo;t happening and gas appliance replacements are increasingly restricted. If your existing home has gas and you&rsquo;re relocating services during a renovation, plan for the cost of either relocating the existing line or switching to all-electric. Going all-electric from the outset is usually the cleaner call, and the induction cooktop/heat-pump hot water/reverse-cycle stack is now genuinely excellent.</p></div>
+            <div class="gcard"><span class="gcard__tag">$25,000 to $35,000 rent</span><h3>Moving out costs</h3><p>If you can&rsquo;t live in the home during the build, you need to budget for rental accommodation, removalists, double rates and bills. A six month rental in Canberra inner-north is $25,000 to $35,000. Storage of furniture is another $1,500 to $3,500. Often these are bigger than people expect.</p></div>
+            <div class="gcard gcard--dark"><span class="gcard__tag">$30,000 to $80,000</span><h3>Furniture, blinds, landscaping and finishing</h3><p>The contract gets you to handover. It doesn&rsquo;t get you to &ldquo;the home is ready to live in.&rdquo; Window furnishings, new furniture, landscaping, fencing, driveways, replanting and reinstating front gardens after construction traffic - all of these are extra. On a major renovation, plan another $30,000 to $80,000 for completing the home after handover.</p></div>
+          </div>
+          <div class="gprose"><p>For the full breakdown of what catches people out, my <a href="/blog/renovation-hidden-costs-canberra/">12 hidden renovation costs in Canberra</a> article goes deeper.</p></div>
+          <figure class="gfig">
+            <img src="/assets/guide-timeline.jpg" alt="Illustration of a home renovation in progress with timber framing, scaffolding and trades tools at golden hour" width="1536" height="1024" loading="lazy">
+            <span class="imgnote">Illustrative image</span>
+          </figure>
+        </section>
+
+        <section class="gch" id="timeline" aria-labelledby="timeline-h">
+          <div class="gch__open"><span class="gch__num" aria-hidden="true">04</span><h2 id="timeline-h"><span class="sr">4. </span>Setting realistic timelines</h2><p class="gch__sum"><b>In this chapter</b>On-site duration versus total elapsed time for seven project types, and what compresses or extends them.</p></div>
+
+          <div class="gprose"><p>The other place expectations get crushed is timelines. Renovations take longer than people think, every single time. Here&rsquo;s what I see in practice.</p></div>
+          <table class="grange grange--time">
+            <caption>Realistic durations by project type</caption>
+            <thead><tr><th scope="col">Project type</th><th scope="col">Realistic on-site duration</th><th scope="col">Total elapsed time including planning &amp; approvals</th><th scope="col" class="bar"><span><span>0</span><span>10</span><span>20</span><span>30 months</span></span></th></tr></thead>
+            <tbody>
+          <tr><th scope="row">Bathroom renovation</th><td class="amt">4-7 weeks</td><td class="amt">3-5 months</td><td class="bar" aria-hidden="true"><div class="gbar gbar--time site"><i style="--a:3.1%;--b:94.6%"></i></div><div class="gbar gbar--time"><i style="--a:10.0%;--b:83.3%"></i></div></td></tr>
+          <tr><th scope="row">Kitchen renovation</th><td class="amt">6-10 weeks</td><td class="amt">4-7 months</td><td class="bar" aria-hidden="true"><div class="gbar gbar--time site"><i style="--a:4.6%;--b:92.3%"></i></div><div class="gbar gbar--time"><i style="--a:13.3%;--b:76.7%"></i></div></td></tr>
+          <tr><th scope="row">Whole-house cosmetic refresh</th><td class="amt">10-16 weeks</td><td class="amt">5-9 months</td><td class="bar" aria-hidden="true"><div class="gbar gbar--time site"><i style="--a:7.7%;--b:87.7%"></i></div><div class="gbar gbar--time"><i style="--a:16.7%;--b:70.0%"></i></div></td></tr>
+          <tr><th scope="row">Major structural renovation</th><td class="amt">6-10 months</td><td class="amt">12-20 months</td><td class="bar" aria-hidden="true"><div class="gbar gbar--time site"><i style="--a:20.0%;--b:66.7%"></i></div><div class="gbar gbar--time"><i style="--a:40.0%;--b:33.3%"></i></div></td></tr>
+          <tr><th scope="row">Single-storey extension</th><td class="amt">5-8 months</td><td class="amt">11-17 months</td><td class="bar" aria-hidden="true"><div class="gbar gbar--time site"><i style="--a:16.7%;--b:73.3%"></i></div><div class="gbar gbar--time"><i style="--a:36.7%;--b:43.3%"></i></div></td></tr>
+          <tr><th scope="row">Second storey addition</th><td class="amt">7-11 months</td><td class="amt">14-24 months</td><td class="bar" aria-hidden="true"><div class="gbar gbar--time site"><i style="--a:23.3%;--b:63.3%"></i></div><div class="gbar gbar--time"><i style="--a:46.7%;--b:20.0%"></i></div></td></tr>
+          <tr><th scope="row">Knockdown rebuild</th><td class="amt">12-16 months</td><td class="amt">20-30 months</td><td class="bar" aria-hidden="true"><div class="gbar gbar--time site"><i style="--a:40.0%;--b:46.7%"></i></div><div class="gbar gbar--time"><i style="--a:66.7%;--b:0.0%"></i></div></td></tr>
+            </tbody>
+          </table>
+          <p class="glegend"><span><i class="site"></i>On site</span><span><i></i>Total elapsed, including planning and approvals</span></p>
+          <div class="gprose">
+            <h3>Why &ldquo;elapsed time&rdquo; matters more than &ldquo;build time&rdquo;</h3>
+            <p>Most homeowners hear &ldquo;the build will take six months&rdquo; and start planning their lives around that number. But before the build starts there&rsquo;s a designer phase (1-3 months), a documentation phase (1-2 months), a DA approval window (8-16 weeks for anything that needs one), a tendering and contract phase (3-6 weeks), and a builder lead time (1-3 months for a quality builder with a backlog). All of that happens before the first sledgehammer swings.</p>
+          </div>
+          <p class="gpull">If you&rsquo;re starting conversations with a builder today, a major renovation realistically isn&rsquo;t completed inside <em>14 months.</em></p>
+          <div class="gprose"><p>Plan accordingly. Builders who promise dramatically shorter timelines are usually about to disappoint you.</p></div>
+          <div class="gtwo gprose">
+            <div class="good"><h3>Things that compress timelines</h3><ul><li>Decisions made early and not changed</li><li>A clear, locked scope with no open variables</li><li>Selections (tiles, fixtures, paint colours, hardware) finalised before the build starts</li><li>Working with a builder who has reliable trade relationships</li><li>Living off-site so trades can work flat out</li></ul></div>
+            <div class="bad"><h3>Things that extend timelines</h3><ul><li>Mid-build variations and changes of mind</li><li>Late selections (this is the single biggest cause of delays I see)</li><li>Custom-made items with long lead times (joinery, stone benchtops, imported tiles)</li><li>Living on-site through the build</li><li>DA conditions that require additional work</li><li>Weather delays in winter, particularly for slab and roof stages</li></ul></div>
+          </div>
+        </section>
+
+        <section class="gch" id="builder" aria-labelledby="builder-h">
+          <div class="gch__open"><span class="gch__num" aria-hidden="true">05</span><h2 id="builder-h"><span class="sr">5. </span>Choosing the right builder</h2><p class="gch__sum"><b>In this chapter</b>Five things to check before you sign with anyone, us included.</p></div>
+
+          <div class="gprose">
+            <p>If you only get one decision right in the whole process, make it this one. The right builder turns a stressful project into a great one. The wrong builder turns a great project into a disaster.</p>
+            <p>Here&rsquo;s what to look for. I&rsquo;ve written a full <a href="/blog/choosing-right-builder-canberra/">10-question guide on builder selection</a>, but the short version is below.</p>
+          </div>
+          <div class="gcards">
+            <div class="gcard"><span class="gcard__tag">01</span><h3>Licence and insurance</h3><p>In the ACT, residential builders need to be licensed by Access Canberra. The licence number should be on every quote and contract. Insurance should include public liability, contract works, and home warranty insurance for jobs over $12,000. If a builder can&rsquo;t show you these documents, walk away.</p></div>
+            <div class="gcard"><span class="gcard__tag">02</span><h3>Fixed price, not cost-plus</h3><p>Cost-plus contracts (where you pay all costs plus the builder&rsquo;s margin) sound flexible. They&rsquo;re not. They transfer all the price risk to you. A reputable builder will quote a fixed price and stand behind it. Variations are negotiated transparently when scope changes, but the base contract is locked.</p><p>Every contract I sign at Rentoule Projects is fixed-price. It&rsquo;s harder for me, because I have to estimate accurately and absorb my own mistakes. That&rsquo;s the point. It means you know exactly where you stand. <a href="/how-we-work/">See how we get to a fixed price.</a></p></div>
+            <div class="gcard"><span class="gcard__tag">03</span><h3>References from completed work</h3><p>Anyone can show you finished photos. Ask for the contact details of two clients whose projects have been finished for at least 12 months. Ring them. Ask: did the project finish on time, did it finish on budget, did the builder fix things that came up after handover, and would you use them again? Three minutes on the phone tells you more than three days of marketing.</p></div>
+            <div class="gcard"><span class="gcard__tag">04</span><h3>Site presence</h3><p>Ask who will be on site daily. At Rentoule Projects, we have a site manager (Matt) who is on every active build every day. I&rsquo;m across every project but I&rsquo;m not standing on site - I&rsquo;m running the business, talking with new clients, handling design and contract decisions. Some builders never come on site at all. Some operate as foremen running the actual labour. Both can work, but you need to know which model you&rsquo;re hiring.</p></div>
+            <div class="gcard gcard--wide"><span class="gcard__tag">05</span><h3>Communication standards</h3><p>How will you hear about progress? How quickly do they respond to questions? How are decisions documented? A great builder has a system. A poor builder makes you chase them. If you&rsquo;re already chasing them during the quoting stage, that&rsquo;s the relationship you&rsquo;ll have for nine months.</p></div>
+          </div>
+          <div class="minicta"><div><strong>Want to chat about your project?</strong><p>I&rsquo;m always up for a no-pressure conversation. Bring your ideas, your floor plan, or just an empty notepad. We&rsquo;ll figure out if we&rsquo;re a fit together.</p></div><a href="/contact/" class="btn btn--gold">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+        </section>
+
+        <section class="gch" id="design" aria-labelledby="design-h">
+          <div class="gch__open"><span class="gch__num" aria-hidden="true">06</span><h2 id="design-h"><span class="sr">6. </span>Designing for the next 20 years</h2><p class="gch__sum"><b>In this chapter</b>Five traits shared by Canberra renovations that age well.</p></div>
+
+          <div class="gprose"><p>The renovations that age well in Canberra share a few traits. The ones that look dated in five years also share a few traits.</p></div>
+          <div class="gcards">
+            <div class="gcard gcard--wide gcard--dark"><span class="gcard__tag">The biggest lever</span><h3>Orientation and natural light</h3><p>This is the single biggest design lever in Canberra. North-facing living spaces, properly designed for our seasonal sun angles, are warm in winter without heating and cool in summer with the right eaves. Get this right and your home performs better, costs less to run, and feels better to live in. Get this wrong and you&rsquo;re fighting your house with energy bills for the next two decades.</p><p>If your existing home faces the wrong way, a renovation is your chance to redesign around the sun. Sometimes that means moving the kitchen and living areas. It&rsquo;s worth it.</p></div>
+            <div class="gcard"><h3>Energy performance</h3><p>The ACT now requires 7-star EER on most new builds and major renovations. The honest truth is that 8-star and 9-star designs aren&rsquo;t much more expensive at construction, and they save thousands per year over the life of the home. Insulate above the minimum, double-glaze (or triple-glaze for north-facing glass), seal the building envelope properly, install efficient reverse-cycle heating and cooling. <a href="/blog/energy-efficiency-eer-canberra/">My EER guide goes deeper on this.</a></p></div>
+            <div class="gcard"><h3>Layout that flexes</h3><p>The home you need at 35 with two kids isn&rsquo;t the home you need at 50 with teenagers, or 65 with grown-up children visiting. Good design accommodates change. Spaces that can change function (a study that becomes a guest room, an open plan that can be partitioned, a downstairs bedroom that becomes a bedroom for ageing parents). Avoid hyper-specific spaces that lock the home into one phase of life.</p></div>
+            <div class="gcard"><h3>Materials that age</h3><p>The fashionable choice today is the dated choice in five years. The classics rarely date. Timber, stone, brick, plaster, neutral palettes, durable hardware. Save the trend-driven choices for elements you can change cheaply (cushions, art, paint colour). Build the bones from materials that look better with time.</p></div>
+            <div class="gcard"><h3>Indoor-outdoor connection</h3><p>Canberra has a beautiful climate for outdoor living three seasons a year. Bifold or stacker doors that open the living space to a covered alfresco, properly sized for a dining table, oriented to catch afternoon sun, with shelter from the wind. This single design move adds more lifestyle value per dollar than almost anything else we build.</p></div>
+          </div>
+        </section>
+
+        <section class="gch" id="approvals" aria-labelledby="approvals-h">
+          <div class="gch__open"><span class="gch__num" aria-hidden="true">07</span><h2 id="approvals-h"><span class="sr">7. </span>Planning approvals and ACT regulations</h2><p class="gch__sum"><b>In this chapter</b>The three planning tracks, what usually triggers a merit-track DA, Building Approval and NCC 2025.</p></div>
+
+          <div class="gprose"><p>The ACT&rsquo;s planning system is its own creature. Here&rsquo;s the broad shape, but my <a href="/blog/da-approval-act-renovations/">DA approval article</a> has the full detail.</p><h3>Three categories of planning approval</h3></div>
+          <div class="gcards gcards--3">
+            <div class="gcard"><span class="gcard__tag">Track 1</span><h3>Exempt development</h3><p>Most cosmetic work, internal renovations not affecting structure, small repairs. No approval required, but compliance with building codes still applies.</p></div>
+            <div class="gcard gcard--dark"><span class="gcard__tag">Track 2</span><h3>Single Dwelling Housing Development Code (SDHDC) track</h3><p>For most single-dwelling houses, extensions, alterations and additions, if your project meets the rules in this code you can proceed without a full Development Application. This is the pathway we try to use wherever possible. It&rsquo;s quicker, cheaper and has far less uncertainty than the merit-track DA. Most of our extension and alteration work is SDHDC-compliant by design.</p></div>
+            <div class="gcard"><span class="gcard__tag">Track 3</span><h3>Merit-track DA</h3><p>Larger projects, anything that can&rsquo;t meet the SDHDC rules, heritage-affected sites, or projects that vary from the default setbacks, site coverage, or plot ratio. Goes to the planning authority for full assessment, takes 8-16 weeks or longer.</p></div>
+          </div>
+          <div class="gprose">
+            <h3>Things that almost always trigger a merit-track DA</h3>
+            <ul>
+              <li>Knockdown rebuilds that can&rsquo;t meet SDHDC exemption criteria</li>
+              <li>Second storey additions exceeding the code&rsquo;s height or setback rules</li>
+              <li>Demolition of more than 50% of the existing structure</li>
+              <li>Changes to the front facade in suburbs with heritage or character overlay (Reid, Forrest, parts of Yarralumla and Griffith)</li>
+              <li>Anything reducing on-site car parking below required levels</li>
+              <li>Variations to boundary setbacks, plot ratio or site coverage</li>
+            </ul>
+            <h3>Building Approval (BA) is separate</h3>
+            <p>Worth knowing: whichever planning track you take, you still need a separate Building Approval (BA) before any construction starts. The BA is issued by a private building certifier and confirms that your plans comply with the National Construction Code, structural requirements, energy efficiency rules and all the technical building standards. Even a fully exempt development typically still needs a BA if there&rsquo;s actual building work involved. The BA process usually runs 2-4 weeks for straightforward projects and sits alongside or after your planning pathway. As your builder, we manage the BA process and certifier relationship on your behalf.</p>
+            <h3>NCC 2025</h3>
+            <p>The National Construction Code 2025 is now in force in the ACT, and becomes mandatory for building approvals from 1 May 2027. Projects with a DA lodged before 1 November 2026 can stay on NCC 2022. It introduces stricter requirements on energy efficiency, accessibility (the Livable Housing standard), and condensation management. For new builds and major renovations, NCC 2025 will add somewhere between $14,000 and $55,000 to project cost depending on scope. <a href="/blog/ncc-2025-canberra-renovations/">I&rsquo;ve written a detailed guide here.</a></p>
+          </div>
+        </section>
+
+        <section class="gch" id="queanbeyan" aria-labelledby="queanbeyan-h">
+          <div class="gch__open"><span class="gch__num" aria-hidden="true">08</span><h2 id="queanbeyan-h"><span class="sr">8. </span>Queanbeyan, the surrounding region and beyond</h2><p class="gch__sum"><b>In this chapter</b>Building either side of the ACT/NSW border, and when we consider the south coast.</p></div>
+
+          <div class="gprose">
+            <p>Canberra is our primary market but worth knowing: I hold a NSW builder&rsquo;s licence in addition to my ACT licence, so we regularly build in Queanbeyan, Jerrabomberra, Googong, Bungendore and the surrounding region.</p>
+            <p>A lot of our Canberra-raised clients end up moving just across the border for more land, lower prices or a specific lifestyle preference, and then want a builder who can deliver the same Canberra-level quality. We&rsquo;re happy to bridge that. Build standards, contracts, communication, fixed-price approach - all identical either side of the ACT/NSW line.</p>
+            <p>For the right client and the right project, we&rsquo;ll also consider work further afield on the south coast. It has to be a project worth travelling for and we&rsquo;re selective about taking it on, but if your vision is a considered south coast build and you want a Canberra-quality builder who&rsquo;ll stand behind the work, have the conversation with us anyway. <a href="/services/#areas">See where we build.</a></p>
+          </div>
+        </section>
+
+        <section class="gch" id="mistakes" aria-labelledby="mistakes-h">
+          <div class="gch__open"><span class="gch__num" aria-hidden="true">09</span><h2 id="mistakes-h"><span class="sr">9. </span>The five mistakes I see most often</h2><p class="gch__sum"><b>In this chapter</b>After 19 years in the trade, the same patterns hurt the most.</p></div>
+
+          <div class="gprose"><p>After 19 years in this trade I see the same patterns over and over. Here are the five that hurt the most.</p></div>
+          <ol class="gsteps gprose">
+            <li class="gstep"><div><h3>Choosing the cheapest quote</h3><p>The cheapest builder is usually the most expensive when it&rsquo;s done. Either they&rsquo;ve under-priced (and either lose money trying to deliver, or chase you for variations), or they&rsquo;re cutting corners you can&rsquo;t see. A quote that&rsquo;s 20% lower than three other quotes for the same scope is a warning sign, not a win.</p></div></li>
+            <li class="gstep"><div><h3>Starting before the design is finished</h3><p>&ldquo;We&rsquo;ll figure that out as we go&rdquo; costs four times what figuring it out before the build would have cost. Every undecided detail becomes a delay or a variation. Lock the scope, lock the selections, then start the build.</p></div></li>
+            <li class="gstep"><div><h3>Ignoring orientation</h3><p>A beautifully designed kitchen on the wrong side of the house is a kitchen you&rsquo;ll heat in winter and shade in summer for the next 20 years. The orientation conversation should happen at concept stage, not after plans are drawn.</p></div></li>
+            <li class="gstep"><div><h3>Underestimating the project length</h3><p>Couples sign up to a &ldquo;six month renovation&rdquo; and find themselves at month nine, still living in temporary accommodation, paying double rates, and snapping at each other. Plan for the realistic duration in section 4, not the optimistic one. Build a buffer into your living arrangements.</p></div></li>
+            <li class="gstep"><div><h3>Picking finishes too early</h3><p>The tile you fall in love with at concept stage is often discontinued by build time. Finalise selections in the 4-8 weeks before the relevant trade is on site. Check stock and lead times before you commit. Have a backup option for anything imported or custom-made.</p></div></li>
+          </ol>
+        </section>
+
+        <section class="gch" id="next-steps" aria-labelledby="next-steps-h">
+          <div class="gch__open"><span class="gch__num" aria-hidden="true">10</span><h2 id="next-steps-h"><span class="sr">10. </span>Where to go from here</h2><p class="gch__sum"><b>In this chapter</b>What to do next, depending on how far you are from starting.</p></div>
+
+          <div class="gprose"><p>If you&rsquo;ve read this far, you&rsquo;re more prepared than 90% of homeowners I meet. The next steps depend on where you are in the journey.</p></div>
+          <div class="gstages">
+            <div class="gstage"><h3>If you&rsquo;re 12+ months from starting</h3><p>Start collecting what you love. A Pinterest board, a folder of magazine pages, photos from friends&rsquo; homes, notes about what works and doesn&rsquo;t work in your current home. Walk around suburbs you like (Griffith, Yarralumla, Forrest, Reid, Ainslie, Campbell, Turner, Braddon) and notice what good renovations look like. Read the cost guides linked above so you have realistic expectations.</p></div>
+            <div class="gstage"><h3>If you&rsquo;re 6-12 months out</h3><p>Start conversations. With designers, with builders, maybe with a finance broker if you&rsquo;ll need to borrow. Get a feasibility on your specific project. We do early-stage feasibility for most clients and it&rsquo;s usually the most valuable money they spend on the project.</p></div>
+            <div class="gstage"><h3>If you&rsquo;re 3-6 months out</h3><p>Lock in your design team and your builder. Begin documentation and approval pathway. Start finalising your major selections (cabinetry style, tile direction, key fixtures). The decisions you make now compound over the next 12 months.</p></div>
+            <div class="gstage"><h3>If you&rsquo;re ready to start</h3><p>Get in touch. Even if you&rsquo;re not sure we&rsquo;re the right builder for your project, I&rsquo;m happy to have a no-pressure conversation about your plans. Sometimes the best thing I can do for someone is point them at a builder who&rsquo;s a better fit. Sometimes the best thing is to say &ldquo;let&rsquo;s talk.&rdquo; <a href="/contact/">Start a conversation</a> or read <a href="/how-we-work/">how we work</a>.</p></div>
+          </div>
+          <div class="gprose"><p>Either way, coffee&rsquo;s on me.</p></div>
+          <p class="gend"><b>A note on this guide</b>This guide is based on my experience running residential building projects in Canberra. Building rules, prices, and best practice change over time. I update this page periodically as things change. If you spot something outdated, or want to suggest an addition, drop me a note at <a href="mailto:jeff@rentouleprojects.com">jeff@rentouleprojects.com</a>.</p>
+        </section>
+      </article>
+    </div>
+
+    <section class="endmatter" aria-label="Related reading">
       <div class="container">
-        <div class="reveal" style="text-align:center; max-width:720px; margin:0 auto var(--space-3xl);">
-          <span class="eyebrow">Go deeper</span>
-          <h2 class="section-heading">Related <em>reading</em></h2>
-        </div>
-        <div class="related-grid reveal">
-          <a href="/blog/home-renovation-costs-canberra/" class="related-card">
-            <span class="related-card__eyebrow">Cost Guide</span>
-            <h3 class="related-card__title">Home renovation costs in Canberra</h3>
-            <p class="related-card__text">The cornerstone cost guide with detailed breakdowns by room and scope</p>
-            <span class="related-card__link">Read more</span>
-          </a>
-          <a href="/blog/how-to-plan-renovation-canberra/" class="related-card">
-            <span class="related-card__eyebrow">Planning</span>
-            <h3 class="related-card__title">How to plan your renovation</h3>
-            <p class="related-card__text">The full step-by-step planning process from idea to handover</p>
-            <span class="related-card__link">Read more</span>
-          </a>
-          <a href="/blog/renovation-hidden-costs-canberra/" class="related-card">
-            <span class="related-card__eyebrow">Costs</span>
-            <h3 class="related-card__title">12 hidden renovation costs</h3>
-            <p class="related-card__text">The line items that catch homeowners out and how to budget for them</p>
-            <span class="related-card__link">Read more</span>
-          </a>
+        <span class="eyebrow">Go deeper</span>
+        <h2 class="section-heading">Related <em>reading</em></h2>
+        <div class="related-grid">
+          <a href="/blog/home-renovation-costs-canberra/" class="related-card"><span class="related-card__meta">Cost guide</span><h3 class="related-card__title">Home renovation costs in Canberra</h3><p class="related-card__text">Per-square-metre rates, tier breakdowns and what your money buys.</p><span class="related-card__link">Read</span></a>
+          <a href="/blog/how-to-plan-renovation-canberra/" class="related-card"><span class="related-card__meta">Planning</span><h3 class="related-card__title">How to plan your renovation</h3><p class="related-card__text">The full step-by-step planning process.</p><span class="related-card__link">Read</span></a>
+          <a href="/how-we-work/" class="related-card"><span class="related-card__meta">Our process</span><h3 class="related-card__title">How we work, from first call to handover</h3><p class="related-card__text">The Preliminary Services Agreement and our client portal.</p><span class="related-card__link">Read</span></a>
         </div>
       </div>
     </section>
 
-    <!-- CTA Band -->
-    <section class="cta-band" aria-label="Call to action">
-      <div class="container reveal">
-        <span class="eyebrow" style="color:var(--black);">Get Started</span>
-        <h2 class="section-heading">Have a project <em>in mind?</em></h2>
-        <p class="section-subtitle">Even if it's just a what-if conversation at this stage, I'd love to hear from you. Coffee's on me. Let's chat about what you're dreaming up and see if we're a good fit.</p>
-        <a href="/#contact" class="btn btn--dark">Get in touch</a>
+    <section class="cta" aria-labelledby="cta-h">
+      <img class="cta__mark" src="/assets/logo-monogram-clean.png" alt="" aria-hidden="true">
+      <div class="wrap">
+        <h2 class="display h-lg" id="cta-h">Have a project <span class="script">in mind?</span></h2>
+        <p class="lead">Coffee&rsquo;s on me. Let&rsquo;s chat about what you&rsquo;re dreaming up and see if we&rsquo;re a good fit.</p>
+        <div class="btn-row">
+          <a href="/contact/" class="btn btn--black">Start a conversation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="/services/" class="btn btn--line">Our services</a>
+        </div>
       </div>
     </section>
-
   </main>
 
-  <!-- ====== FOOTER ====== -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer__grid">
-        <div>
-          <img src="../assets/logo-nav-gold.png" alt="Rentoule Projects" class="footer__logo-img">
-          <p class="footer__tagline">Making your house your home</p>
-          <p class="footer__about-text">Canberra residential builder specialising in home renovations, extensions and custom new builds from mid-range through to luxury. Director - Jeff Rentoule.</p>
-          <div class="footer__social">
-            <a href="https://www.instagram.com/rentoule_projects/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-            <a href="https://www.facebook.com/p/Rentoule-Projects-100093837338330/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
+  <a href="/contact/" class="gsticky" aria-label="Get in touch with Jeff">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+
+  <!-- rp:footer -->
+  <footer class="rp-footer">
+    <div class="wrap">
+      <div class="rp-footer__grid">
+        <div class="rp-footer__brand">
+          <img src="/assets/logo-stacked-gold.png" alt="Rentoule Projects" width="400" height="333" loading="lazy">
+          <p>Premium renovations, extensions and selective custom homes in Canberra. Director, Jeff Rentoule.</p>
+          <div class="rp-social">
+            <a href="https://www.instagram.com/rentoule_projects/" target="_blank" rel="noopener noreferrer" aria-label="Rentoule Projects on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://www.facebook.com/p/Rentoule-Projects-100093837338330/" target="_blank" rel="noopener noreferrer" aria-label="Rentoule Projects on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
           </div>
         </div>
-        <div>
-          <h4 class="footer__heading">Services</h4>
-          <div class="footer__links">
-            <a href="/#services">New Builds</a>
-            <a href="/#services">Extensions</a>
-            <a href="/#services">Renovations</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__heading">Case Studies</h4>
-          <div class="footer__links">
-            <a href="/#case-studies">Chris - Weetangera</a>
-            <a href="/#case-studies">50 Year Home Renovation</a>
-            <a href="/#case-studies">Mark - Griffith</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__heading">Navigation</h4>
-          <div class="footer__links">
-            <a href="/">Home</a>
-            <a href="/#about">About</a>
-            <a href="/#services">Services</a>
-            <a href="/#contact">Contact</a>
-            <a href="/#blog">Blog</a>
-            <a href="/#careers">Careers</a>
-          </div>
-        </div>
+        <div><h2>Services</h2><ul>
+          <li><a href="/services/#renovations">Renovations</a></li>
+          <li><a href="/services/#extensions">Extensions</a></li>
+          <li><a href="/services/#custom-homes">Custom homes</a></li>
+          <li><a href="/services/knockdown-rebuild-canberra/">Knockdown rebuild</a></li>
+          <li><a href="/services/mr-fluffy-block-rebuild/">Mr Fluffy block rebuild</a></li>
+          <li><a href="/services/dual-occupancy-canberra/">Dual occupancy</a></li>
+        </ul></div>
+        <div><h2>Explore</h2><ul>
+          <li><a href="/how-we-work/">How we work</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/canberra-renovation-guide/">Canberra Renovation Guide</a></li>
+          <li><a href="/blog/">Journal</a></li>
+          <li><a href="/blog/home-renovation-costs-canberra/">Renovation costs</a></li>
+        </ul></div>
+        <div><h2>Company</h2><ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/careers/">Careers</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="tel:0434435966">0434 435 966</a></li>
+          <li><a href="mailto:info@rentouleprojects.com">info@rentouleprojects.com</a></li>
+        </ul></div>
       </div>
-      <div class="footer__bottom">
-        <p>&copy; 2026 Rentoule Projects. All rights reserved.</p>
-        <p>Canberra, ACT, Australia</p>
-      </div>
+      <div class="rp-footer__base"><span>&copy; 2026 Rentoule Projects</span><span>Licensed builder: ACT 20211145 &middot; NSW 453726C</span><span>Canberra, ACT</span></div>
     </div>
   </footer>
-
-  <!-- Sticky "Get in touch" button -->
-  <a href="/#contact" class="guide-sticky-cta" id="guideStickyCta" aria-label="Get in touch with Jeff">
-    Get in touch
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-  </a>
-  <script>
-    (function () {
-      var btn = document.getElementById('guideStickyCta');
-      if (!btn) return;
-      var hero = document.querySelector('.article-page > section, .article-hero, .guide-hero');
-      var hideZones = [document.querySelector('.cta-band'), document.querySelector('.footer')].filter(Boolean);
-      var zoneInView = false;
-      function update() {
-        var threshold = hero ? hero.offsetTop + hero.offsetHeight - 80 : 500;
-        var show = window.scrollY > threshold && !zoneInView;
-        btn.classList.toggle('is-visible', show);
-        btn.setAttribute('tabindex', show ? '0' : '-1');
-      }
-      if ('IntersectionObserver' in window && hideZones.length) {
-        var visible = new Set();
-        var io = new IntersectionObserver(function (entries) {
-          entries.forEach(function (e) { e.isIntersecting ? visible.add(e.target) : visible.delete(e.target); });
-          zoneInView = visible.size > 0;
-          update();
-        });
-        hideZones.forEach(function (z) { io.observe(z); });
-      }
-      window.addEventListener('scroll', update, { passive: true });
-      window.addEventListener('resize', update);
-      update();
-      btn.addEventListener('click', function () {
-        if (window.fbq) fbq('trackCustom', 'GuideGetInTouchClick');
-        if (window.clarity) clarity('event', 'guide_sticky_get_in_touch');
-      });
-    })();
-  </script>
-
-  <script src="../app.js"></script>
+  <script src="/assets/js/rp.js" defer></script>
+  <!-- /rp:footer -->
 </body>
 </html>

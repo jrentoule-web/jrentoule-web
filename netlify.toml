@@ -83,43 +83,43 @@
 # --- OLD SUSTAINABILITY ARTICLES (no equivalent, send to blog index) ---
 [[redirects]]
   from = "/building-a-sustainable-future-in-australia/"
-  to = "/#blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/how-we-create-sustainable-homes-in-australia/"
-  to = "/#blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/the-art-of-sustainable-design-in-australia/"
-  to = "/#blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/the-future-of-sustainable-architecture-in-australia/"
-  to = "/#blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/why-sustainability-matters-in-australian-construction/"
-  to = "/#blog"
+  to = "/blog/"
   status = 301
 
 # --- CASE STUDIES ---
 [[redirects]]
   from = "/chris-weetangera/"
-  to = "/#case-studies"
+  to = "/projects/#weetangera"
   status = 301
 
 [[redirects]]
   from = "/project-1/"
-  to = "/#case-studies"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/project-2/"
-  to = "/#case-studies"
+  to = "/projects/"
   status = 301
 
 # --- SERVICES: KEEP HIGH-SEO LANDING PAGES ---
@@ -131,104 +131,88 @@
 
 [[redirects]]
   from = "/custom-home-builder-canberra/"
-  to = "/"
+  to = "/services/#custom-homes"
   status = 301
   force = true
 
 # --- OTHER SERVICE PAGES ---
 [[redirects]]
   from = "/home-extension-canberra/"
-  to = "/#services"
+  to = "/services/#extensions"
   status = 301
 
 [[redirects]]
   from = "/second-storey-addition-canberra/"
-  to = "/#services"
+  to = "/blog/second-storey-extensions-canberra/"
   status = 301
 
 [[redirects]]
   from = "/renovation-builder-canberra/"
-  to = "/#services"
+  to = "/services/#renovations"
   status = 301
 
 [[redirects]]
   from = "/fixed-price-builder-canberra/"
-  to = "/#services"
+  to = "/how-we-work/"
   status = 301
 
 [[redirects]]
   from = "/building-services-canberra/"
-  to = "/#services"
+  to = "/services/"
   status = 301
 
-[[redirects]]
-  from = "/services/"
-  to = "/#services"
-  status = 301
 
 [[redirects]]
   from = "/services/bathroom-renovations/"
-  to = "/#services"
+  to = "/services/#renovations"
   status = 301
 
 [[redirects]]
   from = "/services/custom-homes/"
-  to = "/#services"
+  to = "/services/#custom-homes"
   status = 301
 
 [[redirects]]
   from = "/services/extensions/"
-  to = "/#services"
+  to = "/services/#extensions"
   status = 301
 
 [[redirects]]
   from = "/services/kitchen-renovations/"
-  to = "/#services"
+  to = "/services/#renovations"
   status = 301
 
 [[redirects]]
   from = "/services/renovations/"
-  to = "/#services"
+  to = "/services/#renovations"
   status = 301
 
 [[redirects]]
   from = "/services/single-storey-additions/"
-  to = "/#services"
+  to = "/services/#extensions"
   status = 301
 
 # --- LOCATIONS ---
 [[redirects]]
   from = "/locations/*"
-  to = "/"
+  to = "/services/#areas"
   status = 301
 
 # --- STANDARD PAGES ---
-[[redirects]]
-  from = "/about/"
-  to = "/#about"
-  status = 301
-  force = true
+# Home page views (about, services, projects, blog, careers, contact) are real pages
+# since the 2026 refresh. Old /#section links are forwarded by a script on the home page.
 
-[[redirects]]
-  from = "/blog/"
-  to = "/#blog"
-  status = 301
 
 [[redirects]]
   from = "/case-studies/"
-  to = "/#case-studies"
+  to = "/projects/"
   status = 301
   force = true
 
-[[redirects]]
-  from = "/contact/"
-  to = "/#contact"
-  status = 301
-  force = true
 
 [[redirects]]
   from = "/request-a-consult/"
-  to = "/#contact"
+  to = "/contact/"
   status = 301
 
 [[redirects]]
@@ -244,17 +228,13 @@
 # --- CAREERS ---
 [[redirects]]
   from = "/careers-available/"
-  to = "/#careers"
+  to = "/careers/"
   status = 301
 
-[[redirects]]
-  from = "/careers/"
-  to = "/#careers"
-  status = 301
 
 [[redirects]]
   from = "/careers/*"
-  to = "/#careers"
+  to = "/careers/"
   status = 301
 
 # --- SHORT LINKS (clean URLs for Instagram, social, print, email) ---
@@ -375,3 +355,27 @@
 [functions]
   directory = "netlify/functions"
   node_bundler = "esbuild"
+
+# --- 2026 REFRESH: aliases and internal tooling ---
+[[redirects]]
+  from = "/journal/"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/projects/case-studies/"
+  to = "/projects/"
+  status = 301
+
+# Maintenance scripts live in /tools and are never served
+[[redirects]]
+  from = "/tools/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+# Mistyped internal link that existed before the refresh
+[[redirects]]
+  from = "/blog/do-you-need-da-approval-renovations-act/"
+  to = "/blog/da-approval-act-renovations/"
+  status = 301

@@ -24,28 +24,49 @@
   <meta name="geo.region" content="AU-ACT">
   <meta name="geo.placename" content="Canberra">
 
-  <!-- Favicon -->
+  <!-- rp:head -->
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-  <!-- Fonts -->
+  <meta name="theme-color" content="#1d2a1f">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    @font-face {
-      font-family: 'Amsterdam';
-      src: url('../../assets/Amsterdam-Four.woff2') format('woff2');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/rp.css">
+  <script>document.documentElement.classList.add('js');</script>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="../../base.css">
-  <link rel="stylesheet" href="../../style.css">
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '325684489874879');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt=""
+  src="https://www.facebook.com/tr?id=325684489874879&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- HubSpot tracking code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-ap1.hs-scripts.com/40214516.js"></script>
+  <!-- First/last-touch attribution for HubSpot forms -->
+  <script src="/tracking.js"></script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "x793xh4bcw");
+  </script>
+  <!-- /rp:head -->
 
   <!-- Structured Data: Article -->
   <script type="application/ld+json">
@@ -106,27 +127,6 @@
     ]
   }
   </script>
-  <!-- Meta Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '325684489874879');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=325684489874879&ev=PageView&noscript=1"
-  alt=""
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-  <!-- HubSpot tracking code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js-ap1.hs-scripts.com/40214516.js"></script>
-  <script src="../../tracking.js"></script>
 
 
   <style>
@@ -188,74 +188,67 @@
       background: #d4b48a;
     }
   </style>
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "x793xh4bcw");
-    </script>
 </head>
-<body class="article-body-page">
-
-  <a href="/#main-content" class="skip-link">Skip to content</a>
-
-  <!-- ====== NAVIGATION ====== -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav__inner">
-      <a href="/" class="nav__logo" aria-label="Rentoule Projects - Home">
-          <img src="../../assets/logo-nav-gold-script.png" alt="Rentoule Projects" class="nav__logo-img">
-        </a>
-      <div class="nav__links">
-        <a href="/#about" class="nav__link">About</a>
-        <a href="/#services" class="nav__link">Services</a>
-        <a href="/#case-studies" class="nav__link">Case Studies</a>
-        <a href="/canberra-renovation-guide/" class="nav__link">Guide</a>
-        <a href="/#blog" class="nav__link active">Blog</a>
-        <a href="/#careers" class="nav__link">Careers</a>
-        <a href="/#contact" class="nav__link">Contact</a>
-      </div>
-      <a href="/#contact" class="btn btn--primary nav__cta desktop-only">Get in touch</a>
-      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+<body>
+  <!-- rp:header -->
+  <a href="#main" class="skip">Skip to content</a>
+  <div class="rp-progress" aria-hidden="true"></div>
+  <header class="rp-header" id="rpHeader">
+    <div class="rp-header__inner">
+      <a href="/" class="rp-logo" aria-label="Rentoule Projects home">
+        <img class="on-dark" src="/assets/logo-nav-white.png" alt="" width="600" height="184">
+        <img class="on-light" src="/assets/logo-nav-green.png" alt="" width="600" height="184">
+      </a>
+      <nav class="rp-nav" aria-label="Main">
+        <a href="/services/" data-nav="services">Services</a>
+        <a href="/how-we-work/" data-nav="how-we-work">How we work</a>
+        <a href="/projects/" data-nav="projects">Projects</a>
+        <a href="/canberra-renovation-guide/" data-nav="guide">Guide</a>
+        <a href="/blog/" data-nav="journal" aria-current="page">Journal</a>
+        <a href="/about/" data-nav="about">About</a>
+      </nav>
+      <a href="/contact/" class="btn btn--gold rp-header__cta">Start a conversation</a>
+      <button class="rp-burger" id="rpBurger" aria-label="Open menu" aria-expanded="false" aria-controls="rpMenu"><span></span></button>
     </div>
-    <div class="nav__mobile" aria-hidden="true">
-      <a href="/">Home</a>
-      <a href="/#about">About</a>
-      <a href="/#services">Services</a>
-      <a href="/#case-studies">Case Studies</a>
-      <a href="/canberra-renovation-guide/">Guide</a>
-      <a href="/#blog">Blog</a>
-      <a href="/#careers">Careers</a>
-      <a href="/#contact">Contact</a>
-      <a href="/#contact" class="btn btn--primary">Get in touch</a>
+  </header>
+  <div class="rp-menu" id="rpMenu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <button class="rp-menu__close" id="rpClose" aria-label="Close menu">&times;</button>
+    <nav aria-label="Mobile">
+      <a href="/" data-nav="home">Home</a>
+      <a href="/services/" data-nav="services">Services</a>
+      <a href="/how-we-work/" data-nav="how-we-work">How we work</a>
+      <a href="/projects/" data-nav="projects">Projects</a>
+      <a href="/canberra-renovation-guide/" data-nav="guide">Renovation guide</a>
+      <a href="/blog/" data-nav="journal" aria-current="page">Journal</a>
+      <a href="/about/" data-nav="about">About</a>
+      <a href="/careers/" data-nav="careers">Careers</a>
+    </nav>
+    <div class="rp-menu__foot">
+      <a href="/contact/" class="btn btn--gold">Start a conversation</a>
+      <a href="tel:0434435966">0434 435 966</a>
     </div>
-  </nav>
+  </div>
+  <!-- /rp:header -->
 
   <!-- ====== MAIN ====== -->
-  <main id="main-content" class="article-page">
+  <main id="main" tabindex="-1">
 
     <!-- Hero -->
-    <section class="hero hero--page hero--article" aria-label="Article hero">
-      <div class="hero__bg" style="background-image: url('../../assets/service-extensions.jpg')"></div>
-      <div class="hero__overlay"></div>
-      <div class="hero__content">
-        <span class="hero__eyebrow">Cost Guides</span>
-        <h1 class="hero__title hero__title--article">Home Extension Costs in Canberra: What to <em>Expect</em> Per Square Metre (2026)</h1>
-        <div class="article-meta">
-          <span>By Jeff Rentoule</span>
-          <span class="article-meta__sep">·</span>
-          <span>2 April 2026</span>
-          <span class="article-meta__sep">·</span>
-          <span>10 min read</span>
-        </div>
+    <header class="ahero">
+      <div class="wrap">
+        <nav class="ahero__crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/blog/">Journal</a><span aria-hidden="true">/</span><span aria-current="page">Home Extension Costs in Canberra: What to Expect Per Square Metre (2026)</span></nav>
+        <span class="label">Cost Guides</span>
+        <h1>Home Extension Costs in Canberra: What to <em>Expect</em> Per Square Metre (2026)</h1>
+        <p class="ahero__meta"><span>Written by <strong>Jeff Rentoule</strong></span><span>2 April 2026</span><span>10 min read</span></p>
+        <figure class="ahero__img">
+          <img src="/assets/service-extensions.jpg" alt="" width="1600" height="686" fetchpriority="high">
+          <span class="imgnote">Illustrative image</span>
+        </figure>
       </div>
-    </section>
+    </header>
 
     <!-- Article body -->
-    <section class="section section--white article-section" aria-label="Article body">
+    <section class="article-section" aria-label="Article body">
       <div class="article-container">
         <article class="article-body">
 <p><strong>Home extensions with Rentoule Projects in Canberra start at $3,200 per sqm for a mid-range ground floor rear extension and go up to $7,500+ per sqm for luxury second storey additions with complex structural work and premium finishes.</strong> Typical projects range from $130,000 for a modest 40sqm ground floor extension up to $500,000+ for a full second storey transformation. Where your project sits depends on extension type, structural complexity, and finish level. This guide covers the Canberra home extension market, what Rentoule Projects delivers within it, and the ACT planning requirements you'll need to work through.</p>
@@ -282,7 +275,7 @@
 
   <h2>Extension Types and Costs: 2026 Canberra Pricing</h2>
 
-  <table>
+  <div class="table-scroll" role="region" aria-label="Table, scrolls sideways on small screens" tabindex="0"><table>
     <thead>
       <tr>
         <th>Extension Type</th>
@@ -323,7 +316,7 @@
         <td>$40,000–$80,000</td>
       </tr>
     </tbody>
-  </table>
+  </table></div>
 
   <p>Most of our extensions also include a new ensuite, kitchen or laundry, which adds to the per-square-metre build cost. Our recent extension projects have come in between $225,000 and $650,000 all in.</p>
 
@@ -344,7 +337,7 @@
 
 <aside class="price-guide-note" id="price-guide-note" role="note" aria-label="About these figures">
   <span class="price-guide-note__label">About these figures</span>
-  <p>The ranges on this page reflect what Rentoule Projects typically charges for delivered work in Canberra. Real numbers depend on extension type, structural complexity, finishes and site conditions, and most projects land somewhere inside these ranges with some flex either way. The figures here are a realistic starting point for the conversation, not the final word. <a href="/#contact">Get in touch for a detailed proposal on your project.</a></p>
+  <p>The ranges on this page reflect what Rentoule Projects typically charges for delivered work in Canberra. Real numbers depend on extension type, structural complexity, finishes and site conditions, and most projects land somewhere inside these ranges with some flex either way. The figures here are a realistic starting point for the conversation, not the final word. <a href="/contact/">Get in touch for a detailed proposal on your project.</a></p>
 </aside>
 
 <aside class="guide-callout" role="complementary" aria-label="Renovation guide promo">
@@ -408,7 +401,7 @@
 
   <p>For many Canberra families, the genuine financial comparison isn't "extension vs. renovation" - it's "extension vs. selling and buying a larger home." When you run the numbers honestly, extending nearly always comes out ahead in the short to medium term. For the full four-option framework (renovate, extend, rebuild, or move), see our <a href="/blog/renovate-extend-rebuild-or-move-canberra/">decision guide</a>.</p>
 
-  <table>
+  <div class="table-scroll" role="region" aria-label="Table, scrolls sideways on small screens" tabindex="0"><table>
     <thead>
       <tr>
         <th>Scenario</th>
@@ -441,7 +434,7 @@
         <td><strong>$276,000–$606,000+</strong></td>
       </tr>
     </tbody>
-  </table>
+  </table></div>
 
   <p>This comparison does not account for the disruption of changing schools, leaving established neighbourhoods, or the emotional cost of leaving a home you've invested in. For most families in established Canberra suburbs, extending makes compelling financial sense.</p>
 
@@ -449,7 +442,7 @@
 
   <h2>Extension Timeline: What to Expect</h2>
 
-  <table>
+  <div class="table-scroll" role="region" aria-label="Table, scrolls sideways on small screens" tabindex="0"><table>
     <thead>
       <tr>
         <th>Phase</th>
@@ -494,7 +487,7 @@
         <td>Building certifier sign-off required before occupation</td>
       </tr>
     </tbody>
-  </table>
+  </table></div>
 
   <h2>How to Plan a Home Extension in Canberra: Step-by-Step</h2>
 
@@ -572,7 +565,7 @@
     </section>
 
     <!-- Related Articles -->
-    <section class="section section--white related-articles" aria-label="Related articles">
+    <section class="endmatter" aria-label="Related articles">
       <div class="container">
         <span class="eyebrow">Keep Reading</span>
         <h2 class="section-heading">Related <em>articles</em></h2>
@@ -596,7 +589,7 @@
       </div>
     </section>
       <!-- Related Reading -->
-      <section class="section section--warm" aria-label="Related reading">
+      <section class="endmatter" aria-label="Related reading">
         <div class="container">
           <div class="reveal" style="text-align:center; max-width:720px; margin:0 auto var(--space-3xl);">
             <span class="eyebrow">Related Reading</span>
@@ -626,81 +619,59 @@
       </section>
 
 
-    <!-- CTA Band -->
-    <section class="cta-band" aria-label="Call to action">
-      <div class="container reveal">
-        <span class="eyebrow" style="color:var(--black);">Get Started</span>
-        <h2 class="section-heading">Have a project <em>in mind?</em></h2>
-        <p class="section-subtitle">Get in touch and let's discuss how we can bring your vision to life.</p>
-        <a href="/#contact" class="btn btn--dark">Get in touch</a>
+    <section class="cta" aria-labelledby="cta-h">
+      <img class="cta__mark" src="/assets/logo-monogram-clean.png" alt="" aria-hidden="true">
+      <div class="wrap">
+        <h2 class="display h-lg" id="cta-h">Planning something <span class="script">bigger</span>?</h2>
+        <p class="lead">Renovations, extensions and selective custom homes in Canberra. A short call is enough to know whether we&rsquo;re the right builder for your project.</p>
+        <div class="btn-row">
+          <a href="/contact/" class="btn btn--black">Start a conversation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="/how-we-work/" class="btn btn--line">How we work</a>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ====== FOOTER ====== -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer__grid">
-
-        <!-- About Column -->
-        <div>
-          <img src="../../assets/logo-nav-gold.png" alt="Rentoule Projects" class="footer__logo-img">
-          <p class="footer__tagline">Making your house your home</p>
-          <p class="footer__about-text">Canberra residential builder specialising in home renovations, extensions and custom new builds from mid-range through to luxury. Director - Jeff Rentoule.</p>
-          <div class="footer__social">
-            <a href="https://www.instagram.com/rentoule_projects/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-            <a href="https://www.facebook.com/p/Rentoule-Projects-100093837338330/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
+  <!-- rp:footer -->
+  <footer class="rp-footer">
+    <div class="wrap">
+      <div class="rp-footer__grid">
+        <div class="rp-footer__brand">
+          <img src="/assets/logo-stacked-gold.png" alt="Rentoule Projects" width="400" height="333" loading="lazy">
+          <p>Premium renovations, extensions and selective custom homes in Canberra. Director, Jeff Rentoule.</p>
+          <div class="rp-social">
+            <a href="https://www.instagram.com/rentoule_projects/" target="_blank" rel="noopener noreferrer" aria-label="Rentoule Projects on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://www.facebook.com/p/Rentoule-Projects-100093837338330/" target="_blank" rel="noopener noreferrer" aria-label="Rentoule Projects on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
           </div>
         </div>
-
-        <!-- Services Column -->
-        <div>
-          <h4 class="footer__heading">Services</h4>
-          <div class="footer__links">
-            <a href="/#services">New Builds</a>
-            <a href="/#services">Extensions</a>
-            <a href="/#services">Renovations</a>
-          </div>
-        </div>
-
-        <!-- Case Studies Column -->
-        <div>
-          <h4 class="footer__heading">Case Studies</h4>
-          <div class="footer__links">
-            <a href="/#case-studies">Chris - Weetangera</a>
-            <a href="/#case-studies">50 Year Home Renovation</a>
-            <a href="/#case-studies">Mark Page - Griffith</a>
-          </div>
-        </div>
-
-        <!-- Navigation Column -->
-        <div>
-          <h4 class="footer__heading">Navigation</h4>
-          <div class="footer__links">
-            <a href="/">Home</a>
-            <a href="/#about">About</a>
-            <a href="/#services">Services</a>
-            <a href="/#projects">Projects</a>
-            <a href="/#contact">Contact</a>
-            <a href="/#blog">Blog</a>
-            <a href="/#careers">Careers</a>
-          </div>
-        </div>
-
+        <div><h2>Services</h2><ul>
+          <li><a href="/services/#renovations">Renovations</a></li>
+          <li><a href="/services/#extensions">Extensions</a></li>
+          <li><a href="/services/#custom-homes">Custom homes</a></li>
+          <li><a href="/services/knockdown-rebuild-canberra/">Knockdown rebuild</a></li>
+          <li><a href="/services/mr-fluffy-block-rebuild/">Mr Fluffy block rebuild</a></li>
+          <li><a href="/services/dual-occupancy-canberra/">Dual occupancy</a></li>
+        </ul></div>
+        <div><h2>Explore</h2><ul>
+          <li><a href="/how-we-work/">How we work</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/canberra-renovation-guide/">Canberra Renovation Guide</a></li>
+          <li><a href="/blog/">Journal</a></li>
+          <li><a href="/blog/home-renovation-costs-canberra/">Renovation costs</a></li>
+        </ul></div>
+        <div><h2>Company</h2><ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/careers/">Careers</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="tel:0434435966">0434 435 966</a></li>
+          <li><a href="mailto:info@rentouleprojects.com">info@rentouleprojects.com</a></li>
+        </ul></div>
       </div>
-
-      <div class="footer__bottom">
-        <p>&copy; 2026 Rentoule Projects. All rights reserved.</p>
-        <p>Canberra, ACT, Australia</p>
-      </div>
+      <div class="rp-footer__base"><span>&copy; 2026 Rentoule Projects</span><span>Licensed builder: ACT 20211145 &middot; NSW 453726C</span><span>Canberra, ACT</span></div>
     </div>
   </footer>
-
-  <script src="../../app.js"></script>
+  <script src="/assets/js/rp.js" defer></script>
+  <!-- /rp:footer -->
 </body>
 </html>
