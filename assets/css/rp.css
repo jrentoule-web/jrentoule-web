@@ -104,7 +104,8 @@ input, select, textarea { font: inherit; color: inherit; }
 .js .rv { opacity: 0; transform: translateY(28px); transition: opacity 0.9s var(--ease), transform 0.9s var(--ease); }
 .js .rv.in { opacity: 1; transform: none; }
 
-.imgnote { position: absolute; z-index: 2; left: 12px; bottom: 12px; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream); background: rgba(14,14,12,0.6); padding: 0.3rem 0.6rem; border-radius: 999px; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+/* Quiet image note: present for honesty (e.g. 'Illustrative image'), never the focus */
+.imgnote { position: absolute; z-index: 2; left: 10px; bottom: 8px; font-size: 0.62rem; font-weight: 500; letter-spacing: 0.03em; line-height: 1.3; color: rgba(255,255,255,0.82); text-shadow: 0 0 3px rgba(0,0,0,0.75), 0 1px 2px rgba(0,0,0,0.6); pointer-events: none; }
 .imgnote--r { left: auto; right: 12px; }
 .caption { font-size: 0.72rem; letter-spacing: 0.1em; color: var(--muted); margin-top: 0.6rem; }
 
