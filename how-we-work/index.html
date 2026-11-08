@@ -3,625 +3,540 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Primary SEO Meta -->
   <title>How We Work | Rentoule Projects, Canberra Builder</title>
-  <meta name="description" content="How Rentoule Projects plans and builds major renovations, extensions and custom homes in Canberra. The full process from first call to handover, how the Preliminary Services Agreement works, our pre-construction client portal, and how the money works.">
+  <meta name="description" content="How Rentoule Projects plans, prices and builds major renovations, extensions and custom homes in Canberra. The process from first call to handover, the Preliminary Services Agreement, our pre-construction client portal and how the money works.">
   <meta name="author" content="Jeff Rentoule">
-  <!-- HIDDEN REVIEW PAGE: keep noindex until Jeff approves publication. Change to "index, follow" (and remove the robots.txt Disallow) only at launch. -->
+  <!-- HIDDEN REVIEW PAGE / DESIGN PROTOTYPE: keep noindex until approved. robots.txt also disallows /how-we-work/. -->
   <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://rentouleprojects.com/how-we-work/">
+  <meta name="theme-color" content="#1d2a1f">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:title" content="How We Work | Rentoule Projects">
-  <meta property="og:description" content="The hard thinking happens before we build. How we plan, price and build major renovations, extensions and custom homes in Canberra.">
+  <meta property="og:description" content="We do the hard thinking before we build. How we plan, price and build in Canberra.">
   <meta property="og:url" content="https://rentouleprojects.com/how-we-work/">
   <meta property="og:site_name" content="Rentoule Projects">
   <meta property="og:locale" content="en_AU">
   <meta property="og:image" content="https://rentouleprojects.com/assets/weetangera-stairs.jpg">
-
-  <!-- Geo Meta -->
   <meta name="geo.region" content="AU-ACT">
   <meta name="geo.placename" content="Canberra">
 
-  <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!--
+    DESIGN PROTOTYPE - future visual direction.
+    This page is fully self-contained: it does NOT load the shared base.css,
+    style.css or app.js, and its header/footer are page-local (rp- prefix),
+    so nothing here can change any other page on the site.
+  -->
   <style>
     @font-face {
       font-family: 'Amsterdam';
       src: url('../assets/Amsterdam-Four.woff2') format('woff2');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
+      font-weight: 400; font-style: normal; font-display: swap;
     }
-  </style>
 
-  <!-- Stylesheets (shared site styles first, page styles below) -->
-  <link rel="stylesheet" href="../base.css">
-  <link rel="stylesheet" href="../style.css">
-
-  <style>
-    /* =====================================================
-       HOW WE WORK - page styles (scoped with hw- prefix)
-       Direction: "the work before the work". Calm paper,
-       hairline rules, numbered sheets, one programme chart.
-       ===================================================== */
+    /* ============ TOKENS ============ */
     :root {
-      --hw-ink: #1a1a18;
-      --hw-soft: #55524b;          /* secondary text, 7:1 on paper */
-      --hw-line: rgba(26, 26, 24, 0.14);
-      --hw-line-strong: rgba(26, 26, 24, 0.28);
-      --hw-gold-ink: #7a5f3e;      /* gold for small text on light grounds (AA) */
-      --hw-gold-script: #94744c;   /* brand gold, deepened to 3.4:1 for large script on light grounds */
-      --hw-paper: #f5f3ef;
-      --hw-panel: #fbfaf7;
-      --hw-green-deep: #223024;
-      --hw-subnav-h: 52px;
-      --hw-offset: calc(var(--nav-height) + var(--hw-subnav-h) + 16px);
+      --cream: #f5f3ef;
+      --stone: #e8e3da;
+      --forest: #2c3d2e;
+      --forest-deep: #1d2a1f;
+      --black: #0e0e0c;
+      --ink: #1a1a18;
+      --gold: #b8966e;
+      --gold-light: #d4b48a;
+      --gold-deep: #7a5f3e;          /* gold for text on light grounds */
+      --muted: #55524b;
+      --line: rgba(26,26,24,0.14);
+      --line-light: rgba(245,243,239,0.16);
+
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Montserrat', system-ui, sans-serif;
+      --script: 'Amsterdam', 'Cormorant Garamond', serif;
+
+      --gutter: clamp(1.25rem, 4vw, 3.5rem);
+      --max: 1320px;
+      --header-h: 76px;
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    .hw { background: var(--hw-paper); color: var(--hw-ink); }
-    .hw p { font-weight: 400; }
-    .hw section[id], .hw [data-anchor] { scroll-margin-top: var(--hw-offset); }
-    .hw-wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--space-xl); }
-    .hw-narrow { max-width: 760px; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-variant-numeric: lining-nums; scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    body { font-family: var(--sans); font-size: 1rem; line-height: 1.65; color: var(--ink); background: var(--cream); overflow-x: hidden; }
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+    ul, ol { list-style: none; }
+    ::selection { background: var(--gold); color: var(--black); }
+    :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+    section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 
-    /* Sheet label: "01 / Principles" with a long hairline */
-    .hw-sheet {
-      display: flex; align-items: center; gap: var(--space-md);
-      font-family: var(--sans); font-size: 0.72rem; font-weight: 600;
-      letter-spacing: 0.22em; text-transform: uppercase; color: var(--hw-gold-ink);
-      margin-bottom: var(--space-xl);
-    }
-    .hw-sheet::after { content: ''; flex: 1; height: 1px; background: var(--hw-line); }
-    .hw-sheet__num { font-variant-numeric: tabular-nums; color: var(--hw-ink); }
-    .hw--dark .hw-sheet { color: var(--gold-light); }
-    .hw--dark .hw-sheet__num { color: var(--hw-paper); }
-    .hw--dark .hw-sheet::after { background: rgba(245, 243, 239, 0.18); }
+    .wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+    .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .skip { position: absolute; left: 16px; top: -60px; z-index: 300; background: var(--gold); color: var(--black); padding: 10px 16px; font-weight: 600; font-size: 0.85rem; }
+    .skip:focus { top: 12px; }
 
-    .hw-h2 {
-      font-family: var(--serif); font-weight: 300; color: var(--hw-ink);
-      font-size: clamp(2.1rem, 4.4vw, 3.4rem); line-height: 1.1; letter-spacing: -0.01em;
-      margin: 0 0 var(--space-lg); max-width: 22ch;
-    }
-    .hw-h2 em {
-      font-family: 'Amsterdam', var(--serif); font-style: normal; font-weight: 400;
-      color: var(--hw-gold-script); font-size: 1.25em; line-height: 0.8; letter-spacing: 0.01em; margin-left: 0.08em;
-    }
-    .hw-lede {
-      font-size: 1.08rem; line-height: 1.75; color: var(--hw-soft); max-width: 62ch;
-    }
-    .hw-section { padding: clamp(4rem, 9vw, 7.5rem) 0; position: relative; }
-    .hw-section + .hw-section:not(.hw--dark):not(.hw--warm) { border-top: 1px solid var(--hw-line); }
-    .hw--warm { background: var(--warm); }
+    /* Type system: three voices. Display (serif), label (sans caps), body (sans). */
+    .display { font-family: var(--serif); font-weight: 300; line-height: 0.98; letter-spacing: -0.025em; }
+    .label { font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; }
+    .h-xl { font-size: clamp(3rem, 7.4vw, 7rem); }
+    .h-lg { font-size: clamp(2.9rem, 6vw, 5.6rem); }
+    .h-md { font-size: clamp(2.2rem, 3.8vw, 3.4rem); line-height: 1.04; }
+    .script { font-family: var(--script); font-weight: 400; font-style: normal; letter-spacing: 0; line-height: 0.7; }
+    .lead { font-size: clamp(1.05rem, 1.4vw, 1.2rem); line-height: 1.7; }
 
-    /* Buttons on this page reuse .btn; add a quiet text link style */
-    .hw-link {
-      font-family: var(--sans); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em;
-      text-transform: uppercase; color: var(--hw-ink); padding: 14px 0;
-      border-bottom: 1px solid var(--hw-line-strong); display: inline-flex; gap: 0.5rem; align-items: center;
-      transition: border-color var(--duration-fast), color var(--duration-fast);
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.7rem; padding: 1.05rem 1.7rem;
+      font-family: var(--sans); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+      border-radius: 999px; transition: background 0.25s, color 0.25s, transform 0.25s var(--ease), border-color 0.25s;
+      white-space: nowrap;
     }
-    .hw-link:hover { border-color: var(--hw-ink); }
-    .hw a:focus-visible, .hw button:focus-visible, .hw summary:focus-visible, .hw [tabindex]:focus-visible {
-      outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px;
-    }
-    .hw p a:not(.btn):not(.hw-link) {
-      color: var(--green); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px;
-    }
+    .btn svg { width: 16px; height: 16px; transition: transform 0.25s var(--ease); }
+    .btn:hover svg { transform: translateX(4px); }
+    .btn--gold { background: var(--gold); color: var(--black); }
+    .btn--gold:hover { background: var(--gold-light); }
+    .btn--black { background: var(--black); color: var(--cream); }
+    .btn--black:hover { background: var(--forest); }
+    .btn--line { border: 1px solid currentColor; }
+    .btn--line:hover { background: rgba(245,243,239,0.08); }
 
-    /* ---------- HERO ---------- */
-    .hw-hero {
-      padding: calc(var(--nav-height) + clamp(3rem, 7vw, 6rem)) 0 clamp(3rem, 6vw, 5rem);
-      position: relative; overflow: hidden;
-      background-color: var(--hw-paper);
-      background-image:
-        linear-gradient(rgba(26,26,24,0.045) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(26,26,24,0.045) 1px, transparent 1px);
-      background-size: 48px 48px;
-      background-position: -1px -1px;
-    }
-    .hw-hero::before { /* soften the grid towards the image */
-      content: ''; position: absolute; inset: 0; pointer-events: none;
-      background: radial-gradient(ellipse 70% 80% at 25% 45%, rgba(245,243,239,0.0) 0%, rgba(245,243,239,0.85) 75%);
-    }
-    .hw-hero__grid {
-      position: relative; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-      gap: clamp(2rem, 5vw, 5rem); align-items: center;
-    }
-    .hw-hero__eyebrow {
-      font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.24em;
-      text-transform: uppercase; color: var(--hw-gold-ink); display: inline-flex; align-items: center; gap: 0.75rem;
-      margin-bottom: var(--space-xl);
-    }
-    .hw-hero__eyebrow::before { content: ''; width: 32px; height: 1px; background: var(--gold); }
-    .hw-hero h1 {
-      font-family: var(--serif); font-weight: 300; color: var(--hw-ink);
-      font-size: clamp(2.7rem, 6.4vw, 5.4rem); line-height: 1.02; letter-spacing: -0.02em;
-      margin: 0 0 var(--space-xl);
-    }
-    .hw-hero h1 em {
-      font-family: 'Amsterdam', var(--serif); font-style: normal; font-weight: 400; color: var(--hw-gold-script);
-      font-size: 1.1em; line-height: 0.8; letter-spacing: 0; padding-right: 0.08em;
-    }
-    .hw-hero__lede { font-size: clamp(1.02rem, 1.4vw, 1.15rem); line-height: 1.75; color: var(--hw-soft); max-width: 56ch; margin-bottom: var(--space-xl); }
-    .hw-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-lg) var(--space-xl); align-items: center; margin-bottom: var(--space-2xl); }
-    .hw-hero__byline {
-      display: flex; flex-wrap: wrap; gap: 0.35rem 1.25rem; font-size: 0.82rem; color: var(--hw-soft);
-      padding-top: var(--space-lg); border-top: 1px solid var(--hw-line); max-width: 56ch;
-    }
-    .hw-hero__byline strong { font-weight: 600; color: var(--hw-ink); }
-    .hw-hero__figure { position: relative; margin: 0; }
-    .hw-hero__figure img {
-      width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%;
-      box-shadow: 0 30px 60px -30px rgba(14,14,12,0.35);
-    }
-    .hw-hero__figure::before { /* offset drafting frame */
-      content: ''; position: absolute; inset: -14px 14px 14px -14px; border: 1px solid var(--hw-line-strong); pointer-events: none;
-    }
-    .hw-caption {
-      font-size: 0.74rem; letter-spacing: 0.08em; color: var(--hw-soft); margin-top: var(--space-sm);
-      display: flex; justify-content: space-between; gap: 1rem;
-    }
+    /* Reveal on scroll (only when JS is running; content is visible without it) */
+    .js .rv { opacity: 0; transform: translateY(28px); transition: opacity 0.9s var(--ease), transform 0.9s var(--ease); }
+    .js .rv.in { opacity: 1; transform: none; }
 
-    /* Title block strip under hero */
-    .hw-titleblock {
-      position: relative; margin-top: clamp(3rem, 6vw, 4.5rem);
-      display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
-      border-top: 1px solid var(--hw-ink); border-bottom: 1px solid var(--hw-line);
+    /* ============ HEADER (page-local prototype) ============ */
+    .rp-progress { position: fixed; top: 0; left: 0; height: 2px; width: 100%; background: var(--gold); transform-origin: 0 50%; transform: scaleX(0); z-index: 210; }
+    .rp-header {
+      position: fixed; inset: 0 0 auto 0; height: var(--header-h); z-index: 200;
+      display: flex; align-items: center; color: var(--cream);
+      transition: background 0.4s, color 0.4s, box-shadow 0.4s, height 0.4s;
     }
-    .hw-titleblock div { padding: var(--space-md) var(--space-lg) var(--space-md) 0; }
-    .hw-titleblock div + div { padding-left: var(--space-lg); border-left: 1px solid var(--hw-line); }
-    .hw-titleblock dt { font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--hw-gold-ink); font-weight: 600; margin-bottom: 0.3rem; }
-    .hw-titleblock dd { margin: 0; font-family: var(--serif); font-size: 1.15rem; line-height: 1.3; color: var(--hw-ink); font-weight: 500; }
-
-    /* ---------- STICKY SUB-NAV ---------- */
-    .hw-subnav {
-      position: sticky; top: var(--nav-height); z-index: 50;
-      background: rgba(245, 243, 239, 0.94); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--hw-line);
+    .rp-header__inner { width: 100%; max-width: 1480px; margin: 0 auto; padding: 0 var(--gutter); display: flex; align-items: center; gap: 2rem; }
+    .rp-logo { display: block; position: relative; width: 168px; height: 52px; flex-shrink: 0; }
+    .rp-logo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: left center; transition: opacity 0.4s; }
+    .rp-logo .on-light { opacity: 0; }
+    .rp-nav { display: flex; gap: 0.25rem; margin-left: auto; }
+    .rp-nav a { position: relative; padding: 0.6rem 0.9rem; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.02em; opacity: 0.86; transition: opacity 0.2s; }
+    .rp-nav a:hover, .rp-nav a[aria-current="page"] { opacity: 1; }
+    .rp-nav a[aria-current="page"]::after { content: ''; position: absolute; left: 0.9rem; right: 0.9rem; bottom: 0.25rem; height: 1px; background: var(--gold); }
+    .rp-header .btn { padding: 0.8rem 1.3rem; font-size: 0.7rem; }
+    .rp-header .btn--line { border-color: rgba(245,243,239,0.4); }
+    .rp-header.is-solid { background: rgba(245,243,239,0.94); color: var(--ink); box-shadow: 0 1px 0 var(--line); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+    .rp-header.is-solid .on-dark { opacity: 0; }
+    .rp-header.is-solid .on-light { opacity: 1; }
+    .rp-header.is-solid .btn--line { border-color: var(--ink); }
+    .rp-header.is-solid .btn--line:hover { background: var(--ink); color: var(--cream); }
+    .rp-burger { display: none; width: 46px; height: 46px; border-radius: 50%; border: 1px solid currentColor; align-items: center; justify-content: center; margin-left: auto; }
+    .rp-burger span { display: block; width: 18px; height: 1.5px; background: currentColor; position: relative; }
+    .rp-burger span::before, .rp-burger span::after { content: ''; position: absolute; left: 0; width: 100%; height: 1.5px; background: currentColor; }
+    .rp-burger span::before { top: -6px; } .rp-burger span::after { top: 6px; }
+    .rp-menu {
+      position: fixed; inset: 0; z-index: 250; background: var(--forest-deep); color: var(--cream);
+      display: flex; flex-direction: column; padding: calc(var(--header-h) + 2rem) var(--gutter) 2rem;
+      opacity: 0; visibility: hidden; transition: opacity 0.35s, visibility 0.35s;
     }
-    .hw-subnav__inner { display: flex; align-items: center; gap: var(--space-lg); height: var(--hw-subnav-h); }
-    .hw-subnav__label { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600; color: var(--hw-soft); white-space: nowrap; }
-    .hw-subnav__list {
-      display: flex; gap: 0.25rem; overflow-x: auto; scrollbar-width: none; margin: 0; padding: 0; height: 100%; align-items: stretch;
-    }
-    .hw-subnav__list::-webkit-scrollbar { display: none; }
-    .hw-subnav__list a {
-      display: flex; align-items: center; padding: 0 0.85rem; white-space: nowrap; font-size: 0.8rem; font-weight: 500;
-      color: var(--hw-soft); border-bottom: 2px solid transparent; transition: color var(--duration-fast), border-color var(--duration-fast);
-    }
-    .hw-subnav__list a:hover { color: var(--hw-ink); }
-    .hw-subnav__list a[aria-current="true"] { color: var(--hw-ink); border-bottom-color: var(--gold); }
-    .hw-subnav__cta { margin-left: auto; padding: 9px 18px; font-size: 0.7rem; }
+    .rp-menu.is-open { opacity: 1; visibility: visible; }
+    .rp-menu__close { position: absolute; top: 15px; right: var(--gutter); width: 46px; height: 46px; border-radius: 50%; border: 1px solid rgba(245,243,239,0.4); font-size: 1.4rem; line-height: 1; }
+    .rp-menu nav { display: flex; flex-direction: column; }
+    .rp-menu nav a { font-family: var(--serif); font-size: clamp(2.2rem, 9vw, 3.2rem); font-weight: 300; line-height: 1.25; border-bottom: 1px solid var(--line-light); padding: 0.35rem 0; }
+    .rp-menu nav a[aria-current="page"] { color: var(--gold-light); }
+    .rp-menu .btn { margin-top: auto; align-self: flex-start; }
 
-    /* ---------- INTRO NOTE ---------- */
-    .hw-note { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: var(--space-2xl); align-items: start; }
-    .hw-note__aside { font-size: 0.8rem; color: var(--hw-soft); line-height: 1.6; padding-top: 0.6rem; border-top: 1px solid var(--hw-ink); }
-    .hw-note__aside strong { display: block; color: var(--hw-ink); font-weight: 600; font-size: 0.85rem; }
-    .hw-note__body p { font-family: var(--serif); font-size: clamp(1.35rem, 2.2vw, 1.75rem); line-height: 1.5; color: var(--hw-ink); font-weight: 400; margin-bottom: var(--space-lg); }
-    .hw-note__body p:last-child { margin-bottom: 0; color: var(--hw-soft); font-size: clamp(1.1rem, 1.6vw, 1.3rem); }
+    /* ============ HERO ============ */
+    .hero { position: relative; min-height: 100svh; background: var(--forest-deep); color: var(--cream); display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); overflow: hidden; }
+    .hero__text { position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: center; padding: calc(var(--header-h) + 2.5rem) var(--gutter) 8rem; padding-left: max(var(--gutter), calc((100vw - var(--max)) / 2 + var(--gutter))); }
+    .hero .label { color: var(--gold-light); margin-bottom: 2rem; display: flex; align-items: center; gap: 1rem; }
+    .hero .label::before { content: ''; width: 40px; height: 1px; background: var(--gold); }
+    .hero h1 { margin-right: -12vw; }
+    .hero h1 .script { color: var(--gold-light); font-size: 1.12em; display: inline-block; transform: translateY(0.06em); padding-right: 0.06em; }
+    .hero .lead { color: rgba(245,243,239,0.82); max-width: 38ch; margin: 2.2rem 0 2.6rem; }
+    .hero__ctas { display: flex; flex-wrap: wrap; gap: 0.9rem; }
+    .hero__media { position: relative; }
+    .hero__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; transform: scale(1.06); transition: transform 2.4s var(--ease); }
+    .loaded .hero__media img { transform: scale(1); }
+    .hero__media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, var(--forest-deep) 0%, rgba(29,42,31,0.35) 26%, rgba(29,42,31,0) 55%); }
+    .hero__cap { position: absolute; right: var(--gutter); bottom: 6.4rem; z-index: 2; font-size: 0.68rem; letter-spacing: 0.1em; color: var(--cream); background: rgba(14,14,12,0.55); padding: 0.35rem 0.7rem; border-radius: 999px; backdrop-filter: blur(6px); }
+    .hero__path { position: absolute; left: 0; right: 0; bottom: 0; z-index: 3; border-top: 1px solid var(--line-light); }
+    .hero__path ol { display: grid; grid-template-columns: repeat(3, 1fr); max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+    .hero__path li { padding: 1.3rem 0; display: flex; align-items: baseline; gap: 0.9rem; font-size: 0.85rem; color: rgba(245,243,239,0.75); }
+    .hero__path b { font-family: var(--serif); font-size: 1.9rem; font-weight: 400; color: var(--cream); line-height: 1; }
+    .hero__path span { font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--gold-light); }
+    .hero__path li + li { padding-left: 1.5rem; border-left: 1px solid var(--line-light); }
 
-    /* ---------- PRINCIPLES ---------- */
-    .hw-principles__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-2xl); align-items: end; margin-bottom: var(--space-3xl); }
-    .hw-principles__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--hw-ink); }
-    .hw-principle { padding: var(--space-2xl) var(--space-2xl) var(--space-2xl) 0; border-bottom: 1px solid var(--hw-line); display: flex; flex-direction: column; }
-    .hw-principle:nth-child(even) { padding-left: var(--space-2xl); padding-right: 0; border-left: 1px solid var(--hw-line); }
-    .hw-principle .hw-principle__worry {
-      font-family: var(--serif); font-style: italic; font-size: clamp(1.3rem, 2vw, 1.55rem); line-height: 1.35;
-      color: var(--hw-soft); margin-bottom: var(--space-lg); padding-left: 1.1rem; border-left: 2px solid var(--gold);
-    }
-    .hw-principle .hw-principle__num { font-size: 0.7rem; letter-spacing: 0.2em; font-weight: 600; color: var(--hw-gold-ink); text-transform: uppercase; margin-bottom: 0.4rem; }
-    .hw-principle h3 { font-family: var(--serif); font-weight: 500; font-size: clamp(1.7rem, 2.6vw, 2.1rem); line-height: 1.15; margin-bottom: var(--space-md); color: var(--green); }
-    .hw-principle p { font-size: 0.98rem; line-height: 1.75; color: var(--hw-ink); margin-bottom: var(--space-lg); }
-    .hw-principle .hw-principle__practice {
-      margin-top: auto; font-size: 0.9rem; line-height: 1.65; color: var(--hw-soft);
-      background: var(--hw-panel); border: 1px solid var(--hw-line); padding: var(--space-md) var(--space-lg);
-    }
-    .hw-principle__practice b { display: block; font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--hw-gold-ink); font-weight: 600; margin-bottom: 0.25rem; }
-    .hw-principles__photo { margin: var(--space-3xl) 0 0; display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: var(--space-2xl); align-items: end; }
-    .hw-principles__photo img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: 50% 22%; }
-    .hw-principles__photo blockquote { font-family: var(--serif); font-size: clamp(1.4rem, 2.4vw, 1.9rem); line-height: 1.4; font-weight: 400; color: var(--hw-ink); margin: 0; padding-bottom: var(--space-md); }
-    .hw-principles__photo blockquote footer { font-family: var(--sans); font-size: 0.8rem; color: var(--hw-soft); margin-top: var(--space-md); letter-spacing: 0.04em; }
+    /* ============ STATEMENT + VALUES ============ */
+    .statement { padding: clamp(5rem, 11vw, 10rem) 0 clamp(4rem, 8vw, 7rem); }
+    .statement__quote { max-width: 22ch; }
+    .statement__quote em { font-style: italic; color: var(--forest); }
+    .statement__grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: clamp(2.5rem, 6vw, 6rem); align-items: end; }
+    .statement__by { margin-top: 2.2rem; padding-left: 1.2rem; border-left: 2px solid var(--gold); color: var(--muted); font-size: 0.9rem; max-width: 40ch; }
+    .statement__by strong { color: var(--ink); font-weight: 600; display: block; }
+    .statement__photo { position: relative; }
+    .statement__photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: 4px; }
+    .statement__photo figcaption { margin-top: 0.6rem; font-size: 0.72rem; letter-spacing: 0.1em; color: var(--muted); }
 
-    /* ---------- PROGRAMME CHART ---------- */
-    .hw-chart { --label-w: 230px; position: relative; margin-top: var(--space-3xl); }
-    .hw-chart__phases, .hw-chart__bands {
-      display: grid; grid-template-columns: var(--label-w) repeat(24, minmax(0, 1fr));
-    }
-    .hw-chart__phases { border-bottom: 1px solid var(--hw-ink); padding-bottom: var(--space-sm); margin-bottom: var(--space-sm); }
-    .hw-chart__phase { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: var(--hw-soft); padding: 0 0.6rem; line-height: 1.4; }
-    .hw-chart__phase small { display: block; letter-spacing: 0.04em; text-transform: none; font-weight: 400; font-size: 0.74rem; color: var(--hw-soft); margin-top: 0.15rem; }
-    .hw-chart__phase--a { grid-column: 2 / 6; }
-    .hw-chart__phase--b { grid-column: 6 / 18; color: var(--hw-gold-ink); }
-    .hw-chart__phase--c { grid-column: 18 / 26; }
-    .hw-chart__body { position: relative; }
-    .hw-chart__bands { position: absolute; inset: 0; pointer-events: none; }
-    .hw-chart__band { grid-row: 1; }
-    .hw-chart__band--a { grid-column: 2 / 6; border-right: 1px dashed var(--hw-line-strong); }
-    .hw-chart__band--b { grid-column: 6 / 18; background: rgba(184, 150, 110, 0.10); border-right: 1px dashed var(--hw-line-strong); }
-    .hw-chart__band--c { grid-column: 18 / 26; }
-    .hw-chart__rows { position: relative; list-style: none; margin: 0; padding: 0; }
-    .hw-row { display: grid; grid-template-columns: var(--label-w) repeat(24, minmax(0, 1fr)); align-items: center; min-height: 40px; border-bottom: 1px solid rgba(26,26,24,0.06); }
-    .hw-row__label { grid-column: 1; font-size: 0.86rem; color: var(--hw-ink); font-weight: 500; padding-right: var(--space-md); line-height: 1.3; }
-    .hw-row__label small { display: block; font-size: 0.72rem; color: var(--hw-soft); font-weight: 400; }
-    .hw-row--sub .hw-row__label { padding-left: 1rem; font-weight: 400; position: relative; }
-    .hw-row--sub .hw-row__label::before { content: ''; position: absolute; left: 0; top: 50%; width: 0.55rem; height: 1px; background: var(--hw-line-strong); }
-    .hw-row--group .hw-row__label { font-weight: 600; }
-    .hw-bar {
-      grid-column: var(--s) / var(--e); height: 12px; background: var(--green); border-radius: 1px;
-      transform-origin: left center; transition: transform 0.9s var(--ease), opacity 0.6s ease;
-      transition-delay: calc(var(--i, 0) * 70ms);
-    }
-    .hw-bar--psa { height: 4px; background: var(--gold); }
-    .hw-bar--work { background: #556450; }
-    .hw-bar--optional { background: repeating-linear-gradient(90deg, var(--green) 0 8px, transparent 8px 13px); box-shadow: inset 0 0 0 1px var(--green); background-clip: padding-box; height: 10px; }
-    .hw-bar--build { background: var(--hw-ink); }
-    .hw-bar--after { background: linear-gradient(90deg, var(--hw-ink), rgba(26,26,24,0)); }
-    .hw-milestone { grid-column: var(--s) / var(--e); display: flex; align-items: center; gap: 0.5rem; margin-left: -7px; }
-    .hw-milestone::before { content: ''; width: 13px; height: 13px; background: var(--gold); transform: rotate(45deg); flex-shrink: 0; }
-    .hw-chart.is-armed .hw-bar { transform: scaleX(0); opacity: 0; }
-    .hw-chart.is-armed.is-drawn .hw-bar { transform: scaleX(1); opacity: 1; }
-    .hw-chart__legend { display: flex; flex-wrap: wrap; gap: var(--space-sm) var(--space-xl); margin-top: var(--space-lg); font-size: 0.78rem; color: var(--hw-soft); align-items: center; }
-    .hw-chart__legend span { display: inline-flex; align-items: center; gap: 0.5rem; }
-    .hw-key { width: 26px; height: 8px; display: inline-block; background: var(--green); }
-    .hw-key--optional { background: repeating-linear-gradient(90deg, var(--green) 0 6px, transparent 6px 10px); box-shadow: inset 0 0 0 1px var(--green); }
-    .hw-key--ms { width: 10px; height: 10px; background: var(--gold); transform: rotate(45deg); }
-    .hw-chart__note { margin-left: auto; font-style: italic; }
-    .hw-chart__callout {
-      margin-top: var(--space-2xl); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-xl);
-    }
-    .hw-chart__callout div { border-top: 1px solid var(--hw-ink); padding-top: var(--space-md); }
-    .hw-chart__callout h3 { font-family: var(--serif); font-size: 1.35rem; font-weight: 500; margin-bottom: var(--space-sm); color: var(--hw-ink); }
-    .hw-chart__callout p { font-size: 0.92rem; line-height: 1.7; color: var(--hw-soft); }
+    .values { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; margin-top: clamp(3.5rem, 7vw, 6rem); }
+    .value { position: relative; padding: 2.2rem 1.8rem 2.4rem; min-height: 360px; display: flex; flex-direction: column; overflow: hidden; }
+    .value:nth-child(1) { background: var(--forest); color: var(--cream); }
+    .value:nth-child(2) { background: var(--stone); }
+    .value:nth-child(3) { background: var(--black); color: var(--cream); }
+    .value:nth-child(4) { background: var(--gold); color: var(--black); }
+    .value__n { font-family: var(--serif); font-size: 5rem; line-height: 0.8; font-weight: 300; opacity: 0.62; }
+    .value h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(1.8rem, 2.4vw, 2.3rem); line-height: 1.05; margin-top: auto; margin-bottom: 0.9rem; }
+    .value p { font-size: 0.92rem; line-height: 1.6; opacity: 0.86; max-width: 30ch; }
 
-    /* ---------- STAGES ---------- */
-    .hw-part { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: var(--space-3xl); padding: var(--space-3xl) 0; border-top: 1px solid var(--hw-ink); }
-    .hw-part:first-of-type { margin-top: var(--space-2xl); }
-    .hw-part__head { position: sticky; top: calc(var(--hw-offset) + 8px); align-self: start; }
-    .hw-part__num { font-family: var(--serif); font-size: 4.5rem; line-height: 1; color: var(--hw-gold-script); font-weight: 300; margin-bottom: var(--space-sm); }
-    .hw-part__title { font-family: var(--serif); font-size: clamp(1.8rem, 2.6vw, 2.3rem); font-weight: 400; line-height: 1.15; margin-bottom: var(--space-md); }
-    .hw-part__tag { display: inline-block; font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; padding: 0.45rem 0.7rem; border: 1px solid var(--hw-line-strong); color: var(--hw-ink); line-height: 1.5; }
-    .hw-part__tag--gold { border-color: var(--gold); background: rgba(184,150,110,0.12); color: #62492b; }
-    .hw-part__intro { font-size: 0.95rem; color: var(--hw-soft); line-height: 1.7; margin-top: var(--space-lg); }
+    /* ============ PROCESS (interactive) ============ */
+    .process { background: var(--black); color: var(--cream); padding: clamp(5rem, 10vw, 9rem) 0; position: relative; overflow: hidden; }
+    .sec-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.7fr); gap: 2rem 4rem; align-items: end; margin-bottom: clamp(3rem, 6vw, 5rem); }
+    .sec-head .label { color: var(--gold-light); margin-bottom: 1.4rem; display: block; }
+    .sec-head .lead { color: rgba(245,243,239,0.72); max-width: 42ch; }
+    .on-light .sec-head .label { color: var(--gold-deep); }
+    .on-light .sec-head .lead { color: var(--muted); }
+    .display .it { font-style: italic; }
+    .process .display .it { color: var(--gold-light); }
 
-    .hw-steps { list-style: none; margin: 0; padding: 0; }
-    .hw-step { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: var(--space-lg); padding: var(--space-xl) 0; border-bottom: 1px solid var(--hw-line); }
-    .hw-step:first-child { padding-top: 0; }
-    .hw-step:last-child { border-bottom: 0; padding-bottom: 0; }
-    .hw-step__n { font-family: var(--serif); font-size: 1.6rem; color: var(--hw-gold-ink); font-variant-numeric: lining-nums tabular-nums; line-height: 1.2; }
-    .hw-step h3 { font-family: var(--serif); font-size: clamp(1.5rem, 2.2vw, 1.85rem); font-weight: 500; line-height: 1.2; margin-bottom: 0.4rem; color: var(--hw-ink); }
-    .hw-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: var(--space-md); padding: 0; list-style: none; }
-    .hw-meta li { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.06em; color: var(--hw-ink); background: rgba(26,26,24,0.05); padding: 0.25rem 0.6rem; border-radius: 2px; }
-    .hw-step p { font-size: 0.98rem; line-height: 1.75; color: var(--hw-ink); margin-bottom: var(--space-md); max-width: 68ch; }
-    .hw-step p:last-child { margin-bottom: 0; }
-    .hw-get { font-size: 0.92rem !important; color: var(--hw-soft) !important; padding-left: var(--space-md); border-left: 2px solid var(--gold); }
-    .hw-get b { color: var(--hw-ink); font-weight: 600; }
+    .phases { display: grid; grid-template-columns: 3fr 5fr 2fr; gap: 6px; margin-bottom: 2.4rem; }
+    .phase { border-top: 2px solid rgba(245,243,239,0.2); padding-top: 0.9rem; transition: border-color 0.3s; }
+    .phase.is-on { border-color: var(--gold); }
+    .phase strong { display: block; font-family: var(--serif); font-size: 1.45rem; font-weight: 400; line-height: 1.1; }
+    .phase small { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: rgba(245,243,239,0.55); }
+    .phase.is-on small { color: var(--gold-light); }
 
-    .hw-sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
-    .hw-body { font-size: 0.98rem; line-height: 1.75; color: var(--hw-ink); margin-bottom: var(--space-xl); max-width: 68ch; }
-    .hw-psa__lead { font-family: var(--serif); font-size: clamp(1.3rem, 2vw, 1.55rem); line-height: 1.5; color: var(--hw-ink); margin-bottom: var(--space-xl); max-width: 40ch; }
-    .hw-streams { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--hw-line); border: 1px solid var(--hw-line); margin-bottom: var(--space-xl); }
-    .hw-stream { background: var(--hw-panel); padding: var(--space-lg) var(--space-xl); }
-    .hw-stream h3 { font-family: var(--serif); font-size: 1.35rem; font-weight: 500; margin-bottom: 0.35rem; color: var(--green); display: flex; align-items: baseline; gap: 0.6rem; }
-    .hw-stream h3 span { font-family: var(--sans); font-size: 0.7rem; color: var(--hw-gold-ink); letter-spacing: 0.1em; font-weight: 600; }
-    .hw-stream p { font-size: 0.92rem; line-height: 1.7; color: var(--hw-ink); }
-    .hw-stream--portal { background: var(--green); color: var(--hw-paper); display: flex; flex-direction: column; justify-content: space-between; gap: var(--space-md); }
-    .hw-stream--portal h3 { color: var(--hw-paper); }
-    .hw-stream--portal h3 span { color: var(--gold-light); }
-    .hw-stream--portal p { color: rgba(245,243,239,0.86); }
-    .hw-stream--portal a { color: var(--gold-light); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
-    .hw-stream--portal a:hover { color: var(--hw-paper); }
+    .rail { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 6px; position: relative; }
+    .stop { text-align: left; padding: 1rem 0.8rem 1.1rem; background: rgba(245,243,239,0.05); border-radius: 4px; min-height: 104px; display: flex; flex-direction: column; justify-content: space-between; transition: background 0.25s, color 0.25s; color: rgba(245,243,239,0.72); }
+    .stop:hover { background: rgba(245,243,239,0.1); color: var(--cream); }
+    .stop[aria-selected="true"] { background: var(--cream); color: var(--ink); }
+    .stop__n { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; color: var(--gold-light); }
+    .stop[aria-selected="true"] .stop__n { color: var(--gold-deep); }
+    .stop__t { font-size: 0.82rem; font-weight: 600; line-height: 1.25; }
+    .stop--psa { box-shadow: inset 0 -3px 0 var(--gold); }
 
-    .hw-define { background: var(--hw-panel); border: 1px solid var(--hw-line); padding: var(--space-lg) var(--space-xl); margin-bottom: var(--space-xl); }
-    .hw-define dt { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--hw-gold-ink); font-weight: 600; margin-bottom: 0.4rem; }
-    .hw-define dd { margin: 0; font-size: 0.93rem; line-height: 1.7; color: var(--hw-ink); }
-    .hw-paths { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-lg); margin: var(--space-md) 0 var(--space-xl); }
-    .hw-paths div { border-top: 2px solid var(--green); padding-top: var(--space-md); }
-    .hw-paths h4 { font-family: var(--serif); font-size: 1.2rem; font-weight: 500; margin-bottom: 0.35rem; }
-    .hw-paths p { font-size: 0.88rem; line-height: 1.65; color: var(--hw-soft); }
-    .hw-subhead { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--hw-ink); font-weight: 600; margin: var(--space-lg) 0 var(--space-sm); }
-    .hw-part__photo { margin: var(--space-xl) 0 0; }
-    .hw-part__photo img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+    .detail { margin-top: 6px; background: var(--cream); color: var(--ink); border-radius: 4px; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); min-height: 380px; overflow: hidden; }
+    .detail__panel { display: contents; }
+    .detail__panel[hidden] { display: none; }
+    .detail__big { padding: clamp(2rem, 4vw, 3.5rem); display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid var(--line); position: relative; }
+    .detail__num { font-family: var(--serif); font-size: clamp(6rem, 12vw, 11rem); font-weight: 300; line-height: 0.8; color: #94744c; letter-spacing: -0.04em; }
+    .detail__big h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(2rem, 3.4vw, 3rem); line-height: 1.02; margin-top: 1.5rem; }
+    .detail__phase { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: var(--gold-deep); }
+    .detail__body { padding: clamp(2rem, 4vw, 3.5rem); display: flex; flex-direction: column; gap: 1.6rem; }
+    .detail__body > p { font-size: 1.08rem; line-height: 1.7; max-width: 46ch; }
+    .facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); margin-top: auto; }
+    .facts div { padding: 1rem 1rem 0 0; }
+    .facts div + div { padding-left: 1rem; border-left: 1px solid var(--line); }
+    .facts dt { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: var(--gold-deep); margin-bottom: 0.3rem; }
+    .facts dd { font-size: 0.9rem; font-weight: 500; line-height: 1.45; }
+    .detail__nav { display: flex; gap: 0.5rem; margin-top: 1.6rem; }
+    .detail__nav button { width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line); display: grid; place-items: center; transition: background 0.2s, border-color 0.2s; }
+    .detail__nav button:hover { background: var(--ink); color: var(--cream); border-color: var(--ink); }
+    .detail__nav button[disabled] { opacity: 0.3; pointer-events: none; }
+    .detail__nav svg { width: 18px; height: 18px; }
 
-    /* ---------- PORTAL (dark showcase) ---------- */
-    .hw--dark { background: var(--hw-green-deep); color: var(--hw-paper); position: relative; overflow: hidden; }
-    .hw--dark::before { /* faint drafting grid */
-      content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0.5;
-      background-image:
-        linear-gradient(rgba(245,243,239,0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(245,243,239,0.05) 1px, transparent 1px);
-      background-size: 48px 48px;
-      -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 60%); mask-image: linear-gradient(180deg, #000 0%, transparent 60%);
-    }
-    .hw--dark > * { position: relative; }
-    .hw--dark .hw-h2 { color: var(--hw-paper); max-width: 16ch; }
-    .hw--dark .hw-h2 em { color: var(--gold-light); }
-    .hw--dark .hw-lede { color: rgba(245,243,239,0.8); }
-    .hw-portal__head { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: var(--space-3xl); align-items: end; margin-bottom: var(--space-3xl); }
-    .hw-portal__included { border-left: 2px solid var(--gold); padding: var(--space-sm) 0 var(--space-sm) var(--space-lg); }
-    .hw-portal__included strong { display: block; font-family: var(--serif); font-size: 1.45rem; font-weight: 400; line-height: 1.3; margin-bottom: 0.4rem; color: var(--hw-paper); }
-    .hw-portal__included p { font-size: 0.92rem; line-height: 1.7; color: rgba(245,243,239,0.75); }
+    /* ============ PSA ============ */
+    .psa { background: var(--forest); color: var(--cream); padding: clamp(5rem, 10vw, 9rem) 0; position: relative; overflow: hidden; }
+    .psa .display .it { color: var(--gold-light); }
+    .lanes { position: relative; margin-top: 1rem; }
+    .lanes__grid { display: grid; grid-template-columns: 200px minmax(0, 1fr) 160px; align-items: center; row-gap: 14px; }
+    .lane__name { font-size: 0.9rem; font-weight: 500; padding-right: 1rem; }
+    .lane__name small { display: block; font-size: 0.7rem; color: rgba(245,243,239,0.6); font-weight: 500; letter-spacing: 0.04em; }
+    .lane__track { position: relative; height: 34px; }
+    .lane__bar { position: absolute; top: 9px; height: 16px; border-radius: 999px; background: var(--cream); left: var(--l); right: var(--r); transform-origin: left center; transition: transform 1.2s var(--ease), opacity 0.6s; transition-delay: calc(var(--i) * 120ms); }
+    .lane__bar--opt { background: transparent; border: 1.5px dashed var(--gold-light); }
+    .js .lanes:not(.go) .lane__bar { transform: scaleX(0); opacity: 0; }
+    .lanes__end { grid-column: 3; grid-row: 1 / span 5; align-self: stretch; display: flex; align-items: center; justify-content: center; position: relative; }
+    .lanes__end::before { content: ''; position: absolute; left: 0; top: 17px; bottom: 17px; width: 1px; background: var(--gold); }
+    .lock { position: relative; text-align: center; padding-left: 1.4rem; }
+    .lock__d { width: 54px; height: 54px; margin: 0 auto 0.8rem; background: var(--gold); transform: rotate(45deg); display: grid; place-items: center; }
+    .lock__d svg { transform: rotate(-45deg); width: 22px; height: 22px; color: var(--black); }
+    .lock strong { display: block; font-family: var(--serif); font-size: 1.5rem; font-weight: 400; line-height: 1.1; }
+    .lock small { font-size: 0.72rem; color: rgba(245,243,239,0.7); }
+    .lanes__axis { display: grid; grid-template-columns: 200px minmax(0, 1fr) 160px; margin-top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,243,239,0.72); font-weight: 600; }
+    .lanes__axis > span:nth-child(2) { display: flex; justify-content: space-between; border-top: 1px solid var(--line-light); padding-top: 0.6rem; }
 
-    .hw-showcase { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: var(--space-2xl); align-items: start; }
-    .hw-tabs { display: flex; flex-direction: column; border-top: 1px solid rgba(245,243,239,0.18); }
-    .hw-tab {
-      text-align: left; padding: var(--space-md) 0 var(--space-md) var(--space-md); border-bottom: 1px solid rgba(245,243,239,0.18);
-      color: rgba(245,243,239,0.62); display: grid; grid-template-columns: 2.1rem 1fr; align-items: baseline; position: relative;
-      transition: color var(--duration-fast), background var(--duration-fast);
-    }
-    .hw-tab::before { content: ''; position: absolute; left: 0; top: -1px; bottom: -1px; width: 2px; background: transparent; transition: background var(--duration-fast); }
-    .hw-tab:hover { color: var(--hw-paper); background: rgba(245,243,239,0.04); }
-    .hw-tab[aria-selected="true"] { color: var(--hw-paper); background: rgba(245,243,239,0.06); }
-    .hw-tab[aria-selected="true"]::before { background: var(--gold-light); }
-    .hw-tab__n { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; color: var(--gold-light); }
-    .hw-tab__t { font-family: var(--serif); font-size: 1.35rem; line-height: 1.2; font-weight: 400; }
+    .psa-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line-light); margin-top: clamp(3.5rem, 7vw, 5.5rem); border: 1px solid var(--line-light); }
+    .psa-facts div { background: var(--forest); padding: 2rem 1.8rem; }
+    .psa-facts b { display: block; font-family: var(--serif); font-weight: 400; font-size: clamp(1.6rem, 2.4vw, 2.1rem); line-height: 1.1; margin-bottom: 0.6rem; color: var(--cream); }
+    .psa-facts b em { font-style: italic; color: var(--gold-light); }
+    .psa-facts p { font-size: 0.92rem; line-height: 1.6; color: rgba(245,243,239,0.75); }
 
-    .hw-panel__copy { margin-bottom: var(--space-lg); max-width: 60ch; }
-    .hw-panel__copy h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(1.6rem, 2.4vw, 2rem); color: var(--hw-paper); margin-bottom: 0.4rem; line-height: 1.2; }
-    .hw-panel__copy p { font-size: 0.98rem; line-height: 1.7; color: rgba(245,243,239,0.8); }
+    /* ============ PORTAL ============ */
+    .portal { padding: clamp(5rem, 10vw, 9rem) 0 clamp(4rem, 8vw, 7rem); background: var(--cream); position: relative; overflow: hidden; }
+    .portal::before { content: ''; position: absolute; left: 0; right: 0; top: 46%; bottom: 0; background: var(--stone); }
+    .portal > .wrap { position: relative; }
+    .portal .display .it { color: var(--forest); }
+    .portal__tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-bottom: 1.4rem; }
+    .ptab { padding: 0.75rem 1.25rem; border-radius: 999px; border: 1px solid var(--line); font-size: 0.82rem; font-weight: 600; color: var(--muted); background: rgba(255,255,255,0.4); transition: all 0.2s; }
+    .ptab:hover { color: var(--ink); border-color: var(--ink); }
+    .ptab[aria-selected="true"] { background: var(--forest); border-color: var(--forest); color: var(--cream); }
+    .portal__caption { text-align: center; max-width: 52ch; margin: 0 auto 2.4rem; min-height: 3.4em; color: var(--muted); font-size: 1rem; }
+    .portal__caption b { color: var(--ink); font-weight: 600; }
 
-    /* Illustrative device frame (placeholder for a real screenshot) */
-    .hw-device { margin: 0; }
-    .hw-device__frame {
-      background: #f5f3ef; color: #1a1a18; border-radius: 10px; overflow: hidden;
-      box-shadow: 0 40px 80px -30px rgba(0,0,0,0.55), 0 0 0 1px rgba(245,243,239,0.12);
-      font-family: var(--sans);
-    }
-    .hw-device__chrome { display: flex; align-items: center; gap: 6px; background: #e6e1d7; padding: 9px 12px; }
-    .hw-device__chrome i { width: 9px; height: 9px; border-radius: 50%; background: #c9c2b5; display: block; }
-    .hw-device__url { margin-left: 10px; flex: 1; background: #f5f3ef; border-radius: 4px; font-size: 0.66rem; color: #6b6760; padding: 3px 10px; max-width: 280px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .hw-device__bar { background: #0e0e0c; display: flex; justify-content: space-between; align-items: center; padding: 10px 18px; }
-    .hw-device__brand { font-family: 'Amsterdam', var(--serif); color: #d4b48a; font-size: 1.15rem; line-height: 1; }
-    .hw-device__bar small { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: #cfc9be; }
-    .hw-device__screen { padding: 20px 22px 24px; min-height: 400px; position: relative; }
-    .hw-badge {
-      position: absolute; top: 12px; right: 12px; z-index: 2;
-      font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
-      background: #fff6d6; color: #5c4400; border: 1px dashed #a07c1c; padding: 4px 8px; border-radius: 3px;
-    }
-    .hw-device figcaption { font-size: 0.76rem; color: rgba(245,243,239,0.62); margin-top: var(--space-md); line-height: 1.6; }
-
-    /* Mock UI vocabulary (fictional demo data only) */
+    .stage { position: relative; max-width: 1080px; margin: 0 auto; }
+    .browser { background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 50px 100px -40px rgba(14,14,12,0.45), 0 0 0 1px rgba(14,14,12,0.06); }
+    .browser__chrome { display: flex; align-items: center; gap: 7px; background: #ece8e0; padding: 11px 14px; }
+    .browser__chrome i { width: 10px; height: 10px; border-radius: 50%; background: #cfc8bb; }
+    .browser__url { margin-left: 12px; background: #fff; border-radius: 6px; padding: 4px 12px; font-size: 0.68rem; color: #6b6760; flex: 0 1 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .app { display: grid; grid-template-columns: 210px minmax(0, 1fr); min-height: 520px; font-size: 0.8rem; color: #1a1a18; }
+    .app__side { background: var(--black); color: #cfc9be; padding: 18px 14px; display: flex; flex-direction: column; gap: 4px; }
+    .app__brand { width: 120px; margin: 2px 6px 18px; }
+    .app__side span { padding: 8px 10px; border-radius: 6px; font-size: 0.74rem; }
+    .app__side span.on { background: rgba(212,180,138,0.16); color: #f5f3ef; }
+    .app__side .grow { flex: 1; }
+    .app__side .who { font-size: 0.66rem; color: #8f897e; padding: 0 10px; }
+    .app__main { background: #f7f5f1; padding: 22px 26px; position: relative; }
+    .app__view[hidden] { display: none; }
+    .badge { position: absolute; top: 14px; right: 14px; z-index: 3; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; background: #fff6d6; color: #5c4400; border: 1px dashed #a07c1c; padding: 4px 9px; border-radius: 4px; }
     .m-eyebrow { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #7a5f3e; }
-    .m-title { font-family: var(--serif); font-weight: 600; font-size: 1.65rem; line-height: 1.1; margin: 2px 0 2px; color: #1a1a18; }
+    .m-title { font-family: var(--serif); font-weight: 600; font-size: 1.7rem; line-height: 1.1; margin: 2px 0; }
     .m-sub { font-size: 0.72rem; color: #5f5c55; }
-    .m-head { margin-bottom: 14px; padding-right: 150px; }
-    .m-card { background: #fff; border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; }
-    .m-summary { font-size: 0.86rem; font-weight: 600; line-height: 1.45; margin-bottom: 10px; color: #1a1a18; }
-    .m-group { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #5f5c55; margin: 14px 2px 6px; }
-    .m-list { background: #fff; border-radius: 10px; overflow: hidden; }
-    .m-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; align-items: center; padding: 9px 14px; border-top: 1px solid #ebe6dd; font-size: 0.78rem; }
-    .m-row:first-child { border-top: 0; }
-    .m-row b { font-weight: 500; color: #1a1a18; }
-    .m-row small { grid-column: 1; font-size: 0.68rem; color: #5f5c55; }
-    .m-row--attn { background: #fbf1ea; }
-    .m-due { color: #874722; font-weight: 600; }
-    .m-pill { font-size: 0.62rem; font-weight: 600; padding: 3px 8px; border-radius: 999px; white-space: nowrap; grid-row: span 2; }
-    .m-pill--ok { background: #e7ece1; color: #3d4a35; }
-    .m-pill--wait { background: #fbf1ea; color: #874722; }
-    .m-pill--rev { background: #f3ecdf; color: #6b5330; }
-    .m-pill--grey { background: #efece6; color: #55524b; }
-    .m-prog { display: grid; grid-template-columns: minmax(0, 1fr) 120px; gap: 4px 14px; align-items: center; padding: 10px 14px; border-top: 1px solid #ebe6dd; }
-    .m-prog:first-child { border-top: 0; }
-    .m-prog b { font-size: 0.8rem; font-weight: 500; }
-    .m-prog small { font-size: 0.68rem; color: #5f5c55; grid-column: 1; }
-    .m-track { height: 6px; background: #e2e7dc; border-radius: 3px; overflow: hidden; grid-row: span 2; }
-    .m-track i { display: block; height: 100%; background: #5a6950; border-radius: 3px; }
+    .m-head { margin-bottom: 16px; padding-right: 170px; }
+    .m-card { background: #fff; border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; box-shadow: 0 1px 0 #ebe6dd; }
+    .m-summary { font-size: 0.86rem; font-weight: 600; margin-bottom: 10px; }
     .m-seg { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; }
     .m-seg i { height: 7px; background: #e2e7dc; border-radius: 3px; overflow: hidden; display: block; }
     .m-seg i b { display: block; height: 100%; background: #5a6950; }
+    .m-group { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #5f5c55; margin: 14px 2px 6px; }
+    .m-list { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 0 #ebe6dd; }
+    .m-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; align-items: center; padding: 10px 14px; border-top: 1px solid #ebe6dd; }
+    .m-row:first-child { border-top: 0; }
+    .m-row b { font-weight: 500; }
+    .m-row small { grid-column: 1; font-size: 0.68rem; color: #5f5c55; }
+    .m-row--attn { background: #fbf1ea; }
+    .m-due { color: #874722; font-weight: 600; }
+    .m-pill { font-size: 0.62rem; font-weight: 600; padding: 3px 9px; border-radius: 999px; white-space: nowrap; grid-row: span 2; grid-column: 2; }
+    .m-pill--ok { background: #e7ece1; color: #3d4a35; }
+    .m-pill--wait { background: #fbe9dc; color: #874722; }
+    .m-pill--rev { background: #f3ecdf; color: #6b5330; }
+    .m-pill--grey { background: #efece6; color: #55524b; }
+    .m-prog { display: grid; grid-template-columns: minmax(0, 1fr) 140px; gap: 4px 14px; align-items: center; padding: 11px 14px; border-top: 1px solid #ebe6dd; }
+    .m-prog:first-child { border-top: 0; }
+    .m-prog b { font-weight: 500; }
+    .m-prog small { font-size: 0.68rem; color: #5f5c55; grid-column: 1; }
+    .m-track { height: 6px; background: #e2e7dc; border-radius: 3px; overflow: hidden; grid-row: span 2; grid-column: 2; }
+    .m-track i { display: block; height: 100%; background: #5a6950; }
     .m-chips { display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap; }
-    .m-chip { font-size: 0.68rem; padding: 4px 10px; border-radius: 999px; background: #fff; border: 1px solid #ebe6dd; color: #55524b; }
+    .m-chip { font-size: 0.68rem; padding: 4px 11px; border-radius: 999px; background: #fff; border: 1px solid #ebe6dd; color: #55524b; }
     .m-chip--on { background: #1a1a18; color: #f5f3ef; border-color: #1a1a18; }
     .m-sel { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 2px 12px; align-items: center; padding: 10px 14px; border-top: 1px solid #ebe6dd; }
     .m-sel:first-child { border-top: 0; }
-    .m-swatch { width: 44px; height: 44px; border-radius: 6px; grid-row: span 2; border: 1px solid rgba(0,0,0,0.06); }
-    .m-sel b { font-size: 0.8rem; font-weight: 500; }
+    .m-sw { width: 44px; height: 44px; border-radius: 7px; grid-row: span 2; border: 1px solid rgba(0,0,0,0.06); }
+    .m-sel b { font-weight: 500; }
     .m-sel small { font-size: 0.68rem; color: #5f5c55; grid-column: 2; }
     .m-sel .m-pill { grid-column: 3; grid-row: 1 / span 2; }
-    .m-spec { width: 100%; border-collapse: collapse; font-size: 0.72rem; background: #fff; border-radius: 10px; overflow: hidden; }
-    .m-spec th { text-align: left; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: #5f5c55; font-weight: 600; padding: 8px 12px; background: #faf8f4; border-bottom: 1px solid #ebe6dd; }
-    .m-spec td { padding: 8px 12px; border-bottom: 1px solid #ebe6dd; vertical-align: top; color: #1a1a18; }
+    .m-spec { width: 100%; border-collapse: collapse; font-size: 0.74rem; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 0 #ebe6dd; }
+    .m-spec th { text-align: left; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: #5f5c55; font-weight: 600; padding: 9px 12px; background: #faf8f4; border-bottom: 1px solid #ebe6dd; }
+    .m-spec td { padding: 9px 12px; border-bottom: 1px solid #ebe6dd; }
     .m-spec tr:last-child td { border-bottom: 0; }
-    .m-foot { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 0.68rem; color: #5f5c55; margin-top: 10px; }
+    .m-foot { display: flex; justify-content: space-between; font-size: 0.68rem; color: #5f5c55; margin-top: 10px; }
 
-    .hw-why { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-2xl); margin-top: var(--space-4xl); padding-top: var(--space-2xl); border-top: 1px solid rgba(245,243,239,0.18); }
-    .hw-why h3 { font-family: var(--serif); font-weight: 400; font-size: 1.45rem; color: var(--hw-paper); margin-bottom: 0.5rem; }
-    .hw-why p { font-size: 0.92rem; line-height: 1.7; color: rgba(245,243,239,0.75); }
+    .phone { position: absolute; right: -40px; bottom: -48px; width: 250px; background: var(--black); border-radius: 34px; padding: 10px; box-shadow: 0 40px 80px -30px rgba(14,14,12,0.55); z-index: 4; }
+    .phone__screen { background: #f7f5f1; border-radius: 26px; overflow: hidden; font-size: 0.72rem; }
+    .phone__top { background: var(--black); padding: 26px 14px 10px; display: flex; justify-content: space-between; align-items: center; color: #cfc9be; font-size: 0.56rem; letter-spacing: 0.16em; text-transform: uppercase; }
+    .phone__top img { width: 82px; }
+    .phone__body { padding: 14px 12px 18px; }
+    .phone .m-title { font-size: 1.25rem; }
+    .phone .m-row { padding: 9px 11px; }
+    .phone__notice { margin-top: 10px; font-size: 0.6rem; text-align: center; color: #6b5330; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
 
-    /* ---------- MONEY ---------- */
-    .hw-money { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: var(--space-3xl); align-items: start; }
-    .hw-money__quote { font-family: var(--serif); font-size: clamp(1.4rem, 2.2vw, 1.75rem); line-height: 1.45; color: var(--hw-ink); margin: var(--space-xl) 0; padding-left: var(--space-lg); border-left: 2px solid var(--gold); }
-    .hw-money__quote footer { font-family: var(--sans); font-size: 0.8rem; color: var(--hw-soft); margin-top: var(--space-sm); }
-    .hw-ledger { width: 100%; border-collapse: collapse; border-top: 1px solid var(--hw-ink); }
-    .hw-ledger caption { text-align: left; font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600; color: var(--hw-soft); padding-bottom: var(--space-sm); }
-    .hw-ledger th, .hw-ledger td { text-align: left; vertical-align: top; padding: var(--space-md) var(--space-md) var(--space-md) 0; border-bottom: 1px solid var(--hw-line); }
-    .hw-ledger thead th { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: var(--hw-soft); padding-top: var(--space-sm); padding-bottom: var(--space-sm); }
-    .hw-ledger tbody th { font-family: var(--serif); font-size: 1.2rem; font-weight: 500; line-height: 1.3; width: 30%; }
-    .hw-ledger td { font-size: 0.9rem; line-height: 1.65; color: var(--hw-ink); }
-    .hw-ledger td:nth-child(2) { width: 26%; font-weight: 600; }
-    .hw-ledger td:last-child { color: var(--hw-soft); padding-right: 0; }
-    .hw-ledger tr.is-key th, .hw-ledger tr.is-key td { background: rgba(184,150,110,0.10); }
-    .hw-ledger tr.is-key th { padding-left: var(--space-md); }
-    .hw-free { color: var(--green); }
+    .portal__note { text-align: center; margin-top: clamp(4rem, 7vw, 6rem); font-size: 0.78rem; color: var(--muted); }
+    .portal__points { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; margin-top: 2.6rem; }
+    .portal__points b { display: block; font-family: var(--serif); font-size: 1.6rem; font-weight: 500; line-height: 1.15; margin-bottom: 0.5rem; }
+    .portal__points p { font-size: 0.93rem; color: var(--muted); line-height: 1.6; }
+    .portal__included { display: flex; align-items: center; justify-content: center; gap: 1rem; margin: 2.2rem auto 0; padding: 1rem 1.6rem; border-radius: 999px; background: var(--forest); color: var(--cream); width: max-content; max-width: 100%; font-size: 0.88rem; }
+    .portal__included span { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
 
-    /* ---------- FIT + QUESTIONS ---------- */
-    .hw-fit { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2xl); margin: var(--space-2xl) 0 var(--space-3xl); }
-    .hw-fit__col { background: var(--hw-panel); border: 1px solid var(--hw-line); padding: var(--space-xl) var(--space-2xl); }
-    .hw-fit__col--no { background: transparent; }
-    .hw-fit__col h3 { font-family: var(--serif); font-size: 1.55rem; font-weight: 500; margin-bottom: var(--space-md); }
-    .hw-fit__col ul { list-style: none; margin: 0; padding: 0; }
-    .hw-fit__col li { font-size: 0.95rem; line-height: 1.6; padding: 0.6rem 0 0.6rem 1.6rem; border-bottom: 1px solid var(--hw-line); position: relative; }
-    .hw-fit__col li:last-child { border-bottom: 0; }
-    .hw-fit__col li::before { content: ''; position: absolute; left: 0; top: 1.05rem; width: 0.8rem; height: 1px; background: var(--green); }
-    .hw-fit__col--no li::before { background: var(--hw-soft); }
-    .hw-fit__note { grid-column: 1 / -1; font-size: 0.95rem; line-height: 1.7; color: var(--hw-soft); max-width: 70ch; }
-    .hw-fit__note strong { color: var(--hw-ink); font-weight: 600; }
+    /* ============ MONEY ============ */
+    .money { padding: clamp(5rem, 10vw, 9rem) 0; background: var(--cream); }
+    .money .display .it { color: var(--forest); }
+    .ledger { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .tile { border-radius: 6px; padding: 1.8rem 1.6rem 1.7rem; display: flex; flex-direction: column; min-height: 250px; background: #fff; border: 1px solid var(--line); }
+    .tile__when { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: var(--gold-deep); }
+    .tile__amt { font-family: var(--serif); font-size: clamp(2.2rem, 3.4vw, 3rem); font-weight: 400; line-height: 1; margin: 1.1rem 0 auto; letter-spacing: -0.01em; }
+    .tile p { font-size: 0.9rem; line-height: 1.55; color: var(--muted); margin-top: 1.4rem; }
+    .tile--free { background: var(--stone); border-color: transparent; }
+    .tile--psa { background: var(--forest); color: var(--cream); border-color: transparent; grid-row: span 2; }
+    .tile--psa .tile__when { color: var(--gold-light); }
+    .tile--psa p { color: rgba(245,243,239,0.8); }
+    .tile--psa .tile__amt { font-size: clamp(2.6rem, 4.4vw, 4rem); }
+    .tile--psa .credit { margin-top: 1.6rem; padding-top: 1.2rem; border-top: 1px solid var(--line-light); font-family: var(--serif); font-size: 1.5rem; line-height: 1.2; color: var(--gold-light); }
+    .tile--dark { background: var(--black); color: var(--cream); border-color: transparent; }
+    .tile--dark .tile__when { color: var(--gold-light); }
+    .tile--dark p { color: rgba(245,243,239,0.75); }
 
-    .hw-questions { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: var(--space-3xl); padding-top: var(--space-3xl); border-top: 1px solid var(--hw-ink); }
-    .hw-questions h3 { font-family: var(--serif); font-size: clamp(1.7rem, 2.6vw, 2.2rem); font-weight: 400; line-height: 1.15; margin-bottom: var(--space-md); }
-    .hw-questions__intro p { font-size: 0.95rem; line-height: 1.75; color: var(--hw-soft); }
-    .hw-qlist { list-style: none; margin: 0; padding: 0; counter-reset: q; }
-    .hw-qlist li { counter-increment: q; display: grid; grid-template-columns: 2.4rem minmax(0, 1fr); padding: var(--space-md) 0; border-bottom: 1px solid var(--hw-line); }
-    .hw-qlist li:first-child { padding-top: 0; }
-    .hw-qlist li::before { content: counter(q, decimal-leading-zero); font-size: 0.72rem; font-weight: 600; color: var(--hw-gold-ink); letter-spacing: 0.08em; padding-top: 0.35rem; }
-    .hw-qlist h4 { font-family: var(--serif); font-size: 1.25rem; font-weight: 500; line-height: 1.3; margin-bottom: 0.2rem; }
-    .hw-qlist p { font-size: 0.9rem; line-height: 1.65; color: var(--hw-soft); grid-column: 2; }
+    /* ============ WORK GALLERY ============ */
+    .gallery { background: var(--black); color: var(--cream); padding: clamp(4rem, 8vw, 7rem) 0; overflow: hidden; }
+    .gallery__head { display: flex; justify-content: space-between; align-items: end; gap: 2rem; margin-bottom: 2.4rem; flex-wrap: wrap; }
+    .gallery__head .display .it { color: var(--gold-light); }
+    .gallery__grid { display: grid; grid-template-columns: 1.15fr 0.85fr 1fr; grid-template-rows: 300px 300px; gap: 10px; }
+    .shot { position: relative; overflow: hidden; border-radius: 4px; }
+    .shot img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
+    .shot:hover img { transform: scale(1.04); }
+    .shot::after { content: ''; position: absolute; inset: auto 0 0 0; height: 40%; background: linear-gradient(0deg, rgba(14,14,12,0.55), rgba(14,14,12,0)); pointer-events: none; }
+    .shot figcaption { z-index: 1; position: absolute; left: 14px; bottom: 12px; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: var(--cream); text-shadow: 0 1px 10px rgba(0,0,0,0.5); }
+    .shot--tall { grid-row: span 2; }
 
-    /* ---------- FAQ ---------- */
-    .hw-faq { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: var(--space-3xl); }
-    .hw-faq__list { border-top: 1px solid var(--hw-ink); }
-    .hw-faq details { border-bottom: 1px solid var(--hw-line); }
-    .hw-faq summary {
-      list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: var(--space-lg);
-      padding: var(--space-lg) 0; font-family: var(--serif); font-size: clamp(1.2rem, 1.8vw, 1.4rem); font-weight: 500; line-height: 1.3; color: var(--hw-ink);
+    /* ============ FIT + FAQ ============ */
+    .fitfaq { padding: clamp(5rem, 10vw, 9rem) 0; background: var(--cream); }
+    .fitfaq__grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(3rem, 6vw, 6rem); }
+    .fit .display .it { color: var(--forest); }
+    .fit ul { margin: 2rem 0; }
+    .fit li { display: grid; grid-template-columns: 28px 1fr; gap: 0.6rem; padding: 0.95rem 0; border-bottom: 1px solid var(--line); font-size: 1rem; line-height: 1.5; }
+    .fit li svg { width: 20px; height: 20px; margin-top: 2px; color: var(--forest); }
+    .fit li.no svg { color: var(--muted); }
+    .fit li.no { color: var(--muted); }
+    .fit__range { background: var(--forest); color: var(--cream); padding: 1.5rem 1.6rem; border-radius: 6px; }
+    .fit__range b { display: block; font-family: var(--serif); font-size: clamp(1.9rem, 3vw, 2.5rem); font-weight: 400; line-height: 1.05; color: var(--gold-light); margin: 0.3rem 0 0.4rem; }
+    .fit__range span { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; }
+    .fit__range p { font-size: 0.88rem; color: rgba(245,243,239,0.78); }
+    .faq h2 { margin-bottom: 1.6rem; }
+    .faq details { border-top: 1px solid var(--line); }
+    .faq details:last-child { border-bottom: 1px solid var(--line); }
+    .faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 1.5rem; align-items: center; padding: 1.3rem 0; font-family: var(--serif); font-size: clamp(1.25rem, 1.8vw, 1.5rem); font-weight: 500; line-height: 1.25; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary i { flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line); position: relative; transition: background 0.2s, transform 0.3s var(--ease); }
+    .faq summary i::before, .faq summary i::after { content: ''; position: absolute; left: 50%; top: 50%; width: 12px; height: 1.5px; background: var(--ink); transform: translate(-50%, -50%); }
+    .faq summary i::after { transform: translate(-50%, -50%) rotate(90deg); transition: transform 0.3s var(--ease); }
+    .faq details[open] summary i { background: var(--forest); border-color: var(--forest); }
+    .faq details[open] summary i::before, .faq details[open] summary i::after { background: var(--cream); }
+    .faq details[open] summary i::after { transform: translate(-50%, -50%) rotate(0deg); }
+    .faq details p { padding: 0 3.5rem 1.4rem 0; font-size: 0.98rem; line-height: 1.7; color: var(--muted); }
+
+    /* ============ CTA ============ */
+    .cta { background: var(--gold); color: var(--black); padding: clamp(5rem, 11vw, 9rem) 0 clamp(4rem, 8vw, 6rem); position: relative; overflow: hidden; }
+    .cta__mark { position: absolute; right: -4vw; top: 50%; transform: translateY(-50%); width: min(46vw, 620px); opacity: 0.07; pointer-events: none; }
+    .cta h2 { max-width: 12ch; }
+    .cta h2 .script { font-size: 1.1em; }
+    .cta .lead { max-width: 44ch; margin: 1.8rem 0 2.4rem; }
+    .cta__row { display: flex; flex-wrap: wrap; gap: 0.9rem; align-items: center; }
+    .cta .btn--line { border-color: rgba(14,14,12,0.4); }
+    .cta .btn--line:hover { background: rgba(14,14,12,0.08); }
+    .bring { margin-top: clamp(3.5rem, 6vw, 5rem); padding-top: 1.6rem; border-top: 1px solid rgba(14,14,12,0.25); display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 1.5rem; align-items: start; }
+    .bring .label { padding-top: 0.55rem; }
+    .bring ul { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .bring li { padding: 0.55rem 1rem; border-radius: 999px; background: rgba(245,243,239,0.55); font-size: 0.86rem; font-weight: 500; }
+
+    /* ============ FOOTER (page-local prototype) ============ */
+    .rp-footer { background: var(--black); color: rgba(245,243,239,0.7); padding: clamp(4rem, 7vw, 6rem) 0 2rem; font-size: 0.88rem; }
+    .rp-footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.5rem; }
+    .rp-footer__brand img { width: 150px; margin-bottom: 1.2rem; }
+    .rp-footer__brand p { max-width: 32ch; line-height: 1.6; }
+    .rp-footer h3 { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600; color: var(--gold-light); margin-bottom: 1rem; }
+    .rp-footer li { margin-bottom: 0.5rem; }
+    .rp-footer a:hover { color: var(--cream); }
+    .rp-footer__base { margin-top: 3.5rem; padding-top: 1.4rem; border-top: 1px solid var(--line-light); display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-size: 0.78rem; color: rgba(245,243,239,0.5); }
+    .rp-social { display: flex; gap: 0.6rem; margin-top: 1.4rem; }
+    .rp-social a { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line-light); display: grid; place-items: center; }
+    .rp-social svg { width: 18px; height: 18px; }
+
+    /* ============ RESPONSIVE ============ */
+    @media (max-width: 1180px) {
+      .rp-nav a { padding: 0.6rem 0.6rem; }
+      .rail { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+      .phases { display: none; }
+      .phone { right: -10px; width: 220px; }
     }
-    .hw-faq summary::-webkit-details-marker { display: none; }
-    .hw-faq summary::after {
-      content: ''; flex-shrink: 0; width: 12px; height: 12px; border-right: 1.5px solid var(--hw-ink); border-bottom: 1.5px solid var(--hw-ink);
-      transform: rotate(45deg) translate(-2px, -2px); transition: transform var(--duration-fast);
+    @media (max-width: 980px) {
+      .rp-nav, .rp-header__cta { display: none; }
+      .rp-burger { display: inline-flex; }
+      .hero { grid-template-columns: 1fr; grid-template-rows: auto 52vh; min-height: 0; }
+      .hero__text { padding: calc(var(--header-h) + 2.5rem) var(--gutter) 2.5rem; }
+      .hero__cap { bottom: 1.2rem; }
+      .hero h1 { margin-right: 0; }
+      .hero__media::after { background: linear-gradient(180deg, var(--forest-deep) 0%, rgba(29,42,31,0) 35%); }
+      .hero__path { position: relative; grid-column: 1; background: var(--forest-deep); }
+      .hero__path ol { grid-template-columns: 1fr; }
+      .hero__path li + li { padding-left: 0; border-left: 0; border-top: 1px solid var(--line-light); }
+      .hero__path li { padding: 1rem 0; }
+      .values { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .statement__grid { grid-template-columns: 1fr; }
+      .statement__photo img { aspect-ratio: 16 / 11; }
+      .value { min-height: 300px; }
+      .sec-head { grid-template-columns: 1fr; }
+      .detail { grid-template-columns: 1fr; }
+      .detail__big { border-right: 0; border-bottom: 1px solid var(--line); }
+      .detail__num { font-size: 6rem; }
+      .lanes__grid, .lanes__axis { grid-template-columns: 150px minmax(0, 1fr) 120px; }
+      .psa-facts { grid-template-columns: 1fr; }
+      .app { grid-template-columns: 1fr; }
+      .app__side { display: none; }
+      .phone { display: none; }
+      .portal__points { grid-template-columns: 1fr; gap: 1.6rem; }
+      .ledger { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .tile--psa { grid-row: auto; grid-column: span 2; }
+      .gallery__grid { grid-template-columns: 1fr 1fr; grid-template-rows: 260px 260px 260px; }
+      .shot--tall { grid-row: span 2; }
+      .fitfaq__grid { grid-template-columns: 1fr; }
+      .rp-footer__grid { grid-template-columns: 1fr 1fr; }
     }
-    .hw-faq details[open] summary::after { transform: rotate(-135deg) translate(-2px, -2px); }
-    .hw-faq summary:hover { color: var(--green); }
-    .hw-faq__a { padding: 0 var(--space-2xl) var(--space-lg) 0; }
-    .hw-faq__a p { font-size: 0.96rem; line-height: 1.75; color: var(--hw-ink); max-width: 64ch; }
-    .hw-faq__a p + p { margin-top: var(--space-sm); }
-    .hw-faq__aside p { font-size: 0.95rem; line-height: 1.75; color: var(--hw-soft); margin-bottom: var(--space-lg); }
-
-    /* ---------- CTA ---------- */
-    .hw-cta { background: var(--black); color: var(--hw-paper); padding: clamp(4rem, 9vw, 7rem) 0; position: relative; overflow: hidden; }
-    .hw-cta__inner { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: var(--space-3xl); align-items: end; }
-    .hw-cta h2 { font-family: var(--serif); font-weight: 300; color: var(--hw-paper); font-size: clamp(2.3rem, 5vw, 3.8rem); line-height: 1.08; margin-bottom: var(--space-lg); }
-    .hw-cta h2 em { font-family: 'Amsterdam', var(--serif); font-style: normal; color: var(--gold-light); font-size: 1.2em; line-height: 0.8; }
-    .hw-cta p { font-size: 1.02rem; line-height: 1.75; color: rgba(245,243,239,0.78); max-width: 52ch; }
-    .hw-cta__actions { display: flex; flex-direction: column; gap: var(--space-lg); align-items: flex-start; }
-    .hw-cta .hw-link { color: var(--hw-paper); border-color: rgba(245,243,239,0.35); }
-    .hw-cta .hw-link:hover { border-color: var(--gold-light); color: var(--gold-light); }
-
-    /* ---------- RESPONSIVE ---------- */
-    @media (max-width: 1100px) {
-      .hw-part { grid-template-columns: 240px minmax(0, 1fr); gap: var(--space-2xl); }
-      .hw-showcase { grid-template-columns: 250px minmax(0, 1fr); }
-      .hw-chart { --label-w: 190px; }
-    }
-    @media (max-width: 960px) {
-      .hw-hero__grid { grid-template-columns: 1fr; }
-      .hw-hero__figure { max-width: 520px; }
-      .hw-hero__figure img { aspect-ratio: 4 / 3; object-position: 50% 25%; }
-      .hw-titleblock { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .hw-titleblock div:nth-child(3) { padding-left: 0; border-left: 0; }
-      .hw-titleblock div:nth-child(n+3) { border-top: 1px solid var(--hw-line); }
-      .hw-note { grid-template-columns: 1fr; gap: var(--space-lg); }
-      .hw-note__aside { max-width: 260px; }
-      .hw-principles__head, .hw-portal__head, .hw-money, .hw-questions, .hw-faq, .hw-cta__inner { grid-template-columns: 1fr; gap: var(--space-xl); }
-      .hw-principles__photo { grid-template-columns: 1fr; gap: var(--space-lg); }
-      .hw-part { grid-template-columns: 1fr; gap: var(--space-xl); }
-      .hw-part__head { position: static; }
-      .hw-part__num { font-size: 3.2rem; }
-      .hw-showcase { grid-template-columns: 1fr; gap: var(--space-lg); }
-      .hw-tabs {
-        flex-direction: row; overflow-x: auto; scrollbar-width: none; border-top: 0; border-bottom: 1px solid rgba(245,243,239,0.18);
-        margin: 0 calc(var(--space-xl) * -1); padding: 0 var(--space-xl); scroll-snap-type: x proximity;
-      }
-      .hw-tabs::-webkit-scrollbar { display: none; }
-      .hw-tab { border-bottom: 0; padding: var(--space-sm) var(--space-md) var(--space-md); white-space: nowrap; grid-template-columns: auto auto; gap: 0.5rem; scroll-snap-align: start; }
-      .hw-tab::before { left: 0; right: 0; top: auto; bottom: 0; width: auto; height: 2px; }
-      .hw-tab__t { font-size: 1.15rem; }
-      .hw-why { grid-template-columns: 1fr; gap: var(--space-xl); margin-top: var(--space-3xl); }
-      .hw-chart__callout { grid-template-columns: 1fr; gap: var(--space-lg); }
-    }
-    @media (max-width: 720px) {
-      .hw-wrap { padding: 0 var(--space-md); }
-      .hw-hero__figure::before { inset: -8px 8px 8px -8px; }
-      .hw-tabs { margin: 0 calc(var(--space-md) * -1); padding: 0 var(--space-md); }
-      .hw-subnav__label, .hw-subnav__cta { display: none; }
-      .hw-subnav__inner { gap: 0; }
-      .hw-subnav__list { margin: 0 calc(var(--space-md) * -1); padding: 0 var(--space-sm); }
-      .hw-subnav__list a { padding: 0 0.6rem; font-size: 0.78rem; }
-      .hw-titleblock { grid-template-columns: 1fr; }
-      .hw-titleblock div, .hw-titleblock div + div { padding: var(--space-sm) 0; border-left: 0; }
-      .hw-titleblock div + div { border-top: 1px solid var(--hw-line); }
-      .hw-principles__grid { grid-template-columns: 1fr; }
-      .hw-principle, .hw-principle:nth-child(even) { padding: var(--space-xl) 0; border-left: 0; }
-      /* Chart: label above each bar, bands span full width */
-      .hw-chart { --label-w: 0px; }
-      .hw-chart__phases { grid-template-columns: repeat(24, minmax(0, 1fr)); }
-      .hw-chart__phase--a { grid-column: 1 / 5; }
-      .hw-chart__phase--b { grid-column: 5 / 17; }
-      .hw-chart__phase--c { grid-column: 17 / 25; }
-      .hw-chart__phase { padding: 0 0.3rem; font-size: 0.58rem; letter-spacing: 0.1em; }
-      .hw-chart__phase small { display: none; }
-      .hw-chart__bands { grid-template-columns: repeat(24, minmax(0, 1fr)); }
-      .hw-chart__band--a { grid-column: 1 / 5; }
-      .hw-chart__band--b { grid-column: 5 / 17; }
-      .hw-chart__band--c { grid-column: 17 / 25; }
-      .hw-row { grid-template-columns: repeat(24, minmax(0, 1fr)); row-gap: 4px; padding: 6px 0; }
-      .hw-row__label { grid-column: 1 / -1; grid-row: 1; font-size: 0.8rem; padding: 0; }
-      .hw-row__label small { display: inline; margin-left: 0.3rem; }
-      .hw-row--sub .hw-row__label { padding-left: 0.9rem; }
-      .hw-bar, .hw-milestone { grid-row: 2; grid-column: calc(var(--s) - 1) / calc(var(--e) - 1); }
-      .hw-chart__note { margin-left: 0; width: 100%; }
-      .hw-step { grid-template-columns: 1fr; gap: 0.2rem; }
-      .hw-streams { grid-template-columns: 1fr; }
-      .hw-stream { padding: var(--space-lg); }
-      .hw-paths { grid-template-columns: 1fr; }
-      .hw-device__screen { padding: 16px 14px 18px; min-height: 0; }
-      .hw-device__url { display: none; }
-      .m-head { padding-right: 0; padding-top: 22px; }
-      .hw-badge { top: 8px; right: 8px; left: 8px; text-align: center; }
+    @media (max-width: 640px) {
+      :root { --header-h: 68px; }
+      .rp-logo { width: 140px; height: 44px; }
+      .hero { grid-template-rows: auto 44vh; }
+      .values { grid-template-columns: 1fr; }
+      .value { min-height: 0; padding: 1.8rem 1.4rem 2rem; }
+      .value__n { font-size: 3.4rem; margin-bottom: 2.2rem; }
+      .rail { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin: 0 calc(var(--gutter) * -1); padding: 0 var(--gutter); }
+      .rail::-webkit-scrollbar { display: none; }
+      .stop { flex: 0 0 132px; scroll-snap-align: start; min-height: 92px; }
+      .detail__big, .detail__body { padding: 1.6rem 1.4rem; }
+      .detail__num { font-size: 4.6rem; }
+      .facts { grid-template-columns: 1fr; }
+      .facts div, .facts div + div { padding: 0.8rem 0; border-left: 0; border-bottom: 1px solid var(--line); }
+      .lanes__grid { grid-template-columns: 1fr; row-gap: 4px; }
+      .lane__name { padding-top: 0.6rem; }
+      .lane__track { height: 22px; }
+      .lane__bar { top: 4px; height: 12px; }
+      .lanes__end { grid-column: 1; grid-row: auto; padding-top: 1.6rem; }
+      .lanes__end::before { left: 0; right: 0; top: 0; bottom: auto; width: auto; height: 1px; }
+      .lock { padding-left: 0; display: flex; align-items: center; gap: 1rem; text-align: left; }
+      .lock__d { margin: 0; width: 44px; height: 44px; flex-shrink: 0; }
+      .lanes__axis { display: none; }
+      .portal::before { top: 60%; }
+      .portal__tabs { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; margin: 0 calc(var(--gutter) * -1) 1.2rem; padding: 0 var(--gutter); scrollbar-width: none; }
+      .portal__tabs::-webkit-scrollbar { display: none; }
+      .ptab { flex-shrink: 0; }
+      .app__main { padding: 16px 14px; }
+      .m-head { padding-right: 0; padding-top: 26px; }
+      .badge { left: 10px; right: 10px; top: 10px; text-align: center; }
       .m-prog { grid-template-columns: minmax(0, 1fr) 70px; }
       .m-spec th:nth-child(3), .m-spec td:nth-child(3) { display: none; }
-      /* Ledger becomes stacked cards */
-      .hw-ledger thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-      .hw-ledger tr { display: block; padding: var(--space-md) 0; border-bottom: 1px solid var(--hw-line); }
-      .hw-ledger tr.is-key { padding: var(--space-md); background: rgba(184,150,110,0.10); }
-      .hw-ledger tr.is-key th, .hw-ledger tr.is-key td { background: transparent; padding-left: 0; }
-      .hw-ledger th, .hw-ledger td { display: block; width: auto !important; border: 0; padding: 0 0 0.3rem; }
-      .hw-ledger td:nth-child(2)::before { content: 'Cost: '; font-weight: 400; color: var(--hw-soft); }
-      .hw-fit { grid-template-columns: 1fr; gap: var(--space-lg); }
-      .hw-fit__col { padding: var(--space-lg); }
-      .hw-faq__a { padding-right: 0; }
+      .browser__url { display: none; }
+      .portal__included { border-radius: 10px; width: auto; }
+      .ledger { grid-template-columns: 1fr; }
+      .tile--psa { grid-column: auto; }
+      .tile { min-height: 0; }
+      .gallery__grid { grid-template-columns: 1fr 1fr; grid-template-rows: 200px 200px 200px; }
+      .bring { grid-template-columns: 1fr; gap: 1rem; }
+      .cta__mark { width: 80vw; right: -20vw; top: 20%; }
+      .faq details p { padding-right: 0; }
+      .rp-footer__grid { grid-template-columns: 1fr; }
     }
     @media (prefers-reduced-motion: reduce) {
-      .hw-bar { transition: none !important; }
-      .hw-chart.is-armed .hw-bar { transform: none; opacity: 1; }
       html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+      .js .rv { opacity: 1; transform: none; }
+      .js .lanes:not(.go) .lane__bar { transform: none; opacity: 1; }
+      .hero__media img { transform: none; }
     }
   </style>
 
-  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "How We Work: The Rentoule Projects Client Process",
-    "description": "How Rentoule Projects plans and builds major renovations, extensions and custom homes in Canberra, from first call to handover.",
-    "author": {
-      "@type": "Person",
-      "name": "Jeff Rentoule",
-      "jobTitle": "Director & Licensed Builder",
-      "url": "https://rentouleprojects.com"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Rentoule Projects",
-      "url": "https://rentouleprojects.com",
-      "logo": { "@type": "ImageObject", "url": "https://rentouleprojects.com/assets/logo-main-black.png" }
-    },
+    "description": "How Rentoule Projects plans, prices and builds major renovations, extensions and custom homes in Canberra.",
+    "author": { "@type": "Person", "name": "Jeff Rentoule", "jobTitle": "Director & Licensed Builder", "url": "https://rentouleprojects.com" },
+    "publisher": { "@type": "Organization", "name": "Rentoule Projects", "url": "https://rentouleprojects.com", "logo": { "@type": "ImageObject", "url": "https://rentouleprojects.com/assets/logo-main-black.png" } },
     "datePublished": "2026-08-23",
     "dateModified": "2026-11-08",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://rentouleprojects.com/how-we-work/" },
-    "image": "https://rentouleprojects.com/assets/weetangera-stairs.jpg",
-    "articleSection": "Process"
+    "image": "https://rentouleprojects.com/assets/weetangera-stairs.jpg"
   }
   </script>
 
@@ -656,846 +571,598 @@
           y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       })(window, document, "clarity", "script", "x793xh4bcw");
   </script>
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
-<body class="article-body-page">
+<body>
+  <a href="#main" class="skip">Skip to content</a>
+  <div class="rp-progress" aria-hidden="true"></div>
 
-  <a href="#main-content" class="skip-link">Skip to content</a>
-
-  <!-- ====== NAVIGATION (shared site nav) ====== -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav__inner">
-      <a href="/" class="nav__logo" aria-label="Rentoule Projects - Home">
-        <img src="../assets/logo-nav-gold-script.png" alt="Rentoule Projects" class="nav__logo-img">
+  <!-- ====== HEADER (prototype, page-local) ====== -->
+  <header class="rp-header" id="rpHeader">
+    <div class="rp-header__inner">
+      <a href="/" class="rp-logo" aria-label="Rentoule Projects home">
+        <img class="on-dark" src="../assets/logo-nav-white.png" alt="" width="600" height="184">
+        <img class="on-light" src="../assets/logo-nav-green.png" alt="" width="600" height="184">
       </a>
-      <div class="nav__links">
-        <a href="/#about" class="nav__link">About</a>
-        <a href="/#services" class="nav__link">Services</a>
-        <a href="/how-we-work/" class="nav__link active" aria-current="page">How We Work</a>
-        <a href="/canberra-renovation-guide/" class="nav__link">Guide</a>
-        <a href="/#case-studies" class="nav__link">Case Studies</a>
-        <a href="/#blog" class="nav__link">Blog</a>
-        <a href="/#careers" class="nav__link">Careers</a>
-        <a href="/#contact" class="nav__link">Contact</a>
-      </div>
-      <a href="/#contact" class="btn btn--primary nav__cta desktop-only">Get in touch</a>
-      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <nav class="rp-nav" aria-label="Main">
+        <a href="/#services">Services</a>
+        <a href="/how-we-work/" aria-current="page">How we work</a>
+        <a href="/#case-studies">Projects</a>
+        <a href="/canberra-renovation-guide/">Guide</a>
+        <a href="/#about">About</a>
+        <a href="/#blog">Journal</a>
+      </nav>
+      <a href="/#contact" class="btn btn--gold rp-header__cta">Start a conversation</a>
+      <button class="rp-burger" id="rpBurger" aria-label="Open menu" aria-expanded="false" aria-controls="rpMenu"><span></span></button>
     </div>
-    <div class="nav__mobile" aria-hidden="true">
-      <a href="/">Home</a>
-      <a href="/#about">About</a>
-      <a href="/#services">Services</a>
-      <a href="/how-we-work/">How We Work</a>
-      <a href="/canberra-renovation-guide/">Guide</a>
-      <a href="/#case-studies">Case Studies</a>
-      <a href="/#blog">Blog</a>
-      <a href="/#careers">Careers</a>
-      <a href="/#contact">Contact</a>
-      <a href="/#contact" class="btn btn--primary">Get in touch</a>
-    </div>
-  </nav>
+  </header>
 
-  <main id="main-content" class="hw" tabindex="-1">
+  <div class="rp-menu" id="rpMenu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <button class="rp-menu__close" id="rpClose" aria-label="Close menu">&times;</button>
+    <nav aria-label="Mobile">
+      <a href="/">Home</a>
+      <a href="/#services">Services</a>
+      <a href="/how-we-work/" aria-current="page">How we work</a>
+      <a href="/#case-studies">Projects</a>
+      <a href="/canberra-renovation-guide/">Guide</a>
+      <a href="/#about">About</a>
+      <a href="/#blog">Journal</a>
+      <a href="/#careers">Careers</a>
+    </nav>
+    <a href="/#contact" class="btn btn--gold">Start a conversation</a>
+  </div>
+
+  <main id="main" tabindex="-1">
 
     <!-- ====== HERO ====== -->
-    <header class="hw-hero" id="top">
-      <div class="hw-wrap">
-        <div class="hw-hero__grid">
+    <section class="hero" aria-labelledby="hero-h">
+      <div class="hero__text">
+        <p class="label">How we work</p>
+        <h1 class="display h-xl" id="hero-h">We do the hard thinking <span class="script">before</span> we build.</h1>
+        <p class="lead">Major renovations, extensions and selective custom homes in Canberra, planned and priced properly before construction begins.</p>
+        <div class="hero__ctas">
+          <a href="#process" class="btn btn--gold">See how it works <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="#portal" class="btn btn--line">Our client portal</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img src="../assets/weetangera-stairs.jpg" alt="Light-filled stairwell with a skylight and timber handrail in a Rentoule Projects renovation" width="1600" height="2400" fetchpriority="high">
+        <span class="hero__cap">Weetangera renovation</span>
+      </div>
+      <div class="hero__path" aria-label="Our process in three phases">
+        <ol>
+          <li><b>01</b><div><span>Get to know</span><br>Free first conversations</div></li>
+          <li><b>02</b><div><span>Plan &amp; price</span><br>The work before the work</div></li>
+          <li><b>03</b><div><span>Build</span><br>To a fixed price</div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ====== STATEMENT + VALUES ====== -->
+    <section class="statement on-light" aria-labelledby="values-h">
+      <div class="wrap">
+        <div class="statement__grid">
           <div>
-            <span class="hw-hero__eyebrow">How we work</span>
-            <h1>The hard thinking happens <em>before</em> we build.</h1>
-            <p class="hw-hero__lede">Most of what makes a renovation, extension or new home go well is settled long before anyone picks up a tool. This page explains how we work with you, from the first phone call to the years after handover, and why we spend so much care on the part most builders rush.</p>
-            <div class="hw-hero__actions">
-              <a href="#process" class="btn btn--dark">See the process</a>
-              <a href="#portal" class="hw-link">Our client portal <span aria-hidden="true">&rarr;</span></a>
-            </div>
-            <p class="hw-hero__byline"><span>Written by <strong>Jeff Rentoule</strong>, Director and licensed builder</span><span>About 10 minutes to read</span></p>
+            <p class="display h-md statement__quote rv">Most building problems don&rsquo;t start on site. They start with <em>a guessed price</em>, a late decision, or nobody quite sure who&rsquo;s doing what.</p>
+            <p class="statement__by rv"><strong>Jeff Rentoule</strong>Director and licensed builder. 19 years in the Canberra building industry.</p>
           </div>
-          <figure class="hw-hero__figure">
-            <img src="../assets/weetangera-stairs.jpg" alt="Light-filled stairwell with a skylight and timber handrail in a Rentoule Projects renovation" width="1600" height="2400" fetchpriority="high">
-            <figcaption class="hw-caption"><span>Weetangera renovation</span><span>Rentoule Projects</span></figcaption>
+          <figure class="statement__photo rv">
+            <img src="../assets/about-team.jpg" alt="Two members of the Rentoule Projects team talking on site in front of an insulated timber frame" width="1200" height="1800" loading="lazy">
+            <figcaption>On site, framing stage</figcaption>
           </figure>
         </div>
 
-        <dl class="hw-titleblock" aria-label="At a glance">
-          <div><dt>We build</dt><dd>Major renovations, extensions and selective custom homes</dd></div>
-          <div><dt>Where</dt><dd>Canberra and the ACT</dd></div>
-          <div><dt>Contract</dt><dd>Fixed price, agreed after pre-construction</dd></div>
-          <div><dt>Included with the PSA</dt><dd>Our pre-construction client portal</dd></div>
-        </dl>
-      </div>
-    </header>
-
-    <!-- ====== IN-PAGE NAV ====== -->
-    <nav class="hw-subnav" aria-label="On this page">
-      <div class="hw-wrap hw-subnav__inner">
-        <span class="hw-subnav__label">On this page</span>
-        <div class="hw-subnav__list">
-          <a href="#principles">Principles</a>
-          <a href="#process">The process</a>
-          <a href="#steps">Step by step</a>
-          <a href="#portal">Client portal</a>
-          <a href="#money">Costs</a>
-          <a href="#fit">Is it a fit?</a>
-          <a href="#faq">Questions</a>
-        </div>
-        <a href="/#contact" class="btn btn--primary hw-subnav__cta">Get in touch</a>
-      </div>
-    </nav>
-
-    <!-- ====== INTRO NOTE ====== -->
-    <section class="hw-section" aria-label="A note from Jeff">
-      <div class="hw-wrap">
-        <div class="hw-note">
-          <p class="hw-note__aside"><strong>A note from Jeff</strong>19 years in the Canberra building industry, the last five running Rentoule Projects.</p>
-          <div class="hw-note__body">
-            <p>The projects that go badly rarely go wrong on site. They go wrong earlier, when a price was guessed, a decision was left for later, or nobody was quite sure who was doing what.</p>
-            <p>So we put our effort into that early part. This page is a plain explanation of how. Read it end to end, or jump to the sections you care about.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ====== 01 PRINCIPLES ====== -->
-    <section class="hw-section hw--warm" id="principles" aria-labelledby="principles-h">
-      <div class="hw-wrap">
-        <p class="hw-sheet"><span class="hw-sheet__num">01</span> Principles</p>
-        <div class="hw-principles__head">
-          <h2 class="hw-h2" id="principles-h">Four principles, and the <em>worries</em> they answer</h2>
-          <p class="hw-lede">People rarely come to us worried about tiles. They worry about the price moving, about decisions piling up, about being left in the dark, and about who picks up the phone once the job is done. Here is how we think about each.</p>
-        </div>
-
-        <div class="hw-principles__grid">
-          <article class="hw-principle">
-            <p class="hw-principle__worry">&ldquo;Will the price we sign up to be the price we pay?&rdquo;</p>
-            <p class="hw-principle__num">Principle one</p>
+        <h2 class="sr" id="values-h">Our values</h2>
+        <div class="values">
+          <article class="value rv">
+            <span class="value__n" aria-hidden="true">01</span>
             <h3>Think Before We Build</h3>
-            <p>A successful build starts well before construction. We get involved early to test ideas, understand costs, identify risks and help the design develop into something both beautiful and buildable. The work happens up front, so the scope is clear and the price is fixed before construction begins.</p>
-            <p class="hw-principle__practice"><b>In practice</b>Design, consultants, selections and trade pricing are worked through under a Preliminary Services Agreement, so your fixed price is built from decisions you have made and pricing we have checked.</p>
+            <p>We test ideas, costs and risks early, so the scope is clear and the price is fixed before construction starts.</p>
           </article>
-          <article class="hw-principle">
-            <p class="hw-principle__worry">&ldquo;Will we be listened to, or just sold something?&rdquo;</p>
-            <p class="hw-principle__num">Principle two</p>
+          <article class="value rv">
+            <span class="value__n" aria-hidden="true">02</span>
             <h3>Build It Together</h3>
-            <p>The best homes come from genuine collaboration. Clients, architects, consultants, trades and builders all bring something valuable. We listen, share our experience and work as one team toward a home you will love living in.</p>
-            <p class="hw-principle__practice"><b>In practice</b>We work alongside your architect or designer, give buildability and cost input as the drawings develop, and make cost-carrying selections with you in person at trade suppliers.</p>
+            <p>You, your designer, consultants, trades and us, working as one team toward a home you love.</p>
           </article>
-          <article class="hw-principle">
-            <p class="hw-principle__worry">&ldquo;How will we keep track of everything that has to happen?&rdquo;</p>
-            <p class="hw-principle__num">Principle three</p>
+          <article class="value rv">
+            <span class="value__n" aria-hidden="true">03</span>
             <h3>Calm Over Chaos</h3>
-            <p>Building is complicated. Your experience of it should not feel that way. We keep the work organised, the next steps clear and the communication steady, so you know where things stand and what is needed from you.</p>
-            <p class="hw-principle__practice"><b>In practice</b>During pre-construction your client portal shows progress, documents, outstanding actions and selections in one place. <a href="#portal">See the portal</a>.</p>
+            <p>Clear next steps and steady communication, so you always know where things stand.</p>
           </article>
-          <article class="hw-principle">
-            <p class="hw-principle__worry">&ldquo;What happens if something isn&rsquo;t right, or after we move back in?&rdquo;</p>
-            <p class="hw-principle__num">Principle four</p>
+          <article class="value rv">
+            <span class="value__n" aria-hidden="true">04</span>
             <h3>Stand Behind Our Work</h3>
-            <p>We take responsibility for what we do and follow through on what we promise. When challenges come up, we deal with them openly and work toward the right solution. Our relationship with you does not end when construction does.</p>
-            <p class="hw-principle__practice"><b>In practice</b>Any change to cost or scope is written up and approved by you before the work happens. After handover there is a 90-day defect period with us as your first call.</p>
+            <p>We follow through on what we promise, and our relationship doesn&rsquo;t end at handover.</p>
           </article>
-        </div>
-
-        <div class="hw-principles__photo">
-          <img src="../assets/about-team.jpg" alt="Two members of the Rentoule Projects team talking on site in front of an insulated timber frame" width="1200" height="1800" loading="lazy">
-          <blockquote>
-            &ldquo;Our site manager runs the delivery. I run the project. The team is small on purpose.&rdquo;
-            <footer>Jeff Rentoule, Director</footer>
-          </blockquote>
         </div>
       </div>
     </section>
 
-    <!-- ====== 02 THE PROCESS AT A GLANCE ====== -->
-    <section class="hw-section" id="process" aria-labelledby="process-h">
-      <div class="hw-wrap">
-        <p class="hw-sheet"><span class="hw-sheet__num">02</span> The process at a glance</p>
-        <h2 class="hw-h2" id="process-h">From the first call to <em>the keys</em></h2>
-        <p class="hw-lede">Every project follows the same sequence. What changes is how long each part takes and how many people are involved. Look at how much happens before construction starts. That is deliberate.</p>
-
-        <figure class="hw-chart" id="hw-chart" aria-labelledby="chart-caption">
-          <figcaption id="chart-caption" class="hw-sr">Programme chart of the Rentoule Projects process. Initial enquiry, discovery call, site consultation and ballpark proposal happen first. The Preliminary Services Agreement follows, during which design development, consultant coordination, selections and detailed pricing run alongside each other, and Building Approval is lodged where required. The fixed-price building contract is signed at the end of the PSA, followed by construction, then handover and aftercare.</figcaption>
-
-          <div class="hw-chart__phases" aria-hidden="true">
-            <span class="hw-chart__phase hw-chart__phase--a">Getting to know you<small>No cost</small></span>
-            <span class="hw-chart__phase hw-chart__phase--b">Preliminary Services Agreement<small>Paid, credited in full if you proceed</small></span>
-            <span class="hw-chart__phase hw-chart__phase--c">Contract &amp; construction<small>Fixed price</small></span>
+    <!-- ====== PROCESS (interactive) ====== -->
+    <section class="process" id="process" aria-labelledby="process-h">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="label">The process</span>
+            <h2 class="display h-lg" id="process-h">Ten steps. <span class="it">No surprises.</span></h2>
           </div>
+          <p class="lead">Every project follows the same path. Most of the real work happens before construction, and that is deliberate. Select a step to see what happens.</p>
+        </div>
 
-          <div class="hw-chart__body">
-            <div class="hw-chart__bands" aria-hidden="true">
-              <span class="hw-chart__band hw-chart__band--a"></span>
-              <span class="hw-chart__band hw-chart__band--b"></span>
-              <span class="hw-chart__band hw-chart__band--c"></span>
-            </div>
-            <ol class="hw-chart__rows">
-              <li class="hw-row"><span class="hw-row__label">Initial enquiry</span><span class="hw-bar" style="--s:2;--e:3;--i:0"></span></li>
-              <li class="hw-row"><span class="hw-row__label">Discovery call</span><span class="hw-bar" style="--s:3;--e:4;--i:1"></span></li>
-              <li class="hw-row"><span class="hw-row__label">Site consultation</span><span class="hw-bar" style="--s:4;--e:5;--i:2"></span></li>
-              <li class="hw-row"><span class="hw-row__label">Ballpark proposal</span><span class="hw-bar" style="--s:5;--e:6;--i:3"></span></li>
-              <li class="hw-row hw-row--group"><span class="hw-row__label">Preliminary Services Agreement</span><span class="hw-bar hw-bar--psa" style="--s:6;--e:18;--i:4"></span></li>
-              <li class="hw-row hw-row--sub"><span class="hw-row__label">Design development</span><span class="hw-bar hw-bar--work" style="--s:6;--e:13;--i:5"></span></li>
-              <li class="hw-row hw-row--sub"><span class="hw-row__label">Consultant coordination</span><span class="hw-bar hw-bar--work" style="--s:7;--e:15;--i:6"></span></li>
-              <li class="hw-row hw-row--sub"><span class="hw-row__label">Selections</span><span class="hw-bar hw-bar--work" style="--s:9;--e:16;--i:7"></span></li>
-              <li class="hw-row hw-row--sub"><span class="hw-row__label">Detailed pricing</span><span class="hw-bar hw-bar--work" style="--s:11;--e:18;--i:8"></span></li>
-              <li class="hw-row hw-row--sub"><span class="hw-row__label">Building Approval <small>where required</small></span><span class="hw-bar hw-bar--optional" style="--s:13;--e:19;--i:9"></span></li>
-              <li class="hw-row"><span class="hw-row__label">Fixed-price building contract</span><span class="hw-milestone" style="--s:18;--e:19"></span></li>
-              <li class="hw-row"><span class="hw-row__label">Construction</span><span class="hw-bar hw-bar--build" style="--s:19;--e:25;--i:10"></span></li>
-              <li class="hw-row"><span class="hw-row__label">Handover &amp; aftercare</span><span class="hw-bar hw-bar--after" style="--s:24;--e:26;--i:11"></span></li>
-            </ol>
-          </div>
+        <div class="phases" aria-hidden="true">
+          <div class="phase" data-phase="1"><small>Phase 01 &middot; Free</small><strong>Get to know each other</strong></div>
+          <div class="phase" data-phase="2"><small>Phase 02 &middot; Preliminary Services Agreement</small><strong>Plan &amp; price</strong></div>
+          <div class="phase" data-phase="3"><small>Phase 03 &middot; Fixed price</small><strong>Build</strong></div>
+        </div>
 
-          <div class="hw-chart__legend" aria-hidden="true">
-            <span><i class="hw-key"></i>Stage</span>
-            <span><i class="hw-key hw-key--optional"></i>Only where required</span>
-            <span><i class="hw-key hw-key--ms"></i>Contract signed</span>
-            <span class="hw-chart__note">Indicative sequence, not to scale. Overlaps vary from project to project.</span>
+        <div class="rail" role="tablist" aria-label="Process steps" id="rail">
+          <button class="stop" role="tab" id="s1" aria-controls="p1" aria-selected="true" data-phase="1"><span class="stop__n">01</span><span class="stop__t">Enquiry</span></button>
+          <button class="stop" role="tab" id="s2" aria-controls="p2" aria-selected="false" tabindex="-1" data-phase="1"><span class="stop__n">02</span><span class="stop__t">Discovery call</span></button>
+          <button class="stop" role="tab" id="s3" aria-controls="p3" aria-selected="false" tabindex="-1" data-phase="1"><span class="stop__n">03</span><span class="stop__t">Site consultation</span></button>
+          <button class="stop" role="tab" id="s4" aria-controls="p4" aria-selected="false" tabindex="-1" data-phase="1"><span class="stop__n">04</span><span class="stop__t">Ballpark proposal</span></button>
+          <button class="stop stop--psa" role="tab" id="s5" aria-controls="p5" aria-selected="false" tabindex="-1" data-phase="2"><span class="stop__n">05</span><span class="stop__t">Preliminary Services Agreement</span></button>
+          <button class="stop stop--psa" role="tab" id="s6" aria-controls="p6" aria-selected="false" tabindex="-1" data-phase="2"><span class="stop__n">06</span><span class="stop__t">Design, selections &amp; pricing</span></button>
+          <button class="stop" role="tab" id="s7" aria-controls="p7" aria-selected="false" tabindex="-1" data-phase="2"><span class="stop__n">07</span><span class="stop__t">Fixed-price contract</span></button>
+          <button class="stop" role="tab" id="s8" aria-controls="p8" aria-selected="false" tabindex="-1" data-phase="2"><span class="stop__n">08</span><span class="stop__t">Building Approval</span></button>
+          <button class="stop" role="tab" id="s9" aria-controls="p9" aria-selected="false" tabindex="-1" data-phase="3"><span class="stop__n">09</span><span class="stop__t">Construction</span></button>
+          <button class="stop" role="tab" id="s10" aria-controls="p10" aria-selected="false" tabindex="-1" data-phase="3"><span class="stop__n">10</span><span class="stop__t">Handover &amp; aftercare</span></button>
+        </div>
+
+        <div class="detail" id="detail">
+          <!-- Each panel: number + title on the left, one short paragraph and three facts on the right -->
+          <div class="detail__panel" role="tabpanel" id="p1" aria-labelledby="s1">
+            <div class="detail__big"><span class="detail__phase">Phase 01 &middot; Get to know each other</span><div><span class="detail__num" aria-hidden="true">01</span><h3>Enquiry</h3></div></div>
+            <div class="detail__body"><p>Tell us a little about your home and what you have in mind. A few lines is plenty. We come back to you to set up a short call.</p>
+              <dl class="facts"><div><dt>How</dt><dd>Website, phone or email</dd></div><div><dt>Cost</dt><dd>Free</dd></div><div><dt>Next</dt><dd>A discovery call</dd></div></dl></div>
           </div>
+          <div class="detail__panel" role="tabpanel" id="p2" aria-labelledby="s2">
+            <div class="detail__big"><span class="detail__phase">Phase 01 &middot; Get to know each other</span><div><span class="detail__num" aria-hidden="true">02</span><h3>Discovery call</h3></div></div>
+            <div class="detail__body"><p>A short call about your scope, goals, rough budget and timing. We don&rsquo;t quote yet. It is too early for a number to be honest. If we&rsquo;re not the right fit, we&rsquo;ll say so, and often suggest a builder who is.</p>
+              <dl class="facts"><div><dt>Time</dt><dd>About 15 minutes</dd></div><div><dt>Cost</dt><dd>Free</dd></div><div><dt>You get</dt><dd>A straight answer on fit</dd></div></dl></div>
+          </div>
+          <div class="detail__panel" role="tabpanel" id="p3" aria-labelledby="s3">
+            <div class="detail__big"><span class="detail__phase">Phase 01 &middot; Get to know each other</span><div><span class="detail__num" aria-hidden="true">03</span><h3>Site consultation</h3></div></div>
+            <div class="detail__body"><p>We walk your home together with any drawings or ideas you have: orientation, access, structure, neighbours. Just as important, we hear what frustrates you about the house now and how you want it to feel.</p>
+              <dl class="facts"><div><dt>Time</dt><dd>About an hour on site</dd></div><div><dt>Cost</dt><dd>Free</dd></div><div><dt>Bring</dt><dd>Any drawings or sketches</dd></div></dl></div>
+          </div>
+          <div class="detail__panel" role="tabpanel" id="p4" aria-labelledby="s4">
+            <div class="detail__big"><span class="detail__phase">Phase 01 &middot; Get to know each other</span><div><span class="detail__num" aria-hidden="true">04</span><h3>Ballpark proposal</h3></div></div>
+            <div class="detail__body"><p>A category-level price range for your scope, with what&rsquo;s included, an indicative timeline and your PSA fee. We send it the evening before we meet, then walk you through the numbers and the levers that change them.</p>
+              <dl class="facts"><div><dt>Time</dt><dd>Usually within two weeks</dd></div><div><dt>Cost</dt><dd>Free</dd></div><div><dt>You get</dt><dd>A clear picture of where you stand</dd></div></dl></div>
+          </div>
+          <div class="detail__panel" role="tabpanel" id="p5" aria-labelledby="s5">
+            <div class="detail__big"><span class="detail__phase">Phase 02 &middot; Plan &amp; price</span><div><span class="detail__num" aria-hidden="true">05</span><h3>Preliminary Services Agreement</h3></div></div>
+            <div class="detail__body"><p>A short written agreement for the pre-construction work that turns your ballpark into a fixed price. The fee is tiered to your project and quoted in writing before you sign.</p>
+              <dl class="facts"><div><dt>Cost</dt><dd>PSA fee</dd></div><div><dt>If you proceed</dt><dd>Credited in full against your contract</dd></div><div><dt>Includes</dt><dd>Your client portal</dd></div></dl></div>
+          </div>
+          <div class="detail__panel" role="tabpanel" id="p6" aria-labelledby="s6">
+            <div class="detail__big"><span class="detail__phase">Phase 02 &middot; Plan &amp; price</span><div><span class="detail__num" aria-hidden="true">06</span><h3>Design, selections &amp; pricing</h3></div></div>
+            <div class="detail__body"><p>Design is developed, consultants are coordinated, selections are made and trades price the real scope. These run alongside each other, not one after another. <a href="#psa" style="text-decoration:underline;text-underline-offset:3px">See how below.</a></p>
+              <dl class="facts"><div><dt>Time</dt><dd>Often six to eight weeks</dd></div><div><dt>Consultants</dt><dd>Generally paid by you directly</dd></div><div><dt>Tracked in</dt><dd>Your client portal</dd></div></dl></div>
+          </div>
+          <div class="detail__panel" role="tabpanel" id="p7" aria-labelledby="s7">
+            <div class="detail__big"><span class="detail__phase">Phase 02 &middot; Plan &amp; price</span><div><span class="detail__num" aria-hidden="true">07</span><h3>Fixed-price contract</h3></div></div>
+            <div class="detail__body"><p>The final quote, construction program and payment schedule. If it&rsquo;s over budget, we adjust scope together before you commit. Once signed, the price changes only through written variations you approve.</p>
+              <dl class="facts"><div><dt>Contract</dt><dd>MBA or HIA</dd></div><div><dt>Deposit</dt><dd>10% on signing</dd></div><div><dt>Also locks in</dt><dd>Your build slot</dd></div></dl></div>
+          </div>
+          <div class="detail__panel" role="tabpanel" id="p8" aria-labelledby="s8">
+            <div class="detail__big"><span class="detail__phase">Phase 02 &middot; Plan &amp; price</span><div><span class="detail__num" aria-hidden="true">08</span><h3>Building Approval</h3></div></div>
+            <div class="detail__body"><p>Where your project needs it, we usually lodge during the PSA once documents are ready and you&rsquo;re comfortable with the budget, so approval runs alongside pricing rather than after it.</p>
+              <dl class="facts"><div><dt>When</dt><dd>Where required</dd></div><div><dt>Certifier</dt><dd>Engaged and paid by you</dd></div><div><dt>Not needed?</dt><dd>Straight to construction</dd></div></dl></div>
+          </div>
+          <div class="detail__panel" role="tabpanel" id="p9" aria-labelledby="s9">
+            <div class="detail__big"><span class="detail__phase">Phase 03 &middot; Build</span><div><span class="detail__num" aria-hidden="true">09</span><h3>Construction</h3></div></div>
+            <div class="detail__body"><p>Our site manager is on your site every day and runs the delivery. Jeff runs the project. You get regular updates, site visits at major milestones, and nothing that changes cost happens without your written approval.</p>
+              <dl class="facts"><div><dt>On site</dt><dd>Site manager daily</dd></div><div><dt>Payments</dt><dd>Tied to milestones</dd></div><div><dt>Changes</dt><dd>Written variations only</dd></div></dl></div>
+          </div>
+          <div class="detail__panel" role="tabpanel" id="p10" aria-labelledby="s10">
+            <div class="detail__big"><span class="detail__phase">Phase 03 &middot; Build</span><div><span class="detail__num" aria-hidden="true">10</span><h3>Handover &amp; aftercare</h3></div></div>
+            <div class="detail__body"><p>We hand over with certificates, warranties and a full walkthrough. Then there&rsquo;s a 90-day defect period with us as your first call, and we&rsquo;re still happy to help long after.</p>
+              <dl class="facts"><div><dt>Defect period</dt><dd>90 days</dd></div><div><dt>You receive</dt><dd>Certificates &amp; warranties</dd></div><div><dt>After that</dt><dd>Still a phone call away</dd></div></dl></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== INSIDE THE PSA ====== -->
+    <section class="psa" id="psa" aria-labelledby="psa-h">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="label">Inside the PSA</span>
+            <h2 class="display h-lg" id="psa-h">The work <span class="it">before</span> the work.</h2>
+          </div>
+          <p class="lead">Design, consultants, selections and pricing move together, so by the time you sign, the decisions are made and the price is real.</p>
+        </div>
+
+        <figure class="lanes" id="lanes" aria-labelledby="lanes-cap">
+          <figcaption id="lanes-cap" class="sr">Diagram: during the Preliminary Services Agreement, design development, consultant coordination, selections and detailed pricing run in overlapping streams, with Building Approval lodged where required. They all lead to a fixed-price contract.</figcaption>
+          <div class="lanes__grid" aria-hidden="true">
+            <span class="lane__name">Design development</span><span class="lane__track"><i class="lane__bar" style="--l:0%;--r:38%;--i:0"></i></span>
+            <span class="lane__name">Consultants</span><span class="lane__track"><i class="lane__bar" style="--l:8%;--r:20%;--i:1"></i></span>
+            <span class="lane__name">Selections</span><span class="lane__track"><i class="lane__bar" style="--l:22%;--r:10%;--i:2"></i></span>
+            <span class="lane__name">Detailed pricing</span><span class="lane__track"><i class="lane__bar" style="--l:36%;--r:0%;--i:3"></i></span>
+            <span class="lane__name">Building Approval<small>Where required</small></span><span class="lane__track"><i class="lane__bar lane__bar--opt" style="--l:52%;--r:0%;--i:4"></i></span>
+            <span class="lanes__end"><span class="lock"><span class="lock__d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="10" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><span><strong>Fixed price</strong><small>Contract signed</small></span></span></span>
+          </div>
+          <div class="lanes__axis" aria-hidden="true"><span></span><span><span>PSA signed</span><span>Final quote</span></span><span></span></div>
         </figure>
 
-        <div class="hw-chart__callout">
-          <div>
-            <h3>The first conversations cost nothing</h3>
-            <p>The discovery call, site consultation and ballpark proposal are free. By the end of them you know whether we are the right builder and roughly what your project will cost.</p>
-          </div>
-          <div>
-            <h3>The real work runs in parallel</h3>
-            <p>During the PSA, design, consultants, selections and pricing move together rather than one after another. Where your project needs Building Approval, we can lodge during this period too.</p>
-          </div>
-          <div>
-            <h3>The price is fixed before we build</h3>
-            <p>By the time you sign a building contract, the scope is defined, the selections are made and the trade pricing has been checked. Changes after that go through written variations you approve.</p>
-          </div>
+        <div class="psa-facts">
+          <div><b>A paid service, <em>credited in full</em></b><p>The PSA fee is credited against your building contract if you go ahead. It only stands alone if you don&rsquo;t.</p></div>
+          <div><b>Selections, <em>in person</em></b><p>Cost-carrying choices are made at trade suppliers, with your architect, an interior designer or with us.</p></div>
+          <div><b>Consultants, <em>coordinated</em></b><p>We brief and coordinate engineers, surveyors, energy assessors and certifiers. Their fees are generally paid by you directly.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- ====== 03 STEP BY STEP ====== -->
-    <section class="hw-section hw--warm" id="steps" aria-labelledby="steps-h">
-      <div class="hw-wrap">
-        <p class="hw-sheet"><span class="hw-sheet__num">03</span> Step by step</p>
-        <h2 class="hw-h2" id="steps-h">What happens, <em>and when</em></h2>
-        <p class="hw-lede">The same process in more detail, in three parts. Every project is a little different, so timeframes here are typical rather than promised.</p>
-
-        <!-- Part I -->
-        <div class="hw-part" data-anchor id="part-1">
-          <div class="hw-part__head">
-            <p class="hw-part__num" aria-hidden="true">I</p>
-            <h3 class="hw-part__title">Getting to know each other</h3>
-            <span class="hw-part__tag">No cost to you</span>
-            <p class="hw-part__intro">Enough time for both of us to decide whether this is the right project and the right fit, before anyone commits to anything.</p>
+    <!-- ====== CLIENT PORTAL ======
+         The app views below are ILLUSTRATIONS built in HTML with fictional data, not screenshots.
+         To swap in real screenshots (demo data only): replace the contents of each .app__view
+         with <img src="/assets/pccp-<view>.png" alt="..."> and remove the .badge. -->
+    <section class="portal on-light" id="portal" aria-labelledby="portal-h">
+      <div class="wrap">
+        <div class="sec-head" style="text-align:center;grid-template-columns:1fr;justify-items:center">
+          <div>
+            <span class="label">Pre-Construction Client Portal</span>
+            <h2 class="display h-lg" id="portal-h">Your project, <span class="it">visible.</span></h2>
           </div>
-          <ol class="hw-steps">
-            <li class="hw-step">
-              <span class="hw-step__n" aria-hidden="true">01</span>
-              <div>
-                <h3>Initial enquiry</h3>
-                <ul class="hw-meta"><li>Website, phone or email</li></ul>
-                <p>Tell us a little about your home and what you have in mind. A few lines is plenty. We will come back to you to arrange a short call.</p>
-              </div>
-            </li>
-            <li class="hw-step">
-              <span class="hw-step__n" aria-hidden="true">02</span>
-              <div>
-                <h3>Discovery call</h3>
-                <ul class="hw-meta"><li>About 15 minutes</li><li>Free</li></ul>
-                <p>A short phone call so I can get a real read on what you are trying to build: your scope, what you are hoping to achieve, a rough budget and timeline, and where you are in your thinking. I do not quote at this stage. It is too early, and any number I gave you would not be accurate.</p>
-                <p class="hw-get"><b>You get</b> a straight answer on whether we are the right builder for your project and whether a site visit makes sense. If we are not the right fit, I will tell you, and often suggest a builder who is better matched.</p>
-              </div>
-            </li>
-            <li class="hw-step">
-              <span class="hw-step__n" aria-hidden="true">03</span>
-              <div>
-                <h3>Site consultation</h3>
-                <ul class="hw-meta"><li>About an hour on site</li><li>Free</li></ul>
-                <p>I walk through your home with you and any drawings, sketches or concepts you have. Orientation, access, existing structure, neighbouring conditions: the things that shape what is possible.</p>
-                <p>Just as important, I want to see what you like and do not like about the house now. What frustrates you every day, what you love and want to keep, and how you want the place to feel when we are finished. That conversation shapes the best design decisions later.</p>
-              </div>
-            </li>
-            <li class="hw-step">
-              <span class="hw-step__n" aria-hidden="true">04</span>
-              <div>
-                <h3>Ballpark proposal</h3>
-                <ul class="hw-meta"><li>Usually within two weeks</li><li>Free</li><li>Walked through in person</li></ul>
-                <p>An approximate, category-level price range for your scope. Not a single fixed number. It sets out what is in scope and what is not, an indicative timeline, and what the Preliminary Services Agreement would cover, including its fee.</p>
-                <p>I send it the evening before we meet so you can read it and note your questions. Then we go through it together: where the numbers come from, the levers that change them, and options such as a different scope split or staging the work.</p>
-                <p class="hw-get"><b>You get</b> a clear picture of where you stand. If the range fits, we talk about the PSA. If it does not, we talk honestly about how to bring the scope back.</p>
-              </div>
-            </li>
-          </ol>
+          <p class="lead" style="text-align:center">A long list of decisions and activities has to happen before a fixed price is possible. Our portal lets you see them, as they happen.</p>
         </div>
 
-        <!-- Part II -->
-        <div class="hw-part" data-anchor id="psa">
-          <div class="hw-part__head">
-            <p class="hw-part__num" aria-hidden="true">II</p>
-            <h3 class="hw-part__title">The Preliminary Services Agreement</h3>
-            <span class="hw-part__tag hw-part__tag--gold">Paid &middot; credited in full if you proceed</span>
-            <p class="hw-part__intro">Often around six to eight weeks, longer where there is significant design work or a Building Approval to prepare.</p>
-          </div>
-          <div>
-            <p class="hw-psa__lead">The PSA is where your ballpark becomes a fixed price. It is a short written agreement covering the pre-construction work needed to get there properly.</p>
-            <p class="hw-body">The PSA fee is tiered to suit your project and quoted in writing before you sign. If you go ahead to a building contract with us, the fee is credited in full against it. It only stands alone if you decide not to proceed.</p>
+        <div class="portal__tabs" role="tablist" aria-label="Portal features" id="ptabs">
+          <button class="ptab" role="tab" id="t-progress" aria-controls="v-progress" aria-selected="true" data-cap="&lt;b&gt;Progress.&lt;/b&gt; See where design, consultants, selections, pricing and approval are up to, any time.">Progress</button>
+          <button class="ptab" role="tab" id="t-actions" aria-controls="v-actions" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Actions.&lt;/b&gt; What&rsquo;s next, who it&rsquo;s waiting on and when it&rsquo;s due. If something needs you, it&rsquo;s obvious.">Actions</button>
+          <button class="ptab" role="tab" id="t-docs" aria-controls="v-docs" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Documents &amp;amp; approval.&lt;/b&gt; Project documents and a Building Approval checklist, so lodgement isn&rsquo;t held up.">Documents</button>
+          <button class="ptab" role="tab" id="t-sel" aria-controls="v-sel" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Selections.&lt;/b&gt; Review what&rsquo;s proposed for each room, confirm it or ask for a change.">Selections</button>
+          <button class="ptab" role="tab" id="t-spec" aria-controls="v-spec" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Specification.&lt;/b&gt; Agreed selections become the specification we price and build from.">Specification</button>
+        </div>
+        <p class="portal__caption" id="pcap" aria-live="polite"><b>Progress.</b> See where design, consultants, selections, pricing and approval are up to, any time.</p>
 
-            <p class="hw-subhead">What runs during the PSA</p>
-            <div class="hw-streams">
-              <div class="hw-stream">
-                <h3><span>A</span>Design development</h3>
-                <p>If your project needs an architect or designer, this is where the design is resolved. We attend design meetings where useful, give buildability input and keep the cost plan honest as the drawings develop.</p>
-              </div>
-              <div class="hw-stream">
-                <h3><span>B</span>Consultant coordination</h3>
-                <p>Engineer, energy assessor, surveyor, certifier and anyone else your project needs. We brief them, chase them and pull their work together. Their fees are generally paid by you directly.</p>
-              </div>
-              <div class="hw-stream">
-                <h3><span>C</span>Selections</h3>
-                <p>Every material, fitting and finish that carries a cost is chosen and confirmed, with the cost impact discussed as you go rather than discovered later.</p>
-              </div>
-              <div class="hw-stream">
-                <h3><span>D</span>Detailed pricing</h3>
-                <p>Real trades price real scope against your actual selections. This is what turns a range into a number we can stand behind.</p>
-              </div>
-              <div class="hw-stream">
-                <h3><span>E</span>Approval lodgement</h3>
-                <p>Where Building Approval or a DA is needed, we can lodge once the required documents are ready and you are comfortable with the budget, so approval runs alongside selections rather than after them.</p>
-              </div>
-              <div class="hw-stream hw-stream--portal">
-                <div>
-                  <h3><span>+</span>Your client portal</h3>
-                  <p>All of this is tracked in your pre-construction client portal, so you can see what is done, what is next and what is waiting on you.</p>
+        <div class="stage rv">
+          <div class="browser">
+            <div class="browser__chrome" aria-hidden="true"><i></i><i></i><i></i><span class="browser__url">Client Portal &middot; Demo project</span></div>
+            <div class="app">
+              <aside class="app__side" aria-hidden="true">
+                <img class="app__brand" src="../assets/logo-nav-gold-script.png" alt="">
+                <span class="on" data-for="v-progress">Overview</span>
+                <span data-for="v-actions">Actions</span>
+                <span data-for="v-docs">Documents</span>
+                <span data-for="v-sel">Selections</span>
+                <span data-for="v-spec">Specification</span>
+                <span class="grow"></span>
+                <span class="who">Demo client</span>
+              </aside>
+              <div class="app__main">
+                <span class="badge">Illustration &middot; fictional data</span>
+
+                <div class="app__view" role="tabpanel" id="v-progress" aria-labelledby="t-progress">
+                  <div class="m-head"><span class="m-eyebrow">Pre-construction</span><p class="m-title">Sample Street Residence</p><span class="m-sub">Demo project &middot; Extension and renovation</span></div>
+                  <div class="m-card"><p class="m-summary">Design and consultant work are underway. Two items need you.</p>
+                    <div class="m-seg"><i><b style="width:60%"></b></i><i><b style="width:50%"></b></i><i><b style="width:35%"></b></i><i><b style="width:25%"></b></i><i><b style="width:40%"></b></i></div></div>
+                  <div class="m-list">
+                    <div class="m-prog"><b>Design &amp; Plans</b><span class="m-track"><i style="width:60%"></i></span><small>In progress &middot; 3 of 5 complete</small></div>
+                    <div class="m-prog"><b>Consultants</b><span class="m-track"><i style="width:50%"></i></span><small>In progress &middot; 2 of 4 complete</small></div>
+                    <div class="m-prog"><b>Selections &amp; Finishes</b><span class="m-track"><i style="width:35%"></i></span><small>In progress &middot; 4 of 11 confirmed</small></div>
+                    <div class="m-prog"><b>Pricing &amp; Contract</b><span class="m-track"><i style="width:25%"></i></span><small>Started &middot; 1 of 4 complete</small></div>
+                    <div class="m-prog"><b>Building Approval</b><span class="m-track"><i style="width:40%"></i></span><small>6 of 15 documents accepted</small></div>
+                  </div>
                 </div>
-                <a href="#portal">See how it works <span aria-hidden="true">&rarr;</span></a>
-              </div>
-            </div>
 
-            <dl class="hw-define">
-              <dt>What we mean by &ldquo;selections&rdquo;</dt>
-              <dd>Every material, fitting, fixture and finish in your home: paint colours, tapware, lighting, joinery and its finishes and handles, flooring, tiles, benchtops, splashbacks, appliances, door and window hardware. If a term ever comes up that is not clear, ask. Most people have never needed these words before.</dd>
-            </dl>
+                <div class="app__view" role="tabpanel" id="v-actions" aria-labelledby="t-actions">
+                  <div class="m-head"><span class="m-eyebrow">Actions</span><p class="m-title">What happens next</p><span class="m-sub">Demo project &middot; Sample Street Residence</span></div>
+                  <p class="m-group">Needs your attention &middot; 2</p>
+                  <div class="m-list">
+                    <div class="m-row m-row--attn"><b>Review revised kitchen layout, option B</b><span class="m-pill m-pill--wait">Waiting on you</span><small><span class="m-due">Due Friday</span> &middot; Design &amp; Plans</small></div>
+                    <div class="m-row"><b>Confirm preferred window supplier</b><span class="m-pill m-pill--wait">Waiting on you</span><small>Date to be confirmed &middot; Consultants</small></div>
+                  </div>
+                  <p class="m-group">Coming up</p>
+                  <div class="m-list">
+                    <div class="m-row"><b>Issue footing details</b><span class="m-pill m-pill--grey">Engineer</span><small>Structural engineer &middot; next week</small></div>
+                    <div class="m-row"><b>Return draft energy assessment</b><span class="m-pill m-pill--grey">Consultant</span><small>Energy assessor &middot; in two weeks</small></div>
+                    <div class="m-row"><b>Trade pricing: joinery and stone</b><span class="m-pill m-pill--rev">Rentoule Projects</span><small>Once the kitchen layout is confirmed</small></div>
+                  </div>
+                </div>
 
-            <p class="hw-subhead">Three ways to run selections</p>
-            <div class="hw-paths">
-              <div>
-                <h4>With your architect</h4>
-                <p>Many architects include interior design in their service, which makes this the natural choice when one is on the project.</p>
-              </div>
-              <div>
-                <h4>With an interior designer</h4>
-                <p>Engaged by you directly. They come to the trade supplier appointments with us and lead the interior decisions.</p>
-              </div>
-              <div>
-                <h4>With us directly</h4>
-                <p>If you have a clear picture of what you want. We will guide the process and keep the cost impact honest. If you do not have a clear vision yet, a specialist will get you a better result.</p>
+                <div class="app__view" role="tabpanel" id="v-docs" aria-labelledby="t-docs">
+                  <div class="m-head"><span class="m-eyebrow">Building Approval</span><p class="m-title">Documents</p><span class="m-sub">6 of 15 accepted &middot; Demo project</span></div>
+                  <div class="m-list">
+                    <div class="m-row"><b>Architectural drawings</b><span class="m-pill m-pill--ok">Accepted</span><small>Architect / designer</small></div>
+                    <div class="m-row"><b>Site survey</b><span class="m-pill m-pill--ok">Accepted</span><small>Surveyor</small></div>
+                    <div class="m-row"><b>Structural engineering</b><span class="m-pill m-pill--rev">In review</span><small>Structural engineer</small></div>
+                    <div class="m-row"><b>Energy efficiency rating</b><span class="m-pill m-pill--grey">Requested</span><small>Energy assessor</small></div>
+                    <div class="m-row m-row--attn"><b>Tree declaration</b><span class="m-pill m-pill--wait">Needed from you</span><small><span class="m-due">Upload requested</span> &middot; Owner</small></div>
+                    <div class="m-row"><b>Owner&rsquo;s consent</b><span class="m-pill m-pill--ok">Accepted</span><small>Owner</small></div>
+                  </div>
+                </div>
+
+                <div class="app__view" role="tabpanel" id="v-sel" aria-labelledby="t-sel">
+                  <div class="m-head"><span class="m-eyebrow">Selections &amp; Finishes</span><p class="m-title">Kitchen</p><span class="m-sub">4 of 7 confirmed &middot; Demo project</span></div>
+                  <div class="m-chips" aria-hidden="true"><span class="m-chip m-chip--on">Kitchen</span><span class="m-chip">Ensuite</span><span class="m-chip">Laundry</span><span class="m-chip">Living</span></div>
+                  <div class="m-list">
+                    <div class="m-sel"><span class="m-sw" style="background:linear-gradient(135deg,#e9e6df,#d6d1c7)"></span><b>Benchtop</b><span class="m-pill m-pill--ok">Confirmed</span><small>Engineered stone, pencil-round edge</small></div>
+                    <div class="m-sel"><span class="m-sw" style="background:linear-gradient(135deg,#b9b6ad,#8d8a83)"></span><b>Sink mixer</b><span class="m-pill m-pill--wait">For your review</span><small>Pull-out spray, brushed nickel</small></div>
+                    <div class="m-sel"><span class="m-sw" style="background:repeating-linear-gradient(90deg,#dfe5df 0 10px,#cfd7cf 10px 11px)"></span><b>Splashback tile</b><span class="m-pill m-pill--rev">Change requested</span><small>Gloss finger tile, vertical stack</small></div>
+                    <div class="m-sel"><span class="m-sw" style="background:linear-gradient(135deg,#7d6449,#5c4632)"></span><b>Joinery finish</b><span class="m-pill m-pill--ok">Confirmed</span><small>Timber veneer, matt lacquer</small></div>
+                  </div>
+                </div>
+
+                <div class="app__view" role="tabpanel" id="v-spec" aria-labelledby="t-spec">
+                  <div class="m-head"><span class="m-eyebrow">Specification</span><p class="m-title">Ensuite</p><span class="m-sub">Compiled from agreed selections &middot; Demo project</span></div>
+                  <table class="m-spec">
+                    <thead><tr><th scope="col">Item</th><th scope="col">Selection</th><th scope="col">Location</th></tr></thead>
+                    <tbody>
+                      <tr><td>Floor tile</td><td>Porcelain, matt, 600 &times; 600</td><td>Floor and shower</td></tr>
+                      <tr><td>Wall tile</td><td>Handmade gloss, 65 &times; 200</td><td>Shower walls to ceiling</td></tr>
+                      <tr><td>Vanity</td><td>Wall-hung, timber veneer, stone top</td><td>North wall</td></tr>
+                      <tr><td>Tapware</td><td>Brushed nickel, wall-mounted</td><td>Vanity and shower</td></tr>
+                      <tr><td>Shower screen</td><td>Frameless, fixed panel</td><td>Shower</td></tr>
+                    </tbody>
+                  </table>
+                  <div class="m-foot"><span>5 of 5 items agreed</span><span>Ready for pricing</span></div>
+                </div>
               </div>
             </div>
           </div>
+
+          <div class="phone" aria-hidden="true">
+            <div class="phone__screen">
+              <div class="phone__top"><img src="../assets/logo-nav-gold-script.png" alt=""><span>Portal</span></div>
+              <div class="phone__body">
+                <span class="m-eyebrow">Needs you &middot; 2</span>
+                <p class="m-title">Sample Street</p>
+                <div class="m-list" style="margin-top:10px">
+                  <div class="m-row m-row--attn"><b>Review kitchen option B</b><small><span class="m-due">Due Friday</span></small></div>
+                  <div class="m-row"><b>Confirm window supplier</b><small>Date to be confirmed</small></div>
+                  <div class="m-row"><b>Upload tree declaration</b><small>Building Approval</small></div>
+                </div>
+                <p class="phone__notice">Illustration &middot; fictional data</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Part III -->
-        <div class="hw-part" data-anchor id="part-3">
-          <div class="hw-part__head">
-            <p class="hw-part__num" aria-hidden="true">III</p>
-            <h3 class="hw-part__title">Contract, approval and construction</h3>
-            <span class="hw-part__tag">Fixed-price contract</span>
-            <p class="hw-part__intro">The thinking is done. From here, the job is to build what was agreed, well, and to keep you informed while we do it.</p>
-          </div>
+        <p class="portal__note">Portal views shown are illustrations with fictional demonstration data. They will be replaced with screenshots of the working portal.</p>
+
+        <div class="portal__points">
+          <div class="rv"><b>One place to look</b><p>Progress, documents and decisions together, instead of scattered across emails and phone calls.</p></div>
+          <div class="rv"><b>Fewer surprises</b><p>Decisions are made and recorded as you go, so the final quote reflects choices you&rsquo;ve already seen.</p></div>
+          <div class="rv"><b>A clear record</b><p>Agreed selections feed the specification, giving you, us and our trades the same reference.</p></div>
+        </div>
+        <p class="portal__included"><span aria-hidden="true"></span>Included with your Preliminary Services Agreement. Not software we sell, part of how we work.</p>
+      </div>
+    </section>
+
+    <!-- ====== MONEY ====== -->
+    <section class="money on-light" id="money" aria-labelledby="money-h">
+      <div class="wrap">
+        <div class="sec-head">
           <div>
-            <ol class="hw-steps">
-              <li class="hw-step">
-                <span class="hw-step__n" aria-hidden="true">05</span>
-                <div>
-                  <h3>Final quote and fixed-price contract</h3>
-                  <ul class="hw-meta"><li>MBA or HIA contract</li><li>10% deposit on signing</li></ul>
-                  <p>Once selections are locked and trade pricing is checked, you receive the final quote, a construction program showing when each phase happens, and a payment schedule that ties progress claims to construction milestones.</p>
-                  <p>This is the checkpoint. If we are inside budget, we move to contract. If we are over, we scale back together, by adjusting scope or looking at alternatives on the biggest cost lines. If we are under, you can add scope back in. Signing the contract and paying the deposit is also what locks in your build slot.</p>
-                </div>
-              </li>
-              <li class="hw-step">
-                <span class="hw-step__n" aria-hidden="true">06</span>
-                <div>
-                  <h3>Building Approval</h3>
-                  <ul class="hw-meta"><li>Where required</li><li>Certifier engaged and paid by you</li></ul>
-                  <p>Most extensions and new homes need Building Approval, and some projects also need Development Approval. Because we usually lodge during the PSA, approval often runs alongside selections and pricing. Internal renovations that do not need approval move straight from contract to construction.</p>
-                </div>
-              </li>
-              <li class="hw-step">
-                <span class="hw-step__n" aria-hidden="true">07</span>
-                <div>
-                  <h3>Construction</h3>
-                  <ul class="hw-meta"><li>Site manager on site daily</li><li>Written variations only</li></ul>
-                  <p>Our site manager is on your site every day and runs the delivery. I am across every stage and run the project. You get regular progress updates, site visits at the major milestones, and a written variation for anything that would change cost or scope, approved by you before the work happens.</p>
-                </div>
-              </li>
-              <li class="hw-step">
-                <span class="hw-step__n" aria-hidden="true">08</span>
-                <div>
-                  <h3>Handover and aftercare</h3>
-                  <ul class="hw-meta"><li>90-day defect period</li><li>Certificates and warranties</li></ul>
-                  <p>We hand over your home with its certificates and warranties and walk you through everything that matters. Then there is a 90-day defect period where we are your first call for anything that needs attention.</p>
-                  <p>After that, if something comes up, we are still happy to help, either directly or by pointing you to the right person. Canberra is a small town. We want you to feel looked after long after the keys change hands.</p>
-                </div>
-              </li>
-            </ol>
-            <figure class="hw-part__photo">
-              <img src="../assets/holder-beams.jpg" alt="Living area with exposed timber beams and skylights in a completed Rentoule Projects renovation" width="1600" height="1066" loading="lazy">
-              <figcaption class="hw-caption"><span>Holder renovation</span><span>Rentoule Projects</span></figcaption>
-            </figure>
+            <span class="label">How the money works</span>
+            <h2 class="display h-lg" id="money-h">What you pay, <span class="it">and when.</span></h2>
           </div>
+          <p class="lead">No cost-plus. No number that only firms up once you&rsquo;re committed.</p>
+        </div>
+
+        <div class="ledger">
+          <div class="tile tile--free rv"><span class="tile__when">Steps 01 to 04</span><span class="tile__amt">Free</span><p>Enquiry, discovery call, site consultation and your ballpark proposal.</p></div>
+          <div class="tile tile--psa rv"><span class="tile__when">Steps 05 to 08</span><span class="tile__amt">PSA fee</span><p>Tiered to your project and quoted in writing on your ballpark, before you sign anything.</p><p class="credit">Credited in full against your building contract if you proceed.</p></div>
+          <div class="tile rv"><span class="tile__when">During the PSA</span><span class="tile__amt">Consultants</span><p>Designer, engineer, surveyor, energy assessor and certifier fees are generally paid by you directly.</p></div>
+          <div class="tile tile--dark rv"><span class="tile__when">Contract signed</span><span class="tile__amt">10% deposit</span><p>Then progress claims tied to construction milestones in your payment schedule.</p></div>
+          <div class="tile rv"><span class="tile__when">During construction</span><span class="tile__amt">Variations</span><p>Only in writing, priced and approved by you before the work happens.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- ====== 04 CLIENT PORTAL (PCCP) ======
-         The panels below are ILLUSTRATIVE PLACEHOLDERS built in HTML with fictional data.
-         To replace with real screenshots: inside each .hw-device__screen, replace the mock
-         markup (and the .hw-badge) with <img src="/assets/pccp-<name>.png" alt="..." loading="lazy">.
-         Screenshots must use fictional demonstration data only. -->
-    <section class="hw-section hw--dark" id="portal" aria-labelledby="portal-h">
-      <div class="hw-wrap">
-        <p class="hw-sheet"><span class="hw-sheet__num">04</span> Pre-Construction Client Portal</p>
-        <div class="hw-portal__head">
-          <div>
-            <h2 class="hw-h2" id="portal-h">Pre-construction, <em>made visible</em></h2>
-            <p class="hw-lede">Before a fixed price is possible, a long list of things has to happen. Drawings developed, consultants briefed, reports returned, products chosen, approval documents gathered, and every cost-carrying decision priced. Most of that work is invisible to clients. Our portal makes it visible.</p>
-          </div>
-          <div class="hw-portal__included">
-            <strong>Not software we sell. Part of the service.</strong>
-            <p>The portal comes with your Preliminary Services Agreement. It is how we run and report on the pre-construction work for your project, and where you take part in it.</p>
-          </div>
+    <!-- ====== WORK ====== -->
+    <section class="gallery" aria-labelledby="gallery-h">
+      <div class="wrap">
+        <div class="gallery__head">
+          <h2 class="display h-md" id="gallery-h">Planned properly. <span class="it">Built to last.</span></h2>
+          <a href="/#case-studies" class="btn btn--line">See our projects</a>
         </div>
-
-        <div class="hw-showcase" data-tabs>
-          <div class="hw-tabs" role="tablist" aria-label="Client portal features">
-            <button class="hw-tab" role="tab" id="tab-progress" aria-controls="panel-progress" aria-selected="true"><span class="hw-tab__n">01</span><span class="hw-tab__t">Progress</span></button>
-            <button class="hw-tab" role="tab" id="tab-actions" aria-controls="panel-actions" aria-selected="false" tabindex="-1"><span class="hw-tab__n">02</span><span class="hw-tab__t">Actions</span></button>
-            <button class="hw-tab" role="tab" id="tab-documents" aria-controls="panel-documents" aria-selected="false" tabindex="-1"><span class="hw-tab__n">03</span><span class="hw-tab__t">Documents &amp; approval</span></button>
-            <button class="hw-tab" role="tab" id="tab-selections" aria-controls="panel-selections" aria-selected="false" tabindex="-1"><span class="hw-tab__n">04</span><span class="hw-tab__t">Selections</span></button>
-            <button class="hw-tab" role="tab" id="tab-spec" aria-controls="panel-spec" aria-selected="false" tabindex="-1"><span class="hw-tab__n">05</span><span class="hw-tab__t">Specification</span></button>
-          </div>
-
-          <div class="hw-panels">
-            <!-- Panel 1: Progress -->
-            <div class="hw-panel" role="tabpanel" id="panel-progress" aria-labelledby="tab-progress" tabindex="0">
-              <div class="hw-panel__copy">
-                <h3>See where your project is up to</h3>
-                <p>Progress across design, consultants, selections, pricing and Building Approval, whenever you want to check, without waiting for an update email.</p>
-              </div>
-              <figure class="hw-device" data-pccp-placeholder="progress">
-                <div class="hw-device__frame" aria-label="Illustration of the portal progress overview, using fictional data">
-                  <div class="hw-device__chrome" aria-hidden="true"><i></i><i></i><i></i><span class="hw-device__url">Client Portal &middot; Demo project</span></div>
-                  <div class="hw-device__bar"><span class="hw-device__brand">Rentoule Projects</span><small>Client Portal</small></div>
-                  <div class="hw-device__screen">
-                    <span class="hw-badge">Illustration &middot; fictional data</span>
-                    <div class="m-head"><span class="m-eyebrow">Pre-construction</span><p class="m-title">Sample Street Residence</p><span class="m-sub">Demo project &middot; Extension and renovation</span></div>
-                    <div class="m-card">
-                      <p class="m-summary">Design and consultant work are underway. Two items need you.</p>
-                      <div class="m-seg" aria-hidden="true"><i><b style="width:60%"></b></i><i><b style="width:50%"></b></i><i><b style="width:35%"></b></i><i><b style="width:25%"></b></i><i><b style="width:40%"></b></i></div>
-                    </div>
-                    <div class="m-list">
-                      <div class="m-prog"><b>Design &amp; Plans</b><span class="m-track"><i style="width:60%"></i></span><small>In progress &middot; 3 of 5 complete</small></div>
-                      <div class="m-prog"><b>Consultants</b><span class="m-track"><i style="width:50%"></i></span><small>In progress &middot; 2 of 4 complete</small></div>
-                      <div class="m-prog"><b>Selections &amp; Finishes</b><span class="m-track"><i style="width:35%"></i></span><small>In progress &middot; 4 of 11 confirmed</small></div>
-                      <div class="m-prog"><b>Pricing &amp; Contract</b><span class="m-track"><i style="width:25%"></i></span><small>Started &middot; 1 of 4 complete</small></div>
-                      <div class="m-prog"><b>Building Approval</b><span class="m-track"><i style="width:40%"></i></span><small>Documents in progress &middot; 6 of 15 accepted</small></div>
-                    </div>
-                  </div>
-                </div>
-                <figcaption>Illustrative placeholder built for this page with fictional demonstration data. It will be replaced with a screenshot of the working portal.</figcaption>
-              </figure>
-            </div>
-
-            <!-- Panel 2: Actions -->
-            <div class="hw-panel" role="tabpanel" id="panel-actions" aria-labelledby="tab-actions" tabindex="0">
-              <div class="hw-panel__copy">
-                <h3>Know what is next, and who it is waiting on</h3>
-                <p>Outstanding actions with an owner and a date, whether they sit with you, with us or with a consultant. When something needs you, it is obvious.</p>
-              </div>
-              <figure class="hw-device" data-pccp-placeholder="actions">
-                <div class="hw-device__frame" aria-label="Illustration of the portal actions list, using fictional data">
-                  <div class="hw-device__chrome" aria-hidden="true"><i></i><i></i><i></i><span class="hw-device__url">Client Portal &middot; Demo project</span></div>
-                  <div class="hw-device__bar"><span class="hw-device__brand">Rentoule Projects</span><small>Client Portal</small></div>
-                  <div class="hw-device__screen">
-                    <span class="hw-badge">Illustration &middot; fictional data</span>
-                    <div class="m-head"><span class="m-eyebrow">Actions</span><p class="m-title">What happens next</p><span class="m-sub">Demo project &middot; Sample Street Residence</span></div>
-                    <p class="m-group">Needs your attention &middot; 2</p>
-                    <div class="m-list">
-                      <div class="m-row m-row--attn"><b>Review revised kitchen layout, option B</b><span class="m-pill m-pill--wait">Waiting on you</span><small><span class="m-due">Due Friday</span> &middot; Design &amp; Plans</small></div>
-                      <div class="m-row"><b>Confirm preferred window supplier</b><span class="m-pill m-pill--wait">Waiting on you</span><small>Date to be confirmed &middot; Consultants</small></div>
-                    </div>
-                    <p class="m-group">Coming up</p>
-                    <div class="m-list">
-                      <div class="m-row"><b>Issue footing details</b><span class="m-pill m-pill--grey">Engineer</span><small>Structural engineer &middot; next week</small></div>
-                      <div class="m-row"><b>Return draft energy assessment</b><span class="m-pill m-pill--grey">Consultant</span><small>Energy assessor &middot; in two weeks</small></div>
-                      <div class="m-row"><b>Trade pricing: joinery and stone</b><span class="m-pill m-pill--rev">Rentoule Projects</span><small>Once kitchen layout is confirmed</small></div>
-                    </div>
-                  </div>
-                </div>
-                <figcaption>Illustrative placeholder built for this page with fictional demonstration data. It will be replaced with a screenshot of the working portal.</figcaption>
-              </figure>
-            </div>
-
-            <!-- Panel 3: Documents -->
-            <div class="hw-panel" role="tabpanel" id="panel-documents" aria-labelledby="tab-documents" tabindex="0">
-              <div class="hw-panel__copy">
-                <h3>Documents and Building Approval in one place</h3>
-                <p>Project documents, plus a checklist of what is needed for Building Approval and where each item is up to, so lodgement is not held up by one missing form.</p>
-              </div>
-              <figure class="hw-device" data-pccp-placeholder="documents">
-                <div class="hw-device__frame" aria-label="Illustration of the portal Building Approval document checklist, using fictional data">
-                  <div class="hw-device__chrome" aria-hidden="true"><i></i><i></i><i></i><span class="hw-device__url">Client Portal &middot; Demo project</span></div>
-                  <div class="hw-device__bar"><span class="hw-device__brand">Rentoule Projects</span><small>Client Portal</small></div>
-                  <div class="hw-device__screen">
-                    <span class="hw-badge">Illustration &middot; fictional data</span>
-                    <div class="m-head"><span class="m-eyebrow">Building Approval</span><p class="m-title">Documents</p><span class="m-sub">6 of 15 accepted &middot; Demo project</span></div>
-                    <div class="m-list">
-                      <div class="m-row"><b>Architectural drawings</b><span class="m-pill m-pill--ok">Accepted</span><small>Architect / designer</small></div>
-                      <div class="m-row"><b>Site survey</b><span class="m-pill m-pill--ok">Accepted</span><small>Surveyor</small></div>
-                      <div class="m-row"><b>Structural engineering</b><span class="m-pill m-pill--rev">In review</span><small>Structural engineer</small></div>
-                      <div class="m-row"><b>Energy efficiency rating</b><span class="m-pill m-pill--grey">Requested</span><small>Energy assessor</small></div>
-                      <div class="m-row m-row--attn"><b>Tree declaration</b><span class="m-pill m-pill--wait">Needed from you</span><small><span class="m-due">Upload requested</span> &middot; Owner</small></div>
-                      <div class="m-row"><b>Owner&rsquo;s consent</b><span class="m-pill m-pill--ok">Accepted</span><small>Owner</small></div>
-                    </div>
-                  </div>
-                </div>
-                <figcaption>Illustrative placeholder built for this page with fictional demonstration data. It will be replaced with a screenshot of the working portal.</figcaption>
-              </figure>
-            </div>
-
-            <!-- Panel 4: Selections -->
-            <div class="hw-panel" role="tabpanel" id="panel-selections" aria-labelledby="tab-selections" tabindex="0">
-              <div class="hw-panel__copy">
-                <h3>Take part in your selections</h3>
-                <p>Review the selections proposed for each room, confirm the ones you are happy with and flag the ones you want to change, with a clear record of what has been agreed.</p>
-              </div>
-              <figure class="hw-device" data-pccp-placeholder="selections">
-                <div class="hw-device__frame" aria-label="Illustration of the portal selections view, using fictional data">
-                  <div class="hw-device__chrome" aria-hidden="true"><i></i><i></i><i></i><span class="hw-device__url">Client Portal &middot; Demo project</span></div>
-                  <div class="hw-device__bar"><span class="hw-device__brand">Rentoule Projects</span><small>Client Portal</small></div>
-                  <div class="hw-device__screen">
-                    <span class="hw-badge">Illustration &middot; fictional data</span>
-                    <div class="m-head"><span class="m-eyebrow">Selections &amp; Finishes</span><p class="m-title">Kitchen</p><span class="m-sub">4 of 7 confirmed &middot; Demo project</span></div>
-                    <div class="m-chips" aria-hidden="true"><span class="m-chip m-chip--on">Kitchen</span><span class="m-chip">Ensuite</span><span class="m-chip">Laundry</span><span class="m-chip">Living</span></div>
-                    <div class="m-list">
-                      <div class="m-sel"><span class="m-swatch" style="background:linear-gradient(135deg,#e9e6df,#d6d1c7)"></span><b>Benchtop</b><span class="m-pill m-pill--ok">Confirmed</span><small>Engineered stone, pencil-round edge</small></div>
-                      <div class="m-sel"><span class="m-swatch" style="background:linear-gradient(135deg,#b9b6ad,#8d8a83)"></span><b>Sink mixer</b><span class="m-pill m-pill--wait">For your review</span><small>Pull-out spray, brushed nickel</small></div>
-                      <div class="m-sel"><span class="m-swatch" style="background:repeating-linear-gradient(90deg,#dfe5df 0 10px,#cfd7cf 10px 11px)"></span><b>Splashback tile</b><span class="m-pill m-pill--rev">Change requested</span><small>Gloss finger tile, vertical stack</small></div>
-                      <div class="m-sel"><span class="m-swatch" style="background:linear-gradient(135deg,#7d6449,#5c4632)"></span><b>Joinery finish</b><span class="m-pill m-pill--ok">Confirmed</span><small>Timber veneer, matt lacquer</small></div>
-                    </div>
-                  </div>
-                </div>
-                <figcaption>Illustrative placeholder built for this page with fictional demonstration data. It will be replaced with a screenshot of the working portal.</figcaption>
-              </figure>
-            </div>
-
-            <!-- Panel 5: Specification -->
-            <div class="hw-panel" role="tabpanel" id="panel-spec" aria-labelledby="tab-spec" tabindex="0">
-              <div class="hw-panel__copy">
-                <h3>From agreed decisions to a construction specification</h3>
-                <p>Once selections are agreed, the portal helps turn them into the specification we price and build from, so the decisions you made carry through to construction.</p>
-              </div>
-              <figure class="hw-device" data-pccp-placeholder="specification">
-                <div class="hw-device__frame" aria-label="Illustration of a construction specification compiled from agreed selections, using fictional data">
-                  <div class="hw-device__chrome" aria-hidden="true"><i></i><i></i><i></i><span class="hw-device__url">Client Portal &middot; Demo project</span></div>
-                  <div class="hw-device__bar"><span class="hw-device__brand">Rentoule Projects</span><small>Client Portal</small></div>
-                  <div class="hw-device__screen">
-                    <span class="hw-badge">Illustration &middot; fictional data</span>
-                    <div class="m-head"><span class="m-eyebrow">Specification</span><p class="m-title">Ensuite</p><span class="m-sub">Compiled from agreed selections &middot; Demo project</span></div>
-                    <table class="m-spec">
-                      <thead><tr><th scope="col">Item</th><th scope="col">Selection</th><th scope="col">Location</th></tr></thead>
-                      <tbody>
-                        <tr><td>Floor tile</td><td>Porcelain, matt, 600 &times; 600</td><td>Floor and shower</td></tr>
-                        <tr><td>Wall tile</td><td>Handmade gloss, 65 &times; 200</td><td>Shower walls to ceiling</td></tr>
-                        <tr><td>Vanity</td><td>Wall-hung, timber veneer, stone top</td><td>North wall</td></tr>
-                        <tr><td>Tapware</td><td>Brushed nickel, wall-mounted</td><td>Vanity and shower</td></tr>
-                        <tr><td>Shower screen</td><td>Frameless, fixed panel</td><td>Shower</td></tr>
-                      </tbody>
-                    </table>
-                    <div class="m-foot"><span>5 of 5 items agreed</span><span>Ready for pricing</span></div>
-                  </div>
-                </div>
-                <figcaption>Illustrative placeholder built for this page with fictional demonstration data. It will be replaced with a screenshot of the working portal.</figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="hw-why">
-          <div>
-            <h3>One place to look</h3>
-            <p>Progress, documents and decisions live together, instead of being scattered across email threads, attachments and phone calls.</p>
-          </div>
-          <div>
-            <h3>Fewer surprises at the final quote</h3>
-            <p>Because decisions are made and recorded as you go, the final quote reflects choices you have already seen and agreed.</p>
-          </div>
-          <div>
-            <h3>A clear record of what was agreed</h3>
-            <p>Agreed selections feed into the specification, which gives you, us and our trades the same reference point once construction starts.</p>
-          </div>
+        <div class="gallery__grid">
+          <figure class="shot shot--tall rv"><img src="../assets/holder-fireplace.jpg" alt="Marble feature fireplace with an integrated woodstack in a Holder renovation" width="1600" height="2400" loading="lazy"><figcaption>Holder</figcaption></figure>
+          <figure class="shot rv"><img src="../assets/griffith-shower.jpg" alt="Ensuite with green zellige tile and brass fittings in a Griffith renovation" width="1400" height="934" loading="lazy"><figcaption>Griffith</figcaption></figure>
+          <figure class="shot shot--tall rv"><img src="../assets/weetangera-ensuite.jpg" alt="Ensuite with chevron marble feature wall and timber vanity in a Weetangera renovation" width="1600" height="2400" loading="lazy"><figcaption>Weetangera</figcaption></figure>
+          <figure class="shot rv"><img src="../assets/holder-beams.jpg" alt="Living area with exposed timber beams and skylights in a Holder renovation" width="1600" height="1066" loading="lazy"><figcaption>Holder</figcaption></figure>
         </div>
       </div>
     </section>
 
-    <!-- ====== 05 MONEY ====== -->
-    <section class="hw-section" id="money" aria-labelledby="money-h">
-      <div class="hw-wrap">
-        <p class="hw-sheet"><span class="hw-sheet__num">05</span> Costs</p>
-        <div class="hw-money">
-          <div>
-            <h2 class="hw-h2" id="money-h">How the money <em>works</em></h2>
-            <p class="hw-lede">What you pay, when, and to whom. No cost-plus, and no number that firms up only after you are committed.</p>
-            <blockquote class="hw-money__quote">
-              &ldquo;Transparency around money is something I pride myself on. A quote off drawings alone is a guess dressed up as a number. The PSA is how we get to a real one.&rdquo;
-              <footer>Jeff Rentoule</footer>
-            </blockquote>
+    <!-- ====== FIT + FAQ ====== -->
+    <section class="fitfaq on-light" aria-label="Is it a fit, and common questions">
+      <div class="wrap fitfaq__grid">
+        <div class="fit">
+          <h2 class="display h-md">Are we <span class="it">right for you?</span></h2>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>You want a major renovation, extension or custom home done properly.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>You&rsquo;d rather have a fixed price you can trust than the lowest number on day one.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>You want to be involved in decisions, with a builder alongside you.</li>
+            <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg><span><span class="sr">Not a fit if: </span>You&rsquo;re mainly looking for the cheapest quote, or a fixed price off concept drawings in a few days.</span></li>
+          </ul>
+          <div class="fit__range">
+            <span>Most of our clients invest</span>
+            <b>$300k to $900k</b>
+            <p>and some projects are considerably larger. Your ballpark shows where yours is likely to sit.</p>
           </div>
-          <table class="hw-ledger">
-            <caption>From first call to completion</caption>
-            <thead><tr><th scope="col">Stage</th><th scope="col">Cost to you</th><th scope="col">Notes</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">Discovery call</th><td class="hw-free">Free</td><td>About 15 minutes by phone.</td></tr>
-              <tr><th scope="row">Site consultation</th><td class="hw-free">Free</td><td>About an hour at your home.</td></tr>
-              <tr><th scope="row">Ballpark proposal</th><td class="hw-free">Free</td><td>A category-level price range in writing, with your PSA fee quoted.</td></tr>
-              <tr class="is-key"><th scope="row">Preliminary Services Agreement</th><td>PSA fee, quoted in writing before you sign</td><td>Tiered to your project. Credited in full against your building contract if you proceed. It only stands alone if you decide not to go ahead.</td></tr>
-              <tr><th scope="row">Consultants and certifier</th><td>Generally paid by you directly</td><td>Architect or designer, engineer, energy assessor, surveyor, certifier and others as needed. Their fees vary too much with scale to fix at ballpark.</td></tr>
-              <tr><th scope="row">Fixed-price building contract</th><td>10% deposit on signing</td><td>Then progress claims tied to construction milestones in your payment schedule.</td></tr>
-              <tr><th scope="row">Changes during the build</th><td>Written variation</td><td>Priced and approved by you before the work happens. No written variation, no price change.</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- ====== 06 FIT ====== -->
-    <section class="hw-section hw--warm" id="fit" aria-labelledby="fit-h">
-      <div class="hw-wrap">
-        <p class="hw-sheet"><span class="hw-sheet__num">06</span> Is it a fit?</p>
-        <h2 class="hw-h2" id="fit-h">Who we are <em>right for</em></h2>
-        <p class="hw-lede">We are not trying to be the cheapest builder in Canberra. We are trying to be the one you are glad you chose two years after the job is finished. That suits some people better than others.</p>
-
-        <div class="hw-fit">
-          <div class="hw-fit__col">
-            <h3>We tend to be a good fit if you</h3>
-            <ul>
-              <li>are planning a major renovation, extension or custom home and want it done properly</li>
-              <li>would rather have a fixed price you can trust than the lowest number on day one</li>
-              <li>want to be involved in decisions, with a builder alongside you</li>
-              <li>see the value in planning before construction starts</li>
-            </ul>
-          </div>
-          <div class="hw-fit__col hw-fit__col--no">
-            <h3>We are probably not the right builder if you</h3>
-            <ul>
-              <li>are mainly looking for the cheapest quote</li>
-              <li>want a fixed price off concept drawings within a few days</li>
-              <li>would prefer to skip pre-construction and work it out as we go</li>
-            </ul>
-          </div>
-          <p class="hw-fit__note"><strong>For context:</strong> most of our clients invest somewhere between $300,000 and $900,000, and some projects are considerably larger. Your ballpark proposal will tell you where yours is likely to sit.</p>
         </div>
 
-        <div class="hw-questions" data-anchor id="questions">
-          <div class="hw-questions__intro">
-            <h3>Questions worth thinking about before we talk</h3>
-            <p>You do not need answers to all of these. Where you are unsure is useful too. It tells us where to spend our time together. Bring them to the discovery call.</p>
-          </div>
-          <ol class="hw-qlist">
-            <li><div><h4>What scope of work do you have in mind?</h4></div><p>Bathroom, kitchen, whole house, extension, knockdown rebuild. If you are not sure, have a sense of how you want the finished home to feel.</p></li>
-            <li><div><h4>What are you really trying to achieve?</h4></div><p>Not the renovation, the reason for it. More room for a growing family, a home to age in, a kitchen you can cook in properly.</p></li>
-            <li><div><h4>Are you weighing more than one option?</h4></div><p>Renovate or rebuild, extend up or out, stay or sell. Tell us what is pulling you each way. We are always happy to give a professional view.</p></li>
-            <li><div><h4>What is your realistic budget, and your dream budget?</h4></div><p>Both matter. One keeps the project honest. The other shows where the biggest levers are.</p></li>
-            <li><div><h4>Do you have drawings, or is it still an idea?</h4></div><p>A sketch, a concept, full drawings or a half-finished DA. There is no wrong answer. It tells us where we are starting.</p></li>
-            <li><div><h4>Have you spoken to other builders?</h4></div><p>What did you like or dislike about how they approached it? Speaking to more than one builder is a good idea.</p></li>
-            <li><div><h4>Who else is part of the decision?</h4></div><p>Partner, family, a financial adviser. It helps to have every decision-maker involved from the start.</p></li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!-- ====== 07 FAQ ====== -->
-    <section class="hw-section" id="faq" aria-labelledby="faq-h">
-      <div class="hw-wrap">
-        <p class="hw-sheet"><span class="hw-sheet__num">07</span> Questions</p>
-        <div class="hw-faq">
-          <div class="hw-faq__aside">
-            <h2 class="hw-h2" id="faq-h">Questions clients <em>ask us</em></h2>
-            <p>If yours is not here, ask it on the discovery call. For a deeper look at costs, approvals and planning in the ACT, read our free <a href="/canberra-renovation-guide/">Canberra Renovation Guide</a>.</p>
-          </div>
-          <div class="hw-faq__list">
-            <details>
-              <summary>Why pay for a PSA instead of getting a quote off drawings?</summary>
-              <div class="hw-faq__a"><p>Because a quote off drawings alone has to guess at everything the drawings do not say: the selections, the consultant requirements, the site details. Real prices come from real trades pricing a defined scope with real selections. The PSA is how we get there honestly, and if you go ahead the fee is credited in full against your contract.</p></div>
-            </details>
-            <details>
-              <summary>What happens if the final quote comes in over budget?</summary>
-              <div class="hw-faq__a"><p>We scale back together. Either we adjust the scope, such as deferring a deck or choosing a different cladding, or we go back to suppliers for alternatives on the biggest cost lines. The final quote is a checkpoint that exists so this can happen before you are committed to a contract.</p></div>
-            </details>
-            <details>
-              <summary>How firm is the fixed price?</summary>
-              <div class="hw-faq__a"><p>The contract price changes only through a written variation that you approve. If something in the scope or site conditions changes, we write it up and price it, and you approve or decline it before the work happens.</p></div>
-            </details>
-            <details>
-              <summary>How long before construction starts?</summary>
-              <div class="hw-faq__a"><p>As a rough guide, from discovery call to site start, expect around two to three months for a renovation that does not need approval, and four to six months for an extension or new home that needs Building Approval. The PSA is the largest part of that, and it is time well spent.</p></div>
-            </details>
-            <details>
-              <summary>We already have an architect or designer. Is that a problem?</summary>
-              <div class="hw-faq__a"><p>Not at all. It is common, and often better. Bring them in early. We work with your designer through the PSA, attend design meetings where useful, and give buildability and cost input as the drawings develop.</p></div>
-            </details>
-            <details>
-              <summary>Do we need to use the client portal?</summary>
-              <div class="hw-faq__a"><p>The portal is part of how we run pre-construction under the PSA, so it is there for you from the start. It does not replace talking to us. It means you can see where things are up to between conversations, and find what you need without searching through emails.</p></div>
-            </details>
-          </div>
+        <div class="faq">
+          <h2 class="display h-md">Good <span class="it" style="font-style:italic;color:var(--forest)">questions.</span></h2>
+          <details>
+            <summary>Why pay for a PSA instead of a quote off drawings?<i aria-hidden="true"></i></summary>
+            <p>A quote off drawings alone has to guess at everything the drawings don&rsquo;t say: selections, consultant requirements, site details. The PSA replaces those guesses with real decisions and real trade pricing. If you go ahead, the fee is credited in full.</p>
+          </details>
+          <details>
+            <summary>What if the final quote is over budget?<i aria-hidden="true"></i></summary>
+            <p>We scale back together, by adjusting scope or looking at alternatives on the biggest cost lines. That checkpoint exists so it happens before you&rsquo;re committed to a contract.</p>
+          </details>
+          <details>
+            <summary>How long before construction starts?<i aria-hidden="true"></i></summary>
+            <p>As a rough guide, two to three months for a renovation that doesn&rsquo;t need approval, and four to six months for an extension or new home that needs Building Approval.</p>
+          </details>
+          <details>
+            <summary>We already have an architect. Is that a problem?<i aria-hidden="true"></i></summary>
+            <p>Not at all. It&rsquo;s common, and often better. We work with your designer through the PSA, attend design meetings where useful and give buildability and cost input as drawings develop.</p>
+          </details>
+          <details>
+            <summary>Who runs selections with us?<i aria-hidden="true"></i></summary>
+            <p>Your architect, an interior designer you engage, or us directly if you have a clear picture of what you want. Either way, cost impact is discussed as you choose, not discovered later.</p>
+          </details>
         </div>
       </div>
     </section>
 
     <!-- ====== CTA ====== -->
-    <section class="hw-cta" aria-labelledby="cta-h">
-      <div class="hw-wrap hw-cta__inner">
-        <div>
-          <h2 id="cta-h">Start with a <em>conversation</em></h2>
-          <p>No pressure and no hard sell. Bring your questions, any drawings you have, and a rough sense of what you are hoping to build. We will give you a straight read on whether we are the right builder for it.</p>
+    <section class="cta" aria-labelledby="cta-h">
+      <img class="cta__mark" src="../assets/logo-monogram-clean.png" alt="" aria-hidden="true">
+      <div class="wrap" style="position:relative">
+        <h2 class="display h-lg" id="cta-h">Let&rsquo;s talk about your <span class="script">home.</span></h2>
+        <p class="lead">No pressure and no hard sell. A short call is enough to know whether we&rsquo;re the right builder for your project.</p>
+        <div class="cta__row">
+          <a href="/#contact" class="btn btn--black">Start a conversation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="/canberra-renovation-guide/" class="btn btn--line">Read the renovation guide</a>
         </div>
-        <div class="hw-cta__actions">
-          <a href="/#contact" class="btn btn--primary">Get in touch</a>
-          <a href="/canberra-renovation-guide/" class="hw-link">Read the Canberra Renovation Guide <span aria-hidden="true">&rarr;</span></a>
+        <div class="bring">
+          <span class="label">Worth thinking about first</span>
+          <ul>
+            <li>What are you really trying to achieve?</li>
+            <li>Your realistic budget, and your dream one</li>
+            <li>Drawings, or still an idea?</li>
+            <li>Other options you&rsquo;re weighing</li>
+            <li>Who else is part of the decision</li>
+          </ul>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ====== FOOTER (shared site footer, unchanged) ====== -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer__grid">
-        <div>
-          <img src="../assets/logo-nav-gold.png" alt="Rentoule Projects" class="footer__logo-img">
-          <p class="footer__tagline">Making your house your home</p>
-          <p class="footer__about-text">Canberra residential builder specialising in home renovations, extensions and custom new builds from mid-range through to luxury. Director - Jeff Rentoule.</p>
-          <div class="footer__social">
-            <a href="https://www.instagram.com/rentoule_projects/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-            <a href="https://www.facebook.com/p/Rentoule-Projects-100093837338330/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
+  <!-- ====== FOOTER (prototype, page-local) ====== -->
+  <footer class="rp-footer">
+    <div class="wrap">
+      <div class="rp-footer__grid">
+        <div class="rp-footer__brand">
+          <img src="../assets/logo-stacked-gold.png" alt="Rentoule Projects" width="400" height="333" loading="lazy">
+          <p>Major renovations, extensions and selective custom homes in Canberra. Director, Jeff Rentoule.</p>
+          <div class="rp-social">
+            <a href="https://www.instagram.com/rentoule_projects/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://www.facebook.com/p/Rentoule-Projects-100093837338330/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
           </div>
         </div>
-        <div>
-          <h4 class="footer__heading">Services</h4>
-          <div class="footer__links">
-            <a href="/#services">New Builds</a>
-            <a href="/#services">Extensions</a>
-            <a href="/#services">Renovations</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__heading">Case Studies</h4>
-          <div class="footer__links">
-            <a href="/#case-studies">Chris - Weetangera</a>
-            <a href="/#case-studies">50 Year Home Renovation</a>
-            <a href="/#case-studies">Mark - Griffith</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__heading">Navigation</h4>
-          <div class="footer__links">
-            <a href="/">Home</a>
-            <a href="/#about">About</a>
-            <a href="/#services">Services</a>
-            <a href="/how-we-work/">How We Work</a>
-            <a href="/canberra-renovation-guide/">Guide</a>
-            <a href="/#contact">Contact</a>
-            <a href="/#blog">Blog</a>
-            <a href="/#careers">Careers</a>
-          </div>
-        </div>
+        <div><h3>Services</h3><ul><li><a href="/#services">Renovations</a></li><li><a href="/#services">Extensions</a></li><li><a href="/#services">Custom homes</a></li></ul></div>
+        <div><h3>Explore</h3><ul><li><a href="/how-we-work/">How we work</a></li><li><a href="/#case-studies">Projects</a></li><li><a href="/canberra-renovation-guide/">Renovation guide</a></li><li><a href="/#blog">Journal</a></li></ul></div>
+        <div><h3>Company</h3><ul><li><a href="/#about">About</a></li><li><a href="/#careers">Careers</a></li><li><a href="/#contact">Contact</a></li><li><a href="mailto:info@rentouleprojects.com">info@rentouleprojects.com</a></li></ul></div>
       </div>
-      <div class="footer__bottom">
-        <p>&copy; 2026 Rentoule Projects. All rights reserved.</p>
-        <p>Canberra, ACT, Australia</p>
-      </div>
+      <div class="rp-footer__base"><span>&copy; 2026 Rentoule Projects</span><span>Canberra, ACT</span></div>
     </div>
   </footer>
 
-  <script src="../app.js"></script>
   <script>
-  /* How We Work page behaviour: portal tabs, sub-nav highlighting, chart draw-in.
-     All content is readable without JavaScript. */
   (function () {
     'use strict';
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.addEventListener('load', function () { document.documentElement.classList.add('loaded'); });
 
-    // ---- Portal tabs (WAI-ARIA tabs pattern, manual activation by click, arrows move focus) ----
-    var root = document.querySelector('[data-tabs]');
-    if (root) {
-      var tabs = Array.prototype.slice.call(root.querySelectorAll('[role="tab"]'));
-      var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('aria-controls')); });
+    // ---- Header state + scroll progress ----
+    var header = document.getElementById('rpHeader');
+    var bar = document.querySelector('.rp-progress');
+    var hero = document.querySelector('.hero__text');
+    function onScroll() {
+      var y = window.scrollY;
+      var heroEnd = hero ? hero.offsetHeight - 80 : 200;
+      header.classList.toggle('is-solid', y > heroEnd);
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.transform = 'scaleX(' + (max > 0 ? y / max : 0) + ')';
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
 
-      function select(i, focus) {
-        tabs.forEach(function (t, j) {
-          var on = j === i;
-          t.setAttribute('aria-selected', on ? 'true' : 'false');
-          t.tabIndex = on ? 0 : -1;
-          panels[j].hidden = !on;
-        });
-        if (focus) tabs[i].focus();
-        // keep the active tab visible in the horizontal tab strip on small screens
-        if (tabs[i].scrollIntoView && window.matchMedia('(max-width: 960px)').matches) {
-          tabs[i].scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'smooth' });
-        }
-        if (window.clarity) { try { clarity('event', 'hww_portal_tab_' + tabs[i].id.replace('tab-', '')); } catch (e) {} }
+    // ---- Mobile menu ----
+    var menu = document.getElementById('rpMenu');
+    var burger = document.getElementById('rpBurger');
+    var closeBtn = document.getElementById('rpClose');
+    function openMenu() { menu.hidden = false; burger.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; requestAnimationFrame(function () { menu.classList.add('is-open'); setTimeout(function () { closeBtn.focus(); }, 30); }); }
+    function closeMenu() { if (menu.hidden) return; menu.classList.remove('is-open'); burger.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; setTimeout(function () { menu.hidden = true; }, 350); burger.focus(); }
+    burger.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !menu.hidden) closeMenu(); });
+    menu.addEventListener('keydown', function (e) {
+      if (e.key === 'Tab') { // keep focus inside the menu
+        var f = menu.querySelectorAll('a, button'); var first = f[0], last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
       }
+    });
+    menu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closeMenu); });
 
-      tabs.forEach(function (tab, i) {
-        tab.addEventListener('click', function () { select(i, false); });
-        tab.addEventListener('keydown', function (e) {
-          var k = e.key, n = tabs.length, next = null;
-          if (k === 'ArrowRight' || k === 'ArrowDown') next = (i + 1) % n;
-          else if (k === 'ArrowLeft' || k === 'ArrowUp') next = (i - 1 + n) % n;
-          else if (k === 'Home') next = 0;
-          else if (k === 'End') next = n - 1;
-          if (next !== null) { e.preventDefault(); select(next, true); }
+    // ---- Generic ARIA tabs ----
+    function tabs(list, onSelect) {
+      var t = Array.prototype.slice.call(list.querySelectorAll('[role="tab"]'));
+      var p = t.map(function (x) { return document.getElementById(x.getAttribute('aria-controls')); });
+      function select(i, focus) {
+        t.forEach(function (x, j) { var on = i === j; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; p[j].hidden = !on; });
+        if (focus) t[i].focus();
+        if (list.scrollWidth > list.clientWidth) { list.scrollTo({ left: t[i].offsetLeft - 24, behavior: reduce ? 'auto' : 'smooth' }); }
+        if (onSelect) onSelect(i, t[i]);
+      }
+      t.forEach(function (x, i) {
+        x.addEventListener('click', function () { select(i); });
+        x.addEventListener('keydown', function (e) {
+          var n = t.length, k = e.key, to = null;
+          if (k === 'ArrowRight') to = (i + 1) % n; else if (k === 'ArrowLeft') to = (i - 1 + n) % n;
+          else if (k === 'Home') to = 0; else if (k === 'End') to = n - 1;
+          if (to !== null) { e.preventDefault(); select(to, true); }
         });
       });
-      select(0, false);
+      select(0);
+      return { select: select, count: t.length };
     }
 
-    // ---- Sub-nav: highlight the section in view ----
-    var links = Array.prototype.slice.call(document.querySelectorAll('.hw-subnav__list a'));
-    var targets = links.map(function (a) { return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
-    if ('IntersectionObserver' in window && targets.length) {
-      var current = null;
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (en) { if (en.isIntersecting) current = en.target.id; });
-        links.forEach(function (a) {
-          var on = a.getAttribute('href') === '#' + current;
-          if (on) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
-        });
-        var active = links.filter(function (a) { return a.hasAttribute('aria-current'); })[0];
-        var list = document.querySelector('.hw-subnav__list');
-        if (active && list && list.scrollWidth > list.clientWidth) {
-          list.scrollTo({ left: active.offsetLeft - 16, behavior: 'smooth' });
-        }
-      }, { rootMargin: '-35% 0px -60% 0px' });
-      targets.forEach(function (t) { io.observe(t); });
-    }
+    // Process stepper with phase highlighting and prev/next
+    var phases = document.querySelectorAll('.phase');
+    var rail = document.getElementById('rail');
+    var current = 0;
+    var stepTabs = tabs(rail, function (i, tab) {
+      current = i;
+      var ph = tab.getAttribute('data-phase');
+      phases.forEach(function (x) { x.classList.toggle('is-on', x.getAttribute('data-phase') === ph); });
+      if (prev) { prev.disabled = i === 0; next.disabled = i === stepTabs.count - 1; }
+      if (window.clarity) { try { clarity('event', 'hww2_step_' + (i + 1)); } catch (e) {} }
+    });
+    // add prev/next controls to each panel's body
+    var prev, next;
+    var nav = document.createElement('div');
+    nav.className = 'detail__nav';
+    nav.innerHTML = '<button type="button" aria-label="Previous step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" aria-label="Next step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>';
+    prev = nav.children[0]; next = nav.children[1];
+    prev.addEventListener('click', function () { stepTabs.select(Math.max(0, current - 1)); });
+    next.addEventListener('click', function () { stepTabs.select(Math.min(stepTabs.count - 1, current + 1)); });
+    function placeNav() { var panel = document.getElementById('p' + (current + 1)); panel.querySelector('.detail__big').appendChild(nav); }
+    rail.addEventListener('click', placeNav); rail.addEventListener('keydown', function () { setTimeout(placeNav, 0); });
+    prev.addEventListener('click', placeNav); next.addEventListener('click', placeNav);
+    stepTabs.select(0); placeNav();
 
-    // ---- Programme chart: bars draw in once, in sequence (skipped for reduced motion) ----
-    var chart = document.getElementById('hw-chart');
-    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (chart && !reduce && 'IntersectionObserver' in window) {
-      chart.classList.add('is-armed');
-      var co = new IntersectionObserver(function (entries) {
-        entries.forEach(function (en) {
-          if (en.isIntersecting) { chart.classList.add('is-drawn'); co.disconnect(); }
-        });
-      }, { threshold: 0.25 });
-      co.observe(chart);
+    // Portal tabs with caption + sidebar highlight
+    var cap = document.getElementById('pcap');
+    var side = document.querySelectorAll('.app__side [data-for]');
+    tabs(document.getElementById('ptabs'), function (i, tab) {
+      cap.innerHTML = tab.getAttribute('data-cap');
+      side.forEach(function (s) { s.classList.toggle('on', s.getAttribute('data-for') === tab.getAttribute('aria-controls')); });
+      if (window.clarity) { try { clarity('event', 'hww2_portal_' + tab.id.replace('t-', '')); } catch (e) {} }
+    });
+
+    // ---- Reveal + PSA lanes ----
+    if ('IntersectionObserver' in window && !reduce) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add(e.target.id === 'lanes' ? 'go' : 'in'); io.unobserve(e.target); } });
+      }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+      document.querySelectorAll('.rv, #lanes').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.rv').forEach(function (el) { el.classList.add('in'); });
+      document.getElementById('lanes').classList.add('go');
     }
   })();
   </script>
