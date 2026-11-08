@@ -86,7 +86,7 @@
     /* Type system: three voices. Display (serif), label (sans caps), body (sans). */
     .display { font-family: var(--serif); font-weight: 300; line-height: 0.98; letter-spacing: -0.025em; }
     .label { font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; }
-    .h-xl { font-size: clamp(3rem, 7.4vw, 7rem); }
+    .h-xl { font-size: clamp(3rem, min(7.4vw, 11.5vh), 7rem); }
     .h-lg { font-size: clamp(2.9rem, 6vw, 5.6rem); }
     .h-md { font-size: clamp(2.2rem, 3.8vw, 3.4rem); line-height: 1.04; }
     .script { font-family: var(--script); font-weight: 400; font-style: normal; letter-spacing: 0; line-height: 0.7; }
@@ -232,6 +232,8 @@
     .facts dt { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: var(--gold-deep); margin-bottom: 0.3rem; }
     .facts dd { font-size: 0.9rem; font-weight: 500; line-height: 1.45; }
     .detail__nav { display: flex; gap: 0.5rem; margin-top: 1.6rem; }
+    .inline-link { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; color: var(--forest); font-weight: 500; }
+    .lanes__note { margin-top: 1rem; font-size: 0.78rem; font-style: italic; color: rgba(245,243,239,0.75); max-width: 70ch; }
     .detail__nav button { width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line); display: grid; place-items: center; transition: background 0.2s, border-color 0.2s; }
     .detail__nav button:hover { background: var(--ink); color: var(--cream); border-color: var(--ink); }
     .detail__nav button[disabled] { opacity: 0.3; pointer-events: none; }
@@ -480,11 +482,12 @@
       .values { grid-template-columns: 1fr; }
       .value { min-height: 0; padding: 1.8rem 1.4rem 2rem; }
       .value__n { font-size: 3.4rem; margin-bottom: 2.2rem; }
-      .rail { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin: 0 calc(var(--gutter) * -1); padding: 0 var(--gutter); }
+      .rail { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); scrollbar-width: none; margin: 0 calc(var(--gutter) * -1); padding: 0 var(--gutter); }
       .rail::-webkit-scrollbar { display: none; }
       .stop { flex: 0 0 132px; scroll-snap-align: start; min-height: 92px; }
       .detail__big, .detail__body { padding: 1.6rem 1.4rem; }
-      .detail__num { font-size: 4.6rem; }
+      .detail__num { font-size: 4.6rem; margin-top: 1rem; display: block; }
+      .detail__big h3 { margin-top: 0.8rem; }
       .facts { grid-template-columns: 1fr; }
       .facts div, .facts div + div { padding: 0.8rem 0; border-left: 0; border-bottom: 1px solid var(--line); }
       .lanes__grid { grid-template-columns: 1fr; row-gap: 4px; }
@@ -685,9 +688,9 @@
         <div class="sec-head">
           <div>
             <span class="label">The process</span>
-            <h2 class="display h-lg" id="process-h">Ten steps. <span class="it">No surprises.</span></h2>
+            <h2 class="display h-lg" id="process-h">Ten steps, <span class="it">clearly mapped.</span></h2>
           </div>
-          <p class="lead">Every project follows the same path. Most of the real work happens before construction, and that is deliberate. Select a step to see what happens.</p>
+          <p class="lead">This is the typical path. Depending on your project, some steps overlap and some won&rsquo;t apply. Select a step to see what happens.</p>
         </div>
 
         <div class="phases" aria-hidden="true">
@@ -733,27 +736,27 @@
           </div>
           <div class="detail__panel" role="tabpanel" id="p5" aria-labelledby="s5">
             <div class="detail__big"><span class="detail__phase">Phase 02 &middot; Plan &amp; price</span><div><span class="detail__num" aria-hidden="true">05</span><h3>Preliminary Services Agreement</h3></div></div>
-            <div class="detail__body"><p>A short written agreement for the pre-construction work that turns your ballpark into a fixed price. The fee is tiered to your project and quoted in writing before you sign.</p>
+            <div class="detail__body"><p>A written agreement for the pre-construction work needed to turn your ballpark into a fixed-price contract. Your fee is quoted in writing before you sign.</p>
               <dl class="facts"><div><dt>Cost</dt><dd>PSA fee</dd></div><div><dt>If you proceed</dt><dd>Credited in full against your contract</dd></div><div><dt>Includes</dt><dd>Your client portal</dd></div></dl></div>
           </div>
           <div class="detail__panel" role="tabpanel" id="p6" aria-labelledby="s6">
             <div class="detail__big"><span class="detail__phase">Phase 02 &middot; Plan &amp; price</span><div><span class="detail__num" aria-hidden="true">06</span><h3>Design, selections &amp; pricing</h3></div></div>
-            <div class="detail__body"><p>Design is developed, consultants are coordinated, selections are made and trades price the real scope. These run alongside each other, not one after another. <a href="#psa" style="text-decoration:underline;text-underline-offset:3px">See how below.</a></p>
-              <dl class="facts"><div><dt>Time</dt><dd>Often six to eight weeks</dd></div><div><dt>Consultants</dt><dd>Generally paid by you directly</dd></div><div><dt>Tracked in</dt><dd>Your client portal</dd></div></dl></div>
+            <div class="detail__body"><p>Design is resolved, consultants are coordinated, selections are made and trades price the real scope, largely in parallel. <a href="#psa" class="inline-link">See how it fits together.</a></p>
+              <dl class="facts"><div><dt>Time</dt><dd>Depends on scope and design</dd></div><div><dt>Selections</dt><dd>Made in person, cost discussed as you go</dd></div><div><dt>Tracked in</dt><dd>Your client portal</dd></div></dl></div>
           </div>
           <div class="detail__panel" role="tabpanel" id="p7" aria-labelledby="s7">
             <div class="detail__big"><span class="detail__phase">Phase 02 &middot; Plan &amp; price</span><div><span class="detail__num" aria-hidden="true">07</span><h3>Fixed-price contract</h3></div></div>
-            <div class="detail__body"><p>The final quote, construction program and payment schedule. If it&rsquo;s over budget, we adjust scope together before you commit. Once signed, the price changes only through written variations you approve.</p>
+            <div class="detail__body"><p>You receive the final quote, construction program and payment schedule. If it&rsquo;s over budget, we adjust scope together before you commit. Once signed, the contract price is fixed, and any change to scope is handled through a written variation you approve before the work happens.</p>
               <dl class="facts"><div><dt>Contract</dt><dd>MBA or HIA</dd></div><div><dt>Deposit</dt><dd>10% on signing</dd></div><div><dt>Also locks in</dt><dd>Your build slot</dd></div></dl></div>
           </div>
           <div class="detail__panel" role="tabpanel" id="p8" aria-labelledby="s8">
             <div class="detail__big"><span class="detail__phase">Phase 02 &middot; Plan &amp; price</span><div><span class="detail__num" aria-hidden="true">08</span><h3>Building Approval</h3></div></div>
-            <div class="detail__body"><p>Where your project needs it, we usually lodge during the PSA once documents are ready and you&rsquo;re comfortable with the budget, so approval runs alongside pricing rather than after it.</p>
-              <dl class="facts"><div><dt>When</dt><dd>Where required</dd></div><div><dt>Certifier</dt><dd>Engaged and paid by you</dd></div><div><dt>Not needed?</dt><dd>Straight to construction</dd></div></dl></div>
+            <div class="detail__body"><p>Where your project needs approval, we can lodge during the PSA once the required documents are ready and you&rsquo;re comfortable with the budget, so it runs alongside pricing. Construction starts once approval is issued and the contract is signed.</p>
+              <dl class="facts"><div><dt>When</dt><dd>Only where required</dd></div><div><dt>Lodged</dt><dd>During the PSA, where possible</dd></div><div><dt>Certifier fees</dt><dd>Generally paid by you directly</dd></div></dl></div>
           </div>
           <div class="detail__panel" role="tabpanel" id="p9" aria-labelledby="s9">
             <div class="detail__big"><span class="detail__phase">Phase 03 &middot; Build</span><div><span class="detail__num" aria-hidden="true">09</span><h3>Construction</h3></div></div>
-            <div class="detail__body"><p>Our site manager is on your site every day and runs the delivery. Jeff runs the project. You get regular updates, site visits at major milestones, and nothing that changes cost happens without your written approval.</p>
+            <div class="detail__body"><p>Our site manager is on your site every day and runs the delivery. Jeff runs the project. You get regular updates and site visits at major milestones, and changes to cost or scope are written up for your approval first.</p>
               <dl class="facts"><div><dt>On site</dt><dd>Site manager daily</dd></div><div><dt>Payments</dt><dd>Tied to milestones</dd></div><div><dt>Changes</dt><dd>Written variations only</dd></div></dl></div>
           </div>
           <div class="detail__panel" role="tabpanel" id="p10" aria-labelledby="s10">
@@ -773,11 +776,11 @@
             <span class="label">Inside the PSA</span>
             <h2 class="display h-lg" id="psa-h">The work <span class="it">before</span> the work.</h2>
           </div>
-          <p class="lead">Design, consultants, selections and pricing move together, so by the time you sign, the decisions are made and the price is real.</p>
+          <p class="lead">Design, consultants, selections and pricing move together rather than one after another, so by the time you sign a contract, the key decisions are made and the price is based on them.</p>
         </div>
 
         <figure class="lanes" id="lanes" aria-labelledby="lanes-cap">
-          <figcaption id="lanes-cap" class="sr">Diagram: during the Preliminary Services Agreement, design development, consultant coordination, selections and detailed pricing run in overlapping streams, with Building Approval lodged where required. They all lead to a fixed-price contract.</figcaption>
+          <figcaption id="lanes-cap" class="sr">Diagram: during the Preliminary Services Agreement, design development, consultant coordination, selections and detailed pricing run in overlapping streams leading to a fixed-price contract. Where required, Building Approval is lodged during this period. Indicative only, not to scale.</figcaption>
           <div class="lanes__grid" aria-hidden="true">
             <span class="lane__name">Design development</span><span class="lane__track"><i class="lane__bar" style="--l:0%;--r:38%;--i:0"></i></span>
             <span class="lane__name">Consultants</span><span class="lane__track"><i class="lane__bar" style="--l:8%;--r:20%;--i:1"></i></span>
@@ -787,12 +790,13 @@
             <span class="lanes__end"><span class="lock"><span class="lock__d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="10" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><span><strong>Fixed price</strong><small>Contract signed</small></span></span></span>
           </div>
           <div class="lanes__axis" aria-hidden="true"><span></span><span><span>PSA signed</span><span>Final quote</span></span><span></span></div>
+          <p class="lanes__note">Indicative only. Durations and overlaps vary from project to project, and approval may be issued before or after the contract is signed.</p>
         </figure>
 
         <div class="psa-facts">
-          <div><b>A paid service, <em>credited in full</em></b><p>The PSA fee is credited against your building contract if you go ahead. It only stands alone if you don&rsquo;t.</p></div>
+          <div><b>Design, <em>tested for cost</em></b><p>We work alongside your architect or designer, giving buildability and cost input as the drawings develop.</p></div>
           <div><b>Selections, <em>in person</em></b><p>Cost-carrying choices are made at trade suppliers, with your architect, an interior designer or with us.</p></div>
-          <div><b>Consultants, <em>coordinated</em></b><p>We brief and coordinate engineers, surveyors, energy assessors and certifiers. Their fees are generally paid by you directly.</p></div>
+          <div><b>Consultants, <em>coordinated</em></b><p>We brief and coordinate the engineers, surveyors, energy assessors and certifier your project needs.</p></div>
         </div>
       </div>
     </section>
@@ -947,10 +951,10 @@
 
         <div class="ledger">
           <div class="tile tile--free rv"><span class="tile__when">Steps 01 to 04</span><span class="tile__amt">Free</span><p>Enquiry, discovery call, site consultation and your ballpark proposal.</p></div>
-          <div class="tile tile--psa rv"><span class="tile__when">Steps 05 to 08</span><span class="tile__amt">PSA fee</span><p>Tiered to your project and quoted in writing on your ballpark, before you sign anything.</p><p class="credit">Credited in full against your building contract if you proceed.</p></div>
-          <div class="tile rv"><span class="tile__when">During the PSA</span><span class="tile__amt">Consultants</span><p>Designer, engineer, surveyor, energy assessor and certifier fees are generally paid by you directly.</p></div>
+          <div class="tile tile--psa rv"><span class="tile__when">Step 05 &middot; Pre-construction</span><span class="tile__amt">PSA fee</span><p>Set according to your project and quoted in writing with your ballpark, before you sign.</p><p class="credit">Credited in full against your building contract if you proceed. If you don&rsquo;t, it stands alone.</p></div>
+          <div class="tile rv"><span class="tile__when">During the PSA</span><span class="tile__amt">Consultants</span><p>Architect or designer, engineer, surveyor, energy assessor and certifier fees are generally paid by you directly, separate to the PSA.</p></div>
           <div class="tile tile--dark rv"><span class="tile__when">Contract signed</span><span class="tile__amt">10% deposit</span><p>Then progress claims tied to construction milestones in your payment schedule.</p></div>
-          <div class="tile rv"><span class="tile__when">During construction</span><span class="tile__amt">Variations</span><p>Only in writing, priced and approved by you before the work happens.</p></div>
+          <div class="tile rv"><span class="tile__when">During construction</span><span class="tile__amt">Variations</span><p>Changes to scope are written up and priced for your approval before the work happens.</p></div>
         </div>
       </div>
     </section>
@@ -993,7 +997,7 @@
           <h2 class="display h-md">Good <span class="it" style="font-style:italic;color:var(--forest)">questions.</span></h2>
           <details>
             <summary>Why pay for a PSA instead of a quote off drawings?<i aria-hidden="true"></i></summary>
-            <p>A quote off drawings alone has to guess at everything the drawings don&rsquo;t say: selections, consultant requirements, site details. The PSA replaces those guesses with real decisions and real trade pricing. If you go ahead, the fee is credited in full.</p>
+            <p>A quote off drawings alone has to guess at everything the drawings don&rsquo;t say: selections, consultant requirements, site details. The PSA replaces those guesses with real decisions and trade pricing, so the fixed price is based on your actual project.</p>
           </details>
           <details>
             <summary>What if the final quote is over budget?<i aria-hidden="true"></i></summary>
@@ -1001,7 +1005,7 @@
           </details>
           <details>
             <summary>How long before construction starts?<i aria-hidden="true"></i></summary>
-            <p>As a rough guide, two to three months for a renovation that doesn&rsquo;t need approval, and four to six months for an extension or new home that needs Building Approval.</p>
+            <p>It depends on the scope, how much design work is needed and whether Building Approval is required. Your ballpark proposal includes an indicative timeline for your project.</p>
           </details>
           <details>
             <summary>We already have an architect. Is that a problem?<i aria-hidden="true"></i></summary>
@@ -1009,7 +1013,7 @@
           </details>
           <details>
             <summary>Who runs selections with us?<i aria-hidden="true"></i></summary>
-            <p>Your architect, an interior designer you engage, or us directly if you have a clear picture of what you want. Either way, cost impact is discussed as you choose, not discovered later.</p>
+            <p>Your architect, an interior designer you engage, or us directly if you already have a clear picture of what you want. If you don&rsquo;t yet, a specialist designer will usually get you a better result.</p>
           </details>
         </div>
       </div>
@@ -1105,7 +1109,7 @@
       function select(i, focus) {
         t.forEach(function (x, j) { var on = i === j; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; p[j].hidden = !on; });
         if (focus) t[i].focus();
-        if (list.scrollWidth > list.clientWidth) { list.scrollTo({ left: t[i].offsetLeft - 24, behavior: reduce ? 'auto' : 'smooth' }); }
+        if (list.scrollWidth > list.clientWidth) { list.scrollTo({ left: t[i].offsetLeft - t[0].offsetLeft, behavior: reduce ? 'auto' : 'smooth' }); }
         if (onSelect) onSelect(i, t[i]);
       }
       t.forEach(function (x, i) {
