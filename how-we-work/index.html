@@ -85,9 +85,9 @@
     "image": "https://rentouleprojects.com/assets/weetangera-stairs.jpg"
   }
   </script>
+  <link rel="stylesheet" href="/assets/css/landing.css">
 </head>
-
-<body class="has-dark-hero">
+<body class="has-dark-hero hc-page">
   <!-- rp:header -->
   <a href="#main" class="skip">Skip to content</a>
   <div class="rp-progress" aria-hidden="true"></div>
@@ -128,74 +128,40 @@
   </div>
   <!-- /rp:header -->
 
-  <main id="main" tabindex="-1">
+  <main id="main" tabindex="-1" class="hc">
 
-    <!-- ====== HERO ====== -->
-    <section class="hero" aria-labelledby="hero-h">
-      <div class="hero__text">
-        <p class="label">How we work</p>
-        <h1 class="display h-xl" id="hero-h">We do the hard thinking <span class="script">before</span> we build.</h1>
-        <p class="lead">Major renovations, extensions and selective custom homes in Canberra, planned and priced properly before construction begins.</p>
-        <div class="hero__ctas">
+    <section class="hc-sec hc-hero hc-hero--page" aria-labelledby="hero-h">
+      <picture><img src="/assets/team-plans.jpg" alt="The Rentoule Projects team reviewing plans together on site" width="1800" height="1200" fetchpriority="high" style="object-position:50% 40%"></picture>
+      <div class="hc-hero__in">
+        <span class="kick">How we work</span>
+        <h1 id="hero-h">We do the hard thinking <span class="script">before</span> we build.</h1>
+        <p class="hc-hero__lead">Major renovations, extensions and selective custom homes in Canberra, planned and priced properly before construction begins.</p>
+        <div class="btn-row" style="justify-content:center;margin-top:2rem">
           <a href="#process" class="btn btn--gold">See how it works <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a href="#portal" class="btn btn--line">Our client portal</a>
+          <a href="#portal" class="btn btn--line" style="color:#fff">Our client portal</a>
         </div>
       </div>
-      <div class="hero__media">
-        <img src="/assets/weetangera-stairs.jpg" alt="Light-filled stairwell with a skylight and timber handrail in a Rentoule Projects renovation" width="1600" height="2400" fetchpriority="high">
-        <span class="hero__cap">Weetangera renovation</span>
-      </div>
-      <div class="hero__path" aria-label="Our process in three phases">
-        <ol>
-          <li><b>01</b><div><span>Get to know</span><br>Free first conversations</div></li>
-          <li><b>02</b><div><span>Plan &amp; price</span><br>The work before the work</div></li>
-          <li><b>03</b><div><span>Build</span><br>To a fixed price</div></li>
-        </ol>
-      </div>
+      <a href="#s1" class="hc-cue" aria-label="Scroll to the next section">Scroll<span></span></a>
     </section>
-
-    <!-- ====== STATEMENT + VALUES ====== -->
-    <section class="sec statement" aria-labelledby="values-h">
-      <div class="wrap">
-        <div class="statement__grid">
-          <div>
-            <p class="display h-md statement__quote rv">Most building problems don&rsquo;t start on site. They start with <em>a guessed price</em>, a late decision, or nobody quite sure who&rsquo;s doing what.</p>
-            <p class="statement__by rv"><strong>Jeff Rentoule</strong>Director and licensed builder. 19 years in the Canberra building industry.</p>
-          </div>
-          <figure class="statement__photo rv">
-            <img src="/assets/about-team.jpg" alt="Two members of the Rentoule Projects team talking on site in front of an insulated timber frame" width="1200" height="1800" loading="lazy">
-            <figcaption>On site, framing stage</figcaption>
-          </figure>
-        </div>
-
-        <h2 class="sr" id="values-h">Our values</h2>
-        <div class="values">
-          <article class="value rv">
-            <span class="value__n" aria-hidden="true">01</span>
-            <h3>Think Before We Build</h3>
-            <p>We test ideas, costs and risks early, so the scope is clear and the price is fixed before construction starts.</p>
-          </article>
-          <article class="value rv">
-            <span class="value__n" aria-hidden="true">02</span>
-            <h3>Build It Together</h3>
-            <p>You, your designer, consultants, trades and us, working as one team toward a home you love.</p>
-          </article>
-          <article class="value rv">
-            <span class="value__n" aria-hidden="true">03</span>
-            <h3>Calm Over Chaos</h3>
-            <p>Clear next steps and steady communication, so you always know where things stand.</p>
-          </article>
-          <article class="value rv">
-            <span class="value__n" aria-hidden="true">04</span>
-            <h3>Stand Behind Our Work</h3>
-            <p>We follow through on what we promise, and our relationship doesn&rsquo;t end at handover.</p>
-          </article>
+    <section class="hc-sec hc-split hc-split--rev" aria-labelledby="hww-statement"><span id="s1"></span>
+      <div class="hc-split__in">
+        <div class="hc-split__media hc-split__media--tall"><img src="/assets/team-on-site.jpg" alt="Jeff Rentoule and site manager Matt Ivanoff working through details on site" width="1067" height="1600" loading="lazy" style="object-position:50% 40%"></div>
+        <div>
+          <span class="kick">Why we work this way</span>
+          <h2 id="hww-statement" class="hc-statement">Most building problems don&rsquo;t start on site. They start with a guessed price, a late decision, or nobody quite sure who&rsquo;s doing what.</h2>
+          <cite>Jeff Rentoule &middot; Director and licensed builder. 19 years in the Canberra building industry.</cite>
+          <ol class="hc-phases" aria-label="Our process in three phases"><li><b>01</b><h3>Get to know</h3><p>Free first conversations</p></li><li><b>02</b><h3>Plan &amp; price</h3><p>The work before the work</p></li><li><b>03</b><h3>Build</h3><p>To a fixed price</p></li></ol>
         </div>
       </div>
     </section>
-
-    <!-- ====== PROCESS (interactive) ====== -->
-    <section class="sec process" id="process" aria-labelledby="process-h">
+    <section class="hc-sec" style="background:var(--stone)" aria-labelledby="values-h">
+      <div class="hc-text">
+        <span class="kick">What we stand for</span>
+        <h2 id="values-h">Our values</h2>
+        <ul class="hc-principles"><li><h3>Think Before We Build</h3><p>We test ideas, costs and risks early, so the scope is clear and the price is fixed before construction starts.</p></li><li><h3>Build It Together</h3><p>You, your designer, consultants, trades and us, working as one team toward a home you love.</p></li><li><h3>Calm Over Chaos</h3><p>Clear next steps and steady communication, so you always know where things stand.</p></li><li><h3>Stand Behind Our Work</h3><p>We follow through on what we promise, and our relationship doesn&rsquo;t end at handover.</p></li></ul>
+      </div>
+    </section>
+    <section class="hc-sec hc-block sec process" id="process" aria-labelledby="process-h">
       <div class="wrap">
         <div class="sec-head">
           <div>
@@ -279,9 +245,7 @@
         </div>
       </div>
     </section>
-
-    <!-- ====== INSIDE THE PSA ====== -->
-    <section class="sec sec--forest" id="psa" aria-labelledby="psa-h">
+    <section class="hc-sec hc-block sec sec--forest" id="psa" aria-labelledby="psa-h">
       <div class="wrap">
         <div class="sec-head">
           <div>
@@ -312,12 +276,7 @@
         </div>
       </div>
     </section>
-
-    <!-- ====== CLIENT PORTAL ======
-         The app views below are ILLUSTRATIONS built in HTML with fictional data, not screenshots.
-         To swap in real screenshots (demo data only): replace the contents of each .app__view
-         with <img src="/assets/pccp-<view>.png" alt="..."> and remove the .badge. -->
-    <section class="sec portal" id="portal" aria-labelledby="portal-h">
+    <section class="hc-sec hc-block sec portal" id="portal" aria-labelledby="portal-h">
       <div class="wrap">
         <div class="sec-head" style="text-align:center;grid-template-columns:1fr;justify-items:center">
           <div>
@@ -449,9 +408,7 @@
         <p class="portal__included"><span aria-hidden="true"></span>Included with your Preliminary Services Agreement. Not software we sell, part of how we work.</p>
       </div>
     </section>
-
-    <!-- ====== MONEY ====== -->
-    <section class="sec" id="money" aria-labelledby="money-h">
+    <section class="hc-sec hc-block sec hc-money" id="money" aria-labelledby="money-h">
       <div class="wrap">
         <div class="sec-head">
           <div>
@@ -470,25 +427,35 @@
         </div>
       </div>
     </section>
-
-    <!-- ====== WORK ====== -->
-    <section class="sec sec--black" aria-labelledby="gallery-h">
-      <div class="wrap">
-        <div class="sec-head">
-          <h2 class="display h-md" id="gallery-h">Planned properly. <span class="it">Built to last.</span></h2>
-          <a href="/projects/" class="btn btn--line">See our projects</a>
-        </div>
-        <div class="gallery__grid">
-          <figure class="shot shot--tall rv"><img src="/assets/holder-fireplace.jpg" alt="Marble feature fireplace with an integrated woodstack in a Holder renovation" width="1600" height="2400" loading="lazy"><figcaption>Holder</figcaption></figure>
-          <figure class="shot rv"><img src="/assets/griffith-shower.jpg" alt="Ensuite with green zellige tile and brass fittings in a Griffith renovation" width="1400" height="934" loading="lazy"><figcaption>Griffith</figcaption></figure>
-          <figure class="shot shot--tall rv"><img src="/assets/weetangera-ensuite.jpg" alt="Ensuite with chevron marble feature wall and timber vanity in a Weetangera renovation" width="1600" height="2400" loading="lazy"><figcaption>Weetangera</figcaption></figure>
-          <figure class="shot rv"><img src="/assets/holder-beams.jpg" alt="Living area with exposed timber beams and skylights in a Holder renovation" width="1600" height="1066" loading="lazy"><figcaption>Holder</figcaption></figure>
+    <section class="hc-sec hc-split" aria-labelledby="gallery-h">
+      <div class="hc-split__in">
+        <div class="hc-split__media"><img src="/assets/holder-open-plan.jpg" alt="Open-plan living, dining and kitchen around a marble fireplace in a Holder renovation" width="2400" height="1600" loading="lazy" style="object-position:50% 55%"></div>
+        <div>
+          <span class="kick">Recent work</span>
+          <h2 id="gallery-h">Planned properly. <span class="it">Built to last.</span></h2>
+          <div class="hc-thumbs">
+            <img src="/assets/kitchen-galley-black.jpg" alt="Black timber kitchen in a Weetangera renovation" width="1333" height="2000" loading="lazy" style="object-position:50% 62%">
+            <img src="/assets/griffith-joinery.jpg" alt="Built-in timber joinery in a Griffith renovation" width="1800" height="1200" loading="lazy">
+            <img src="/assets/weetangera-living.jpg" alt="Living room joinery in a Weetangera renovation" width="1800" height="1200" loading="lazy">
+          </div>
+          <a href="/projects/" class="textlink">See our projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
     </section>
-
-    <!-- ====== FIT + FAQ ====== -->
-    <section class="sec" aria-label="Is it a fit, and common questions">
+    <section class="hc-sec hc-close" aria-labelledby="cta-h">
+      <img src="/assets/team-story-poster.jpg" alt="" width="1800" height="1200" loading="lazy">
+      <div class="hc-close__in">
+        <span class="kick">Get started</span>
+        <h2 id="cta-h">Let&rsquo;s talk about your <span class="script">home.</span></h2>
+        <p>No pressure and no hard sell. A short call is enough to know whether we&rsquo;re the right builder for your project.</p>
+        <div class="btn-row">
+          <a href="/contact/" class="btn btn--gold">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="/canberra-renovation-guide/" class="btn btn--line">Read the renovation guide</a>
+        </div>
+        <p class="hc-bring"><span>Worth thinking about first:</span> What are you really trying to achieve? &middot; Your realistic budget, and your dream one &middot; Drawings, or still an idea? &middot; Other options you&rsquo;re weighing &middot; Who else is part of the decision</p>
+      </div>
+    </section>
+    <section class="hc-more sec" aria-label="Is it a fit, and common questions">
       <div class="wrap two-col">
         <div class="fit">
           <h2 class="display h-md">Are we <span class="it">right for you?</span></h2>
@@ -530,30 +497,6 @@
         </div>
       </div>
     </section>
-
-    <!-- ====== CTA ====== -->
-    <section class="cta" aria-labelledby="cta-h">
-      <img class="cta__mark" src="/assets/logo-monogram-clean.png" alt="" aria-hidden="true">
-      <div class="wrap">
-        <h2 class="display h-lg" id="cta-h">Let&rsquo;s talk about your <span class="script">home.</span></h2>
-        <p class="lead">No pressure and no hard sell. A short call is enough to know whether we&rsquo;re the right builder for your project.</p>
-        <div class="cta__row">
-          <a href="/contact/" class="btn btn--black">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a href="/canberra-renovation-guide/" class="btn btn--line">Read the renovation guide</a>
-        </div>
-        <div class="bring">
-          <span class="label">Worth thinking about first</span>
-          <ul>
-            <li>What are you really trying to achieve?</li>
-            <li>Your realistic budget, and your dream one</li>
-            <li>Drawings, or still an idea?</li>
-            <li>Other options you&rsquo;re weighing</li>
-            <li>Who else is part of the decision</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <!-- rp:footer -->
@@ -596,5 +539,6 @@
   </footer>
   <script src="/assets/js/rp.js" defer></script>
   <!-- /rp:footer -->
+  <script src="/assets/js/landing.js" defer></script>
 </body>
 </html>
