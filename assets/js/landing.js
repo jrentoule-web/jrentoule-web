@@ -41,7 +41,7 @@
   }
   function nearest(y) { var st = stops(), b = st[0]; st.forEach(function (t) { if (Math.abs(t - y) < Math.abs(b - y)) b = t; }); return b; }
   window.addEventListener('wheel', function (e) {
-    if (e.ctrlKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+    if (e.ctrlKey || Math.abs(e.deltaX) > Math.abs(e.deltaY) || document.documentElement.classList.contains('hc-lb-open')) return;
     var now = Date.now(), y = window.scrollY, moreTop = more.offsetTop, down = e.deltaY > 0;
     /* Tell leftover trackpad momentum (a fading tail of small signals) from a fresh scroll
        (signals getting stronger again, a short pause, or a change of direction). */
@@ -143,4 +143,44 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!hero || !header || document.querySelector('.hc-biglogo')) return;
   function f() { header.classList.toggle('is-solid', window.scrollY > hero.offsetHeight - 90); }
   window.addEventListener('scroll', f, { passive: true }); f();
+});
+
+/* Photo viewer: small project photos open large. Arrow keys or buttons move within that project; Escape or a click outside closes. */
+document.addEventListener('DOMContentLoaded', function () {
+  var links = [].slice.call(document.querySelectorAll('a.hc-zoom'));
+  if (!links.length || typeof HTMLDialogElement === 'undefined') return;   /* without support the links simply open the photo */
+  var dlg = document.createElement('dialog');
+  dlg.className = 'hc-lb';
+  dlg.setAttribute('aria-label', 'Photo viewer');
+  dlg.innerHTML = '<figure><img alt=""><figcaption></figcaption></figure>' +
+    '<button type="button" class="hc-lb__btn hc-lb__close" aria-label="Close">&times;</button>' +
+    '<button type="button" class="hc-lb__btn hc-lb__prev" aria-label="Previous photo">&#8249;</button>' +
+    '<button type="button" class="hc-lb__btn hc-lb__next" aria-label="Next photo">&#8250;</button>';
+  document.body.appendChild(dlg);
+  var img = dlg.querySelector('img'), cap = dlg.querySelector('figcaption'), group = [], at = 0, opener = null;
+  function show(i) {
+    at = (i + group.length) % group.length;
+    var a = group[at], t = a.querySelector('img');
+    img.src = a.getAttribute('href'); img.alt = t ? t.alt : ''; cap.textContent = t ? t.alt : '';
+    dlg.classList.toggle('hc-lb--single', group.length < 2);
+  }
+  links.forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
+      e.preventDefault();
+      var box = a.closest('.hc-thumbs') || a.parentNode;
+      group = [].slice.call(box.querySelectorAll('a.hc-zoom'));
+      opener = a; show(group.indexOf(a));
+      dlg.showModal(); document.documentElement.classList.add('hc-lb-open');
+    });
+  });
+  dlg.querySelector('.hc-lb__close').addEventListener('click', function () { dlg.close(); });
+  dlg.querySelector('.hc-lb__prev').addEventListener('click', function () { show(at - 1); });
+  dlg.querySelector('.hc-lb__next').addEventListener('click', function () { show(at + 1); });
+  dlg.addEventListener('click', function (e) { if (e.target === dlg || e.target.tagName === 'FIGURE') dlg.close(); });
+  dlg.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') { e.preventDefault(); show(at + 1); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); show(at - 1); }
+  });
+  dlg.addEventListener('close', function () { document.documentElement.classList.remove('hc-lb-open'); img.removeAttribute('src'); if (opener) opener.focus(); });
 });
