@@ -5,7 +5,7 @@
    ===================================================================== */
 /* Touch screens: soft native snapping. Mouse/trackpad: normal scrolling, then a gentle settle (script below). */
 html { scroll-behavior: auto; } /* the glide below does its own easing */
-@media (pointer: coarse) { html { scroll-snap-type: y proximity; } }
+@media (pointer: coarse) { html:has(body.hc-glide) { scroll-snap-type: y proximity; } }
 .hc-page .rp-progress { display: none; }
 
 .hc-sec { scroll-snap-align: start; min-height: 100vh; min-height: 100svh; position: relative; display: flex; align-items: center; }

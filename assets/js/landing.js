@@ -4,7 +4,9 @@
    Touch screens use soft CSS snapping. Keyboard and scrollbar settle onto the nearest section. */
 (function () {
   var secs = [].slice.call(document.querySelectorAll('.hc-sec')), more = document.querySelector('.hc-more') || document.querySelector('.rp-footer');
-  if (!secs.length || !more || !window.matchMedia('(pointer: fine)').matches) return;
+  /* only pages that opt in (body.hc-glide): the homepage and Projects. Reading pages scroll normally. */
+  if (!document.body.classList.contains('hc-glide') || !secs.length || !more || !window.matchMedia('(pointer: fine)').matches) return;
+  var wasTall = false;
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var LEAD = 24, DUR = 850;
   var anim = 0, animating = false, holdUntil = 0, acc = 0, lastWheel = 0, timer = 0;
@@ -47,7 +49,10 @@
     if (now - lastWheel > 250 || (acc > 0) !== down) acc = 0;
     lastWheel = now; acc += e.deltaY;
     clearTimeout(timer);
-    if (inTall(y, down)) { acc = 0; return; }   /* let a tall section scroll normally */
+    if (inTall(y, down)) { acc = 0; wasTall = true; return; }   /* let a tall section scroll normally */
+    if (wasTall) {                       /* just reached the edge of a long section: stop here and absorb the momentum */
+      wasTall = false; e.preventDefault(); acc = 0; holdUntil = now + 250; return;
+    }
     if (Math.abs(acc) >= LEAD) {
       e.preventDefault(); acc = 0;
       var t = targetFor(y, down); if (t !== null) glide(t);
