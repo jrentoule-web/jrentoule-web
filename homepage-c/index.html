@@ -160,13 +160,13 @@
 
   <style>
   /* Homepage C: page-scoped styles only. */
-  html { scroll-snap-type: y mandatory; scroll-padding-top: 0; }
-  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  /* Touch screens: soft native snapping. Mouse/trackpad: normal scrolling, then a gentle settle (script below). */
+  @media (pointer: coarse) { html { scroll-snap-type: y proximity; } }
   .hc-page .rp-header__cta { background: transparent; border: 1px solid currentColor; color: inherit; }
   .hc-page .rp-header__cta:hover { background: rgba(127,127,127,0.12); }
   .hc-page .rp-progress { display: none; }
 
-  .hc-sec { scroll-snap-align: start; scroll-snap-stop: always; min-height: 100vh; min-height: 100svh; position: relative; display: flex; align-items: center; }
+  .hc-sec { scroll-snap-align: start; min-height: 100vh; min-height: 100svh; position: relative; display: flex; align-items: center; }
   .hc h1, .hc h2 { font-family: var(--serif); font-weight: 300; letter-spacing: -0.015em; line-height: 1.06; }
   .hc .kick { display: block; font-family: var(--sans); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 1.4rem; }
   .hc p.body { color: var(--muted); max-width: 44ch; font-size: 0.98rem; }
@@ -218,6 +218,18 @@
   .hc-grid span { position: absolute; left: 0.9rem; bottom: 0.8rem; color: #fff; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; text-shadow: 0 1px 6px rgba(0,0,0,0.5); }
   .hc-work .btn { border-color: var(--ink); }
 
+  /* Reviews */
+  .hc-reviews { background: var(--forest-deep); color: var(--cream); }
+  .hc-reviews__in { width: 100%; max-width: 1200px; margin: 0 auto; padding: 100px var(--gutter) 56px; }
+  .hc-reviews .kick { color: var(--gold-light); }
+  .hc-rating { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin-bottom: clamp(2.2rem, 5vw, 3.6rem); }
+  .hc-rating b { font-family: var(--serif); font-weight: 300; font-size: clamp(3.4rem, 7vw, 5.6rem); line-height: 1; }
+  .hc-rating .stars { color: var(--gold-light); letter-spacing: 0.15em; font-size: 1.1rem; }
+  .hc-rating span:last-child { color: rgba(245,243,239,0.75); font-size: 0.9rem; }
+  .hc-quotes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.4rem 4rem; }
+  .hc-reviews blockquote { color: var(--cream); font-size: clamp(1.15rem, 1.6vw, 1.4rem); max-width: none; }
+  .hc-reviews cite { color: rgba(245,243,239,0.7); }
+
   /* Close */
   .hc-close { color: #fff; background: var(--black); justify-content: center; text-align: center; overflow: hidden; }
   .hc-close > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
@@ -255,6 +267,9 @@
     .hc-grid a:nth-child(n+5) { display: none; }
     .hc-more__grid { grid-template-columns: minmax(0, 1fr); }
     .hc-guides { columns: 1; }
+    .hc-quotes { grid-template-columns: minmax(0, 1fr); gap: 1.6rem; }
+    .hc-reviews__in { padding: 76px var(--gutter) 32px; }
+    .hc-reviews blockquote { font-size: 1.05rem; }
   }
   </style>
 </head>
@@ -325,24 +340,24 @@
       </div>
     </section>
 
+    <section class="hc-sec hc-split hc-split--rev" aria-labelledby="mcf-h">
+      <div class="hc-split__in">
+        <div class="hc-split__media hc-split__media--tall"><img src="/assets/kitchen-galley-black.jpg" alt="Black timber kitchen with stone benchtops and lit timber floors in a Weetangera renovation" width="1333" height="2000" loading="lazy" style="object-position:50% 62%"></div>
+        <div>
+          <span class="kick">Weetangera &middot; Large-scale renovation</span>
+          <h2 id="mcf-h">A family home, transformed.</h2>
+          <blockquote>&ldquo;From start to finish, the team was incredibly professional, efficient, and easy to communicate with. &hellip; The project was completed on time and the final result exceeded all my expectations.&rdquo;</blockquote><cite>Penny, Weetangera</cite>
+          <a href="/projects/" class="textlink">See our projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
     <section class="hc-sec hc-full" aria-labelledby="holder-h">
       <img src="/assets/holder-open-plan.jpg" alt="Open-plan living, dining and kitchen around a marble fireplace in a Holder renovation" width="2400" height="1600" loading="lazy" style="object-position:50% 55%">
       <div class="hc-full__in">
         <div><p class="hc-meta">Holder &middot; Full home renovation</p><h2 id="holder-h">A 50-year-old house, made a modern home.</h2></div>
         <div><blockquote>&ldquo;Jeff and his team have been exceptional, turning our 50-year-old house into a modern, functional home.&rdquo;</blockquote><cite>Adam, Holder</cite>
           <a href="/projects/#holder" class="textlink">View the project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-      </div>
-    </section>
-
-    <section class="hc-sec hc-split hc-split--rev" aria-labelledby="weet-h">
-      <div class="hc-split__in">
-        <div class="hc-split__media"><img src="/assets/weetangera-living.jpg" alt="Weetangera living room with full-wall built-in timber joinery and shelving" width="1800" height="1200" loading="lazy" style="object-position:50% 50%"></div>
-        <div>
-          <span class="kick">Weetangera &middot; Whole-of-home renovation</span>
-          <h2 id="weet-h">A 1970s home, brought up to date.</h2>
-          <blockquote>&ldquo;The final result was a beautifully renovated home that far exceeded our expectations.&rdquo;</blockquote><cite>Chris, Weetangera</cite>
-          <a href="/projects/#weetangera" class="textlink">View the project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
       </div>
     </section>
 
@@ -358,15 +373,26 @@
       </div>
     </section>
 
+    <section class="hc-sec hc-reviews" aria-labelledby="rev-h">
+      <div class="hc-reviews__in">
+        <span class="kick">What our clients say</span>
+        <h2 id="rev-h" class="hc-rating"><b>5.0</b><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span>from 19 Google reviews</span></h2>
+        <div class="hc-quotes">
+          <figure><blockquote>&ldquo;Even before the build had started, Jeff was attentive to our needs and was able to translate our ideas into a well thought out plan. &hellip; We could not be happier with the outstanding home they have created for us.&rdquo;</blockquote><cite>Helen, Google review</cite></figure>
+          <figure><blockquote>&ldquo;They perfectly captured the mid-century aesthetic we were after. Jeff is very easy, nice and calm to deal with and professional. Nothing was too hard or out of the question.&rdquo;</blockquote><cite>Luke, Google review</cite></figure>
+        </div>
+      </div>
+    </section>
+
     <section class="hc-sec hc-work" aria-labelledby="work-h">
       <div class="hc-work__in">
         <span class="kick">Selected work</span>
-        <h2 id="work-h">Kitchens, bathrooms, laundries</h2>
+        <h2 id="work-h">Built with care, room by room</h2>
         <div class="hc-grid">
-          <a href="/projects/"><img src="/assets/kitchen-galley-black.jpg" alt="Black timber galley kitchen with stone benchtops and lit timber floors" width="1333" height="2000" loading="lazy"><span>Kitchen</span></a>
-          <a href="/projects/#weetangera"><img src="/assets/weetangera-bath.jpg" alt="Weetangera ensuite with freestanding bath and chevron marble tile" width="1800" height="1200" loading="lazy" style="object-position:58% 50%"><span>Weetangera</span></a>
+          <a href="/projects/#weetangera"><img src="/assets/weetangera-living.jpg" alt="Weetangera living room with full-wall built-in timber joinery" width="1800" height="1200" loading="lazy" style="object-position:45% 50%"><span>Living room</span></a>
+          <a href="/projects/#holder"><img src="/assets/holder-kitchen.jpg" alt="Holder kitchen with timber-topped island under skylights" width="1800" height="1200" loading="lazy" style="object-position:55% 50%"><span>Kitchen</span></a>
           <a href="/projects/"><img src="/assets/laundry-black.jpg" alt="Black laundry with stacked washer and dryer and stone splashback" width="1500" height="1000" loading="lazy" style="object-position:40% 50%"><span>Laundry</span></a>
-          <a href="/projects/#griffith"><img src="/assets/griffith-peacock.jpg" alt="Griffith guest powder room with peacock wallpaper and brass fittings" width="1400" height="2100" loading="lazy"><span>Griffith</span></a>
+          <a href="/projects/#griffith"><img src="/assets/griffith-peacock.jpg" alt="Griffith guest powder room with peacock wallpaper and brass fittings" width="1400" height="2100" loading="lazy"><span>Powder room</span></a>
         </div>
         <a href="/projects/" class="btn btn--line">All projects</a>
       </div>
@@ -461,27 +487,37 @@
   <!-- /rp:footer -->
 
   <script>
-  /* One wheel/trackpad gesture = one section (desktop). Touch and keyboard use native CSS snapping. */
+  /* Gentle settle: scroll normally; once scrolling pauses, ease slowly onto the nearest section. */
   (function () {
     var secs = [].slice.call(document.querySelectorAll('.hc-sec')), more = document.querySelector('.hc-more');
     if (!secs.length || !more || !window.matchMedia('(pointer: fine)').matches) return;
-    var busyUntil = 0, lastWheel = 0;
-    function idx() { var y = window.scrollY, best = 0; secs.forEach(function (s, i) { if (Math.abs(s.offsetTop - y) < Math.abs(secs[best].offsetTop - y)) best = i; }); return best; }
-    window.addEventListener('wheel', function (e) {
-      if (e.ctrlKey || Math.abs(e.deltaY) < Math.abs(e.deltaX)) return;
-      var y = window.scrollY, moreTop = more.offsetTop, now = Date.now();
-      if (y >= moreTop - 2 && (e.deltaY > 0 || y > moreTop + 2)) return; /* free scrolling in the reference section */
-      e.preventDefault();
-      var quiet = now - lastWheel > 160; lastWheel = now;
-      if (now < busyUntil && !quiet) { busyUntil = Math.max(busyUntil, now + 120); return; }
-      if (now < busyUntil) return;
-      if (Math.abs(e.deltaY) < 4) return;
-      var i = idx(), t = e.deltaY > 0 ? i + 1 : i - 1;
-      var target = t >= secs.length ? moreTop : (t < 0 ? 0 : secs[t].offsetTop);
-      if (Math.abs(target - y) < 2) return;
-      busyUntil = now + 850;
-      window.scrollTo({ top: target, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-    }, { passive: false });
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var timer = 0, anim = 0, animating = false, lastInput = 0;
+    function stop() { if (anim) cancelAnimationFrame(anim); anim = 0; animating = false; }
+    function ease(t) { return 1 - Math.pow(1 - t, 3); }
+    function glide(to) {
+      var from = window.scrollY, dist = to - from, dur = Math.min(900, 520 + Math.abs(dist) * 0.6), t0 = 0;
+      if (reduce) { window.scrollTo(0, to); return; }
+      animating = true;
+      function step(ts) { if (!t0) t0 = ts; var k = Math.min(1, (ts - t0) / dur); window.scrollTo(0, from + dist * ease(k)); if (k < 1 && animating) anim = requestAnimationFrame(step); else stop(); }
+      anim = requestAnimationFrame(step);
+    }
+    function settle() {
+      if (Date.now() - lastInput < 120) { timer = setTimeout(settle, 120); return; }
+      var y = window.scrollY, moreTop = more.offsetTop;
+      if (y >= moreTop - 2) return;                       /* free reading in the final section */
+      var stops = secs.map(function (s) { return s.offsetTop; }).concat([moreTop]), i = 0;
+      while (i < stops.length - 2 && stops[i + 1] <= y) i++;
+      var base = stops[i], next = stops[i + 1], p = (y - base) / (next - base);
+      /* follow the direction of travel: a fifth of the way is enough to carry on */
+      var target = dir > 0 ? (p > 0.2 ? next : base) : (p < 0.8 ? base : next);
+      if (Math.abs(target - y) > 2) glide(target);
+    }
+    ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (ev) {
+      window.addEventListener(ev, function () { lastInput = Date.now(); if (animating) stop(); }, { passive: true });
+    });
+    var lastY = window.scrollY, dir = 1;
+    window.addEventListener('scroll', function () { var y = window.scrollY; if (!animating && y !== lastY) dir = y > lastY ? 1 : -1; lastY = y; if (animating) return; clearTimeout(timer); timer = setTimeout(settle, 180); }, { passive: true });
   })();
   </script>
 </body>
