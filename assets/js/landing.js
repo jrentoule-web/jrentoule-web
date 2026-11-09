@@ -8,7 +8,7 @@
   if (!document.body.classList.contains('hc-glide') || !secs.length || !more || !window.matchMedia('(pointer: fine)').matches) return;
   var wasTall = false;
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var LEAD = 24, DUR = 850;
+  var LEAD = 24, DUR = 850, lastMag = 0, lastT = 0, lastDir = 0;
   var anim = 0, animating = false, holdUntil = 0, acc = 0, lastWheel = 0, timer = 0;
   function stops() { return secs.map(function (s) { return s.offsetTop; }).concat([more.offsetTop]); }
   function ease(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
@@ -43,8 +43,14 @@
   window.addEventListener('wheel', function (e) {
     if (e.ctrlKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
     var now = Date.now(), y = window.scrollY, moreTop = more.offsetTop, down = e.deltaY > 0;
+    /* Tell leftover trackpad momentum (a fading tail of small signals) from a fresh scroll
+       (signals getting stronger again, a short pause, or a change of direction). */
+    var mag = Math.abs(e.deltaY), gap = now - lastT, dir = down ? 1 : -1;
+    var fresh = gap > 120 || mag > lastMag * 1.4 + 2 || (lastDir && dir !== lastDir);
+    lastMag = mag; lastT = now; lastDir = dir;
     if (y >= moreTop - 2 && (down || y > moreTop + 2)) return;            /* free reading in the final section */
     if (settling) { cancelAnimationFrame(anim); animating = false; settling = false; }   /* a small ease-back never blocks a real scroll */
+    if (!animating && now < holdUntil && fresh) holdUntil = 0;          /* a new scroll is never ignored */
     if (animating || now < holdUntil) { e.preventDefault(); if (!animating) holdUntil = now + 200; return; }
     if (now - lastWheel > 250 || (acc > 0) !== down) acc = 0;
     lastWheel = now; acc += e.deltaY;
