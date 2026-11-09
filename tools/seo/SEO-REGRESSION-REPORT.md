@@ -217,3 +217,13 @@ python3 tools/seo/inventory.py . /tmp/dev.json
 python3 tools/seo/compare.py /tmp/base.json /tmp/dev.json /tmp/regression.md
 python3 tools/seo/redirsim.py /tmp/prod . /tmp/redirects.md
 ```
+
+## Addendum: landing-page rollout (preview only)
+
+Re-run after the homepage became the full-screen landing page and the rest of the site moved to the same look.
+
+- **33 of 34 production pages: unchanged findings.** The 25 articles, 3 service landing pages, the Canberra Renovation Guide and the rest keep their URL, title, description, canonical, robots, H1, JSON-LD, headings, body text and internal links. Their changes are styling only (colours, page headers, calmer headings and guide layout).
+- **Homepage:** same title, description, keywords, canonical, robots (index, follow), H1 and both JSON-LD blocks. Every internal link from the previous homepage is still present. Headings kept: more than the previous refresh (adds "Ready to start your project?", "What our clients say", "What might it cost?", "Start with the free guide", "What we stand for", "Our services", "Your project, our priority"). Body text: 26% of the production homepage's sentences are still present (previous refresh: 29%); the difference is mainly John's deck review and label text the tool reads as joined sentences. The production homepage was a ~5,200-word single page, so this is the one known, accepted change in exposure (R1).
+- **Projects and About** were rebuilt; both are pages added in this refresh (not in production), keep their URLs and anchors (`#weetangera`, `#holder`, `#griffith`), and add `#weetangera-family-home`.
+- **Comparison pages `/homepage-b/` and `/homepage-c/` were removed**; they were never linked, never in the sitemap and always noindex.
+- **robots.txt:** unchanged. **Sitemap:** baseline 30 URLs plus the 6 refresh pages. **Redirects:** 96 production URLs and redirect sources simulated against this branch, 0 problems.

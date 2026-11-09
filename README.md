@@ -43,3 +43,12 @@ Copy an existing article folder in `blog/`, edit the content and meta, then add 
 - HubSpot enquiry form embed and deal hook: `contact/index.html`
 - Careers application (Netlify Forms): `careers/index.html`
 - Attribution: `tracking.js`, loaded on every page via the shared head
+
+## Landing pages (homepage, Projects, About)
+
+- `assets/css/landing.css` and `assets/js/landing.js` hold the full-screen sections, the scroll glide
+  (a small scroll moves to the next section; long sections scroll normally), the big hero logo that
+  settles into the header, and the reviews carousel. Pages opt in by linking both files and using the
+  `.hc-*` components. Article, guide and service landing pages do not use them, so reading stays normal.
+- Brand palette: cream and stone grounds, deep forest instead of black, gold for actions and accents.
+  Headings carry no italic or script flourishes; the script lives in the logo.

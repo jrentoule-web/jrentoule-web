@@ -15,7 +15,7 @@
   <meta property="og:url" content="https://rentouleprojects.com/">
   <meta property="og:site_name" content="Rentoule Projects">
   <meta property="og:locale" content="en_AU">
-  <meta property="og:image" content="https://rentouleprojects.com/assets/holder-fireplace.jpg">
+  <meta property="og:image" content="https://rentouleprojects.com/assets/kitchen-island-black.jpg">
   <meta name="geo.region" content="AU-ACT">
   <meta name="geo.placename" content="Canberra">
   <!-- Old single-page links (e.g. /#contact) now point to real pages -->
@@ -156,8 +156,9 @@
     ]
   }
   </script>
+  <link rel="stylesheet" href="/assets/css/landing.css">
 </head>
-<body class="has-dark-hero">
+<body class="has-dark-hero hc-page">
   <!-- rp:header -->
   <a href="#main" class="skip">Skip to content</a>
   <div class="rp-progress" aria-hidden="true"></div>
@@ -198,191 +199,172 @@
   </div>
   <!-- /rp:header -->
 
-  <main id="main" tabindex="-1">
+  <main id="main" tabindex="-1" class="hc">
 
-    <section class="hero" aria-labelledby="hero-h">
-      <div class="hero__text">
-        <p class="label">Making Your House Your Home</p>
-        <h1 class="display h-xl" id="hero-h">Crafting <span class="script">visions</span> into reality</h1>
-        <p class="lead">Canberra residential builder. From mid-range renovations to luxury new builds, we keep the team small and the standards high so the home you live in matches the one you've been picturing.</p>
+    <section class="hc-sec hc-hero" aria-labelledby="hero-h">
+      <picture>
+        <source media="(max-width: 700px) and (orientation: portrait)" srcset="/assets/kitchen-galley-black.jpg">
+        <img src="/assets/kitchen-island-black.jpg" alt="Black timber kitchen with a waterfall stone island and timber floors, by Rentoule Projects" width="1500" height="1000" fetchpriority="high">
+      </picture>
+      <div class="hc-hero__in">
+        <img class="hc-biglogo" src="/assets/logo-hero-white.png" alt="" width="1216" height="368">
+        <h1 id="hero-h">Crafting visions into reality</h1>
+        <p>Making your house your home.</p>
+      </div>
+      <a href="#intro-h" class="hc-cue" aria-label="Scroll to the next section">Scroll<span></span></a>
+    </section>
+
+    <section class="hc-sec hc-split" aria-labelledby="intro-h">
+      <div class="hc-split__in">
+        <div class="hc-split__media"><img src="/assets/ensuite-vanity-black.jpg" alt="Ensuite vanity with backlit round mirrors, a stone basin and black timber joinery" width="1500" height="1000" loading="lazy" style="object-position:50% 50%"></div>
+        <div>
+          <span class="kick">Rentoule Projects</span>
+          <h2 id="intro-h">Canberra residential builder.</h2>
+          <p class="body">From mid-range renovations to luxury new builds, we keep the team small and the standards high so the home you live in matches the one you&rsquo;ve been picturing.</p><p class="body hide-sm">Renovations, extensions and new homes, every contract priced up front.</p>
+          <a href="/services/" class="textlink">What we build <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hc-sec hc-split hc-split--rev" aria-labelledby="mcf-h">
+      <div class="hc-split__in">
+        <div class="hc-split__media hc-split__media--tall"><img src="/assets/kitchen-galley-black.jpg" alt="Black timber kitchen with stone benchtops and lit timber floors in a Weetangera renovation" width="1333" height="2000" loading="lazy" style="object-position:50% 62%"></div>
+        <div>
+          <span class="kick">Weetangera &middot; Large-scale renovation</span>
+          <h2 id="mcf-h">A family home, transformed.</h2>
+          <blockquote>&ldquo;From start to finish, the team was incredibly professional, efficient, and easy to communicate with. &hellip; The project was completed on time and the final result exceeded all my expectations.&rdquo;</blockquote><cite>Penny, Weetangera</cite>
+          <a href="/projects/" class="textlink">See our projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hc-sec hc-full" aria-labelledby="holder-h">
+      <img src="/assets/holder-open-plan.jpg" alt="Open-plan living, dining and kitchen around a marble fireplace in a Holder renovation" width="2400" height="1600" loading="lazy" style="object-position:50% 55%">
+      <div class="hc-full__in">
+        <div><p class="hc-meta">Holder &middot; Full home renovation</p><h2 id="holder-h">A 50-year-old house, made a modern home.</h2></div>
+        <div><blockquote>&ldquo;Jeff and his team have been exceptional, turning our 50-year-old house into a modern, functional home.&rdquo;</blockquote><cite>Adam, Holder</cite>
+          <a href="/projects/#holder" class="textlink">View the project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+    </section>
+
+    <section class="hc-sec hc-split" aria-labelledby="griff-h">
+      <div class="hc-split__in">
+        <div class="hc-split__media"><img src="/assets/griffith-joinery.jpg" alt="Griffith living room with full-wall built-in timber joinery and bookshelves" width="1800" height="1200" loading="lazy" style="object-position:50% 50%"></div>
+        <div>
+          <span class="kick">Griffith &middot; Bathrooms, laundry &amp; joinery</span>
+          <h2 id="griff-h">Finished on time and within budget.</h2>
+          <blockquote>&ldquo;They were responsive and solution focussed throughout the process. They finished on time and within budget.&rdquo;</blockquote><cite>Mark, Griffith</cite>
+          <a href="/projects/#griffith" class="textlink">View the project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hc-sec hc-reviews" aria-labelledby="rev-h">
+      <div class="hc-reviews__in">
+        
+        <h2 class="kick" id="rev-h">What our clients say</h2>
+        <p class="hc-rev-intro">Building or renovating a home is a big investment, and choosing the right builder makes all the difference. Hear from our happy clients who have trusted us to bring their dream homes to life.</p>
+        <div class="hc-rev-head">
+          <p class="hc-rating"><b>5.0</b><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span>from 19 Google reviews</span></p>
+          <a class="hc-rev-link" href="https://www.google.com/maps/search/?api=1&amp;query=Rentoule+Projects+Canberra" target="_blank" rel="noopener">Read them all on Google</a>
+        </div>
+        <div class="hc-car" role="region" aria-roledescription="carousel" aria-label="Client reviews">
+          <div class="hc-track" tabindex="0">
+            <figure class="hc-slide" role="group" aria-roledescription="slide" aria-label="1 of 6"><blockquote>Even before the build had started, Jeff was attentive to our needs and was able to translate our ideas into a well thought out plan. &hellip; We could not be happier with the outstanding home they have created for us.</blockquote><cite>Helen, Google review</cite></figure>
+            <figure class="hc-slide" role="group" aria-roledescription="slide" aria-label="2 of 6"><blockquote>They perfectly captured the mid-century aesthetic we were after. Jeff is very easy, nice and calm to deal with and professional. Nothing was too hard or out of the question.</blockquote><cite>Luke, Google review</cite></figure>
+            <figure class="hc-slide" role="group" aria-roledescription="slide" aria-label="3 of 6"><blockquote>Before taking down a wall marked with our kids&rsquo; growth over the years, a detail I had overlooked, he thoughtfully pointed it out, giving us the chance to preserve that memory.</blockquote><cite>Adam, Holder</cite></figure>
+            <figure class="hc-slide" role="group" aria-roledescription="slide" aria-label="4 of 6"><blockquote>It&rsquo;s rare to find such a dedicated group who genuinely cares about their clients&rsquo; needs. They made what could have been a stressful process smooth and enjoyable.</blockquote><cite>Penny, Weetangera</cite></figure>
+            <figure class="hc-slide" role="group" aria-roledescription="slide" aria-label="5 of 6"><blockquote>Right from the outset, it was clear that Jeff&rsquo;s expertise and commitment were unparalleled as he took charge of managing the extensive renovation project. &hellip; His diligence and commitment to excellence were evident in every aspect of the project. The final result was a beautifully renovated home that far exceeded our expectations.</blockquote><cite>Chris, Weetangera</cite></figure>
+            <figure class="hc-slide" role="group" aria-roledescription="slide" aria-label="6 of 6"><blockquote>They were very patient with listening to what we wanted and informative with explaining alternative ways to achieve what we wanted. Their professionalism, communication and attention to detail were truly a breath of fresh air. I never once felt pressured.</blockquote><cite>Cindy, Kambah</cite></figure>
+          </div>
+          <div class="hc-car__nav">
+            <button type="button" class="hc-car__btn" data-dir="-1" aria-label="Previous reviews"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+            <button type="button" class="hc-car__btn" data-dir="1" aria-label="Next reviews"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <div class="hc-dots"><button type="button" aria-label="Show review 1"></button><button type="button" aria-label="Show review 2"></button><button type="button" aria-label="Show review 3"></button><button type="button" aria-label="Show review 4"></button><button type="button" aria-label="Show review 5"></button><button type="button" aria-label="Show review 6"></button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hc-sec hc-work" aria-labelledby="work-h">
+      <div class="hc-work__in">
+        <span class="kick">Selected work</span>
+        <h2 id="work-h">Built with care, room by room</h2>
+        <div class="hc-grid">
+          <a href="/projects/#weetangera"><img src="/assets/weetangera-living.jpg" alt="Weetangera living room with full-wall built-in timber joinery" width="1800" height="1200" loading="lazy" style="object-position:45% 50%"><span>Living room</span></a>
+          <a href="/projects/#holder"><img src="/assets/holder-kitchen.jpg" alt="Holder kitchen with timber-topped island under skylights" width="1800" height="1200" loading="lazy" style="object-position:55% 50%"><span>Kitchen</span></a>
+          <a href="/projects/"><img src="/assets/laundry-black.jpg" alt="Black laundry with stacked washer and dryer and stone splashback" width="1500" height="1000" loading="lazy" style="object-position:40% 50%"><span>Laundry</span></a>
+          <a href="/projects/#griffith"><img src="/assets/griffith-peacock.jpg" alt="Griffith guest powder room with peacock wallpaper and brass fittings" width="1400" height="2100" loading="lazy"><span>Powder room</span></a>
+        </div>
+        <a href="/projects/" class="btn btn--line">All projects</a>
+      </div>
+    </section>
+
+    <section class="hc-sec hc-split hc-split--rev" aria-labelledby="how-h">
+      <div class="hc-split__in">
+        <div class="hc-split__media hc-split__media--tall"><img src="/assets/team-on-site.jpg" alt="Jeff Rentoule and site manager Matt Ivanoff working through details on site" width="1067" height="1600" loading="lazy" style="object-position:50% 40%"></div>
+        <div>
+          <span class="kick">How we work</span>
+          <h2 id="how-h">The hard thinking happens before we build.</h2>
+          <p class="body">Design, consultants, selections and pricing are worked through first, so the contract price is based on real decisions rather than guesses. Then a fixed-price contract, and a site manager on site every day.</p>
+          <a href="/how-we-work/" class="textlink">See the full process <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hc-sec hc-close" aria-labelledby="cta-h">
+      <img src="/assets/team-plans.jpg" alt="" width="1800" height="1200" loading="lazy">
+      <div class="hc-close__in">
+        <span class="kick">Get started</span>
+        <h2 id="cta-h">Ready to start your project?</h2>
+        <p>Even a what-if conversation is a good start. Send me a note about what you&rsquo;re picturing. The first coffee is on me.</p>
         <div class="btn-row">
           <a href="/contact/" class="btn btn--gold">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a href="/canberra-renovation-guide/" class="btn btn--line">Read the Free Guide</a>
+          <a href="tel:0434435966" class="btn btn--line">Call 0434 435 966</a>
         </div>
-      </div>
-      <div class="hero__media">
-        <img src="/assets/holder-fireplace.jpg" alt="Marble feature fireplace with an integrated woodstack in a Rentoule Projects renovation in Holder" width="1600" height="2400" fetchpriority="high">
-        <span class="hero__cap">Holder renovation</span>
-      </div>
-      <div class="hero__path" aria-label="At a glance">
-        <ol><li><b>19+</b><div><span>Years in the Industry</span></div></li><li><b>50+</b><div><span>Projects Completed</span></div></li><li><b>100%</b><div><span>Fixed-Price Contracts</span></div></li></ol>
+        <p style="font-size:0.85rem"><a href="/canberra-renovation-guide/" style="text-decoration:underline;text-underline-offset:3px">Or start with the free Canberra Renovation Guide</a></p>
       </div>
     </section>
 
-    <section class="sec" aria-labelledby="intro-h">
-      <div class="wrap split">
-        <div class="rv">
-          <p class="label" style="color:var(--gold-deep);margin-bottom:1.4rem">Welcome</p>
-          <h2 class="display h-md" id="intro-h">Your project, <span class="it" style="color:var(--forest)">our priority</span></h2>
-          <p style="margin-top:1.6rem">I'm Jeff Rentoule, and at Rentoule Projects we build for Canberra homeowners who know a home is more than a project. It's where your kids learn to walk, where Sunday mornings slow down, where years of memories are made around a kitchen bench.</p>
-          <p>That's the weight of what we do. It's why we keep our team small, why I'm personally across every detail from the first coffee to the final handover, and why every contract is priced up front. So you can focus on the life you're building, not worry about the build itself.</p>
-        </div>
-        <div class="rv">
-          <div class="video" data-video="https://player.vimeo.com/video/1065695637?h=8b78f942f6&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1&amp;autoplay=1" data-title="Rentoule Projects: Our Story">
-            <button type="button" aria-label="Play video: Rentoule Projects, our story"><span class="play"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span><span>Our story</span></button>
-            <img src="/assets/careers-hero.jpg" alt="" width="2000" height="1333" loading="lazy">
+    <section class="hc-more" aria-labelledby="about-h">
+      <div class="wrap">
+        <div class="hc-about">
+          <div>
+            <span class="kick">Welcome</span>
+            <h2 id="about-h">Your project, our priority</h2>
+            <p>I'm Jeff Rentoule, and at Rentoule Projects we build for Canberra homeowners who know a home is more than a project. It's where your kids learn to walk, where Sunday mornings slow down, where years of memories are made around a kitchen bench.</p><p>That's the weight of what we do. It's why we keep our team small, why I'm personally across every detail from the first coffee to the final handover, and why every contract is priced up front. So you can focus on the life you're building, not worry about the build itself.</p>
           </div>
-          <p class="caption">Rentoule Projects: Our Story. Plays from Vimeo when you press play.</p>
+          <div>
+            <h2 class="hc-about__h">Our services</h2>
+            <p class="hc-about__lead">Most of our clients invest somewhere between $300,000 and $900,000, and some projects are considerably larger.</p>
+            <div class="hc-svc"><h3>New Builds</h3><p>A blank canvas and a clear vision. We build custom homes on Canberra blocks for clients who know what they want and want to enjoy the process of getting there. Every brief is different. Every contract is fixed-price.</p><p class="hc-svc__links"><a href="/services/#custom-homes">New Builds services</a><a href="/services/knockdown-rebuild-canberra/">Knockdown rebuilds</a></p></div><div class="hc-svc"><h3>Extensions</h3><p>Adding to a home you love is harder than starting fresh. New structure has to sit with old, new finishes have to respect what's there, and you have to live through it. We do extensions for people who want the addition to feel like it was always meant to be there.</p><p class="hc-svc__links"><a href="/services/#extensions">Extensions services</a><a href="/blog/home-extension-costs-canberra/">Extension costs</a></p></div><div class="hc-svc"><h3>Renovations</h3><p>Most Canberra homes have good bones and outdated layouts. We rework the inside without rebuilding the shell, for clients who want the home they live in to finally match the life they live.</p><p class="hc-svc__links"><a href="/services/#renovations">Renovations services</a><a href="/blog/home-renovation-costs-canberra/">Renovation costs</a></p></div>
+            <h2 class="hc-about__h" style="margin-top:2rem">Start with the free guide</h2>
+            <p>I wrote a guide for anyone thinking about renovating or building in Canberra. Costs, planning, timelines, hidden costs, approvals, and the ACT-specific things that catch people out. It's what I wish every client had read before we sat down for our first coffee. No signup. No email gate.</p>
+            <p><a href="/canberra-renovation-guide/" class="textlink" style="margin-top:0.6rem">Open the Guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+          </div>
+        </div>
+        <div class="hc-values">
+          <h2>What we stand for</h2>
+          <ul><li><h3>Think Before We Build</h3><p>A successful build starts well before construction. We get involved early to test ideas, understand costs, identify risks and help the design develop into something both beautiful and buildable. We do the work upfront to establish a clear scope and fixed price before construction begins.</p></li><li><h3>Build It Together</h3><p>We believe the best homes are created through genuine collaboration. Clients, architects, consultants, trades and builders all bring something valuable to the process. We listen, share our experience and work as one team toward a home the client genuinely loves.</p></li><li><h3>Calm Over Chaos</h3><p>Building is complicated. Your experience of it shouldn&rsquo;t feel that way. Clear next steps and steady communication, so you always know where things stand and what is needed from you.</p></li><li><h3>Stand Behind Our Work</h3><p>We take responsibility for what we do and follow through on what we promise. When challenges arise, we address them openly and work toward the right solution. Our relationship with a client does not end simply because construction has finished.</p></li></ul>
         </div>
       </div>
-    </section>
-
-    <section class="sec sec--tight sec--forest" aria-labelledby="guide-first-h">
-      <div class="wrap split">
-        <div><span class="label" style="color:var(--gold-light);display:block;margin-bottom:1.2rem">Before you reach out</span><h2 class="display h-md" id="guide-first-h">Start with the <span class="it">free guide</span></h2></div>
-        <div><p style="color:rgba(245,243,239,0.85)">I wrote a guide for anyone thinking about renovating or building in Canberra. Costs, planning, timelines, hidden costs, approvals, and the ACT-specific things that catch people out. It's what I wish every client had read before we sat down for our first coffee. No signup. No email gate.</p><div class="btn-row"><a href="/canberra-renovation-guide/" class="btn btn--gold">Open the Guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
-      </div>
-    </section>
-
-    <section class="sec sec--stone" id="services" aria-labelledby="svc-h">
-      <div class="wrap">
-        <div class="sec-head">
-          <div><span class="label">What We Do</span><h2 class="display h-lg" id="svc-h">Our <span class="it">services</span></h2></div>
-          <p class="lead">Most of our clients invest somewhere between $300,000 and $900,000, and some projects are considerably larger. <a href="/services/" class="inline-link">All services</a></p>
-        </div>
-        <div class="svc-grid">
-          <article class="svc rv">
-            <div class="svc__img"><img src="/assets/service-new-builds.jpg" alt="Illustration of a contemporary two-storey custom home in a Canberra streetscape" width="1600" height="1194" loading="lazy"><span class="imgnote">Illustrative image</span></div>
-            <div class="svc__body"><h3>New Builds</h3><p>A blank canvas and a clear vision. We build custom homes on Canberra blocks for clients who know what they want and want to enjoy the process of getting there. Every brief is different. Every contract is fixed-price.</p>
-              <p class="links-mini"><a href="/services/#custom-homes">New Builds services</a><a href="/services/knockdown-rebuild-canberra/">Knockdown rebuilds</a></p></div>
-          </article>
-          <article class="svc rv">
-            <div class="svc__img"><img src="/assets/service-extensions.jpg" alt="Illustration of a contemporary rear extension opening onto a deck and native garden" width="1600" height="1194" loading="lazy"><span class="imgnote">Illustrative image</span></div>
-            <div class="svc__body"><h3>Extensions</h3><p>Adding to a home you love is harder than starting fresh. New structure has to sit with old, new finishes have to respect what's there, and you have to live through it. We do extensions for people who want the addition to feel like it was always meant to be there.</p>
-              <p class="links-mini"><a href="/services/#extensions">Extensions services</a><a href="/blog/home-extension-costs-canberra/">Extension costs</a></p></div>
-          </article>
-          <article class="svc rv">
-            <div class="svc__img"><img src="/assets/griffith-bathroom.jpg" alt="Main bathroom with green tile and twin black-framed mirrors in a Griffith renovation" width="1600" height="1194" loading="lazy"><span class="imgnote">Griffith renovation</span></div>
-            <div class="svc__body"><h3>Renovations</h3><p>Most Canberra homes have good bones and outdated layouts. We rework the inside without rebuilding the shell, for clients who want the home they live in to finally match the life they live.</p>
-              <p class="links-mini"><a href="/services/#renovations">Renovations services</a><a href="/blog/home-renovation-costs-canberra/">Renovation costs</a></p></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="sec sec--deep" aria-labelledby="approach-h">
-      <div class="wrap">
-        <div class="sec-head">
-          <div><span class="label">How we work</span><h2 class="display h-lg" id="approach-h">The hard thinking happens <span class="it">before</span> we build.</h2></div>
-          <p class="lead">Design, consultants, selections and pricing are worked through first, so the contract price is based on real decisions rather than guesses.</p>
-        </div>
-        <div class="phases3">
-          <div class="phase3 rv"><b>01</b><small>Free</small><h3>Get to know each other</h3><p>A discovery call, a site consultation and a ballpark proposal, so you know where you stand before committing to anything.</p></div>
-          <div class="phase3 rv"><b>02</b><small>Preliminary Services Agreement</small><h3>Plan &amp; price</h3><p>Design, consultants, selections and trade pricing, tracked in your own pre-construction client portal.</p></div>
-          <div class="phase3 rv"><b>03</b><small>Fixed-price contract</small><h3>Build</h3><p>A site manager on site every day, regular updates, and any change to scope agreed in writing before the work happens.</p></div>
-        </div>
-        <div class="btn-row" style="margin-top:2.6rem"><a href="/how-we-work/" class="btn btn--gold">See the full process <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-      </div>
-    </section>
-
-    <section class="sec" aria-labelledby="values-h">
-      <div class="wrap">
-        <div class="sec-head">
-          <div><span class="label">What Drives Us</span><h2 class="display h-lg" id="values-h">What we <span class="it">stand for</span></h2></div>
-          <div><a href="/about/" class="textlink" style="color:var(--forest)">About us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-        </div>
-        <div class="values">
-          <article class="value rv"><span class="value__n" aria-hidden="true">01</span><h3>Think Before We Build</h3><p>A successful build starts well before construction. We get involved early to test ideas, understand costs, identify risks and help the design develop into something both beautiful and buildable. We do the work upfront to establish a clear scope and fixed price before construction begins.</p></article>
-          <article class="value rv"><span class="value__n" aria-hidden="true">02</span><h3>Build It Together</h3><p>We believe the best homes are created through genuine collaboration. Clients, architects, consultants, trades and builders all bring something valuable to the process. We listen, share our experience and work as one team toward a home the client genuinely loves.</p></article>
-          <article class="value rv"><span class="value__n" aria-hidden="true">03</span><h3>Calm Over Chaos</h3><p>Building is complicated. Your experience of it shouldn&rsquo;t feel that way. Clear next steps and steady communication, so you always know where things stand and what is needed from you.</p></article>
-          <article class="value rv"><span class="value__n" aria-hidden="true">04</span><h3>Stand Behind Our Work</h3><p>We take responsibility for what we do and follow through on what we promise. When challenges arise, we address them openly and work toward the right solution. Our relationship with a client does not end simply because construction has finished.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="sec sec--black" aria-labelledby="work-h">
-      <div class="wrap">
-        <div class="sec-head">
-          <div><span class="label">Recent work</span><h2 class="display h-lg" id="work-h">Planned properly. <span class="it">Built to last.</span></h2></div>
-          <div><a href="/projects/" class="btn btn--line">All projects</a></div>
-        </div>
-        <div class="gallery__grid">
-          <figure class="shot shot--tall rv"><img src="/assets/weetangera-ensuite.jpg" alt="Ensuite with chevron marble feature wall and timber vanity in a Weetangera renovation" width="1600" height="2400" loading="lazy"><figcaption>Weetangera</figcaption></figure>
-          <figure class="shot rv"><img src="/assets/griffith-shower.jpg" alt="Ensuite with green zellige tile and brass fittings in a Griffith renovation" width="1400" height="934" loading="lazy"><figcaption>Griffith</figcaption></figure>
-          <figure class="shot shot--tall rv"><img src="/assets/holder-fireplace-detail.jpg" alt="Fireplace detail with marble surround and timber woodstack in a Holder renovation" width="1600" height="1066" loading="lazy"><figcaption>Holder</figcaption></figure>
-          <figure class="shot rv"><img src="/assets/holder-beams.jpg" alt="Living area with exposed timber beams and skylights in a Holder renovation" width="1600" height="1066" loading="lazy"><figcaption>Holder</figcaption></figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="sec" aria-labelledby="quotes-h">
-      <div class="wrap">
-        <div class="sec-head">
-          <div><span class="label">Testimonials</span><h2 class="display h-lg" id="quotes-h">What our <span class="it">clients</span> say</h2></div>
-          <p class="lead">Building or renovating a home is a big investment, and choosing the right builder makes all the difference. Hear from our happy clients who have trusted us to bring their dream homes to life.</p>
-        </div>
-        <div class="quotes">
-          <figure class="quote quote--feature rv"><blockquote>Right from the outset, it was clear that Jeff's expertise and commitment were unparalleled as he took charge of managing the extensive renovation project. Our home, with its origins in the 1970s, required a comprehensive interior overhaul to bring it up to date. His diligence and commitment to excellence were evident in every aspect of the project. The final result was a beautifully renovated home that far exceeded our expectations.</blockquote><figcaption>Chris &middot; Weetangera</figcaption></figure>
-          <figure class="quote rv"><blockquote>We had Rentoule Projects expand our outdoor area. They were very patient with listening to what we wanted and informative with explaining alternative ways to achieve what we wanted. Their professionalism, communication and attention to detail were truly a breath of fresh air. I never once felt pressured.</blockquote><figcaption>Cindy &middot; Kambah</figcaption></figure>
-          <figure class="quote rv"><blockquote>Rentoule Projects completed a building project for me in early 2021. They did an excellent job and I was very happy with the result. They spent a fair amount of time listening to me and explaining the pros and cons of different approaches. They are highly skilled and efficient carpenters and they made building a quality deck look easy.</blockquote><figcaption>John Duffy</figcaption></figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="sec sec--stone" aria-labelledby="cost-h">
-      <div class="wrap">
-        <div class="sec-head">
-          <div><span class="label">Costing your project</span><h2 class="display h-lg" id="cost-h">What might it <span class="it">cost?</span></h2></div>
-          <p class="lead">Every project is different. There are dozens of factors that shape the final number on a fixed-price quote: scope, finish level, structural complexity, site conditions, and ACT-specific compliance costs. Start with the <a href="/canberra-renovation-guide/" class="inline-link">free Canberra Renovation Guide</a> for the full picture, or dive into the specific cost guides below.</p>
-        </div>
-        <div class="jgrid">
-          <a href="/blog/missing-middle-explained-canberra/" class="jcard jcard--text"><div class="jcard__body"><span class="jcard__cat">ACT Regulations</span><h3>What Canberra's Missing Middle Rules Mean for You</h3><p>What you can now do on an RZ1 or RZ2 block that you couldn't before 1 July 2026, what hasn't changed, and five everyday questions answered.</p><span class="jcard__date">Published 16 October 2026 &middot; Read the article</span></div></a>
-          <a href="/blog/second-storey-extensions-canberra/" class="jcard jcard--text"><div class="jcard__body"><span class="jcard__cat">Cost Guide</span><h3>Second Storey Extensions in Canberra</h3><p>Second storey additions with Rentoule Projects cost $4,800 to $7,500+ per square metre in 2026. Costs by size, when the ACT rules need a DA, and whether your house can take an upper floor.</p><span class="jcard__date">Published 15 October 2026 &middot; Read the article</span></div></a>
-          <a href="/blog/act-property-developer-licence-2026/" class="jcard jcard--text"><div class="jcard__body"><span class="jcard__cat">ACT Regulations</span><h3>Do You Need a Property Developer Licence in the ACT?</h3><p>From 1 October 2026, ACT projects of three or more dwellings need a licensed property developer. Single houses and dual occupancies are exempt. What it means for townhouse projects on RZ1 and RZ2 blocks.</p><span class="jcard__date">Published 1 October 2026 &middot; Read the article</span></div></a>
-          <a href="/blog/full-house-renovation-canberra/" class="jcard jcard--text"><div class="jcard__body"><span class="jcard__cat">Advice &amp; Tips</span><h3>Full House Renovation in Canberra: What to Expect Before You Commit</h3><p>The honest guide to a whole-of-home renovation in 2026: scope, sequencing, stay vs move out, cost bands from $250k to $700k+, timeline, and the four decisions that shape everything.</p><span class="jcard__date">Published 15 September 2026 &middot; Read the article</span></div></a>
-          <a href="/blog/canberra-construction-costs-up-40-percent-2026/" class="jcard jcard--text"><div class="jcard__body"><span class="jcard__cat">Market Update</span><h3>Why Canberra Construction Costs Are Up 40 Per Cent Since 2021</h3><p>The Insurance Council's 2026 report puts a standard Canberra home rebuild at $506,000, up from $360,000 in 2021. Where the extra cost has come from, why the ACT was hit harder than the national average, and what to do about it.</p><span class="jcard__date">Published 1 September 2026 &middot; Read the article</span></div></a>
-          <a href="/blog/rz1-design-options-mpa04-canberra/" class="jcard jcard--text"><div class="jcard__body"><span class="jcard__cat">ACT Planning</span><h3>What Can I Build on My RZ1 Block?</h3><p>MPA04 commenced 1 July. Duplex, townhouses, terraces, or a main dwelling plus a secondary dwelling. Design options for RZ1 blocks with worked examples in Kaleen, Curtin, Wanniassa and Ngunnawal.</p><span class="jcard__date">Published 15 August 2026 &middot; Read the guide</span></div></a>
-          <a href="/blog/home-renovation-costs-canberra/" class="jcard jcard--text"><div class="jcard__body"><span class="jcard__cat">Cornerstone Cost Guide</span><h3>Home Renovation Costs in Canberra</h3><p>The definitive 2026 cost guide. Per-square-metre rates, tier breakdowns by project type, and what your money buys at each price point.</p><span class="jcard__date">Updated June 2026 &middot; Read the guide</span></div></a>
-          <a href="/blog/bathroom-renovation-costs-canberra/" class="jcard jcard--text"><div class="jcard__body"><span class="jcard__cat">Cost Guide</span><h3>Bathroom Renovation Costs</h3><p>From $35k custom ensuites to $130k+ premium main bathrooms. What each price point gets you in a Canberra bathroom.</p><span class="jcard__date">Updated May 2026 &middot; Read the guide</span></div></a>
-          <a href="/blog/kitchen-renovation-costs-canberra/" class="jcard jcard--text"><div class="jcard__body"><span class="jcard__cat">Cost Guide</span><h3>Kitchen Renovation Costs</h3><p>$35k entry-level through to $150k+ premium. Includes the open-plan transformation cost when you need to remove a wall.</p><span class="jcard__date">Updated May 2026 &middot; Read the guide</span></div></a>
-          <a href="/blog/home-extension-costs-canberra/" class="jcard jcard--text"><div class="jcard__body"><span class="jcard__cat">Cost Guide</span><h3>Home Extension Costs</h3><p>Per-square-metre pricing for ground floor, second storey, and wraparound extensions, with realistic 40sqm worked example.</p><span class="jcard__date">Updated May 2026 &middot; Read the guide</span></div></a>
-          <a href="/blog/renovation-hidden-costs-canberra/" class="jcard jcard--text"><div class="jcard__body"><span class="jcard__cat">Watch-outs</span><h3>12 Hidden Costs to Watch For</h3><p>The cost line items most homeowners do not budget for. Asbestos, structural surprises, ACT compliance, and contingency planning.</p><span class="jcard__date">Published April 2026 &middot; Read the guide</span></div></a>
-          <a href="/blog/best-suburbs-renovation-roi-canberra/" class="jcard jcard--text"><div class="jcard__body"><span class="jcard__cat">ROI Guide</span><h3>Canberra's Best Renovation ROI Suburbs</h3><p>Which Canberra suburbs deliver the strongest return on renovation spend, with a section on when knockdown rebuild beats renovation.</p><span class="jcard__date">Updated May 2026 &middot; Read the guide</span></div></a>
-        </div>
-        <div class="artindex">
-          <h3 class="label">More guides and specialist services</h3>
-          <ul><li><a href="/blog/nsw-approval-pathways-da-cdc-cc-2026/">NSW Approval Pathways in 2026: DA vs CDC vs Construction Certificate</a></li><li><a href="/blog/tree-protection-canberra-act/">Tree Protection in Canberra: What You Can and Cannot Do Around Protected Trees (2026 Guide)</a></li><li><a href="/blog/fireplaces-wood-heaters-canberra/">Fireplaces and Wood Heaters in Canberra: The 2026 Rules Explained</a></li><li><a href="/blog/renovate-extend-rebuild-or-move-canberra/">Renovate, Extend, Knock Down and Rebuild, or Move: How Canberra Families Decide</a></li><li><a href="/blog/act-missing-middle-housing-reform-mpa04/">ACT Missing Middle Housing Reform (MPA04): What It Means for Canberra Property Owners</a></li><li><a href="/blog/federal-budget-2026-canberra-renovations/">Federal Budget 2026: What It Means for Canberra Renovations and Builds</a></li><li><a href="/canberra-renovation-guide/">The Canberra Renovation Guide: Costs, Planning and Practical Detail</a></li><li><a href="/blog/ncc-2025-canberra-renovations/">NCC 2025 in the ACT: What Canberra Homeowners Need to Know</a></li><li><a href="/blog/choosing-right-builder-canberra/">How to Choose the Right Builder in Canberra: 10 Essential Questions to Ask</a></li><li><a href="/blog/energy-efficiency-eer-canberra/">Energy Efficiency and EER Ratings in Canberra: What Homeowners Need to Know</a></li><li><a href="/blog/middle-east-conflict-construction-costs-australia/">How the Middle East Conflict Is Affecting Construction Costs in Australia</a></li><li><a href="/blog/extension-vs-renovation-canberra/">Home Extension vs. Renovation: Which Is Right for Your Canberra Home?</a></li><li><a href="/blog/how-to-plan-renovation-canberra/">How to Plan a Home Renovation in Canberra: Step-by-Step Guide</a></li><li><a href="/blog/da-approval-act-renovations/">Do You Need DA Approval for Renovations in the ACT? (2026 Guide)</a></li><li><a href="/services/knockdown-rebuild-canberra/">Knockdown Rebuild</a></li><li><a href="/services/mr-fluffy-block-rebuild/">Mr Fluffy Block Rebuild</a></li><li><a href="/services/dual-occupancy-canberra/">Dual Occupancy &amp; Secondary Residences</a></li></ul>
-          <p><a href="/blog/" class="textlink" style="color:var(--forest)">All articles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
-        </div>
-      </div>
-    </section>
-
-    <section class="sec" aria-labelledby="faq-h">
-      <div class="wrap two-col">
+      <div class="wrap hc-more__grid">
         <div>
-          <span class="label" style="color:var(--gold-deep);display:block;margin-bottom:1.4rem">FAQ</span>
-          <h2 class="display h-md" id="faq-h">Got <span class="it" style="color:var(--forest)">questions?</span></h2>
-          <p class="muted" style="margin-top:1.4rem;max-width:40ch">We understand that building or renovating a home comes with plenty of questions, and we're here to help.</p>
-        </div>
-        <div class="faq">
+          <h2 id="faq-h">Got questions?</h2>
+          <p style="color:var(--muted);font-size:0.95rem;margin:-0.6rem 0 1rem">We understand that building or renovating a home comes with plenty of questions, and we&rsquo;re here to help.</p>
+          <div class="faq">
           <details><summary>How do fixed-price contracts work?<i aria-hidden="true"></i></summary><p>Once we've agreed on scope, finishes and inclusions, the contract price is locked. We do all the estimating up front and stand behind it. If the scope changes during the build, variations are negotiated transparently in writing before any work happens. No surprise invoices at handover. It's harder for me because I have to estimate accurately, but it means you always know exactly where you stand.</p></details>
           <details><summary>Do you work in my suburb?<i aria-hidden="true"></i></summary><p>Most of our work is in Canberra's inner north and inner south - Yarralumla, Turner, Griffith, Campbell, Ainslie, Reid, Forrest, Braddon, Dickson, O'Connor, Hackett - and increasingly out in the Molonglo Valley where a lot of the new build activity is happening: Denman Prospect, Wright, Coombs, Whitlam, Molonglo and Macnamara. We're licensed in both the ACT and NSW, so we also build in Queanbeyan, Jerrabomberra, Googong and Bungendore. For the right project we'll travel further. Have the conversation either way.</p></details>
           <details><summary>How long does a full renovation usually take in Canberra?<i aria-hidden="true"></i></summary><p>On-site time for a major structural renovation is 6 to 10 months. But total elapsed time, from first conversation to moving back in, is usually 12 to 20 months once you factor in design, documentation, DA or SDHDC approval, and pre-construction lead times. If you're starting today, a major renovation realistically isn't finished inside 14 months. Plan accordingly.</p></details>
           <details><summary>Can we live in the house during the build?<i aria-hidden="true"></i></summary><p>Sometimes yes, often no. Cosmetic refreshes and single-room renovations can be done while you live there. Whole-house, structural or major extension work is much faster and cheaper if you can move out for the duration. We'll talk through the trade-offs at consultation - living through a build saves rental costs but extends timelines and tests patience. Both options have their place.</p></details>
           <details><summary>How do I get a quote or consultation?<i aria-hidden="true"></i></summary><p>Send through the form below or call me directly on 0434 435 966. If your project is the right fit, we'll arrange an on-site consultation. I'll walk through the property with you, listen to what you're picturing, and we'll figure out together whether we're the right builder for the job. Coffee's on me.</p></details>
         </div>
-      </div>
-    </section>
-
-    <section class="cta" aria-labelledby="cta-h">
-      <img class="cta__mark" src="/assets/logo-monogram-clean.png" alt="" aria-hidden="true">
-      <div class="wrap">
-        <span class="label" style="display:block;margin-bottom:1.2rem">Get Started</span>
-        <h2 class="display h-lg" id="cta-h">Ready to start your <span class="script">project</span>?</h2>
-        <p class="lead">Even a what-if conversation is a good start. Send me a note about what you're picturing. The first coffee is on me.</p>
-        <div class="btn-row">
-          <a href="/contact/" class="btn btn--black">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a href="tel:0434435966" class="btn btn--line">Call 0434 435 966</a>
+        </div>
+        <div>
+          <h2 id="guides-h">What might it cost?</h2>
+          <p class="hc-about__lead" style="color:var(--muted);font-size:0.95rem;max-width:60ch;margin-bottom:1.4rem">Every project is different. There are dozens of factors that shape the final number on a fixed-price quote: scope, finish level, structural complexity, site conditions, and ACT-specific compliance costs. Start with the <a href="/canberra-renovation-guide/" >free Canberra Renovation Guide</a> for the full picture, or dive into the specific cost guides below.</p>
+          <ul class="hc-guides"><li class="hc-guide"><a href="/blog/missing-middle-explained-canberra/">What Canberra's Missing Middle Rules Mean for You</a><span>What you can now do on an RZ1 or RZ2 block that you couldn't before 1 July 2026, what hasn't changed, and five everyday questions answered.</span></li><li class="hc-guide"><a href="/blog/second-storey-extensions-canberra/">Second Storey Extensions in Canberra</a><span>Second storey additions with Rentoule Projects cost $4,800 to $7,500+ per square metre in 2026. Costs by size, when the ACT rules need a DA, and whether your house can take an upper floor.</span></li><li class="hc-guide"><a href="/blog/act-property-developer-licence-2026/">Do You Need a Property Developer Licence in the ACT?</a><span>From 1 October 2026, ACT projects of three or more dwellings need a licensed property developer. Single houses and dual occupancies are exempt. What it means for townhouse projects on RZ1 and RZ2 blocks.</span></li><li class="hc-guide"><a href="/blog/full-house-renovation-canberra/">Full House Renovation in Canberra: What to Expect Before You Commit</a><span>The honest guide to a whole-of-home renovation in 2026: scope, sequencing, stay vs move out, cost bands from $250k to $700k+, timeline, and the four decisions that shape everything.</span></li><li class="hc-guide"><a href="/blog/canberra-construction-costs-up-40-percent-2026/">Why Canberra Construction Costs Are Up 40 Per Cent Since 2021</a><span>The Insurance Council's 2026 report puts a standard Canberra home rebuild at $506,000, up from $360,000 in 2021. Where the extra cost has come from, why the ACT was hit harder than the national average, and what to do about it.</span></li><li class="hc-guide"><a href="/blog/rz1-design-options-mpa04-canberra/">What Can I Build on My RZ1 Block?</a><span>MPA04 commenced 1 July. Duplex, townhouses, terraces, or a main dwelling plus a secondary dwelling. Design options for RZ1 blocks with worked examples in Kaleen, Curtin, Wanniassa and Ngunnawal.</span></li><li class="hc-guide"><a href="/blog/home-renovation-costs-canberra/">Home Renovation Costs in Canberra</a><span>The definitive 2026 cost guide. Per-square-metre rates, tier breakdowns by project type, and what your money buys at each price point.</span></li><li class="hc-guide"><a href="/blog/bathroom-renovation-costs-canberra/">Bathroom Renovation Costs</a><span>From $35k custom ensuites to $130k+ premium main bathrooms. What each price point gets you in a Canberra bathroom.</span></li><li class="hc-guide"><a href="/blog/kitchen-renovation-costs-canberra/">Kitchen Renovation Costs</a><span>$35k entry-level through to $150k+ premium. Includes the open-plan transformation cost when you need to remove a wall.</span></li><li class="hc-guide"><a href="/blog/home-extension-costs-canberra/">Home Extension Costs</a><span>Per-square-metre pricing for ground floor, second storey, and wraparound extensions, with realistic 40sqm worked example.</span></li><li class="hc-guide"><a href="/blog/renovation-hidden-costs-canberra/">12 Hidden Costs to Watch For</a><span>The cost line items most homeowners do not budget for. Asbestos, structural surprises, ACT compliance, and contingency planning.</span></li><li class="hc-guide"><a href="/blog/best-suburbs-renovation-roi-canberra/">Canberra's Best Renovation ROI Suburbs</a><span>Which Canberra suburbs deliver the strongest return on renovation spend, with a section on when knockdown rebuild beats renovation.</span></li><li><a href="/blog/nsw-approval-pathways-da-cdc-cc-2026/">NSW Approval Pathways in 2026: DA vs CDC vs Construction Certificate</a></li><li><a href="/blog/tree-protection-canberra-act/">Tree Protection in Canberra: What You Can and Cannot Do Around Protected Trees (2026 Guide)</a></li><li><a href="/blog/fireplaces-wood-heaters-canberra/">Fireplaces and Wood Heaters in Canberra: The 2026 Rules Explained</a></li><li><a href="/blog/renovate-extend-rebuild-or-move-canberra/">Renovate, Extend, Knock Down and Rebuild, or Move: How Canberra Families Decide</a></li><li><a href="/blog/act-missing-middle-housing-reform-mpa04/">ACT Missing Middle Housing Reform (MPA04): What It Means for Canberra Property Owners</a></li><li><a href="/blog/federal-budget-2026-canberra-renovations/">Federal Budget 2026: What It Means for Canberra Renovations and Builds</a></li><li><a href="/canberra-renovation-guide/">The Canberra Renovation Guide: Costs, Planning and Practical Detail</a></li><li><a href="/blog/ncc-2025-canberra-renovations/">NCC 2025 in the ACT: What Canberra Homeowners Need to Know</a></li><li><a href="/blog/choosing-right-builder-canberra/">How to Choose the Right Builder in Canberra: 10 Essential Questions to Ask</a></li><li><a href="/blog/energy-efficiency-eer-canberra/">Energy Efficiency and EER Ratings in Canberra: What Homeowners Need to Know</a></li><li><a href="/blog/middle-east-conflict-construction-costs-australia/">How the Middle East Conflict Is Affecting Construction Costs in Australia</a></li><li><a href="/blog/extension-vs-renovation-canberra/">Home Extension vs. Renovation: Which Is Right for Your Canberra Home?</a></li><li><a href="/blog/how-to-plan-renovation-canberra/">How to Plan a Home Renovation in Canberra: Step-by-Step Guide</a></li><li><a href="/blog/da-approval-act-renovations/">Do You Need DA Approval for Renovations in the ACT? (2026 Guide)</a></li><li><a href="/services/knockdown-rebuild-canberra/">Knockdown Rebuild</a></li><li><a href="/services/mr-fluffy-block-rebuild/">Mr Fluffy Block Rebuild</a></li><li><a href="/services/dual-occupancy-canberra/">Dual Occupancy &amp; Secondary Residences</a></li></ul>
+          <p style="margin-top:1.4rem"><a href="/blog/" class="textlink" style="margin-top:0">All articles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
         </div>
       </div>
     </section>
@@ -428,5 +410,7 @@
   </footer>
   <script src="/assets/js/rp.js" defer></script>
   <!-- /rp:footer -->
+
+  <script src="/assets/js/landing.js" defer></script>
 </body>
 </html>

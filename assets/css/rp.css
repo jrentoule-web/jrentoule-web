@@ -21,13 +21,13 @@
   --forest: #2c3d2e;
   --forest-deep: #1d2a1f;
   --black: #0e0e0c;
-  --ink: #1a1a18;
+  --ink: #1d2a1f;                /* warm forest black, not neutral black */
   --gold: #b8966e;
   --gold-light: #d4b48a;
   --gold-deep: #7a5f3e;          /* gold for small text on light grounds (AA) */
   --gold-script: #94744c;        /* large gold display text on light grounds (3:1+) */
   --muted: #55524b;
-  --line: rgba(26,26,24,0.14);
+  --line: rgba(29,42,31,0.14);
   --line-light: rgba(245,243,239,0.16);
   --white-card: #fbfaf7;
 
@@ -1717,3 +1717,84 @@ h2.gtoc__title { font-family: var(--sans); }
   .js .lanes:not(.go) .lane__bar { transform: none; opacity: 1; }
   .hero__media img { transform: none; }
 }
+
+
+/* =====================================================================
+   Warm brand palette (rolled out from the new homepage)
+   Cream and stone grounds, deep forest instead of black, gold as the accent.
+   Colour only: no layout or content changes.
+   ===================================================================== */
+.sec--black { background: var(--forest-deep); }
+.btn--black { background: var(--forest-deep); color: var(--cream); }
+.btn--black:hover { background: var(--forest); }
+.sec-head .label, .label.with-rule { display: flex; align-items: center; gap: 0.8rem; }
+.sec-head .label::before, .label.with-rule::before { content: ''; width: 28px; height: 1px; background: var(--gold); flex-shrink: 0; }
+.sec-head--center .label { justify-content: center; }
+.textlink { border-bottom-color: var(--gold); }
+/* the closing invitation band: deep forest with gold, instead of a solid gold block */
+.cta { background: var(--forest-deep); color: var(--cream); }
+.cta .label { color: var(--gold-light); }
+.cta .display .script, .cta h2 .script { color: var(--gold-light); }
+.cta .lead { color: rgba(245,243,239,0.82); }
+.cta .btn--black { background: var(--gold); color: var(--black); }
+.cta .btn--black:hover { background: var(--gold-light); }
+.cta .btn--line { color: var(--cream); border-color: rgba(212,180,138,0.7); }
+.cta__mark { opacity: 0.06; filter: invert(1); }
+.cta .bring { border-top-color: rgba(212,180,138,0.35); }
+.cta .bring li { background: rgba(245,243,239,0.08); color: var(--cream); border: 1px solid rgba(212,180,138,0.3); }
+
+/* Calmer headings: no italic or script flourishes inside headings (the brand script lives in the logo) */
+.display .it, .display .script, h1 .it, h2 .it, h3 .it, h1 .script, h2 .script, h3 .script, h1 em, h2 em, h3 em {
+  font-family: inherit; font-style: normal; font-size: inherit; font-weight: inherit; color: inherit; letter-spacing: inherit; display: inline; margin: 0; line-height: inherit; }
+.sec-head .display .it, .phero h1 .it, .phero h1 .script, .cta h2 .script, .cta .display .script, .hero h1 .script, .gcover h1 .script, .sec--forest .display .it, .sec--deep .display .it, .sec--black .display .it, .process .display .it { color: inherit; }
+.display { color: inherit; }
+
+/* Page headers: the photo fills the header, with the title over a soft forest tint (like the homepage) */
+.phero:has(.phero__img) { min-height: min(78vh, 760px); display: flex; align-items: flex-end; background: var(--forest-deep); }
+.phero:has(.phero__img) > .wrap { position: static; width: 100%; }
+.phero:has(.phero__img) .phero__grid > div:first-child, .phero:has(.phero__img) .phero__facts { position: relative; z-index: 2; }
+.phero:has(.phero__img) .phero__grid { display: block; }
+.phero:has(.phero__img) .phero__grid > div:first-child { max-width: 46rem; }
+.phero .phero__img { position: absolute; inset: 0; z-index: 0; margin: 0; }
+.phero .phero__img img { width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; border-radius: 0; }
+.phero:has(.phero__img)::after { content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(to top, rgba(20,31,22,0.88) 0%, rgba(20,31,22,0.55) 45%, rgba(20,31,22,0.25) 75%, rgba(20,31,22,0.45) 100%), linear-gradient(90deg, rgba(20,31,22,0.5), rgba(20,31,22,0) 70%); }
+.phero .phero__img .imgnote { left: auto; right: var(--gutter); bottom: 12px; z-index: 3; }
+.phero h1 { color: #fff; }
+
+/* =====================================================================
+   Canberra Renovation Guide: calmer, editorial long-read
+   Styling only. Every word, heading, link and the page structure are unchanged.
+   ===================================================================== */
+/* cards become a simple ruled list rather than boxes on boxes */
+.gcards { gap: 0 2.4rem; }
+.gcard, .gcard--dark { background: none; border: 0; border-top: 1px solid var(--line); border-radius: 0; padding: 1.2rem 0 1.3rem; color: var(--ink); }
+.gcard--dark h3, .gcard--dark p { color: var(--ink); }
+.gcard__tag, .gcard--dark .gcard__tag { background: none; color: var(--gold-deep); padding: 0; border-radius: 0; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.4rem; }
+/* chapter openers: smaller numerals, no heavy rules */
+.gch__num { font-size: clamp(2.2rem, 3.4vw, 2.8rem); color: var(--gold-deep); line-height: 1; }
+.gch__open { align-items: baseline; gap: 0.4rem 1.1rem; }
+.gch__sum { border-top: 0; padding-top: 0.2rem; }
+/* steps and stages: plain numbered rows */
+.gstep::before { font-size: 1.6rem; color: var(--gold-deep); }
+.gstages { gap: 0 1.6rem; }
+.gstage { background: none; border: 0; border-top: 1px solid var(--line); border-radius: 0; padding: 1.1rem 0; }
+.gstage:last-child, .gstage[class*="dark"] { background: none; color: var(--ink); }
+/* notes and in-text calls to action: quiet rules instead of filled panels */
+.gnote, .gintro__note { background: none; border: 0; border-left: 2px solid var(--gold); border-radius: 0; padding: 0.2rem 0 0.2rem 1.2rem; }
+.minicta { background: none; color: var(--ink); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); border-radius: 0; padding: 1.5rem 0; }
+.minicta .minicta__h { color: var(--forest-deep); }
+.minicta .minicta__h em { color: inherit; font-style: normal; }
+.minicta p { color: var(--muted); }
+.gtoc__cta { background: none; border: 0; border-top: 1px solid var(--line); border-radius: 0; color: var(--ink); padding: 1rem 0 0; }
+.gtwo { gap: 0 2.4rem; }
+.gtwo > div, .gtwo .good, .gtwo .bad { background: none; border-radius: 0; border-top: 1px solid var(--line); padding: 1.2rem 0; }
+.gtoc__cta strong { color: var(--forest-deep); }
+.gtoc__cta a { color: var(--forest-deep); border-bottom: 1px solid var(--gold); }
+.gpull em { font-style: normal; color: inherit; }
+
+/* quiet image note stays legible on bright photos */
+.imgnote { background: rgba(20,31,22,0.62); padding: 0.15rem 0.45rem; border-radius: 2px; text-shadow: none; color: rgba(255,255,255,0.92); }
+
+/* No italic or script flourishes inside any heading, whichever template it comes from */
+:is(h1, h2, h3) :is(.it, .script, em) { font-family: inherit !important; font-style: normal !important; font-size: inherit !important; color: inherit !important; display: inline !important; margin: 0 !important; transform: none !important; }

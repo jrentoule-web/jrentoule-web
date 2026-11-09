@@ -73,8 +73,9 @@
     }
   }
   </script>
+  <link rel="stylesheet" href="/assets/css/landing.css">
 </head>
-<body class="has-dark-hero">
+<body class="has-dark-hero hc-page">
   <!-- rp:header -->
   <a href="#main" class="skip">Skip to content</a>
   <div class="rp-progress" aria-hidden="true"></div>
@@ -115,98 +116,61 @@
   </div>
   <!-- /rp:header -->
 
-  <main id="main" tabindex="-1">
+  <main id="main" tabindex="-1" class="hc">
 
-    <section class="phero" aria-labelledby="about-h">
-      <div class="wrap">
-        <div class="phero__grid">
-          <div>
-            <p class="label">About</p>
-            <h1 class="display h-lg" id="about-h">Built on trust. <span class="it">Delivered with pride.</span></h1>
-            <p class="lead">I started Rentoule Projects to build the way I&rsquo;d want as a homeowner myself. A small team, a fixed price agreed before we build, and me across every project.</p>
-          </div>
-          <figure class="phero__img">
-            <img src="/assets/careers-hero.jpg" alt="The Rentoule Projects team on site during a renovation" width="2000" height="1333" fetchpriority="high">
-            <span class="imgnote">The team on site</span>
-          </figure>
-        </div>
-        <dl class="phero__facts">
-          <div><dt>Industry experience</dt><dd>19 years in Canberra building</dd></div>
-          <div><dt>Licensed</dt><dd>ACT 20211145 &middot; NSW 453726C</dd></div>
-          <div><dt>We build</dt><dd>Renovations, extensions and selective custom homes</dd></div>
-        </dl>
+    <section class="hc-sec hc-hero hc-hero--page" aria-labelledby="hero-h">
+      <picture><img src="/assets/careers-hero.jpg" alt="The Rentoule Projects team on site during a renovation" width="2000" height="1333" fetchpriority="high" style="object-position:50% 40%"></picture>
+      <div class="hc-hero__in">
+        <span class="kick">About</span>
+        <h1 id="hero-h">Built on trust. Delivered with pride.</h1>
+        <p class="hc-hero__lead">I started Rentoule Projects to build the way I&rsquo;d want as a homeowner myself. A small team, a fixed price agreed before we build, and me across every project.</p>
       </div>
+      <a href="#s1" class="hc-cue" aria-label="Scroll to the next section">Scroll<span></span></a>
     </section>
-
-    <section class="sec" aria-labelledby="story-h">
-      <div class="wrap split">
-        <div class="rv">
-          <p class="label" style="color:var(--gold-deep);margin-bottom:1.4rem">Our story</p>
-          <h2 class="display h-md" id="story-h">Meet <span class="it" style="color:var(--forest)">Jeff Rentoule.</span></h2>
-          <div style="margin-top:1.6rem">
-            <p>Hi, I&rsquo;m Jeff. Canberra born and raised, and I&rsquo;ve never lived anywhere else. This city is home in every sense of the word. My wife, our three kids and I live and breathe Canberra. Most weekends you&rsquo;ll find us at one of the local parks, riding around the bike trails, or just enjoying everything this place has to offer.</p>
-            <p>I&rsquo;ve spent 19 years in the construction industry. I started on the tools, learned the trade from the ground up, and worked on just about every kind of residential project Canberra has to offer, from cold concrete slab pours in the depths of winter to heritage extensions in the Inner North. Five years ago I took the leap and started Rentoule Projects because I wanted to do this work my way. I wanted to build the kind of relationships with clients that I&rsquo;d want as a homeowner myself.</p>
-            <p>For me, this is more than a job. I genuinely care about the families and the homes I&rsquo;m trusted to work on. That&rsquo;s why I keep the team small, why I&rsquo;m personally across every project, and why every contract is fixed-price so you always know where you stand.</p>
-            <p>Canberra is a small town in a lot of ways, and reputation is everything. Most of my work comes through referrals from past clients, and I&rsquo;m proud of that. It tells me I&rsquo;m doing something right.</p>
-          </div>
-        </div>
-        <figure class="split__img rv">
-          <img src="/assets/about-team.jpg" alt="Jeff Rentoule on site discussing plans with site manager Matt Ivanoff" width="1200" height="1800" loading="lazy">
-          <figcaption class="caption">Jeff with site manager Matt on site.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="sec sec--stone" aria-labelledby="values-h">
-      <div class="wrap">
-        <div class="sec-head">
-          <div><span class="label">What we stand for</span><h2 class="display h-lg" id="values-h">Four principles. <span class="it">Every project.</span></h2></div>
-          <p class="lead">They shape how we price, how we communicate and how we behave when something goes wrong.</p>
-        </div>
-        <div class="values">
-          <article class="value rv"><span class="value__n" aria-hidden="true">01</span><h3>Think Before We Build</h3><p>A successful build starts well before construction. We get involved early to test ideas, understand costs, identify risks and help the design develop into something both beautiful and buildable.</p></article>
-          <article class="value rv"><span class="value__n" aria-hidden="true">02</span><h3>Build It Together</h3><p>Clients, architects, consultants, trades and builders all bring something valuable. We listen, share our experience and work as one team toward a home you love.</p></article>
-          <article class="value rv"><span class="value__n" aria-hidden="true">03</span><h3>Calm Over Chaos</h3><p>Building is complicated. Your experience of it shouldn&rsquo;t feel that way. Clear next steps and steady communication, so you always know where things stand.</p></article>
-          <article class="value rv"><span class="value__n" aria-hidden="true">04</span><h3>Stand Behind Our Work</h3><p>We take responsibility for what we do and follow through on what we promise. Our relationship with a client doesn&rsquo;t end when construction finishes.</p></article>
+    <section class="hc-sec hc-split hc-split--rev" aria-labelledby="a-jeff"><span id="s1"></span>
+      <div class="hc-split__in">
+        <div class="hc-split__media hc-split__media--tall"><img src="/assets/team-on-site.jpg" alt="Jeff with site manager Matt on site" width="1067" height="1600" loading="lazy" style="object-position:50% 40%"></div>
+        <div>
+          <span class="kick">Our story</span>
+          <h2 id="a-jeff">Meet Jeff Rentoule.</h2>
+          <p class="body">Hi, I&rsquo;m Jeff. Canberra born and raised, and I&rsquo;ve never lived anywhere else. This city is home in every sense of the word. My wife, our three kids and I live and breathe Canberra. Most weekends you&rsquo;ll find us at one of the local parks, riding around the bike trails, or just enjoying everything this place has to offer.</p><p class="body">I&rsquo;ve spent 19 years in the construction industry. I started on the tools, learned the trade from the ground up, and worked on just about every kind of residential project Canberra has to offer, from cold concrete slab pours in the depths of winter to heritage extensions in the Inner North. Five years ago I took the leap and started Rentoule Projects because I wanted to do this work my way. I wanted to build the kind of relationships with clients that I&rsquo;d want as a homeowner myself.</p><p class="body">For me, this is more than a job. I genuinely care about the families and the homes I&rsquo;m trusted to work on. That&rsquo;s why I keep the team small, why I&rsquo;m personally across every project, and why every contract is fixed-price so you always know where you stand.</p><p class="body">Canberra is a small town in a lot of ways, and reputation is everything. Most of my work comes through referrals from past clients, and I&rsquo;m proud of that. It tells me I&rsquo;m doing something right.</p><dl class="hc-facts"><div><dt>Industry experience</dt><dd>19 years in Canberra building</dd></div><div><dt>Licensed</dt><dd>ACT 20211145 &middot; NSW 453726C</dd></div><div><dt>We build</dt><dd>Renovations, extensions and selective custom homes</dd></div></dl>
+          
         </div>
       </div>
     </section>
-
-    <section class="sec sec--black" aria-labelledby="video-h">
-      <div class="wrap">
-        <div class="sec-head">
-          <div><span class="label">See our world</span><h2 class="display h-lg" id="video-h">A glimpse <span class="it">behind the hoarding.</span></h2></div>
-          <p class="lead">The people, the sites and the way we work, in a couple of minutes.</p>
-        </div>
-        <div class="video rv" data-video="https://player.vimeo.com/video/1065695637?h=8b78f942f6&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1&amp;autoplay=1" data-title="Rentoule Projects brand video">
+    <section class="hc-sec" style="background:var(--stone)" aria-labelledby="a-values">
+      <div class="hc-text">
+        <span class="kick">What we stand for</span>
+        <h2 id="a-values">Four principles. Every project.</h2>
+        <p class="body">They shape how we price, how we communicate and how we behave when something goes wrong.</p>
+        <ul class="hc-principles"><li><h3>Think Before We Build</h3><p>A successful build starts well before construction. We get involved early to test ideas, understand costs, identify risks and help the design develop into something both beautiful and buildable.</p></li><li><h3>Build It Together</h3><p>Clients, architects, consultants, trades and builders all bring something valuable. We listen, share our experience and work as one team toward a home you love.</p></li><li><h3>Calm Over Chaos</h3><p>Building is complicated. Your experience of it shouldn&rsquo;t feel that way. Clear next steps and steady communication, so you always know where things stand.</p></li><li><h3>Stand Behind Our Work</h3><p>We take responsibility for what we do and follow through on what we promise. Our relationship with a client doesn&rsquo;t end when construction finishes.</p></li></ul>
+      </div>
+    </section>
+    <section class="hc-sec hc-split" aria-labelledby="a-video">
+      <div class="hc-split__in">
+        <div class="hc-split__media"><div class="video" data-video="https://player.vimeo.com/video/1065695637?h=8b78f942f6&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1&amp;autoplay=1" data-title="Rentoule Projects brand video">
           <button type="button" aria-label="Play video: Rentoule Projects brand video"><span class="play"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span><span>Play video</span></button>
           <img src="/assets/holder-beams.jpg" alt="" width="1600" height="1066" loading="lazy">
-        </div>
-      </div>
-    </section>
-
-    <section class="sec" aria-labelledby="next-h">
-      <div class="wrap split">
+        </div></div>
         <div>
-          <span class="label" style="color:var(--gold-deep);display:block;margin-bottom:1.4rem">Before you get in touch</span>
-          <h2 class="display h-md" id="next-h">Two good places <span class="it" style="color:var(--forest)">to start.</span></h2>
-        </div>
-        <div style="display:grid;gap:14px">
-          <a href="/how-we-work/" class="related-card"><span class="related-card__meta">The process</span><span class="related-card__title">How we work, from first call to handover</span><span class="related-card__link">Read</span></a>
-          <a href="/canberra-renovation-guide/" class="related-card"><span class="related-card__meta">Free guide</span><span class="related-card__title">The Canberra Renovation Guide</span><span class="related-card__link">Read</span></a>
+          <span class="kick">On site</span>
+          <h2 id="a-video">A glimpse behind the hoarding.</h2>
+          <p class="body">The people, the sites and the way we work, in a couple of minutes.</p><p class="caption" style="font-size:0.8rem;color:var(--muted);margin-top:1rem">Plays from Vimeo when you press play.</p>
+          <a href="/projects/" class="textlink">See our projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
     </section>
-
-    <section class="cta" aria-labelledby="cta-h">
-      <img class="cta__mark" src="/assets/logo-monogram-clean.png" alt="" aria-hidden="true">
-      <div class="wrap">
-        <h2 class="display h-lg" id="cta-h">Let&rsquo;s build something <span class="script">together.</span></h2>
-        <p class="lead">If you&rsquo;ve got a project on your mind, even just a what-if at this stage, I&rsquo;d love to hear from you. Coffee&rsquo;s on me.</p>
+    <section class="hc-sec hc-close" aria-labelledby="cta-h">
+      <img src="/assets/team-plans.jpg" alt="" width="1800" height="1200" loading="lazy">
+      <div class="hc-close__in">
+        <span class="kick">Get started</span>
+        <h2 id="cta-h">Let&rsquo;s build something together.</h2>
+        <p>If you&rsquo;ve got a project on your mind, even just a what-if at this stage, I&rsquo;d love to hear from you. Coffee&rsquo;s on me.</p>
         <div class="btn-row">
-          <a href="/contact/" class="btn btn--black">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a href="/careers/" class="btn btn--line">Work with us</a>
+          <a href="/contact/" class="btn btn--gold">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="tel:0434435966" class="btn btn--line">Call 0434 435 966</a>
         </div>
+        <p style="font-size:0.85rem;margin-top:1.6rem">Two good places to start: <a href="/how-we-work/" style="text-decoration:underline;text-underline-offset:3px">how we work</a> and <a href="/canberra-renovation-guide/" style="text-decoration:underline;text-underline-offset:3px">the Canberra Renovation Guide</a>.</p>
       </div>
     </section>
   </main>
@@ -251,5 +215,6 @@
   </footer>
   <script src="/assets/js/rp.js" defer></script>
   <!-- /rp:footer -->
+  <script src="/assets/js/landing.js" defer></script>
 </body>
 </html>
