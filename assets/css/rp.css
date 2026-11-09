@@ -1530,10 +1530,13 @@ h2.gtoc__title { font-family: var(--sans); }
 .gbar--time.site i { background: var(--gold); }
 .gscale { display: flex; justify-content: space-between; font-size: 0.64rem; color: var(--muted); margin-top: 0.5rem; letter-spacing: 0.04em; }
 .grange thead th.bar span { display: flex; justify-content: space-between; font-weight: 600; letter-spacing: 0.04em; text-transform: none; }
+.gtl { position: relative; height: 14px; background: rgba(26,26,24,0.06); border-radius: 999px; }
+.gtl__total { position: absolute; top: 0; bottom: 0; left: 0; width: var(--hi); border-radius: 999px; background: linear-gradient(90deg, var(--forest) 0, var(--forest) var(--r), rgba(44,61,46,0.35) var(--r), rgba(44,61,46,0.35) 100%); }
+.gtl__site { position: absolute; top: 4px; bottom: 4px; left: var(--s); right: var(--e); background: var(--gold-light); border-radius: 999px; box-shadow: 0 0 0 1px rgba(14,14,12,0.12); }
 .glegend { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; font-size: 0.78rem; color: var(--muted); margin: 0.6rem 0 0; }
 .glegend span { display: inline-flex; align-items: center; gap: 0.5rem; }
 .glegend i { width: 22px; height: 8px; border-radius: 999px; background: var(--forest); display: inline-block; }
-.glegend i.site { background: var(--gold); }
+.glegend i.site { height: 6px; background: var(--gold-light); box-shadow: 0 0 0 1px rgba(14,14,12,0.12); }
 
 /* Card grids inside chapters */
 .gcards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 1.6rem 0 2rem; }
@@ -1695,9 +1698,9 @@ h2.gtoc__title { font-family: var(--sans); }
   .grange th, .grange td { border: 0; padding: 0; width: auto !important; }
   .grange td.bar { grid-column: 1 / -1; padding-top: 0.3rem; }
   .grange td.what { grid-column: 1 / -1; }
-  .grange--time tr { grid-template-columns: 1fr 1fr; }
+  .grange--time tr, .grange--time tbody tr { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .grange--time tbody th { grid-column: 1 / -1; }
-  .grange--time td.amt { white-space: nowrap; font-size: 0.8rem; }
+  .grange--time td.amt { white-space: normal; font-size: 0.8rem; min-width: 0; }
   .gcover .imgnote { top: calc(var(--header-h) + 10px); bottom: auto; left: var(--gutter); right: auto; }
   .grange--time td.amt:nth-of-type(1)::before { content: 'On site: '; font-weight: 400; color: var(--muted); }
   .grange--time td.amt:nth-of-type(2)::before { content: 'Total: '; font-weight: 400; color: var(--muted); }

@@ -161,6 +161,7 @@
   <style>
   /* Homepage C: page-scoped styles only. */
   /* Touch screens: soft native snapping. Mouse/trackpad: normal scrolling, then a gentle settle (script below). */
+  html { scroll-behavior: auto; } /* the glide below does its own easing */
   @media (pointer: coarse) { html { scroll-snap-type: y proximity; } }
   .hc-page .rp-header__cta { background: transparent; border: 1px solid currentColor; color: inherit; }
   .hc-page .rp-header__cta:hover { background: rgba(127,127,127,0.12); }
@@ -288,10 +289,10 @@
         <a href="/how-we-work/" data-nav="how-we-work">How we work</a>
         <a href="/projects/" data-nav="projects">Projects</a>
         <a href="/canberra-renovation-guide/" data-nav="guide">Guide</a>
-        <a href="/blog/" data-nav="journal">Journal</a>
+        <a href="/blog/" data-nav="journal">Blog</a>
         <a href="/about/" data-nav="about">About</a>
       </nav>
-      <a href="/contact/" class="btn btn--gold rp-header__cta">Start a conversation</a>
+      <a href="/contact/" class="btn btn--gold rp-header__cta">Get in touch</a>
       <button class="rp-burger" id="rpBurger" aria-label="Open menu" aria-expanded="false" aria-controls="rpMenu"><span></span></button>
     </div>
   </header>
@@ -303,12 +304,12 @@
       <a href="/how-we-work/" data-nav="how-we-work">How we work</a>
       <a href="/projects/" data-nav="projects">Projects</a>
       <a href="/canberra-renovation-guide/" data-nav="guide">Renovation guide</a>
-      <a href="/blog/" data-nav="journal">Journal</a>
+      <a href="/blog/" data-nav="journal">Blog</a>
       <a href="/about/" data-nav="about">About</a>
       <a href="/careers/" data-nav="careers">Careers</a>
     </nav>
     <div class="rp-menu__foot">
-      <a href="/contact/" class="btn btn--gold">Start a conversation</a>
+      <a href="/contact/" class="btn btn--gold">Get in touch</a>
       <a href="tel:0434435966">0434 435 966</a>
     </div>
   </div>
@@ -469,7 +470,7 @@
           <li><a href="/how-we-work/">How we work</a></li>
           <li><a href="/projects/">Projects</a></li>
           <li><a href="/canberra-renovation-guide/">Canberra Renovation Guide</a></li>
-          <li><a href="/blog/">Journal</a></li>
+          <li><a href="/blog/">Blog</a></li>
           <li><a href="/blog/home-renovation-costs-canberra/">Renovation costs</a></li>
         </ul></div>
         <div><h2>Company</h2><ul>
@@ -487,37 +488,48 @@
   <!-- /rp:footer -->
 
   <script>
-  /* Gentle settle: scroll normally; once scrolling pauses, ease slowly onto the nearest section. */
+  /* Scroll normally; once you're about 15% into the next section, glide there and hold.
+     Leftover trackpad momentum is absorbed, so the next move needs a fresh scroll. Touch uses soft CSS snapping. */
   (function () {
     var secs = [].slice.call(document.querySelectorAll('.hc-sec')), more = document.querySelector('.hc-more');
     if (!secs.length || !more || !window.matchMedia('(pointer: fine)').matches) return;
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var timer = 0, anim = 0, animating = false, lastInput = 0;
-    function stop() { if (anim) cancelAnimationFrame(anim); anim = 0; animating = false; }
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches, THRESHOLD = 0.15;
+    var anim = 0, animating = false, holdUntil = 0, timer = 0, lastY = window.scrollY, dir = 1;
+    function stops() { return secs.map(function (s) { return s.offsetTop; }).concat([more.offsetTop]); }
     function ease(t) { return 1 - Math.pow(1 - t, 3); }
     function glide(to) {
       var from = window.scrollY, dist = to - from, dur = Math.min(900, 520 + Math.abs(dist) * 0.6), t0 = 0;
-      if (reduce) { window.scrollTo(0, to); return; }
-      animating = true;
-      function step(ts) { if (!t0) t0 = ts; var k = Math.min(1, (ts - t0) / dur); window.scrollTo(0, from + dist * ease(k)); if (k < 1 && animating) anim = requestAnimationFrame(step); else stop(); }
+      animating = true; holdUntil = Date.now() + dur + 250;
+      if (reduce) { window.scrollTo({ top: to, behavior: 'instant' }); animating = false; lastY = to; return; }
+      function step(ts) {
+        if (!t0) t0 = ts; var k = Math.min(1, (ts - t0) / dur);
+        window.scrollTo({ top: from + dist * ease(k), behavior: 'instant' });
+        if (k < 1) anim = requestAnimationFrame(step); else { animating = false; lastY = window.scrollY; }
+      }
       anim = requestAnimationFrame(step);
     }
-    function settle() {
-      if (Date.now() - lastInput < 120) { timer = setTimeout(settle, 120); return; }
-      var y = window.scrollY, moreTop = more.offsetTop;
-      if (y >= moreTop - 2) return;                       /* free reading in the final section */
-      var stops = secs.map(function (s) { return s.offsetTop; }).concat([moreTop]), i = 0;
-      while (i < stops.length - 2 && stops[i + 1] <= y) i++;
-      var base = stops[i], next = stops[i + 1], p = (y - base) / (next - base);
-      /* follow the direction of travel: a fifth of the way is enough to carry on */
-      var target = dir > 0 ? (p > 0.2 ? next : base) : (p < 0.8 ? base : next);
-      if (Math.abs(target - y) > 2) glide(target);
+    function where(y) {
+      var st = stops(), i = 0; while (i < st.length - 2 && st[i + 1] <= y) i++;
+      return { base: st[i], next: st[i + 1], p: (y - st[i]) / (st[i + 1] - st[i]), free: y >= st[st.length - 1] - 2 };
     }
-    ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (ev) {
-      window.addEventListener(ev, function () { lastInput = Date.now(); if (animating) stop(); }, { passive: true });
-    });
-    var lastY = window.scrollY, dir = 1;
-    window.addEventListener('scroll', function () { var y = window.scrollY; if (!animating && y !== lastY) dir = y > lastY ? 1 : -1; lastY = y; if (animating) return; clearTimeout(timer); timer = setTimeout(settle, 180); }, { passive: true });
+    /* absorb wheel input while gliding and while momentum continues just after */
+    window.addEventListener('wheel', function (e) {
+      if (e.ctrlKey) return;
+      var now = Date.now();
+      if (animating || now < holdUntil) { e.preventDefault(); if (!animating) holdUntil = now + 180; }
+    }, { passive: false });
+    window.addEventListener('scroll', function () {
+      if (animating) return;
+      var y = window.scrollY; if (y !== lastY) dir = y > lastY ? 1 : -1; lastY = y;
+      var w = where(y); if (w.free) return;
+      if (dir > 0 && w.p >= THRESHOLD && w.p < 0.999) { glide(w.next); return; }
+      if (dir < 0 && w.p <= 1 - THRESHOLD && w.p > 0.001) { glide(w.base); return; }
+      clearTimeout(timer);
+      timer = setTimeout(function () {                 /* stopped short of the threshold: ease back */
+        if (animating) return; var w2 = where(window.scrollY);
+        if (!w2.free && w2.p > 0.001 && w2.p < 0.999) glide(w2.p < 0.5 ? w2.base : w2.next);
+      }, 220);
+    }, { passive: true });
   })();
   </script>
 </body>
