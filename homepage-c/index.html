@@ -180,8 +180,12 @@
   .hc-hero picture img { object-fit: cover; object-position: 50% 60%; }
   .hc-hero::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 45% at 50% 48%, rgba(14,14,12,0.5), rgba(14,14,12,0) 100%), linear-gradient(rgba(14,14,12,0.45), rgba(14,14,12,0.18) 40%, rgba(14,14,12,0.5)); }
   .hc-hero__in { position: relative; z-index: 1; padding: 0 var(--gutter); }
-  .hc-hero h1 { font-size: clamp(2.6rem, 5.6vw, 5.2rem); max-width: 16ch; margin: 0 auto; text-shadow: 0 2px 24px rgba(0,0,0,0.25); }
-  .hc-hero p { font-family: var(--serif); font-style: italic; font-size: clamp(1.15rem, 1.8vw, 1.5rem); margin-top: 1.2rem; opacity: 0.92; }
+  .hc-biglogo { display: block; width: min(76vw, 860px); height: auto; margin: 0 auto clamp(1.4rem, 3vw, 2.4rem); filter: drop-shadow(0 2px 18px rgba(0,0,0,0.3)); }
+  .hc-fly { position: fixed; z-index: 205; top: 0; left: 0; transform-origin: 0 0; pointer-events: none; filter: drop-shadow(0 2px 18px rgba(0,0,0,0.3)); will-change: transform, opacity; }
+  .hc-morph .hc-biglogo { visibility: hidden; }
+  .hc-morph .rp-header .rp-logo { transition: none; }
+  .hc-hero h1 { font-size: clamp(1.5rem, 2.6vw, 2.3rem); font-weight: 300; letter-spacing: 0.01em; max-width: 24ch; margin: 0 auto; text-shadow: 0 2px 18px rgba(0,0,0,0.3); }
+  .hc-hero p { font-family: var(--serif); font-style: italic; font-size: clamp(1.05rem, 1.5vw, 1.3rem); margin-top: 0.7rem; opacity: 0.9; }
   .hc-cue { position: absolute; z-index: 1; left: 50%; bottom: 2rem; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 0.6rem; font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.85); }
   .hc-cue span { width: 1px; height: 38px; background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0)); }
   @media (prefers-reduced-motion: no-preference) { .hc-cue span { animation: hcCue 2.4s ease-in-out infinite; transform-origin: top; } }
@@ -323,6 +327,7 @@
         <img src="/assets/kitchen-island-black.jpg" alt="Black timber kitchen with a waterfall stone island and timber floors, by Rentoule Projects" width="1500" height="1000" fetchpriority="high">
       </picture>
       <div class="hc-hero__in">
+        <img class="hc-biglogo" src="/assets/logo-hero-white.png" alt="" width="1216" height="368">
         <h1 id="hero-h">Crafting visions into reality</h1>
         <p>Making your house your home.</p>
       </div>
@@ -488,49 +493,92 @@
   <!-- /rp:footer -->
 
   <script>
-  /* Scroll normally; once you're about 15% into the next section, glide there and hold.
-     Leftover trackpad momentum is absorbed, so the next move needs a fresh scroll. Touch uses soft CSS snapping. */
+  /* Section scrolling: a small scroll towards the next section is enough. The page then glides there
+     (about 0.85s) and holds, absorbing leftover trackpad momentum, until you scroll again.
+     Touch screens use soft CSS snapping. Keyboard and scrollbar settle onto the nearest section. */
   (function () {
     var secs = [].slice.call(document.querySelectorAll('.hc-sec')), more = document.querySelector('.hc-more');
     if (!secs.length || !more || !window.matchMedia('(pointer: fine)').matches) return;
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches, THRESHOLD = 0.15;
-    var anim = 0, animating = false, holdUntil = 0, timer = 0, lastY = window.scrollY, dir = 1;
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var LEAD = 24, DUR = 850;
+    var anim = 0, animating = false, holdUntil = 0, acc = 0, lastWheel = 0, timer = 0;
     function stops() { return secs.map(function (s) { return s.offsetTop; }).concat([more.offsetTop]); }
-    function ease(t) { return 1 - Math.pow(1 - t, 3); }
-    function glide(to) {
-      var from = window.scrollY, dist = to - from, dur = Math.min(900, 520 + Math.abs(dist) * 0.6), t0 = 0;
-      animating = true; holdUntil = Date.now() + dur + 250;
-      if (reduce) { window.scrollTo({ top: to, behavior: 'instant' }); animating = false; lastY = to; return; }
+    function ease(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
+    var settling = false;
+    function glide(to, settle) {
+      var from = window.scrollY, dist = to - from, t0 = 0, dur = settle ? 320 : DUR;
+      if (Math.abs(dist) < 2) return;
+      settling = !!settle; animating = true; holdUntil = settle ? 0 : Date.now() + DUR + 200;
+      if (reduce) { window.scrollTo(0, to); animating = false; return; }
       function step(ts) {
+        if (!animating) return;
         if (!t0) t0 = ts; var k = Math.min(1, (ts - t0) / dur);
-        window.scrollTo({ top: from + dist * ease(k), behavior: 'instant' });
-        if (k < 1) anim = requestAnimationFrame(step); else { animating = false; lastY = window.scrollY; }
+        window.scrollTo(0, Math.round(from + dist * ease(k)));
+        if (k < 1) anim = requestAnimationFrame(step); else { animating = false; settling = false; }
       }
       anim = requestAnimationFrame(step);
     }
-    function where(y) {
-      var st = stops(), i = 0; while (i < st.length - 2 && st[i + 1] <= y) i++;
-      return { base: st[i], next: st[i + 1], p: (y - st[i]) / (st[i + 1] - st[i]), free: y >= st[st.length - 1] - 2 };
+    function targetFor(y, down) {
+      var st = stops(), last = st[st.length - 1], i;
+      if (down) { for (i = 0; i < st.length; i++) if (st[i] > y + 2) return st[i]; return null; }
+      for (i = st.length - 1; i >= 0; i--) if (st[i] < y - 2) return st[i]; return 0;
     }
-    /* absorb wheel input while gliding and while momentum continues just after */
+    function nearest(y) { var st = stops(), b = st[0]; st.forEach(function (t) { if (Math.abs(t - y) < Math.abs(b - y)) b = t; }); return b; }
     window.addEventListener('wheel', function (e) {
-      if (e.ctrlKey) return;
-      var now = Date.now();
-      if (animating || now < holdUntil) { e.preventDefault(); if (!animating) holdUntil = now + 180; }
-    }, { passive: false });
-    window.addEventListener('scroll', function () {
-      if (animating) return;
-      var y = window.scrollY; if (y !== lastY) dir = y > lastY ? 1 : -1; lastY = y;
-      var w = where(y); if (w.free) return;
-      if (dir > 0 && w.p >= THRESHOLD && w.p < 0.999) { glide(w.next); return; }
-      if (dir < 0 && w.p <= 1 - THRESHOLD && w.p > 0.001) { glide(w.base); return; }
+      if (e.ctrlKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+      var now = Date.now(), y = window.scrollY, moreTop = more.offsetTop, down = e.deltaY > 0;
+      if (y >= moreTop - 2 && (down || y > moreTop + 2)) return;            /* free reading in the final section */
+      if (settling) { cancelAnimationFrame(anim); animating = false; settling = false; }   /* a small ease-back never blocks a real scroll */
+      if (animating || now < holdUntil) { e.preventDefault(); if (!animating) holdUntil = now + 200; return; }
+      if (now - lastWheel > 250 || (acc > 0) !== down) acc = 0;
+      lastWheel = now; acc += e.deltaY;
       clearTimeout(timer);
-      timer = setTimeout(function () {                 /* stopped short of the threshold: ease back */
-        if (animating) return; var w2 = where(window.scrollY);
-        if (!w2.free && w2.p > 0.001 && w2.p < 0.999) glide(w2.p < 0.5 ? w2.base : w2.next);
-      }, 220);
+      if (Math.abs(acc) >= LEAD) {
+        e.preventDefault(); acc = 0;
+        var t = targetFor(y, down); if (t !== null) glide(t);
+        return;
+      }
+      timer = setTimeout(function () { if (!animating && window.scrollY < more.offsetTop - 2) glide(nearest(window.scrollY), true); }, 260);
+    }, { passive: false });
+    /* keyboard, scrollbar and anything else: settle onto the nearest section once movement stops */
+    window.addEventListener('scroll', function () {
+      if (animating || Date.now() - lastWheel < 300) return;
+      clearTimeout(timer);
+      timer = setTimeout(function () { var y = window.scrollY, n = nearest(y); if (!animating && y < more.offsetTop - 2) glide(n, Math.abs(n - y) < 200); }, 140);
     }, { passive: true });
   })();
+
+  /* Big hero logo that travels up and shrinks into the header logo as you leave the hero */
+  document.addEventListener('DOMContentLoaded', function () {
+    var slot = document.querySelector('.hc-biglogo'), hero = document.querySelector('.hc-hero'),
+        header = document.getElementById('rpHeader'), hlogo = header && header.querySelector('.rp-logo');
+    if (!slot || !hero || !header || !hlogo || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var fly = slot.cloneNode(); fly.className = 'hc-fly'; fly.removeAttribute('loading'); document.body.appendChild(fly);
+    document.documentElement.classList.add('hc-morph');
+    var s0 = null, e0 = null;
+    function measure() {
+      var y = window.scrollY, r = slot.getBoundingClientRect(), h = hlogo.getBoundingClientRect();
+      s0 = { x: r.left, y: r.top + y, w: r.width };
+      var ar = slot.naturalWidth && slot.naturalHeight ? slot.naturalWidth / slot.naturalHeight : 3.3, ew = Math.min(h.width, h.height * ar);
+      e0 = { x: h.left, y: h.top + (h.height - ew / ar) / 2, w: ew };
+      fly.style.width = s0.w + 'px';
+    }
+    function frame() {
+      if (!s0) measure();
+      var y = window.scrollY, span = hero.offsetHeight * 0.85, t = Math.max(0, Math.min(1, y / span));
+      /* straight path from its place in the hero (as first seen) to the header logo, shrinking as it goes */
+      var x = s0.x + (e0.x - s0.x) * t, top = s0.y + (e0.y - s0.y) * t, sc = 1 + (e0.w / s0.w - 1) * t;
+      fly.style.transform = 'translate(' + x + 'px,' + top + 'px) scale(' + sc + ')';
+      var done = t >= 0.98;
+      fly.style.opacity = done ? 0 : 1;
+      hlogo.style.opacity = done ? 1 : 0;
+      header.classList.toggle('is-solid', y > hero.offsetHeight - 90);  /* stay transparent over the hero */
+    }
+    window.addEventListener('scroll', frame, { passive: true });
+    window.addEventListener('resize', function () { s0 = null; frame(); });
+    if (slot.complete) frame(); else slot.addEventListener('load', frame);
+    frame();
+  });
   </script>
 </body>
 </html>
