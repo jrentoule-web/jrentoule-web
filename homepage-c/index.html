@@ -243,7 +243,25 @@
   .hc-rating b { font-family: var(--serif); font-weight: 300; font-size: clamp(3.4rem, 7vw, 5.6rem); line-height: 1; }
   .hc-rating .stars { color: var(--gold-light); letter-spacing: 0.15em; font-size: 1.1rem; }
   .hc-rating span:last-child { color: rgba(245,243,239,0.75); font-size: 0.9rem; }
-  .hc-quotes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.4rem 4rem; }
+  .hc-rev-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 1.5rem; flex-wrap: wrap; margin-bottom: clamp(1.8rem, 4vw, 3rem); }
+  .hc-rev-head .hc-rating { margin-bottom: 0; }
+  .hc-rev-link { color: var(--cream); font-size: 0.74rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; border-bottom: 1px solid var(--gold-light); padding-bottom: 0.3rem; }
+  .hc-rev-link:hover { color: var(--gold-light); }
+  .hc-car { position: relative; }
+  .hc-track { display: flex; gap: clamp(1.5rem, 4vw, 4rem); overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; overscroll-behavior-x: contain; }
+  .hc-track::-webkit-scrollbar { display: none; }
+  .hc-slide { flex: 0 0 calc((100% - clamp(1.5rem, 4vw, 4rem)) / 2); scroll-snap-align: start; border-top: 1px solid rgba(212,180,138,0.45); padding-top: 1.6rem; }
+  .hc-slide blockquote::before { content: '“'; display: block; font-family: var(--serif); font-size: 5rem; line-height: 0.5; height: 2.2rem; color: var(--gold-light); font-style: normal; margin-bottom: 0.2rem; }
+  .hc-car__nav { display: flex; align-items: center; gap: 1.2rem; margin-top: clamp(1.6rem, 3vw, 2.4rem); }
+  .hc-car__btn { width: 46px; height: 46px; border-radius: 50%; border: 1px solid rgba(212,180,138,0.7); color: var(--cream); display: grid; place-items: center; transition: background 0.2s, color 0.2s; }
+  .hc-car__btn:hover { background: var(--gold); color: var(--black); border-color: var(--gold); }
+  .hc-car__btn svg { width: 18px; height: 18px; }
+  .hc-car__btn[disabled] { opacity: 0.35; pointer-events: none; }
+  .hc-dots { display: flex; gap: 0.5rem; margin-left: 0.4rem; }
+  .hc-dots button { width: 26px; height: 26px; display: grid; place-items: center; }
+  .hc-dots button[hidden] { display: none; }
+  .hc-dots button::after { content: ''; width: 7px; height: 7px; border-radius: 50%; background: rgba(245,243,239,0.35); transition: background 0.2s, transform 0.2s; }
+  .hc-dots button[aria-current="true"]::after { background: var(--gold-light); transform: scale(1.25); }
   .hc-reviews blockquote { color: var(--cream); font-size: clamp(1.15rem, 1.6vw, 1.4rem); max-width: none; }
   .hc-reviews cite { color: rgba(245,243,239,0.7); }
 
@@ -284,7 +302,8 @@
     .hc-grid a:nth-child(n+5) { display: none; }
     .hc-more__grid { grid-template-columns: minmax(0, 1fr); }
     .hc-guides { columns: 1; }
-    .hc-quotes { grid-template-columns: minmax(0, 1fr); gap: 1.6rem; }
+    .hc-slide { flex-basis: 100%; }
+    .hc-slide blockquote::before { font-size: 4rem; height: 1.8rem; }
     .hc-reviews__in { padding: 76px var(--gutter) 32px; }
     .hc-reviews blockquote { font-size: 1.05rem; }
   }
@@ -394,10 +413,24 @@
     <section class="hc-sec hc-reviews" aria-labelledby="rev-h">
       <div class="hc-reviews__in">
         <span class="kick">What our clients say</span>
-        <h2 id="rev-h" class="hc-rating"><b>5.0</b><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span>from 19 Google reviews</span></h2>
-        <div class="hc-quotes">
-          <figure><blockquote>&ldquo;Even before the build had started, Jeff was attentive to our needs and was able to translate our ideas into a well thought out plan. &hellip; We could not be happier with the outstanding home they have created for us.&rdquo;</blockquote><cite>Helen, Google review</cite></figure>
-          <figure><blockquote>&ldquo;They perfectly captured the mid-century aesthetic we were after. Jeff is very easy, nice and calm to deal with and professional. Nothing was too hard or out of the question.&rdquo;</blockquote><cite>Luke, Google review</cite></figure>
+        <div class="hc-rev-head">
+          <h2 id="rev-h" class="hc-rating"><b>5.0</b><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span>from 19 Google reviews</span></h2>
+          <a class="hc-rev-link" href="https://www.google.com/maps/search/?api=1&amp;query=Rentoule+Projects+Canberra" target="_blank" rel="noopener">Read them all on Google</a>
+        </div>
+        <div class="hc-car" role="region" aria-roledescription="carousel" aria-label="Client reviews">
+          <div class="hc-track" tabindex="0">
+            <figure class="hc-slide" role="group" aria-roledescription="slide" aria-label="1 of 6"><blockquote>Even before the build had started, Jeff was attentive to our needs and was able to translate our ideas into a well thought out plan. &hellip; We could not be happier with the outstanding home they have created for us.</blockquote><cite>Helen, Google review</cite></figure>
+            <figure class="hc-slide" role="group" aria-roledescription="slide" aria-label="2 of 6"><blockquote>They perfectly captured the mid-century aesthetic we were after. Jeff is very easy, nice and calm to deal with and professional. Nothing was too hard or out of the question.</blockquote><cite>Luke, Google review</cite></figure>
+            <figure class="hc-slide" role="group" aria-roledescription="slide" aria-label="3 of 6"><blockquote>Before taking down a wall marked with our kids&rsquo; growth over the years, a detail I had overlooked, he thoughtfully pointed it out, giving us the chance to preserve that memory.</blockquote><cite>Adam, Holder</cite></figure>
+            <figure class="hc-slide" role="group" aria-roledescription="slide" aria-label="4 of 6"><blockquote>It&rsquo;s rare to find such a dedicated group who genuinely cares about their clients&rsquo; needs. They made what could have been a stressful process smooth and enjoyable.</blockquote><cite>Penny, Weetangera</cite></figure>
+            <figure class="hc-slide" role="group" aria-roledescription="slide" aria-label="5 of 6"><blockquote>Our home, with its origins in the 1970s, required a comprehensive interior overhaul to bring it up to date. &hellip; The final result was a beautifully renovated home that far exceeded our expectations.</blockquote><cite>Chris, Weetangera</cite></figure>
+            <figure class="hc-slide" role="group" aria-roledescription="slide" aria-label="6 of 6"><blockquote>They were very patient with listening to what we wanted and informative with explaining alternative ways to achieve what we wanted. &hellip; I never once felt pressured.</blockquote><cite>Cindy, Kambah</cite></figure>
+          </div>
+          <div class="hc-car__nav">
+            <button type="button" class="hc-car__btn" data-dir="-1" aria-label="Previous reviews"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+            <button type="button" class="hc-car__btn" data-dir="1" aria-label="Next reviews"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <div class="hc-dots"><button type="button" aria-label="Show review 1"></button><button type="button" aria-label="Show review 2"></button><button type="button" aria-label="Show review 3"></button><button type="button" aria-label="Show review 4"></button><button type="button" aria-label="Show review 5"></button><button type="button" aria-label="Show review 6"></button></div>
+          </div>
         </div>
       </div>
     </section>
@@ -590,6 +623,37 @@
     window.addEventListener('resize', function () { s0 = null; frame(); });
     if (slot.complete) frame(); else slot.addEventListener('load', frame);
     frame();
+  });
+
+  /* Reviews carousel: arrows, dots, swipe; slow auto-advance that pauses on hover/focus and stops once you interact */
+  document.addEventListener('DOMContentLoaded', function () {
+    var car = document.querySelector('.hc-car'); if (!car) return;
+    var track = car.querySelector('.hc-track'), slides = [].slice.call(track.children), dots = [].slice.call(car.querySelectorAll('.hc-dots button')),
+        prev = car.querySelector('[data-dir="-1"]'), next = car.querySelector('[data-dir="1"]');
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches, auto = !reduce, paused = false, timer;
+    function perView() { return Math.max(1, Math.round(track.clientWidth / slides[0].getBoundingClientRect().width)); }
+    function index() { var x = track.scrollLeft, b = 0; slides.forEach(function (s, i) { if (Math.abs(s.offsetLeft - track.offsetLeft - x) < Math.abs(slides[b].offsetLeft - track.offsetLeft - x)) b = i; }); return b; }
+    function go(i) { var max = slides.length - perView(); i = Math.max(0, Math.min(max, i)); track.scrollTo({ left: slides[i].offsetLeft - track.offsetLeft, behavior: reduce ? 'auto' : 'smooth' }); }
+    function update() {
+      var i = index(), pv = perView(), max = slides.length - pv, pages = Math.ceil(slides.length / pv), cur = i >= max ? pages - 1 : Math.round(i / pv);
+      dots.forEach(function (d, k) { d.hidden = k >= pages; d.setAttribute('aria-current', k === cur ? 'true' : 'false'); d.setAttribute('aria-label', 'Show reviews, page ' + (k + 1) + ' of ' + pages); });
+      prev.disabled = i <= 0; next.disabled = i >= max;
+    }
+    function stopAuto() { auto = false; clearInterval(timer); }
+    prev.addEventListener('click', function () { stopAuto(); go(index() - perView()); });
+    next.addEventListener('click', function () { stopAuto(); go(index() + perView()); });
+    dots.forEach(function (d, k) { d.addEventListener('click', function () { stopAuto(); go(k * perView()); }); });
+    ['pointerdown', 'touchstart', 'keydown'].forEach(function (ev) { track.addEventListener(ev, stopAuto, { passive: true }); });
+    car.addEventListener('mouseenter', function () { paused = true; }); car.addEventListener('mouseleave', function () { paused = false; });
+    car.addEventListener('focusin', function () { paused = true; }); car.addEventListener('focusout', function () { paused = false; });
+    var raf; track.addEventListener('scroll', function () { cancelAnimationFrame(raf); raf = requestAnimationFrame(update); }, { passive: true });
+    window.addEventListener('resize', update);
+    if (auto) timer = setInterval(function () {
+      if (!auto || paused || document.hidden) return;
+      var r = car.getBoundingClientRect(); if (r.bottom < 0 || r.top > window.innerHeight) return;   /* only while on screen */
+      var i = index(), max = slides.length - perView(); go(i >= max ? 0 : i + perView());
+    }, 8000);
+    update();
   });
   </script>
 </body>
