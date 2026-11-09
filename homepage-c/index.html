@@ -163,8 +163,6 @@
   /* Touch screens: soft native snapping. Mouse/trackpad: normal scrolling, then a gentle settle (script below). */
   html { scroll-behavior: auto; } /* the glide below does its own easing */
   @media (pointer: coarse) { html { scroll-snap-type: y proximity; } }
-  .hc-page .rp-header__cta { background: transparent; border: 1px solid currentColor; color: inherit; }
-  .hc-page .rp-header__cta:hover { background: rgba(127,127,127,0.12); }
   .hc-page .rp-progress { display: none; }
 
   .hc-sec { scroll-snap-align: start; min-height: 100vh; min-height: 100svh; position: relative; display: flex; align-items: center; }
@@ -172,13 +170,27 @@
   .hc .kick { display: block; font-family: var(--sans); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 1.4rem; }
   .hc p.body { color: var(--muted); max-width: 44ch; font-size: 0.98rem; }
   .hc p.body + p.body { margin-top: 0.9rem; }
-  .hc .textlink { color: var(--forest); margin-top: 2rem; }
+  .hc .textlink { color: var(--forest-deep); border-bottom-color: var(--gold); margin-top: 2rem; }
+  .hc .textlink svg { color: var(--gold-deep); }
+  .hc h2 { color: var(--forest-deep); }
+  .hc-full h2, .hc-close h2, .hc-reviews h2 { color: inherit; }
+  .hc .kick { display: flex; align-items: center; gap: 0.8rem; }
+  .hc .kick::before { content: ''; width: 28px; height: 1px; background: var(--gold); flex-shrink: 0; }
+  .hc-work .kick, .hc-close .kick { justify-content: center; }
+  .hc-hero .hc-cue span { background: linear-gradient(var(--gold-light), rgba(212,180,138,0)); }
+  section[aria-labelledby="mcf-h"], section[aria-labelledby="how-h"] { background: var(--stone); }
+  .hc-work { background: var(--cream) !important; }
+  .hc-work .btn { color: var(--forest-deep); border-color: var(--gold); }
+  .hc-work .btn:hover { background: var(--gold); color: var(--black); }
+  .hc-full .hc-meta { color: var(--gold-light); }
+  .hc-full .textlink { color: #fff; border-bottom-color: var(--gold-light); }
+  .hc-full .textlink svg { color: var(--gold-light); }
 
   /* Hero */
   .hc-hero { color: #fff; background: var(--black); justify-content: center; text-align: center; overflow: hidden; }
   .hc-hero picture, .hc-hero picture img { position: absolute; inset: 0; width: 100%; height: 100%; }
   .hc-hero picture img { object-fit: cover; object-position: 50% 60%; }
-  .hc-hero::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 45% at 50% 48%, rgba(14,14,12,0.5), rgba(14,14,12,0) 100%), linear-gradient(rgba(14,14,12,0.45), rgba(14,14,12,0.18) 40%, rgba(14,14,12,0.5)); }
+  .hc-hero::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 45% at 50% 48%, rgba(20,31,22,0.5), rgba(20,31,22,0) 100%), linear-gradient(rgba(20,31,22,0.45), rgba(20,31,22,0.18) 40%, rgba(20,31,22,0.5)); }
   .hc-hero__in { position: relative; z-index: 1; padding: 0 var(--gutter); }
   .hc-biglogo { display: block; width: min(76vw, 860px); height: auto; margin: 0 auto clamp(1.4rem, 3vw, 2.4rem); filter: drop-shadow(0 2px 18px rgba(0,0,0,0.3)); }
   .hc-fly { position: fixed; z-index: 205; top: 0; left: 0; transform-origin: 0 0; pointer-events: none; filter: drop-shadow(0 2px 18px rgba(0,0,0,0.3)); will-change: transform, opacity; }
@@ -205,7 +217,7 @@
   /* Full-bleed project */
   .hc-full { color: #fff; background: var(--black); align-items: flex-end; overflow: hidden; }
   .hc-full > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-  .hc-full::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(14,14,12,0.86) 0%, rgba(14,14,12,0.55) 30%, rgba(14,14,12,0.08) 62%, rgba(14,14,12,0.3)); }
+  .hc-full::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(20,31,22,0.86) 0%, rgba(20,31,22,0.55) 30%, rgba(20,31,22,0.08) 62%, rgba(20,31,22,0.3)); }
   .hc-full__in { position: relative; z-index: 1; width: 100%; max-width: 1320px; margin: 0 auto; padding: 0 var(--gutter) clamp(3rem, 7vw, 5rem); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem 4rem; align-items: end; }
   .hc-full h2 { font-size: clamp(2.2rem, 3.8vw, 3.6rem); }
   .hc-full .hc-meta, .hc-full cite { color: rgba(255,255,255,0.8); }
@@ -238,14 +250,14 @@
   /* Close */
   .hc-close { color: #fff; background: var(--black); justify-content: center; text-align: center; overflow: hidden; }
   .hc-close > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-  .hc-close::after { content: ''; position: absolute; inset: 0; background: rgba(14,14,12,0.6); }
+  .hc-close::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 55% 50% at 50% 50%, rgba(20,31,22,0.82), rgba(20,31,22,0.55)); }
   .hc-close__in { position: relative; z-index: 1; padding: 0 var(--gutter); max-width: 44rem; }
   .hc-close .kick { color: var(--gold-light); }
   .hc-close h2 { font-size: clamp(2.4rem, 4.6vw, 4.2rem); }
   .hc-close p { margin: 1.4rem auto 0; color: rgba(255,255,255,0.85); max-width: 40ch; }
   .hc-close .btn-row { justify-content: center; margin-top: 2.2rem; }
-  .hc-close .btn--light { background: var(--cream); color: var(--black); }
-  .hc-close .btn--light:hover { background: var(--gold-light); }
+  .hc-close .btn--gold:hover { background: var(--gold-light); }
+  .hc-close .btn--line { color: var(--cream); border-color: rgba(212,180,138,0.7); }
 
   /* Reference section: not snapped, quiet */
   .hc-more { scroll-snap-align: start; padding: clamp(4.5rem, 9vw, 7rem) 0 clamp(3rem, 6vw, 5rem); }
@@ -266,7 +278,7 @@
     .hc .hide-sm { display: none; }
     .hc .textlink { margin-top: 1.2rem; }
     .hc-full__in { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
-    .hc-full::after { background: linear-gradient(to top, rgba(14,14,12,0.9) 0%, rgba(14,14,12,0.72) 45%, rgba(14,14,12,0.15) 75%, rgba(14,14,12,0.3)); }
+    .hc-full::after { background: linear-gradient(to top, rgba(20,31,22,0.9) 0%, rgba(20,31,22,0.72) 45%, rgba(20,31,22,0.15) 75%, rgba(20,31,22,0.3)); }
     .hc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .hc-grid img { aspect-ratio: 1 / 1; }
     .hc-grid a:nth-child(n+5) { display: none; }
@@ -423,7 +435,7 @@
         <h2 id="cta-h">Ready to start your project?</h2>
         <p>Even a what-if conversation is a good start. Send me a note about what you&rsquo;re picturing. The first coffee is on me.</p>
         <div class="btn-row">
-          <a href="/contact/" class="btn btn--light">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="/contact/" class="btn btn--gold">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <a href="tel:0434435966" class="btn btn--line">Call 0434 435 966</a>
         </div>
         <p style="font-size:0.85rem"><a href="/canberra-renovation-guide/" style="text-decoration:underline;text-underline-offset:3px">Or start with the free Canberra Renovation Guide</a></p>
