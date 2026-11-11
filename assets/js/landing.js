@@ -215,3 +215,18 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   dlg.addEventListener('close', function () { document.documentElement.classList.remove('hc-lb-open'); img.removeAttribute('src'); if (opener) opener.focus(); });
 });
+
+/* Phones and tablets: snapping applies to the full-screen sections only. Once the page comes to rest in the
+   reading area at the bottom (FAQ, guides, footer), snapping is switched off so it scrolls like a normal page;
+   coming back up into the sections switches it on again. */
+document.addEventListener('DOMContentLoaded', function () {
+  var more = document.querySelector('.hc-more') || document.querySelector('.rp-footer');   /* Projects: the footer is its reading area */
+  if (!document.body.classList.contains('hc-glide') || !more || !window.matchMedia('(pointer: coarse)').matches) return;
+  var root = document.documentElement, t = 0;
+  function update() { root.classList.toggle('hc-free', window.scrollY >= more.offsetTop - 2); }
+  window.addEventListener('scroll', function () {
+    if (!root.classList.contains('hc-free') && window.scrollY >= more.offsetTop - 2) { root.classList.add('hc-free'); return; }   /* entering: release straight away */
+    clearTimeout(t); t = setTimeout(update, 140);                                                                                /* leaving: once the page has settled */
+  }, { passive: true });
+  update();
+});

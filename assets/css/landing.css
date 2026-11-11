@@ -9,7 +9,8 @@ html { scroll-behavior: auto; } /* the glide below does its own easing */
    sections taller than the screen (and the reading area at the bottom) still scroll freely inside. */
 @media (pointer: coarse) {
   html:has(body.hc-glide) { scroll-snap-type: y mandatory; scroll-padding-top: 0; }
-  .hc-glide .hc-sec { scroll-snap-stop: always; min-height: 100svh; min-height: 100dvh; }
+  .hc-glide .hc-sec { min-height: 100svh; min-height: 100dvh; }   /* a gentle swipe moves one section; a fast flick can carry through several */
+  html.hc-free { scroll-snap-type: none !important; }                 /* the reading area and footer scroll like a normal page */
 }
 .hc-page .rp-progress { display: none; }
 
@@ -261,3 +262,8 @@ dialog.hc-lb figcaption { font-size: 0.82rem; color: rgba(245,243,239,0.75); tex
 }
 /* full-screen sections carry their own top padding, so anchor links and snapping align to the section itself */
 .hc-sec[id] { scroll-margin-top: 0; }
+
+/* Phones: the team photo is shown as a short band, so anchor it to the top to keep faces in shot */
+@media (max-width: 860px) {
+  .hc-split__media img[src*="team-on-site"] { object-position: 50% 6% !important; }
+}
