@@ -1,76 +1,107 @@
 /* Landing pages: section glide, big-logo-to-header, reviews carousel. Each part checks for its elements first. */
-/* Section scrolling: a small scroll towards the next section is enough. The page then glides there
-   (about 0.85s) and holds, absorbing leftover trackpad momentum, until you scroll again.
+/* Section scrolling (homepage and Projects, mouse/trackpad only).
+   The page takes charge of every wheel/trackpad signal from the first one, so the browser never adds
+   its own movement on top (that caused an overshoot and bounce at the end of a glide).
+   - Screen-sized sections: a small scroll glides (about 0.85s) to the next section and holds there.
+   - Sections taller than the screen, and the reading area at the bottom: scroll smoothly under your
+     fingers, stopping cleanly at their edge; the next fresh scroll carries on.
+   - Leftover trackpad momentum is absorbed; a fresh scroll always gets through.
    Touch screens use soft CSS snapping. Keyboard and scrollbar settle onto the nearest section. */
 (function () {
   var secs = [].slice.call(document.querySelectorAll('.hc-sec')), more = document.querySelector('.hc-more') || document.querySelector('.rp-footer');
-  /* only pages that opt in (body.hc-glide): the homepage and Projects. Reading pages scroll normally. */
   if (!document.body.classList.contains('hc-glide') || !secs.length || !more || !window.matchMedia('(pointer: fine)').matches) return;
-  var wasTall = false;
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var LEAD = 24, DUR = 850, lastMag = 0, lastT = 0, lastDir = 0;
-  var anim = 0, animating = false, holdUntil = 0, acc = 0, lastWheel = 0, timer = 0;
+  var LEAD = 24, DUR = 850;
+  var lastMag = 0, lastT = 0, lastDir = 0, acc = 0, lastWheel = 0;
+  var animating = false, holdUntil = 0, holdSince = 0, holdEdge = false, timer = 0;
+  var mTarget = null, mRaf = 0;                     /* free scrolling target, eased towards each frame */
+  function vh() { return window.innerHeight; }
+  function maxY() { return document.documentElement.scrollHeight - vh(); }
   function stops() { return secs.map(function (s) { return s.offsetTop; }).concat([more.offsetTop]); }
   function ease(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
-  var settling = false;
-  function glide(to, settle) {
-    var from = window.scrollY, dist = to - from, t0 = 0, dur = settle ? 320 : DUR;
-    if (Math.abs(dist) < 2) return;
-    settling = !!settle; animating = true; holdUntil = settle ? 0 : Date.now() + DUR + 200;
+  function stopFree() { if (mRaf) cancelAnimationFrame(mRaf); mRaf = 0; mTarget = null; }
+  function glide(to, quick) {
+    stopFree();
+    var from = window.scrollY, dist = to - from, t0 = 0, dur = quick ? 320 : DUR;
+    if (Math.abs(dist) < 1) return;
+    animating = true; holdUntil = Date.now() + dur + 200; holdSince = Date.now(); holdEdge = false; to = Math.round(to);
     if (reduce) { window.scrollTo(0, to); animating = false; return; }
-    function step(ts) {
-      if (!animating) return;
+    (function step(ts) {
       if (!t0) t0 = ts; var k = Math.min(1, (ts - t0) / dur);
-      window.scrollTo(0, Math.round(from + dist * ease(k)));
-      if (k < 1) anim = requestAnimationFrame(step); else { animating = false; settling = false; }
-    }
-    anim = requestAnimationFrame(step);
+      window.scrollTo(0, k < 1 ? from + dist * ease(k) : to);
+      if (k < 1) requestAnimationFrame(step); else animating = false;
+    })(performance.now());
+  }
+  /* free scrolling: move towards a target, clamped to [lo, hi]; returns true if the clamp was hit */
+  function freeScroll(delta, lo, hi) {
+    var base = mTarget === null ? window.scrollY : mTarget, t = base + delta, hit = false;
+    if (t <= lo) { t = lo; hit = delta < 0; } else if (t >= hi) { t = hi; hit = delta > 0; }
+    mTarget = t;
+    if (!mRaf) mRaf = requestAnimationFrame(function frame() {
+      var y = window.scrollY, d = mTarget - y;
+      if (Math.abs(d) < 0.6 || reduce) { window.scrollTo(0, mTarget); mRaf = 0; mTarget = null; return; }
+      window.scrollTo(0, y + d * 0.3); mRaf = requestAnimationFrame(frame);
+    });
+    return hit;
+  }
+  /* where are we? the section containing y, and the free-scroll range for it */
+  function zone(y) {
+    var st = stops(), moreTop = st[st.length - 1], i = 0;
+    if (y >= moreTop - 1) return { free: true, lo: moreTop, hi: maxY() };
+    while (i < st.length - 2 && st[i + 1] <= y + 1) i++;
+    var top = st[i], bottom = st[i + 1];
+    return { tall: bottom - top > vh() + 4, top: top, bottom: bottom, lo: top, hi: bottom - vh() };
   }
   function targetFor(y, down) {
-    var st = stops(), last = st[st.length - 1], i;
-    if (down) { for (i = 0; i < st.length; i++) if (st[i] > y + 2) return st[i]; return null; }
-    for (i = st.length - 1; i >= 0; i--) if (st[i] < y - 2) return Math.max(st[i], y - window.innerHeight); return 0;
-  }
-  /* sections taller than the screen are read with normal scrolling until their edge is reached */
-  function inTall(y, down) {
-    var st = stops(), vh = window.innerHeight, i = 0;
-    while (i < st.length - 2 && st[i + 1] <= y + 2) i++;
-    var top = st[i], bottom = st[i + 1];
-    if (bottom - top <= vh + 4) return false;
-    return down ? y + vh < bottom - 2 : y > top + 2;
+    var st = stops(), i;
+    if (down) { for (i = 0; i < st.length; i++) if (st[i] > y + 1) return st[i]; return null; }
+    for (i = st.length - 1; i >= 0; i--) if (st[i] < y - 1) { var c = y - vh(); return Math.round(c - st[i] < 4 ? st[i] : Math.max(st[i], c)); }   /* a tall section above: land on its lower part */
+    return 0;
   }
   function nearest(y) { var st = stops(), b = st[0]; st.forEach(function (t) { if (Math.abs(t - y) < Math.abs(b - y)) b = t; }); return b; }
+
   window.addEventListener('wheel', function (e) {
     if (e.ctrlKey || Math.abs(e.deltaX) > Math.abs(e.deltaY) || document.documentElement.classList.contains('hc-lb-open')) return;
-    var now = Date.now(), y = window.scrollY, moreTop = more.offsetTop, down = e.deltaY > 0;
-    /* Tell leftover trackpad momentum (a fading tail of small signals) from a fresh scroll
-       (signals getting stronger again, a short pause, or a change of direction). */
-    var mag = Math.abs(e.deltaY), gap = now - lastT, dir = down ? 1 : -1;
-    var fresh = gap > 120 || mag > lastMag * 1.4 + 2 || (lastDir && dir !== lastDir);
-    lastMag = mag; lastT = now; lastDir = dir;
-    if (y >= moreTop - 2 && (down || y > moreTop + 2)) return;            /* free reading in the final section */
-    if (settling) { cancelAnimationFrame(anim); animating = false; settling = false; }   /* a small ease-back never blocks a real scroll */
-    if (!animating && now < holdUntil && fresh) holdUntil = 0;          /* a new scroll is never ignored */
-    if (animating || now < holdUntil) { e.preventDefault(); if (!animating) holdUntil = now + 200; return; }
-    if (now - lastWheel > 250 || (acc > 0) !== down) acc = 0;
-    lastWheel = now; acc += e.deltaY;
-    clearTimeout(timer);
-    if (inTall(y, down)) { acc = 0; wasTall = true; return; }   /* let a tall section scroll normally */
-    if (wasTall) {                       /* just reached the edge of a long section: stop here and absorb the momentum */
-      wasTall = false; e.preventDefault(); acc = 0; holdUntil = now + 250; return;
+    e.preventDefault();                                   /* from the very first signal: no browser movement of its own */
+    var now = Date.now(), down = e.deltaY > 0, delta = e.deltaY * (e.deltaMode === 1 ? 32 : e.deltaMode === 2 ? vh() : 1);
+    var mag = Math.abs(delta), dir = down ? 1 : -1;
+    var gap = now - lastT, lastDirPrev = lastDir, fresh = gap > 120 || mag > lastMag * 1.4 + 2 || (lastDir && dir !== lastDir);
+    lastMag = mag; lastT = now; lastDir = dir; lastWheel = now;
+    if (animating) return;                                /* mid-glide: absorbed */
+    /* after a glide or at an edge, leftover momentum is absorbed. At an edge only a pause or a change of
+       direction releases it (the gesture that reached the edge is still strengthening at first). */
+    if (now < holdUntil) {
+      var release = holdEdge ? (gap > 120 || (lastDirPrev && dir !== lastDirPrev)) : (fresh && now - holdSince > 150);
+      if (!release) { holdUntil = now + 200; return; }
     }
-    if (Math.abs(acc) >= LEAD) {
-      e.preventDefault(); acc = 0;
-      var t = targetFor(y, down); if (t !== null) glide(t);
+    holdUntil = 0; holdEdge = false;
+    var y = mTarget === null ? window.scrollY : mTarget, z = zone(y);
+    /* reading area at the bottom, and sections taller than the screen: scroll freely within them */
+    var inside = z.free ? (down || y > z.lo + 1) : (z.tall && (down ? y < z.hi - 1 : y > z.lo + 1));
+    if (inside) {
+      acc = 0;
+      if (freeScroll(delta, z.lo, z.hi)) { holdUntil = now + 250; holdSince = now; holdEdge = true; }   /* reached the edge: stop cleanly, absorb the rest */
       return;
     }
-    timer = setTimeout(function () { var yy = window.scrollY; if (!animating && yy < more.offsetTop - 2 && !inTall(yy, true) && !inTall(yy, false)) glide(nearest(yy), true); }, 260);
+    /* screen-sized sections: a small scroll is enough to glide to the next one */
+    if (gap > 250 || (acc > 0) !== down) acc = 0;
+    acc += delta;
+    if (Math.abs(acc) >= LEAD) {
+      acc = 0;
+      var t = targetFor(window.scrollY, down);
+      if (t !== null) glide(Math.min(t, maxY()));
+    }
   }, { passive: false });
+
   /* keyboard, scrollbar and anything else: settle onto the nearest section once movement stops */
   window.addEventListener('scroll', function () {
-    if (animating || Date.now() - lastWheel < 300) return;
+    if (animating || mRaf || Date.now() - lastWheel < 400) return;
     clearTimeout(timer);
-    timer = setTimeout(function () { var y = window.scrollY, n = nearest(y); if (!animating && y < more.offsetTop - 2 && !inTall(y, true) && !inTall(y, false)) glide(n, Math.abs(n - y) < 200); }, 140);
+    timer = setTimeout(function () {
+      var y = window.scrollY, z = zone(y), n = nearest(y);
+      if (animating || mRaf || z.free || z.tall) return;
+      if (Math.abs(n - y) > 1) glide(n, Math.abs(n - y) < 200);
+    }, 160);
   }, { passive: true });
 })();
 
