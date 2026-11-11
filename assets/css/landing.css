@@ -5,7 +5,12 @@
    ===================================================================== */
 /* Touch screens: soft native snapping. Mouse/trackpad: normal scrolling, then a gentle settle (script below). */
 html { scroll-behavior: auto; } /* the glide below does its own easing */
-@media (pointer: coarse) { html:has(body.hc-glide) { scroll-snap-type: y proximity; } }
+/* Phones and tablets: the device's own snapping. Each swipe settles on the next section;
+   sections taller than the screen (and the reading area at the bottom) still scroll freely inside. */
+@media (pointer: coarse) {
+  html:has(body.hc-glide) { scroll-snap-type: y mandatory; scroll-padding-top: 0; }
+  .hc-glide .hc-sec { scroll-snap-stop: always; min-height: 100svh; min-height: 100dvh; }
+}
 .hc-page .rp-progress { display: none; }
 
 .hc-sec { scroll-snap-align: start; min-height: 100vh; min-height: 100svh; position: relative; display: flex; align-items: center; }
@@ -254,3 +259,5 @@ dialog.hc-lb figcaption { font-size: 0.82rem; color: rgba(245,243,239,0.75); tex
   dialog.hc-lb figure { padding: 4rem 0.8rem 2rem; }
   .hc-lb__prev, .hc-lb__next { top: auto; bottom: 1rem; transform: none; }
 }
+/* full-screen sections carry their own top padding, so anchor links and snapping align to the section itself */
+.hc-sec[id] { scroll-margin-top: 0; }
