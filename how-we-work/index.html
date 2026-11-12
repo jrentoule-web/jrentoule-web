@@ -286,84 +286,103 @@
         </div>
 
         <div class="portal__tabs" role="tablist" aria-label="Portal features" id="ptabs">
-          <button class="ptab" role="tab" id="t-progress" aria-controls="v-progress" aria-selected="true" data-cap="&lt;b&gt;Progress.&lt;/b&gt; See where design, consultants, selections, pricing and approval are up to, any time.">Progress</button>
-          <button class="ptab" role="tab" id="t-actions" aria-controls="v-actions" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Actions.&lt;/b&gt; What&rsquo;s next, who it&rsquo;s waiting on and when it&rsquo;s due. If something needs you, it&rsquo;s obvious.">Actions</button>
-          <button class="ptab" role="tab" id="t-docs" aria-controls="v-docs" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Documents &amp;amp; approval.&lt;/b&gt; Project documents and a Building Approval checklist, so lodgement isn&rsquo;t held up.">Documents</button>
-          <button class="ptab" role="tab" id="t-sel" aria-controls="v-sel" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Selections.&lt;/b&gt; Review what&rsquo;s proposed for each room, confirm it or ask for a change.">Selections</button>
-          <button class="ptab" role="tab" id="t-spec" aria-controls="v-spec" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Specification.&lt;/b&gt; Agreed selections become the specification we price and build from.">Specification</button>
+          <button class="ptab" role="tab" id="t-progress" aria-controls="v-progress" aria-selected="true" data-cap="&lt;b&gt;Progress.&lt;/b&gt; One overall figure across design, consultants, selections, pricing and approval, with each stage underneath.">Progress</button>
+          <button class="ptab" role="tab" id="t-actions" aria-controls="v-actions" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Next actions.&lt;/b&gt; What happens next, who it&rsquo;s with and when. If something needs you, it&rsquo;s obvious.">Actions</button>
+          <button class="ptab" role="tab" id="t-docs" aria-controls="v-docs" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Building Approval documents.&lt;/b&gt; Everything lodgement needs, what we need from you, and where each document is up to.">Documents</button>
+          <button class="ptab" role="tab" id="t-sel" aria-controls="v-sel" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Selections &amp;amp; finishes.&lt;/b&gt; Room by room, what we&amp;rsquo;ve proposed. Accept it, share ideas or suggest an alternative.">Selections</button>
+          <button class="ptab" role="tab" id="t-spec" aria-controls="v-spec" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Construction specification.&lt;/b&gt; Approved selections become the specification we price and build from.">Specification</button>
         </div>
-        <p class="portal__caption" id="pcap" aria-live="polite"><b>Progress.</b> See where design, consultants, selections, pricing and approval are up to, any time.</p>
+        <p class="portal__caption" id="pcap" aria-live="polite"><b>Progress.</b> One overall figure across design, consultants, selections, pricing and approval, with each stage underneath.</p>
 
         <div class="stage rv">
           <div class="browser">
-            <div class="browser__chrome" aria-hidden="true"><i></i><i></i><i></i><span class="browser__url">Client Portal &middot; Demo project</span></div>
+            <div class="browser__chrome" aria-hidden="true"><i></i><i></i><i></i><span class="browser__url">Client portal &middot; Demo project</span></div>
             <div class="app">
-              <aside class="app__side" aria-hidden="true">
+              <div class="app__bar" aria-hidden="true">
                 <img class="app__brand" src="/assets/logo-nav-gold-script.png" alt="">
-                <span class="on" data-for="v-progress">Overview</span>
-                <span data-for="v-actions">Actions</span>
-                <span data-for="v-docs">Documents</span>
-                <span data-for="v-sel">Selections</span>
-                <span data-for="v-spec">Specification</span>
+                <span class="app__name">Pre-construction client portal</span>
                 <span class="grow"></span>
                 <span class="who">Demo client</span>
-              </aside>
+              </div>
+              <div class="app__tabs" aria-hidden="true">
+                <span class="on" data-for="v-progress v-actions">Project home</span>
+                <span data-for="v-sel v-spec">Selections &amp; Finishes</span>
+                <span data-for="v-docs">BA Documents</span>
+              </div>
               <div class="app__main">
                 <span class="badge">Illustration &middot; fictional data</span>
 
                 <div class="app__view" role="tabpanel" id="v-progress" aria-labelledby="t-progress">
                   <div class="m-head"><span class="m-eyebrow">Pre-construction</span><p class="m-title">Sample Street Residence</p><span class="m-sub">Demo project &middot; Extension and renovation</span></div>
-                  <div class="m-card"><p class="m-summary">Design and consultant work are underway. Two items need you.</p>
-                    <div class="m-seg"><i><b style="width:60%"></b></i><i><b style="width:50%"></b></i><i><b style="width:35%"></b></i><i><b style="width:25%"></b></i><i><b style="width:40%"></b></i></div></div>
+                  <div class="m-card">
+                    <span class="m-cap">Overall pre-construction progress</span>
+                    <p class="m-big">44%</p>
+                    <span class="m-bar"><i style="width:44%"></i></span>
+                    <p class="m-summary">Four stages are underway. One item needs you.</p>
+                    <small class="m-note">Provisional: based on 4 of 5 stages tracked so far. Each tracked stage counts equally.</small>
+                  </div>
                   <div class="m-list">
                     <div class="m-prog"><b>Design &amp; Plans</b><span class="m-track"><i style="width:60%"></i></span><small>In progress &middot; 3 of 5 complete</small></div>
                     <div class="m-prog"><b>Consultants</b><span class="m-track"><i style="width:50%"></i></span><small>In progress &middot; 2 of 4 complete</small></div>
-                    <div class="m-prog"><b>Selections &amp; Finishes</b><span class="m-track"><i style="width:35%"></i></span><small>In progress &middot; 4 of 11 confirmed</small></div>
-                    <div class="m-prog"><b>Pricing &amp; Contract</b><span class="m-track"><i style="width:25%"></i></span><small>Started &middot; 1 of 4 complete</small></div>
-                    <div class="m-prog"><b>Building Approval</b><span class="m-track"><i style="width:40%"></i></span><small>6 of 15 documents accepted</small></div>
+                    <div class="m-prog"><b>Selections &amp; Finishes</b><span class="m-track"><i style="width:45%"></i></span><small>In progress &middot; 45% approved</small></div>
+                    <div class="m-prog"><b>Pricing &amp; Contract</b><span class="m-track"><i style="width:20%"></i></span><small>In progress &middot; 1 of 5 complete</small></div>
+                    <div class="m-prog"><b>Building Approval</b><span class="m-track"><i style="width:0"></i></span><small>Not set up yet</small></div>
                   </div>
                 </div>
 
                 <div class="app__view" role="tabpanel" id="v-actions" aria-labelledby="t-actions">
-                  <div class="m-head"><span class="m-eyebrow">Actions</span><p class="m-title">What happens next</p><span class="m-sub">Demo project &middot; Sample Street Residence</span></div>
-                  <p class="m-group">Needs your attention &middot; 2</p>
+                  <div class="m-head"><span class="m-eyebrow">Project home</span><p class="m-title">Next actions</p><span class="m-sub">Demo project &middot; Sample Street Residence</span></div>
+                  <p class="m-group">Needs you &middot; 1</p>
                   <div class="m-list">
                     <div class="m-row m-row--attn"><b>Review revised kitchen layout, option B</b><span class="m-pill m-pill--wait">Waiting on you</span><small><span class="m-due">Due Friday</span> &middot; Design &amp; Plans</small></div>
-                    <div class="m-row"><b>Confirm preferred window supplier</b><span class="m-pill m-pill--wait">Waiting on you</span><small>Date to be confirmed &middot; Consultants</small></div>
                   </div>
                   <p class="m-group">Coming up</p>
                   <div class="m-list">
-                    <div class="m-row"><b>Issue footing details</b><span class="m-pill m-pill--grey">Engineer</span><small>Structural engineer &middot; next week</small></div>
-                    <div class="m-row"><b>Return draft energy assessment</b><span class="m-pill m-pill--grey">Consultant</span><small>Energy assessor &middot; in two weeks</small></div>
-                    <div class="m-row"><b>Trade pricing: joinery and stone</b><span class="m-pill m-pill--rev">Rentoule Projects</span><small>Once the kitchen layout is confirmed</small></div>
+                    <div class="m-row"><b>Issue footing details</b><span class="m-pill m-pill--grey">Engineer</span><small>Next week &middot; Consultants</small></div>
+                    <div class="m-row"><b>Return energy assessment</b><span class="m-pill m-pill--grey">Consultant</span><small>Date to be confirmed &middot; Consultants</small></div>
+                    <div class="m-row"><b>Trade pricing: joinery and stone</b><span class="m-pill m-pill--rev">Rentoule Projects</span><small>Once the kitchen layout is confirmed &middot; Pricing &amp; Contract</small></div>
                   </div>
                 </div>
 
                 <div class="app__view" role="tabpanel" id="v-docs" aria-labelledby="t-docs">
-                  <div class="m-head"><span class="m-eyebrow">Building Approval</span><p class="m-title">Documents</p><span class="m-sub">6 of 15 accepted &middot; Demo project</span></div>
+                  <div class="m-head"><span class="m-eyebrow">Building Approval documents</span><p class="m-title">Building Approval</p><span class="m-sub">Demo project &middot; Sample Street Residence</span></div>
+                  <div class="m-card">
+                    <span class="m-cap">4 of 12 documents accepted</span>
+                    <span class="m-bar" style="margin-top:8px"><i style="width:33%"></i></span>
+                    <small class="m-note" style="margin-top:8px">1 with Rentoule Projects for review. Only documents accepted by Rentoule Projects count towards progress.</small>
+                  </div>
+                  <p class="m-group">Here&rsquo;s what we need from you</p>
                   <div class="m-list">
-                    <div class="m-row"><b>Architectural drawings</b><span class="m-pill m-pill--ok">Accepted</span><small>Architect / designer</small></div>
-                    <div class="m-row"><b>Site survey</b><span class="m-pill m-pill--ok">Accepted</span><small>Surveyor</small></div>
-                    <div class="m-row"><b>Structural engineering</b><span class="m-pill m-pill--rev">In review</span><small>Structural engineer</small></div>
-                    <div class="m-row"><b>Energy efficiency rating</b><span class="m-pill m-pill--grey">Requested</span><small>Energy assessor</small></div>
-                    <div class="m-row m-row--attn"><b>Tree declaration</b><span class="m-pill m-pill--wait">Needed from you</span><small><span class="m-due">Upload requested</span> &middot; Owner</small></div>
-                    <div class="m-row"><b>Owner&rsquo;s consent</b><span class="m-pill m-pill--ok">Accepted</span><small>Owner</small></div>
+                    <div class="m-row m-row--attn"><b>Tree declaration</b><span class="m-pill m-pill--wait">Outstanding</span><small>You (client) &middot; <span class="m-due">Upload</span></small></div>
+                  </div>
+                  <p class="m-group">Full document checklist</p>
+                  <div class="m-list">
+                    <div class="m-row"><b>Appointment of certifier</b><span class="m-pill m-pill--ok">Accepted</span><small>Government forms &middot; You (client)</small></div>
+                    <div class="m-row"><b>Architectural drawings</b><span class="m-pill m-pill--ok">Accepted</span><small>Reports and technical documents &middot; Designer</small></div>
+                    <div class="m-row"><b>Structural engineering</b><span class="m-pill m-pill--rev">Awaiting RP review</span><small>Reports and technical documents &middot; Engineer</small></div>
+                    <div class="m-row"><b>Energy efficiency report</b><span class="m-pill m-pill--grey">Outstanding</span><small>Reports and technical documents &middot; Consultant</small></div>
                   </div>
                 </div>
 
                 <div class="app__view" role="tabpanel" id="v-sel" aria-labelledby="t-sel">
-                  <div class="m-head"><span class="m-eyebrow">Selections &amp; Finishes</span><p class="m-title">Kitchen</p><span class="m-sub">4 of 7 confirmed &middot; Demo project</span></div>
-                  <div class="m-chips" aria-hidden="true"><span class="m-chip m-chip--on">Kitchen</span><span class="m-chip">Ensuite</span><span class="m-chip">Laundry</span><span class="m-chip">Living</span></div>
+                  <div class="m-head"><span class="m-eyebrow">Selections &amp; Finishes</span><p class="m-title">Your selections</p><span class="m-sub">Demo project &middot; Sample Street Residence</span></div>
+                  <div class="m-card">
+                    <span class="m-cap">Selections progress</span>
+                    <p class="m-big">45%</p>
+                    <span class="m-bar"><i style="width:45%"></i></span>
+                    <small class="m-note" style="margin-top:8px">Open an item to see what we&rsquo;ve proposed: accept it, share ideas or suggest an alternative. Only approved selections count towards progress.</small>
+                  </div>
+                  <p class="m-group">Kitchen &middot; 4 outstanding &middot; <span class="m-due">2 need your decision</span></p>
                   <div class="m-list">
-                    <div class="m-sel"><span class="m-sw" style="background:linear-gradient(135deg,#e9e6df,#d6d1c7)"></span><b>Benchtop</b><span class="m-pill m-pill--ok">Confirmed</span><small>Engineered stone, pencil-round edge</small></div>
-                    <div class="m-sel"><span class="m-sw" style="background:linear-gradient(135deg,#b9b6ad,#8d8a83)"></span><b>Sink mixer</b><span class="m-pill m-pill--wait">For your review</span><small>Pull-out spray, brushed nickel</small></div>
-                    <div class="m-sel"><span class="m-sw" style="background:repeating-linear-gradient(90deg,#dfe5df 0 10px,#cfd7cf 10px 11px)"></span><b>Splashback tile</b><span class="m-pill m-pill--rev">Change requested</span><small>Gloss finger tile, vertical stack</small></div>
-                    <div class="m-sel"><span class="m-sw" style="background:linear-gradient(135deg,#7d6449,#5c4632)"></span><b>Joinery finish</b><span class="m-pill m-pill--ok">Confirmed</span><small>Timber veneer, matt lacquer</small></div>
+                    <div class="m-sel m-sel--attn"><span class="m-sw" style="background:linear-gradient(135deg,#eeece7,#d9d5cc)"></span><b>Benchtop + splashback <em>Benchtops</em></b><span class="m-pill m-pill--wait">Your decision</span><small>Nominated: engineered stone, 20 mm, pencil-round edge</small></div>
+                    <div class="m-sel m-sel--attn"><span class="m-sw" style="background:linear-gradient(135deg,#3a3a37,#1f1f1d)"></span><b>Cabinet handles <em>Hardware</em></b><span class="m-pill m-pill--wait">Your decision</span><small>Nominated: matt black pull, 160 mm</small></div>
+                    <div class="m-sel"><span class="m-sw" style="background:linear-gradient(135deg,#7d6449,#5c4632)"></span><b>Joinery finish <em>Joinery</em></b><span class="m-pill m-pill--ok">Approved</span><small>Approved: timber-look laminate, matt</small></div>
+                    <div class="m-sel"><span class="m-sw" style="background:linear-gradient(135deg,#b9b6ad,#8d8a83)"></span><b>Sink mixer <em>Tapware</em></b><span class="m-pill m-pill--ok">Approved</span><small>Approved: pull-out spray, brushed nickel</small></div>
                   </div>
                 </div>
 
                 <div class="app__view" role="tabpanel" id="v-spec" aria-labelledby="t-spec">
-                  <div class="m-head"><span class="m-eyebrow">Specification</span><p class="m-title">Ensuite</p><span class="m-sub">Compiled from agreed selections &middot; Demo project</span></div>
+                  <div class="m-head"><span class="m-eyebrow">Construction specification</span><p class="m-title">Ensuite</p><span class="m-sub">Compiled from approved selections &middot; Demo project</span></div>
                   <table class="m-spec">
                     <thead><tr><th scope="col">Item</th><th scope="col">Selection</th><th scope="col">Location</th></tr></thead>
                     <tbody>
@@ -374,7 +393,7 @@
                       <tr><td>Shower screen</td><td>Frameless, fixed panel</td><td>Shower</td></tr>
                     </tbody>
                   </table>
-                  <div class="m-foot"><span>5 of 5 items agreed</span><span>Ready for pricing</span></div>
+                  <div class="m-foot"><span>5 of 5 items approved</span><span>Ready for pricing</span></div>
                 </div>
               </div>
             </div>
@@ -382,14 +401,19 @@
 
           <div class="phone" aria-hidden="true">
             <div class="phone__screen">
-              <div class="phone__top"><img src="/assets/logo-nav-gold-script.png" alt=""><span>Portal</span></div>
+              <div class="phone__top"><img src="/assets/logo-nav-gold-script.png" alt=""><span class="phone__icons"><i></i><i></i><i class="dot"></i></span></div>
+              <div class="phone__tabs"><span class="on">Project home</span><span>Selections</span><span>Documents</span></div>
               <div class="phone__body">
-                <span class="m-eyebrow">Needs you &middot; 2</span>
-                <p class="m-title">Sample Street</p>
-                <div class="m-list" style="margin-top:10px">
+                <span class="m-eyebrow">Pre-construction</span>
+                <p class="m-title">Sample Street Residence</p>
+                <div class="m-card" style="margin-top:10px">
+                  <span class="m-cap">Overall progress</span>
+                  <p class="m-big">44%</p>
+                  <span class="m-bar"><i style="width:44%"></i></span>
+                  <p class="m-summary" style="margin:8px 0 0">One item needs you.</p>
+                </div>
+                <div class="m-list">
                   <div class="m-row m-row--attn"><b>Review kitchen option B</b><small><span class="m-due">Due Friday</span></small></div>
-                  <div class="m-row"><b>Confirm window supplier</b><small>Date to be confirmed</small></div>
-                  <div class="m-row"><b>Upload tree declaration</b><small>Building Approval</small></div>
                 </div>
                 <p class="phone__notice">Illustration &middot; fictional data</p>
               </div>
@@ -397,12 +421,12 @@
           </div>
         </div>
 
-        <p class="portal__note">Portal views shown are illustrations with fictional demonstration data. They will be replaced with screenshots of the working portal.</p>
+        <p class="portal__note">Based on our working client portal. Shown with fictional demonstration data to protect our clients&rsquo; privacy.</p>
 
         <div class="portal__points">
           <div class="rv"><b>One place to look</b><p>Progress, documents and decisions together, instead of scattered across emails and phone calls.</p></div>
           <div class="rv"><b>Fewer surprises</b><p>Decisions are made and recorded as you go, so the final quote reflects choices you&rsquo;ve already seen.</p></div>
-          <div class="rv"><b>A clear record</b><p>Agreed selections feed the specification, giving you, us and our trades the same reference.</p></div>
+          <div class="rv"><b>A clear record</b><p>Approved selections feed the specification, giving you, us and our trades the same reference.</p></div>
         </div>
         <p class="portal__included"><span aria-hidden="true"></span>Included with your Preliminary Services Agreement. Not software we sell, part of how we work.</p>
       </div>

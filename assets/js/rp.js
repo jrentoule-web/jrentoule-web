@@ -103,10 +103,10 @@
   /* Portal tabs (How We Work) */
   var ptabs = $('#ptabs');
   if (ptabs) {
-    var cap = $('#pcap'), side = $$('.app__side [data-for]');
+    var cap = $('#pcap'), side = $$('.app [data-for]');
     tabs(ptabs, function (i, tab) {
       if (cap) cap.innerHTML = tab.getAttribute('data-cap');
-      side.forEach(function (s) { s.classList.toggle('on', s.getAttribute('data-for') === tab.getAttribute('aria-controls')); });
+      side.forEach(function (s) { s.classList.toggle('on', (' ' + s.getAttribute('data-for') + ' ').indexOf(' ' + tab.getAttribute('aria-controls') + ' ') > -1); });
       track('hww_portal_' + tab.id.replace('t-', ''));
     });
   }
