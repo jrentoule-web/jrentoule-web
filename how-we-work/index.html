@@ -287,8 +287,8 @@
 
         <div class="portal__tabs" role="tablist" aria-label="Portal features" id="ptabs">
           <button class="ptab" role="tab" id="t-progress" aria-controls="v-progress" aria-selected="true" data-cap="&lt;b&gt;Progress.&lt;/b&gt; One overall figure across design, consultants, selections, pricing and approval, with each stage underneath.">Progress</button>
+          <button class="ptab" role="tab" id="t-docs" aria-controls="v-docs" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Building Approval documents.&lt;/b&gt; Everything lodgement needs in one checklist: what we need from you, blank forms to download, and uploads we check before they count.">Documents</button>
           <button class="ptab" role="tab" id="t-actions" aria-controls="v-actions" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Next actions.&lt;/b&gt; What happens next, who it&rsquo;s with and when. If something needs you, it&rsquo;s obvious.">Actions</button>
-          <button class="ptab" role="tab" id="t-docs" aria-controls="v-docs" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Building Approval documents.&lt;/b&gt; Everything lodgement needs, what we need from you, and where each document is up to.">Documents</button>
           <button class="ptab" role="tab" id="t-sel" aria-controls="v-sel" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Selections &amp;amp; finishes.&lt;/b&gt; Room by room, what we&amp;rsquo;ve proposed. Accept it, share ideas or suggest an alternative.">Selections</button>
           <button class="ptab" role="tab" id="t-spec" aria-controls="v-spec" aria-selected="false" tabindex="-1" data-cap="&lt;b&gt;Construction specification.&lt;/b&gt; Approved selections become the specification we price and build from.">Specification</button>
         </div>
@@ -346,19 +346,24 @@
 
                 <div class="app__view" role="tabpanel" id="v-docs" aria-labelledby="t-docs">
                   <div class="m-head"><span class="m-eyebrow">Building Approval documents</span><p class="m-title">Building Approval</p><span class="m-sub">Demo project &middot; Sample Street Residence</span></div>
-                  <div class="m-card">
-                    <span class="m-cap">4 of 12 documents accepted</span>
-                    <span class="m-bar" style="margin-top:8px"><i style="width:33%"></i></span>
-                    <small class="m-note" style="margin-top:8px">1 with Rentoule Projects for review. Only documents accepted by Rentoule Projects count towards progress.</small>
+                  <div class="m-ba">
+                    <div class="m-card m-ba__sum">
+                      <span class="m-ring" style="--v:33"><b>33%</b></span>
+                      <div><span class="m-cap"><b>4</b> of <b>12</b> documents accepted</span>
+                      <span class="m-bar" style="margin:8px 0"><i style="width:33%"></i></span>
+                      <small class="m-note">1 with Rentoule Projects for review. Only documents accepted by Rentoule Projects count towards progress.</small></div>
+                    </div>
+                    <div class="m-need">
+                      <p class="m-need__h">Here&rsquo;s what we need from you</p>
+                      <div class="m-need__i"><b>Tree Declaration</b><span class="m-st">Outstanding</span><i>&rarr;</i></div>
+                      <div class="m-need__i"><b>Proof of Land Ownership</b><span class="m-st">Outstanding</span><i>&rarr;</i></div>
+                    </div>
                   </div>
-                  <p class="m-group">Here&rsquo;s what we need from you</p>
-                  <div class="m-list">
-                    <div class="m-row m-row--attn"><b>Tree declaration</b><span class="m-pill m-pill--wait">Outstanding</span><small>You (client) &middot; <span class="m-due">Upload</span></small></div>
-                  </div>
-                  <p class="m-group">Full document checklist</p>
-                  <div class="m-list">
-                    <div class="m-row"><b>Appointment of certifier</b><span class="m-pill m-pill--ok">Accepted</span><small>Government forms &middot; You (client)</small></div>
-                    <div class="m-row"><b>Structural engineering</b><span class="m-pill m-pill--rev">Awaiting RP review</span><small>Reports and technical documents &middot; Engineer</small></div>
+                  <p class="m-group">Government forms</p>
+                  <div class="m-docs">
+                    <div class="m-doc"><b>Appointment of Certifier / Application for Building Approval</b><small>You (client)</small><span class="m-st m-st--ok">Accepted</span><span class="m-acts"><span>Details</span><span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v8m-3-3 3 3 3-3M3 13h10" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>Blank form</span></span></div>
+                    <div class="m-doc"><b>Neighbour Notification 7A and 7B</b><small>Rentoule Projects</small><span class="m-st m-st--rev">Awaiting RP review</span><span class="m-acts"><span>Details</span><span>History</span></span></div>
+                    <div class="m-doc m-doc--attn"><b>Tree Declaration</b><small>You (client)</small><span class="m-st">Outstanding</span><span class="m-acts"><span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v8m-3-3 3 3 3-3M3 13h10" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>Blank form</span><span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 11V3M5 6l3-3 3 3M3 13h10" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>Upload</span></span></div>
                   </div>
                 </div>
 
@@ -407,10 +412,11 @@
                   <span class="m-cap">Overall progress</span>
                   <p class="m-big">44%</p>
                   <span class="m-bar"><i style="width:44%"></i></span>
-                  <p class="m-summary" style="margin:8px 0 0">One item needs you.</p>
                 </div>
-                <div class="m-list">
-                  <div class="m-row m-row--attn"><b>Review kitchen option B</b><small><span class="m-due">Due Friday</span></small></div>
+                <div class="m-need">
+                  <p class="m-need__h">Here&rsquo;s what we need from you</p>
+                  <div class="m-need__i"><b>Tree Declaration</b><span class="m-st">Outstanding</span><i>&rarr;</i></div>
+                  <div class="m-need__i"><b>Kitchen benchtop</b><span class="m-st m-st--wait">Your decision</span><i>&rarr;</i></div>
                 </div>
                 <p class="phone__notice">Illustration &middot; fictional data</p>
               </div>
