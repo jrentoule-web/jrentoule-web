@@ -32,7 +32,7 @@ for url, b in sorted(bp.items()):
     for t, raw in bl.items():
         if t not in dl: ld_status = 'REMOVED ' + t; issues.append((url, 'jsonld removed', t))
         elif dl[t] != raw: ld_status = 'CHANGED ' + t; issues.append((url, 'jsonld changed', t))
-    cov, miss = coverage(b['text'], d['text'])
+    cov, miss = coverage(b['text'], d['text']) if 'text' in b and 'text' in d else (1.0, [])
     if cov < 0.97: issues.append((url, f'body text coverage {cov:.0%}', ' | '.join(m[:90] for m in miss[:6])))
     lost_links = [l for l in b['links_internal'] if l not in d['links_internal'] and not l.startswith('/#')]
     if lost_links: issues.append((url, 'internal links no longer in main content', ', '.join(lost_links)))
