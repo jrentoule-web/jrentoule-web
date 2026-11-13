@@ -71,7 +71,11 @@
     /* after a glide or at an edge, leftover momentum is absorbed. At an edge only a pause or a change of
        direction releases it (the gesture that reached the edge is still strengthening at first). */
     if (now < holdUntil) {
-      var release = holdEdge ? (gap > 120 || (lastDirPrev && dir !== lastDirPrev)) : (fresh && now - holdSince > 150);
+      /* at an edge: a pause, a change of direction, or a new swipe that starts while the last one is still
+         fading out (trackpads keep sending a decaying tail, so a pause may never come) */
+      var held = now - holdSince;
+      var release = holdEdge ? (gap > 120 || (lastDirPrev && dir !== lastDirPrev) || (fresh && held > 350) || held > 1200)
+                             : (fresh && held > 150);
       if (!release) { holdUntil = now + 200; return; }
     }
     holdUntil = 0; holdEdge = false;
