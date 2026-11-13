@@ -16,6 +16,31 @@
 # These ensure SEO/inbound links don't 404 after the cutover
 
 # --- BLOG POSTS (was root-level, now under /blog/) ---
+# Privacy policy aliases (the enquiry form and old links may use any of these)
+[[redirects]]
+  from = "/privacy-policy/"
+  to = "/privacy/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/privacy-policy"
+  to = "/privacy/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/privacy-statement/"
+  to = "/privacy/"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/bathroom-renovation-costs-canberra/"
   to = "/blog/bathroom-renovation-costs-canberra/"
