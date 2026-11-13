@@ -253,12 +253,12 @@
   status = 301
 
 
-# Old job-listing URLs (/careers/carpenter/ etc.) go to the careers page. The target is written without
-# the trailing slash: Netlify ignores a rule whose target falls inside its own wildcard.
+# Old job-listing URLs (/careers/carpenter/ etc.) show the careers page (its canonical is /careers/).
+# A rewrite, because Netlify drops a 301 whose target falls inside its own wildcard.
 [[redirects]]
   from = "/careers/*"
-  to = "/careers"
-  status = 301
+  to = "/careers/index.html"
+  status = 200
 
 # --- SHORT LINKS (clean URLs for Instagram, social, print, email) ---
 # These 301 to the homepage with UTMs attached, so attribution still works.
