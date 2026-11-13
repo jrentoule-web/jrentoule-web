@@ -15,7 +15,7 @@ Service areas (ACT and NSW; further for the right project):
 - Inner North: Turner, Braddon, Campbell, Ainslie, Reid, Dickson, O’Connor, Hackett
 - Inner South & Woden: Yarralumla, Griffith, Forrest, Deakin, Red Hill, Narrabundah, Garran, Hughes
 - Molonglo Valley: Denman Prospect, Wright, Coombs, Whitlam, Molonglo, Macnamara
-- Wider Canberra & Queanbeyan: Weetangera, Curtin, Kambah, Queanbeyan, Jerrabomberra, Googong, Bungendore
+- Wider Canberra & Queanbeyan: Weetangera, Holder, Curtin, Kambah, Queanbeyan, Jerrabomberra, Googong, Bungendore
 - NSW South Coast: Batemans Bay, Broulee, Mollymook, Ulladulla, Moruya, Tuross Head
 
 ## Main pages
