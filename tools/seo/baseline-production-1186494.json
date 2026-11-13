@@ -1,0 +1,3005 @@
+{
+ "pages": {
+  "/blog/act-missing-middle-housing-reform-mpa04/": {
+   "file": "blog/act-missing-middle-housing-reform-mpa04/index.html",
+   "title": "MPA04 Missing Middle Canberra: What You Can Build on RZ1 and RZ2 Blocks (2026 Guide) | Rentoule Projects",
+   "description": "MPA04 lets you build duplexes, townhouses and small multi-unit dwellings on RZ1 and RZ2 blocks in Canberra from 1 July 2026. A licensed builder's guide to what you can build, LVC and cost details, and worked examples for Ainslie, Yarralumla, Curtin.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/act-missing-middle-housing-reform-mpa04/",
+   "robots": "index, follow",
+   "og_title": "MPA04 Missing Middle Canberra: What You Can Build on RZ1 and RZ2 Blocks (2026 Guide)",
+   "og_description": "MPA04 lets you build duplexes, townhouses and small multi-unit dwellings on RZ1 and RZ2 blocks in Canberra from 1 July 2026. A licensed builder's guide to what you can build, LVC and cost details, and worked examples for Ainslie, Yarralumla, Curtin.",
+   "og_image": "https://rentouleprojects.com/assets/blog-budget-2026-hero.jpg",
+   "og_url": "https://rentouleprojects.com/blog/act-missing-middle-housing-reform-mpa04/",
+   "h1": [
+    "ACT Missing Middle Housing Reform (MPA04): What It Means for Canberra Property Owners"
+   ],
+   "h2": [
+    "What MPA04 changes",
+    "The amendments Minister Steel added",
+    "What MPA04 does NOT change",
+    "Worked example: a 700 square metre Ainslie block",
+    "The Lease Variation Charge: the make-or-break risk",
+    "The timeline: how MPA04 came into force",
+    "What this means for property owners right now",
+    "What we are doing at Rentoule Projects",
+    "Is my block eligible? A quick self-check",
+    "More worked examples: Yarralumla, Garran and Macgregor blocks",
+    "What to do today, whether or not you decide to build",
+    "Frequently asked questions",
+    "The honest takeaway",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "When does MPA04 commence?",
+    "Does MPA04 apply to my heritage-listed block?",
+    "Can I just build townhouses on my 700 square metre RZ1 block?",
+    "What is the Lease Variation Charge and why does it matter?",
+    "I have a corner block. Does that change anything?",
+    "The Canberra Renovation Guide",
+    "Energy Efficiency & EER Ratings",
+    "DA Approval in the ACT",
+    "Knockdown Rebuild Canberra"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "MPA04 Missing Middle Canberra: What You Can Build on RZ1 and RZ2 Blocks (2026 Guide)",
+     "datePublished": "2026-06-01",
+     "dateModified": "2026-10-21",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Advice & Tips\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-21\", \"datePublished\": \"2026-06-01\", \"description\": \"MPA04 lets you build duplexes, townhouses and small multi-unit dwellings on RZ1 and RZ2 blocks in Canberra from 1 July 2026. A licensed builder's guide to what you can build, LVC and cost details, and worked examples for Ainslie, Yarralumla, Curtin.\", \"headline\": \"MPA04 Missing Middle Canberra: What You Can Build on RZ1 and RZ2 Blocks (2026 Guide)\", \"image\": \"https://rentouleprojects.com/assets/blog-budget-2026-hero.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/act-missing-middle-housing-reform-mpa04/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/act-missing-middle-housing-reform-mpa04/\", \"name\": \"ACT Missing Middle Housing Reform (MPA04): What It Means for Canberra Property Owners\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/act-property-developer-licence-2026/",
+    "/blog/best-suburbs-renovation-roi-canberra/",
+    "/blog/da-approval-act-renovations/",
+    "/blog/do-you-need-da-approval-renovations-act/",
+    "/blog/energy-efficiency-eer-canberra/",
+    "/blog/missing-middle-explained-canberra/",
+    "/blog/rz1-design-options-mpa04-canberra/",
+    "/canberra-renovation-guide/",
+    "/services/dual-occupancy-canberra/",
+    "/services/knockdown-rebuild-canberra/"
+   ],
+   "words": 6632
+  },
+  "/blog/act-property-developer-licence-2026/": {
+   "file": "blog/act-property-developer-licence-2026/index.html",
+   "title": "ACT Property Developer Licence 2026: Who Needs One | Rentoule Projects",
+   "description": "From 1 October 2026, ACT residential projects of three or more dwellings need a licensed property developer. A Canberra builder's guide to who needs a licence, who is exempt, and what it means for Missing Middle townhouse projects on RZ1 and RZ2 blocks.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/act-property-developer-licence-2026/",
+   "robots": "index, follow",
+   "og_title": "Do You Need a Property Developer Licence in the ACT? What Changes From 1 October 2026",
+   "og_description": "Who needs an ACT property developer licence from 1 October 2026, who is exempt (single dwellings and dual occupancies are), and what it means for three-dwelling Missing Middle projects.",
+   "og_image": "https://rentouleprojects.com/assets/service-renovations.jpg",
+   "og_url": "https://rentouleprojects.com/blog/act-property-developer-licence-2026/",
+   "h1": [
+    "Do You Need a Property Developer Licence in the ACT? What Changes From 1 October 2026"
+   ],
+   "h2": [
+    "What triggers the licence requirement",
+    "Who does not need one",
+    "Where this meets the Missing Middle reforms",
+    "What getting a licence involves",
+    "The changes introduced on 24 September",
+    "What I would do now if you own an RZ1 or RZ2 block",
+    "Frequently asked questions",
+    "Talk it through before you design",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "Do I need a property developer licence to build a dual occupancy in Canberra?",
+    "Does my builder need the developer licence?",
+    "Do three houses on separate titles count?",
+    "Can I sell townhouses off the plan without a licence?",
+    "When do the 24 September amendments apply?",
+    "The Canberra Renovation Guide",
+    "ACT Missing Middle Reform (MPA04)",
+    "What Can I Build on My RZ1 Block?",
+    "Dual Occupancy in Canberra"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Do You Need a Property Developer Licence in the ACT? What Changes From 1 October 2026",
+     "datePublished": "2026-10-01",
+     "dateModified": "2026-10-01",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"ACT Regulations\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-01\", \"datePublished\": \"2026-10-01\", \"description\": \"From 1 October 2026, ACT residential projects of three or more dwellings need a licensed property developer. A Canberra builder's guide to who needs a licence, who is exempt, and what it means for Missing Middle townhouse projects on RZ1 and RZ2 blocks.\", \"headline\": \"Do You Need a Property Developer Licence in the ACT? What Changes From 1 October 2026\", \"image\": \"https://rentouleprojects.com/assets/service-renovations.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/act-property-developer-licence-2026/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/act-property-developer-licence-2026/\", \"name\": \"Do You Need a Property Developer Licence in the ACT? What Changes From 1 October 2026\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/act-missing-middle-housing-reform-mpa04/",
+    "/blog/choosing-right-builder-canberra/",
+    "/blog/rz1-design-options-mpa04-canberra/",
+    "/canberra-renovation-guide/",
+    "/services/dual-occupancy-canberra/"
+   ],
+   "words": 2041
+  },
+  "/blog/bathroom-renovation-costs-canberra/": {
+   "file": "blog/bathroom-renovation-costs-canberra/index.html",
+   "title": "Bathroom Renovation Costs in Canberra: 2026 Pricing & Trends | Rentoule Projects",
+   "description": "See what a bathroom renovation costs in Canberra in 2026. Small bathroom or ensuite from $35,000. Full main bathroom from $45,000. Detailed itemised breakdown from a licensed Canberra builder. Fixed-price contracts.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/bathroom-renovation-costs-canberra/",
+   "robots": "index, follow",
+   "og_title": "Bathroom Renovation Costs in Canberra: 2026 Pricing & Trends",
+   "og_description": "See what a bathroom renovation costs in Canberra in 2026. Small bathroom or ensuite from $35,000. Full main bathroom from $45,000. Detailed itemised breakdown from a licensed Canberra builder.",
+   "og_image": "https://rentouleprojects.com/assets/project-3-after.jpg",
+   "og_url": "https://rentouleprojects.com/blog/bathroom-renovation-costs-canberra/",
+   "h1": [
+    "Bathroom Renovation Costs in Canberra: Complete 2026 Guide"
+   ],
+   "h2": [
+    "The Canberra bathroom renovation market at a glance",
+    "Small bathroom or ensuite cost breakdown: 2026 Canberra pricing",
+    "Full main bathroom cost breakdown: 2026 Canberra pricing",
+    "Premium options that push the price up",
+    "What you get at each price point",
+    "2026 Bathroom Trends in Canberra",
+    "Common Mistakes That Blow the Budget",
+    "The Renovation Process: Week-by-Week Timeline",
+    "Jeff's Builder Tips for Bathroom Renovations",
+    "What moves your price within the range",
+    "Preparing for your Rentoule Projects quote",
+    "Frequently Asked Questions",
+    "Related articles",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "Fittings and fixtures",
+    "Tiles and finishes",
+    "Comfort and utility",
+    "Layout, structure and site",
+    "The Canberra Renovation Guide",
+    "Custom small bathroom or ensuite: $35,000-$55,000",
+    "Premium small bathroom or ensuite: $55,000-$95,000",
+    "Custom full main bathroom: $45,000-$70,000",
+    "Premium full main bathroom: $70,000-$130,000",
+    "Luxury / architect-led bathroom: $150,000+",
+    "1. Inadequate Waterproofing",
+    "2. Selecting Tiles Before Confirming Fixture Sizes",
+    "3. Underestimating Ventilation Requirements",
+    "4. Not Budgeting for the Contingency",
+    "How much does a bathroom renovation cost in Canberra in 2026?",
+    "How long does a bathroom renovation take in Canberra?",
+    "What is the most expensive part of a bathroom renovation?",
+    "Do I need a building permit to renovate my bathroom in Canberra?",
+    "Is it worth renovating a bathroom before selling in Canberra?",
+    "What are the most common bathroom renovation mistakes in Canberra?",
+    "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+    "Home Extension Costs in Canberra: What to Expect Per Square Metre (2026)",
+    "Kitchen Renovation Costs in Canberra: 2026 Pricing & Trends",
+    "Knockdown Rebuild",
+    "Kitchen Renovation Costs",
+    "12 Hidden Renovation Costs"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Bathroom Renovation Costs in Canberra: 2026 Pricing & Trends",
+     "datePublished": "2026-03-08",
+     "dateModified": "2026-10-20",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Cost Guides\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-20\", \"datePublished\": \"2026-03-08\", \"description\": \"See what a bathroom renovation costs in Canberra in 2026. Small bathroom or ensuite from $35,000. Full main bathroom from $45,000. Detailed itemised breakdown from a licensed Canberra builder.\", \"headline\": \"Bathroom Renovation Costs in Canberra: 2026 Pricing & Trends\", \"image\": \"https://rentouleprojects.com/assets/project-3-after.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/bathroom-renovation-costs-canberra/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/bathroom-renovation-costs-canberra/\", \"name\": \"Bathroom Renovation Costs in Canberra: Complete 2026 Guide\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/choosing-right-builder-canberra/",
+    "/blog/home-extension-costs-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/kitchen-renovation-costs-canberra/",
+    "/blog/renovation-hidden-costs-canberra/",
+    "/canberra-renovation-guide/",
+    "/services/knockdown-rebuild-canberra/"
+   ],
+   "words": 4160
+  },
+  "/blog/best-suburbs-renovation-roi-canberra/": {
+   "file": "blog/best-suburbs-renovation-roi-canberra/index.html",
+   "title": "Best Canberra Suburbs for Renovation ROI in mid-2026 | Rentoule Projects",
+   "description": "Which Canberra suburbs deliver the best renovation return on investment? Analysis of Inner South, Inner North, and Woden Valley suburbs with 2026 property data.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/best-suburbs-renovation-roi-canberra/",
+   "robots": "index, follow",
+   "og_title": "Best Canberra Suburbs for Renovation ROI in 2026",
+   "og_description": "Which Canberra suburbs deliver the best renovation return on investment? Analysis of Inner South, Inner North, and Woden Valley suburbs with 2026 property data.",
+   "og_image": "https://rentouleprojects.com/assets/project-4-after.jpg",
+   "og_url": "https://rentouleprojects.com/blog/best-suburbs-renovation-roi-canberra/",
+   "h1": [
+    "Best Canberra Suburbs for Renovation ROI in 2026"
+   ],
+   "h2": [
+    "Understanding Renovation ROI",
+    "Canberra Renovation ROI by Suburb: Summary Table",
+    "Inner South: The Premium Renovation Opportunity",
+    "Inner North: Character Homes and Gentrification Premium",
+    "Woden Valley: The Undervalued Opportunity",
+    "Belconnen: Targeted Renovation Required",
+    "Gungahlin: Liveability Over Investment Return",
+    "Renovations That Add the Most Value in Canberra",
+    "Renovations That Don't Pay Back",
+    "Knockdown rebuild: the inner-suburb ROI play most people overlook",
+    "Jeff's Market Insight",
+    "Frequently Asked Questions",
+    "Related articles",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "Griffith, Yarralumla, Red Hill, Deakin",
+    "Ainslie, Turner, O'Connor, Braddon, Campbell",
+    "Curtin, Lyons, Hughes, Garran",
+    "Macquarie, Cook, Page, Bruce, Hawker",
+    "Gungahlin, Ngunnawal, Amaroo, Nicholls",
+    "Over-capitalisation Warning",
+    "The Canberra Renovation Guide",
+    "Which Canberra suburb has the best renovation ROI?",
+    "What is a good renovation ROI in Canberra?",
+    "Do swimming pools add value in Canberra?",
+    "What renovations add the most value in Canberra?",
+    "What is over-capitalisation and how do I avoid it?",
+    "Is it worth renovating a house in Belconnen or Gungahlin?",
+    "How the Middle East Conflict Is Affecting Construction Costs in Australia",
+    "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+    "Home Extension Costs in Canberra: What to Expect Per Square Metre (2026)",
+    "Knockdown Rebuild",
+    "Dual Occupancy & Secondary Residences",
+    "Mr Fluffy Block Rebuild"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Best Canberra Suburbs for Renovation ROI in 2026",
+     "datePublished": "2026-04-05",
+     "dateModified": "2026-06-16",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Market Insights\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-06-16\", \"datePublished\": \"2026-04-05\", \"description\": \"Which Canberra suburbs deliver the best renovation return on investment? Analysis of Inner South, Inner North, and Woden Valley suburbs with 2026 property data.\", \"headline\": \"Best Canberra Suburbs for Renovation ROI in 2026\", \"image\": \"https://rentouleprojects.com/assets/project-4-after.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/best-suburbs-renovation-roi-canberra/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/best-suburbs-renovation-roi-canberra/\", \"name\": \"Best Canberra Suburbs for Renovation ROI in 2026\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/extension-vs-renovation-canberra/",
+    "/blog/home-extension-costs-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/how-to-plan-renovation-canberra/",
+    "/blog/middle-east-conflict-construction-costs-australia/",
+    "/blog/renovate-extend-rebuild-or-move-canberra/",
+    "/canberra-renovation-guide/",
+    "/services/dual-occupancy-canberra/",
+    "/services/knockdown-rebuild-canberra/",
+    "/services/mr-fluffy-block-rebuild/"
+   ],
+   "words": 2604
+  },
+  "/blog/canberra-construction-costs-up-40-percent-2026/": {
+   "file": "blog/canberra-construction-costs-up-40-percent-2026/index.html",
+   "title": "Why Canberra Construction Costs Are Up 40 Per Cent Since 2021 | Rentoule Projects",
+   "description": "The Insurance Council's 2026 report puts Canberra construction costs up 40.56 per cent since 2021. A licensed Canberra builder's honest breakdown of where the cost came from, why the ACT was hit harder than the national average, and what to do if you're planning to build.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/canberra-construction-costs-up-40-percent-2026/",
+   "robots": "index, follow",
+   "og_title": "Why Canberra Construction Costs Are Up 40 Per Cent Since 2021",
+   "og_description": "The Insurance Council's 2026 report puts Canberra rebuild costs up 40.56 per cent since 2021. A licensed Canberra builder breaks down where the cost came from and what to do about it.",
+   "og_image": "https://rentouleprojects.com/assets/service-new-builds.jpg",
+   "og_url": "https://rentouleprojects.com/blog/canberra-construction-costs-up-40-percent-2026/",
+   "h1": [
+    "Why Canberra Construction Costs Are Up 40 Per Cent Since 2021 (And What It Means for Your Project)"
+   ],
+   "h2": [
+    "The numbers, laid out plainly",
+    "Where the extra cost has come from",
+    "Why Canberra has been hit harder than the national average",
+    "What this means for builder solvency (and why it matters to you)",
+    "What to do if you are planning a Canberra build in 2026",
+    "Frequently asked questions",
+    "The bottom line",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "1. Materials",
+    "2. Fuel and freight",
+    "3. Labour and trade capacity",
+    "4. Compliance",
+    "Will construction costs come back down in 2027?",
+    "Are Canberra builders passing on 100 per cent of the cost increases?",
+    "Is a fixed-price contract still worth it if costs keep moving?",
+    "How much should I add on top of a builder's ballpark to allow for cost movement to construction start?",
+    "How do I know if a builder's quote is genuine or lowballed?",
+    "The Canberra Renovation Guide",
+    "Home Renovation Costs in Canberra",
+    "Middle East Conflict & Construction Costs",
+    "Choosing the Right Builder in Canberra"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Why Canberra Construction Costs Are Up 40 Per Cent Since 2021 (And What It Means for Your Project)",
+     "datePublished": "2026-09-01",
+     "dateModified": "2026-10-01",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Advice & Tips\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-01\", \"datePublished\": \"2026-09-01\", \"description\": \"The Insurance Council of Australia's 2026 report puts Canberra construction costs up 40.56 per cent since 2021. A Canberra builder breaks down the numbers, where the cost came from, why the ACT was hit harder, and what to do if you are planning to build.\", \"headline\": \"Why Canberra Construction Costs Are Up 40 Per Cent Since 2021 (And What It Means for Your Project)\", \"image\": \"https://rentouleprojects.com/assets/service-new-builds.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/canberra-construction-costs-up-40-percent-2026/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/canberra-construction-costs-up-40-percent-2026/\", \"name\": \"Why Canberra Construction Costs Are Up 40 Per Cent Since 2021\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/choosing-right-builder-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/middle-east-conflict-construction-costs-australia/",
+    "/blog/ncc-2025-canberra-renovations/",
+    "/blog/renovate-extend-rebuild-or-move-canberra/",
+    "/blog/rz1-design-options-mpa04-canberra/",
+    "/canberra-renovation-guide/"
+   ],
+   "words": 2586
+  },
+  "/blog/choosing-right-builder-canberra/": {
+   "file": "blog/choosing-right-builder-canberra/index.html",
+   "title": "How to Choose the Right Builder in Canberra: 10 Essential Questions to Ask | Rentoule Projects",
+   "description": "Choosing the right builder in Canberra? Ask these 10 essential questions before signing a contract. Expert advice from a licensed ACT builder with 19 years experience.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/choosing-right-builder-canberra/",
+   "robots": "index, follow",
+   "og_title": "How to Choose the Right Builder in Canberra: 10 Essential Questions to Ask",
+   "og_description": "Choosing the right builder in Canberra? Ask these 10 essential questions before signing a contract. Expert advice from a licensed ACT builder with 19 years experience.",
+   "og_image": "https://rentouleprojects.com/assets/about-team.jpg",
+   "og_url": "https://rentouleprojects.com/blog/choosing-right-builder-canberra/",
+   "h1": [
+    "How to Choose the Right Builder in Canberra: 10 Essential Questions to Ask"
+   ],
+   "h2": [
+    "Before You Start: The Right Mindset for Selecting a Builder",
+    "Question 1: Are You Licensed in the ACT?",
+    "Question 2: Do You Have Adequate Insurance?",
+    "Question 3: Can You Show Me Recent, Relevant Work?",
+    "Question 4: What Do Your Previous Clients Say?",
+    "Question 5: How Do You Handle Communication?",
+    "Question 6: What's Included in Your Quote?",
+    "Question 7: What Is Your Contract Process?",
+    "Question 8: How Do You Handle Unexpected Issues?",
+    "Question 9: What Is Your Current Workload and Realistic Timeline?",
+    "Question 10: Do You Specialise in My Type of Project?",
+    "Red Flags to Watch For",
+    "Jeff's Perspective on the Builder-Client Relationship",
+    "Frequently Asked Questions",
+    "Related articles",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "The Canberra Renovation Guide",
+    "How do I check if a builder is licensed in the ACT?",
+    "How many quotes should I get for a renovation in Canberra?",
+    "What insurance should a Canberra builder have?",
+    "What is a provisional sum (PC sum) in a building quote?",
+    "What is an acceptable deposit for a builder in the ACT?",
+    "What is the difference between a fixed-price and cost-plus building contract?",
+    "Home Extension vs. Renovation: Which Is Right for Your Canberra Home?",
+    "Energy Efficiency and EER Ratings in Canberra: What Homeowners Need to Know",
+    "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+    "Knockdown Rebuild",
+    "Dual Occupancy & Secondary Residences",
+    "12 Hidden Renovation Costs"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "How to Choose the Right Builder in Canberra: 10 Essential Questions to Ask",
+     "datePublished": "2026-04-19",
+     "dateModified": "2026-10-01",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Advice & Tips\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-01\", \"datePublished\": \"2026-04-19\", \"description\": \"Choosing the right builder in Canberra? Ask these 10 essential questions before signing a contract. Expert advice from a licensed ACT builder with 19 years experience.\", \"headline\": \"How to Choose the Right Builder in Canberra: 10 Essential Questions to Ask\", \"image\": \"https://rentouleprojects.com/assets/about-team.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/choosing-right-builder-canberra/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/choosing-right-builder-canberra/\", \"name\": \"How to Choose the Right Builder in Canberra: 10 Essential Questions to Ask\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/act-property-developer-licence-2026/",
+    "/blog/bathroom-renovation-costs-canberra/",
+    "/blog/canberra-construction-costs-up-40-percent-2026/",
+    "/blog/energy-efficiency-eer-canberra/",
+    "/blog/extension-vs-renovation-canberra/",
+    "/blog/home-extension-costs-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/how-to-plan-renovation-canberra/",
+    "/blog/kitchen-renovation-costs-canberra/",
+    "/blog/renovation-hidden-costs-canberra/",
+    "/canberra-renovation-guide/",
+    "/services/dual-occupancy-canberra/",
+    "/services/knockdown-rebuild-canberra/",
+    "/services/mr-fluffy-block-rebuild/"
+   ],
+   "words": 3092
+  },
+  "/blog/da-approval-act-renovations/": {
+   "file": "blog/da-approval-act-renovations/index.html",
+   "title": "Do You Need DA Approval for Renovations in the ACT? (2026 Guide) | Rentoule Projects",
+   "description": "Not all Canberra renovations need DA approval. Learn which projects are exempt, the DA process timeline, and costs. Expert guide from a licensed ACT builder.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/da-approval-act-renovations/",
+   "robots": "index, follow",
+   "og_title": "Do You Need DA Approval for Renovations in the ACT? (2026 Guide)",
+   "og_description": "Not all Canberra renovations need DA approval. Learn which projects are exempt, the DA process timeline, and costs. Expert guide from a licensed ACT builder.",
+   "og_image": "https://rentouleprojects.com/assets/service-new-builds.jpg",
+   "og_url": "https://rentouleprojects.com/blog/da-approval-act-renovations/",
+   "h1": [
+    "Do You Need DA Approval for Renovations in the ACT? (2026 Guide )"
+   ],
+   "h2": [
+    "What is a Development Application (DA)?",
+    "What is Exempt from DA in the ACT?",
+    "The Single Dwelling Housing Development Code (SDHDC) - the faster path for most extensions",
+    "Building Approval (BA) - separate from DA, and you still need one",
+    "What Requires DA in the ACT?",
+    "The DA Application Process: Step-by-Step",
+    "DA Costs and Timeframes: What to Budget",
+    "Heritage Considerations in Canberra",
+    "Tips to Speed Up Your DA - Jeff's Builder Advice",
+    "Frequently Asked Questions",
+    "Related articles",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "DA Timeframes",
+    "Heritage Areas in Canberra",
+    "Energy Efficiency Requirements (EER)",
+    "The Canberra Renovation Guide",
+    "Do I need DA approval to renovate my home in the ACT?",
+    "How long does a DA take to be approved in the ACT?",
+    "How much does a DA application cost in the ACT?",
+    "What is exempt development in the ACT?",
+    "Do heritage homes in Canberra require special approval for renovations?",
+    "What happens if I build without DA approval in the ACT?",
+    "What is a building certifier and do I need one for my renovation?",
+    "How to Plan a Home Renovation in Canberra: Step-by-Step Guide",
+    "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+    "Home Extension Costs in Canberra: What to Expect Per Square Metre (2026)",
+    "Dual Occupancy & Secondary Residences",
+    "Knockdown Rebuild",
+    "Mr Fluffy Block Rebuild"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Do You Need DA Approval for Renovations in the ACT? (2026 Guide)",
+     "datePublished": "2026-03-29",
+     "dateModified": "2026-10-15",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Planning & Approvals\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-15\", \"datePublished\": \"2026-03-29\", \"description\": \"Not all Canberra renovations need DA approval. Learn which projects are exempt, the DA process timeline, and costs. Expert guide from a licensed ACT builder.\", \"headline\": \"Do You Need DA Approval for Renovations in the ACT? (2026 Guide)\", \"image\": \"https://rentouleprojects.com/assets/service-new-builds.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/da-approval-act-renovations/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/da-approval-act-renovations/\", \"name\": \"Do You Need DA Approval for Renovations in the ACT? (2026 Guide)\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/home-extension-costs-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/how-to-plan-renovation-canberra/",
+    "/blog/second-storey-extensions-canberra/",
+    "/blog/tree-protection-canberra-act/",
+    "/canberra-renovation-guide/",
+    "/services/dual-occupancy-canberra/",
+    "/services/knockdown-rebuild-canberra/",
+    "/services/mr-fluffy-block-rebuild/"
+   ],
+   "words": 3133
+  },
+  "/blog/energy-efficiency-eer-canberra/": {
+   "file": "blog/energy-efficiency-eer-canberra/index.html",
+   "title": "Energy Efficiency and EER Ratings in Canberra: What Homeowners Need to Know | Rentoule Projects",
+   "description": "What Canberra homeowners need to know about EER ratings, the 7-star requirement, and how energy efficiency affects your renovation or new build.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/energy-efficiency-eer-canberra/",
+   "robots": "index, follow",
+   "og_title": "Energy Efficiency and EER Ratings in Canberra: What Homeowners Need to Know",
+   "og_description": "What Canberra homeowners need to know about EER ratings, the 7-star requirement, and how energy efficiency affects your renovation or new build.",
+   "og_image": "https://rentouleprojects.com/assets/service-new-builds.jpg",
+   "og_url": "https://rentouleprojects.com/blog/energy-efficiency-eer-canberra/",
+   "h1": [
+    "Energy Efficiency and EER Ratings in Canberra: What Homeowners Need to Know"
+   ],
+   "h2": [
+    "What Is an EER and Why Does It Matter in Canberra?",
+    "The 7-Star Requirement for New Builds",
+    "What About Renovations and Extensions?",
+    "Practical Ways to Improve Your Home's Energy Efficiency",
+    "The Cost vs Benefit Reality",
+    "Frequently Asked Questions",
+    "Talk to Rentoule Projects",
+    "Related articles",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "The Canberra Renovation Guide",
+    "How to Choose the Right Builder in Canberra: 10 Essential Questions to Ask",
+    "Home Extension vs. Renovation: Which Is Right for Your Canberra Home?",
+    "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+    "Knockdown Rebuild",
+    "Home Renovation Costs"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Energy Efficiency and EER Ratings in Canberra: What Homeowners Need to Know",
+     "datePublished": "2026-04-15",
+     "dateModified": "2026-05-02",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Advice & Tips\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-05-02\", \"datePublished\": \"2026-04-15\", \"description\": \"What Canberra homeowners need to know about EER ratings, the 7-star requirement, and how energy efficiency affects your renovation or new build.\", \"headline\": \"Energy Efficiency and EER Ratings in Canberra: What Homeowners Need to Know\", \"image\": \"https://rentouleprojects.com/assets/service-new-builds.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/energy-efficiency-eer-canberra/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/energy-efficiency-eer-canberra/\", \"name\": \"Energy Efficiency and EER Ratings in Canberra: What Homeowners Need to Know\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/choosing-right-builder-canberra/",
+    "/blog/extension-vs-renovation-canberra/",
+    "/blog/fireplaces-wood-heaters-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/canberra-renovation-guide/",
+    "/services/knockdown-rebuild-canberra/"
+   ],
+   "words": 1884
+  },
+  "/blog/extension-vs-renovation-canberra/": {
+   "file": "blog/extension-vs-renovation-canberra/index.html",
+   "title": "Home Extension vs. Renovation: Which Is Right for Your Canberra Home? | Rentoule Projects",
+   "description": "Should you extend or renovate your Canberra home? Compare costs, timelines, and ROI. A licensed builder helps you decide which approach delivers the best value.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/extension-vs-renovation-canberra/",
+   "robots": "index, follow",
+   "og_title": "Home Extension vs. Renovation: Which Is Right for Your Canberra Home?",
+   "og_description": "Should you extend or renovate your Canberra home? Compare costs, timelines, and ROI. A licensed builder helps you decide which approach delivers the best value.",
+   "og_image": "https://rentouleprojects.com/assets/service-extensions.jpg",
+   "og_url": "https://rentouleprojects.com/blog/extension-vs-renovation-canberra/",
+   "h1": [
+    "Home Extension vs. Renovation: Which Is Right for Your Canberra Home?"
+   ],
+   "h2": [
+    "Extension vs. Renovation at a Glance",
+    "When to Renovate",
+    "When to Extend",
+    "When to Do Both - The Most Common Canberra Scenario",
+    "Cost Comparison: A Typical Canberra Scenario",
+    "Financing Your Extension or Renovation",
+    "Impact on Property Value",
+    "ACT Planning Considerations",
+    "Jeff's Decision Framework",
+    "Frequently Asked Questions",
+    "Related articles",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "Renovating makes more sense when...",
+    "Extending makes more sense when...",
+    "Example: 1972 three-bedroom brick veneer in Turner, Inner North",
+    "Block Coverage",
+    "Setbacks",
+    "Heritage Areas",
+    "The Canberra Renovation Guide",
+    "How much does a home extension cost in Canberra?",
+    "Does a home extension require DA approval in the ACT?",
+    "Which adds more value - an extension or a renovation?",
+    "What are the block coverage limits for extensions in the ACT?",
+    "How long does a home extension take in Canberra?",
+    "Can I extend and renovate at the same time?",
+    "How to Choose the Right Builder in Canberra: 10 Essential Questions to Ask",
+    "Energy Efficiency and EER Ratings in Canberra: What Homeowners Need to Know",
+    "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+    "Dual Occupancy & Secondary Residences",
+    "Knockdown Rebuild",
+    "Home Extension Costs"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Home Extension vs. Renovation: Which Is Right for Your Canberra Home?",
+     "datePublished": "2026-04-12",
+     "dateModified": "2026-10-15",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Advice & Tips\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-15\", \"datePublished\": \"2026-04-12\", \"description\": \"Should you extend or renovate your Canberra home? Compare costs, timelines, and ROI. A licensed builder helps you decide which approach delivers the best value.\", \"headline\": \"Home Extension vs. Renovation: Which Is Right for Your Canberra Home?\", \"image\": \"https://rentouleprojects.com/assets/service-extensions.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/extension-vs-renovation-canberra/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/extension-vs-renovation-canberra/\", \"name\": \"Home Extension vs. Renovation: Which Is Right for Your Canberra Home?\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/bathroom-renovation-costs-canberra/",
+    "/blog/best-suburbs-renovation-roi-canberra/",
+    "/blog/choosing-right-builder-canberra/",
+    "/blog/da-approval-act-renovations/",
+    "/blog/energy-efficiency-eer-canberra/",
+    "/blog/full-house-renovation-canberra/",
+    "/blog/home-extension-costs-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/kitchen-renovation-costs-canberra/",
+    "/blog/second-storey-extensions-canberra/",
+    "/canberra-renovation-guide/",
+    "/services/dual-occupancy-canberra/",
+    "/services/knockdown-rebuild-canberra/"
+   ],
+   "words": 2356
+  },
+  "/blog/federal-budget-2026-canberra-renovations/": {
+   "file": "blog/federal-budget-2026-canberra-renovations/index.html",
+   "title": "Federal Budget 2026: What It Means for Canberra Renovations and Builds | Rentoule Projects",
+   "description": "The 2026 Federal Budget made the biggest housing tax changes in 25 years. Here's what it means for Canberra renovations, extensions, custom new builds and knockdown rebuilds, from a licensed ACT builder.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/federal-budget-2026-canberra-renovations/",
+   "robots": "index, follow",
+   "og_title": "Federal Budget 2026: What It Means for Canberra Renovations and Builds",
+   "og_description": "The 2026 Federal Budget made the biggest housing tax changes in 25 years. Here's what it means for Canberra renovations, extensions, custom new builds and knockdown rebuilds, from a licensed ACT builder.",
+   "og_image": "https://rentouleprojects.com/assets/blog-budget-2026-hero.jpg",
+   "og_url": "https://rentouleprojects.com/blog/federal-budget-2026-canberra-renovations/",
+   "h1": [
+    "Federal Budget 2026: What It Means for Canberra Renovations and Builds"
+   ],
+   "h2": [
+    "The big housing tax change in one paragraph",
+    "What this means for a Canberra renovation or extension",
+    "What this means for a custom new build",
+    "Knockdown rebuild: the dual-occupancy angle",
+    "The supply-side measures that help all of us",
+    "The fuel excise extension",
+    "Cost of living and the consumer angle",
+    "What we are doing at Rentoule Projects",
+    "Frequently asked questions",
+    "Plan your project with the bigger picture in mind",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "Does the Budget change anything for my renovation if I live in the home?",
+    "I'm building a custom new home. Does the Budget help me?",
+    "I have an RZ1 block. Should I do a knockdown rebuild or a dual occupancy?",
+    "Will renovation costs come down because of the Budget?",
+    "When does any of this start?",
+    "The Canberra Renovation Guide",
+    "Energy Efficiency & EER Ratings",
+    "DA Approval in the ACT",
+    "Knockdown Rebuild Canberra"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Federal Budget 2026: What It Means for Canberra Renovations and Builds",
+     "datePublished": "2026-05-15",
+     "dateModified": "2026-05-27",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Advice & Tips\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-05-27\", \"datePublished\": \"2026-05-15\", \"description\": \"The 2026 Federal Budget made the biggest housing tax changes in 25 years. Here's what it means for Canberra renovations, extensions, custom new builds and knockdown rebuilds, from a licensed ACT builder.\", \"headline\": \"Federal Budget 2026: What It Means for Canberra Renovations and Builds\", \"image\": \"https://rentouleprojects.com/assets/blog-budget-2026-hero.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/federal-budget-2026-canberra-renovations/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/federal-budget-2026-canberra-renovations/\", \"name\": \"Federal Budget 2026: What It Means for Canberra Renovations and Builds\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/choosing-right-builder-canberra/",
+    "/blog/da-approval-act-renovations/",
+    "/blog/energy-efficiency-eer-canberra/",
+    "/canberra-renovation-guide/",
+    "/services/dual-occupancy-canberra/",
+    "/services/knockdown-rebuild-canberra/"
+   ],
+   "words": 2293
+  },
+  "/blog/fireplaces-wood-heaters-canberra/": {
+   "file": "blog/fireplaces-wood-heaters-canberra/index.html",
+   "title": "Fireplaces and Wood Heaters in Canberra: The 2026 Rules | Rentoule Projects",
+   "description": "Where new wood heaters are restricted in Canberra, what approvals you need everywhere else, how the gas connection rules affect fireplaces, and the electric and bioethanol alternatives. Checked against ACT legislation.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/fireplaces-wood-heaters-canberra/",
+   "robots": "index, follow",
+   "og_title": "Fireplaces and Wood Heaters in Canberra: The 2026 Rules",
+   "og_description": "Where new wood heaters are restricted in Canberra, what you need everywhere else, and how the gas rules affect fireplaces. Checked against ACT legislation.",
+   "og_image": "https://rentouleprojects.com/assets/service-renovations.jpg",
+   "og_url": "https://rentouleprojects.com/blog/fireplaces-wood-heaters-canberra/",
+   "h1": [
+    "Fireplaces and Wood Heaters in Canberra: The 2026 Rules Explained"
+   ],
+   "h2": [
+    "What the ACT Government announced (and what it has done)",
+    "Where new wood heaters are restricted (as at 30 October 2026)",
+    "What about existing wood heaters?",
+    "Gas fireplaces and the gas phase-out",
+    "The alternatives that work well in Canberra",
+    "What this means if you're planning a renovation",
+    "Frequently asked questions",
+    "My take",
+    "Sources",
+    "Keep exploring",
+    "Thinking about a fireplace?"
+   ],
+   "h3": [
+    "Electric flame-effect fireplaces",
+    "Bioethanol (alcohol-fuelled) fireplaces",
+    "Heat pump with a built-in feature wall",
+    "Can I rip out my wood heater during a renovation and put a better one in?",
+    "Are wood heaters banned in Tuggeranong?",
+    "Will I have to remove my wood heater before I sell my house in Canberra?",
+    "I'm building a new home in Dunlop, East O'Malley or the Molonglo Valley. Can I have a wood fireplace?",
+    "Can I install a new gas fireplace in my Canberra renovation?",
+    "Are outdoor fire pits and pizza ovens still allowed in Canberra?",
+    "EER Ratings for Canberra Renovations",
+    "DA Approval in the ACT",
+    "Choosing the Right Canberra Builder"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Fireplaces and Wood Heaters in Canberra: The 2026 Rules Explained",
+     "datePublished": "2026-07-02",
+     "dateModified": "2026-10-30",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"ACT Regulations\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-30\", \"datePublished\": \"2026-07-02\", \"description\": \"Where new wood heaters are restricted in Canberra, what approvals you need everywhere else, how the gas connection rules affect fireplaces, and the electric and bioethanol alternatives. Checked against ACT legislation.\", \"headline\": \"Fireplaces and Wood Heaters in Canberra: The 2026 Rules Explained\", \"image\": \"https://rentouleprojects.com/assets/service-renovations.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/fireplaces-wood-heaters-canberra/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/fireplaces-wood-heaters-canberra/\", \"name\": \"Fireplaces and Wood Heaters in Canberra: The 2026 Rules\", \"position\": 3}]}"
+    },
+    {
+     "type": "FAQPage",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": 6,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Outside Dunlop, East O'Malley and the Molonglo Valley (except Wright), yes, with building approval and a certified compliant appliance. Inside those areas a replacement needs the Territory's written approval under your Crown lease, which is rarely given. You can remove an existing heater anywhere without approval.\"}, \"name\": \"Can I rip out my wood heater during a renovation and put a better one in?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"No. There is no restriction on installing a certified wood heater in any Tuggeranong suburb beyond the building approval that applies everywhere in the ACT. The ACT Government said in 2023 it was minded to extend the restriction to the Tuggeranong Valley, but it has not done so, and in May 2026 confirmed that any decision will follow a regulatory impact assessment in 2026-27.\"}, \"name\": \"Are wood heaters banned in Tuggeranong?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Not currently. The 2023 recommendation that removal be required at point of sale was not adopted. The 2045 phase-out target may eventually bring removal or replacement requirements, but there is no firm date or binding rule.\"}, \"name\": \"Will I have to remove my wood heater before I sell my house in Canberra?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Not without written approval from the Territory under your Crown lease, and in practice that is rarely given. Wright is the exception in Molonglo. Look at a certified electric flame-effect unit, a bioethanol fireplace, or a reverse cycle heat pump behind a feature wall if a fireplace is important to your design.\"}, \"name\": \"I'm building a new home in Dunlop, East O'Malley or the Molonglo Valley. Can I have a wood fireplace?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"If your home already has a gas connection and it stays connected through the works, yes, through a licensed gasfitter. If the connection is abolished for demolition or construction, it cannot be reinstated and gas is off the table. New builds on unconnected blocks cannot get a connection. Plan for electric or bioethanol unless you have a connection you can keep.\"}, \"name\": \"Can I install a new gas fireplace in my Canberra renovation?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes. The wood heater rules apply to indoor heating appliances. Outdoor wood fire pits, pizza ovens and smokers are not affected by the wood heater restrictions or the phase-out policy. Normal fire danger and nuisance smoke rules still apply.\"}, \"name\": \"Are outdoor fire pits and pizza ovens still allowed in Canberra?\"}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/choosing-right-builder-canberra/",
+    "/blog/da-approval-act-renovations/",
+    "/blog/energy-efficiency-eer-canberra/"
+   ],
+   "words": 2509
+  },
+  "/blog/full-house-renovation-canberra/": {
+   "file": "blog/full-house-renovation-canberra/index.html",
+   "title": "Full House Renovation in Canberra: What to Expect Before You Commit | Rentoule Projects",
+   "description": "Considering a full house renovation in Canberra? A licensed builder's honest guide to what a whole-of-home renovation involves in 2026: scope, sequencing, stay vs move out, cost bands, timeline, and the four decisions that shape everything.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/full-house-renovation-canberra/",
+   "robots": "index, follow",
+   "og_title": "Full House Renovation in Canberra: What to Expect Before You Commit",
+   "og_description": "What a whole-of-home renovation involves in Canberra 2026. Scope, sequencing, stay vs move out, cost bands, timeline, and the four decisions that shape everything.",
+   "og_image": "https://rentouleprojects.com/assets/service-renovations.jpg",
+   "og_url": "https://rentouleprojects.com/blog/full-house-renovation-canberra/",
+   "h1": [
+    "Full House Renovation in Canberra: What to Expect Before You Commit"
+   ],
+   "h2": [
+    "What counts as a full house renovation",
+    "When it is the right call versus other options",
+    "The sequencing challenge that makes it different",
+    "Stay or move out",
+    "The cost picture in 2026",
+    "Realistic timeline",
+    "The four decisions that shape everything",
+    "Hidden costs that catch people",
+    "What moves your price within the range",
+    "Frequently asked questions",
+    "Where to from here",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "Is a full house renovation cheaper than a knockdown rebuild?",
+    "How much can I do myself to save money?",
+    "Do I need Development Approval for a full house renovation?",
+    "Should I finish selections before construction starts?",
+    "What is a realistic contingency to hold outside the contract?",
+    "The Canberra Renovation Guide",
+    "Home Renovation Costs in Canberra",
+    "Renovate, Extend, Rebuild or Move",
+    "12 Hidden Renovation Costs"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Full House Renovation in Canberra: What to Expect Before You Commit (2026 Guide)",
+     "datePublished": "2026-09-15",
+     "dateModified": "2026-10-20",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Advice & Tips\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-20\", \"datePublished\": \"2026-09-15\", \"description\": \"A Canberra builder's honest guide to what a whole-of-home renovation involves in 2026: scope, sequencing, stay vs move out, cost bands, timeline, and the four decisions that shape everything.\", \"headline\": \"Full House Renovation in Canberra: What to Expect Before You Commit (2026 Guide)\", \"image\": \"https://rentouleprojects.com/assets/service-renovations.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/full-house-renovation-canberra/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/full-house-renovation-canberra/\", \"name\": \"Full House Renovation in Canberra: What to Expect Before You Commit\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/canberra-construction-costs-up-40-percent-2026/",
+    "/blog/da-approval-act-renovations/",
+    "/blog/extension-vs-renovation-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/how-to-plan-renovation-canberra/",
+    "/blog/renovate-extend-rebuild-or-move-canberra/",
+    "/blog/renovation-hidden-costs-canberra/",
+    "/canberra-renovation-guide/"
+   ],
+   "words": 2900
+  },
+  "/blog/home-extension-costs-canberra/": {
+   "file": "blog/home-extension-costs-canberra/index.html",
+   "title": "Home Extension Costs in Canberra: What to Expect Per Square Metre (2026) | Rentoule Projects",
+   "description": "Home extensions with Rentoule Projects in Canberra start from $3,200\u2013$7,500 per square metre in 2026. Ground floor $3,200\u2013$5,200/sqm, second storey $4,800\u2013$7,500+/sqm. Detailed breakdown from a Canberra licensed builder.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/home-extension-costs-canberra/",
+   "robots": "index, follow",
+   "og_title": "Home Extension Costs in Canberra: What to Expect Per Square Metre (2026)",
+   "og_description": "Home extensions with Rentoule Projects in Canberra start from $3,200\u2013$7,500 per square metre in 2026. Ground floor $3,200\u2013$5,200/sqm, second storey $4,800\u2013$7,500+/sqm.",
+   "og_image": "https://rentouleprojects.com/assets/service-extensions.jpg",
+   "og_url": "https://rentouleprojects.com/blog/home-extension-costs-canberra/",
+   "h1": [
+    "Home Extension Costs in Canberra: What to Expect Per Square Metre (2026)"
+   ],
+   "h2": [
+    "The Canberra home extension market at a glance",
+    "Extension Types and Costs: 2026 Canberra Pricing",
+    "What Drives Extension Costs in Canberra",
+    "ACT Planning Rules for Extensions",
+    "Extension vs. Moving: The Financial Case",
+    "Extension Timeline: What to Expect",
+    "How to Plan a Home Extension in Canberra: Step-by-Step",
+    "Jeff's Tips for Keeping Extension Costs Down",
+    "What moves your price within the range",
+    "Preparing for your Rentoule Projects quote",
+    "Frequently Asked Questions",
+    "Related articles",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "The Canberra Renovation Guide",
+    "Foundations and Substructure",
+    "Roof Integration",
+    "Matching Existing Materials",
+    "Plumbing and Electrical Routing",
+    "Winter Construction in Canberra",
+    "Exempt Development - No DA Required",
+    "Development Application (DA) Requirements",
+    "Block Coverage and Setback Limits",
+    "How much does a home extension cost in Canberra per square metre?",
+    "Does a home extension in the ACT require development approval?",
+    "How long does a home extension take to build in Canberra?",
+    "Is it cheaper to extend or move house in Canberra?",
+    "What is the difference in cost between a ground floor and second storey extension?",
+    "What are the setback rules for extensions in the ACT?",
+    "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+    "Bathroom Renovation Costs in Canberra: Complete 2026 Guide",
+    "Kitchen Renovation Costs in Canberra: 2026 Pricing & Trends",
+    "Dual Occupancy & Secondary Residences",
+    "Knockdown Rebuild",
+    "Extension vs Renovation"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Home Extension Costs in Canberra: What to Expect Per Square Metre (2026)",
+     "datePublished": "2026-04-02",
+     "dateModified": "2026-10-20",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Cost Guides\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-20\", \"datePublished\": \"2026-04-02\", \"description\": \"Home extensions with Rentoule Projects in Canberra start from $3,200\\u2013$7,500 per square metre in 2026. Ground floor $3,200\\u2013$5,200/sqm, second storey $4,800\\u2013$7,500+/sqm.\", \"headline\": \"Home Extension Costs in Canberra: What to Expect Per Square Metre (2026)\", \"image\": \"https://rentouleprojects.com/assets/service-extensions.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/home-extension-costs-canberra/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/home-extension-costs-canberra/\", \"name\": \"Home Extension Costs in Canberra: What to Expect Per Square Metre (2026)\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/bathroom-renovation-costs-canberra/",
+    "/blog/choosing-right-builder-canberra/",
+    "/blog/da-approval-act-renovations/",
+    "/blog/extension-vs-renovation-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/kitchen-renovation-costs-canberra/",
+    "/blog/renovate-extend-rebuild-or-move-canberra/",
+    "/blog/second-storey-extensions-canberra/",
+    "/canberra-renovation-guide/",
+    "/services/dual-occupancy-canberra/",
+    "/services/knockdown-rebuild-canberra/"
+   ],
+   "words": 3075
+  },
+  "/blog/home-renovation-costs-canberra/": {
+   "file": "blog/home-renovation-costs-canberra/index.html",
+   "title": "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide) | Rentoule Projects",
+   "description": "What a home renovation costs in Canberra in 2026. Ensuites from $35,000, main bathrooms from $45,000, full kitchens from $50,000, whole-home renovations from $250,000. Real pricing from a licensed Canberra builder.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/home-renovation-costs-canberra/",
+   "robots": "index, follow",
+   "og_title": "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+   "og_description": "What a home renovation costs in Canberra in 2026. Ensuites from $35,000, main bathrooms from $45,000, full kitchens from $50,000, whole-home renovations from $250,000. Real pricing from a licensed Canberra builder.",
+   "og_image": "https://rentouleprojects.com/assets/service-renovations.jpg",
+   "og_url": "https://rentouleprojects.com/blog/home-renovation-costs-canberra/",
+   "h1": [
+    "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)"
+   ],
+   "h2": [
+    "Renovation Cost Overview: Canberra 2026",
+    "Factors That Affect Renovation Costs in Canberra",
+    "Hidden Costs Most Homeowners Miss",
+    "How to Budget for Your Canberra Renovation",
+    "When to Renovate vs. Rebuild in Canberra",
+    "What Your Money Gets You at Each Price Point",
+    "Renovation Finance Options",
+    "What moves your price within the range",
+    "Preparing for your Rentoule Projects quote",
+    "Frequently Asked Questions",
+    "Related articles",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "The Canberra Renovation Guide",
+    "Age and Condition of Your Home",
+    "Heritage Listing and Conservation Areas",
+    "Structural vs. Cosmetic Work",
+    "Material Choices and Specification Level",
+    "Site Access and Logistics",
+    "Step 1: Define Your Scope Precisely",
+    "Step 2: Get At Least Three Detailed Quotes",
+    "Step 3: Consider a Staged Approach",
+    "Step 4: Lock In a Fixed-Price Contract",
+    "Partial Renovation ($150,000-$275,000 for a 3-bedroom home)",
+    "Custom Whole-Home Renovation ($250,000-$450,000)",
+    "Premium Whole-Home Renovation ($450,000-$1,000,000+)",
+    "How much does a home renovation cost in Canberra in 2026?",
+    "Why are renovation costs higher in Canberra than other Australian cities?",
+    "Do I need council approval for a renovation in Canberra?",
+    "How long does a home renovation take in Canberra?",
+    "What hidden costs should I budget for in a Canberra renovation?",
+    "Should I renovate or knock down and rebuild my Canberra home?",
+    "How do I choose a reliable builder for my Canberra renovation?",
+    "Home Extension Costs in Canberra: What to Expect Per Square Metre (2026)",
+    "Bathroom Renovation Costs in Canberra: Complete 2026 Guide",
+    "Kitchen Renovation Costs in Canberra: 2026 Pricing & Trends",
+    "Knockdown Rebuild",
+    "Dual Occupancy & Secondary Residences",
+    "12 Hidden Renovation Costs"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+     "datePublished": "2026-02-24",
+     "dateModified": "2026-10-20",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Cost Guides\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-20\", \"datePublished\": \"2026-02-24\", \"description\": \"What a home renovation costs in Canberra in 2026. Ensuites from $35,000, main bathrooms from $45,000, full kitchens from $50,000, whole-home renovations from $250,000. Real pricing from a licensed Canberra builder.\", \"headline\": \"How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)\", \"image\": \"https://rentouleprojects.com/assets/service-renovations.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/home-renovation-costs-canberra/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/home-renovation-costs-canberra/\", \"name\": \"How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/bathroom-renovation-costs-canberra/",
+    "/blog/canberra-construction-costs-up-40-percent-2026/",
+    "/blog/choosing-right-builder-canberra/",
+    "/blog/da-approval-act-renovations/",
+    "/blog/home-extension-costs-canberra/",
+    "/blog/kitchen-renovation-costs-canberra/",
+    "/blog/renovate-extend-rebuild-or-move-canberra/",
+    "/blog/renovation-hidden-costs-canberra/",
+    "/canberra-renovation-guide/",
+    "/services/dual-occupancy-canberra/",
+    "/services/knockdown-rebuild-canberra/",
+    "/services/mr-fluffy-block-rebuild/"
+   ],
+   "words": 2938
+  },
+  "/blog/how-to-plan-renovation-canberra/": {
+   "file": "blog/how-to-plan-renovation-canberra/index.html",
+   "title": "How to Plan a Home Renovation in Canberra: Step-by-Step Guide | Rentoule Projects",
+   "description": "Plan your Canberra home renovation with this step-by-step guide from a licensed local builder. Covers budgeting, design, approvals, builder selection, and construction phases.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/how-to-plan-renovation-canberra/",
+   "robots": "index, follow",
+   "og_title": "How to Plan a Home Renovation in Canberra: Step-by-Step Guide",
+   "og_description": "Plan your Canberra home renovation with this step-by-step guide from a licensed local builder. Covers budgeting, design, approvals, builder selection, and construction phases.",
+   "og_image": "https://rentouleprojects.com/assets/hero-home.jpg",
+   "og_url": "https://rentouleprojects.com/blog/how-to-plan-renovation-canberra/",
+   "h1": [
+    "How to Plan a Home Renovation in Canberra: Step -by-Step Guide"
+   ],
+   "h2": [
+    "Step 1: Define Your Goals and Budget",
+    "Step 2: Research and Find Inspiration",
+    "Step 3: Find the Right Builder",
+    "Step 4: Design and Documentation",
+    "Step 5: Check If You Need DA Approval",
+    "Step 6: Contracts and Insurance",
+    "Step 7: Prepare for Construction",
+    "Step 8: During Construction",
+    "Step 9: Handover and the Defects Period",
+    "Jeff's Top Planning Tips",
+    "Frequently Asked Questions",
+    "Related articles",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "The Canberra Renovation Guide",
+    "How long does it take to plan a home renovation in Canberra?",
+    "How much contingency should I budget for a renovation in Canberra?",
+    "Do I need a building contract for a renovation in the ACT?",
+    "How do I check if a builder is licensed in the ACT?",
+    "What is the defect liability period for renovations in the ACT?",
+    "Should I move out during a home renovation in Canberra?",
+    "Do You Need DA Approval for Renovations in the ACT? (2026 Guide)",
+    "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+    "Home Extension Costs in Canberra: What to Expect Per Square Metre (2026)",
+    "Knockdown Rebuild",
+    "Choosing the Right Builder",
+    "12 Hidden Renovation Costs"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "How to Plan a Home Renovation in Canberra: Step-by-Step Guide",
+     "datePublished": "2026-04-09",
+     "dateModified": "2026-10-15",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Planning & Approvals\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-15\", \"datePublished\": \"2026-04-09\", \"description\": \"Plan your Canberra home renovation with this step-by-step guide from a licensed local builder. Covers budgeting, design, approvals, builder selection, and construction phases.\", \"headline\": \"How to Plan a Home Renovation in Canberra: Step-by-Step Guide\", \"image\": \"https://rentouleprojects.com/assets/hero-home.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/how-to-plan-renovation-canberra/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/how-to-plan-renovation-canberra/\", \"name\": \"How to Plan a Home Renovation in Canberra: Step-by-Step Guide\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/bathroom-renovation-costs-canberra/",
+    "/blog/choosing-right-builder-canberra/",
+    "/blog/da-approval-act-renovations/",
+    "/blog/home-extension-costs-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/kitchen-renovation-costs-canberra/",
+    "/blog/renovation-hidden-costs-canberra/",
+    "/canberra-renovation-guide/",
+    "/services/knockdown-rebuild-canberra/"
+   ],
+   "words": 2275
+  },
+  "/blog/kitchen-renovation-costs-canberra/": {
+   "file": "blog/kitchen-renovation-costs-canberra/index.html",
+   "title": "Kitchen Renovation Costs in Canberra: 2026 Pricing & Trends | Rentoule Projects",
+   "description": "See what a kitchen renovation costs in Canberra in 2026. Small area kitchen from $35,000. Full kitchen from $50,000. Detailed itemised breakdown from a licensed Canberra builder. Fixed-price contracts.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/kitchen-renovation-costs-canberra/",
+   "robots": "index, follow",
+   "og_title": "Kitchen Renovation Costs in Canberra: 2026 Pricing & Trends",
+   "og_description": "See what a kitchen renovation costs in Canberra in 2026. Small area kitchen from $35,000. Full kitchen from $50,000. Detailed itemised breakdown from a licensed Canberra builder.",
+   "og_image": "https://rentouleprojects.com/assets/case-study-kitchen.jpg",
+   "og_url": "https://rentouleprojects.com/blog/kitchen-renovation-costs-canberra/",
+   "h1": [
+    "Kitchen Renovation Costs in Canberra: 2026 Pricing & Trends"
+   ],
+   "h2": [
+    "The Canberra kitchen renovation market at a glance",
+    "Small area kitchen cost breakdown: 2026 Canberra pricing",
+    "Full kitchen cost breakdown: 2026 Canberra pricing",
+    "Premium options that push the price up",
+    "Material Choices and Their Impact on Cost",
+    "Small Kitchen vs. Open-Plan Transformation",
+    "2026 Kitchen Trends in Canberra",
+    "Planning Your Kitchen Layout",
+    "Jeff's Kitchen Renovation Advice",
+    "What moves your price within the range",
+    "Preparing for your Rentoule Projects quote",
+    "Frequently Asked Questions",
+    "Related articles",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "Cabinetry and joinery",
+    "Benchtops and splashbacks",
+    "Appliances",
+    "Sinks and tapware",
+    "Layout and structure",
+    "Feature and finish",
+    "The Canberra Renovation Guide",
+    "Benchtop Materials: The Biggest Single Decision",
+    "Cabinetry: Flat-Pack vs. Semi-Custom vs. Fully Custom",
+    "Integrated Appliances",
+    "Butler's Pantries",
+    "Stone Waterfall Benchtops",
+    "Matte Black Hardware",
+    "Smart Kitchen Technology",
+    "The Work Triangle",
+    "Natural Light",
+    "Storage Optimisation",
+    "How much does a kitchen renovation cost in Canberra in 2026?",
+    "What adds the most value to a kitchen renovation in Canberra?",
+    "How long does a kitchen renovation take in Canberra?",
+    "How much do kitchen benchtops cost in Canberra?",
+    "Do I need council approval for a kitchen renovation in Canberra?",
+    "What is the difference between flat-pack and custom cabinetry?",
+    "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+    "Home Extension Costs in Canberra: What to Expect Per Square Metre (2026)",
+    "Bathroom Renovation Costs in Canberra: Complete 2026 Guide",
+    "Knockdown Rebuild",
+    "Bathroom Renovation Costs",
+    "12 Hidden Renovation Costs"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Kitchen Renovation Costs in Canberra: 2026 Pricing &amp; Trends",
+     "datePublished": "2026-03-18",
+     "dateModified": "2026-10-20",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Cost Guides\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-20\", \"datePublished\": \"2026-03-18\", \"description\": \"See what a kitchen renovation costs in Canberra in 2026. Small area kitchen from $35,000. Full kitchen from $50,000. Detailed itemised breakdown from a licensed Canberra builder.\", \"headline\": \"Kitchen Renovation Costs in Canberra: 2026 Pricing &amp; Trends\", \"image\": \"https://rentouleprojects.com/assets/case-study-kitchen.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/kitchen-renovation-costs-canberra/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/kitchen-renovation-costs-canberra/\", \"name\": \"Kitchen Renovation Costs in Canberra: 2026 Pricing & Trends\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/bathroom-renovation-costs-canberra/",
+    "/blog/home-extension-costs-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/renovation-hidden-costs-canberra/",
+    "/canberra-renovation-guide/",
+    "/services/knockdown-rebuild-canberra/"
+   ],
+   "words": 3723
+  },
+  "/blog/middle-east-conflict-construction-costs-australia/": {
+   "file": "blog/middle-east-conflict-construction-costs-australia/index.html",
+   "title": "How the Middle East Conflict Is Affecting Construction Costs in Australia | Rentoule Projects",
+   "description": "How the Iran conflict is impacting Australian construction costs through fuel, shipping and materials. What Canberra homeowners need to know before building or renovating.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/middle-east-conflict-construction-costs-australia/",
+   "robots": "index, follow",
+   "og_title": "How the Middle East Conflict Is Affecting Construction Costs in Australia",
+   "og_description": "How the Iran conflict is impacting Australian construction costs through fuel, shipping and materials. What Canberra homeowners need to know before building or renovating.",
+   "og_image": "https://rentouleprojects.com/assets/hero-home.jpg",
+   "og_url": "https://rentouleprojects.com/blog/middle-east-conflict-construction-costs-australia/",
+   "h1": [
+    "How the Middle East Conflict Is Affecting Construction Costs in Australia"
+   ],
+   "h2": [
+    "What is happening",
+    "How it is hitting Australia",
+    "What this means for building and renovating in Canberra",
+    "What we are doing about it",
+    "Should you wait to build or renovate?",
+    "Frequently asked questions",
+    "Get in touch",
+    "Related articles",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "The Canberra Renovation Guide",
+    "Best Canberra Suburbs for Renovation ROI in 2026",
+    "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+    "Home Extension Costs in Canberra: What to Expect Per Square Metre (2026)",
+    "Knockdown Rebuild",
+    "12 Hidden Renovation Costs"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "How the Middle East Conflict Is Affecting Construction Costs in Australia",
+     "datePublished": "2026-04-15",
+     "dateModified": "2026-10-21",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Market Insights\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-21\", \"datePublished\": \"2026-04-15\", \"description\": \"How the Iran conflict is impacting Australian construction costs through fuel, shipping and materials. What Canberra homeowners need to know before building or renovating.\", \"headline\": \"How the Middle East Conflict Is Affecting Construction Costs in Australia\", \"image\": \"https://rentouleprojects.com/assets/hero-home.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/middle-east-conflict-construction-costs-australia/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/middle-east-conflict-construction-costs-australia/\", \"name\": \"How the Middle East Conflict Is Affecting Construction Costs in Australia\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/act-missing-middle-housing-reform-mpa04/",
+    "/blog/best-suburbs-renovation-roi-canberra/",
+    "/blog/canberra-construction-costs-up-40-percent-2026/",
+    "/blog/home-extension-costs-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/renovation-hidden-costs-canberra/",
+    "/canberra-renovation-guide/",
+    "/services/knockdown-rebuild-canberra/"
+   ],
+   "words": 16735
+  },
+  "/blog/missing-middle-explained-canberra/": {
+   "file": "blog/missing-middle-explained-canberra/index.html",
+   "title": "Missing Middle Canberra Explained: What You Can Do Now | Rentoule Projects",
+   "description": "A plain-English guide to Canberra's Missing Middle housing rules. What you can now build on an RZ1 or RZ2 block compared with before 1 July 2026, what hasn't changed, and answers to five everyday homeowner questions.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/missing-middle-explained-canberra/",
+   "robots": "index, follow",
+   "og_title": "Canberra's Missing Middle Rules in Plain English: What You Can Do Now That You Couldn't Before",
+   "og_description": "Second homes on blocks under 800m2, townhouses on RZ1, unit titling from 600m2. What Canberra's Missing Middle rules mean for everyday homeowners, before and after 1 July 2026.",
+   "og_image": "https://rentouleprojects.com/assets/hero-home.jpg",
+   "og_url": "https://rentouleprojects.com/blog/missing-middle-explained-canberra/",
+   "h1": [
+    "Canberra's Missing Middle Rules in Plain English: What You Can Do Now"
+   ],
+   "h2": [
+    "First, which zone are you in?",
+    "What you can do now that you couldn't before",
+    "What still hasn't changed",
+    "What a Missing Middle project costs: the full picture",
+    "Five everyday situations, answered",
+    "Where most people get caught",
+    "Frequently asked questions",
+    "Have a chat before you spend anything",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "\"I want to build a place for Mum out the back.\"",
+    "\"Can I subdivide and sell the back half of my block?\"",
+    "\"Can I build two townhouses, live in one and sell the other?\"",
+    "\"What can my neighbour build next door?\"",
+    "\"Is my house now worth more because of the reforms?\"",
+    "Do the Missing Middle changes apply to my block?",
+    "What is the smallest block I can put two homes on now?",
+    "Do I still need a DA to build a duplex in Canberra?",
+    "How much is the Lease Variation Charge now?",
+    "Can I build three storeys on my block now?",
+    "The Canberra Renovation Guide",
+    "ACT Missing Middle Reform (MPA04)",
+    "What Can I Build on My RZ1 Block?",
+    "Dual Occupancy in Canberra"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Canberra's Missing Middle Rules in Plain English: What You Can Do Now That You Couldn't Before",
+     "datePublished": "2026-10-16",
+     "dateModified": "2026-10-20",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"ACT Regulations\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-20\", \"datePublished\": \"2026-10-16\", \"description\": \"A plain-English guide to Canberra's Missing Middle housing rules. What you can now build on an RZ1 or RZ2 block compared with before 1 July 2026, what hasn't changed, and answers to five everyday homeowner questions.\", \"headline\": \"Canberra's Missing Middle Rules in Plain English: What You Can Do Now That You Couldn't Before\", \"image\": \"https://rentouleprojects.com/assets/hero-home.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/missing-middle-explained-canberra/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "FAQPage",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": 5,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"If your block is zoned RZ1 or RZ2, most of the changes apply. Check your zone on ACTmapi or your block's planning report. Heritage listings, protected trees, easements, block shape and your Crown lease can still limit what's possible, so a site-specific check is worth doing before you plan anything.\"}, \"name\": \"Do the Missing Middle changes apply to my block?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"There's no longer a minimum block size for a second dwelling in RZ1. To sell the homes separately through unit titling, a standard block needs to be at least 600 square metres and all homes must be built first. To subdivide into separate blocks, each new block needs a built home or at least 350 square metres.\"}, \"name\": \"What is the smallest block I can put two homes on now?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes. Under ACT rules, exempt development can't take a block to two or more dwellings, so any duplex, dual occupancy or townhouse project needs a development application. You'll also need building approval, a lease variation and, for three or more dwellings, a licensed property developer.\"}, \"name\": \"Do I still need a DA to build a duplex in Canberra?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"The base charge for specifying an additional dwelling on an RZ1 or RZ2 lease is $49,000 per dwelling from 1 July 2026. A temporary 50 per cent reduction applies to eligible variations, but it depends on conditions including a section 342 deferral and a certificate of occupancy issued before 1 January 2031.\"}, \"name\": \"How much is the Lease Variation Charge now?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Not in RZ1. Multi-unit housing in RZ1 is capped at two storeys plus attic. RZ2 allows multi-unit housing up to three storeys plus attic. A single house on either zone is still limited to two storeys under the single dwelling rules.\"}, \"name\": \"Can I build three storeys on my block now?\"}]}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/missing-middle-explained-canberra/\", \"name\": \"Canberra's Missing Middle Rules in Plain English: What You Can Do Now That You Couldn't Before\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/act-missing-middle-housing-reform-mpa04/",
+    "/blog/act-property-developer-licence-2026/",
+    "/blog/renovate-extend-rebuild-or-move-canberra/",
+    "/blog/rz1-design-options-mpa04-canberra/",
+    "/blog/tree-protection-canberra-act/",
+    "/canberra-renovation-guide/",
+    "/services/dual-occupancy-canberra/"
+   ],
+   "words": 2294
+  },
+  "/blog/ncc-2025-canberra-renovations/": {
+   "file": "blog/ncc-2025-canberra-renovations/index.html",
+   "title": "NCC 2025 in the ACT: What Canberra Homeowners Need to Know | Rentoule Projects",
+   "description": "The National Construction Code 2025 is now in effect in the ACT. Here's what it means for your renovation, extension or new build in Canberra, and what it could add to your project cost.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/ncc-2025-canberra-renovations/",
+   "robots": "index, follow",
+   "og_title": "NCC 2025 in the ACT: What Canberra Homeowners Need to Know",
+   "og_description": "The National Construction Code 2025 is now in effect in the ACT. What it means for your renovation, extension or new build, and what it could add to your project cost.",
+   "og_image": "https://rentouleprojects.com/assets/service-new-builds.jpg",
+   "og_url": "https://rentouleprojects.com/blog/ncc-2025-canberra-renovations/",
+   "h1": [
+    "NCC 2025 in the ACT: What Canberra Homeowners Need to Know"
+   ],
+   "h2": [
+    "What is the NCC and why does it matter?",
+    "The headline change: stricter energy and accessibility requirements",
+    "What does it mean for your Canberra project?",
+    "What if my project is already in design?",
+    "How does this fit with the wider cost picture?",
+    "What we're doing at Rentoule Projects",
+    "Update: Federal Opposition NCC reform proposal (August 2026)",
+    "Frequently asked questions",
+    "Plan your project with the regulations in mind",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "Energy efficiency",
+    "Livable housing",
+    "If you're building new",
+    "If you're extending",
+    "If you're renovating internally",
+    "Does NCC 2025 apply to renovations of older homes?",
+    "How much will NCC 2025 add to my new build cost?",
+    "What's the difference between NCC 2022 and NCC 2025?",
+    "Can I still use NCC 2022 for my Canberra build?",
+    "Does my extension need to comply with NCC 2025?",
+    "The Canberra Renovation Guide",
+    "Energy Efficiency & EER Ratings",
+    "DA Approval in the ACT",
+    "Knockdown Rebuild Canberra"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "NCC 2025 in the ACT: What Canberra Homeowners Need to Know",
+     "datePublished": "2026-05-02",
+     "dateModified": "2026-10-20",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Advice & Tips\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-20\", \"datePublished\": \"2026-05-02\", \"description\": \"The National Construction Code 2025 is now in effect in the ACT. What it means for your renovation, extension or new build in Canberra, and what it could add to your project cost.\", \"headline\": \"NCC 2025 in the ACT: What Canberra Homeowners Need to Know\", \"image\": \"https://rentouleprojects.com/assets/service-new-builds.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/ncc-2025-canberra-renovations/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/ncc-2025-canberra-renovations/\", \"name\": \"NCC 2025 in the ACT: What Canberra Homeowners Need to Know\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/da-approval-act-renovations/",
+    "/blog/energy-efficiency-eer-canberra/",
+    "/blog/middle-east-conflict-construction-costs-australia/",
+    "/canberra-renovation-guide/",
+    "/services/knockdown-rebuild-canberra/"
+   ],
+   "words": 2168
+  },
+  "/blog/nsw-approval-pathways-da-cdc-cc-2026/": {
+   "file": "blog/nsw-approval-pathways-da-cdc-cc-2026/index.html",
+   "title": "NSW Approval Pathways in 2026: DA vs CDC vs Construction Certificate | Rentoule Projects",
+   "description": "A licensed cross-border builder's guide to NSW building approval pathways in 2026. CDC vs DA vs Construction Certificate, timelines, costs, decision framework, and what the 2026 reforms change for a homeowner.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/nsw-approval-pathways-da-cdc-cc-2026/",
+   "robots": "index, follow",
+   "og_title": "NSW Approval Pathways in 2026: DA vs CDC vs Construction Certificate",
+   "og_description": "Complying Development Certificates take 20 days. Development Applications average 70 to 90 days. Which pathway fits your NSW build in 2026, and what the current planning reforms change.",
+   "og_image": "https://rentouleprojects.com/assets/service-new-builds.jpg",
+   "og_url": "https://rentouleprojects.com/blog/nsw-approval-pathways-da-cdc-cc-2026/",
+   "h1": [
+    "NSW Approval Pathways in 2026: DA vs CDC vs Construction Certificate"
+   ],
+   "h2": [
+    "The five NSW approval pathways",
+    "Which pathway fits which project",
+    "The 2026 changes you should care about",
+    "Practical builder view for cross-border ACT-NSW clients",
+    "What we do NOT do",
+    "Frequently asked questions",
+    "Talk to a builder who works both sides of the border"
+   ],
+   "h3": [
+    "1. Exempt Development (no approval needed)",
+    "2. Complying Development Certificate (CDC)",
+    "3. Development Application (DA)",
+    "4. Construction Certificate (CC)",
+    "5. State Significant Development + Housing Delivery Authority (HDA)",
+    "CDC likely works",
+    "DA is required",
+    "When you might use both together",
+    "Development Coordination Authority (DCA) - live from 1 July 2026",
+    "Building (Approvals and Practitioners) Bill 2026 - passed Legislative Assembly, currently before Legislative Council",
+    "Proposed Complying Development variations pathway (consultation closed, not yet in force)",
+    "NSW Housing Pattern Book (already live)",
+    "What is the difference between a CDC and a Construction Certificate?",
+    "How long does a DA take in NSW in 2026?",
+    "Do I have to use a private certifier or can I use council?",
+    "What does the Building (Approvals and Practitioners) Bill 2026 mean for me right now?",
+    "I live in the ACT but own land in Queanbeyan or Yass. Which state's rules apply?"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "NSW Approval Pathways in 2026: DA vs CDC vs Construction Certificate",
+     "datePublished": "2026-08-02",
+     "dateModified": "2026-08-02",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"NSW Regulations\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-08-02\", \"datePublished\": \"2026-08-02\", \"description\": \"A licensed cross-border builder's guide to NSW building approval pathways in 2026. CDC vs DA vs Construction Certificate, timelines, costs, decision framework, and what the 2026 reforms change for a homeowner.\", \"headline\": \"NSW Approval Pathways in 2026: DA vs CDC vs Construction Certificate\", \"image\": \"https://rentouleprojects.com/assets/service-new-builds.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/nsw-approval-pathways-da-cdc-cc-2026/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/nsw-approval-pathways-da-cdc-cc-2026/\", \"name\": \"NSW Approval Pathways 2026\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/act-missing-middle-housing-reform-mpa04/",
+    "/blog/how-to-plan-renovation-canberra/",
+    "/services/knockdown-rebuild-canberra/"
+   ],
+   "words": 2900
+  },
+  "/blog/renovate-extend-rebuild-or-move-canberra/": {
+   "file": "blog/renovate-extend-rebuild-or-move-canberra/index.html",
+   "title": "Renovate, Extend, Rebuild or Move: How Canberra Families Decide | Rentoule Projects",
+   "description": "The right answer between renovating, extending, knocking down to rebuild, or moving depends on six things. A Canberra builder's honest framework, with worked examples from real Canberra suburbs.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/renovate-extend-rebuild-or-move-canberra/",
+   "robots": "index, follow",
+   "og_title": "Renovate, Extend, Rebuild or Move: How Canberra Families Decide",
+   "og_description": "The right answer between renovating, extending, knocking down to rebuild, or moving depends on six things. A Canberra builder's honest framework, with worked examples from real Canberra suburbs.",
+   "og_image": "https://rentouleprojects.com/assets/hero-home.jpg",
+   "og_url": "https://rentouleprojects.com/blog/renovate-extend-rebuild-or-move-canberra/",
+   "h1": [
+    "Renovate, Extend, Knock Down and Rebuild, or Move: How Canberra Families Decide"
+   ],
+   "h2": [
+    "Why this decision is hard",
+    "The four options, briefly",
+    "The six questions to ask yourself",
+    "Three worked examples",
+    "What we do at Rentoule Projects",
+    "Frequently asked questions",
+    "The honest takeaway",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "1. What are the bones of the existing house worth?",
+    "2. What does your block and suburb support?",
+    "3. What is your budget tolerance and how does it match the option?",
+    "4. What is your timeline and how much disruption can your family absorb?",
+    "5. What is your tax position?",
+    "6. What is the right answer for the next ten years, not just this year?",
+    "How do I work out the value of my block without the house on it?",
+    "Is renovating ever cheaper per square metre than rebuilding?",
+    "What about moving to a new suburb to get a bigger or newer house?",
+    "How long should I budget for the decision itself?",
+    "Can you help me work out which option is right for my family?",
+    "The Canberra Renovation Guide",
+    "Canberra Renovation Costs 2026",
+    "ACT Missing Middle Reform (MPA04)",
+    "Knockdown Rebuild Canberra"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Renovate, Extend, Knock Down and Rebuild, or Move: How Canberra Families Decide",
+     "datePublished": "2026-06-16",
+     "dateModified": "2026-10-15",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Advice & Tips\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-15\", \"datePublished\": \"2026-06-16\", \"description\": \"The right answer between renovating, extending, knocking down to rebuild, or moving depends on six things. A Canberra builder's honest framework, with worked examples from real Canberra suburbs.\", \"headline\": \"Renovate, Extend, Knock Down and Rebuild, or Move: How Canberra Families Decide\", \"image\": \"https://rentouleprojects.com/assets/hero-home.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/renovate-extend-rebuild-or-move-canberra/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/renovate-extend-rebuild-or-move-canberra/\", \"name\": \"Renovate, Extend, Rebuild or Move: How Canberra Families Decide\", \"position\": 3}]}"
+    },
+    {
+     "type": "FAQPage",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": 5,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Get a written appraisal from two local real estate agents who know your suburb well. Tell them you are considering knocking down and ask for the land-only value in the current market. The number you get will be approximate but it is the starting point for any rebuild feasibility. For more precision, an independent valuer charges $400-$700 for a written valuation.\"}, \"name\": \"How do I work out the value of my block without the house on it?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes, for finished work, almost always. Renovation costs in Canberra run roughly $2,500-$5,500 per square metre for the renovated area. New build costs run $3,500-$5,500 per square metre of new construction. The reason families still choose rebuild is that a rebuild gives you a fully new home with current standards (NCC 2025 energy efficiency, modern layout, full warranty), while a renovation gives you an improved older home with one foot in the past.\"}, \"name\": \"Is renovating ever cheaper per square metre than rebuilding?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Worth modelling honestly. Calculate cost to sell (agent 1.5-2.5%, legal $2-3k), cost to buy ($30-80k stamp duty depending on price, legal, removalists, soft costs). Total transaction cost is usually $80-$150k. If a renovation of the same scope on your current home costs $300k but you could buy a home that already has the features you want for the price difference plus transaction cost, the move might be the right answer.\"}, \"name\": \"What about moving to a new suburb to get a bigger or newer house?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"If you have not yet had a serious conversation with a builder, a valuer, and a tax adviser, give yourself 6-12 weeks to work through it properly. Decisions made in two weeks tend to get reversed. Decisions made in six months tend to stick. The decision is too important to rush and too important to postpone indefinitely.\"}, \"name\": \"How long should I budget for the decision itself?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes. That is exactly the conversation I prefer to start with. Get in touch and we will arrange a no-obligation site visit. I will walk through the four options for your specific block, give you a frank assessment of which one I would choose if it was my family, and you can take that thinking wherever you want from there.\"}, \"name\": \"Can you help me work out which option is right for my family?\"}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/act-missing-middle-housing-reform-mpa04/",
+    "/blog/federal-budget-2026-canberra-renovations/",
+    "/blog/full-house-renovation-canberra/",
+    "/blog/home-extension-costs-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/canberra-renovation-guide/",
+    "/services/dual-occupancy-canberra/",
+    "/services/knockdown-rebuild-canberra/"
+   ],
+   "words": 3153
+  },
+  "/blog/renovation-hidden-costs-canberra/": {
+   "file": "blog/renovation-hidden-costs-canberra/index.html",
+   "title": "Renovation Budget Blowouts: 12 Hidden Costs Canberra Homeowners Miss | Rentoule Projects",
+   "description": "Avoid renovation budget blowouts. A Canberra builder reveals 12 hidden costs homeowners commonly miss - from asbestos removal to temporary accommodation and council fees.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/renovation-hidden-costs-canberra/",
+   "robots": "index, follow",
+   "og_title": "Renovation Budget Blowouts: 12 Hidden Costs Canberra Homeowners Miss",
+   "og_description": "Avoid renovation budget blowouts. A Canberra builder reveals 12 hidden costs homeowners commonly miss - from asbestos removal to temporary accommodation and council fees.",
+   "og_image": "https://rentouleprojects.com/assets/project-2-after.jpg",
+   "og_url": "https://rentouleprojects.com/blog/renovation-hidden-costs-canberra/",
+   "h1": [
+    "Renovation Budget Blowouts: 12 Hidden Costs Canberra Homeowners Miss"
+   ],
+   "h2": [
+    "The Full Picture: Hidden Costs Summary Table",
+    "Hidden Cost #1: Asbestos Removal",
+    "Hidden Cost #2: Structural Surprises",
+    "Hidden Cost #3: Electrical Upgrades",
+    "Hidden Cost #4: Plumbing Replacement",
+    "Hidden Cost #5: Council and Approval Fees",
+    "Hidden Cost #6: Temporary Accommodation",
+    "Hidden Cost #7: Design and Architecture Fees",
+    "Hidden Cost #8: Energy Efficiency Upgrades",
+    "Hidden Cost #9: Landscaping and Exterior Restoration",
+    "Hidden Cost #10: Skip Bins and Waste Removal",
+    "Hidden Cost #11: Temporary Site Services",
+    "Hidden Cost #12: Variations and Change Orders",
+    "How to Protect Your Budget: Jeff's Practical Strategy",
+    "Frequently Asked Questions",
+    "Related articles",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "The Canberra Renovation Guide",
+    "How common is asbestos in Canberra homes?",
+    "What is the average cost of an electrical rewire in Canberra?",
+    "What council fees apply to a home renovation in Canberra?",
+    "How much do variations add to a typical renovation budget?",
+    "What is the cost of skip bin hire during a renovation in Canberra?",
+    "Do ACT Energy Efficiency Rating requirements add to renovation costs?",
+    "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+    "Home Extension Costs in Canberra: What to Expect Per Square Metre (2026)",
+    "Bathroom Renovation Costs in Canberra: Complete 2026 Guide",
+    "Knockdown Rebuild",
+    "Home Renovation Costs",
+    "Choosing the Right Builder"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Renovation Budget Blowouts: 12 Hidden Costs Canberra Homeowners Miss",
+     "datePublished": "2026-04-26",
+     "dateModified": "2026-09-01",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Cost Guides\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-09-01\", \"datePublished\": \"2026-04-26\", \"description\": \"Avoid renovation budget blowouts. A Canberra builder reveals 12 hidden costs homeowners commonly miss - from asbestos removal to temporary accommodation and council fees.\", \"headline\": \"Renovation Budget Blowouts: 12 Hidden Costs Canberra Homeowners Miss\", \"image\": \"https://rentouleprojects.com/assets/project-2-after.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/renovation-hidden-costs-canberra/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/renovation-hidden-costs-canberra/\", \"name\": \"Renovation Budget Blowouts: 12 Hidden Costs Canberra Homeowners Miss\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/bathroom-renovation-costs-canberra/",
+    "/blog/canberra-construction-costs-up-40-percent-2026/",
+    "/blog/choosing-right-builder-canberra/",
+    "/blog/da-approval-act-renovations/",
+    "/blog/home-extension-costs-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/how-to-plan-renovation-canberra/",
+    "/blog/kitchen-renovation-costs-canberra/",
+    "/canberra-renovation-guide/",
+    "/services/knockdown-rebuild-canberra/",
+    "/services/mr-fluffy-block-rebuild/"
+   ],
+   "words": 2745
+  },
+  "/blog/rz1-design-options-mpa04-canberra/": {
+   "file": "blog/rz1-design-options-mpa04-canberra/index.html",
+   "title": "What Can I Build on My RZ1 Block in Canberra? Design Options Under MPA04 | Rentoule Projects",
+   "description": "Under MPA04 (commenced 1 July 2026), RZ1 blocks in Canberra can support duplexes, townhouses, terraces and multi-unit dwellings up to 2 storeys plus attic. A licensed builder's guide to the design options, with worked examples in Kaleen, Curtin, Wanniassa and Ngunnawal.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/rz1-design-options-mpa04-canberra/",
+   "robots": "index, follow",
+   "og_title": "What Can I Build on My RZ1 Block in Canberra? Design Options Under MPA04",
+   "og_description": "A licensed Canberra builder's guide to what MPA04 lets you build on your RZ1 block. Duplex, townhouses, terraces or multi-unit, with worked examples across Kaleen, Curtin, Wanniassa and Ngunnawal.",
+   "og_image": "https://rentouleprojects.com/assets/service-new-builds.jpg",
+   "og_url": "https://rentouleprojects.com/blog/rz1-design-options-mpa04-canberra/",
+   "h1": [
+    "What Can I Build on My RZ1 Block? Design Options Under MPA04"
+   ],
+   "h2": [
+    "The RZ1 rules changed. Here's what changed",
+    "The six design options MPA04 opens up on an RZ1 block",
+    "Worked examples on real Canberra RZ1 blocks",
+    "The design rules that constrain the options",
+    "What about the Pattern Book?",
+    "Where the LVC 50 per cent reduction applies",
+    "How I sit down with a client thinking about MPA04",
+    "Frequently asked questions",
+    "Talk to a builder before you talk to anyone else"
+   ],
+   "h3": [
+    "1. The duplex (dual occupancy)",
+    "2. The townhouse row (subdivided)",
+    "3. Terrace houses (unified boundary)",
+    "4. Main dwelling plus secondary dwelling",
+    "5. Multi-unit (up to three dwellings, two storeys plus attic)",
+    "6. Consolidated blocks (two RZ1 blocks combined)",
+    "Kaleen: 700 square metre block, established Belconnen suburb",
+    "Curtin: 800 square metre block, established Woden suburb",
+    "Wanniassa: 750 square metre block, Tuggeranong",
+    "Ngunnawal: 600 square metre block, Gungahlin",
+    "Do I have to subdivide to build more than one dwelling on my RZ1 block?",
+    "Can I build a three-storey house under MPA04?",
+    "What does the 20 per cent canopy cover requirement mean?",
+    "Is my heritage-listed block eligible for MPA04 development?",
+    "Can I use a Canberra House Pattern Book design instead of a custom design?"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "What Can I Build on My RZ1 Block in Canberra? Design Options Under MPA04",
+     "datePublished": "2026-08-15",
+     "dateModified": "2026-10-16",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"ACT Planning\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-16\", \"datePublished\": \"2026-08-15\", \"description\": \"A licensed Canberra builder's guide to what MPA04 lets you build on an RZ1 block. Duplex, townhouses, terraces, or multi-unit, with worked examples in Kaleen, Curtin, Wanniassa and Ngunnawal.\", \"headline\": \"What Can I Build on My RZ1 Block in Canberra? Design Options Under MPA04\", \"image\": \"https://rentouleprojects.com/assets/service-new-builds.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/rz1-design-options-mpa04-canberra/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/rz1-design-options-mpa04-canberra/\", \"name\": \"RZ1 Design Options Under MPA04\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/act-missing-middle-housing-reform-mpa04/",
+    "/blog/act-property-developer-licence-2026/",
+    "/blog/missing-middle-explained-canberra/",
+    "/blog/renovate-extend-rebuild-or-move-canberra/",
+    "/services/dual-occupancy-canberra/"
+   ],
+   "words": 2792
+  },
+  "/blog/second-storey-extensions-canberra/": {
+   "file": "blog/second-storey-extensions-canberra/index.html",
+   "title": "Second Storey Extensions Canberra: 2026 Cost and Approvals | Rentoule Projects",
+   "description": "What a second storey extension costs in Canberra in 2026, when you need a DA under ACT single dwelling rules, and how to tell if your house can take an upper floor. A licensed Canberra builder's guide.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/second-storey-extensions-canberra/",
+   "robots": "index, follow",
+   "og_title": "Second Storey Extensions in Canberra: Cost, Approvals and Whether Your House Can Take It",
+   "og_description": "Second storey extensions in Canberra cost $4,800 to $7,500+ per sqm in 2026. Costs by size, the ACT solar envelope and DA rules, and whether your house can take it.",
+   "og_image": "https://rentouleprojects.com/assets/service-extensions.jpg",
+   "og_url": "https://rentouleprojects.com/blog/second-storey-extensions-canberra/",
+   "h1": [
+    "Second Storey Extensions in Canberra : Cost, Approvals and Whether Your House Can Take It"
+   ],
+   "h2": [
+    "What a second storey extension costs in Canberra",
+    "Can your house take a second storey?",
+    "Do you need a DA for a second storey in the ACT?",
+    "Going up or going out",
+    "Timeline and living through it",
+    "Frequently asked questions",
+    "Start with the structure and the shadows",
+    "Keep exploring",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "How much does a second storey extension cost in Canberra?",
+    "Can I add a second storey without a DA in the ACT?",
+    "How do I know if my house can support a second storey?",
+    "Is a second storey cheaper than a knockdown rebuild?",
+    "How long does a second storey extension take?",
+    "The Canberra Renovation Guide",
+    "Home Extension Costs in Canberra",
+    "Do You Need DA Approval in the ACT?",
+    "Knockdown Rebuild in Canberra"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Second Storey Extensions in Canberra: Cost, Approvals and Whether Your House Can Take It",
+     "datePublished": "2026-10-15",
+     "dateModified": "2026-10-15",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Cost Guides\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-15\", \"datePublished\": \"2026-10-15\", \"description\": \"What a second storey extension costs in Canberra in 2026, when you need a DA under ACT single dwelling rules, and how to tell if your house can take an upper floor. A licensed Canberra builder's guide.\", \"headline\": \"Second Storey Extensions in Canberra: Cost, Approvals and Whether Your House Can Take It\", \"image\": \"https://rentouleprojects.com/assets/service-extensions.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/second-storey-extensions-canberra/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "FAQPage",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": 5,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"With Rentoule Projects in 2026, second storey additions cost $4,800 to $7,500+ per square metre. A 40 square metre upper floor typically sits at $190,000 to $300,000, and a full two or three bedroom upper floor with a bathroom and stairs usually runs $300,000 to $700,000. Design, engineering and certifier fees are extra.\"}, \"name\": \"How much does a second storey extension cost in Canberra?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes, if the house stays a single dwelling and the design complies with the Single Dwelling Housing Development Control, including the two storey limit, 8.5 metre height limit, building envelope, solar envelope and setbacks. You must also give neighbours written information. Minor departures may suit an exemption declaration. Larger departures need a DA.\"}, \"name\": \"Can I add a second storey without a DA in the ACT?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Get a structural engineer to inspect it before you pay for design. They check the footings, slab or subfloor, wall load paths and soil. Many Canberra homes can carry an upper floor with strengthening. Others need a new independent structure of posts and beams, which adds cost but avoids loading the old walls.\"}, \"name\": \"How do I know if my house can support a second storey?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Usually, if the existing house is structurally sound and the ground floor mostly works. A knockdown rebuild with us runs $3,500 to $5,500+ per square metre across the whole home, plus demolition. If the footings need major work and the ground floor needs a full renovation too, a rebuild can be the better value.\"}, \"name\": \"Is a second storey cheaper than a knockdown rebuild?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Allow 4 to 8 weeks for design, then the approval pathway, which is shortest for exempt projects and longer for a DA. Construction on site usually takes 20 to 28 weeks. Most families move out for at least part of that time because the roof is removed and the house is open to the weather.\"}, \"name\": \"How long does a second storey extension take?\"}]}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/second-storey-extensions-canberra/\", \"name\": \"Second Storey Extensions in Canberra: Cost, Approvals and Whether Your House Can Take It\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/da-approval-act-renovations/",
+    "/blog/home-extension-costs-canberra/",
+    "/blog/renovate-extend-rebuild-or-move-canberra/",
+    "/canberra-renovation-guide/",
+    "/services/knockdown-rebuild-canberra/"
+   ],
+   "words": 2154
+  },
+  "/blog/tree-protection-canberra-act/": {
+   "file": "blog/tree-protection-canberra-act/index.html",
+   "title": "Tree Protection in Canberra: What You Can and Cannot Do Around Protected Trees (2026 Guide) | Rentoule Projects",
+   "description": "A Canberra builder's guide to the Urban Forest Act 2023, Tree Protection Zones, removal approvals, canopy contributions and penalties. What every homeowner should know before planning a renovation, extension or knockdown rebuild on a tree-heavy block.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/blog/tree-protection-canberra-act/",
+   "robots": "index, follow",
+   "og_title": "Tree Protection in Canberra: What You Can and Cannot Do Around Protected Trees (2026 Guide)",
+   "og_description": "A Canberra builder's guide to the Urban Forest Act 2023: what makes a tree protected, how the Tree Protection Zone works, removal approvals, canopy contributions and what it all costs on a real project.",
+   "og_image": "https://rentouleprojects.com/assets/service-new-builds.jpg",
+   "og_url": "https://rentouleprojects.com/blog/tree-protection-canberra-act/",
+   "h1": [
+    "Tree Protection in Canberra: What You Can and Cannot Do Around Protected Trees (2026 Guide)"
+   ],
+   "h2": [
+    "What is a protected tree in Canberra",
+    "What is the Tree Protection Zone (TPZ)",
+    "What you can do without approval",
+    "How to remove a protected tree",
+    "The canopy contribution: 2 new trees or $600 each",
+    "What does it cost",
+    "Penalties",
+    "Jeff's practical builder view",
+    "Where to find current information",
+    "Frequently asked questions",
+    "Want a builder who knows the tree question inside out?"
+   ],
+   "h3": [
+    "Standalone tree removal (no building work)",
+    "Tree removal as part of a building project",
+    "Can I remove a protected tree if it is damaging my house?",
+    "Can I build inside a Tree Protection Zone?",
+    "What happens if I remove a protected tree without approval?",
+    "Does the Urban Forest Act apply to all trees, or just native ones?",
+    "Do I need approval to prune a regulated tree?"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "Tree Protection in Canberra: What You Can and Cannot Do Around Protected Trees (2026 Guide)",
+     "datePublished": "2026-07-15",
+     "dateModified": "2026-07-15",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Advice & Tips\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-07-15\", \"datePublished\": \"2026-07-15\", \"description\": \"A Canberra builder's guide to the Urban Forest Act 2023: what makes a tree protected, Tree Protection Zone rules, removal approvals, canopy contributions and what it all costs on a real project.\", \"headline\": \"Tree Protection in Canberra: What You Can and Cannot Do Around Protected Trees (2026 Guide)\", \"image\": \"https://rentouleprojects.com/assets/service-new-builds.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/blog/tree-protection-canberra-act/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/#blog\", \"name\": \"Blog\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/blog/tree-protection-canberra-act/\", \"name\": \"Tree Protection in Canberra (2026 Guide)\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/da-approval-act-renovations/",
+    "/blog/how-to-plan-renovation-canberra/",
+    "/services/dual-occupancy-canberra/",
+    "/services/knockdown-rebuild-canberra/"
+   ],
+   "words": 2545
+  },
+  "/canberra-renovation-guide/": {
+   "file": "canberra-renovation-guide/index.html",
+   "title": "The Canberra Renovation Guide: Costs, Planning and Practical Detail | Rentoule Projects",
+   "description": "The definitive guide to renovating in Canberra. Real costs, planning steps, builder selection, scheduling and design advice from Jeff Rentoule, a licensed ACT builder with 19 years experience. Free, no signup.",
+   "keywords": "Canberra renovation guide, home renovation Canberra, renovation costs Canberra, how to renovate Canberra, Canberra builder advice, ACT renovation planning",
+   "canonical": "https://rentouleprojects.com/canberra-renovation-guide/",
+   "robots": "index, follow",
+   "og_title": "The Canberra Renovation Guide: Costs, Planning and Practical Detail",
+   "og_description": "The definitive guide to renovating in Canberra. Real costs, planning steps, builder selection and design advice from Jeff Rentoule, a licensed ACT builder with 19 years experience.",
+   "og_image": "https://rentouleprojects.com/assets/guide-hero.jpg",
+   "og_url": "https://rentouleprojects.com/canberra-renovation-guide/",
+   "h1": [
+    "The Canberra Renovation Guide"
+   ],
+   "h2": [
+    "In this guide",
+    "1. The real cost of renovating in Canberra",
+    "2. How to plan your renovation properly",
+    "3. Avoiding budget blowouts",
+    "4. Setting realistic timelines",
+    "5. Choosing the right builder",
+    "6. Designing for the next 20 years",
+    "7. Planning approvals and ACT regulations",
+    "8. Queanbeyan, the surrounding region and beyond",
+    "9. The five mistakes I see most often",
+    "10. Where to go from here",
+    "Related reading",
+    "Have a project in mind?"
+   ],
+   "h3": [
+    "Why Canberra costs more than the eastern seaboard average",
+    "Step 1: Define the brief in writing",
+    "Step 2: Set a budget you can defend",
+    "Step 3: Get the right professionals involved early",
+    "Step 4: Understand the approval pathway",
+    "Step 5: Lock the scope before you sign",
+    "Have a project in mind?",
+    "Site costs that aren't site costs",
+    "Demolition surprises",
+    "Structural surprises",
+    "Council and certifier fees",
+    "Connections and services",
+    "Moving out costs",
+    "Furniture, blinds, landscaping and finishing",
+    "Why \"elapsed time\" matters more than \"build time\"",
+    "Things that compress timelines",
+    "Things that extend timelines",
+    "Licence and insurance",
+    "Fixed price, not cost-plus",
+    "References from completed work",
+    "Site presence",
+    "Communication standards",
+    "Want to chat about your project?",
+    "Orientation and natural light",
+    "Energy performance",
+    "Layout that flexes",
+    "Materials that age",
+    "Indoor-outdoor connection",
+    "Three categories of planning approval",
+    "Things that almost always trigger a merit-track DA",
+    "Building Approval (BA) is separate",
+    "NCC 2025",
+    "Mistake 1: Choosing the cheapest quote",
+    "Mistake 2: Starting before the design is finished",
+    "Mistake 3: Ignoring orientation",
+    "Mistake 4: Underestimating the project length",
+    "Mistake 5: Picking finishes too early",
+    "If you're 12+ months from starting",
+    "If you're 6-12 months out",
+    "If you're 3-6 months out",
+    "If you're ready to start",
+    "Home renovation costs in Canberra",
+    "How to plan your renovation",
+    "12 hidden renovation costs"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "The Canberra Renovation Guide: Costs, Planning and Practical Detail",
+     "datePublished": "2026-05-06",
+     "dateModified": "2026-10-15",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Guides\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-10-15\", \"datePublished\": \"2026-05-06\", \"description\": \"The definitive guide to renovating in Canberra. Real costs, planning steps, builder selection, scheduling and design advice from a licensed ACT builder with 19 years experience.\", \"headline\": \"The Canberra Renovation Guide: Costs, Planning and Practical Detail\", \"image\": \"https://rentouleprojects.com/assets/guide-hero.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/canberra-renovation-guide/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/bathroom-renovation-costs-canberra/",
+    "/blog/choosing-right-builder-canberra/",
+    "/blog/da-approval-act-renovations/",
+    "/blog/energy-efficiency-eer-canberra/",
+    "/blog/full-house-renovation-canberra/",
+    "/blog/home-extension-costs-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/how-to-plan-renovation-canberra/",
+    "/blog/kitchen-renovation-costs-canberra/",
+    "/blog/ncc-2025-canberra-renovations/",
+    "/blog/renovation-hidden-costs-canberra/",
+    "/services/mr-fluffy-block-rebuild/"
+   ],
+   "words": 4037
+  },
+  "/how-we-work/": {
+   "file": "how-we-work/index.html",
+   "title": "How We Work: The Rentoule Projects Client Process | Canberra Builder",
+   "description": "From discovery call to handover, this is what engaging Rentoule Projects looks like end to end. Eight stages, honest pricing mechanics, and the questions to think about before we talk. Written by Jeff Rentoule, ACT licensed builder.",
+   "keywords": "Canberra builder process, how to work with a builder, preliminary services agreement, fixed price building contract, Rentoule Projects process, custom home builder Canberra process, renovation builder process",
+   "canonical": "https://rentouleprojects.com/how-we-work/",
+   "robots": "noindex, nofollow",
+   "og_title": "How We Work: The Rentoule Projects Client Process",
+   "og_description": "From discovery call to handover, this is what engaging Rentoule Projects looks like end to end. Eight stages, honest pricing mechanics, and questions to think about before we talk.",
+   "og_image": "https://rentouleprojects.com/assets/hero-home.jpg",
+   "og_url": "https://rentouleprojects.com/how-we-work/",
+   "h1": [
+    "How we work with you"
+   ],
+   "h2": [
+    "On this page",
+    "Before you reach out, some questions to sit with",
+    "The eight stages of working with us",
+    "How the money works",
+    "What makes this different",
+    "Common questions clients ask",
+    "Ready for that first conversation?"
+   ],
+   "h3": [
+    "Discovery call",
+    "Site visit",
+    "Ballpark proposal",
+    "Preliminary Services Agreement (PSA)",
+    "Selections and verification",
+    "Final quote and fixed-price contract",
+    "Building Approval",
+    "Construction and handover",
+    "What happens if the final quote comes in over budget?",
+    "How firm is a fixed-price contract really?",
+    "Why the PSA instead of just quoting off drawings?",
+    "How long does the whole thing take before construction starts?",
+    "Do you take on smaller jobs or only large ones?",
+    "What if I have already engaged a designer or architect?"
+   ],
+   "jsonld": [
+    {
+     "type": "Article",
+     "headline": "How We Work: The Rentoule Projects Client Process",
+     "datePublished": "2026-08-23",
+     "dateModified": "2026-08-23",
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"articleSection\": \"Process\", \"author\": {\"@type\": \"Person\", \"jobTitle\": \"Director & Licensed Builder\", \"name\": \"Jeff Rentoule\", \"url\": \"https://rentouleprojects.com\"}, \"dateModified\": \"2026-08-23\", \"datePublished\": \"2026-08-23\", \"description\": \"From discovery call to handover, this is what engaging Rentoule Projects looks like end to end. Eight stages, honest pricing mechanics, and questions to think about before we talk.\", \"headline\": \"How We Work: The Rentoule Projects Client Process\", \"image\": \"https://rentouleprojects.com/assets/hero-home.jpg\", \"mainEntityOfPage\": {\"@id\": \"https://rentouleprojects.com/how-we-work/\", \"@type\": \"WebPage\"}, \"publisher\": {\"@type\": \"Organization\", \"logo\": {\"@type\": \"ImageObject\", \"url\": \"https://rentouleprojects.com/assets/logo-main-black.png\"}, \"name\": \"Rentoule Projects\", \"url\": \"https://rentouleprojects.com\"}}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/canberra-renovation-guide/"
+   ],
+   "words": 3344
+  },
+  "/": {
+   "file": "index.html",
+   "title": "Rentoule Projects | Premium Home Renovations, Extensions & New Builds in Canberra",
+   "description": "Rentoule Projects - Making your house your home. Premium home renovations, extensions and custom new builds across Canberra's inner suburbs. Exceptional craftsmanship, transparent process. Request a free consultation.",
+   "keywords": "home renovation Canberra, home extension Canberra, custom home builder Canberra, luxury renovation ACT, builder Yarralumla, builder Griffith, builder Turner, builder Campbell, builder Ainslie, Rentoule Projects",
+   "canonical": "https://rentouleprojects.com/",
+   "robots": "index, follow",
+   "og_title": "Rentoule Projects | Premium Home Builder Canberra",
+   "og_description": "Making your house your home. Exceptional craftsmanship in home renovations, extensions and new builds. Serving Canberra's inner suburbs.",
+   "og_image": null,
+   "og_url": "https://rentouleprojects.com/",
+   "h1": [
+    "Crafting visions into reality",
+    "Built on trust, delivered with pride",
+    "Comprehensive building solutions",
+    "Before & after",
+    "Stories of transformation",
+    "Insights & inspiration",
+    "Would you like to work with us?",
+    "Let's start your project"
+   ],
+   "h2": [
+    "Your project, our priority",
+    "Start with the free guide",
+    "Our services",
+    "What we stand for",
+    "What our clients say",
+    "What might it cost?",
+    "Got questions?",
+    "Ready to start your project?",
+    "Meet Jeff Rentoule",
+    "What we stand for",
+    "A glimpse into our world",
+    "Let's build something together",
+    "New Builds",
+    "Home Extensions",
+    "Home Renovations",
+    "Our process",
+    "Why Rentoule Projects",
+    "Beyond the standard",
+    "Where we service",
+    "Let's build something together",
+    "Yarralumla kitchen",
+    "Griffith bathroom",
+    "Ainslie whole home",
+    "Turner living extension",
+    "Ready to start your project?",
+    "Chris - Weetangera",
+    "Adam - Holder",
+    "Mark - Griffith",
+    "Let's build something together",
+    "NSW Approval Pathways in 2026: DA vs CDC vs Construction Certificate",
+    "Tree Protection in Canberra: What You Can and Cannot Do Around Protected Trees (2026 Guide)",
+    "Fireplaces and Wood Heaters in Canberra: The 2026 Rules Explained",
+    "Renovate, Extend, Knock Down and Rebuild, or Move: How Canberra Families Decide",
+    "ACT Missing Middle Housing Reform (MPA04): What It Means for Canberra Property Owners",
+    "Federal Budget 2026: What It Means for Canberra Renovations and Builds",
+    "The Canberra Renovation Guide: Costs, Planning and Practical Detail",
+    "NCC 2025 in the ACT: What Canberra Homeowners Need to Know",
+    "Renovation Budget Blowouts: 12 Hidden Costs Canberra Homeowners Miss",
+    "How to Choose the Right Builder in Canberra: 10 Essential Questions to Ask",
+    "Energy Efficiency and EER Ratings in Canberra: What Homeowners Need to Know",
+    "How the Middle East Conflict Is Affecting Construction Costs in Australia",
+    "Home Extension vs. Renovation: Which Is Right for Your Canberra Home?",
+    "How to Plan a Home Renovation in Canberra: Step-by-Step Guide",
+    "Best Canberra Suburbs for Renovation ROI in 2026",
+    "Home Extension Costs in Canberra: What to Expect Per Square Metre (2026)",
+    "Do You Need DA Approval for Renovations in the ACT? (2026 Guide)",
+    "Kitchen Renovation Costs in Canberra: 2026 Pricing & Trends",
+    "Bathroom Renovation Costs in Canberra: Complete 2026 Guide",
+    "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+    "Have a project in mind?",
+    "Current opportunities",
+    "Tell us about yourself",
+    "Request a consultation",
+    "Call us on 0434 435 966"
+   ],
+   "h3": [
+    "New Builds",
+    "Extensions",
+    "Renovations",
+    "Build It Together",
+    "Think Before We Build",
+    "Care About the Details",
+    "Stand Behind Our Work",
+    "What Canberra's Missing Middle Rules Mean for You",
+    "Second Storey Extensions in Canberra",
+    "Do You Need a Property Developer Licence in the ACT?",
+    "Full House Renovation in Canberra: What to Expect Before You Commit",
+    "Why Canberra Construction Costs Are Up 40 Per Cent Since 2021",
+    "What Can I Build on My RZ1 Block?",
+    "Home Renovation Costs in Canberra",
+    "Bathroom Renovation Costs",
+    "Kitchen Renovation Costs",
+    "Home Extension Costs",
+    "12 Hidden Costs to Watch For",
+    "Canberra's Best Renovation ROI Suburbs",
+    "Build It Together",
+    "Think Before We Build",
+    "Care About the Details",
+    "Stand Behind Our Work",
+    "Discovery",
+    "Site Visit",
+    "Design & Approvals",
+    "Fixed-Price Contract",
+    "Build & Handover",
+    "Bespoke Approach",
+    "Fixed-Price Certainty",
+    "Local Expertise",
+    "Personal Service",
+    "Knockdown Rebuild",
+    "Mr Fluffy Block Rebuild",
+    "Dual Occupancy & Secondary Residences",
+    "Inner North",
+    "Inner South & Woden",
+    "Molonglo Valley",
+    "Wider Canberra & Queanbeyan",
+    "NSW South Coast",
+    "Carpenter",
+    "Apprentice Carpenter",
+    "Project Manager",
+    "Application received",
+    "We are always happy to answer your questions"
+   ],
+   "jsonld": [
+    {
+     "type": "HomeAndConstructionBusiness",
+     "headline": "Rentoule Projects",
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"HomeAndConstructionBusiness\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"AU\", \"addressLocality\": \"Canberra\", \"addressRegion\": \"ACT\"}, \"aggregateRating\": {\"@type\": \"AggregateRating\", \"ratingValue\": \"5\", \"reviewCount\": \"5\"}, \"areaServed\": [{\"@type\": \"City\", \"name\": \"Canberra\"}, {\"@type\": \"Place\", \"name\": \"Yarralumla\"}, {\"@type\": \"Place\", \"name\": \"Turner\"}, {\"@type\": \"Place\", \"name\": \"Griffith\"}, {\"@type\": \"Place\", \"name\": \"Campbell\"}, {\"@type\": \"Place\", \"name\": \"Ainslie\"}, {\"@type\": \"Place\", \"name\": \"Denman Prospect\"}, {\"@type\": \"Place\", \"name\": \"Wright\"}, {\"@type\": \"Place\", \"name\": \"Coombs\"}, {\"@type\": \"Place\", \"name\": \"Whitlam\"}, {\"@type\": \"Place\", \"name\": \"Molonglo Valley\"}], \"description\": \"Making your house your home. Canberra residential builder delivering home renovations, extensions and custom new builds from mid-range through to luxury in Canberra, ACT.\", \"email\": \"info@rentouleprojects.com\", \"founder\": {\"@type\": \"Person\", \"name\": \"Jeff Rentoule\"}, \"hasOfferCatalog\": {\"@type\": \"OfferCatalog\", \"itemListElement\": [{\"@type\": \"Offer\", \"itemOffered\": {\"@type\": \"Service\", \"name\": \"Home Renovations\"}}, {\"@type\": \"Offer\", \"itemOffered\": {\"@type\": \"Service\", \"name\": \"Home Extensions\"}}, {\"@type\": \"Offer\", \"itemOffered\": {\"@type\": \"Service\", \"name\": \"Custom New Home Builds\"}}], \"name\": \"Building Services\"}, \"name\": \"Rentoule Projects\", \"sameAs\": [\"https://www.instagram.com/rentoule_projects/\", \"https://www.facebook.com/p/Rentoule-Projects-100093837338330/\"], \"slogan\": \"Making your house your home\", \"telephone\": \"+61434435966\", \"url\": \"https://www.rentouleprojects.com\"}"
+    },
+    {
+     "type": "FAQPage",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": 3,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"We deliver home renovations, home extensions and custom new builds from mid-range through to luxury across Canberra's inner suburbs including Yarralumla, Turner, Griffith, Campbell and Ainslie. Our sweet spot is fixed-price, custom-joinery work from the mid-range custom tier upward. We don't do cosmetic refreshes or flat-pack installations.\"}, \"name\": \"What types of projects does Rentoule Projects handle?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"We service the ACT, with a focus on Canberra's inner suburbs including Yarralumla, Turner, Griffith, Campbell and Ainslie.\"}, \"name\": \"What areas does Rentoule Projects service?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"You can request a free consultation through our website or call us directly on 0434 435 966. During the consultation, we'll discuss your vision, budget, and timeline to provide tailored advice.\"}, \"name\": \"How do I get a quote or consultation?\"}]}"
+    }
+   ],
+   "links_internal": [
+    "./services/dual-occupancy-canberra/",
+    "./services/knockdown-rebuild-canberra/",
+    "./services/mr-fluffy-block-rebuild/",
+    "/blog/act-missing-middle-housing-reform-mpa04/",
+    "/blog/act-property-developer-licence-2026/",
+    "/blog/bathroom-renovation-costs-canberra/",
+    "/blog/best-suburbs-renovation-roi-canberra/",
+    "/blog/canberra-construction-costs-up-40-percent-2026/",
+    "/blog/choosing-right-builder-canberra/",
+    "/blog/da-approval-act-renovations/",
+    "/blog/energy-efficiency-eer-canberra/",
+    "/blog/extension-vs-renovation-canberra/",
+    "/blog/federal-budget-2026-canberra-renovations/",
+    "/blog/fireplaces-wood-heaters-canberra/",
+    "/blog/full-house-renovation-canberra/",
+    "/blog/home-extension-costs-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/how-to-plan-renovation-canberra/",
+    "/blog/kitchen-renovation-costs-canberra/",
+    "/blog/middle-east-conflict-construction-costs-australia/",
+    "/blog/missing-middle-explained-canberra/",
+    "/blog/ncc-2025-canberra-renovations/",
+    "/blog/nsw-approval-pathways-da-cdc-cc-2026/",
+    "/blog/renovate-extend-rebuild-or-move-canberra/",
+    "/blog/renovation-hidden-costs-canberra/",
+    "/blog/rz1-design-options-mpa04-canberra/",
+    "/blog/second-storey-extensions-canberra/",
+    "/blog/tree-protection-canberra-act/",
+    "/canberra-renovation-guide/",
+    "/services/knockdown-rebuild-canberra/"
+   ],
+   "words": 5173
+  },
+  "/internal/daily-site-rhythm/": {
+   "file": "internal/daily-site-rhythm/index.html",
+   "title": "SOP 01 - Site Manager Daily Rhythm | Rentoule Projects Internal",
+   "description": "The daily rhythm for Rentoule Projects site managers: plan the day, walk every job, update Buildern, send one clean summary, escalate the big stuff.",
+   "keywords": null,
+   "canonical": null,
+   "robots": "noindex, nofollow",
+   "og_title": null,
+   "og_description": null,
+   "og_image": null,
+   "og_url": null,
+   "h1": [
+    "Site Manager Daily Rhythm"
+   ],
+   "h2": [
+    "Every day, in this order"
+   ],
+   "h3": [],
+   "jsonld": [],
+   "links_internal": [
+    "/internal/"
+   ],
+   "words": 677
+  },
+  "/internal/": {
+   "file": "internal/index.html",
+   "title": "Internal | Rentoule Projects",
+   "description": "Internal directory of Rentoule Projects standard operating procedures and team workflows.",
+   "keywords": null,
+   "canonical": null,
+   "robots": "noindex, nofollow",
+   "og_title": null,
+   "og_description": null,
+   "og_image": null,
+   "og_url": null,
+   "h1": [
+    "Standard operating procedures and team workflows"
+   ],
+   "h2": [
+    "Pick a workflow",
+    "Built for the team. Not the public site."
+   ],
+   "h3": [
+    "Site Manager Daily Rhythm",
+    "Pre-Start Site Setup",
+    "Variations & Client Decisions",
+    "Trade Bookings & Handovers",
+    "Quality & Defects",
+    "Practical Completion & Handover"
+   ],
+   "jsonld": [],
+   "links_internal": [
+    "./daily-site-rhythm/"
+   ],
+   "words": 279
+  },
+  "/services/dual-occupancy-canberra/": {
+   "file": "services/dual-occupancy-canberra/index.html",
+   "title": "Dual Occupancy Canberra | Secondary Residences & Multi-Unit Builder | Rentoule Projects",
+   "description": "Build a dual occupancy or secondary residence on your Canberra block. We work through ACT zoning, RZ1 and RZ2 rules and unit titling so you can get more out of your block. Tracking the 2026 Missing Middle reforms.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/services/dual-occupancy-canberra/",
+   "robots": "index, follow",
+   "og_title": "Dual Occupancy Canberra | Secondary Residences & Multi-Unit Builder",
+   "og_description": "Build a dual occupancy or secondary residence on your Canberra block. We work through ACT zoning, RZ1 and RZ2 rules and unit titling so you can get more out of your block. Tracking the 2026 Missing Middle reforms.",
+   "og_image": "https://rentouleprojects.com/assets/service-extensions.jpg",
+   "og_url": "https://rentouleprojects.com/services/dual-occupancy-canberra/",
+   "h1": [
+    "Dual Occupancy Canberra"
+   ],
+   "h2": [
+    "Dual occupancy vs secondary residence: what is the difference?",
+    "Eligibility: can your block support dual occupancy?",
+    "The unit titling process",
+    "Costs to consider",
+    "Design considerations",
+    "Project timeline",
+    "Why dual occupancy makes sense in Canberra right now",
+    "Our approach",
+    "Frequently Asked Questions",
+    "Related services",
+    "Learn more",
+    "Ready to get more out of your block?"
+   ],
+   "h3": [
+    "Block size - RZ1 zones",
+    "The old 120m2 rule has gone",
+    "Crown Lease conditions",
+    "Mr Fluffy blocks",
+    "Driveway and access",
+    "Privacy between dwellings",
+    "Orientation and solar access",
+    "Shared services",
+    "Ceiling heights and habitability",
+    "Adaptable housing",
+    "What block size do I need for dual occupancy in Canberra?",
+    "Can I subdivide my Canberra block to sell one dwelling separately?",
+    "How long does a dual occupancy project take in Canberra?",
+    "Will building a second dwelling affect my existing home?",
+    "Do I need to live in one of the dwellings?",
+    "Knockdown Rebuild in Canberra",
+    "Rebuilding on a Mr Fluffy Block in Canberra",
+    "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+    "DA Approval in the ACT",
+    "Best Suburbs for Renovation ROI",
+    "Home Extension Costs"
+   ],
+   "jsonld": [
+    {
+     "type": "Service",
+     "headline": "Dual Occupancy Canberra",
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Service\", \"areaServed\": {\"@type\": \"City\", \"containedInPlace\": {\"@type\": \"AdministrativeArea\", \"name\": \"Australian Capital Territory\"}, \"name\": \"Canberra\"}, \"audience\": {\"@type\": \"Audience\", \"audienceType\": \"Canberra landowners on RZ1 and RZ2 zoned blocks looking to add a second dwelling, secondary residence or dual occupancy development\"}, \"description\": \"Build a dual occupancy or secondary residence on your Canberra block. We work through ACT zoning, RZ1 and RZ2 rules and unit titling so you can get more out of your block.\", \"image\": \"https://rentouleprojects.com/assets/service-extensions.jpg\", \"name\": \"Dual Occupancy Canberra\", \"provider\": {\"@type\": \"GeneralContractor\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"AU\", \"addressLocality\": \"Canberra\", \"addressRegion\": \"ACT\"}, \"hasCredential\": {\"@type\": \"EducationalOccupationalCredential\", \"credentialCategory\": \"licence\", \"name\": \"ACT Class A Builders Licence 20211145\"}, \"image\": \"https://rentouleprojects.com/assets/logo-main-black.png\", \"name\": \"Rentoule Projects\", \"telephone\": \"+61434435966\", \"url\": \"https://rentouleprojects.com\"}, \"serviceType\": \"Dual Occupancy and Secondary Residence Construction\", \"url\": \"https://rentouleprojects.com/services/dual-occupancy-canberra/\"}"
+    },
+    {
+     "type": "FAQPage",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": 5,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Since 1 July 2026 there is no minimum block size for a second dwelling in an RZ1 zone. To unit title the dwellings so they can be sold separately, a standard block must be at least 600 square metres and both dwellings must be built first. The old 800 square metre threshold and 120 square metre size cap were removed by the Missing Middle reforms.\"}, \"name\": \"What block size do I need for dual occupancy in Canberra?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"In the ACT, residential blocks are generally held under Crown Lease - not freehold title as in most other Australian states. Traditional subdivision creates a new Crown Lease lot. For dual occupancy, unit titling is the more common mechanism, which allows each dwelling to be held and transferred under separate unit plan titles without subdividing the underlying lease. A strata title surveyor and solicitor experienced in ACT land tenure should be engaged for this process.\"}, \"name\": \"Can I subdivide my Canberra block to sell one dwelling separately?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Allow 20 to 28 months from initial consultation to completion and title registration for a full dual occupancy with unit titling. This covers design (3-5 months), Crown Lease variation if required (3-6 months), DA and building approval (3-6 months), construction (10-14 months), and the unit titling process post-construction (2-4 months). A secondary residence without unit titling is faster - no titling process and potentially a simpler DA.\"}, \"name\": \"How long does a dual occupancy project take in Canberra?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Construction of a secondary dwelling or dual occupancy involves site works that will temporarily affect the existing home's surrounds - driveway access, garden areas, and services connections. The existing dwelling's internal amenity is not typically affected unless shared services need to be reconfigured. We plan construction sequencing to minimise disruption and maintain your ability to occupy the main dwelling throughout the build where possible.\"}, \"name\": \"Will building a second dwelling affect my existing home?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"There is no general requirement under ACT planning rules to occupy either dwelling in a standard dual occupancy. Once unit titles are established, each dwelling is an independent title and can be owned, rented, or sold separately. Specific conditions may apply in some circumstances - for example, Mr Fluffy First Right of Refusal blocks have owner-occupier conditions. Confirm your specific position with a solicitor.\"}, \"name\": \"Do I need to live in one of the dwellings in a dual occupancy?\"}]}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/services/\", \"name\": \"Services\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/services/dual-occupancy-canberra/\", \"name\": \"Dual Occupancy Canberra\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/act-missing-middle-housing-reform-mpa04/",
+    "/blog/best-suburbs-renovation-roi-canberra/",
+    "/blog/da-approval-act-renovations/",
+    "/blog/home-extension-costs-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/missing-middle-explained-canberra/",
+    "/blog/renovate-extend-rebuild-or-move-canberra/",
+    "/services/knockdown-rebuild-canberra/",
+    "/services/mr-fluffy-block-rebuild/"
+   ],
+   "words": 3578
+  },
+  "/services/knockdown-rebuild-canberra/": {
+   "file": "services/knockdown-rebuild-canberra/index.html",
+   "title": "Knockdown Rebuild Canberra | Custom Home Builder | Rentoule Projects",
+   "description": "Replace your old Canberra home with a custom new build on the same block. Bespoke design, fixed-price contracts, and ACT planning expertise from Rentoule Projects.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/services/knockdown-rebuild-canberra/",
+   "robots": "index, follow",
+   "og_title": "Knockdown Rebuild Canberra | Custom Home Builder | Rentoule Projects",
+   "og_description": "Replace your old Canberra home with a custom new build on the same block. Bespoke design, fixed-price contracts, and ACT planning expertise from Rentoule Projects.",
+   "og_image": "https://rentouleprojects.com/assets/holder-fireplace.jpg",
+   "og_url": "https://rentouleprojects.com/services/knockdown-rebuild-canberra/",
+   "h1": [
+    "Knockdown Rebuild Canberra"
+   ],
+   "h2": [
+    "What is a knockdown rebuild?",
+    "Is a knockdown rebuild right for you?",
+    "What we build",
+    "The knockdown rebuild process",
+    "Knockdown rebuild costs in Canberra",
+    "ACT planning considerations",
+    "Suburbs we work in",
+    "Frequently Asked Questions",
+    "Related services",
+    "Learn more",
+    "Ready to talk about your rebuild?"
+   ],
+   "h3": [
+    "Development Application",
+    "Demolition approval",
+    "Build approval",
+    "Crown Lease conditions",
+    "Heritage and character areas",
+    "Do I need a Development Application for a knockdown rebuild in Canberra?",
+    "How long does a knockdown rebuild take?",
+    "Can I live on site during the build?",
+    "What happens to asbestos in the old home?",
+    "Can you help me find an architect or designer?",
+    "Rebuilding on a Mr Fluffy Block in Canberra",
+    "Dual Occupancy & Secondary Residences in Canberra",
+    "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+    "Home Renovation Costs in Canberra",
+    "DA Approval in the ACT",
+    "Energy Efficiency & EER Ratings"
+   ],
+   "jsonld": [
+    {
+     "type": "Service",
+     "headline": "Knockdown Rebuild Canberra",
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Service\", \"areaServed\": {\"@type\": \"City\", \"containedInPlace\": {\"@type\": \"AdministrativeArea\", \"name\": \"Australian Capital Territory\"}, \"name\": \"Canberra\"}, \"audience\": {\"@type\": \"Audience\", \"audienceType\": \"Canberra homeowners considering a knockdown rebuild\"}, \"description\": \"Replace your old Canberra home with a custom new build on the same block. Bespoke design, fixed-price contracts, and ACT planning expertise from Rentoule Projects.\", \"image\": \"https://rentouleprojects.com/assets/holder-fireplace.jpg\", \"name\": \"Knockdown Rebuild Canberra\", \"provider\": {\"@type\": \"GeneralContractor\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"AU\", \"addressLocality\": \"Canberra\", \"addressRegion\": \"ACT\"}, \"hasCredential\": {\"@type\": \"EducationalOccupationalCredential\", \"credentialCategory\": \"licence\", \"name\": \"ACT Class A Builders Licence 20211145\"}, \"image\": \"https://rentouleprojects.com/assets/logo-main-black.png\", \"name\": \"Rentoule Projects\", \"telephone\": \"+61434435966\", \"url\": \"https://rentouleprojects.com\"}, \"serviceType\": \"Knockdown Rebuild\", \"url\": \"https://rentouleprojects.com/services/knockdown-rebuild-canberra/\"}"
+    },
+    {
+     "type": "FAQPage",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": 5,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes, in almost all cases a knockdown rebuild requires a Development Application under ACT planning rules. A new dwelling on your block is treated as new development, not exempt or complying development. You will also need a separate demolition approval before work can begin. We advise on both approvals during your initial consultation.\"}, \"name\": \"Do I need a Development Application for a knockdown rebuild in Canberra?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Allow 18 to 24 months from initial consultation to handover. Design and documentation takes 3 to 6 months. The DA process typically runs 3 to 6 months. Construction takes 10 to 14 months for a typical custom home. Timelines vary based on design complexity and approval requirements.\"}, \"name\": \"How long does a knockdown rebuild take in Canberra?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"No. The site must be vacant during demolition and construction. Most clients move into rental accommodation or stay with family for the duration. A typical knockdown rebuild takes 12 to 18 months from demolition to handover - factor temporary accommodation costs into your budget.\"}, \"name\": \"Can I live on site during a knockdown rebuild?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"A quality custom home in Canberra typically costs between $3,500 and $5,500 or more per square metre, depending on size, specification level, and site conditions. Additional costs include demolition, asbestos testing and removal if required, design fees, DA fees, and any site works. We provide fixed-price contracts so you know the full cost before work begins.\"}, \"name\": \"How much does a knockdown rebuild cost in Canberra?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"A knockdown rebuild requires a Development Application for the new dwelling and a separate demolition approval. Your Crown Lease must permit the type of dwelling you plan to build. In heritage precincts or character areas, additional planning controls may apply. We recommend a pre-DA meeting with ACT Planning before starting design to confirm requirements for your specific block.\"}, \"name\": \"What are the ACT planning rules for a knockdown rebuild?\"}]}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/services/\", \"name\": \"Services\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/services/knockdown-rebuild-canberra/\", \"name\": \"Knockdown Rebuild Canberra\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/da-approval-act-renovations/",
+    "/blog/energy-efficiency-eer-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/renovate-extend-rebuild-or-move-canberra/",
+    "/services/dual-occupancy-canberra/",
+    "/services/mr-fluffy-block-rebuild/"
+   ],
+   "words": 2232
+  },
+  "/services/mr-fluffy-block-rebuild/": {
+   "file": "services/mr-fluffy-block-rebuild/index.html",
+   "title": "Mr Fluffy Block Rebuild Canberra | First Right of Refusal Builder | Rentoule Projects",
+   "description": "Build your new home on a remediated Mr Fluffy block in Canberra. We work with First Right of Refusal owners to design and build custom homes on cleared blocks across the ACT.",
+   "keywords": null,
+   "canonical": "https://rentouleprojects.com/services/mr-fluffy-block-rebuild/",
+   "robots": "index, follow",
+   "og_title": "Mr Fluffy Block Rebuild Canberra | First Right of Refusal Builder",
+   "og_description": "Build your new home on a remediated Mr Fluffy block in Canberra. We work with First Right of Refusal owners to design and build custom homes on cleared blocks across the ACT.",
+   "og_image": "https://rentouleprojects.com/assets/holder-fireplace.jpg",
+   "og_url": "https://rentouleprojects.com/services/mr-fluffy-block-rebuild/",
+   "h1": [
+    "Mr Fluffy Block Rebuild Canberra"
+   ],
+   "h2": [
+    "What is a Mr Fluffy block?",
+    "The First Right of Refusal explained",
+    "Special development considerations on Mr Fluffy blocks",
+    "Designing a new home for a remediated block",
+    "Working with the deed of agreement and Crown Lease conditions",
+    "Our approach to Mr Fluffy block builds",
+    "Suburbs commonly affected",
+    "Frequently Asked Questions",
+    "Related services",
+    "Learn more",
+    "Rebuild your future"
+   ],
+   "h3": [
+    "Dual occupancy where otherwise prohibited",
+    "Unit titling possibilities",
+    "Development Application flexibility",
+    "The block is different from how you may remember it",
+    "Soil has been tested and certified",
+    "Slab and foundation design",
+    "Orientation and solar access",
+    "Streetscape and neighbourhood character",
+    "Can I sell my newly built home on a Mr Fluffy block straight away?",
+    "Can I rent out my home on a Mr Fluffy block?",
+    "Can I build a secondary residence or granny flat on my Mr Fluffy block?",
+    "What if my block has already been subdivided?",
+    "How long does it take to build on a remediated Mr Fluffy block?",
+    "Knockdown Rebuild in Canberra",
+    "Dual Occupancy & Secondary Residences in Canberra",
+    "How Much Does a Home Renovation Cost in Canberra? (2026 Pricing Guide)",
+    "DA Approval in the ACT",
+    "Best Suburbs for Renovation ROI",
+    "Energy Efficiency & EER Ratings"
+   ],
+   "jsonld": [
+    {
+     "type": "Service",
+     "headline": "Mr Fluffy Block Rebuild Canberra",
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"Service\", \"areaServed\": {\"@type\": \"City\", \"containedInPlace\": {\"@type\": \"AdministrativeArea\", \"name\": \"Australian Capital Territory\"}, \"name\": \"Canberra\"}, \"audience\": {\"@type\": \"Audience\", \"audienceType\": \"Mr Fluffy First Right of Refusal owners and Mr Fluffy block purchasers in the ACT\"}, \"description\": \"Build your new home on a remediated Mr Fluffy block in Canberra. We work with First Right of Refusal owners to design and build custom homes on cleared blocks across the ACT.\", \"image\": \"https://rentouleprojects.com/assets/holder-fireplace.jpg\", \"name\": \"Mr Fluffy Block Rebuild Canberra\", \"provider\": {\"@type\": \"GeneralContractor\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"AU\", \"addressLocality\": \"Canberra\", \"addressRegion\": \"ACT\"}, \"hasCredential\": {\"@type\": \"EducationalOccupationalCredential\", \"credentialCategory\": \"licence\", \"name\": \"ACT Class A Builders Licence 20211145\"}, \"image\": \"https://rentouleprojects.com/assets/logo-main-black.png\", \"name\": \"Rentoule Projects\", \"telephone\": \"+61434435966\", \"url\": \"https://rentouleprojects.com\"}, \"serviceType\": \"Mr Fluffy Block Rebuild\", \"url\": \"https://rentouleprojects.com/services/mr-fluffy-block-rebuild/\"}"
+    },
+    {
+     "type": "FAQPage",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": 5,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"If you purchased your cleared block under the First Right of Refusal scheme, you are subject to an owner-occupier requirement. You must occupy the dwelling as your principal place of residence for a defined period - typically 12 months from settlement or completion. Check the specific conditions attached to your deed of agreement. After that period, the block can generally be sold on the open market like any other residential property.\"}, \"name\": \"Can I sell my newly built home on a Mr Fluffy block straight away?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"The First Right of Refusal deed includes a 6-month owner-occupier requirement following settlement. During that period, renting the dwelling out as your primary residence is not permitted. After the qualifying period has passed, the standard ACT tenancy rules apply. You can rent the property as you would any other residential dwelling.\"}, \"name\": \"Can I rent out my home on a Mr Fluffy block?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Some remediated Mr Fluffy blocks allow dual occupancy or secondary residences where the underlying RZ1 zoning would not otherwise permit it. This arose from the specific conditions applied to surrendered blocks during the buyback scheme. The position depends on your individual Crown Lease and deed conditions. We recommend reviewing these documents with your solicitor and checking with ACT Planning before drawing up any designs.\"}, \"name\": \"Can I build a secondary residence or granny flat on my Mr Fluffy block?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Some Mr Fluffy blocks were subdivided by the ACT government before being offered back to original owners or sold on the open market. If your block is a newly created lot from a subdivided Mr Fluffy site, standard ACT planning rules apply to the new lot. The deed conditions from the original buyback may or may not carry over to subdivided portions - this needs to be confirmed against your specific title documents.\"}, \"name\": \"What if my block has already been subdivided?\"}, {\"@type\": \"Question\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"From initial consultation to handover, allow 18 to 24 months. Design and documentation takes 3 to 6 months. The DA process typically runs 3 to 6 months. Construction takes 10 to 14 months for a typical custom home. Because the block is already cleared and remediated, there is no demolition phase - this can reduce overall project time compared to a standard knockdown rebuild.\"}, \"name\": \"How long does it take to build on a remediated Mr Fluffy block?\"}]}"
+    },
+    {
+     "type": "BreadcrumbList",
+     "headline": null,
+     "datePublished": null,
+     "dateModified": null,
+     "n_faq": null,
+     "raw": "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/\", \"name\": \"Home\", \"position\": 1}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/services/\", \"name\": \"Services\", \"position\": 2}, {\"@type\": \"ListItem\", \"item\": \"https://rentouleprojects.com/services/mr-fluffy-block-rebuild/\", \"name\": \"Mr Fluffy Block Rebuild Canberra\", \"position\": 3}]}"
+    }
+   ],
+   "links_internal": [
+    "/#contact",
+    "/blog/best-suburbs-renovation-roi-canberra/",
+    "/blog/da-approval-act-renovations/",
+    "/blog/energy-efficiency-eer-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/services/dual-occupancy-canberra/",
+    "/services/knockdown-rebuild-canberra/"
+   ],
+   "words": 2187
+  },
+  "/success-consult/": {
+   "file": "success-consult/index.html",
+   "title": "Thanks for getting in touch | Rentoule Projects",
+   "description": "Your consultation request has been received. Here's what happens next.",
+   "keywords": null,
+   "canonical": null,
+   "robots": "noindex, nofollow",
+   "og_title": null,
+   "og_description": null,
+   "og_image": null,
+   "og_url": null,
+   "h1": [
+    "Your enquiry has landed"
+   ],
+   "h2": [
+    "Take the next step on your own timeline",
+    "Helpful reading while you wait",
+    "Need to reach me directly?"
+   ],
+   "h3": [
+    "Book a discovery call",
+    "Complete the questionnaire",
+    "Read the Canberra Renovation Guide"
+   ],
+   "jsonld": [],
+   "links_internal": [
+    "/blog/bathroom-renovation-costs-canberra/",
+    "/blog/choosing-right-builder-canberra/",
+    "/blog/home-extension-costs-canberra/",
+    "/blog/home-renovation-costs-canberra/",
+    "/blog/kitchen-renovation-costs-canberra/",
+    "/canberra-renovation-guide/"
+   ],
+   "words": 335
+  }
+ },
+ "sitemap": [
+  "https://rentouleprojects.com/",
+  "https://rentouleprojects.com/services/dual-occupancy-canberra/",
+  "https://rentouleprojects.com/services/knockdown-rebuild-canberra/",
+  "https://rentouleprojects.com/services/mr-fluffy-block-rebuild/",
+  "https://rentouleprojects.com/blog/bathroom-renovation-costs-canberra/",
+  "https://rentouleprojects.com/blog/home-renovation-costs-canberra/",
+  "https://rentouleprojects.com/blog/kitchen-renovation-costs-canberra/",
+  "https://rentouleprojects.com/blog/home-extension-costs-canberra/",
+  "https://rentouleprojects.com/blog/best-suburbs-renovation-roi-canberra/",
+  "https://rentouleprojects.com/blog/choosing-right-builder-canberra/",
+  "https://rentouleprojects.com/blog/da-approval-act-renovations/",
+  "https://rentouleprojects.com/blog/energy-efficiency-eer-canberra/",
+  "https://rentouleprojects.com/blog/extension-vs-renovation-canberra/",
+  "https://rentouleprojects.com/blog/how-to-plan-renovation-canberra/",
+  "https://rentouleprojects.com/blog/middle-east-conflict-construction-costs-australia/",
+  "https://rentouleprojects.com/blog/ncc-2025-canberra-renovations/",
+  "https://rentouleprojects.com/blog/renovation-hidden-costs-canberra/",
+  "https://rentouleprojects.com/canberra-renovation-guide/",
+  "https://rentouleprojects.com/blog/federal-budget-2026-canberra-renovations/",
+  "https://rentouleprojects.com/blog/act-missing-middle-housing-reform-mpa04/",
+  "https://rentouleprojects.com/blog/renovate-extend-rebuild-or-move-canberra/",
+  "https://rentouleprojects.com/blog/fireplaces-wood-heaters-canberra/",
+  "https://rentouleprojects.com/blog/tree-protection-canberra-act/",
+  "https://rentouleprojects.com/blog/nsw-approval-pathways-da-cdc-cc-2026/",
+  "https://rentouleprojects.com/blog/rz1-design-options-mpa04-canberra/",
+  "https://rentouleprojects.com/blog/canberra-construction-costs-up-40-percent-2026/",
+  "https://rentouleprojects.com/blog/full-house-renovation-canberra/",
+  "https://rentouleprojects.com/blog/missing-middle-explained-canberra/",
+  "https://rentouleprojects.com/blog/second-storey-extensions-canberra/",
+  "https://rentouleprojects.com/blog/act-property-developer-licence-2026/"
+ ],
+ "robots": "User-agent: *\nAllow: /\nDisallow: /internal/\nDisallow: /success-consult/\nDisallow: /how-we-work/\n\nSitemap: https://rentouleprojects.com/sitemap.xml\n",
+ "redirects": [
+  {
+   "from": "/bathroom-renovation-costs-canberra/",
+   "to": "/blog/bathroom-renovation-costs-canberra/",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/best-suburbs-renovation-roi-canberra/",
+   "to": "/blog/best-suburbs-renovation-roi-canberra/",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/choosing-right-builder-canberra/",
+   "to": "/blog/choosing-right-builder-canberra/",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/do-you-need-da-approval-renovations-act/",
+   "to": "/blog/da-approval-act-renovations/",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/extension-vs-renovation-canberra/",
+   "to": "/blog/extension-vs-renovation-canberra/",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/home-extension-costs-canberra/",
+   "to": "/blog/home-extension-costs-canberra/",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/how-much-does-a-home-extension-cost-in-canberra-per-square-metre/",
+   "to": "/blog/home-extension-costs-canberra/",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/home-renovation-costs-canberra/",
+   "to": "/blog/home-renovation-costs-canberra/",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/how-to-plan-renovation-canberra/",
+   "to": "/blog/how-to-plan-renovation-canberra/",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/kitchen-renovation-costs-canberra/",
+   "to": "/blog/kitchen-renovation-costs-canberra/",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/renovation-hidden-costs-canberra/",
+   "to": "/blog/renovation-hidden-costs-canberra/",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/middle-east-conflict-construction-costs-australia/",
+   "to": "/blog/middle-east-conflict-construction-costs-australia/",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/building-a-sustainable-future-in-australia/",
+   "to": "/#blog",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/how-we-create-sustainable-homes-in-australia/",
+   "to": "/#blog",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/the-art-of-sustainable-design-in-australia/",
+   "to": "/#blog",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/the-future-of-sustainable-architecture-in-australia/",
+   "to": "/#blog",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/why-sustainability-matters-in-australian-construction/",
+   "to": "/#blog",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/chris-weetangera/",
+   "to": "/#case-studies",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/project-1/",
+   "to": "/#case-studies",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/project-2/",
+   "to": "/#case-studies",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/knockdown-rebuild-canberra/",
+   "to": "/services/knockdown-rebuild-canberra/",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/custom-home-builder-canberra/",
+   "to": "/",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/home-extension-canberra/",
+   "to": "/#services",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/second-storey-addition-canberra/",
+   "to": "/#services",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/renovation-builder-canberra/",
+   "to": "/#services",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/fixed-price-builder-canberra/",
+   "to": "/#services",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/building-services-canberra/",
+   "to": "/#services",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/services/",
+   "to": "/#services",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/services/bathroom-renovations/",
+   "to": "/#services",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/services/custom-homes/",
+   "to": "/#services",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/services/extensions/",
+   "to": "/#services",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/services/kitchen-renovations/",
+   "to": "/#services",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/services/renovations/",
+   "to": "/#services",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/services/single-storey-additions/",
+   "to": "/#services",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/locations/*",
+   "to": "/",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/about/",
+   "to": "/#about",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/blog/",
+   "to": "/#blog",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/case-studies/",
+   "to": "/#case-studies",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/contact/",
+   "to": "/#contact",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/request-a-consult/",
+   "to": "/#contact",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/thank-you/",
+   "to": "/",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/home-2/",
+   "to": "/",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/careers-available/",
+   "to": "/#careers",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/careers/",
+   "to": "/#careers",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/careers/*",
+   "to": "/#careers",
+   "status": "301",
+   "force": false
+  },
+  {
+   "from": "/insta",
+   "to": "/?utm_source=instagram&utm_medium=organic_social&utm_campaign=bio_link",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/instagram",
+   "to": "/?utm_source=instagram&utm_medium=organic_social&utm_campaign=bio_link",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/fb",
+   "to": "/?utm_source=facebook&utm_medium=organic_social&utm_campaign=bio_link",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/facebook",
+   "to": "/?utm_source=facebook&utm_medium=organic_social&utm_campaign=bio_link",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/li",
+   "to": "/?utm_source=linkedin&utm_medium=organic_social&utm_campaign=bio_link",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/linkedin",
+   "to": "/?utm_source=linkedin&utm_medium=organic_social&utm_campaign=bio_link",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/yt",
+   "to": "/?utm_source=youtube&utm_medium=organic_social&utm_campaign=bio_link",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/youtube",
+   "to": "/?utm_source=youtube&utm_medium=organic_social&utm_campaign=bio_link",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/qr",
+   "to": "/?utm_source=print&utm_medium=offline&utm_campaign=trifold_2026",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/card",
+   "to": "/?utm_source=print&utm_medium=offline&utm_campaign=business_card",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/sign",
+   "to": "/?utm_source=print&utm_medium=offline&utm_campaign=site_signage",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/email",
+   "to": "/?utm_source=email&utm_medium=signature&utm_campaign=email_signature",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/guide",
+   "to": "/canberra-renovation-guide/?utm_source=shortlink&utm_medium=guide&utm_campaign=renovation_guide",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/renovation-guide",
+   "to": "/canberra-renovation-guide/?utm_source=shortlink&utm_medium=guide&utm_campaign=renovation_guide",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/guide-ad",
+   "to": "/canberra-renovation-guide/?utm_source=meta&utm_medium=paid_social&utm_campaign=renovation_guide_ebook&utm_content=ad_v1",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/energy-efficiency-eer-canberra/",
+   "to": "/blog/energy-efficiency-eer-canberra/",
+   "status": "301",
+   "force": true
+  },
+  {
+   "from": "/ncc-2025-canberra-renovations/",
+   "to": "/blog/ncc-2025-canberra-renovations/",
+   "status": "301",
+   "force": true
+  }
+ ]
+}

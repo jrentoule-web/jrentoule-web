@@ -24,28 +24,49 @@
   <meta name="geo.region" content="AU-ACT">
   <meta name="geo.placename" content="Canberra">
 
-  <!-- Favicon -->
+  <!-- rp:head -->
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-  <!-- Fonts -->
+  <meta name="theme-color" content="#1d2a1f">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    @font-face {
-      font-family: 'Amsterdam';
-      src: url('../../assets/Amsterdam-Four.woff2') format('woff2');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/rp.css">
+  <script>document.documentElement.classList.add('js');</script>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="../../base.css">
-  <link rel="stylesheet" href="../../style.css">
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '325684489874879');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt=""
+  src="https://www.facebook.com/tr?id=325684489874879&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- HubSpot tracking code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-ap1.hs-scripts.com/40214516.js"></script>
+  <!-- First/last-touch attribution for HubSpot forms -->
+  <script src="/tracking.js"></script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "x793xh4bcw");
+  </script>
+  <!-- /rp:head -->
 
   <!-- Structured Data: Article -->
   <script type="application/ld+json">
@@ -107,26 +128,6 @@
     ]
   }
   </script>
-  <!-- Meta Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '325684489874879');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=325684489874879&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-  <!-- HubSpot tracking code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js-ap1.hs-scripts.com/40214516.js"></script>
-  <script src="../../tracking.js"></script>
 
 
   <style>
@@ -188,74 +189,67 @@
       background: #d4b48a;
     }
   </style>
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "x793xh4bcw");
-    </script>
 </head>
-<body class="article-body-page">
-
-  <a href="/#main-content" class="skip-link">Skip to content</a>
-
-  <!-- ====== NAVIGATION ====== -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav__inner">
-      <a href="/" class="nav__logo" aria-label="Rentoule Projects - Home">
-          <img src="../../assets/logo-nav-gold-script.png" alt="Rentoule Projects" class="nav__logo-img">
-        </a>
-      <div class="nav__links">
-        <a href="/#about" class="nav__link">About</a>
-        <a href="/#services" class="nav__link">Services</a>
-        <a href="/#case-studies" class="nav__link">Case Studies</a>
-        <a href="/canberra-renovation-guide/" class="nav__link">Guide</a>
-        <a href="/#blog" class="nav__link active">Blog</a>
-        <a href="/#careers" class="nav__link">Careers</a>
-        <a href="/#contact" class="nav__link">Contact</a>
-      </div>
-      <a href="/#contact" class="btn btn--primary nav__cta desktop-only">Get in touch</a>
-      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+<body>
+  <!-- rp:header -->
+  <a href="#main" class="skip">Skip to content</a>
+  <div class="rp-progress" aria-hidden="true"></div>
+  <header class="rp-header" id="rpHeader">
+    <div class="rp-header__inner">
+      <a href="/" class="rp-logo" aria-label="Rentoule Projects home">
+        <img class="on-dark" src="/assets/logo-nav-white.png" alt="" width="600" height="184">
+        <img class="on-light" src="/assets/logo-nav-green.png" alt="" width="600" height="184">
+      </a>
+      <nav class="rp-nav" aria-label="Main">
+        <a href="/services/" data-nav="services">Services</a>
+        <a href="/how-we-work/" data-nav="how-we-work">How we work</a>
+        <a href="/projects/" data-nav="projects">Projects</a>
+        <a href="/canberra-renovation-guide/" data-nav="guide">Guide</a>
+        <a href="/blog/" data-nav="journal" aria-current="page">Blog</a>
+        <a href="/about/" data-nav="about">About</a>
+      </nav>
+      <a href="/contact/" class="btn btn--gold rp-header__cta">Get in touch</a>
+      <button class="rp-burger" id="rpBurger" aria-label="Open menu" aria-expanded="false" aria-controls="rpMenu"><span></span></button>
     </div>
-    <div class="nav__mobile" aria-hidden="true">
-      <a href="/">Home</a>
-      <a href="/#about">About</a>
-      <a href="/#services">Services</a>
-      <a href="/#case-studies">Case Studies</a>
-      <a href="/canberra-renovation-guide/">Guide</a>
-      <a href="/#blog">Blog</a>
-      <a href="/#careers">Careers</a>
-      <a href="/#contact">Contact</a>
-      <a href="/#contact" class="btn btn--primary">Get in touch</a>
+  </header>
+  <div class="rp-menu" id="rpMenu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <button class="rp-menu__close" id="rpClose" aria-label="Close menu">&times;</button>
+    <nav aria-label="Mobile">
+      <a href="/" data-nav="home">Home</a>
+      <a href="/services/" data-nav="services">Services</a>
+      <a href="/how-we-work/" data-nav="how-we-work">How we work</a>
+      <a href="/projects/" data-nav="projects">Projects</a>
+      <a href="/canberra-renovation-guide/" data-nav="guide">Renovation guide</a>
+      <a href="/blog/" data-nav="journal" aria-current="page">Blog</a>
+      <a href="/about/" data-nav="about">About</a>
+      <a href="/careers/" data-nav="careers">Careers</a>
+    </nav>
+    <div class="rp-menu__foot">
+      <a href="/contact/" class="btn btn--gold">Get in touch</a>
+      <a href="tel:0434435966">0434 435 966</a>
     </div>
-  </nav>
+  </div>
+  <!-- /rp:header -->
 
   <!-- ====== MAIN ====== -->
-  <main id="main-content" class="article-page">
+  <main id="main" tabindex="-1">
 
     <!-- Hero -->
-    <section class="hero hero--page hero--article" aria-label="Article hero">
-      <div class="hero__bg" style="background-image: url('../../assets/blog-budget-2026-hero.jpg')"></div>
-      <div class="hero__overlay"></div>
-      <div class="hero__content">
-        <span class="hero__eyebrow">Advice &amp; Tips</span>
-        <h1 class="hero__title hero__title--article">Federal Budget 2026: What It <em>Means</em> for Canberra Renovations and Builds</h1>
-        <div class="article-meta">
-          <span>By Jeff Rentoule</span>
-          <span class="article-meta__sep">·</span>
-          <span>15 May 2026</span>
-          <span class="article-meta__sep">·</span>
-          <span>8 min read</span>
-        </div>
+    <header class="ahero">
+      <div class="wrap">
+        <nav class="ahero__crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/blog/">Blog</a><span aria-hidden="true">/</span><span aria-current="page">Federal Budget 2026: What It Means for Canberra Renovations and Builds</span></nav>
+        <span class="label">Advice &amp; Tips</span>
+        <h1>Federal Budget 2026: What It <em>Means</em> for Canberra Renovations and Builds</h1>
+        <p class="ahero__meta"><span>Written by <strong>Jeff Rentoule</strong></span><span>15 May 2026</span><span>8 min read</span></p>
+        <figure class="ahero__img">
+          <img src="/assets/blog-budget-2026-hero.jpg" alt="" width="1600" height="686" fetchpriority="high">
+          <span class="imgnote">Illustrative image</span>
+        </figure>
       </div>
-    </section>
+    </header>
 
     <!-- Article body -->
-    <section class="section section--white article-section" aria-label="Article body">
+    <section class="article-section" aria-label="Article body">
       <div class="article-container">
         <article class="article-body">
 <p><strong>Treasurer Jim Chalmers handed down the 2026 Federal Budget on Tuesday 12 May, and for anyone building or renovating in Canberra it is the biggest set of housing tax changes in 25 years.</strong> The headline items: negative gearing limited to new builds from 1 July 2027, the capital gains tax discount replaced with inflation indexation and a 30 per cent minimum tax floor, $2 billion for housing-enabling infrastructure, $42.7 million to make Australian Standards free to access, a $500 million package to speed up environmental approvals, and the temporary fuel excise cut extended for another three months.</p>
@@ -264,7 +258,7 @@
 
 <aside class="price-guide-note" id="price-guide" role="note" aria-label="Price guide note">
   <span class="price-guide-note__label">Price guide only</span>
-  <p>The cost figures in this article are a guide based on recent Rentoule Projects work and current Canberra market rates. Real numbers depend on your scope, site conditions, finishes and inclusions. <a href="/#contact">Get in touch for a detailed proposal on your project.</a></p>
+  <p>The cost figures in this article are a guide based on recent Rentoule Projects work and current Canberra market rates. Real numbers depend on your scope, site conditions, finishes and inclusions. <a href="/contact/">Get in touch for a detailed proposal on your project.</a></p>
 </aside>
 
 <h2>The big housing tax change in one paragraph</h2>
@@ -360,7 +354,7 @@
 
 <p>The Budget is one piece of a wider picture for anyone planning to build or renovate in Canberra. ACT planning rules, NCC 2025 transition (now underway and mandatory from 1 May 2027), gas phase-out, suburb-specific zoning, and your own financial circumstances all matter more day-to-day than the federal tax reforms three years out.</p>
 
-<p>For deeper context on cost ranges, timelines, planning approvals and the things you can control, the <a href="/canberra-renovation-guide/">Canberra Renovation Guide</a> covers the lot. For specifics on the tax position of your project, get a conversation with your accountant or a registered tax adviser. And when you are ready to talk about the build itself, <a href="/#contact">get in touch</a>. Coffee is on me.</p><aside class="guide-callout" role="complementary" aria-label="Renovation guide promo">
+<p>For deeper context on cost ranges, timelines, planning approvals and the things you can control, the <a href="/canberra-renovation-guide/">Canberra Renovation Guide</a> covers the lot. For specifics on the tax position of your project, get a conversation with your accountant or a registered tax adviser. And when you are ready to talk about the build itself, <a href="/contact/">get in touch</a>. Coffee is on me.</p><aside class="guide-callout" role="complementary" aria-label="Renovation guide promo">
   <div class="guide-callout__content">
     <span class="guide-callout__eyebrow">Looking for the full picture?</span>
     <h3 class="guide-callout__title">The Canberra Renovation <em>Guide</em></h3>
@@ -376,7 +370,7 @@
     </section>
 
     <!-- Related Reading -->
-    <section class="section section--warm" aria-label="Related reading">
+    <section class="endmatter" aria-label="Related reading">
       <div class="container">
         <div class="reveal" style="text-align:center; max-width:720px; margin:0 auto var(--space-3xl);">
           <span class="eyebrow">Related Reading</span>
@@ -405,70 +399,59 @@
       </div>
     </section>
 
-    <!-- CTA Band -->
-    <section class="cta-band" aria-label="Call to action">
-      <div class="container reveal">
-        <span class="eyebrow" style="color:var(--black);">Get Started</span>
-        <h2 class="section-heading">Have a project <em>in mind?</em></h2>
-        <p class="section-subtitle">Get in touch and let's discuss how we can bring your vision to life under NCC 2025.</p>
-        <a href="/#contact" class="btn btn--dark">Get in touch</a>
+    <section class="cta" aria-labelledby="cta-h">
+      <img class="cta__mark" src="/assets/logo-monogram-clean.png" alt="" aria-hidden="true">
+      <div class="wrap">
+        <h2 class="display h-lg" id="cta-h">Have a project <span class="script">in mind?</span></h2>
+        <p class="lead">Get in touch and let's discuss how we can bring your vision to life under NCC 2025.</p>
+        <div class="btn-row">
+          <a href="/contact/" class="btn btn--black">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="/how-we-work/" class="btn btn--line">How we work</a>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ====== FOOTER ====== -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer__grid">
-        <div>
-          <img src="../../assets/logo-nav-gold.png" alt="Rentoule Projects" class="footer__logo-img">
-          <p class="footer__tagline">Making your house your home</p>
-          <p class="footer__about-text">Canberra residential builder specialising in home renovations, extensions and custom new builds from mid-range through to luxury. Director - Jeff Rentoule.</p>
-          <div class="footer__social">
-            <a href="https://www.instagram.com/rentoule_projects/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-            <a href="https://www.facebook.com/p/Rentoule-Projects-100093837338330/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
+  <!-- rp:footer -->
+  <footer class="rp-footer">
+    <div class="wrap">
+      <div class="rp-footer__grid">
+        <div class="rp-footer__brand">
+          <img src="/assets/logo-stacked-gold.png" alt="Rentoule Projects" width="400" height="333" loading="lazy">
+          <p>Premium renovations, extensions and selective custom homes in Canberra. Director, Jeff Rentoule.</p>
+          <div class="rp-social">
+            <a href="https://www.instagram.com/rentoule_projects/" target="_blank" rel="noopener noreferrer" aria-label="Rentoule Projects on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://www.facebook.com/p/Rentoule-Projects-100093837338330/" target="_blank" rel="noopener noreferrer" aria-label="Rentoule Projects on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
           </div>
         </div>
-        <div>
-          <h4 class="footer__heading">Services</h4>
-          <div class="footer__links">
-            <a href="/#services">New Builds</a>
-            <a href="/#services">Extensions</a>
-            <a href="/#services">Renovations</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__heading">Case Studies</h4>
-          <div class="footer__links">
-            <a href="/#case-studies">Chris - Weetangera</a>
-            <a href="/#case-studies">50 Year Home Renovation</a>
-            <a href="/#case-studies">Mark - Griffith</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__heading">Navigation</h4>
-          <div class="footer__links">
-            <a href="/">Home</a>
-            <a href="/#about">About</a>
-            <a href="/#services">Services</a>
-            <a href="/#contact">Contact</a>
-            <a href="/#blog">Blog</a>
-            <a href="/#careers">Careers</a>
-          </div>
-        </div>
+        <div><h2>Services</h2><ul>
+          <li><a href="/services/#renovations">Renovations</a></li>
+          <li><a href="/services/#extensions">Extensions</a></li>
+          <li><a href="/services/#custom-homes">Custom homes</a></li>
+        </ul></div>
+        <div><h2>Explore</h2><ul>
+          <li><a href="/how-we-work/">How we work</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/canberra-renovation-guide/">Canberra Renovation Guide</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/blog/home-renovation-costs-canberra/">Renovation costs</a></li>
+          <li><a href="/services/knockdown-rebuild-canberra/">Knockdown rebuilds</a></li>
+          <li><a href="/services/mr-fluffy-block-rebuild/">Mr Fluffy blocks</a></li>
+          <li><a href="/services/dual-occupancy-canberra/">Dual occupancy</a></li>
+        </ul></div>
+        <div><h2>Company</h2><ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/careers/">Careers</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="tel:0434435966">0434 435 966</a></li>
+          <li><a href="mailto:info@rentouleprojects.com">info@rentouleprojects.com</a></li>
+        </ul></div>
       </div>
-      <div class="footer__bottom">
-        <p>&copy; 2026 Rentoule Projects. All rights reserved.</p>
-        <p>Canberra, ACT, Australia</p>
-      </div>
+      <div class="rp-footer__base"><span>&copy; 2026 Rentoule Projects &middot; ABN 16 647 366 461</span><span>Licensed builder: ACT 20211145 &middot; NSW 453726C</span><span>Canberra, ACT</span><span><a href="/privacy/">Privacy policy</a></span></div>
     </div>
   </footer>
-
-  <script src="../../app.js"></script>
+  <script src="/assets/js/rp.js" defer></script>
+  <!-- /rp:footer -->
 </body>
 </html>

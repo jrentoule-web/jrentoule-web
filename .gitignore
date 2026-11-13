@@ -4,3 +4,6 @@ node_modules/
 
 # Internal research notes - kept in workspace, never deployed
 research/
+
+# Generated on preview builds only (noindex header)
+_headers

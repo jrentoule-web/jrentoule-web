@@ -24,28 +24,49 @@
   <meta name="geo.region" content="AU-ACT">
   <meta name="geo.placename" content="Canberra">
 
-  <!-- Favicon -->
+  <!-- rp:head -->
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-  <!-- Fonts -->
+  <meta name="theme-color" content="#1d2a1f">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    @font-face {
-      font-family: 'Amsterdam';
-      src: url('../../assets/Amsterdam-Four.woff2') format('woff2');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/rp.css">
+  <script>document.documentElement.classList.add('js');</script>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="../../base.css">
-  <link rel="stylesheet" href="../../style.css">
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '325684489874879');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt=""
+  src="https://www.facebook.com/tr?id=325684489874879&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- HubSpot tracking code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-ap1.hs-scripts.com/40214516.js"></script>
+  <!-- First/last-touch attribution for HubSpot forms -->
+  <script src="/tracking.js"></script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "x793xh4bcw");
+  </script>
+  <!-- /rp:head -->
 
   <!-- Structured Data: Service -->
   <script type="application/ld+json">
@@ -167,91 +188,67 @@
     ]
   }
   </script>
-  <!-- Meta Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '325684489874879');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=325684489874879&ev=PageView&noscript=1"
-  alt=""
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-  <!-- HubSpot tracking code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js-ap1.hs-scripts.com/40214516.js"></script>
-  <script src="../../tracking.js"></script>
-
-
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "x793xh4bcw");
-    </script>
 </head>
-<body class="article-body-page">
-
-  <a href="/#main-content" class="skip-link">Skip to content</a>
-
-  <!-- ====== NAVIGATION ====== -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav__inner">
-      <a href="/" class="nav__logo" aria-label="Rentoule Projects - Home">
-          <img src="../../assets/logo-nav-gold-script.png" alt="Rentoule Projects" class="nav__logo-img">
-        </a>
-      <div class="nav__links">
-        <a href="/#about" class="nav__link">About</a>
-        <a href="/#services" class="nav__link active">Services</a>
-        <a href="/#case-studies" class="nav__link">Case Studies</a>
-        <a href="/canberra-renovation-guide/" class="nav__link">Guide</a>
-        <a href="/#blog" class="nav__link">Blog</a>
-        <a href="/#careers" class="nav__link">Careers</a>
-        <a href="/#contact" class="nav__link">Contact</a>
-      </div>
-      <a href="/#contact" class="btn btn--primary nav__cta desktop-only">Get in touch</a>
-      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+<body>
+  <!-- rp:header -->
+  <a href="#main" class="skip">Skip to content</a>
+  <div class="rp-progress" aria-hidden="true"></div>
+  <header class="rp-header" id="rpHeader">
+    <div class="rp-header__inner">
+      <a href="/" class="rp-logo" aria-label="Rentoule Projects home">
+        <img class="on-dark" src="/assets/logo-nav-white.png" alt="" width="600" height="184">
+        <img class="on-light" src="/assets/logo-nav-green.png" alt="" width="600" height="184">
+      </a>
+      <nav class="rp-nav" aria-label="Main">
+        <a href="/services/" data-nav="services" aria-current="page">Services</a>
+        <a href="/how-we-work/" data-nav="how-we-work">How we work</a>
+        <a href="/projects/" data-nav="projects">Projects</a>
+        <a href="/canberra-renovation-guide/" data-nav="guide">Guide</a>
+        <a href="/blog/" data-nav="journal">Blog</a>
+        <a href="/about/" data-nav="about">About</a>
+      </nav>
+      <a href="/contact/" class="btn btn--gold rp-header__cta">Get in touch</a>
+      <button class="rp-burger" id="rpBurger" aria-label="Open menu" aria-expanded="false" aria-controls="rpMenu"><span></span></button>
     </div>
-    <div class="nav__mobile" aria-hidden="true">
-      <a href="/">Home</a>
-      <a href="/#about">About</a>
-      <a href="/#services">Services</a>
-      <a href="/#case-studies">Case Studies</a>
-      <a href="/canberra-renovation-guide/">Guide</a>
-      <a href="/#blog">Blog</a>
-      <a href="/#careers">Careers</a>
-      <a href="/#contact">Contact</a>
-      <a href="/#contact" class="btn btn--primary">Get in touch</a>
+  </header>
+  <div class="rp-menu" id="rpMenu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <button class="rp-menu__close" id="rpClose" aria-label="Close menu">&times;</button>
+    <nav aria-label="Mobile">
+      <a href="/" data-nav="home">Home</a>
+      <a href="/services/" data-nav="services" aria-current="page">Services</a>
+      <a href="/how-we-work/" data-nav="how-we-work">How we work</a>
+      <a href="/projects/" data-nav="projects">Projects</a>
+      <a href="/canberra-renovation-guide/" data-nav="guide">Renovation guide</a>
+      <a href="/blog/" data-nav="journal">Blog</a>
+      <a href="/about/" data-nav="about">About</a>
+      <a href="/careers/" data-nav="careers">Careers</a>
+    </nav>
+    <div class="rp-menu__foot">
+      <a href="/contact/" class="btn btn--gold">Get in touch</a>
+      <a href="tel:0434435966">0434 435 966</a>
     </div>
-  </nav>
+  </div>
+  <!-- /rp:header -->
 
   <!-- ====== MAIN ====== -->
-  <main id="main-content" class="article-page">
+  <main id="main" tabindex="-1">
 
     <!-- Hero -->
-    <section class="hero hero--page hero--article" aria-label="Page hero">
-      <div class="hero__bg" style="background-image: url('../../assets/service-extensions.jpg')"></div>
-      <div class="hero__overlay"></div>
-      <div class="hero__content">
-        <span class="hero__eyebrow">Services</span>
-        <h1 class="hero__title hero__title--article">Dual Occupancy <em>Canberra</em></h1>
-        <p class="hero__subtitle">Two dwellings. One block. Secondary residences and multi-unit. We handle the zoning, the approvals and the build.</p>
+    <header class="ahero">
+      <div class="wrap">
+        <nav class="ahero__crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/services/">Services</a><span aria-hidden="true">/</span><span aria-current="page">Dual Occupancy Canberra</span></nav>
+        <span class="label">Services</span>
+        <h1>Dual Occupancy <em>Canberra</em></h1>
+        <p class="ahero__meta" style="max-width:60ch;font-size:1.05rem">Two dwellings. One block. Secondary residences and multi-unit. We handle the zoning, the approvals and the build.</p>
+        <figure class="ahero__img">
+          <img src="/assets/service-extensions.jpg" alt="" width="1600" height="686" fetchpriority="high">
+          <span class="imgnote">Illustrative image</span>
+        </figure>
       </div>
-    </section>
+    </header>
 
     <!-- Article body -->
-    <section class="section section--white article-section" aria-label="Page body">
+    <section class="article-section" aria-label="Page body">
       <div class="article-container">
         <article class="article-body">
 
@@ -259,7 +256,7 @@
 
 <aside class="price-guide-note" id="price-guide-note" role="note" aria-label="Price guide notice">
   <span class="price-guide-note__label">Price Guide Only</span>
-  <p>The figures on this page are a guide based on recent Rentoule Projects work and current Canberra market rates. Real numbers depend on your scope, site conditions, finishes and inclusions. <a href="/#contact">Get in touch for a detailed proposal on your project.</a></p>
+  <p>The figures on this page are a guide based on current Canberra market rates and our own project costs. Real numbers depend on your scope, site conditions, finishes and inclusions. <a href="/contact/">Get in touch for a detailed proposal on your project.</a></p>
 </aside>
 
 
@@ -287,7 +284,7 @@
   <p><strong>Update 23 September:</strong> Twelve weeks in, I have not seen a public report of an MPA04 development application being decided, and I have not found a published count of lodgements. The Pattern Book is funded but has no release date. The rules and the LVC settings are unchanged since 29 July, and the 31 December 2030 certificate of occupancy deadline for the LVC reduction still applies.</p>
   <p><strong>Update 21 October:</strong> The Assembly passed the Planning (Missing Middle Housing) Amendment Bill 2026. Once it commences, small subdivisions and consolidations move to 30 to 45 working days, single dwelling leases get an automatic entitlement to a granny flat without a lease variation, and minor lease variations, including changing the number of dwellings, get a 10-day exempt pathway. A DA is still needed for the design and siting of the homes. As at the time of writing it has passed but has not been notified, so check the commencement date before relying on it (<a href="https://www.legislation.act.gov.au/WhatsNew/Index" target="_blank" rel="noopener">ACT Legislation Register</a>).</p>
   <p><strong>What I am watching:</strong> The commencement date for the Missing Middle Housing Amendment Act. The Canberra House Pattern Book release. How the streamlined approval pathway will work for Pattern Book designs. And the first MPA04 decisions, which will show how assessors apply the new RZ1 and RZ2 rules.</p>
-  <p><strong>What this means for you, today:</strong> If you own an RZ1 block in Canberra and have been told for years that dual occupancy was not possible on your land, that has changed. The Budget LVC and stamp duty measures have moved the financial picture meaningfully in favour of projects working. Whether the maths still stacks on your specific block depends on lot size, frontage, slope, eligibility for the LVC reduction, and the design that fits. I am running early feasibility on RZ1 and RZ2 blocks now. <a href="/#contact">Get in touch</a> if you want yours assessed.</p>
+  <p><strong>What this means for you, today:</strong> If you own an RZ1 block in Canberra and have been told for years that dual occupancy was not possible on your land, that has changed. The Budget LVC and stamp duty measures have moved the financial picture meaningfully in favour of projects working. Whether the maths still stacks on your specific block depends on lot size, frontage, slope, eligibility for the LVC reduction, and the design that fits. I am running early feasibility on RZ1 and RZ2 blocks now. <a href="/contact/">Get in touch</a> if you want yours assessed.</p>
   <p>For the full breakdown of what MPA04 changes (and what it does not change), see our detailed article: <a href="/blog/act-missing-middle-housing-reform-mpa04/">ACT Missing Middle Housing Reform: What MPA04 Means for Canberra Property Owners</a>.</p>
   <p><em>Last updated: 21 October 2026. This section will be updated when the Pattern Book is released or the first MPA04 decisions become public.</em></p>
 </aside>
@@ -296,7 +293,7 @@
 
 <p>These two terms are used interchangeably in conversation, but in the ACT they represent very different outcomes. Understanding which one applies to your goals is the first step.</p>
 
-<table>
+<div class="table-scroll" role="region" aria-label="Table, scrolls sideways on small screens" tabindex="0"><table>
   <thead>
     <tr>
       <th>Feature</th>
@@ -346,7 +343,7 @@
       <td>May apply depending on conditions</td>
     </tr>
   </tbody>
-</table>
+</table></div>
 
 <p>The right choice depends on what you want to achieve. If your goal is a long-term family accommodation arrangement with no need for separate title, a secondary residence is simpler and faster. If you want to sell or independently hold two dwellings on the same block, dual occupancy with unit titling is what you need.</p>
 
@@ -395,9 +392,9 @@
 
 <h2>Costs to consider</h2>
 
-<p>A dual occupancy project has several cost layers beyond the construction contract. These are high-level ranges to help you decide whether it's worth taking the next step. They're based on current Canberra market prices and our recent projects. They're not a quote, and every block is different.</p>
+<p>A dual occupancy project has several cost layers beyond the construction contract. These are high-level ranges to help you decide whether it's worth taking the next step. They're based on current Canberra market prices and our own project costs. They're not a quote, and every block is different.</p>
 
-<table>
+<div class="table-scroll" role="region" aria-label="Table, scrolls sideways on small screens" tabindex="0"><table>
   <thead>
     <tr><th>Cost</th><th>Duplex (2 homes)</th><th>Triplex (3 homes)</th></tr>
   </thead>
@@ -409,7 +406,7 @@
     <tr><td>Developer licence</td><td>Not required</td><td>Required since 1 October 2026</td></tr>
     <tr><td><strong>Indicative total</strong> (before finance, holding and selling costs)</td><td><strong>$1,180,000–$1,600,000</strong></td><td><strong>$1,470,000–$2,010,000</strong></td></tr>
   </tbody>
-</table>
+</table></div>
 
 <p>The totals assume knocking down the existing house and building two 180m² homes (duplex) or three 150m² homes (triplex). Smaller or larger homes move the build cost up or down in proportion. The Lease Variation Charge is $49,000 per additional dwelling, halved to $24,500 per dwelling where the temporary reduction conditions are met. Some leases are valued case by case rather than at the set rate.</p>
 
@@ -455,7 +452,7 @@
 
 <p>A dual occupancy project with unit titling is longer than a single custom home build. Here is a realistic timeline broken into key stages.</p>
 
-<table>
+<div class="table-scroll" role="region" aria-label="Table, scrolls sideways on small screens" tabindex="0"><table>
   <thead>
     <tr>
       <th>Stage</th>
@@ -505,7 +502,7 @@
       <td>Post-construction, surveyor and LTO registration</td>
     </tr>
   </tbody>
-</table>
+</table></div>
 
 <h2>Why dual occupancy makes sense in Canberra right now</h2>
 
@@ -524,9 +521,9 @@
 
 <h2>Our approach</h2>
 
-<p>Rentoule Projects coordinates the full process from initial feasibility through to completion and title. We do not hand you a set of plans and leave you to work through ACT Planning alone.</p>
+<p>Rentoule Projects coordinates the full process from initial feasibility through to completion and title, working with your designer, surveyor and consultants. We do not hand you a set of plans and leave you to work through ACT Planning alone.</p>
 
-<p>Jeff Rentoule brings 19 years of experience building across Canberra's established suburbs. We understand the ACT's planning system, the Crown Lease framework, and the practical realities of building two dwellings on a single block. Matt Ivanoff manages on-site construction and is your primary contact during the build. Alex Edwards coordinates approvals, scheduling and client communication.</p>
+<p>Jeff Rentoule brings 19 years of experience building across Canberra's established suburbs. We understand the ACT's planning system, the Crown Lease framework, and the practical realities of building two dwellings on a single block. Our site manager runs on-site construction and is your primary contact during the build.</p>
 
 <p>We work with architects, planning consultants, strata surveyors, and solicitors who know ACT dual occupancy work. You deal with one team throughout, not a series of separate professionals working without coordination.</p>
 
@@ -621,84 +618,59 @@
       </section>
 
 
-    <!-- CTA Band -->
-    <section class="cta-band" aria-label="Call to action">
-      <div class="container reveal">
-        <span class="eyebrow" style="color:var(--black);">Get Started</span>
-        <h2 class="section-heading">Ready to get more out of <em>your block?</em></h2>
-        <p class="section-subtitle">We will walk you through what your block can support, what the planning rules say, and what the full project is likely to cost. No obligations.</p>
-        <a href="/#contact" class="btn btn--dark">Get in touch</a>
+    <section class="cta" aria-labelledby="cta-h">
+      <img class="cta__mark" src="/assets/logo-monogram-clean.png" alt="" aria-hidden="true">
+      <div class="wrap">
+        <h2 class="display h-lg" id="cta-h">Ready to get more out of <span class="script">your block?</span></h2>
+        <p class="lead">We will walk you through what your block can support, what the planning rules say, and what the full project is likely to cost. No obligations.</p>
+        <div class="btn-row">
+          <a href="/contact/" class="btn btn--black">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="/how-we-work/" class="btn btn--line">How we work</a>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ====== FOOTER ====== -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer__grid">
-
-        <!-- About Column -->
-        <div>
-          <img src="../../assets/logo-nav-gold.png" alt="Rentoule Projects" class="footer__logo-img">
-          <p class="footer__tagline">Making your house your home</p>
-          <p class="footer__about-text">Canberra residential builder specialising in home renovations, extensions and custom new builds from mid-range through to luxury. Director - Jeff Rentoule.</p>
-          <div class="footer__social">
-            <a href="https://www.instagram.com/rentoule_projects/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-            <a href="https://www.facebook.com/p/Rentoule-Projects-100093837338330/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
+  <!-- rp:footer -->
+  <footer class="rp-footer">
+    <div class="wrap">
+      <div class="rp-footer__grid">
+        <div class="rp-footer__brand">
+          <img src="/assets/logo-stacked-gold.png" alt="Rentoule Projects" width="400" height="333" loading="lazy">
+          <p>Premium renovations, extensions and selective custom homes in Canberra. Director, Jeff Rentoule.</p>
+          <div class="rp-social">
+            <a href="https://www.instagram.com/rentoule_projects/" target="_blank" rel="noopener noreferrer" aria-label="Rentoule Projects on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://www.facebook.com/p/Rentoule-Projects-100093837338330/" target="_blank" rel="noopener noreferrer" aria-label="Rentoule Projects on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
           </div>
         </div>
-
-        <!-- Services Column -->
-        <div>
-          <h4 class="footer__heading">Services</h4>
-          <div class="footer__links">
-            <a href="/#services">New Builds</a>
-            <a href="/#services">Extensions</a>
-            <a href="/#services">Renovations</a>
-            <a href="/services/knockdown-rebuild-canberra/">Knockdown Rebuild</a>
-            <a href="/services/mr-fluffy-block-rebuild/">Mr Fluffy Block Rebuild</a>
-            <a href="/services/dual-occupancy-canberra/">Dual Occupancy</a>
-          </div>
-        </div>
-
-        <!-- Case Studies Column -->
-        <div>
-          <h4 class="footer__heading">Case Studies</h4>
-          <div class="footer__links">
-            <a href="/#case-studies">Chris - Weetangera</a>
-            <a href="/#case-studies">50 Year Home Renovation</a>
-            <a href="/#case-studies">Mark Page - Griffith</a>
-          </div>
-        </div>
-
-        <!-- Navigation Column -->
-        <div>
-          <h4 class="footer__heading">Navigation</h4>
-          <div class="footer__links">
-            <a href="/">Home</a>
-            <a href="/#about">About</a>
-            <a href="/#services">Services</a>
-            <a href="/#projects">Projects</a>
-            <a href="/#contact">Contact</a>
-            <a href="/#blog">Blog</a>
-            <a href="/#careers">Careers</a>
-          </div>
-        </div>
-
+        <div><h2>Services</h2><ul>
+          <li><a href="/services/#renovations">Renovations</a></li>
+          <li><a href="/services/#extensions">Extensions</a></li>
+          <li><a href="/services/#custom-homes">Custom homes</a></li>
+        </ul></div>
+        <div><h2>Explore</h2><ul>
+          <li><a href="/how-we-work/">How we work</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/canberra-renovation-guide/">Canberra Renovation Guide</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/blog/home-renovation-costs-canberra/">Renovation costs</a></li>
+          <li><a href="/services/knockdown-rebuild-canberra/">Knockdown rebuilds</a></li>
+          <li><a href="/services/mr-fluffy-block-rebuild/">Mr Fluffy blocks</a></li>
+          <li><a href="/services/dual-occupancy-canberra/">Dual occupancy</a></li>
+        </ul></div>
+        <div><h2>Company</h2><ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/careers/">Careers</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="tel:0434435966">0434 435 966</a></li>
+          <li><a href="mailto:info@rentouleprojects.com">info@rentouleprojects.com</a></li>
+        </ul></div>
       </div>
-
-      <div class="footer__bottom">
-        <p>&copy; 2026 Rentoule Projects. All rights reserved.</p>
-        <p>Canberra, ACT, Australia</p>
-      </div>
+      <div class="rp-footer__base"><span>&copy; 2026 Rentoule Projects &middot; ABN 16 647 366 461</span><span>Licensed builder: ACT 20211145 &middot; NSW 453726C</span><span>Canberra, ACT</span><span><a href="/privacy/">Privacy policy</a></span></div>
     </div>
   </footer>
-
-  <script src="../../app.js"></script>
+  <script src="/assets/js/rp.js" defer></script>
+  <!-- /rp:footer -->
 </body>
 </html>
