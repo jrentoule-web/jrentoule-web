@@ -1284,7 +1284,7 @@ h2.gtoc__title { font-family: var(--sans); }
   margin: 0;
 }
 .pull-quote__attribution::before {
-  content: "— ";
+  content: none;
   color: var(--gold);
 }
 /* Optional: alternate inline style for use mid-paragraph */
