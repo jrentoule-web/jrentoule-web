@@ -1859,3 +1859,10 @@ h2.gtoc__title { font-family: var(--sans); }
 
 /* No italic or script flourishes inside any heading, whichever template it comes from */
 :is(h1, h2, h3) :is(.it, .script, em) { font-family: inherit !important; font-style: normal !important; font-size: inherit !important; color: inherit !important; display: inline !important; margin: 0 !important; transform: none !important; }
+
+/* Brand video placements and transcript */
+.aside-card--video { background: #fff; border: 1px solid var(--line); }
+.aside-card--video p { margin-bottom: 1rem; }
+.transcript { margin-top: 1.4rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+.transcript summary { cursor: pointer; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; color: var(--forest); }
+.transcript p { font-size: 0.9rem; line-height: 1.7; color: var(--muted); margin-top: 0.9rem; }
