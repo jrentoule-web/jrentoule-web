@@ -842,7 +842,7 @@
   padding-left: 1.4rem;
 }
 .includes-grid li::before {
-  content: '\2014';
+  content: '\2022';
   position: absolute;
   left: 0;
   color: var(--gold);
@@ -900,7 +900,7 @@
   padding-left: 1.2rem;
 }
 .locations-list li::before {
-  content: '\2014';
+  content: '\2022';
   position: absolute;
   left: 0;
   color: var(--gold);
@@ -2276,7 +2276,7 @@
   margin: 0;
 }
 .pull-quote__attribution::before {
-  content: "— ";
+  content: none;
   color: var(--gold);
 }
 /* Optional: alternate inline style for use mid-paragraph */

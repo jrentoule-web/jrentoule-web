@@ -47,6 +47,18 @@ def main():
         if s != orig:
             f.write_text(s); changed += 1
     print(f'partials synced into {changed} page(s)')
+    # House rule: no em dashes anywhere on the site (they read as AI-written).
+    bad = []
+    for g in list(ROOT.rglob('*.html')) + list(ROOT.rglob('*.css')) + list(ROOT.rglob('*.txt')) + list(ROOT.rglob('*.xml')):
+        rel = g.relative_to(ROOT).as_posix()
+        if rel.startswith('.') or rel.startswith('tools/') or 'node_modules' in rel:
+            continue
+        txt = g.read_text(errors='ignore')
+        if any(m in txt for m in ('\u2014', '&mdash;', '&#8212;', '&#x2014;', '\\2014')):
+            bad.append(rel)
+    if bad:
+        print('EM DASH FOUND (house rule: none on the site):', ', '.join(bad))
+        return 1
 
 if __name__ == '__main__':
     sys.exit(main())
