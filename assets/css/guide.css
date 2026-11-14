@@ -171,3 +171,6 @@
 /* Hierarchy: section subheadings (in prose) sit one step above sub-topic headings (entries) */
 .ed-prose h3 { font-size: clamp(1.5rem, 2.1vw, 1.75rem); }
 .ed-entry > h3 { font-size: clamp(1.22rem, 1.6vw, 1.38rem); font-weight: 600; }
+
+/* Portrait photographs: a calmer 4:5 crop so they never dominate the column */
+.ed-fig--tall img { aspect-ratio: 4 / 5; max-height: 78vh; object-position: 50% 35%; }
