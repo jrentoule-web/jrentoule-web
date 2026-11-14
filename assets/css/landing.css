@@ -57,6 +57,7 @@ section[aria-labelledby="mcf-h"], section[aria-labelledby="how-h"] { background:
 .hc-split--rev .hc-split__media { order: 2; }
 .hc-split__media { position: relative; }
 .hc-split__media img { width: 100%; height: min(70vh, 640px); object-fit: cover; }
+.hc-split__media .video img { height: 100%; }
 .hc-split__media--tall img { height: min(76vh, 720px); }
 .hc-split h2 { font-size: clamp(2.2rem, 3.6vw, 3.4rem); margin-bottom: 1.6rem; max-width: 14ch; }
 .hc-meta { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.2rem; }
