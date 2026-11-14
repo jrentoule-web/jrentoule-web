@@ -1685,7 +1685,7 @@ h2.gtoc__title { font-family: var(--sans); }
   .gfeature { grid-template-columns: 1fr; }
   .gfeature__cover { min-height: 320px; }
   .svcx { grid-template-columns: 1fr; gap: 2rem; }
-  .svcx__img { position: static; }
+  .svcx__img { position: relative; top: auto; }
   .svcx__img img { aspect-ratio: 16 / 10; }
   .aside-stack { position: static; }
   .rp-footer__grid { grid-template-columns: 1fr 1fr; }
