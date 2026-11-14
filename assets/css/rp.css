@@ -277,7 +277,7 @@ input, select, textarea { font: inherit; color: inherit; }
 /* Video (click to load, privacy-friendly) */
 .video { position: relative; aspect-ratio: 16 / 9; background: var(--black); border-radius: 4px; overflow: hidden; }
 .video img { width: 100%; height: 100%; object-fit: cover; opacity: 0.72; transition: opacity 0.3s, transform 1.2s var(--ease); }
-.video button { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 1rem; color: var(--cream); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; }
+.video button { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 1rem; color: var(--cream); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; z-index: 2; cursor: pointer; }
 .video button span.play { width: 78px; height: 78px; border-radius: 50%; background: var(--gold); color: var(--black); display: grid; place-items: center; transition: transform 0.3s var(--ease); }
 .video button:hover span.play { transform: scale(1.06); }
 .video button:hover + img, .video:hover img { opacity: 0.82; }
@@ -1685,7 +1685,7 @@ h2.gtoc__title { font-family: var(--sans); }
   .gfeature { grid-template-columns: 1fr; }
   .gfeature__cover { min-height: 320px; }
   .svcx { grid-template-columns: 1fr; gap: 2rem; }
-  .svcx__img { position: static; }
+  .svcx__img { position: relative; top: auto; }
   .svcx__img img { aspect-ratio: 16 / 10; }
   .aside-stack { position: static; }
   .rp-footer__grid { grid-template-columns: 1fr 1fr; }
