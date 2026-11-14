@@ -281,3 +281,6 @@ dialog.hc-lb figcaption { font-size: 0.82rem; color: rgba(245,243,239,0.75); tex
 .hc-guides--more li a { color: var(--muted); }
 @media (max-width: 860px) { .hc-guides--cost { columns: 1; } }
 @media (max-width: 700px) { .hc-hero__cta .btn { padding: 0.85rem 1.4rem; font-size: 0.72rem; } }
+/* Portrait (Instagram-format) project videos: a 9:16 player instead of letterboxing in 16:9 */
+.hc-split__media .video--portrait { aspect-ratio: 9 / 16; height: min(78vh, 720px); width: auto; max-width: 100%; margin-inline: auto; }
+@media (max-width: 860px) { .hc-split__media .video--portrait { height: auto; width: min(100%, 380px); } }
