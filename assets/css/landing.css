@@ -284,3 +284,4 @@ dialog.hc-lb figcaption { font-size: 0.82rem; color: rgba(245,243,239,0.75); tex
 /* Portrait (Instagram-format) project videos: a 9:16 player instead of letterboxing in 16:9 */
 .hc-split__media .video--portrait { aspect-ratio: 9 / 16; height: min(78vh, 720px); width: auto; max-width: 100%; margin-inline: auto; }
 @media (max-width: 860px) { .hc-split__media .video--portrait { height: auto; width: min(100%, 380px); } }
+.hc-hero--dim::after { background: radial-gradient(ellipse 55% 45% at 50% 50%, rgba(20,31,22,0.55), rgba(20,31,22,0) 100%), linear-gradient(rgba(20,31,22,0.58), rgba(20,31,22,0.5) 50%, rgba(20,31,22,0.62)); }
