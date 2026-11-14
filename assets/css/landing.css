@@ -186,6 +186,7 @@ section[aria-labelledby="mcf-h"], section[aria-labelledby="how-h"] { background:
 .hc details.hc-more-review[open] summary { margin-bottom: 0.7rem; }
 .hc-full details.hc-more-review { color: rgba(255,255,255,0.85); }
 .hc .body + blockquote { margin-top: 1.8rem; }
+.hc .vq--dark blockquote { color: rgba(255,255,255,0.92); }
 .hc details.hc-more-review p + p { margin-top: 0.7rem; }
 .hc-full details.hc-more-review summary { color: #fff; border-color: var(--gold-light); }
 .hc-text { width: 100%; max-width: 1100px; margin: 0 auto; padding: 110px var(--gutter) 64px; }
