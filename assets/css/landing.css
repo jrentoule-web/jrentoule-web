@@ -138,6 +138,8 @@ section[aria-labelledby="mcf-h"], section[aria-labelledby="how-h"] { background:
 .hc-svc__links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; font-size: 0.78rem !important; margin-top: 0.5rem !important; }
 .hc-svc__links a { color: var(--forest-deep); border-bottom: 1px solid var(--gold); }
 .hc-more__grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 3rem 5rem; }
+.hc-guidecard { align-self: center; background: var(--stone); padding: clamp(1.6rem, 3vw, 2.4rem); border-left: 2px solid var(--gold); }
+.hc-guidecard .hc-about__h { margin-top: 0; }
 .hc-more h2 { font-size: clamp(1.9rem, 3vw, 2.6rem); margin-bottom: 1.6rem; }
 .hc-more .faq summary { font-size: 1.15rem; padding: 1rem 0; }
 .hc-guides { list-style: none; padding: 0; columns: 2; column-gap: 2.4rem; }
