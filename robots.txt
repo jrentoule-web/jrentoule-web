@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /internal/
 Disallow: /success-consult/
+Disallow: /tools/
 
 Sitemap: https://rentouleprojects.com/sitemap.xml
